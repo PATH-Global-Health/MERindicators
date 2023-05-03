@@ -7,7 +7,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
+id: openhie.fhir.merindicator
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example
 name: ExampleIG
