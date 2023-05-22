@@ -103,7 +103,7 @@ Description: "Example OMRS Condition resource"
 // * stage 0..0
 // * evidence 0..0
 * id = "a6867095-e2b1-4a68-9aaa-0d161a37ce9c"
-* code.coding = #116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+//* code.coding = #116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 * code.coding.system = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
 * code.coding.code = #116128
 * subject = Reference(example-openmrs-Patient)
