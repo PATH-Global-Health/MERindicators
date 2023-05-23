@@ -7,16 +7,16 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: openhie.fhir.merindicator
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
-status: active
+id: path.merindicators
+canonical: https://path-global-health.github.io/MERindicators
+url: https://path-global-health.github.io/MERindicators/ImplementationGuide/path.merindicators
+name: PATH MER Indicators
+title: "PATH MER Indicators"
+description: PATH MER Indicators
+status: draft
 license: CC0-1.0
-date: 2020-02-26
-version: 1.0.0
+date: 2023-05-10
+version: 0.0.1
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -29,7 +29,7 @@ fhirVersion: 4.0.1
 # camelcase, but if authors use the formal parameter names, SUSHI
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
-copyrightYear: 2021+
+copyrightYear: 2023+
 releaseLabel: STU1
 
 # The publisher can be a single item or a list, each with a name and
@@ -37,16 +37,16 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: PATH
+  url: https://www.path.org
+  email: info@path.org
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: PATH
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: info@path.org
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
@@ -65,6 +65,14 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 #    id: mcode
 #    uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
 #    version: 1.0.0
+
+
+dependencies:
+  openmrs.fhir.core: current
+  hl7.fhir.uv.cpg: 1.0.0
+  hl7.fhir.us.cqfmeasures: current
+  fhir.cqf.common: 4.0.1
+
 
 # The global property corresponds to the IG.global property, but it
 # uses the type as the YAML key and the profile as its value. Since
