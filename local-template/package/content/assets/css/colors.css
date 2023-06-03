@@ -3,19 +3,19 @@
   /* see http://build.fhir.org/ig/FHIR/ig-guidance/colors.html */
 
   --ig-status-text-color: #333333; /* 1. IG Title and status text color */
-  --navbar-bg-color: #1f4d2e; /* 2. Header container color */
-  --footer-container-bg-color: #1f4d2e; /* 4. Footer container color */
-  --stripe-bg-color: #668877; /* 5. Header strip color */
+  --navbar-bg-color: #b23634; /* 2. Header container color */
+  --footer-container-bg-color: #b23634; /* 4. Footer container color */
+  --stripe-bg-color: #d78e8a; /* 5. Header strip color */
 
-  --btn-hover-color: #33804a;  /* 6. Menu button hover color */
-  --btn-active-color: #43a862; /* 7. Menu button active color */
-  --btn-text-color: #e6e6e6; /* 8. Menu button text color */
-  --btn-gradient-start-color: #33aa77; /* 9. Menu item gradient start color */
-  --btn-gradient-end-color: #209966; /* 10. Menu item gradient end  color */
-  --btn-gradient-start-color-alpha: #ff33aa77; /* 11. Menu item gradient start color (with alpha) */
-  --btn-gradient-end-color-alpha: #ff209966; /* 12. Menu item gradient end color (with alpha) */
-  --link-color: #24d160; /* 13. Hyperlink text color */
-  --link-hover-color: #109030; /* 14. Hyperlink text hover color */
+  --btn-hover-color: #e15d5a;  /* 6. Menu button hover color */
+  --btn-active-color: #cb4f4d; /* 7. Menu button active color */
+  --btn-text-color: #ffffff; /* 8. Menu button text color */
+  --btn-gradient-start-color: #aa5555; /* 9. Menu item gradient start color */
+  --btn-gradient-end-color: #aa5577; /* 10. Menu item gradient end  color */
+  --btn-gradient-start-color-alpha: #aa5555ff; /* 11. Menu item gradient start color (with alpha) */
+  --btn-gradient-end-color-alpha: #aa5577ff; /* 12. Menu item gradient end color (with alpha) */
+  --link-color: #8a2a28; /* 13. Hyperlink text color */
+  --link-hover-color: #cb4f4d; /* 14. Hyperlink text hover color */
 
   --publish-box-bg-color: yellow; /* 15. Publish box background color */
   --publish-box-border: 1px solid green; /* 16.  Publish box border definition */
@@ -35,8 +35,8 @@
   --footer-hyperlink-text-color: #81BEF7; /* 25. Footer hyperlinks font color */
   --footer-highlight-text-color: #ffff77; /* 26. Footer highlight font color */
 
-  --breadcrumb-bg-color: #f5f5f5; /* 27. Breadcrumb font color */
-  --breadcrumb-text-color: ##555555; /* 28. Breadcrumb font color */
+  --breadcrumb-bg-color: #ecedef; /* 27. Breadcrumb font color */
+  --breadcrumb-text-color: #201000; /* 28. Breadcrumb font color */
 
   --dragon-background-color: #fffbf7; /* 29. Dragon background color */
   --dragon-text-color: #101020; /* 30. Dragon font color */
