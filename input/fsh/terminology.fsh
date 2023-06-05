@@ -42,9 +42,9 @@ Description: "Columbia International eHealth Laboratory (CIEL)"
 
 
 CodeSystem: KeyPopCS
-Id: KeyPop
-Title: "KeyPop"
-Description: "KeyPop"
+Id: KeyPopCS
+Title: "KeyPopCS"
+Description: "KeyPopCS"
 * ^experimental = true
 * ^caseSensitive = false
 * ^url = $KeyPopCS
@@ -109,7 +109,7 @@ Id: FocusPopVS
 Title: "FocusPopVS"
 Description: "FocusPopVS"
 * ^experimental = true
-* ^url = $MMDIntervalVS
+* ^url = $FocusPopVS
 
 
 ValueSet: KeyPopVS
@@ -131,7 +131,7 @@ Description: "Multi-month dispensing interval"
 
 
 ValueSet: OnARVVS
-Id: ARV
+Id: OnARVVS
 Title: "History of antiretroviral therapy (situation)"
 Description: "History of antiretroviral therapy (situation)"
 * ^experimental = true
@@ -142,7 +142,7 @@ Description: "History of antiretroviral therapy (situation)"
 
 
 ValueSet: PregnantVS
-Id: Pregnant
+Id: PregnantVS
 Title: "Pregnant"
 Description: "Currently pregnant"
 * ^experimental = true
