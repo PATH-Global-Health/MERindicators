@@ -1,8 +1,7 @@
-Empty IG
----
-MER Indicators
-<br> </br>
-###
+# MER Indicators
+
+Software development is being done in the [dev branch](https://github.com/PATH-Global-Health/MERindicators/tree/dev).
+
 ### Publication
 This ImplementationGuide is published in the following locations:
 
