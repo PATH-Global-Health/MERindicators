@@ -21,3 +21,10 @@ Thumbs.db
 # backup files #
 ################
 *.bak
+
+# below this line are additions
+
+# config for running github actions locally
+################
+.actrc
+
