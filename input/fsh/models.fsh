@@ -7,19 +7,19 @@ Description: "Base elements required for TXCURR"
 * birthDate 0..1 dateTime "The date of birth, if known"
 * age_end_reporting_period 1..1 integer "Age at end of reporting period"
 * age_group 1..1 Coding "Age group TXCURR VS"
-* age_group from AgeRangesTXCURRVS
+* age_group from AgeRangesTXCURR
 * gender 1..1 Coding "Gender of the patient"
 * gender from http://hl7.org/fhir/ValueSet/administrative-gender
 * facility 1..1 Reference "Last known facility where the patient received care"
 * keypop 1..* Coding "Member of key populations"
-* keypop from KeyPopVS
+* keypop from KeyPop
 * focuspop 0..* Coding "Member of focus populations"
-* focuspop from FocusPopVS
+* focuspop from FocusPop
 * pregnant 1..1 Coding "If patient is pregnant during reporting period"
-* pregnant from PregnantVS // or from PregnantVSCIEL
+* pregnant from Pregnant // or from PregnantCIEL
 * on_arv 1..1 Coding "Currently on ARV"
-* on_arv from OnARVVS
+* on_arv from OnARV
 * pep_prep 1..1 boolean "If ARV was prescribed for PEP or PrEP"
 * dispening_quantity 0..1 boolean "Multi-month dispensing (MMD), least 3 months of ARVs"
 * mmd_interval 0..1 Coding "disaggregates MMD data by dispensing interval (3–5MMD and 6MMD)"
-* mmd_interval from MMDIntervalVS
+* mmd_interval from MMDInterval

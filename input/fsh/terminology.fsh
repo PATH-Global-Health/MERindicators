@@ -1,12 +1,12 @@
 // Code systems
 
-CodeSystem: AgeRangesCS
-Id: AgeRangesCS
-Title: "AgeRangesCS"
-Description: "AgeRangesCS"
+CodeSystem: AgeRanges
+Id: AgeRanges
+Title: "AgeRanges"
+Description: "AgeRanges"
 * ^experimental = true
 * ^caseSensitive = false
-* ^url = $AgeRangesCS
+* ^url = $AgeRanges
 * #P0Y--P1Y "< 1 year"
 * #P1Y--P5Y "1-4 years"
 * #P5Y--P10Y "5-9 year"
@@ -26,6 +26,8 @@ Description: "AgeRangesCS"
 * #P65Y--P9999Y "65+ years"
 
 
+// TODO: It is unclear if external IDs are also used in implementations, and if they are attached to a system (URL).
+// One examples shows codes without a system.
 CodeSystem: CIEL
 Id: CIEL
 Title: "CIEL"
@@ -39,12 +41,25 @@ Description: "Columbia International eHealth Laboratory (CIEL)"
 * #1434 "Currently pregnant" // boolean
 * #138405 "Human immunodeficiency virus (HIV) disease" // coded
 * #160119 "CURRENTLY TAKING ARV" // q&a
+// WIP
+* #86663 "Zidovudine"
+* #74807 "Didanosine"
+
+
+// placeholder, can be different in implementations
+CodeSystem: FocusPopCS
+Id: FocusPopCS
+Title: "FocusPopCS"
+Description: "FocusPopCS"
+* ^experimental = true
+* ^caseSensitive = false
+* ^url = $FocusPopCS
 
 
 CodeSystem: KeyPopCS
 Id: KeyPopCS
-Title: "KeyPopCS"
-Description: "KeyPopCS"
+Title: "KeyPop"
+Description: "KeyPop"
 * ^experimental = true
 * ^caseSensitive = false
 * ^url = $KeyPopCS
@@ -66,13 +81,13 @@ Description: "MMDIntervalCS"
 * #6MMD
 
 
-CodeSystem: OpenHIECS
-Id: OpenHIECS
+CodeSystem: OpenHIE
+Id: OpenHIE
 Title: "OpenHIE CodeSystem"
 Description: "OpenHIE CodeSystem"
 * ^experimental = true
 * ^caseSensitive = false
-* ^url = $OpenHIECS
+* ^url = $OpenHIE
 // * #cohort "cohort"
 // add this because it doesn't show up on snomed term servers
 * #432101000124108 "History of antiretroviral therapy (situation)"
@@ -80,83 +95,85 @@ Description: "OpenHIE CodeSystem"
 
 // Value sets
 
-ValueSet: AgeRangesTXCURRVS
-Id: AgeRangesTXCURRVS
-Title: "AgeRangesTXCURRVS"
-Description: "AgeRangesTXCURRVS"
+ValueSet: AgeRangesTXCURR
+Id: AgeRangesTXCURR
+Title: "AgeRangesTXCURR"
+Description: "AgeRangesTXCURR"
 * ^experimental = true
-* ^url = $AgeRangesTXCURRVS
-* $AgeRangesCS#P0Y--P1Y "< 1 year"
-* $AgeRangesCS#P1Y--P5Y "1-4 years"
-* $AgeRangesCS#P5Y--P10Y "5-9 year"
-* $AgeRangesCS#P15Y--P20Y "15-19 year"
-* $AgeRangesCS#P20Y--P25Y "20-24 year"
-* $AgeRangesCS#P25Y--P30Y "25-29 year"
-* $AgeRangesCS#P30Y--P35Y "30-34 year"
-* $AgeRangesCS#P35Y--P40Y "35-39 year"
-* $AgeRangesCS#P40Y--P45Y "40-45 year"
-* $AgeRangesCS#P45Y--P50Y "45-50 year"
-// * $AgeRangesCS#P50Y--P9999Y "50+ years"
+* ^url = $AgeRangesTXCURR
+* $AgeRanges#P0Y--P1Y "< 1 year"
+* $AgeRanges#P1Y--P5Y "1-4 years"
+* $AgeRanges#P5Y--P10Y "5-9 year"
+* $AgeRanges#P15Y--P20Y "15-19 year"
+* $AgeRanges#P20Y--P25Y "20-24 year"
+* $AgeRanges#P25Y--P30Y "25-29 year"
+* $AgeRanges#P30Y--P35Y "30-34 year"
+* $AgeRanges#P35Y--P40Y "35-39 year"
+* $AgeRanges#P40Y--P45Y "40-45 year"
+* $AgeRanges#P45Y--P50Y "45-50 year"
+// * $AgeRanges#P50Y--P9999Y "50+ years"
 // detailed for TXCURR
-* $AgeRangesCS#P50Y--P55Y "50-55 year"
-* $AgeRangesCS#P55Y--P60Y "55-60 year"
-* $AgeRangesCS#P60Y--P65Y "60-65 year"
-* $AgeRangesCS#P65Y--P9999Y "65+ years"
+* $AgeRanges#P50Y--P55Y "50-55 year"
+* $AgeRanges#P55Y--P60Y "55-60 year"
+* $AgeRanges#P60Y--P65Y "60-65 year"
+* $AgeRanges#P65Y--P9999Y "65+ years"
 
 
-ValueSet: FocusPopVS
-Id: FocusPopVS
-Title: "FocusPopVS"
-Description: "FocusPopVS"
+ValueSet: FocusPop
+Id: FocusPop
+Title: "FocusPop"
+Description: "FocusPop"
 * ^experimental = true
-* ^url = $FocusPopVS
+* ^url = $FocusPop
+* include codes from system $FocusPopCS
 
 
-ValueSet: KeyPopVS
-Id: KeyPopVS
-Title: "KeyPopVS"
-Description: "KeyPopVS"
+ValueSet: KeyPop
+Id: KeyPop
+Title: "KeyPop"
+Description: "KeyPop"
 * ^experimental = true
-* ^url = $KeyPopVS
+* ^url = $KeyPop
 * include codes from system $KeyPopCS
 
 
-ValueSet: MMDIntervalVS
-Id: MMDIntervalVS
-Title: "MMDIntervalVS"
+ValueSet: MMDInterval
+Id: MMDInterval
+Title: "MMDInterval"
 Description: "Multi-month dispensing interval"
 * ^experimental = true
-* ^url = $MMDIntervalVS
+* ^url = $MMDInterval
+* include codes from system $MMDIntervalCS
 
 
-
-ValueSet: OnARVVS
-Id: OnARVVS
+ValueSet: OnARV
+Id: OnARV
 Title: "History of antiretroviral therapy (situation)"
 Description: "History of antiretroviral therapy (situation)"
 * ^experimental = true
-* ^url = $OnARVVS
+* ^url = $OnARV
 * $SCT#432101000124108 "History of antiretroviral therapy (situation)" // This code wasn't found previously on tx.fhir.org. todo: check again.
-* $OpenHIECS#432101000124108 "History of antiretroviral therapy (situation)"
+* $OpenHIE#432101000124108 "History of antiretroviral therapy (situation)"
 * $CIEL#160119 "CURRENTLY TAKING ARV" // q&a, uses interface terminology
 
 
-ValueSet: PregnantVS
-Id: PregnantVS
+ValueSet: Pregnant
+Id: Pregnant
 Title: "Pregnant"
 Description: "Currently pregnant"
 * ^experimental = true
-* ^url = $PregnantVS
+* ^url = $Pregnant
 * $SCT#77386006 "Pregnancy (finding)"
 * $CIEL#1434 "Currently pregnant" // q&a, uses interface terminology
 
 
-ValueSet: SyntheaHIVMedicationsVS
-Id: SyntheaHIVMedicationsVS
+// These are the only codes used in Synthea, and may not be all HIV medications in RxNorm.
+ValueSet: SyntheaHIVMedications
+Id: SyntheaHIVMedications
 Title: "Synthea HIV MedicationsVS"
 Description: "Synthea HIV MedicationsVS"
 * ^experimental = true
-* ^url = $SyntheaHIVMedicationsVS
+* ^url = $SyntheaHIVMedications
 // ART_MonoEra: art_sequence_1987_1994.json
 * $RxNorm#199663 "zidovudine 300 MG Oral Tablet"
 * $RxNorm#284988 "didanosine 400 MG Delayed Release Oral Capsule"
@@ -193,3 +210,23 @@ Description: "Synthea HIV MedicationsVS"
 * $RxNorm#2122519 "dolutegravir 50 MG / lamivudine 300 MG Oral Tablet"
 
 
+// TODO: WIP
+
+ValueSet: SNOMEDHIVMedications
+Id: SNOMEDHIVMedications
+Title: "SNOMEDHIVMedications"
+Description: "SNOMEDHIVMedications"
+* ^experimental = true
+* ^url = $SNOMEDHIVMedications
+* $SCT#376938001 "Zidovudine 300 mg oral tablet"
+
+// TODO: WIP
+
+ValueSet: CIELHIVMedications
+Id: CIELHIVMedications
+Title: "CIELHIVMedications"
+Description: "CIELHIVMedications"
+* ^experimental = true
+* ^url = $CIELHIVMedications
+* $CIEL#86663 "Zidovudine"
+* $CIEL#74807 "Didanosine"

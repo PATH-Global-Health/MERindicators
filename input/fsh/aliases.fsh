@@ -27,24 +27,26 @@ Alias: $synthea = https://github.com/synthetichealth/synthea
 
 
 // Local code systems
-Alias: $AgeRangesCS = https://path-global-health.github.io/MERindicators/CodeSystem/AgeRangesCS
+Alias: $AgeRanges = https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges
 Alias: $CIEL = https://path-global-health.github.io/MERindicators/CodeSystem/CIEL
 Alias: $FocusPopCS = https://path-global-health.github.io/MERindicators/CodeSystem/FocusPopCS
 Alias: $KeyPopCS = https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS
 Alias: $MMDIntervalCS = https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS
-Alias: $OpenHIECS = https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIECS
-Alias: $PEPFARCS = https://path-global-health.github.io/MERindicators/CodeSystem/PEPFARCS
+Alias: $OpenHIE = https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE
+Alias: $PEPFAR = https://path-global-health.github.io/MERindicators/CodeSystem/PEPFAR
 Alias: $PMTCTHIVStatusCodes = https://path-global-health.github.io/MERindicators/CodeSystem/PMTCTHIVStatusCodes
 Alias: $PMTCTARTStatusCodes = https://path-global-health.github.io/MERindicators/CodeSystem/PMTCTARTStatusCodes
 
 
 // Local value sets
-Alias: $AgeRangesTXCURRVS = https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURRVS
-Alias: $FocusPopVS = https://path-global-health.github.io/MERindicators/ValueSet/FocusPopVS
-Alias: $KeyPopVS = https://path-global-health.github.io/MERindicators/ValueSet/KeyPopVS
-Alias: $MMDIntervalVS = https://path-global-health.github.io/MERindicators/ValueSet/MMDIntervalVS
-Alias: $OnARVVS = https://path-global-health.github.io/MERindicators/ValueSet/OnARVVS
-Alias: $PregnantVS = https://path-global-health.github.io/MERindicators/ValueSet/PregnantVS
-Alias: $ViralLoadTestVS = https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest
-Alias: $SyntheaHIVMedicationsVS = https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedicationsVS
+Alias: $AgeRangesTXCURR = https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR
+Alias: $CIELHIVMedications = https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications
+Alias: $FocusPop = https://path-global-health.github.io/MERindicators/ValueSet/FocusPop
+Alias: $KeyPop = https://path-global-health.github.io/MERindicators/ValueSet/KeyPop
+Alias: $MMDInterval = https://path-global-health.github.io/MERindicators/ValueSet/MMDInterval
+Alias: $OnARV = https://path-global-health.github.io/MERindicators/ValueSet/OnARV
+Alias: $Pregnant = https://path-global-health.github.io/MERindicators/ValueSet/Pregnant
+Alias: $SNOMEDHIVMedications = https://path-global-health.github.io/MERindicators/ValueSet/SNOMEDHIVMedications
+Alias: $SyntheaHIVMedications = https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications
+
 
