@@ -1,4 +1,5 @@
 // This is a copy from the openmrs-fhir2-ig example
+// Note that Obs require Encounter
 
 Instance: example-openmrs-Patient
 InstanceOf: OMRSPatient

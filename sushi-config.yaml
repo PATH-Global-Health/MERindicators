@@ -185,6 +185,31 @@ dependencies:
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
 
+parameters:  
+  path-resource:
+    # this is commented out to prevent errors
+    # - input/fsh
+    # - fsh-generated/resources
+    # - input/examples-src/output
+    # for cqf tooling
+    - input/resources/device
+  path-binary: input/cql
+  path-pages:
+    - input/pagecontent
+    - fsh-generated/includes
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'true'
+  autoload-resources: 'true'
+  shownav: 'true'
+  # validation: [allow-any-extensions, no-broken-links]
+  validation: [allow-any-extensions]
+
+
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.

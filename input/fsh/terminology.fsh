@@ -88,7 +88,7 @@ Description: "OpenHIE CodeSystem"
 * ^experimental = true
 * ^caseSensitive = false
 * ^url = $OpenHIE
-// * #cohort "cohort"
+* #cohort "cohort"
 // add this because it doesn't show up on snomed term servers
 * #432101000124108 "History of antiretroviral therapy (situation)"
 

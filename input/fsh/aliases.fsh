@@ -2,7 +2,7 @@
 // Common FSH abbreviations: https://build.fhir.org/ig/HL7/fhir-shorthand/reference.html#appendix-abbreviations
 Alias: $RxNorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $SCT = http://snomed.info/sct
-Alias: $LNC = https://loinc.org
+Alias: $LNC = http://loinc.org
 Alias: $UCUM = http://unitsofmeasure.org
 
 
