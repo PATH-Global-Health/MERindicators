@@ -1,0 +1,459 @@
+{
+  "resourceType": "Bundle",
+  "id": "Example-HIVSimple",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Patient/Patient-HIVSimple",
+      "request": {
+        "url": "Patient",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Patient-HIVSimple",
+        "name": [
+          {
+            "given": [
+              "Mittens"
+            ],
+            "family": "Cat",
+            "text": "Mittens Cat"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-01-01"
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Organization/Organization-HIVSimple1",
+      "request": {
+        "url": "Organization",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "Organization-HIVSimple1",
+        "name": "Organization-HIVSimple Government Hospital",
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "Organization-HIVSimple1"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Location/Location-HIVSimple1",
+      "request": {
+        "url": "Location",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Location",
+        "id": "Location-HIVSimple1",
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "Location-HIVSimple1"
+          }
+        ],
+        "managingOrganization": {
+          "identifier": {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "Organization-HIVSimple1"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Condition/Condition-HIVSimple",
+      "request": {
+        "url": "Condition",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Condition-HIVSimple",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "86406008",
+              "system": "http://snomed.info/sct",
+              "display": "HIV - Human immunodeficiency virus infection"
+            }
+          ]
+        },
+        "onsetDateTime": "2010-01-01"
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Condition/Condition-Pregnancy",
+      "request": {
+        "url": "Condition",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Condition-Pregnancy",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "inactive",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "77386006",
+              "system": "http://snomed.info/sct",
+              "display": "Pregnancy (finding)"
+            }
+          ]
+        },
+        "onsetDateTime": "2020-01-01",
+        "abatementDateTime": "2020-09-30"
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter-HIVSimple",
+      "request": {
+        "url": "Encounter",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "Encounter-HIVSimple",
+        "status": "finished",
+        "class": {
+          "code": "ACUTE",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "serviceProvider": {
+          "identifier": {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "Organization-HIVSimple1"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/Location-HIVSimple1"
+            }
+          }
+        ],
+        "period": {
+          "start": "2011-01-01",
+          "end": "2011-01-01"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport-HIVSimple",
+      "request": {
+        "url": "DiagnosticReport",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DiagnosticReport-HIVSimple",
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/Encounter-HIVSimple"
+        },
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "result": [
+          {
+            "reference": "Observation/Observation-HIVSimple"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "75622-1",
+              "system": "http://loinc.org",
+              "display": "HIV 1 and 2 tests - Meaningful Use set"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation-HIVSimple",
+      "request": {
+        "url": "Observation",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-HIVSimple",
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/Encounter-HIVSimple"
+        },
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "75622-1",
+              "system": "http://loinc.org",
+              "display": "HIV 1 and 2 tests - Meaningful Use set"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "165816005",
+              "system": "http://snomed.info/sct",
+              "display": "HIV Positive"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter-ViralLoad",
+      "request": {
+        "url": "Encounter",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "Encounter-ViralLoad",
+        "status": "finished",
+        "class": {
+          "code": "ACUTE",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "serviceProvider": {
+          "identifier": {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "Organization-HIVSimple1"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/Location-HIVSimple1"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-06-01",
+          "end": "2020-06-01"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport-ViralLoad",
+      "request": {
+        "url": "DiagnosticReport",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DiagnosticReport-ViralLoad",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter-ViralLoad"
+        },
+        "result": [
+          {
+            "reference": "Observation/Observation-ViralLoad"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "25836-8",
+              "system": "http://loinc.org",
+              "display": "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation-ViralLoad",
+      "request": {
+        "url": "Observation",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-ViralLoad",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter-ViralLoad"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "25836-8",
+              "system": "http://loinc.org",
+              "display": "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 741660,
+          "unit": "copies/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "{copies}/mL"
+        },
+        "issued": "2020-06-01T13:28:17.239+02:00"
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter2-ViralLoad",
+      "request": {
+        "url": "Encounter",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "Encounter2-ViralLoad",
+        "status": "finished",
+        "class": {
+          "code": "ACUTE",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "serviceProvider": {
+          "identifier": {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "Organization-HIVSimple1"
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/Location-HIVSimple1"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-06-01",
+          "end": "2020-06-01"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport2-ViralLoad",
+      "request": {
+        "url": "DiagnosticReport",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DiagnosticReport2-ViralLoad",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter2-ViralLoad"
+        },
+        "result": [
+          {
+            "reference": "Observation/Observation2-ViralLoad"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "25836-8",
+              "system": "http://loinc.org",
+              "display": "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation2-ViralLoad",
+      "request": {
+        "url": "Observation",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation2-ViralLoad",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient-HIVSimple"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter2-ViralLoad"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "25836-8",
+              "system": "http://loinc.org",
+              "display": "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 800,
+          "unit": "copies/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "{copies}/mL"
+        },
+        "issued": "2020-09-01T13:28:17.239+02:00"
+      }
+    }
+  ]
+}

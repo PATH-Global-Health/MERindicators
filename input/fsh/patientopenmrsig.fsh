@@ -1,4 +1,5 @@
 // This is a copy from the openmrs-fhir2-ig example
+// Note that Obs require Encounter
 
 Instance: example-openmrs-Patient
 InstanceOf: OMRSPatient
@@ -37,48 +38,6 @@ Description: "Example OpenMRS Patient resource"
 * address.district = "Washington"
 * active = true 
 * deceasedBoolean = false
-
-
-Instance: LocationExample
-InstanceOf: OMRSLocation
-Usage: #example
-Title: "Location Example"
-Description: "Example OpenMRS Location resource"
-// * id 1..1
-// * status 0..1 
-// //* status from LocationStatusVS
-// * name 1..1 
-// * description 1..1
-// * type 0..*
-// * position 0..1 
-// * position.longitude 1..1
-// * position.latitude 1..1 
-// * telecom 0..*
-// * telecom only OMRSLocationContactPoint 
-// * address only OMRSAddress
-// * partOf 0..1
-* id = "a3b793f0-eb53-4cda-92ce-fe0a77106252"
-* status = #active
-* name = "Outpatient Clinic"
-* description = "Outpatient Clinic"
-* type.coding[0].code = #SLEEP
-* type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
-* type.coding[0].display = "Sleep disorders unit"
-* telecom[+].system = #phone
-* telecom[=].value = "(+1) 734-677-7777"
-* telecom[+].system = #fax
-* telecom[=].value = "(+1) 734-677-6622"
-* telecom[+].system = #email
-* telecom[=].value =  "hq@HL7.org"
-* address.use = #home
-* address.line[0] = "3300 Washtenaw Avenue, Suite 227"
-* address[0].city = "Ann Arbor"
-* address[0].district = "Mukono"
-* address[0].state = "MI"
-* address[0].postalCode = "48104"
-* address[0].country = "USA"
-* position[0].latitude = 42.256500
-* position[0].longitude = -83.694710
 
 
 Instance: ConditionExample
