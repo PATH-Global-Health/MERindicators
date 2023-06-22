@@ -1,7 +1,5 @@
 # MER Indicators
 
-Software development is being done in the [dev branch](https://github.com/PATH-Global-Health/MERindicators/tree/dev).
-
 This IG is designed to produce the PEPFAR Monitoring, Evaluation, and Reporting (MER) indicator for the number of persons on ART (TX_CURR) for a particular time period. The definition may be consulted in the [MER Guidance 2022](https://www.state.gov/wp-content/uploads/2021/09/FY22-MER-2.6-Indicator-Reference-Guide.pdf). It is an adaptation of other IGs designed for HIV/AIDS program monitoring but focuses on using patient data from an OpenMRS instance.
 
 ### How to Build
