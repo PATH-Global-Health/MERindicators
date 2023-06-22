@@ -115,6 +115,56 @@ define "Last Location":
   )
 
 
+// define function OpenMRS(identifiers List<Identifier>):
+//   // singleton from (identifiers I where I.extension[0].url = 'http://fhir.openmrs.org/ext/patient/identifier#location')
+//   singleton from (identifiers I where I.extension[0].url = 'http://fhir.openmrs.org/ext/patient/identifier#location')
+
+
+// define "OpenMRS Location Func":
+//   OpenMRS(Patient.identifier)
+
+
+// identifier[].extension[].valueReference.reference
+// // another example...
+// "identifier": [
+//   {
+//     "id": "7124038b-bc12-42d9-a0f8-0778f6861628",
+//     "extension": [
+//       {
+//         "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+//         "valueReference": {
+//           "reference": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+//           "type": "Location",
+//           "display": "Unknown Location"
+//         }
+//       }
+//     ],
+//     "use": "official",
+//     "type": {
+//       "coding": [
+//         {
+//           "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+//         }
+//       ],
+//       "text": "OpenMRS ID"
+//     },
+//     "value": "10009A"
+//   }
+// ],
+
+define "OpenMRS Location":
+  [Patient] P
+    where P.identifier[0].extension[0].url ~ 'http://fhir.openmrs.org/ext/patient/identifier#location'
+  // return P.identifier.extension[0].valueReference.reference.value
+  // return P.identifier
+
+
+// WIP
+// define "Moar OpenMRS": 
+//   FC.Extension(Patient.identifier.extension Ex return Ex.url)
+
+
+
 define "Last serviceProvider":
   // Some of the Synthea encounters do not have a serviceProvider, so this can return nothing
   // Last([Encounter]).serviceProvider.reference.value

@@ -10,6 +10,7 @@ Description: "Base elements required for TXCURR"
 * age_group from AgeRangesTXCURR
 * gender 1..1 Coding "Gender of the patient"
 * gender from http://hl7.org/fhir/ValueSet/administrative-gender
+// this is set as a Reference(Location) in the OpenMRS FHIR IG
 * facility 1..1 Reference "Last known facility where the patient received care"
 * keypop 1..* Coding "Member of key populations"
 * keypop from KeyPop

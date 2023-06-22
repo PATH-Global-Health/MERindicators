@@ -7,6 +7,14 @@ Description: "PatientCIEL"
 * name[=].text = "Mittens Cat"
 * gender = #female
 * birthDate = "1985-01-01"
+* identifier.use = #official
+* identifier.extension[OMRSPatientIdentifierLocationExtension].valueReference = Reference(LocationCIEL)
+  * type = "Location"
+  * display = "Inpatient Ward"
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier.type.text = "OpenMRS ID"
+* identifier.value = "1234567"
+
 
 
 Instance: Condition-PregnancyCIEL
@@ -22,17 +30,16 @@ Description: "Condition-PregnancyCIEL"
 
 // currently on ARV
 
-// Instance: EncounterCIEL
-// InstanceOf: Encounter
-// Title: "EncounterCIEL"
-// Description: "EncounterCIEL"
-// * status = #finished
-// * class = $v3-ActCode#ACUTE
-// * subject = Reference(PatientCIEL)
-// * location[+].location = Reference(LocationCIEL)
-// * period.start = "2011-01-01"
-// * period.end = "2011-01-01"
-// * account[+] = Reference(AccountCIEL)
+Instance: EncounterCIEL
+InstanceOf: Encounter
+Title: "EncounterCIEL"
+Description: "EncounterCIEL"
+* status = #finished
+* class = $v3-ActCode#ACUTE
+* subject = Reference(PatientCIEL)
+* location[+].location = Reference(LocationCIEL)
+* period.start = "2011-01-01"
+* period.end = "2011-01-01"
 
 
 // Instance: DiagnosticReportCIEL
@@ -88,10 +95,10 @@ Description: "ExampleCIEL"
 
 // 
 
-// * entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Encounter/EncounterCIEL"
-// * entry[=].request.url = "Encounter"
-// * entry[=].resource = EncounterCIEL
-// * insert patient-bundle
+* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Encounter/EncounterCIEL"
+* entry[=].request.url = "Encounter"
+* entry[=].resource = EncounterCIEL
+* insert patient-bundle
 
 // * entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReportCIEL"
 // * entry[=].request.url = "DiagnosticReport"
