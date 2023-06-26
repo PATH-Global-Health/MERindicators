@@ -42,7 +42,7 @@ printf "${YEL} FHIR version: ${OUTPUT} ${NC}"
 
 # Let's get some Patient identifiers with extensions
 confirmation
-curl -s --user "admin:Admin123" "$FHIR/Patient?" | jq -r .entry[].resource.identifier[].extension[].url
+curl -s --user "admin:Admin123" "$FHIR/Patient?" | jq -r '.entry[].resource.identifier[].extension[].url'
 # curl -s --user "admin:Admin123" "$FHIR/Patient?identifier.extension.url=http://fhir.openmrs.org/ext/patient/identifier#location|" | jq -r .entry[].resource
 
 confirmation
