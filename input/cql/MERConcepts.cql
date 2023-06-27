@@ -11,7 +11,7 @@ codesystem "LOINC": 'http://loinc.org'
 codesystem "RxNorm": 'http://www.nlm.nih.gov/research/umls/rxnorm'
 
 // local codesystems
-codesystem "CIEL": 'https://path-global-health.github.io/MERindicators/CodeSystem/CIEL'
+codesystem "CIEL": 'https://openconceptlab.org/orgs/CIEL/sources/CIEL'
 codesystem "OpenHIE": 'https://openhie.org'
 
 // FHIR CS and VS

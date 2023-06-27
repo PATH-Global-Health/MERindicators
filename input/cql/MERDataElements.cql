@@ -8,7 +8,6 @@ include MERConcepts called Cx
 // include MERStratifiers called Strat
 
 // parameter "Measurement Period" Interval<DateTime>
-// 
 parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T, @2022-12-31T]
 
 context Patient
@@ -108,6 +107,21 @@ define "Contact date":
 
 
 // Rest of HIVIndicators
+
+
+define "on ART PLIR":
+    ( ["Observation": Cx."Currently taking ARV"] ) o
+        where o.value.coding[1]= Cx."Coded Answer"
+        or o.value.coding[2]= Cx."Coded Answer"
+        and o.status in {'final', 'amended', 'corrected'}
+        and o.effective in day of "Measurement Period"
+
+
+define "on ART PLIR debug":
+  ["Observation": Cx."Currently taking ARV"] o
+    where o.status in {'final', 'amended', 'corrected'}
+    and o.effective in day of "Measurement Period"
+
 
 define "ART Therapy Observation":
   ["Observation": Cx."History of antiretroviral therapy (situation)"] O

@@ -28,8 +28,7 @@ Alias: $synthea = https://github.com/synthetichealth/synthea
 
 // Local code systems
 Alias: $AgeRanges = https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges
-// Alias: $CIEL = https://path-global-health.github.io/MERindicators/CodeSystem/CIEL
-Alias: $CIEL = https://path-global-health.github.io/MERindicators/CodeSystem/CIEL
+Alias: $CIEL = https://openconceptlab.org/orgs/CIEL/sources/CIEL
 Alias: $FocusPopCS = https://path-global-health.github.io/MERindicators/CodeSystem/FocusPopCS
 Alias: $KeyPopCS = https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS
 Alias: $MMDIntervalCS = https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS
