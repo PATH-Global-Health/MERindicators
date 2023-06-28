@@ -30,3 +30,6 @@ Thumbs.db
 
 # cql authoring outputs
 input/tests/results
+
+# .env
+.env

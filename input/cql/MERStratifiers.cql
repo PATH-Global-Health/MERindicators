@@ -107,9 +107,10 @@ define "Last Location":
 
 define "OpenMRS Location":
   [Patient] P
-    // remove #location at end of url
+    // remove #location at end of url for cql engine
     where singleton from {P.identifier.extension[0].url ~ 'http://fhir.openmrs.org/ext/patient/identifier'}
-    or singleton from {P.identifier.extension[0].url ~ 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location'}
+    // this url is in the ig, but is not correct
+    // or singleton from {P.identifier.extension[0].url ~ 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location'}
   return singleton from {P.identifier.extension[0].value.reference}
 
 
@@ -130,10 +131,10 @@ define "Location":
 
 define "Location Deux":
   case
-    // priortize location identifier on patient
-    when "OpenMRS Location" is not null then ("OpenMRS Location")
     // then location of last encounter
     when "Last Location" is null then ("Last Location")
+    // location identifier on patient
+    when "OpenMRS Location" is not null then ("OpenMRS Location")
     // then organization of last encounter
     else singleton from ("Last serviceProvider")
   end
