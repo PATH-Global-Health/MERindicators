@@ -1,0 +1,28 @@
+@fhir = https://demo.openmrs.org/openmrs/ws/fhir2/R4
+@auth = user:pass
+
+GET {{fhir}}/Patient?_count=100 HTTP/1.1
+Authorization: Basic {{auth}}
+###
+
+GET https://demo.openmrs.org/openmrs/ws/fhir2/R4?_getpages=be09eb12-49bd-49a2-adf1-ebe076e8ad4f&_getpagesoffset=10&_count=10&_bundletype=searchset HTTP/1.1
+Authorization: Basic {{auth}}
+
+###
+
+GET {{fhir}}/Observation?subject=1e7e9782-2e97-44a0-ab2e-9d04498d4ca6 HTTP/1.1
+Authorization: Basic {{auth}}
+
+###
+
+GET {{fhir}}/Patient?_lastUpdated=ge2017-01-19 HTTP/1.1
+Authorization: Basic {{auth}}
+###
+
+
+GET {{fhir}}/Observation?subject=b272ddea-bfdd-42c8-9e61-b31d1dfedf25&_lastUpdated=ge2023-06-19 HTTP/1.1
+Authorization: Basic {{auth}}
+
+###
+GET {{fhir}}/Encounter/24638591-9586-4b2b-a511-17bc1b79d1ba HTTP/1.1
+Authorization: Basic {{auth}}
