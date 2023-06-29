@@ -37,7 +37,7 @@ The `_runcqf.sh` script contains these commands and can be invoked directly. The
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://openhie.github.io/MERindicators/branches/main/index.html__  
+Continuous Build: __http://PATH-Global-Health.github.io/MERindicators/branches/main/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
