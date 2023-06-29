@@ -1,5 +1,5 @@
 @fhir = https://demo.openmrs.org/openmrs/ws/fhir2/R4
-@auth = user:pass
+@auth = admin:Admin123
 
 GET {{fhir}}/Patient?_count=100 HTTP/1.1
 Authorization: Basic {{auth}}
@@ -25,4 +25,8 @@ Authorization: Basic {{auth}}
 
 ###
 GET {{fhir}}/Encounter/24638591-9586-4b2b-a511-17bc1b79d1ba HTTP/1.1
+Authorization: Basic {{auth}}
+
+###
+GET {{fhir}}/metadata
 Authorization: Basic {{auth}}

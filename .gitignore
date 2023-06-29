@@ -32,4 +32,5 @@ Thumbs.db
 input/tests/results
 
 # .env
-.env
+.envlocal-templates
+local-template
