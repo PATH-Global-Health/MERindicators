@@ -10,7 +10,7 @@ activate CQL
 loop Copy Data to FHIR/CQL Server
   activate Data
   activate EMR
-  Data -> EMR: Query for FHIR resource updates\n**GET ///<Resource>//\n  ?_lastUpdated=gtYYYY-MM-DD**
+  Data -> EMR: Query for FHIR resource updates\n**GET ///<Resource>//**\n  **?_lastUpdated=gtYYYY-MM-DD**
   EMR -> Data: Return FHIR resources
   deactivate EMR
   Data -> CQL: Save FHIR resources to server\n**PUT ///<Resource>/////<id>//**\nor\n**POST ///<Bundle>//**
@@ -24,7 +24,7 @@ opt Update indicator resources
   CQL -> Report: Return confirmation or error
 end
 
-Report -> CQL: Evaluate measure for the period\n**GET /Measure/TXCURR/$evaluate-measure\n  ?periodStart=YYYY-MM-DD&periodEnd=YYYY-MM-DD**
+Report -> CQL: Evaluate measure for the period\n**GET /Measure/TXCURR/$evaluate-measure**\n  **?periodStart=YYYY-MM-DD&periodEnd=YYYY-MM-DD**
 CQL -> Report: Return MeasureReport
 deactivate Report
 deactivate CQL
