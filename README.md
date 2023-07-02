@@ -48,4 +48,3 @@ Issues:  __https://github.com/openhie/MERIndicators/issues__
 Kanban board:  __https://github.com/orgs/openhie/projects/7/views/1__  
 
 ---
-
