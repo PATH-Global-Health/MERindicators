@@ -144,7 +144,6 @@ pages:
     title: Changes 
   workflows.md:
     title: Workflows
-    generation: markdown
 #  implementation.xml:
 #  examples.xml:
 #    title: Examples Overview
