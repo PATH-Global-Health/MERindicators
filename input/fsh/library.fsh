@@ -4,7 +4,7 @@ RuleSet: lib-common
 * status = #draft
 * experimental = true
 * type = $library-type#logic-library
-// * identifier.system = "https://intrahealth.github.io/simple-hiv-ig/Library"
+// * identifier.system = "https://path-global-health.github.io/MERindicators/Library"
 
 
 Instance: FHIRCommon

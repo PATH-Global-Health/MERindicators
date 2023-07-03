@@ -173,78 +173,78 @@ Title: "Example-HIVSimple"
 Description: "Example-HIVSimple"
 * type = #transaction
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Patient/Patient-HIVSimple"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple"
 * entry[=].request.url = "Patient"
 * entry[=].resource = Patient-HIVSimple
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Organization/Organization-HIVSimple1"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1"
 * entry[=].request.url = "Organization"
 * entry[=].resource = Organization-HIVSimple1
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Location/Location-HIVSimple1"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1"
 * entry[=].request.url = "Location"
 * entry[=].resource = Location-HIVSimple1
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Condition/Condition-HIVSimple"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Condition/Condition-HIVSimple"
 * entry[=].request.url = "Condition"
 * entry[=].resource = Condition-HIVSimple
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Condition/Condition-Pregnancy"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Condition/Condition-Pregnancy"
 * entry[=].request.url = "Condition"
 * entry[=].resource = Condition-Pregnancy
 * insert patient-bundle
 
 // encounter for hiv test
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter-HIVSimple"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple"
 * entry[=].request.url = "Encounter"
 * entry[=].resource = Encounter-HIVSimple
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport-HIVSimple"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-HIVSimple"
 * entry[=].request.url = "DiagnosticReport"
 * entry[=].resource = DiagnosticReport-HIVSimple
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation-HIVSimple"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/Observation-HIVSimple"
 * entry[=].request.url = "Observation"
 * entry[=].resource = Observation-HIVSimple
 * insert patient-bundle
 
 // encounter for viral load
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter-ViralLoad"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad"
 * entry[=].request.url = "Encounter"
 * entry[=].resource = Encounter-ViralLoad
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport-ViralLoad"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-ViralLoad"
 * entry[=].request.url = "DiagnosticReport"
 * entry[=].resource = DiagnosticReport-ViralLoad
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation-ViralLoad"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad"
 * entry[=].request.url = "Observation"
 * entry[=].resource = Observation-ViralLoad
 * insert patient-bundle
 
 // encounter for viral load2
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter2-ViralLoad"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad"
 * entry[=].request.url = "Encounter"
 * entry[=].resource = Encounter2-ViralLoad
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport2-ViralLoad"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport2-ViralLoad"
 * entry[=].request.url = "DiagnosticReport"
 * entry[=].resource = DiagnosticReport2-ViralLoad
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation2-ViralLoad"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/Observation2-ViralLoad"
 * entry[=].request.url = "Observation"
 * entry[=].resource = Observation2-ViralLoad
 * insert patient-bundle

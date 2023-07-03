@@ -4,7 +4,7 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Patient/Patient-HIVSimple",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple",
       "request": {
         "url": "Patient",
         "method": "POST"
@@ -26,7 +26,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Organization/Organization-HIVSimple1",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1",
       "request": {
         "url": "Organization",
         "method": "POST"
@@ -44,7 +44,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Location/Location-HIVSimple1",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1",
       "request": {
         "url": "Location",
         "method": "POST"
@@ -67,7 +67,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Condition/Condition-HIVSimple",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Condition/Condition-HIVSimple",
       "request": {
         "url": "Condition",
         "method": "POST"
@@ -107,7 +107,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Condition/Condition-Pregnancy",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Condition/Condition-Pregnancy",
       "request": {
         "url": "Condition",
         "method": "POST"
@@ -148,7 +148,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter-HIVSimple",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple",
       "request": {
         "url": "Encounter",
         "method": "POST"
@@ -184,7 +184,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport-HIVSimple",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-HIVSimple",
       "request": {
         "url": "DiagnosticReport",
         "method": "POST"
@@ -216,7 +216,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation-HIVSimple",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Observation/Observation-HIVSimple",
       "request": {
         "url": "Observation",
         "method": "POST"
@@ -252,7 +252,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter-ViralLoad",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad",
       "request": {
         "url": "Encounter",
         "method": "POST"
@@ -288,7 +288,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport-ViralLoad",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-ViralLoad",
       "request": {
         "url": "DiagnosticReport",
         "method": "POST"
@@ -320,7 +320,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation-ViralLoad",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad",
       "request": {
         "url": "Observation",
         "method": "POST"
@@ -354,7 +354,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Encounter/Encounter2-ViralLoad",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad",
       "request": {
         "url": "Encounter",
         "method": "POST"
@@ -390,7 +390,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReport2-ViralLoad",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport2-ViralLoad",
       "request": {
         "url": "DiagnosticReport",
         "method": "POST"
@@ -422,7 +422,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Observation/Observation2-ViralLoad",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Observation/Observation2-ViralLoad",
       "request": {
         "url": "Observation",
         "method": "POST"

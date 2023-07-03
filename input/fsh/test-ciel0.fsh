@@ -73,39 +73,39 @@ Title: "ExampleCIEL"
 Description: "ExampleCIEL"
 * type = #transaction
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Patient/PatientCIEL"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Patient/PatientCIEL"
 * entry[=].request.url = "Patient"
 * entry[=].resource = PatientCIEL
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Organization/OrganizationCIEL"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Organization/OrganizationCIEL"
 * entry[=].request.url = "Organization"
 * entry[=].resource = OrganizationCIEL
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Location/LocationCIEL"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Location/LocationCIEL"
 * entry[=].request.url = "Location"
 * entry[=].resource = LocationCIEL
 * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Condition/Condition-PregnancyCIEL"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Condition/Condition-PregnancyCIEL"
 * entry[=].request.url = "Condition"
 * entry[=].resource = Condition-PregnancyCIEL
 * insert patient-bundle
 
 // 
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Encounter/EncounterCIEL"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/EncounterCIEL"
 * entry[=].request.url = "Encounter"
 * entry[=].resource = EncounterCIEL
 * insert patient-bundle
 
-// * entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/DiagnosticReport/DiagnosticReportCIEL"
+// * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReportCIEL"
 // * entry[=].request.url = "DiagnosticReport"
 // * entry[=].resource = DiagnosticReportCIEL
 // * insert patient-bundle
 
-* entry[+].fullUrl = "https://intrahealth.github.io/simple-hiv-ig/Observation/ObservationCIEL"
+* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/ObservationCIEL"
 * entry[=].request.url = "Observation"
 * entry[=].resource = ObservationCIEL
 * insert patient-bundle

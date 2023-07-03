@@ -15,8 +15,8 @@ title: "PATH MER Indicators"
 description: PATH MER Indicators
 status: draft
 license: CC0-1.0
-date: 2023-05-10
-version: 0.0.1
+date: 2023-07-03
+version: 0.1.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only

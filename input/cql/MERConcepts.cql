@@ -35,10 +35,10 @@ code "History of antiretroviral therapy (situation)": '432101000124108' from "Op
 
 // valuesets
 valueset AgeRangesTXCURR: 'https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR'
-// valueset "HIV Testing Services": 'https://intrahealth.github.io/simple-hiv-ig/ValueSet/HIVTestingServices' // Should use HIV tests
+// valueset "HIV Testing Services": 'https://path-global-health.github.io/MERindicators/ValueSet/HIVTestingServices' // Should use HIV tests
 // viral load tests, results
 // commenting out for now and the union
 // valueset "Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)": 'urn:oid:2.16.840.1.113762.1.4.1056.50' // Used by CMS349
-valueset "Viral Load Test": 'https://intrahealth.github.io/simple-hiv-ig/ValueSet/ViralLoadTest'
-// valueset "Synthea HIV Medications": 'https://intrahealth.github.io/simple-hiv-ig/ValueSet/SyntheaHIVMedications'
-valueset "ART Medications": 'https://intrahealth.github.io/simple-hiv-ig/ValueSet/SyntheaHIVMedications'
+valueset "Viral Load Test": 'https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest'
+// valueset "Synthea HIV Medications": 'https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications'
+valueset "ART Medications": 'https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications'

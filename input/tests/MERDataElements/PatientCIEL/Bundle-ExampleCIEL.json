@@ -4,7 +4,7 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Patient/PatientCIEL",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/PatientCIEL",
       "request": {
         "url": "Patient",
         "method": "POST"
@@ -26,7 +26,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Organization/OrganizationCIEL",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Organization/OrganizationCIEL",
       "request": {
         "url": "Organization",
         "method": "POST"
@@ -38,7 +38,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Location/LocationCIEL",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Location/LocationCIEL",
       "request": {
         "url": "Location",
         "method": "POST"
@@ -49,7 +49,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Condition/Condition-PregnancyCIEL",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Condition/Condition-PregnancyCIEL",
       "request": {
         "url": "Condition",
         "method": "POST"
@@ -90,7 +90,7 @@
       }
     },
     {
-      "fullUrl": "https://intrahealth.github.io/simple-hiv-ig/Observation/ObservationCIEL",
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Observation/ObservationCIEL",
       "request": {
         "url": "Observation",
         "method": "POST"
