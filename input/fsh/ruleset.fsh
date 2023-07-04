@@ -1,8 +1,8 @@
 RuleSet: patient-bundle
-* entry[=].request.method = #POST
+* entry[=].request.method = #PUT
 
 RuleSet: location-bundle
-* entry[=].request.method = #POST
+* entry[=].request.method = #PUT
 
 RuleSet: organization-bundle
-* entry[=].request.method = #POST
+* entry[=].request.method = #PUT
