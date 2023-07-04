@@ -74,29 +74,29 @@ Description: "ExampleCIEL"
 * type = #transaction
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Patient/PatientCIEL"
-* entry[=].request.url = "Patient"
+* entry[=].request.url = "Patient/PatientCIEL"
 * entry[=].resource = PatientCIEL
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Organization/OrganizationCIEL"
-* entry[=].request.url = "Organization"
+* entry[=].request.url = "Organization/OrganizationCIEL"
 * entry[=].resource = OrganizationCIEL
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Location/LocationCIEL"
-* entry[=].request.url = "Location"
+* entry[=].request.url = "Location/LocationCIEL"
 * entry[=].resource = LocationCIEL
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Condition/Condition-PregnancyCIEL"
-* entry[=].request.url = "Condition"
+* entry[=].request.url = "Condition/Condition-PregnancyCIEL"
 * entry[=].resource = Condition-PregnancyCIEL
 * insert patient-bundle
 
 // 
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/EncounterCIEL"
-* entry[=].request.url = "Encounter"
+* entry[=].request.url = "Encounter/EncounterCIEL"
 * entry[=].resource = EncounterCIEL
 * insert patient-bundle
 
@@ -106,6 +106,6 @@ Description: "ExampleCIEL"
 // * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/ObservationCIEL"
-* entry[=].request.url = "Observation"
+* entry[=].request.url = "Observation/ObservationCIEL"
 * entry[=].resource = ObservationCIEL
 * insert patient-bundle

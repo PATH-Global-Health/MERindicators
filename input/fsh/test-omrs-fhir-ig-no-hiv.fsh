@@ -198,31 +198,31 @@ Description: "Example0"
 * type = #transaction
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Patient/example-openmrs-Patient"
-* entry[=].request.url = "Patient"
+* entry[=].request.url = "Patient/example-openmrs-Patient"
 * entry[=].resource = example-openmrs-Patient
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Location/LocationExample"
-* entry[=].request.url = "Location"
+* entry[=].request.url = "Location/LocationExample"
 * entry[=].resource = LocationExample
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Condition/ConditionExample"
-* entry[=].request.url = "Condition"
+* entry[=].request.url = "Condition/ConditionExample"
 * entry[=].resource = ConditionExample
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/EncounterExample"
-* entry[=].request.url = "Encounter"
+* entry[=].request.url = "Encounter/EncounterExample"
 * entry[=].resource = EncounterExample
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/DiagnosticReport/example-Openmrs-DiagnosticReport"
-* entry[=].request.url = "DiagnosticReport"
+* entry[=].request.url = "DiagnosticReport/example-Openmrs-DiagnosticReport"
 * entry[=].resource = example-Openmrs-DiagnosticReport
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/example-openmrs-Observation"
-* entry[=].request.url = "Observation"
+* entry[=].request.url = "Observation/example-openmrs-Observation"
 * entry[=].resource = example-openmrs-Observation
 * insert patient-bundle

@@ -174,77 +174,77 @@ Description: "Example-HIVSimple"
 * type = #transaction
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple"
-* entry[=].request.url = "Patient"
+* entry[=].request.url = "Patient/Patient-HIVSimple"
 * entry[=].resource = Patient-HIVSimple
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1"
-* entry[=].request.url = "Organization"
+* entry[=].request.url = "Organization/Organization-HIVSimple1"
 * entry[=].resource = Organization-HIVSimple1
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1"
-* entry[=].request.url = "Location"
+* entry[=].request.url = "Location/Location-HIVSimple1"
 * entry[=].resource = Location-HIVSimple1
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Condition/Condition-HIVSimple"
-* entry[=].request.url = "Condition"
+* entry[=].request.url = "Condition/Condition-HIVSimple"
 * entry[=].resource = Condition-HIVSimple
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Condition/Condition-Pregnancy"
-* entry[=].request.url = "Condition"
+* entry[=].request.url = "Condition/Condition-Pregnancy"
 * entry[=].resource = Condition-Pregnancy
 * insert patient-bundle
 
 // encounter for hiv test
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple"
-* entry[=].request.url = "Encounter"
+* entry[=].request.url = "Encounter/Encounter-HIVSimple"
 * entry[=].resource = Encounter-HIVSimple
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-HIVSimple"
-* entry[=].request.url = "DiagnosticReport"
+* entry[=].request.url = "DiagnosticReport/DiagnosticReport-HIVSimple"
 * entry[=].resource = DiagnosticReport-HIVSimple
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/Observation-HIVSimple"
-* entry[=].request.url = "Observation"
+* entry[=].request.url = "Observation/Observation-HIVSimple"
 * entry[=].resource = Observation-HIVSimple
 * insert patient-bundle
 
 // encounter for viral load
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad"
-* entry[=].request.url = "Encounter"
+* entry[=].request.url = "Encounter/Encounter-ViralLoad"
 * entry[=].resource = Encounter-ViralLoad
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-ViralLoad"
-* entry[=].request.url = "DiagnosticReport"
+* entry[=].request.url = "DiagnosticReport/DiagnosticReport-ViralLoad"
 * entry[=].resource = DiagnosticReport-ViralLoad
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad"
-* entry[=].request.url = "Observation"
+* entry[=].request.url = "Observation/Observation-ViralLoad"
 * entry[=].resource = Observation-ViralLoad
 * insert patient-bundle
 
 // encounter for viral load2
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad"
-* entry[=].request.url = "Encounter"
+* entry[=].request.url = "Encounter/Encounter2-ViralLoad"
 * entry[=].resource = Encounter2-ViralLoad
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport2-ViralLoad"
-* entry[=].request.url = "DiagnosticReport"
+* entry[=].request.url = "DiagnosticReport/DiagnosticReport2-ViralLoad"
 * entry[=].resource = DiagnosticReport2-ViralLoad
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/Observation2-ViralLoad"
-* entry[=].request.url = "Observation"
+* entry[=].request.url = "Observation/Observation2-ViralLoad"
 * entry[=].resource = Observation2-ViralLoad
 * insert patient-bundle

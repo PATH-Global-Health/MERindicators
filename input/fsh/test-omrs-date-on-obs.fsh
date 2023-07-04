@@ -72,21 +72,21 @@ Description: "Example0"
 * type = #transaction
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Patient/PatientOMRS0"
-* entry[=].request.url = "Patient"
+* entry[=].request.url = "Patient/PatientOMRS0"
 * entry[=].resource = PatientOMRS0
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Location/LocationExample"
-* entry[=].request.url = "Location"
+* entry[=].request.url = "Location/LocationExample"
 * entry[=].resource = LocationExample
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Encounter/EncounterOMRS0"
-* entry[=].request.url = "Encounter"
+* entry[=].request.url = "Encounter/EncounterOMRS0"
 * entry[=].resource = EncounterOMRS0
 * insert patient-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Observation/ObservationOMRS0"
-* entry[=].request.url = "Observation"
+* entry[=].request.url = "Observation/ObservationOMRS0"
 * entry[=].resource = ObservationOMRS0
 * insert patient-bundle
