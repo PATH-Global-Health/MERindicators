@@ -1,0 +1,12 @@
+[
+    {"name":"-- DELETE SETUP -- ", "filename":"bundle-delete.json"},
+    {"name":"0. Setup", "filename":"bundle-setup-POST.json"},
+    {"name":"1. Example-HIVSimple", "filename":"Bundle-Example-HIVSimple.json"},
+    {"name":"2. Example-HIVSimple2", "filename":"Bundle-Example-HIVSimple2.json"},
+    {"name":"Example-Locations-Organizations", "filename":"Bundle-Example-Locations-Organizations.json"},
+    {"name":"Example0", "filename":"Bundle-Example0.json"},
+    {"name":"ExampleCIEL", "filename":"Bundle-ExampleCIEL.json"},
+    {"name":"ExampleOMRS0", "filename":"Bundle-ExampleOMRS0.json"},
+    {"name":"ExampleOMRS1", "filename":"Bundle-ExampleOMRS1.json"}
+
+]

@@ -1,0 +1,73 @@
+{
+    "resourceType": "Bundle",
+    "type": "batch",
+    "entry": [
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "Device"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "Measure"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "CodeSystem"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "Library"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "ValueSet"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "Organization"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "Location"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "Patient"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "Observation"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "Encounter"
+        }
+      },
+      {
+        "request": {
+          "method": "DELETE",
+          "url": "DiagnosticReport"
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Setup and test measures</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.23.0/pivot.min.css">
+  <style>
+    #pivot-table-container {
+      width: 100%;
+      height: 500px;
+    }
+
+    #bundle-select {
+      width: 200px;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .status-searching {
+  color: red;
+}
+
+.status-found {
+  color: darkgreen;
+}
+
+.monospaced {
+  font-family: monospace;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+          <div class="col">
+            <p id="server-status" class="status-searching">Waiting for server...</p>          <div class="flex-container">
+              <select id="bundle-select" class="form-select"></select>
+              <button id="post-btn" class="btn btn-secondary">POST</button>
+          </div>
+          </div>
+      </div>
+      <div class="row mt-4">
+          <div class="col">
+            <button id="get-data-btn" class="btn btn-primary">
+              <i class="bi bi-arrow-repeat"></i> Refresh
+            </button>
+            <span id="refresh-status"></span>
+        <div class="row mt-4">
+            <div class="col">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#tab-content1">Table</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#tab-content2">JSON</a>
+                </li>
+              </ul>
+              <div class="tab-content mt-2">
+                <div class="tab-pane fade show active" id="tab-content1">
+                  <p>Status: <span id="status"></span></p>
+                  <p>Type: <span id="type"></span></p>
+                  <p>Date: <span id="date"></span></p>
+                  <div id="pivot-table-container"></div>
+                </div>
+                <div class="tab-pane fade" id="tab-content2">
+                  <pre id="json-response" class="bg-light p-3"></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.23.0/pivot.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var serverUrl;
+      var measureReportExpression;
+
+      var fetchServer = function() {
+        $.getJSON("./config.json")
+          .done(function(data) {
+            fetch(data.serverurl + '/fhir/metadata')
+              .then(response => {
+                if (response.ok) {
+                  clearInterval(serverInterval);
+                  serverUrl = data.serverurl;
+                  measureReportExpression = data["measure-report-expression"];
+                  $("#server-status")
+                    .removeClass('status-searching')
+                    .addClass('status-found')
+                    .html("Server found at: <span class='monospaced'>" + serverUrl + "</span>");
+                }
+              })
+              .catch(error => console.error("Error:", error));
+          })
+          .fail(function(jqXHR, textStatus, errorThrown) {
+            console.error("Failed to fetch config.json:", errorThrown);
+          });
+      };
+
+      // Call fetchServer function immediately when the page loads
+      fetchServer();
+
+      // Then, if server is not found, try again every 5 seconds
+      var serverInterval = setInterval(fetchServer, 5000);
+
+      $.getJSON("./bundles.json")
+        .done(function(data) {
+          data.forEach(bundle => {
+            $("#bundle-select").append(new Option(bundle.name, bundle.filename));
+          });
+        })
+        .fail(function(jqXHR, textStatus, errorThrown) {
+          console.error("Failed to fetch bundles.json:", errorThrown);
+        });
+
+      $("#post-btn").click(function() {
+        var selectedFilename = $("#bundle-select").val();
+
+        if (selectedFilename) {
+          $.getJSON(selectedFilename)
+            .done(function(data) {
+              $.ajax({
+                url: serverUrl + "/fhir",
+                type: "POST",
+                data: JSON.stringify(data),
+                contentType: "application/fhir+json",
+                success: function (data, textStatus, jqXHR) {
+                  console.log("POST request successful:", textStatus);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                  console.error("Failed to send POST request:", errorThrown);
+                }
+              });
+            })
+            .fail(function(jqXHR, textStatus, errorThrown) {
+              console.error("Failed to fetch " + selectedFilename + ":", errorThrown);
+            });
+        } else {
+          console.error("No bundle selected");
+        }
+      });
+
+      $(document).ready(function() {
+        $("#get-data-btn").click(function() {
+    // Fetch the JSON data
+    $.getJSON(serverUrl+measureReportExpression)
+      .done(function(data) {
+        const measureReport = data;
+
+        // Extracting necessary data from MeasureReport
+        const strata = measureReport.group[0].stratifier[0].stratum;
+        const populations = measureReport.group[0].population;
+
+        // Prepare data for PivotTable.js
+        const pivotData = [];
+        const dimensions = ["Stratum", "Population", "Count"];
+
+        // Extract population codes
+        const populationCodes = populations.map(pop => pop.code.coding[0].code);
+
+        strata.forEach((stratum) => {
+          const stratumValue = stratum.value.text;
+
+          populationCodes.forEach((code) => {
+            // Find the population for this code
+            const population = stratum.population.find(
+              (pop) => pop.code.coding[0].code === code
+            );
+
+            // Get the count, or default to 0 if the population isn't present
+            const count = population ? population.count : 0;
+
+            // Add data row
+            pivotData.push([stratumValue, code, count]);
+          });
+        });
+
+        // Transform the data to the format expected by PivotTable.js
+        const transformedData = pivotData.map(item => {
+          return {
+            Stratum: item[0],
+            Population: item[1],
+            Count: item[2]
+          };
+        });
+
+        // Logging PivotTable input data
+        console.log("PivotTable Input Data:", transformedData);
+
+        // Creating PivotTable.js
+        $("#pivot-table-container").pivotUI(transformedData, {
+          cols: ["Stratum"],
+          rows: ["Population"],
+          aggregatorName: "Sum",
+          vals: ["Count"],
+        });
+
+        // Displaying other information
+        $("#status").text(measureReport.status);
+        $("#type").text(measureReport.type);
+        $("#date").text(measureReport.date);
+
+        // Displaying JSON response
+        $("#json-response").text(JSON.stringify(data, null, 2));
+        $("#refresh-status").text("OK").css("color", "darkgreen");
+      })
+      .fail(function(jqXHR, textStatus, errorThrown) {
+        // Displaying error information
+        $("#json-response").text(jqXHR.responseText);
+        $("#refresh-status").text("Error (" + jqXHR.status + ")").css("color", "red");
+        console.error("Failed to fetch JSON data:", errorThrown);
+      });
+  });
+
+    });
+    });
+  </script>
+</body>
+</html>
