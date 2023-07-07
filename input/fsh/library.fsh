@@ -37,6 +37,23 @@ Description: "FHIRHelpers"
 * content.id = "ig-loader-FHIRHelpers.cql"
 
 
+// -----------------------------
+
+
+Instance: Debug
+InstanceOf: Library
+Title: "Debug"
+Description: "Debug"
+* insert lib-common
+* name = "Debug"
+* title = "Debug"
+* description = "Debug"
+* version = "0.1.0"
+* url = "https://path-global-health.github.io/MERindicators/Library/Debug"
+// * identifier.value = "Debug"
+* content.id = "ig-loader-Debug.cql"
+
+
 Instance: MERConcepts
 InstanceOf: Library
 Title: "MERConcepts"

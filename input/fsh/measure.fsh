@@ -93,3 +93,19 @@ Description: "MERTXCURR"
 * insert common-numonly
 
 
+Instance: MERDebug
+InstanceOf: Measure
+Title: "MERDebug"
+Description: "MERDebug"
+* id = "MERDebug"
+* insert meas-common
+* name = "MERDebug"
+* title = "MERDebug"
+* description = "MERDebug"
+* url = "https://path-global-health.github.io/MERindicators/Measure/MERDebug"
+* identifier[0].value = "MERDebug"
+// only numerator
+* scoring = $measure-scoring#cohort
+* library[+] = Canonical(Debug)
+* insert common-numonly
+

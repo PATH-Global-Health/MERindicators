@@ -1,0 +1,126 @@
+{
+  "resourceType": "Bundle",
+  "id": "ExampleCIEL",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/PatientCIEL",
+      "request": {
+        "url": "Patient",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "PatientCIEL",
+        "name": [
+          {
+            "given": [
+              "Mittens"
+            ],
+            "family": "Cat",
+            "text": "Mittens Cat"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-01-01"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Organization/OrganizationCIEL",
+      "request": {
+        "url": "Organization",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "OrganizationCIEL",
+        "name": "OrganizationCIEL Government Hospital"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Location/LocationCIEL",
+      "request": {
+        "url": "Location",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Location",
+        "id": "LocationCIEL"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Condition/Condition-PregnancyCIEL",
+      "request": {
+        "url": "Condition",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Condition-PregnancyCIEL",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "inactive",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/PatientCIEL"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "77386006",
+              "system": "http://snomed.info/sct",
+              "display": "Pregnancy (finding)"
+            }
+          ]
+        },
+        "onsetDateTime": "2020-01-01",
+        "abatementDateTime": "2020-09-30"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Observation/ObservationCIEL",
+      "request": {
+        "url": "Observation",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ObservationCIEL",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/PatientCIEL"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "160119",
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "display": "CURRENTLY TAKING ARV"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "1065",
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "display": "YES"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
