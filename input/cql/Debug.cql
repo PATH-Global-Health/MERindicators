@@ -13,9 +13,8 @@ context Patient
 
 
 
-define "Exists Patient":
+define "Exists Patient": 
   exists ["Patient"] P
-
 
 
 define "Deceased":
@@ -26,6 +25,10 @@ define "Deceased":
   // // alternatively
   // where P.deceased is false
   //   or P.deceased before Today()
+
+
+define "Living Patient":
+  Deceased is null
 
 
 // synthea
