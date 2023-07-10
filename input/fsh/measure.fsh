@@ -93,19 +93,41 @@ Description: "MERTXCURR"
 * insert common-numonly
 
 
-Instance: MERDebug
-InstanceOf: Measure
-Title: "MERDebug"
-Description: "MERDebug"
-* id = "MERDebug"
-* insert meas-common
-* name = "MERDebug"
-* title = "MERDebug"
-* description = "MERDebug"
-* url = "https://path-global-health.github.io/MERindicators/Measure/MERDebug"
-* identifier[0].value = "MERDebug"
-// only numerator
-* scoring = $measure-scoring#cohort
-* library[+] = Canonical(Debug)
-* insert common-numonly
+// Not using for now, will try evaluate library:
+// https://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-library-evaluate.html
+
+// Instance: MERDebug
+// InstanceOf: Measure
+// Title: "MERDebug"
+// Description: "MERDebug"
+// * id = "MERDebug"
+// * insert meas-common
+// * name = "MERDebug"
+// * title = "MERDebug"
+// * description = "MERDebug"
+// * url = "https://path-global-health.github.io/MERindicators/Measure/MERDebug"
+// * identifier[0].value = "MERDebug"
+// // only numerator
+// * scoring = $measure-scoring#cohort
+// * library[+] = Canonical(Debug)
+// * group[+]
+//   * code = $OpenHIE#cohort "cohort"
+//   * population[+]
+//     * description = "Initial Population"
+//     * code = $measure-population#initial-population
+//     * criteria.language = #text/cql
+//     * criteria.expression = "Initial Population"
+//   * population[+]
+//     * description = "Numerator-Exclusion"
+//     * code = $measure-population#numerator-exclusion
+//     * criteria.language = #text/cql
+//     * criteria.expression = "Numerator-Exclusion"
+//   * population[+]
+//     * description = "Numerator"
+//     * code = $measure-population#numerator
+//     * criteria.language = #text/cql
+//     * criteria.expression = "Numerator"
+  // * stratifier[+]
+  //   * criteria.language = #text/cql
+  //   * criteria.expression = "Stratifier"
 

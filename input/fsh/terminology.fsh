@@ -42,6 +42,7 @@ Description: "Columbia International eHealth Laboratory (CIEL)"
 * #1434 "Currently pregnant" // boolean
 * #138405 "Human immunodeficiency virus (HIV) disease" // coded
 * #160119 "CURRENTLY TAKING ARV" // q&a
+* #116128 "Malaria" // For tests from OMRS IG
 // WIP
 * #86663 "Zidovudine"
 * #74807 "Didanosine"

@@ -12,6 +12,12 @@ parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T,
 context Patient
 
 
+
+define "Exists Patient":
+  exists ["Patient"] P
+
+
+
 define "Deceased":
   Patient.deceased is not null 
   and (Patient.deceased is true or Patient.deceased before end of "Measurement Period")

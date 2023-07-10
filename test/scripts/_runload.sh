@@ -14,20 +14,21 @@ export FHIR="http://localhost:8080/fhir"
 # export FHIR="http://ryzen.local:8080/fhir"
 
 export HEADER="Content-Type: application/fhir+json"
-export output="../../../output"
-export OUTPUT="@../../../output"
+export output="../../output"
+export OUTPUT="@../../output"
+export SCRIPTS="../test/scripts"
 
-function confirmation {
-    printf '\nDo you wish to continue (y/n)? '
-    read answer
+# function confirmation {
+#     printf '\nDo you wish to continue (y/n)? '
+#     read answer
 
-    if [ "$answer" != "${answer#[Yy]}" ] ;then 
-        echo ""
-    else
-        echo ""
-        exit
-    fi
-}
+#     if [ "$answer" != "${answer#[Yy]}" ] ;then 
+#         echo ""
+#     else
+#         echo ""
+#         exit
+#     fi
+# }
 
 function Loader() {
     cd ${output}
@@ -38,7 +39,7 @@ function Loader() {
         curl -s -X PUT -H "$HEADER" --data @${FILE} $FHIR/$1/${EYED} | jq .
 
     done
-    cd ../input/tests/server
+    cd ${SCRIPTS}
 }
 
 # on some servers this isn't needed, but it is included here

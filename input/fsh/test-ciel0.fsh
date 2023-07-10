@@ -8,7 +8,11 @@ Description: "PatientCIEL"
 * gender = #female
 * birthDate = "1985-01-01"
 * identifier.use = #official
-* identifier.extension[OMRSPatientIdentifierLocationExtension].valueReference = Reference(LocationCIEL)
+// * identifier.extension[OMRSPatientIdentifierLocationExtension].url = "http://fhir.openmrs.org/ext/patient/identifier#location"
+// * identifier.extension[OMRSPatientIdentifierLocationExtension].valueReference = Reference(LocationCIEL)
+// have to fix the openmrs ig patient.identififer.extension.url until its fixed in that ig
+* identifier.extension.url = "http://fhir.openmrs.org/ext/patient/identifier#location"
+* identifier.extension.valueReference = Reference(LocationCIEL)
   * type = "Location"
   * display = "Inpatient Ward"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
