@@ -111,5 +111,5 @@ Description: "DAKTXCURR"
     * criteria.expression = "Stratification"
   * stratifier[+]
     * criteria.language = #text/cql
-    * criteria.expression = "Dispensing Quantity/Coarse Age/Sex"
+    * criteria.expression = "Dispense Stratification"
 

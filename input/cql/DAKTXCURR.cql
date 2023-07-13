@@ -40,7 +40,7 @@ define "Numerator":
 define "Stratification": 
   DAKStratifiers."Age Group/Sex/Location TXCURR"
 
-define "DispenseStratification":
+define "Dispense Stratification":
   DAKStratifiers."Dispensing Quantity/Coarse Age/Sex/Location"
 
 // define "Initial population":
