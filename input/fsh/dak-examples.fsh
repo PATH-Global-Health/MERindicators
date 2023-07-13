@@ -115,11 +115,6 @@ Description: "Example-DAK-onart"
 * entry[=].request.method = #PUT
 * entry[=].resource = Observation-DAK-onart
 
-* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart"
-* entry[=].request.url = "Observation/Observation-DAK-onart"
-* entry[=].request.method = #PUT
-* entry[=].resource = Observation-DAK-onart
-
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart-dispense"
 * entry[=].request.url = "Observation/Observation-DAK-onart-dispense"
 * entry[=].request.method = #PUT
