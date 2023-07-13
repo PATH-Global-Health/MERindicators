@@ -76,11 +76,61 @@ Description: "DAKTXCURR"
 * description = "DAKTXCURR"
 * url = "https://path-global-health.github.io/MERindicators/Measure/DAKTXCURR"
 * identifier[0].value = "MERTXCURR"
-// only numerator
-* scoring = $measure-scoring#proportion
+// continuous variable version
+/*
+* scoring = $measure-scoring#continuous-variable
+* library[+] = Canonical(DAKTXCURRLibrary)
+* group[+]
+  * population[+]
+    * description = "Initial Population"
+    * code = $measure-population#initial-population
+    * criteria.language = #text/cql
+    * criteria.expression = "Initial Population"
+  * population[+]
+    * description = "Measure Population"
+    * code = $measure-population#measure-population
+    * criteria.language = #text/cql
+    * criteria.expression = "Measure Population"
+  * population[+]
+    * description = "Measure Population Exclusion"
+    * code = $measure-population#measure-population-exclusion
+    * criteria.language = #text/cql
+    * criteria.expression = "Measure Population Exclusion"
+  * population[+]
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "measure-population-identifier"
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod].valueCode = #count
+    * description = "Measure Observation"
+    * code = $measure-population#measure-Observation
+    * criteria.language = #text/cql
+    * criteria.expression = "Measure Observation"
+  * stratifier[+]
+    * criteria.language = #text/cql
+    * criteria.expression = "Stratification"
+  * stratifier[+]
+    * criteria.language = #text/cql
+    * criteria.expression = "Dispense Stratification"
+*/
+// cohort scoring version
+* scoring = $measure-scoring#cohort
 * library[+] = Canonical(DAKTXCURRLibrary)
 * group[+]
   * code = $OpenHIE#cohort "cohort"
+  * population[+]
+    * description = "Initial Population"
+    * code = $measure-population#initial-population
+    * criteria.language = #text/cql
+    * criteria.expression = "Initial Population"
+  * stratifier[+]
+    * criteria.language = #text/cql
+    * criteria.expression = "Stratification"
+  * stratifier[+]
+    * criteria.language = #text/cql
+    * criteria.expression = "Dispense Stratification"
+// proportion scoring version
+/*
+* scoring = $measure-scoring#proportion
+* library[+] = Canonical(DAKTXCURRLibrary)
+* group[+]
   * population[+]
     * description = "Initial Population"
     * code = $measure-population#initial-population
@@ -112,4 +162,4 @@ Description: "DAKTXCURR"
   * stratifier[+]
     * criteria.language = #text/cql
     * criteria.expression = "Dispense Stratification"
-
+*/

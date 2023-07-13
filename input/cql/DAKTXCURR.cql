@@ -18,8 +18,26 @@ include DAKStratifiers called DAKStratifiers
 context Patient
 
 define "Initial Population": 
-  PatientData."PLHIV"
+  PatientData."On ART" and not PatientData."Deceased"
 
+/* For continuous variable
+
+define "Initial Population": 
+  PatientData."On ART"
+
+define "Measure Population":
+  PatientData."On ART"
+
+define "Measure Population Exclusion":
+  PatientData."Deceased"
+
+define "Measure Observation":
+  PatientData."On ART"
+*/
+
+/* for proportion
+define "Initial Population": 
+  PatientData."PLHIV"
 
 define "Denominator":
   PatientData."PLHIV"
@@ -35,7 +53,7 @@ define "Numerator-Exclusion":
 
 define "Numerator":
   PatientData."On ART"
-
+*/
 
 define "Stratification": 
   DAKStratifiers."Age Group/Sex/Location TXCURR"
