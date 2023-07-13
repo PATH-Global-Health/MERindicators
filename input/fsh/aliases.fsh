@@ -4,6 +4,7 @@ Alias: $RxNorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $SCT = http://snomed.info/sct
 Alias: $LNC = http://loinc.org
 Alias: $UCUM = http://unitsofmeasure.org
+Alias: $ICD11 = http://hl7.org/fhir/sid/icd-11
 
 
 // FHIR CS & VS

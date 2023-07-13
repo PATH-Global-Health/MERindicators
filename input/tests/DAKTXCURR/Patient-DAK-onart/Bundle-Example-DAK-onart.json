@@ -1,0 +1,255 @@
+{
+  "resourceType": "Bundle",
+  "id": "Example-DAK-onart",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart",
+      "request": {
+        "url": "Patient/Patient-DAK-onart",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Patient-DAK-onart",
+        "name": [
+          {
+            "given": [
+              "Mittens"
+            ],
+            "family": "Cat",
+            "text": "Mittens Cat"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-01-01"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-hiv",
+      "request": {
+        "url": "Condition/Condition-DAK-onart-hiv",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Condition-DAK-onart-hiv",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-DAK-onart"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "737378009",
+              "system": "http://snomed.info/sct",
+              "display": "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding)"
+            }
+          ]
+        },
+        "onsetDateTime": "2020-01-01"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-art",
+      "request": {
+        "url": "Condition/Condition-DAK-onart-art",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Condition-DAK-onart-art",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-DAK-onart"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "182929008",
+              "system": "http://snomed.info/sct",
+              "display": "Drug prophylaxis (procedure)"
+            }
+          ]
+        },
+        "onsetDateTime": "2020-01-01"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Encounter-DAK-onart",
+      "request": {
+        "url": "Encounter/Encounter-DAK-onartonart",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "Encounter-DAK-onart",
+        "status": "finished",
+        "class": {
+          "code": "ACUTE",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/Patient-DAK-onart"
+        },
+        "serviceProvider": {
+          "reference": "Organization/Organization-DAK"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location-DAL"
+            }
+          }
+        ],
+        "period": {
+          "start": "2023-07-03",
+          "end": "2023-07-03"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart",
+      "request": {
+        "url": "Observation/Observation-DAK-onart",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-DAK-onart",
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/Encounter-DAK-onart"
+        },
+        "subject": {
+          "reference": "Patient/Patient-DAK-onart"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "182929008",
+              "system": "http://snomed.info/sct",
+              "display": "Drug prophylaxis (procedure)"
+            }
+          ]
+        },
+        "valueBoolean": true,
+        "effectiveDateTime": "2023-07-03"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart",
+      "request": {
+        "url": "Observation/Observation-DAK-onart",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-DAK-onart",
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/Encounter-DAK-onart"
+        },
+        "subject": {
+          "reference": "Patient/Patient-DAK-onart"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "182929008",
+              "system": "http://snomed.info/sct",
+              "display": "Drug prophylaxis (procedure)"
+            }
+          ]
+        },
+        "valueBoolean": true,
+        "effectiveDateTime": "2023-07-03"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart-dispense",
+      "request": {
+        "url": "Observation/Observation-DAK-onart-dispense",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-DAK-onart-dispense",
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/Encounter-DAK-onart"
+        },
+        "subject": {
+          "reference": "Patient/Patient-DAK-onart"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "258703001",
+              "system": "http://snomed.info/sct",
+              "display": "Day (qualifier value)"
+            }
+          ]
+        },
+        "valueInteger": 90,
+        "effectiveDateTime": "2023-07-03"
+      }
+    },
+    {
+      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/MedicationRequest-DAK-onart",
+      "request": {
+        "url": "MedicationRequest/MedicationRequest-DAK-onart",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MedicationRequest-DAK-onart",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/Patient-DAK-onart"
+        },
+        "authoredOn": "2023-07-03",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "XM35P4",
+              "system": "http://hl7.org/fhir/sid/icd-11",
+              "display": "Abacavir"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
