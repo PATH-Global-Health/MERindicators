@@ -77,7 +77,7 @@ Description: "DAKTXCURR"
 * url = "https://path-global-health.github.io/MERindicators/Measure/DAKTXCURR"
 * identifier[0].value = "MERTXCURR"
 // only numerator
-* scoring = $measure-scoring#cohort
+* scoring = $measure-scoring#proportion
 * library[+] = Canonical(DAKTXCURRLibrary)
 * group[+]
   * code = $OpenHIE#cohort "cohort"
