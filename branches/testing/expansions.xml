@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="435e0209-89ad-484d-abc5-577b36252b11"/>
+  <meta>
+    <lastUpdated value="2023-07-08T15:38:48.725+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/Pregnant"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-CIEL.html">CIEL v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jan 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-77386006"> </a>  
+                  <a href="http://snomed.info/id/77386006">77386006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pregnancy (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-1434"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-1434">1434</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Currently pregnant</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/Pregnant"/>
+        <version value="0.1.0"/>
+        <name value="Pregnant"/>
+        <title value="Pregnant"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:b4804b96-f169-4f15-af74-1bbc183aed24"/>
+          <timestamp value="2023-07-08T15:39:42+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Pregnancy (finding)"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="1434"/>
+            <display value="Currently pregnant"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/SNOMEDHIVMedications"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2023</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-376938001"> </a>  
+                  <a href="http://snomed.info/id/376938001">376938001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Zidovudine 300 mg oral tablet</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/SNOMEDHIVMedications"/>
+        <version value="0.1.0"/>
+        <name value="SNOMEDHIVMedications"/>
+        <title value="SNOMEDHIVMedications"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3b9afdf8-e9af-4e39-ad9b-fcf89e659926"/>
+          <timestamp value="2023-07-08T15:39:43+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="376938001"/>
+            <display value="Zidovudine 300 mg oral tablet"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/MMDInterval"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MMDIntervalCS.html">MMDIntervalCS v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-MMDIntervalCS-3to5MMD"> </a>  
+                  <a href="CodeSystem-MMDIntervalCS.html#MMDIntervalCS-3to5MMD">3to5MMD</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-MMDIntervalCS-6MMD"> </a>  
+                  <a href="CodeSystem-MMDIntervalCS.html#MMDIntervalCS-6MMD">6MMD</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/MMDInterval"/>
+        <version value="0.1.0"/>
+        <name value="MMDInterval"/>
+        <title value="MMDInterval"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f928a1cb-1a48-4f51-82f2-a9826beb8142"/>
+          <timestamp value="2023-07-08T15:39:43+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS"/>
+            <code value="3to5MMD"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS"/>
+            <code value="6MMD"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/KeyPop"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-KeyPopCS.html">KeyPop v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-PWID"> </a>  
+                  <a href="CodeSystem-KeyPopCS.html#KeyPopCS-PWID">PWID</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td>
+                <td>People who inject drugs (PWID)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-MSM"> </a>  
+                  <a href="CodeSystem-KeyPopCS.html#KeyPopCS-MSM">MSM</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td>
+                <td>Men who have sex with men (MSM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-TG"> </a>  
+                  <a href="CodeSystem-KeyPopCS.html#KeyPopCS-TG">TG</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td>
+                <td>Transgender people (TG)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-FSW"> </a>  
+                  <a href="CodeSystem-KeyPopCS.html#KeyPopCS-FSW">FSW</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td>
+                <td>Female sex workers (FSW)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-PRISON"> </a>  
+                  <a href="CodeSystem-KeyPopCS.html#KeyPopCS-PRISON">PRISON</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td>
+                <td>People in prison and other closed settings</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/KeyPop"/>
+        <version value="0.1.0"/>
+        <name value="KeyPop"/>
+        <title value="KeyPop"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:85857512-37e1-41da-9b5c-781953e8085e"/>
+          <timestamp value="2023-07-08T15:39:43+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"/>
+            <code value="PWID"/>
+            <display value="People who inject drugs (PWID)"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"/>
+            <code value="MSM"/>
+            <display value="Men who have sex with men (MSM)"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"/>
+            <code value="TG"/>
+            <display value="Transgender people (TG)"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"/>
+            <code value="FSW"/>
+            <display value="Female sex workers (FSW)"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"/>
+            <code value="PRISON"/>
+            <display value="People in prison and other closed settings"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CIEL.html">CIEL v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-86663"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-86663">86663</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-74807"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-74807">74807</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Didanosine</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications"/>
+        <version value="0.1.0"/>
+        <name value="CIELHIVMedications"/>
+        <title value="CIELHIVMedications"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6bcc90d4-debd-4978-bac3-45a496b1b61b"/>
+          <timestamp value="2023-07-08T15:39:44+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="86663"/>
+            <display value="Zidovudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="74807"/>
+            <display value="Didanosine"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 15 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-AgeRanges.html">AgeRanges v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P0Y--P1Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P0Y--P1Y">P0Y--P1Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>&lt; 1 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P1Y--P5Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P1Y--P5Y">P1Y--P5Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>1-4 years</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P5Y--P10Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P5Y--P10Y">P5Y--P10Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>5-9 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P10Y--P15Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P10Y--P15Y">P10Y--P15Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>10-15 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P15Y--P20Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P15Y--P20Y">P15Y--P20Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>15-19 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P20Y--P25Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P20Y--P25Y">P20Y--P25Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>20-24 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P25Y--P30Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P25Y--P30Y">P25Y--P30Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>25-29 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P30Y--P35Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P30Y--P35Y">P30Y--P35Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>30-34 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P35Y--P40Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P35Y--P40Y">P35Y--P40Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>35-39 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P40Y--P45Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P40Y--P45Y">P40Y--P45Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>40-45 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P45Y--P50Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P45Y--P50Y">P45Y--P50Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>45-50 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P50Y--P55Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P50Y--P55Y">P50Y--P55Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>50-55 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P55Y--P60Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P55Y--P60Y">P55Y--P60Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>55-60 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P60Y--P65Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P60Y--P65Y">P60Y--P65Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>60-65 year</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P65Y--P9999Y"> </a>  
+                  <a href="CodeSystem-AgeRanges.html#AgeRanges-P65Y--P9999Y">P65Y--P9999Y</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td>
+                <td>65+ years</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR"/>
+        <version value="0.1.0"/>
+        <name value="AgeRangesTXCURR"/>
+        <title value="AgeRangesTXCURR"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:42e20a1f-a423-4d9e-8ae4-ffd873cfa2f5"/>
+          <timestamp value="2023-07-08T15:39:44+00:00"/>
+          <total value="15"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P0Y--P1Y"/>
+            <display value="&lt; 1 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P1Y--P5Y"/>
+            <display value="1-4 years"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P5Y--P10Y"/>
+            <display value="5-9 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P10Y--P15Y"/>
+            <display value="10-15 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P15Y--P20Y"/>
+            <display value="15-19 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P20Y--P25Y"/>
+            <display value="20-24 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P25Y--P30Y"/>
+            <display value="25-29 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P30Y--P35Y"/>
+            <display value="30-34 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P35Y--P40Y"/>
+            <display value="35-39 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P40Y--P45Y"/>
+            <display value="40-45 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P45Y--P50Y"/>
+            <display value="45-50 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P50Y--P55Y"/>
+            <display value="50-55 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P55Y--P60Y"/>
+            <display value="55-60 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P60Y--P65Y"/>
+            <display value="60-65 year"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+            <code value="P65Y--P9999Y"/>
+            <display value="65+ years"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/OnARV"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-CIEL.html">CIEL v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-OpenHIE.html">OpenHIE CodeSystem v0.1.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-OpenHIE-432101000124108"> </a>  
+                  <a href="CodeSystem-OpenHIE.html#OpenHIE-432101000124108">432101000124108</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE</td>
+                <td>History of antiretroviral therapy (situation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-160119"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-160119">160119</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>CURRENTLY TAKING ARV</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/OnARV"/>
+        <version value="0.1.0"/>
+        <name value="OnARV"/>
+        <title value="History of antiretroviral therapy (situation)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d34065d0-f7ef-4599-91bc-03ce50584174"/>
+          <timestamp value="2023-07-08T15:39:44+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE"/>
+            <code value="432101000124108"/>
+            <display value="History of antiretroviral therapy (situation)"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="160119"/>
+            <display value="CURRENTLY TAKING ARV"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 28 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on RxNorm version ??</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-199663"> </a>  199663
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>zidovudine 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-284988"> </a>  284988
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>didanosine 400 MG Delayed Release Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-313760"> </a>  313760
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>zalcitabine 0.75 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-313110"> </a>  313110
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>stavudine 40 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-349491"> </a>  349491
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>lamivudine 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-200082"> </a>  200082
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>lamivudine 150 MG / zidovudine 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-310988"> </a>  310988
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>indinavir 400 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-859863"> </a>  859863
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>saquinavir mesylate 500 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-317150"> </a>  317150
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>ritonavir 100 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-403978"> </a>  403978
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>nelfinavir 625 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-349477"> </a>  349477
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>efavirenz 600 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-597730"> </a>  597730
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>lopinavir 200 MG / ritonavir 50 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-349251"> </a>  349251
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-403875"> </a>  403875
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>emtricitabine 200 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-476556"> </a>  476556
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1147334"> </a>  1147334
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-643066"> </a>  643066
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1306292"> </a>  1306292
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-744842"> </a>  744842
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>raltegravir 400 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1433873"> </a>  1433873
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>dolutegravir 50 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-402109"> </a>  402109
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>fosamprenavir 700 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-664741"> </a>  664741
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>atazanavir 300 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1359269"> </a>  1359269
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>darunavir 800 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-2003249"> </a>  2003249
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1747691"> </a>  1747691
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1999667"> </a>  1999667
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1721613"> </a>  1721613
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-2122519"> </a>  2122519
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>dolutegravir 50 MG / lamivudine 300 MG Oral Tablet</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications"/>
+        <version value="0.1.0"/>
+        <name value="SyntheaHIVMedications"/>
+        <title value="Synthea HIV MedicationsVS"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:86186fac-2906-4596-bdd0-50b9b06128a6"/>
+          <timestamp value="2023-07-08T15:39:46+00:00"/>
+          <total value="28"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.nlm.nih.gov/research/umls/rxnorm|??"/>
+          </parameter>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="199663"/>
+            <display value="zidovudine 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="284988"/>
+            <display value="didanosine 400 MG Delayed Release Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="313760"/>
+            <display value="zalcitabine 0.75 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="313110"/>
+            <display value="stavudine 40 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="349491"/>
+            <display value="lamivudine 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="200082"/>
+            <display value="lamivudine 150 MG / zidovudine 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="310988"/>
+            <display value="indinavir 400 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="859863"/>
+            <display value="saquinavir mesylate 500 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="317150"/>
+            <display value="ritonavir 100 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="403978"/>
+            <display value="nelfinavir 625 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="349477"/>
+            <display value="efavirenz 600 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="597730"/>
+            <display value="lopinavir 200 MG / ritonavir 50 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="349251"/>
+            <display value="tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="403875"/>
+            <display value="emtricitabine 200 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="476556"/>
+            <display value="emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1147334"/>
+            <display value="emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="643066"/>
+            <display value="efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1306292"/>
+            <display value="cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="744842"/>
+            <display value="raltegravir 400 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1433873"/>
+            <display value="dolutegravir 50 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="402109"/>
+            <display value="fosamprenavir 700 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="664741"/>
+            <display value="atazanavir 300 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1359269"/>
+            <display value="darunavir 800 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="2003249"/>
+            <display value="lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1747691"/>
+            <display value="emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1999667"/>
+            <display value="bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1721613"/>
+            <display value="cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="2122519"/>
+            <display value="dolutegravir 50 MG / lamivudine 300 MG Oral Tablet"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/FocusPop"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-FocusPopCS.html">FocusPopCS v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/FocusPop"/>
+        <version value="0.1.0"/>
+        <name value="FocusPop"/>
+        <title value="FocusPop"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-08T15:38:48+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:990e6340-4290-41a1-8980-992b46247cdd"/>
+          <timestamp value="2023-07-08T15:39:46+00:00"/>
+          <total value="0"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/FocusPopCS|0.1.0"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

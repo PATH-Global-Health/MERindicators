@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KeyPop",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-KeyPopCS.html\"><code>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</code></a></li></ul></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/ValueSet/KeyPop",
+  "version" : "0.1.0",
+  "name" : "KeyPop",
+  "title" : "KeyPop",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-07-13T22:55:34+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "KeyPop",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"
+    }]
+  }
+}

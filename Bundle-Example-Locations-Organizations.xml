@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Example-Locations-Organizations"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1"/>
+    <resource>
+      <Organization>
+        <id value="Organization-HIVSimple1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="Organization-HIVSimple1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;Organization-HIVSimple1&quot; </p></div><p><b>identifier</b>: id: Organization-HIVSimple1</p><p><b>name</b>: Organization-HIVSimple Government Hospital</p></div>
+        </text>
+        <identifier>
+          <system value="https://github.com/synthetichealth/synthea"/>
+          <value value="Organization-HIVSimple1"/>
+        </identifier>
+        <name value="Organization-HIVSimple Government Hospital"/>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple2"/>
+    <resource>
+      <Organization>
+        <id value="Organization-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="Organization-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;Organization-HIVSimple2&quot; </p></div><p><b>identifier</b>: id: Organization-HIVSimple2</p><p><b>name</b>: Organization-HIVSimple2 Government Hospital</p></div>
+        </text>
+        <identifier>
+          <system value="https://github.com/synthetichealth/synthea"/>
+          <value value="Organization-HIVSimple2"/>
+        </identifier>
+        <name value="Organization-HIVSimple2 Government Hospital"/>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1"/>
+    <resource>
+      <Location>
+        <id value="Location-HIVSimple1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="Location-HIVSimple1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;Location-HIVSimple1&quot; </p></div><p><b>identifier</b>: id: Location-HIVSimple1</p><p><b>managingOrganization</b>: <span>id: Organization-HIVSimple1</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://github.com/synthetichealth/synthea"/>
+          <value value="Location-HIVSimple1"/>
+        </identifier>
+        <managingOrganization>
+          <identifier>
+            <system value="https://github.com/synthetichealth/synthea"/>
+            <value value="Organization-HIVSimple1"/>
+          </identifier>
+        </managingOrganization>
+      </Location>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Location"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple2"/>
+    <resource>
+      <Location>
+        <id value="Location-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="Location-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;Location-HIVSimple2&quot; </p></div><p><b>identifier</b>: id: Location-HIVSimple2</p><p><b>managingOrganization</b>: <span>id: Organization-HIVSimple2</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://github.com/synthetichealth/synthea"/>
+          <value value="Location-HIVSimple2"/>
+        </identifier>
+        <managingOrganization>
+          <identifier>
+            <system value="https://github.com/synthetichealth/synthea"/>
+            <value value="Organization-HIVSimple2"/>
+          </identifier>
+        </managingOrganization>
+      </Location>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Location"/>
+    </request>
+  </entry>
+</Bundle>

@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Bundle/Example-Locations-Organizations> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-Locations-Organizations"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Organization"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple2> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Organization"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Location"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple2> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Location"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1> a fhir:Organization ;
+  fhir:id [ fhir:v "Organization-HIVSimple1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Organization-HIVSimple1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Organization-HIVSimple1&quot; </p></div><p><b>identifier</b>: id: Organization-HIVSimple1</p><p><b>name</b>: Organization-HIVSimple Government Hospital</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Organization-HIVSimple1" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Organization-HIVSimple Government Hospital"] . # 
+
+<https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple2> a fhir:Organization ;
+  fhir:id [ fhir:v "Organization-HIVSimple2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Organization-HIVSimple2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Organization-HIVSimple2&quot; </p></div><p><b>identifier</b>: id: Organization-HIVSimple2</p><p><b>name</b>: Organization-HIVSimple2 Government Hospital</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Organization-HIVSimple2" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Organization-HIVSimple2 Government Hospital"] . # 
+
+<https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1> a fhir:Location ;
+  fhir:id [ fhir:v "Location-HIVSimple1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"Location-HIVSimple1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;Location-HIVSimple1&quot; </p></div><p><b>identifier</b>: id: Location-HIVSimple1</p><p><b>managingOrganization</b>: <span>id: Organization-HIVSimple1</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Location-HIVSimple1" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Organization-HIVSimple1" ]
+     ]
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple2> a fhir:Location ;
+  fhir:id [ fhir:v "Location-HIVSimple2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"Location-HIVSimple2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;Location-HIVSimple2&quot; </p></div><p><b>identifier</b>: id: Location-HIVSimple2</p><p><b>managingOrganization</b>: <span>id: Organization-HIVSimple2</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Location-HIVSimple2" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Organization-HIVSimple2" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

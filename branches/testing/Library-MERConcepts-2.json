@@ -1,0 +1,165 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableLocators,DisableListDemotion,DisableListPromotion",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "MERConcepts",
+         "system" : "https://path-global-health.github.io/MERindicators",
+         "version" : "0.1.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "locator" : "3:1-3:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "locator" : "5:1-5:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRHelpers",
+            "version" : "4.0.1"
+         }, {
+            "locator" : "6:1-6:44",
+            "localIdentifier" : "FC",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRCommon",
+            "version" : "4.0.1"
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "locator" : "9:1-9:48",
+            "name" : "SNOMED-CT",
+            "id" : "http://snomed.info/sct",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "10:1-10:38",
+            "name" : "LOINC",
+            "id" : "http://loinc.org",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "11:1-11:66",
+            "name" : "RxNorm",
+            "id" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "14:1-14:70",
+            "name" : "CIEL",
+            "id" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "15:1-15:43",
+            "name" : "OpenHIE",
+            "id" : "https://openhie.org",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "locator" : "18:1-18:90",
+            "name" : "HL7 Administrative Gender",
+            "id" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "37:1-37:103",
+            "name" : "AgeRangesTXCURR",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "42:1-42:103",
+            "name" : "Viral Load Test",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "44:1-44:111",
+            "name" : "ART Medications",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "locator" : "22:1-22:85",
+            "name" : "Pregnancy (finding)",
+            "id" : "77386006",
+            "display" : "Pregnancy (finding)",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "22:45-22:55",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "locator" : "23:1-23:64",
+            "name" : "Pregnant",
+            "id" : "146789000",
+            "display" : "Pregnant",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "23:35-23:45",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "locator" : "25:1-25:126",
+            "name" : "Prenatal initial visit (regime/therapy)",
+            "id" : "424441002",
+            "display" : "Prenatal initial visit (regime/therapy)",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "25:66-25:76",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "locator" : "26:1-26:96",
+            "name" : "Pregnancy status - Reported",
+            "id" : "11449-6",
+            "display" : "Pregnancy status - Reported",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "26:52-26:58",
+               "name" : "LOINC"
+            }
+         }, {
+            "locator" : "30:1-30:80",
+            "name" : "Currently taking ARV",
+            "id" : "160119",
+            "display" : "Currently taking ARV",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "30:44-30:49",
+               "name" : "CIEL"
+            }
+         }, {
+            "locator" : "31:1-31:53",
+            "name" : "Coded Answer",
+            "id" : "1065",
+            "display" : "Yes",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "31:34-31:39",
+               "name" : "CIEL"
+            }
+         }, {
+            "locator" : "32:1-32:142",
+            "name" : "History of antiretroviral therapy (situation)",
+            "id" : "432101000124108",
+            "display" : "History of antiretroviral therapy (situation)",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "32:78-32:86",
+               "name" : "OpenHIE"
+            }
+         } ]
+      }
+   }
+}

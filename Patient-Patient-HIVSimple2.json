@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Patient",
+  "id" : "Patient-HIVSimple2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Mittens Cat</b> female, DoB: 1985-01-01</p><hr/></div>"
+  },
+  "name" : [{
+    "text" : "Mittens Cat",
+    "family" : "Cat",
+    "given" : ["Mittens"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1985-01-01"
+}

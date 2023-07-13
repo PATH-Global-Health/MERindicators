@@ -1,0 +1,119 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableLocators,DisableListDemotion,DisableListPromotion",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "TXCURR",
+         "system" : "https://path-global-health.github.io/MERindicators",
+         "version" : "0.1.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "locator" : "9:1-9:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "locator" : "11:1-11:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "http://hl7.org/fhir/FHIRHelpers",
+            "version" : "4.0.1"
+         }, {
+            "locator" : "12:1-12:44",
+            "localIdentifier" : "FC",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRCommon",
+            "version" : "4.0.1"
+         }, {
+            "locator" : "14:1-14:29",
+            "localIdentifier" : "Cx",
+            "path" : "https://path-global-health.github.io/MERindicators/MERConcepts"
+         }, {
+            "locator" : "15:1-15:42",
+            "localIdentifier" : "PatientData",
+            "path" : "https://path-global-health.github.io/MERindicators/MERDataElements"
+         }, {
+            "locator" : "16:1-16:44",
+            "localIdentifier" : "MERStratifiers",
+            "path" : "https://path-global-health.github.io/MERindicators/MERStratifiers"
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "locator" : "18:1-18:15",
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "locator" : "18:1-18:15",
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "locator" : "18:1-18:15",
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "locator" : "20:1-20:33",
+            "name" : "Initial Population",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "20:30-20:33",
+               "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+               "value" : "true",
+               "type" : "Literal"
+            }
+         }, {
+            "locator" : "22:1-23:24",
+            "name" : "Numerator-Exclusion",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "23:3-23:24",
+               "name" : "Deceased",
+               "libraryName" : "PatientData",
+               "type" : "ExpressionRef"
+            }
+         }, {
+            "locator" : "27:1-28:22",
+            "name" : "Numerator",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "28:3-28:22",
+               "name" : "On ART",
+               "libraryName" : "PatientData",
+               "type" : "ExpressionRef"
+            }
+         }, {
+            "locator" : "31:1-32:48",
+            "name" : "Stratifier",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "32:3-32:48",
+               "name" : "Age Group/Sex/Location TXCURR",
+               "libraryName" : "MERStratifiers",
+               "type" : "ExpressionRef"
+            }
+         } ]
+      }
+   }
+}

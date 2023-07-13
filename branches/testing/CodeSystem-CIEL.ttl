@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/CodeSystem/CIEL> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CIEL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://openconceptlab.org/orgs/CIEL/sources/CIEL</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1065<a name=\"CIEL-1065\"> </a></td><td>YES</td></tr><tr><td style=\"white-space:nowrap\">1066<a name=\"CIEL-1066\"> </a></td><td>NO</td></tr><tr><td style=\"white-space:nowrap\">1067<a name=\"CIEL-1067\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">1434<a name=\"CIEL-1434\"> </a></td><td>Currently pregnant</td></tr><tr><td style=\"white-space:nowrap\">138405<a name=\"CIEL-138405\"> </a></td><td>Human immunodeficiency virus (HIV) disease</td></tr><tr><td style=\"white-space:nowrap\">160119<a name=\"CIEL-160119\"> </a></td><td>CURRENTLY TAKING ARV</td></tr><tr><td style=\"white-space:nowrap\">86663<a name=\"CIEL-86663\"> </a></td><td>Zidovudine</td></tr><tr><td style=\"white-space:nowrap\">74807<a name=\"CIEL-74807\"> </a></td><td>Didanosine</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://openconceptlab.org/orgs/CIEL/sources/CIEL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CIEL"] ; # 
+  fhir:title [ fhir:v "CIEL"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-08T15:38:48+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Columbia International eHealth Laboratory (CIEL)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1065" ] ;
+     fhir:display [ fhir:v "YES" ]
+  ] [
+     fhir:code [ fhir:v "1066" ] ;
+     fhir:display [ fhir:v "NO" ]
+  ] [
+     fhir:code [ fhir:v "1067" ] ;
+     fhir:display [ fhir:v "Unknown" ]
+  ] [
+     fhir:code [ fhir:v "1434" ] ;
+     fhir:display [ fhir:v "Currently pregnant" ]
+  ] [
+     fhir:code [ fhir:v "138405" ] ;
+     fhir:display [ fhir:v "Human immunodeficiency virus (HIV) disease" ]
+  ] [
+     fhir:code [ fhir:v "160119" ] ;
+     fhir:display [ fhir:v "CURRENTLY TAKING ARV" ]
+  ] [
+     fhir:code [ fhir:v "86663" ] ;
+     fhir:display [ fhir:v "Zidovudine" ]
+  ] [
+     fhir:code [ fhir:v "74807" ] ;
+     fhir:display [ fhir:v "Didanosine" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

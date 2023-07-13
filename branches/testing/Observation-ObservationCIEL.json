@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ObservationCIEL",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationCIEL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ObservationCIEL&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: CURRENTLY TAKING ARV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CIEL.html\">CIEL</a>#160119)</span></p><p><b>subject</b>: <a href=\"Patient-PatientCIEL.html\">Patient/PatientCIEL</a> &quot; CAT&quot;</p><p><b>value</b>: YES <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CIEL.html\">CIEL</a>#1065)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+      "code" : "160119",
+      "display" : "CURRENTLY TAKING ARV"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PatientCIEL"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+      "code" : "1065",
+      "display" : "YES"
+    }]
+  }
+}

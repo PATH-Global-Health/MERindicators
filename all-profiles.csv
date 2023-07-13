@@ -1,0 +1,29 @@
+"Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"TXCURRelements","TXCURRelements","TXCURRelements","","","",0,*,"","","","null {[]} {[]}
+","TXCURRelements","Base elements required for TXCURR","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"TXCURRelements","TXCURRelements.deceased[x]","TXCURRelements.deceased[x]","","","",0,1,"","","","boolean {[]} {[]}
+dateTime {[]} {[]}","Indication if the human is deceased","Indication if the human is deceased","","","","","","","","","",,,,,"",,,,"TXCURRelements.deceased[x]",0,1,"",""
+"TXCURRelements","TXCURRelements.birthDate","TXCURRelements.birthDate","","","",0,1,"","","","dateTime {[]} {[]}
+","The date of birth, if known","The date of birth, if known","","","","","","","","","",,,,,"",,,,"TXCURRelements.birthDate",0,1,"",""
+"TXCURRelements","TXCURRelements.age-end-reporting-period","TXCURRelements.age_end_reporting_period","","","",1,1,"","","","integer {[]} {[]}
+","Age at end of reporting period","Age at end of reporting period","","","","","","","","","",,,,,"",,,,"TXCURRelements.age_end_reporting_period",1,1,"",""
+"TXCURRelements","TXCURRelements.age-group","TXCURRelements.age_group","","","",1,1,"","","","Coding {[]} {[]}
+","Age group TXCURR VS","Age group TXCURR VS","","","","","","","","","",,"required","","https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR","",,,,"TXCURRelements.age_group",1,1,"",""
+"TXCURRelements","TXCURRelements.gender","TXCURRelements.gender","","","",1,1,"","","","Coding {[]} {[]}
+","Gender of the patient","Gender of the patient","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/administrative-gender","",,,,"TXCURRelements.gender",1,1,"",""
+"TXCURRelements","TXCURRelements.facility","TXCURRelements.facility","","","",1,1,"","","","Reference {[]} {[]}
+","Last known facility where the patient received care","Last known facility where the patient received care","","","","","","","","","",,,,,"",,,,"TXCURRelements.facility",1,1,"",""
+"TXCURRelements","TXCURRelements.keypop","TXCURRelements.keypop","","","",1,*,"","","","Coding {[]} {[]}
+","Member of key populations","Member of key populations","","","","","","","","","",,"required","","https://path-global-health.github.io/MERindicators/ValueSet/KeyPop","",,,,"TXCURRelements.keypop",1,*,"",""
+"TXCURRelements","TXCURRelements.focuspop","TXCURRelements.focuspop","","","",0,*,"","","","Coding {[]} {[]}
+","Member of focus populations","Member of focus populations","","","","","","","","","",,"required","","https://path-global-health.github.io/MERindicators/ValueSet/FocusPop","",,,,"TXCURRelements.focuspop",0,*,"",""
+"TXCURRelements","TXCURRelements.pregnant","TXCURRelements.pregnant","","","",1,1,"","","","Coding {[]} {[]}
+","If patient is pregnant during reporting period","If patient is pregnant during reporting period","","","","","","","","","",,"required","","https://path-global-health.github.io/MERindicators/ValueSet/Pregnant","",,,,"TXCURRelements.pregnant",1,1,"",""
+"TXCURRelements","TXCURRelements.on-arv","TXCURRelements.on_arv","","","",1,1,"","","","Coding {[]} {[]}
+","Currently on ARV","Currently on ARV","","","","","","","","","",,"required","","https://path-global-health.github.io/MERindicators/ValueSet/OnARV","",,,,"TXCURRelements.on_arv",1,1,"",""
+"TXCURRelements","TXCURRelements.pep-prep","TXCURRelements.pep_prep","","","",1,1,"","","","boolean {[]} {[]}
+","If ARV was prescribed for PEP or PrEP","If ARV was prescribed for PEP or PrEP","","","","","","","","","",,,,,"",,,,"TXCURRelements.pep_prep",1,1,"",""
+"TXCURRelements","TXCURRelements.dispening-quantity","TXCURRelements.dispening_quantity","","","",0,1,"","","","boolean {[]} {[]}
+","Multi-month dispensing (MMD), least 3 months of ARVs","Multi-month dispensing (MMD), least 3 months of ARVs","","","","","","","","","",,,,,"",,,,"TXCURRelements.dispening_quantity",0,1,"",""
+"TXCURRelements","TXCURRelements.mmd-interval","TXCURRelements.mmd_interval","","","",0,1,"","","","Coding {[]} {[]}
+","disaggregates MMD data by dispensing interval (3–5MMD and 6MMD)","disaggregates MMD data by dispensing interval (3–5MMD and 6MMD)","","","","","","","","","",,"required","","https://path-global-health.github.io/MERindicators/ValueSet/MMDInterval","",,,,"TXCURRelements.mmd_interval",0,1,"",""

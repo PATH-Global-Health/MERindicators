@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableLocators,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <identifier id="DAKDataElements" system="https://path-global-health.github.io/MERindicators" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def locator="3:1-3:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1"/>
+   </usings>
+   <includes>
+      <def locator="5:1-5:35" localIdentifier="FHIRHelpers" path="https://path-global-health.github.io/MERindicators/FHIRHelpers" version="4.0.1"/>
+      <def locator="6:1-6:44" localIdentifier="FC" path="https://path-global-health.github.io/MERindicators/FHIRCommon" version="4.0.1"/>
+      <def locator="7:1-7:29" localIdentifier="Cx" path="https://path-global-health.github.io/MERindicators/DAKConcepts"/>
+   </includes>
+   <parameters>
+      <def locator="11:1-11:94" name="Measurement Period" accessLevel="Public">
+         <default locator="11:59-11:94" lowClosed="true" highClosed="true" xsi:type="Interval">
+            <low locator="11:68-11:79" xsi:type="DateTime">
+               <year valueType="t:Integer" value="2023" xsi:type="Literal"/>
+               <month valueType="t:Integer" value="1" xsi:type="Literal"/>
+               <day valueType="t:Integer" value="1" xsi:type="Literal"/>
+            </low>
+            <high locator="11:82-11:93" xsi:type="DateTime">
+               <year valueType="t:Integer" value="2023" xsi:type="Literal"/>
+               <month valueType="t:Integer" value="12" xsi:type="Literal"/>
+               <day valueType="t:Integer" value="31" xsi:type="Literal"/>
+            </high>
+         </default>
+         <parameterTypeSpecifier locator="11:32-11:49" xsi:type="IntervalTypeSpecifier">
+            <pointType locator="11:41-11:48" name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+         </parameterTypeSpecifier>
+      </def>
+   </parameters>
+   <contexts>
+      <def locator="13:1-13:15" name="Patient"/>
+   </contexts>
+   <statements>
+      <def locator="13:1-13:15" name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="13:1-13:15" dataType="fhir:Patient" templateId="http://hl7.org/fhir/StructureDefinition/Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def locator="16:1-18:87" name="Deceased" context="Patient" accessLevel="Public">
+         <expression locator="17:3-18:87" xsi:type="And">
+            <operand locator="17:3-17:30" xsi:type="Not">
+               <operand locator="17:3-17:30" xsi:type="IsNull">
+                  <operand locator="17:3-17:18" path="deceased" xsi:type="Property">
+                     <source locator="17:3-17:9" name="Patient" xsi:type="ExpressionRef"/>
+                  </operand>
+               </operand>
+            </operand>
+            <operand locator="18:7-18:87" xsi:type="Or">
+               <operand locator="18:8-18:31" xsi:type="IsTrue">
+                  <operand name="ToBoolean" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand asType="fhir:boolean" xsi:type="As">
+                        <operand locator="18:8-18:23" path="deceased" xsi:type="Property">
+                           <source locator="18:8-18:14" name="Patient" xsi:type="ExpressionRef"/>
+                        </operand>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand locator="18:36-18:86" xsi:type="Before">
+                  <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand asType="fhir:dateTime" xsi:type="As">
+                        <operand locator="18:36-18:51" path="deceased" xsi:type="Property">
+                           <source locator="18:36-18:42" name="Patient" xsi:type="ExpressionRef"/>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand locator="18:60-18:86" xsi:type="End">
+                     <operand locator="18:67-18:86" name="Measurement Period" xsi:type="ParameterRef"/>
+                  </operand>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def locator="26:1-30:45" name="HIV Condition" context="Patient" accessLevel="Public">
+         <expression locator="27:3-30:45" xsi:type="Query">
+            <source locator="27:3-27:15" alias="C">
+               <expression locator="27:3-27:13" dataType="fhir:Condition" templateId="http://hl7.org/fhir/StructureDefinition/Condition" xsi:type="Retrieve"/>
+            </source>
+            <where locator="28:5-30:45" xsi:type="And">
+               <operand locator="28:11-29:49" xsi:type="And">
+                  <operand locator="28:11-28:34" xsi:type="InValueSet">
+                     <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand locator="28:11-28:16" path="code" scope="C" xsi:type="Property"/>
+                     </code>
+                     <valueset locator="28:21-28:34" name="DAK PLHIV" libraryName="Cx"/>
+                  </operand>
+                  <operand locator="29:9-29:49" xsi:type="InValueSet">
+                     <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand locator="29:9-29:24" path="clinicalStatus" scope="C" xsi:type="Property"/>
+                     </code>
+                     <valueset locator="29:29-29:49" name="Active Condition" libraryName="FC"/>
+                  </operand>
+               </operand>
+               <operand locator="30:9-30:45" xsi:type="Equivalent">
+                  <operand name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="30:9-30:28" path="verificationStatus" scope="C" xsi:type="Property"/>
+                  </operand>
+                  <operand xsi:type="ToConcept">
+                     <operand locator="30:32-30:45" name="confirmed" libraryName="FC" xsi:type="CodeRef"/>
+                  </operand>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def locator="33:1-34:27" name="Is HIV Positive" context="Patient" accessLevel="Public">
+         <expression locator="34:3-34:27" xsi:type="Exists">
+            <operand locator="34:9-34:27" name="HIV Condition" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def locator="37:1-38:31" name="Is HIV Negative" context="Patient" accessLevel="Public">
+         <expression locator="38:3-38:31" xsi:type="Not">
+            <operand locator="38:7-38:31" xsi:type="Exists">
+               <operand locator="38:13-38:31" name="HIV Condition" xsi:type="ExpressionRef"/>
+            </operand>
+         </expression>
+      </def>
+      <def locator="53:1-56:28" name="ART Therapy Observation" context="Patient" accessLevel="Public">
+         <expression locator="54:3-56:28" xsi:type="Query">
+            <source locator="54:3-54:17" alias="O">
+               <expression locator="54:3-54:15" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" xsi:type="Retrieve"/>
+            </source>
+            <where locator="55:5-56:28" xsi:type="And">
+               <operand locator="55:11-55:35" xsi:type="InValueSet">
+                  <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="55:11-55:16" path="code" scope="O" xsi:type="Property"/>
+                  </code>
+                  <valueset locator="55:21-55:35" name="DAK On ART" libraryName="Cx"/>
+               </operand>
+               <operand locator="56:11-56:28" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="56:11-56:18" path="status" scope="O" xsi:type="Property"/>
+                  </operand>
+                  <operand locator="56:22-56:28" valueType="t:String" value="final" xsi:type="Literal"/>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def locator="58:1-62:47" name="ART Therapy Condition" context="Patient" accessLevel="Public">
+         <expression locator="59:3-62:47" xsi:type="Query">
+            <source locator="59:3-59:15" alias="C">
+               <expression locator="59:3-59:13" dataType="fhir:Condition" templateId="http://hl7.org/fhir/StructureDefinition/Condition" xsi:type="Retrieve"/>
+            </source>
+            <where locator="60:5-62:47" xsi:type="And">
+               <operand locator="60:11-61:51" xsi:type="And">
+                  <operand locator="60:11-60:35" xsi:type="InValueSet">
+                     <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand locator="60:11-60:16" path="code" scope="C" xsi:type="Property"/>
+                     </code>
+                     <valueset locator="60:21-60:35" name="DAK On ART" libraryName="Cx"/>
+                  </operand>
+                  <operand locator="61:11-61:51" xsi:type="InValueSet">
+                     <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand locator="61:11-61:26" path="clinicalStatus" scope="C" xsi:type="Property"/>
+                     </code>
+                     <valueset locator="61:31-61:51" name="Active Condition" libraryName="FC"/>
+                  </operand>
+               </operand>
+               <operand locator="62:11-62:47" xsi:type="Equivalent">
+                  <operand name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="62:11-62:30" path="verificationStatus" scope="C" xsi:type="Property"/>
+                  </operand>
+                  <operand xsi:type="ToConcept">
+                     <operand locator="62:34-62:47" name="confirmed" libraryName="FC" xsi:type="CodeRef"/>
+                  </operand>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def locator="65:1-69:50" name="ART Therapy Medication" context="Patient" accessLevel="Public">
+         <expression locator="66:3-69:50" xsi:type="Query">
+            <source locator="66:3-66:25" alias="M">
+               <expression locator="66:3-66:23" dataType="fhir:MedicationRequest" templateId="http://hl7.org/fhir/StructureDefinition/MedicationRequest" xsi:type="Retrieve"/>
+            </source>
+            <where locator="68:5-69:50" xsi:type="And">
+               <operand locator="68:11-68:50" xsi:type="InValueSet">
+                  <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand asType="fhir:CodeableConcept" xsi:type="As">
+                        <operand locator="68:11-68:22" path="medication" scope="M" xsi:type="Property"/>
+                     </operand>
+                  </code>
+                  <valueset locator="68:27-68:50" name="DAK ART Medications" libraryName="Cx"/>
+               </operand>
+               <operand locator="69:11-69:50" xsi:type="In">
+                  <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="69:11-69:22" path="authoredOn" scope="M" xsi:type="Property"/>
+                  </operand>
+                  <operand locator="69:31-69:50" name="Measurement Period" xsi:type="ParameterRef"/>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def locator="73:1-76:58" name="ART Dates" context="Patient" accessLevel="Public">
+         <expression locator="74:3-76:58" xsi:type="Union">
+            <operand locator="74:3-75:64" xsi:type="Union">
+               <operand locator="74:3-74:62" xsi:type="Query">
+                  <source locator="74:4-74:30" alias="O">
+                     <expression locator="74:4-74:28" name="ART Therapy Observation" xsi:type="ExpressionRef"/>
+                  </source>
+                  <return locator="74:32-74:61">
+                     <expression locator="74:39-74:61" strict="false" xsi:type="As">
+                        <operand locator="74:39-74:49" path="effective" scope="O" xsi:type="Property"/>
+                        <asTypeSpecifier locator="74:54-74:61" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                     </expression>
+                  </return>
+               </operand>
+               <operand locator="75:11-75:64" xsi:type="Query">
+                  <source locator="75:12-75:36" alias="C">
+                     <expression locator="75:12-75:34" name="ART Therapy Condition" xsi:type="ExpressionRef"/>
+                  </source>
+                  <return locator="75:38-75:63">
+                     <expression locator="75:45-75:63" strict="false" xsi:type="As">
+                        <operand locator="75:45-75:51" path="onset" scope="C" xsi:type="Property"/>
+                        <asTypeSpecifier locator="75:56-75:63" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                     </expression>
+                  </return>
+               </operand>
+            </operand>
+            <operand locator="76:11-76:58" xsi:type="Query">
+               <source locator="76:12-76:37" alias="M">
+                  <expression locator="76:12-76:35" name="ART Therapy Medication" xsi:type="ExpressionRef"/>
+               </source>
+               <return locator="76:39-76:57">
+                  <expression locator="76:46-76:57" path="authoredOn" scope="M" xsi:type="Property"/>
+               </return>
+            </operand>
+         </expression>
+      </def>
+      <def locator="113:1-116:28" name="Stopped ART Observation" context="Patient" accessLevel="Public">
+         <expression locator="114:3-116:28" xsi:type="Query">
+            <source locator="114:3-114:17" alias="O">
+               <expression locator="114:3-114:15" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" xsi:type="Retrieve"/>
+            </source>
+            <where locator="115:5-116:28" xsi:type="And">
+               <operand locator="115:11-115:40" xsi:type="InValueSet">
+                  <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="115:11-115:16" path="code" scope="O" xsi:type="Property"/>
+                  </code>
+                  <valueset locator="115:21-115:40" name="DAK ART Stopped" libraryName="Cx"/>
+               </operand>
+               <operand locator="116:11-116:28" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="116:11-116:18" path="status" scope="O" xsi:type="Property"/>
+                  </operand>
+                  <operand locator="116:22-116:28" valueType="t:String" value="final" xsi:type="Literal"/>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def locator="123:1-124:65" name="Date of Last Stopped ART" context="Patient" accessLevel="Public">
+         <expression locator="124:3-124:65" xsi:type="Max">
+            <source xsi:type="Query">
+               <source alias="X">
+                  <expression locator="124:7-124:64" xsi:type="Query">
+                     <source locator="124:7-124:33" alias="O">
+                        <expression locator="124:7-124:31" name="Stopped ART Observation" xsi:type="ExpressionRef"/>
+                     </source>
+                     <return locator="124:35-124:64">
+                        <expression locator="124:42-124:64" strict="false" xsi:type="As">
+                           <operand locator="124:42-124:52" path="effective" scope="O" xsi:type="Property"/>
+                           <asTypeSpecifier locator="124:57-124:64" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                        </expression>
+                     </return>
+                  </expression>
+               </source>
+               <return distinct="false">
+                  <expression name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand name="X" xsi:type="AliasRef"/>
+                  </expression>
+               </return>
+            </source>
+         </expression>
+      </def>
+      <def locator="79:1-80:18" name="Date of Last Evidence of ART" context="Patient" accessLevel="Public">
+         <expression locator="80:3-80:18" xsi:type="Max">
+            <source xsi:type="Query">
+               <source alias="X">
+                  <expression locator="80:7-80:17" name="ART Dates" xsi:type="ExpressionRef"/>
+               </source>
+               <return distinct="false">
+                  <expression name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand name="X" xsi:type="AliasRef"/>
+                  </expression>
+               </return>
+            </source>
+         </expression>
+      </def>
+      <def locator="118:1-121:28" name="HIV Transfer Observation" context="Patient" accessLevel="Public">
+         <expression locator="119:3-121:28" xsi:type="Query">
+            <source locator="119:3-119:17" alias="O">
+               <expression locator="119:3-119:15" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" xsi:type="Retrieve"/>
+            </source>
+            <where locator="120:5-121:28" xsi:type="And">
+               <operand locator="120:11-120:44" xsi:type="InValueSet">
+                  <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="120:11-120:16" path="code" scope="O" xsi:type="Property"/>
+                  </code>
+                  <valueset locator="120:21-120:44" name="DAK HIV Transferred" libraryName="Cx"/>
+               </operand>
+               <operand locator="121:11-121:28" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="121:11-121:18" path="status" scope="O" xsi:type="Property"/>
+                  </operand>
+                  <operand locator="121:22-121:28" valueType="t:String" value="final" xsi:type="Literal"/>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def locator="126:1-127:66" name="Date of Last HIV Transfer" context="Patient" accessLevel="Public">
+         <expression locator="127:3-127:66" xsi:type="Max">
+            <source xsi:type="Query">
+               <source alias="X">
+                  <expression locator="127:7-127:65" xsi:type="Query">
+                     <source locator="127:7-127:34" alias="O">
+                        <expression locator="127:7-127:32" name="HIV Transfer Observation" xsi:type="ExpressionRef"/>
+                     </source>
+                     <return locator="127:36-127:65">
+                        <expression locator="127:43-127:65" strict="false" xsi:type="As">
+                           <operand locator="127:43-127:53" path="effective" scope="O" xsi:type="Property"/>
+                           <asTypeSpecifier locator="127:58-127:65" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                        </expression>
+                     </return>
+                  </expression>
+               </source>
+               <return distinct="false">
+                  <expression name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand name="X" xsi:type="AliasRef"/>
+                  </expression>
+               </return>
+            </source>
+         </expression>
+      </def>
+      <def locator="86:1-99:3" name="On ART" context="Patient" accessLevel="Public">
+         <expression locator="87:3-99:3" xsi:type="Or">
+            <operand locator="87:3-95:3" xsi:type="And">
+               <operand locator="88:5-93:5" xsi:type="Or">
+                  <operand locator="88:7-88:64" xsi:type="Exists">
+                     <operand locator="88:14-88:64" xsi:type="Query">
+                        <source locator="88:15-88:27" alias="D">
+                           <expression locator="88:15-88:25" name="ART Dates" xsi:type="ExpressionRef"/>
+                        </source>
+                        <where locator="88:29-88:63" xsi:type="In">
+                           <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="88:35" name="D" xsi:type="AliasRef"/>
+                           </operand>
+                           <operand locator="88:44-88:63" name="Measurement Period" xsi:type="ParameterRef"/>
+                        </where>
+                     </operand>
+                  </operand>
+                  <operand locator="89:10-92:7" xsi:type="Exists">
+                     <operand locator="89:17-92:7" xsi:type="Query">
+                        <source locator="90:9-90:33" alias="C">
+                           <expression locator="90:9-90:31" name="ART Therapy Condition" xsi:type="ExpressionRef"/>
+                        </source>
+                        <where locator="91:11-91:158" xsi:type="Overlaps">
+                           <operand locator="91:17-91:128" lowClosed="true" highClosed="true" xsi:type="Interval">
+                              <low locator="91:26-91:73" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="91:49-91:72" strict="false" xsi:type="As">
+                                    <operand locator="91:49-91:55" path="onset" scope="C" xsi:type="Property"/>
+                                    <asTypeSpecifier locator="91:60-91:72" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 </operand>
+                              </low>
+                              <high locator="91:76-91:127" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="91:99-91:126" strict="false" xsi:type="As">
+                                    <operand locator="91:99-91:109" path="abatement" scope="C" xsi:type="Property"/>
+                                    <asTypeSpecifier locator="91:114-91:126" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 </operand>
+                              </high>
+                           </operand>
+                           <operand locator="91:139-91:158" name="Measurement Period" xsi:type="ParameterRef"/>
+                        </where>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand locator="94:9-94:126" xsi:type="If">
+                  <condition locator="94:12-94:46" xsi:type="Exists">
+                     <operand locator="94:18-94:46" name="Stopped ART Observation" xsi:type="ExpressionRef"/>
+                  </condition>
+                  <then locator="94:53-94:116" xsi:type="Before">
+                     <operand locator="94:53-94:78" name="Date of Last Stopped ART" xsi:type="ExpressionRef"/>
+                     <operand locator="94:87-94:116" name="Date of Last Evidence of ART" xsi:type="ExpressionRef"/>
+                  </then>
+                  <else locator="94:123-94:126" valueType="t:Boolean" value="true" xsi:type="Literal"/>
+               </operand>
+            </operand>
+            <operand locator="97:3-99:3" xsi:type="And">
+               <operand locator="97:5-97:59" xsi:type="In">
+                  <operand locator="97:5-97:31" name="Date of Last HIV Transfer" xsi:type="ExpressionRef"/>
+                  <operand locator="97:40-97:59" name="Measurement Period" xsi:type="ParameterRef"/>
+               </operand>
+               <operand locator="98:9-98:124" xsi:type="If">
+                  <condition locator="98:12-98:47" xsi:type="Exists">
+                     <operand locator="98:19-98:47" name="Stopped ART Observation" xsi:type="ExpressionRef"/>
+                  </condition>
+                  <then locator="98:54-98:114" xsi:type="Before">
+                     <operand locator="98:54-98:79" name="Date of Last Stopped ART" xsi:type="ExpressionRef"/>
+                     <operand locator="98:88-98:114" name="Date of Last HIV Transfer" xsi:type="ExpressionRef"/>
+                  </then>
+                  <else locator="98:121-98:124" valueType="t:Boolean" value="true" xsi:type="Literal"/>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def locator="40:1-41:31" name="PLHIV" context="Patient" accessLevel="Public">
+         <expression locator="41:3-41:31" xsi:type="Or">
+            <operand locator="41:3-41:19" name="Is HIV Positive" xsi:type="ExpressionRef"/>
+            <operand locator="41:24-41:31" name="On ART" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def locator="44:1-45:48" name="Pregnant" context="Patient" accessLevel="Public">
+         <expression locator="45:3-45:48" xsi:type="Exists">
+            <operand locator="45:10-45:48" dataType="fhir:Condition" templateId="http://hl7.org/fhir/StructureDefinition/Condition" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+               <codes xsi:type="ToList">
+                  <operand locator="45:24-45:47" name="Pregnancy (finding)" libraryName="Cx" xsi:type="CodeRef"/>
+               </codes>
+            </operand>
+         </expression>
+      </def>
+      <def locator="82:1-83:18" name="Date of First Evidence of ART" context="Patient" accessLevel="Public">
+         <expression locator="83:3-83:18" xsi:type="Min">
+            <source xsi:type="Query">
+               <source alias="X">
+                  <expression locator="83:7-83:17" name="ART Dates" xsi:type="ExpressionRef"/>
+               </source>
+               <return distinct="false">
+                  <expression name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand name="X" xsi:type="AliasRef"/>
+                  </expression>
+               </return>
+            </source>
+         </expression>
+      </def>
+      <def locator="101:1-105:55" name="Dispensed Observations" context="Patient" accessLevel="Public">
+         <expression locator="102:3-105:55" xsi:type="Query">
+            <source locator="102:3-102:17" alias="O">
+               <expression locator="102:3-102:15" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" xsi:type="Retrieve"/>
+            </source>
+            <where locator="103:5-104:28" xsi:type="And">
+               <operand locator="103:11-103:32" xsi:type="InValueSet">
+                  <code name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="103:11-103:16" path="code" scope="O" xsi:type="Property"/>
+                  </code>
+                  <valueset locator="103:21-103:32" name="DAK MMD" libraryName="Cx"/>
+               </operand>
+               <operand locator="104:11-104:28" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="104:11-104:18" path="status" scope="O" xsi:type="Property"/>
+                  </operand>
+                  <operand locator="104:22-104:28" valueType="t:String" value="final" xsi:type="Literal"/>
+               </operand>
+            </where>
+            <sort locator="105:5-105:55">
+               <by locator="105:13-105:55" direction="desc" xsi:type="ByExpression">
+                  <expression locator="105:13-105:50" xsi:type="DateFrom">
+                     <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand locator="105:23-105:50" strict="false" xsi:type="As">
+                           <operand locator="105:24-105:32" name="effective" xsi:type="IdentifierRef"/>
+                           <asTypeSpecifier locator="105:37-105:49" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                        </operand>
+                     </operand>
+                  </expression>
+               </by>
+            </sort>
+         </expression>
+      </def>
+      <def locator="107:1-108:34" name="Most Recent Dispensed Observation" context="Patient" accessLevel="Public">
+         <expression locator="108:3-108:34" xsi:type="First">
+            <source locator="108:10-108:33" name="Dispensed Observations" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def locator="110:1-111:56" name="Most Recent Dispensed Days" context="Patient" accessLevel="Public">
+         <expression locator="111:3-111:56" strict="false" xsi:type="As">
+            <operand locator="111:4-111:44" path="value" xsi:type="Property">
+               <source locator="111:4-111:38" name="Most Recent Dispensed Observation" xsi:type="ExpressionRef"/>
+            </operand>
+            <asTypeSpecifier locator="111:49-111:55" name="fhir:integer" xsi:type="NamedTypeSpecifier"/>
+         </expression>
+      </def>
+      <def locator="129:1-130:61" name="Newly enrolled on antiretroviral therapy (ART) during measurement period" context="Patient" accessLevel="Public">
+         <expression locator="130:3-130:61" xsi:type="In">
+            <operand locator="130:3-130:33" name="Date of First Evidence of ART" xsi:type="ExpressionRef"/>
+            <operand locator="130:42-130:61" name="Measurement Period" xsi:type="ParameterRef"/>
+         </expression>
+      </def>
+      <def locator="133:1-138:3" name="Is Pregnant" context="Patient" accessLevel="Public">
+         <expression locator="134:3-138:3" xsi:type="Exists">
+            <operand locator="134:10-138:3" xsi:type="Query">
+               <source locator="134:11-134:57" alias="C">
+                  <expression locator="134:11-134:55" dataType="fhir:Condition" templateId="http://hl7.org/fhir/StructureDefinition/Condition" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                     <codes xsi:type="ToList">
+                        <operand locator="134:23-134:54" name="Pregnancy status - Reported" libraryName="Cx" xsi:type="CodeRef"/>
+                     </codes>
+                  </expression>
+               </source>
+               <where locator="135:5-137:45" xsi:type="And">
+                  <operand locator="135:11-136:40" xsi:type="And">
+                     <operand locator="135:11-135:47" xsi:type="Equivalent">
+                        <operand name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand locator="135:11-135:30" path="verificationStatus" scope="C" xsi:type="Property"/>
+                        </operand>
+                        <operand xsi:type="ToConcept">
+                           <operand locator="135:34-135:47" name="confirmed" libraryName="FC" xsi:type="CodeRef"/>
+                        </operand>
+                     </operand>
+                     <operand locator="136:11-136:40" xsi:type="Equivalent">
+                        <operand name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand locator="136:11-136:26" path="clinicalStatus" scope="C" xsi:type="Property"/>
+                        </operand>
+                        <operand xsi:type="ToConcept">
+                           <operand locator="136:30-136:40" name="active" libraryName="FC" xsi:type="CodeRef"/>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand locator="137:11-137:45" xsi:type="IncludedIn">
+                     <operand name="ToInterval" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand asType="fhir:Period" xsi:type="As">
+                           <operand locator="137:11-137:17" path="onset" scope="C" xsi:type="Property"/>
+                        </operand>
+                     </operand>
+                     <operand locator="137:26-137:45" name="Measurement Period" xsi:type="ParameterRef"/>
+                  </operand>
+               </where>
+            </operand>
+         </expression>
+      </def>
+      <def locator="141:1-143:79" name="Newly enrolled on antiretroviral therapy (ART) during measurement period (pregnant and breastfeeding)" context="Patient" accessLevel="Public">
+         <expression locator="143:3-143:79" xsi:type="And">
+            <operand locator="143:3-143:15" name="Is Pregnant" xsi:type="ExpressionRef"/>
+            <operand locator="143:21-143:79" xsi:type="In">
+               <operand locator="143:21-143:51" name="Date of First Evidence of ART" xsi:type="ExpressionRef"/>
+               <operand locator="143:60-143:79" name="Measurement Period" xsi:type="ParameterRef"/>
+            </operand>
+         </expression>
+      </def>
+      <def locator="146:1-151:5" name="Receiving antiretroviral therapy (ART) during measurement period" context="Patient" accessLevel="Public">
+         <expression locator="147:3-151:5" xsi:type="Or">
+            <operand locator="147:3-147:60" xsi:type="Exists">
+               <operand locator="147:10-147:60" xsi:type="Query">
+                  <source locator="147:11-147:23" alias="D">
+                     <expression locator="147:11-147:21" name="ART Dates" xsi:type="ExpressionRef"/>
+                  </source>
+                  <where locator="147:25-147:59" xsi:type="In">
+                     <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand locator="147:31" name="D" xsi:type="AliasRef"/>
+                     </operand>
+                     <operand locator="147:40-147:59" name="Measurement Period" xsi:type="ParameterRef"/>
+                  </where>
+               </operand>
+            </operand>
+            <operand locator="148:8-151:5" xsi:type="Exists">
+               <operand locator="148:15-151:5" xsi:type="Query">
+                  <source locator="149:7-149:31" alias="C">
+                     <expression locator="149:7-149:29" name="ART Therapy Condition" xsi:type="ExpressionRef"/>
+                  </source>
+                  <where locator="150:9-150:74" xsi:type="Overlaps">
+                     <operand xsi:type="Interval">
+                        <low name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:dateTime" xsi:type="As">
+                              <operand path="low" xsi:type="Property">
+                                 <source locator="150:15-150:44" lowClosed="true" highClosed="true" xsi:type="Interval">
+                                    <low locator="150:24-150:30" path="onset" scope="C" xsi:type="Property"/>
+                                    <high locator="150:33-150:43" path="abatement" scope="C" xsi:type="Property"/>
+                                 </source>
+                              </operand>
+                           </operand>
+                        </low>
+                        <lowClosedExpression path="lowClosed" xsi:type="Property">
+                           <source locator="150:15-150:44" lowClosed="true" highClosed="true" xsi:type="Interval">
+                              <low locator="150:24-150:30" path="onset" scope="C" xsi:type="Property"/>
+                              <high locator="150:33-150:43" path="abatement" scope="C" xsi:type="Property"/>
+                           </source>
+                        </lowClosedExpression>
+                        <high name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:dateTime" xsi:type="As">
+                              <operand path="high" xsi:type="Property">
+                                 <source locator="150:15-150:44" lowClosed="true" highClosed="true" xsi:type="Interval">
+                                    <low locator="150:24-150:30" path="onset" scope="C" xsi:type="Property"/>
+                                    <high locator="150:33-150:43" path="abatement" scope="C" xsi:type="Property"/>
+                                 </source>
+                              </operand>
+                           </operand>
+                        </high>
+                        <highClosedExpression path="highClosed" xsi:type="Property">
+                           <source locator="150:15-150:44" lowClosed="true" highClosed="true" xsi:type="Interval">
+                              <low locator="150:24-150:30" path="onset" scope="C" xsi:type="Property"/>
+                              <high locator="150:33-150:43" path="abatement" scope="C" xsi:type="Property"/>
+                           </source>
+                        </highClosedExpression>
+                     </operand>
+                     <operand locator="150:55-150:74" name="Measurement Period" xsi:type="ParameterRef"/>
+                  </where>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def locator="154:1-155:81" name="Year Preceding the Measurement Period" context="Patient" accessLevel="Public">
+         <expression locator="155:3-155:81" lowClosed="true" highClosed="false" xsi:type="Interval">
+            <low locator="155:12-155:49" xsi:type="Subtract">
+               <operand locator="155:12-155:40" xsi:type="Start">
+                  <operand locator="155:21-155:40" name="Measurement Period" xsi:type="ParameterRef"/>
+               </operand>
+               <operand locator="155:44-155:49" value="1" unit="year" xsi:type="Quantity"/>
+            </low>
+            <high locator="155:52-155:80" xsi:type="Start">
+               <operand locator="155:61-155:80" name="Measurement Period" xsi:type="ParameterRef"/>
+            </high>
+         </expression>
+      </def>
+      <def locator="158:1-159:120" name="Month Before the Year Preceding the Measurement Period" context="Patient" accessLevel="Public">
+         <expression locator="159:3-159:120" lowClosed="true" highClosed="false" xsi:type="Interval">
+            <low locator="159:12-159:69" xsi:type="Subtract">
+               <operand locator="159:12-159:59" xsi:type="Start">
+                  <operand locator="159:21-159:59" name="Year Preceding the Measurement Period" xsi:type="ExpressionRef"/>
+               </operand>
+               <operand locator="159:63-159:69" value="1" unit="month" xsi:type="Quantity"/>
+            </low>
+            <high locator="159:72-159:119" xsi:type="Start">
+               <operand locator="159:81-159:119" name="Year Preceding the Measurement Period" xsi:type="ExpressionRef"/>
+            </high>
+         </expression>
+      </def>
+      <def locator="162:1-164:74" name="Receiving antiretroviral therapy (ART) at 12 months after initiating" context="Patient" accessLevel="Public">
+         <expression locator="163:3-164:74" xsi:type="And">
+            <operand locator="163:3-163:97" xsi:type="In">
+               <operand locator="163:3-163:33" name="Date of First Evidence of ART" xsi:type="ExpressionRef"/>
+               <operand locator="163:42-163:97" name="Month Before the Year Preceding the Measurement Period" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand locator="164:9-164:74" name="Receiving antiretroviral therapy (ART) during measurement period" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def locator="167:1-169:21" name="Receiving antiretroviral therapy (ART) at 12 months after initiating (pregnant and breastfeeding)" context="Patient" accessLevel="Public">
+         <expression locator="168:3-169:21" xsi:type="And">
+            <operand locator="168:3-168:72" name="Receiving antiretroviral therapy (ART) at 12 months after initiating" xsi:type="ExpressionRef"/>
+            <operand locator="169:9-169:21" name="Is Pregnant" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def locator="173:1-174:80" name="Initiated antiretroviral therapy (ART) in the 12 months prior to measurement period" context="Patient" accessLevel="Public">
+         <expression locator="174:3-174:80" xsi:type="In">
+            <operand locator="174:3-174:33" name="Date of First Evidence of ART" xsi:type="ExpressionRef"/>
+            <operand locator="174:42-174:80" name="Year Preceding the Measurement Period" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def locator="177:1-179:76" name="Pregnant and receiving antiretroviral therapy (ART) to reduce the risk of mother-to-child-transmission during pregnancy" context="Patient" accessLevel="Public">
+         <expression locator="178:5-179:76" xsi:type="And">
+            <operand locator="178:5-178:17" name="Is Pregnant" xsi:type="ExpressionRef"/>
+            <operand locator="179:11-179:76" name="Receiving antiretroviral therapy (ART) during measurement period" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+   </statements>
+</library>

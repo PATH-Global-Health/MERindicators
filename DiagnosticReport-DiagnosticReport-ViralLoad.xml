@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="DiagnosticReport-ViralLoad"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 25836-8}">HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</span> </h2><table class="grid"><tr><td>Subject</td><td><b>Mittens Cat</b> female, DoB: 1985-01-01</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reported</b></td></tr><tr><td><a href="Observation-Observation-ViralLoad.html"><span title="Codes: {http://loinc.org 25836-8}">HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</span></a></td><td>741660 copies/mL</td><td>2020-06-01 13:28:17+0200</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="25836-8"/>
+      <display value="HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-HIVSimple"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Encounter-ViralLoad"/>
+  </encounter>
+  <result>
+    <reference value="Observation/Observation-ViralLoad"/>
+  </result>
+</DiagnosticReport>

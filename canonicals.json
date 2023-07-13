@@ -1,0 +1,289 @@
+[
+  {
+    "id" : "DAKICD11",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/sid/icd-11",
+    "version" : "0.1.0",
+    "name" : "DAKICD11"
+  },
+  {
+    "id" : "CIEL",
+    "type" : "CodeSystem",
+    "url" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+    "version" : "0.1.0",
+    "name" : "CIEL"
+  },
+  {
+    "id" : "AgeRanges",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+    "version" : "0.1.0",
+    "name" : "AgeRanges"
+  },
+  {
+    "id" : "DAKCoarseAgeRangeCS",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS",
+    "version" : "0.1.0",
+    "name" : "DAKCoarseAgeRangeCS"
+  },
+  {
+    "id" : "DAKDispensingQuantityCS",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS",
+    "version" : "0.1.0",
+    "name" : "DAKDispensingQuantityCS"
+  },
+  {
+    "id" : "FocusPopCS",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/FocusPopCS",
+    "version" : "0.1.0",
+    "name" : "FocusPopCS"
+  },
+  {
+    "id" : "KeyPopCS",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS",
+    "version" : "0.1.0",
+    "name" : "KeyPopCS"
+  },
+  {
+    "id" : "MMDIntervalCS",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS",
+    "version" : "0.1.0",
+    "name" : "MMDIntervalCS"
+  },
+  {
+    "id" : "OpenHIE",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE",
+    "version" : "0.1.0",
+    "name" : "OpenHIE"
+  },
+  {
+    "id" : "path.merindicators",
+    "type" : "ImplementationGuide",
+    "url" : "https://path-global-health.github.io/MERindicators/ImplementationGuide/path.merindicators",
+    "version" : "0.1.0",
+    "name" : "PATHMERIndicators"
+  },
+  {
+    "id" : "DAKConcepts",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/DAKConcepts",
+    "version" : "0.1.0",
+    "name" : "DAKConcepts"
+  },
+  {
+    "id" : "DAKDataElements",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/DAKDataElements",
+    "version" : "0.1.0",
+    "name" : "DAKDataElements"
+  },
+  {
+    "id" : "DAKStratifiers",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/DAKStratifiers",
+    "version" : "0.1.0",
+    "name" : "DAKStratifiers"
+  },
+  {
+    "id" : "DAKTXCURRLibrary",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/DAKTXCURR",
+    "version" : "0.1.0",
+    "name" : "DAKTXCURR"
+  },
+  {
+    "id" : "Debug",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/Debug",
+    "version" : "0.1.0",
+    "name" : "Debug"
+  },
+  {
+    "id" : "FHIRCommon",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/FHIRCommon",
+    "version" : "0.1.0",
+    "name" : "FHIRCommon"
+  },
+  {
+    "id" : "FHIRHelpers",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/FHIRHelpers",
+    "version" : "0.1.0",
+    "name" : "FHIRHelpers"
+  },
+  {
+    "id" : "MERConcepts",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/MERConcepts",
+    "version" : "0.1.0",
+    "name" : "MERConcepts"
+  },
+  {
+    "id" : "MERDataElements",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/MERDataElements",
+    "version" : "0.1.0",
+    "name" : "MERDataElements"
+  },
+  {
+    "id" : "MERStratifiers",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/MERStratifiers",
+    "version" : "0.1.0",
+    "name" : "MERStratifiers"
+  },
+  {
+    "id" : "TXCURR",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/TXCURR",
+    "version" : "0.1.0",
+    "name" : "TXCURR"
+  },
+  {
+    "id" : "DAKTXCURR",
+    "type" : "Measure",
+    "url" : "https://path-global-health.github.io/MERindicators/Measure/DAKTXCURR",
+    "version" : "0.1.0",
+    "name" : "DAKTXCURR"
+  },
+  {
+    "id" : "MERTXCURR",
+    "type" : "Measure",
+    "url" : "https://path-global-health.github.io/MERindicators/Measure/MERTXCURR",
+    "version" : "0.1.0",
+    "name" : "MERTXCURR"
+  },
+  {
+    "id" : "TXCURRelements",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/TXCURRelements",
+    "version" : "0.1.0",
+    "name" : "TXCURRelements"
+  },
+  {
+    "id" : "AgeRangesTXCURR",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR",
+    "version" : "0.1.0",
+    "name" : "AgeRangesTXCURR"
+  },
+  {
+    "id" : "CIELHIVMedications",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications",
+    "version" : "0.1.0",
+    "name" : "CIELHIVMedications"
+  },
+  {
+    "id" : "DAKARTMeds",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds",
+    "version" : "0.1.0",
+    "name" : "DAKARTMeds"
+  },
+  {
+    "id" : "DAKARTStop",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop",
+    "version" : "0.1.0",
+    "name" : "DAKARTStop"
+  },
+  {
+    "id" : "DAKARVDrugPickup",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup",
+    "version" : "0.1.0",
+    "name" : "DAKARVDrugPickup"
+  },
+  {
+    "id" : "DAKCoarseAgeRange",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange",
+    "version" : "0.1.0",
+    "name" : "DAKCoarseAgeRange"
+  },
+  {
+    "id" : "DAKDispensingQuantity",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity",
+    "version" : "0.1.0",
+    "name" : "DAKDispensingQuantity"
+  },
+  {
+    "id" : "DAKHIVTransfer",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer",
+    "version" : "0.1.0",
+    "name" : "DAKHIVTransfer"
+  },
+  {
+    "id" : "DAKMMD",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD",
+    "version" : "0.1.0",
+    "name" : "DAKMMD"
+  },
+  {
+    "id" : "DAKONART",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKONART",
+    "version" : "0.1.0",
+    "name" : "DAKONART"
+  },
+  {
+    "id" : "DAKPLHIV",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV",
+    "version" : "0.1.0",
+    "name" : "DAKPLHIV"
+  },
+  {
+    "id" : "FocusPop",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/FocusPop",
+    "version" : "0.1.0",
+    "name" : "FocusPop"
+  },
+  {
+    "id" : "KeyPop",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/KeyPop",
+    "version" : "0.1.0",
+    "name" : "KeyPop"
+  },
+  {
+    "id" : "MMDInterval",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/MMDInterval",
+    "version" : "0.1.0",
+    "name" : "MMDInterval"
+  },
+  {
+    "id" : "OnARV",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/OnARV",
+    "version" : "0.1.0",
+    "name" : "OnARV"
+  },
+  {
+    "id" : "Pregnant",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/Pregnant",
+    "version" : "0.1.0",
+    "name" : "Pregnant"
+  },
+  {
+    "id" : "SyntheaHIVMedications",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+    "version" : "0.1.0",
+    "name" : "SyntheaHIVMedications"
+  }
+]

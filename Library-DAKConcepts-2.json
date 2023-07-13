@@ -1,0 +1,225 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableLocators,DisableListDemotion,DisableListPromotion",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "DAKConcepts",
+         "system" : "https://path-global-health.github.io/MERindicators",
+         "version" : "0.1.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "locator" : "3:1-3:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "locator" : "5:1-5:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRHelpers",
+            "version" : "4.0.1"
+         }, {
+            "locator" : "6:1-6:44",
+            "localIdentifier" : "FC",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRCommon",
+            "version" : "4.0.1"
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "locator" : "9:1-9:48",
+            "name" : "SNOMED-CT",
+            "id" : "http://snomed.info/sct",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "10:1-10:38",
+            "name" : "LOINC",
+            "id" : "http://loinc.org",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "11:1-11:66",
+            "name" : "RxNorm",
+            "id" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "12:1-12:53",
+            "name" : "ICD-11",
+            "id" : "http://hl7.org/fhir/sid/icd-11",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "15:1-15:70",
+            "name" : "CIEL",
+            "id" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "16:1-16:43",
+            "name" : "OpenHIE",
+            "id" : "https://openhie.org",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "17:1-17:128",
+            "name" : "DAK Dispensing Quantity CS",
+            "id" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "18:1-18:121",
+            "name" : "DAK Coarse Age Range CS",
+            "id" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "locator" : "21:1-21:90",
+            "name" : "HL7 Administrative Gender",
+            "id" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "40:1-40:103",
+            "name" : "AgeRangesTXCURR",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "45:1-45:103",
+            "name" : "Viral Load Test",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "46:1-46:92",
+            "name" : "DAK PLHIV",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "47:1-47:88",
+            "name" : "DAK MMD",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "48:1-48:93",
+            "name" : "DAK On ART",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKONART",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "49:1-49:108",
+            "name" : "DAK HIV Transfer In",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "50:1-50:110",
+            "name" : "DAK ARV Drug Pickup",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "51:1-51:104",
+            "name" : "DAK ART Medications",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "52:1-52:119",
+            "name" : "DAK Dispensing Quantity",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "53:1-53:112",
+            "name" : "DAK Coarse Age Range",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "54:1-54:100",
+            "name" : "DAK ART Stopped",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop",
+            "accessLevel" : "Public"
+         }, {
+            "locator" : "55:1-55:108",
+            "name" : "DAK HIV Transferred",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "locator" : "25:1-25:85",
+            "name" : "Pregnancy (finding)",
+            "id" : "77386006",
+            "display" : "Pregnancy (finding)",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "25:45-25:55",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "locator" : "26:1-26:64",
+            "name" : "Pregnant",
+            "id" : "146789000",
+            "display" : "Pregnant",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "26:35-26:45",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "locator" : "28:1-28:126",
+            "name" : "Prenatal initial visit (regime/therapy)",
+            "id" : "424441002",
+            "display" : "Prenatal initial visit (regime/therapy)",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "28:66-28:76",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "locator" : "29:1-29:96",
+            "name" : "Pregnancy status - Reported",
+            "id" : "11449-6",
+            "display" : "Pregnancy status - Reported",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "29:52-29:58",
+               "name" : "LOINC"
+            }
+         }, {
+            "locator" : "33:1-33:80",
+            "name" : "Currently taking ARV",
+            "id" : "160119",
+            "display" : "Currently taking ARV",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "33:44-33:49",
+               "name" : "CIEL"
+            }
+         }, {
+            "locator" : "34:1-34:53",
+            "name" : "Coded Answer",
+            "id" : "1065",
+            "display" : "Yes",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "34:34-34:39",
+               "name" : "CIEL"
+            }
+         }, {
+            "locator" : "35:1-35:142",
+            "name" : "History of antiretroviral therapy (situation)",
+            "id" : "432101000124108",
+            "display" : "History of antiretroviral therapy (situation)",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "35:78-35:86",
+               "name" : "OpenHIE"
+            }
+         } ]
+      }
+   }
+}

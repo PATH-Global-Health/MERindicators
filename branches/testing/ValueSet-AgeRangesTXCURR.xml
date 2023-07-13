@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="AgeRangesTXCURR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-AgeRanges.html"><code>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P0Y--P1Y">P0Y--P1Y</a></td><td>&lt; 1 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P1Y--P5Y">P1Y--P5Y</a></td><td>1-4 years</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P5Y--P10Y">P5Y--P10Y</a></td><td>5-9 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P10Y--P15Y">P10Y--P15Y</a></td><td>10-15 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P15Y--P20Y">P15Y--P20Y</a></td><td>15-19 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P20Y--P25Y">P20Y--P25Y</a></td><td>20-24 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P25Y--P30Y">P25Y--P30Y</a></td><td>25-29 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P30Y--P35Y">P30Y--P35Y</a></td><td>30-34 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P35Y--P40Y">P35Y--P40Y</a></td><td>35-39 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P40Y--P45Y">P40Y--P45Y</a></td><td>40-45 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P45Y--P50Y">P45Y--P50Y</a></td><td>45-50 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P50Y--P55Y">P50Y--P55Y</a></td><td>50-55 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P55Y--P60Y">P55Y--P60Y</a></td><td>55-60 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P60Y--P65Y">P60Y--P65Y</a></td><td>60-65 year</td></tr><tr><td><a href="CodeSystem-AgeRanges.html#AgeRanges-P65Y--P9999Y">P65Y--P9999Y</a></td><td>65+ years</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR"/>
+  <version value="0.1.0"/>
+  <name value="AgeRangesTXCURR"/>
+  <title value="AgeRangesTXCURR"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-07-08T15:38:48+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="AgeRangesTXCURR"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"/>
+      <concept>
+        <code value="P0Y--P1Y"/>
+        <display value="&lt; 1 year"/>
+      </concept>
+      <concept>
+        <code value="P1Y--P5Y"/>
+        <display value="1-4 years"/>
+      </concept>
+      <concept>
+        <code value="P5Y--P10Y"/>
+        <display value="5-9 year"/>
+      </concept>
+      <concept>
+        <code value="P10Y--P15Y"/>
+        <display value="10-15 year"/>
+      </concept>
+      <concept>
+        <code value="P15Y--P20Y"/>
+        <display value="15-19 year"/>
+      </concept>
+      <concept>
+        <code value="P20Y--P25Y"/>
+        <display value="20-24 year"/>
+      </concept>
+      <concept>
+        <code value="P25Y--P30Y"/>
+        <display value="25-29 year"/>
+      </concept>
+      <concept>
+        <code value="P30Y--P35Y"/>
+        <display value="30-34 year"/>
+      </concept>
+      <concept>
+        <code value="P35Y--P40Y"/>
+        <display value="35-39 year"/>
+      </concept>
+      <concept>
+        <code value="P40Y--P45Y"/>
+        <display value="40-45 year"/>
+      </concept>
+      <concept>
+        <code value="P45Y--P50Y"/>
+        <display value="45-50 year"/>
+      </concept>
+      <concept>
+        <code value="P50Y--P55Y"/>
+        <display value="50-55 year"/>
+      </concept>
+      <concept>
+        <code value="P55Y--P60Y"/>
+        <display value="55-60 year"/>
+      </concept>
+      <concept>
+        <code value="P60Y--P65Y"/>
+        <display value="60-65 year"/>
+      </concept>
+      <concept>
+        <code value="P65Y--P9999Y"/>
+        <display value="65+ years"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

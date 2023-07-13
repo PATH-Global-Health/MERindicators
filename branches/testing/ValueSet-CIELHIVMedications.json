@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "CIELHIVMedications",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CIEL.html\"><code>https://openconceptlab.org/orgs/CIEL/sources/CIEL</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-86663\">86663</a></td><td>Zidovudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-74807\">74807</a></td><td>Didanosine</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications",
+  "version" : "0.1.0",
+  "name" : "CIELHIVMedications",
+  "title" : "CIELHIVMedications",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-07-08T15:38:48+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CIELHIVMedications",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+      "concept" : [{
+        "code" : "86663",
+        "display" : "Zidovudine"
+      },
+      {
+        "code" : "74807",
+        "display" : "Didanosine"
+      }]
+    }]
+  }
+}

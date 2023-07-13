@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "Example-Locations-Organizations",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "Organization-HIVSimple1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Organization-HIVSimple1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Organization-HIVSimple1&quot; </p></div><p><b>identifier</b>: id:\u00a0Organization-HIVSimple1</p><p><b>name</b>: Organization-HIVSimple Government Hospital</p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://github.com/synthetichealth/synthea",
+        "value" : "Organization-HIVSimple1"
+      }],
+      "name" : "Organization-HIVSimple Government Hospital"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple2",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "Organization-HIVSimple2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Organization-HIVSimple2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Organization-HIVSimple2&quot; </p></div><p><b>identifier</b>: id:\u00a0Organization-HIVSimple2</p><p><b>name</b>: Organization-HIVSimple2 Government Hospital</p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://github.com/synthetichealth/synthea",
+        "value" : "Organization-HIVSimple2"
+      }],
+      "name" : "Organization-HIVSimple2 Government Hospital"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "Location-HIVSimple1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"Location-HIVSimple1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;Location-HIVSimple1&quot; </p></div><p><b>identifier</b>: id:\u00a0Location-HIVSimple1</p><p><b>managingOrganization</b>: <span>id:\u00a0Organization-HIVSimple1</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://github.com/synthetichealth/synthea",
+        "value" : "Location-HIVSimple1"
+      }],
+      "managingOrganization" : {
+        "identifier" : {
+          "system" : "https://github.com/synthetichealth/synthea",
+          "value" : "Organization-HIVSimple1"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Location"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple2",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "Location-HIVSimple2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"Location-HIVSimple2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;Location-HIVSimple2&quot; </p></div><p><b>identifier</b>: id:\u00a0Location-HIVSimple2</p><p><b>managingOrganization</b>: <span>id:\u00a0Organization-HIVSimple2</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://github.com/synthetichealth/synthea",
+        "value" : "Location-HIVSimple2"
+      }],
+      "managingOrganization" : {
+        "identifier" : {
+          "system" : "https://github.com/synthetichealth/synthea",
+          "value" : "Organization-HIVSimple2"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Location"
+    }
+  }]
+}

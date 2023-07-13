@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-ViralLoad> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DiagnosticReport-ViralLoad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 25836-8}\">HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Mittens Cat</b> female, DoB: 1985-01-01</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-Observation-ViralLoad.html\"><span title=\"Codes: {http://loinc.org 25836-8}\">HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</span></a></td><td>741660 copies/mL</td><td>2020-06-01 13:28:17+0200</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:25836-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "25836-8" ] ;
+       fhir:display [ fhir:v "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad> ;
+     fhir:reference [ fhir:v "Encounter/Encounter-ViralLoad" ]
+  ] ; # 
+  fhir:result ( [
+     fhir:link <https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad> ;
+     fhir:reference [ fhir:v "Observation/Observation-ViralLoad" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

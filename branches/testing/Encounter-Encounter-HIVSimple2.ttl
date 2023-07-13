@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple2> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Encounter-HIVSimple2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"Encounter-HIVSimple2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;Encounter-HIVSimple2&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-Patient-HIVSimple2.html\">Patient/Patient-HIVSimple2</a> &quot; CAT&quot;</p><p><b>period</b>: 2011-01-01 --&gt; 2011-01-01</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-Location-HIVSimple2.html\">Location/Location-HIVSimple2</a></td></tr></table><p><b>serviceProvider</b>: <span>id: Organization-HIVSimple2</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ACUTE" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple2> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple2" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2011-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2011-01-01"^^xsd:date ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple2> ;
+       fhir:reference [ fhir:v "Location/Location-HIVSimple2" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Organization-HIVSimple2" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

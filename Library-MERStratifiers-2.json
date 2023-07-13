@@ -1,0 +1,2727 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableLocators,DisableListDemotion,DisableListPromotion",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "MERStratifiers",
+         "system" : "https://path-global-health.github.io/MERindicators",
+         "version" : "0.1.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "locator" : "3:1-3:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "locator" : "5:1-5:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRHelpers",
+            "version" : "4.0.1"
+         }, {
+            "locator" : "6:1-6:44",
+            "localIdentifier" : "FC",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRCommon",
+            "version" : "4.0.1"
+         }, {
+            "locator" : "8:1-8:29",
+            "localIdentifier" : "Cx",
+            "path" : "https://path-global-health.github.io/MERindicators/MERConcepts"
+         } ]
+      },
+      "parameters" : {
+         "def" : [ {
+            "locator" : "34:1-34:114",
+            "name" : "Measurement Period",
+            "accessLevel" : "Public",
+            "default" : {
+               "locator" : "34:59-34:114",
+               "lowClosed" : true,
+               "highClosed" : true,
+               "type" : "Interval",
+               "low" : {
+                  "locator" : "34:68-34:89",
+                  "type" : "DateTime",
+                  "year" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "1990",
+                     "type" : "Literal"
+                  },
+                  "month" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "1",
+                     "type" : "Literal"
+                  },
+                  "day" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "1",
+                     "type" : "Literal"
+                  },
+                  "hour" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  },
+                  "minute" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  },
+                  "second" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  },
+                  "millisecond" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  }
+               },
+               "high" : {
+                  "locator" : "34:92-34:113",
+                  "type" : "DateTime",
+                  "year" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "2022",
+                     "type" : "Literal"
+                  },
+                  "month" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "8",
+                     "type" : "Literal"
+                  },
+                  "day" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "30",
+                     "type" : "Literal"
+                  },
+                  "hour" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  },
+                  "minute" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  },
+                  "second" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  },
+                  "millisecond" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  }
+               }
+            },
+            "parameterTypeSpecifier" : {
+               "locator" : "34:32-34:49",
+               "type" : "IntervalTypeSpecifier",
+               "pointType" : {
+                  "locator" : "34:41-34:48",
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "locator" : "14:1-14:92",
+            "name" : "ISO-8601-Derived Periods",
+            "id" : "http://ohie.org/CodeSystem/iso-8601-derived-periods",
+            "accessLevel" : "Public"
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "locator" : "15:1-15:78",
+            "name" : "P0Y--P1Y",
+            "id" : "P0Y--P1Y",
+            "display" : "< 1 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "15:34-15:59",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "16:1-16:79",
+            "name" : "P1Y--P5Y",
+            "id" : "P1Y--P5Y",
+            "display" : "1-4 years",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "16:34-16:59",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "17:1-17:80",
+            "name" : "P5Y--P10Y",
+            "id" : "P5Y--P10Y",
+            "display" : "5-9 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "17:36-17:61",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "18:1-18:84",
+            "name" : "P10Y--P15Y",
+            "id" : "P10Y--P15Y",
+            "display" : "10-14 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "18:38-18:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "19:1-19:84",
+            "name" : "P15Y--P20Y",
+            "id" : "P15Y--P20Y",
+            "display" : "15-19 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "19:38-19:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "20:1-20:84",
+            "name" : "P20Y--P25Y",
+            "id" : "P20Y--P25Y",
+            "display" : "20-24 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "20:38-20:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "21:1-21:84",
+            "name" : "P25Y--P30Y",
+            "id" : "P25Y--P30Y",
+            "display" : "25-29 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "21:38-21:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "22:1-22:84",
+            "name" : "P30Y--P35Y",
+            "id" : "P30Y--P35Y",
+            "display" : "30-34 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "22:38-22:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "23:1-23:84",
+            "name" : "P35Y--P40Y",
+            "id" : "P35Y--P40Y",
+            "display" : "35-39 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "23:38-23:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "24:1-24:84",
+            "name" : "P40Y--P45Y",
+            "id" : "P40Y--P45Y",
+            "display" : "40-45 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "24:38-24:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "25:1-25:84",
+            "name" : "P45Y--P50Y",
+            "id" : "P45Y--P50Y",
+            "display" : "45-50 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "25:38-25:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "26:1-26:87",
+            "name" : "P50Y--P9999Y",
+            "id" : "P50Y--P9999Y",
+            "display" : "50+ years",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "26:42-26:67",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "28:1-28:84",
+            "name" : "P50Y--P55Y",
+            "id" : "P50Y--P55Y",
+            "display" : "50-55 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "28:38-28:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "29:1-29:84",
+            "name" : "P55Y--P60Y",
+            "id" : "P50Y--P60Y",
+            "display" : "55-60 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "29:38-29:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "30:1-30:84",
+            "name" : "P60Y--P65Y",
+            "id" : "P50Y--P60Y",
+            "display" : "60-65 year",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "30:38-30:63",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         }, {
+            "locator" : "31:1-31:87",
+            "name" : "P65Y--P9999Y",
+            "id" : "P50Y--P9999Y",
+            "display" : "65+ years",
+            "accessLevel" : "Public",
+            "codeSystem" : {
+               "locator" : "31:42-31:67",
+               "name" : "ISO-8601-Derived Periods"
+            }
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "locator" : "44:1-44:15",
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "locator" : "44:1-44:15",
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "locator" : "44:1-44:15",
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "locator" : "49:1-50:22",
+            "name" : "Sex",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "50:3-50:22",
+               "path" : "value",
+               "type" : "Property",
+               "source" : {
+                  "locator" : "50:3-50:16",
+                  "path" : "gender",
+                  "type" : "Property",
+                  "source" : {
+                     "locator" : "50:3-50:9",
+                     "name" : "Patient",
+                     "type" : "ExpressionRef"
+                  }
+               }
+            }
+         }, {
+            "locator" : "54:1-70:5",
+            "name" : "Age Group",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "55:3-70:5",
+               "type" : "Case",
+               "caseItem" : [ {
+                  "locator" : "57:5-57:86",
+                  "when" : {
+                     "locator" : "57:10-57:70",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "57:10-57:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "57:23-57:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "57:32-57:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "57:57-57:70",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "57:66",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "0",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "57:69",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "1",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "57:77-57:86",
+                     "name" : "P0Y--P1Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "58:5-58:86",
+                  "when" : {
+                     "locator" : "58:10-58:70",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "58:10-58:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "58:23-58:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "58:32-58:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "58:57-58:70",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "58:66",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "1",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "58:69",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "5",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "58:77-58:86",
+                     "name" : "P1Y--P5Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "59:5-59:88",
+                  "when" : {
+                     "locator" : "59:10-59:71",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "59:10-59:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "59:23-59:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "59:32-59:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "59:57-59:71",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "59:66",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "5",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "59:69-59:70",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "10",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "59:78-59:88",
+                     "name" : "P5Y--P10Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "60:5-60:90",
+                  "when" : {
+                     "locator" : "60:10-60:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "60:10-60:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "60:23-60:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "60:32-60:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "60:57-60:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "60:66-60:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "10",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "60:70-60:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "15",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "60:79-60:90",
+                     "name" : "P10Y--P15Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "61:5-61:90",
+                  "when" : {
+                     "locator" : "61:10-61:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "61:10-61:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "61:23-61:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "61:32-61:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "61:57-61:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "61:66-61:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "15",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "61:70-61:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "20",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "61:79-61:90",
+                     "name" : "P15Y--P20Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "62:5-62:90",
+                  "when" : {
+                     "locator" : "62:10-62:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "62:10-62:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "62:23-62:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "62:32-62:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "62:57-62:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "62:66-62:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "20",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "62:70-62:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "25",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "62:79-62:90",
+                     "name" : "P20Y--P25Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "63:5-63:90",
+                  "when" : {
+                     "locator" : "63:10-63:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "63:10-63:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "63:23-63:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "63:32-63:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "63:57-63:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "63:66-63:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "25",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "63:70-63:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "30",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "63:79-63:90",
+                     "name" : "P25Y--P30Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "64:5-64:90",
+                  "when" : {
+                     "locator" : "64:10-64:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "64:10-64:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "64:23-64:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "64:32-64:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "64:57-64:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "64:66-64:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "30",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "64:70-64:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "35",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "64:79-64:90",
+                     "name" : "P30Y--P35Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "65:5-65:90",
+                  "when" : {
+                     "locator" : "65:10-65:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "65:10-65:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "65:23-65:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "65:32-65:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "65:57-65:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "65:66-65:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "35",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "65:70-65:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "40",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "65:79-65:90",
+                     "name" : "P35Y--P40Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "66:5-66:90",
+                  "when" : {
+                     "locator" : "66:10-66:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "66:10-66:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "66:23-66:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "66:32-66:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "66:57-66:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "66:66-66:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "40",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "66:70-66:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "45",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "66:79-66:90",
+                     "name" : "P40Y--P45Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "67:5-67:90",
+                  "when" : {
+                     "locator" : "67:10-67:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "67:10-67:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "67:23-67:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "67:32-67:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "67:57-67:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "67:66-67:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "45",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "67:70-67:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "50",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "67:79-67:90",
+                     "name" : "P45Y--P50Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "68:5-68:94",
+                  "when" : {
+                     "locator" : "68:10-68:74",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "68:10-68:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "68:23-68:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "68:32-68:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "68:57-68:74",
+                        "lowClosed" : true,
+                        "highClosed" : true,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "68:66-68:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "50",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "asType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "type" : "As",
+                           "operand" : {
+                              "locator" : "68:70-68:73",
+                              "type" : "Null"
+                           }
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "68:81-68:94",
+                     "name" : "P50Y--P9999Y",
+                     "type" : "CodeRef"
+                  }
+               } ],
+               "else" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Code",
+                  "type" : "As",
+                  "operand" : {
+                     "locator" : "69:10-69:13",
+                     "type" : "Null"
+                  }
+               }
+            }
+         }, {
+            "locator" : "73:1-91:5",
+            "name" : "Age Group TXCURR",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "74:3-91:5",
+               "type" : "Case",
+               "caseItem" : [ {
+                  "locator" : "75:5-75:86",
+                  "when" : {
+                     "locator" : "75:10-75:70",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "75:10-75:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "75:23-75:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "75:32-75:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "75:57-75:70",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "75:66",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "0",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "75:69",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "1",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "75:77-75:86",
+                     "name" : "P0Y--P1Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "76:5-76:86",
+                  "when" : {
+                     "locator" : "76:10-76:70",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "76:10-76:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "76:23-76:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "76:32-76:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "76:57-76:70",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "76:66",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "1",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "76:69",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "5",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "76:77-76:86",
+                     "name" : "P1Y--P5Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "77:5-77:88",
+                  "when" : {
+                     "locator" : "77:10-77:71",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "77:10-77:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "77:23-77:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "77:32-77:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "77:57-77:71",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "77:66",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "5",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "77:69-77:70",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "10",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "77:78-77:88",
+                     "name" : "P5Y--P10Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "78:5-78:90",
+                  "when" : {
+                     "locator" : "78:10-78:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "78:10-78:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "78:23-78:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "78:32-78:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "78:57-78:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "78:66-78:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "10",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "78:70-78:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "15",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "78:79-78:90",
+                     "name" : "P10Y--P15Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "79:5-79:90",
+                  "when" : {
+                     "locator" : "79:10-79:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "79:10-79:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "79:23-79:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "79:32-79:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "79:57-79:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "79:66-79:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "15",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "79:70-79:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "20",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "79:79-79:90",
+                     "name" : "P15Y--P20Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "80:5-80:90",
+                  "when" : {
+                     "locator" : "80:10-80:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "80:10-80:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "80:23-80:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "80:32-80:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "80:57-80:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "80:66-80:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "20",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "80:70-80:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "25",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "80:79-80:90",
+                     "name" : "P20Y--P25Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "81:5-81:90",
+                  "when" : {
+                     "locator" : "81:10-81:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "81:10-81:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "81:23-81:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "81:32-81:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "81:57-81:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "81:66-81:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "25",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "81:70-81:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "30",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "81:79-81:90",
+                     "name" : "P25Y--P30Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "82:5-82:90",
+                  "when" : {
+                     "locator" : "82:10-82:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "82:10-82:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "82:23-82:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "82:32-82:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "82:57-82:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "82:66-82:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "30",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "82:70-82:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "35",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "82:79-82:90",
+                     "name" : "P30Y--P35Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "83:5-83:90",
+                  "when" : {
+                     "locator" : "83:10-83:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "83:10-83:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "83:23-83:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "83:32-83:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "83:57-83:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "83:66-83:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "35",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "83:70-83:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "40",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "83:79-83:90",
+                     "name" : "P35Y--P40Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "84:5-84:90",
+                  "when" : {
+                     "locator" : "84:10-84:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "84:10-84:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "84:23-84:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "84:32-84:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "84:57-84:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "84:66-84:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "40",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "84:70-84:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "45",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "84:79-84:90",
+                     "name" : "P40Y--P45Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "85:5-85:90",
+                  "when" : {
+                     "locator" : "85:10-85:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "85:10-85:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "85:23-85:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "85:32-85:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "85:57-85:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "85:66-85:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "45",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "85:70-85:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "50",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "85:79-85:90",
+                     "name" : "P45Y--P50Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "86:5-86:90",
+                  "when" : {
+                     "locator" : "86:10-86:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "86:10-86:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "86:23-86:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "86:32-86:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "86:57-86:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "86:66-86:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "50",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "86:70-86:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "55",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "86:79-86:90",
+                     "name" : "P50Y--P55Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "87:5-87:90",
+                  "when" : {
+                     "locator" : "87:10-87:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "87:10-87:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "87:23-87:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "87:32-87:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "87:57-87:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "87:66-87:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "55",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "87:70-87:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "60",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "87:79-87:90",
+                     "name" : "P55Y--P60Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "88:5-88:90",
+                  "when" : {
+                     "locator" : "88:10-88:72",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "88:10-88:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "88:23-88:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "88:32-88:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "88:57-88:72",
+                        "lowClosed" : true,
+                        "highClosed" : false,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "88:66-88:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "60",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "locator" : "88:70-88:71",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "65",
+                           "type" : "Literal"
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "88:79-88:90",
+                     "name" : "P60Y--P65Y",
+                     "type" : "CodeRef"
+                  }
+               }, {
+                  "locator" : "89:5-89:94",
+                  "when" : {
+                     "locator" : "89:10-89:74",
+                     "type" : "In",
+                     "operand" : [ {
+                        "locator" : "89:10-89:52",
+                        "precision" : "Year",
+                        "type" : "CalculateAgeAt",
+                        "operand" : [ {
+                           "type" : "ToDateTime",
+                           "operand" : {
+                              "path" : "birthDate.value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        }, {
+                           "locator" : "89:23-89:51",
+                           "type" : "Start",
+                           "operand" : {
+                              "locator" : "89:32-89:51",
+                              "name" : "Measurement Period",
+                              "type" : "ParameterRef"
+                           }
+                        } ]
+                     }, {
+                        "locator" : "89:57-89:74",
+                        "lowClosed" : true,
+                        "highClosed" : true,
+                        "type" : "Interval",
+                        "low" : {
+                           "locator" : "89:66-89:67",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "65",
+                           "type" : "Literal"
+                        },
+                        "high" : {
+                           "asType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "type" : "As",
+                           "operand" : {
+                              "locator" : "89:70-89:73",
+                              "type" : "Null"
+                           }
+                        }
+                     } ]
+                  },
+                  "then" : {
+                     "locator" : "89:81-89:94",
+                     "name" : "P65Y--P9999Y",
+                     "type" : "CodeRef"
+                  }
+               } ],
+               "else" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Code",
+                  "type" : "As",
+                  "operand" : {
+                     "locator" : "90:10-90:13",
+                     "type" : "Null"
+                  }
+               }
+            }
+         }, {
+            "locator" : "94:1-95:32",
+            "name" : "Age Group/Sex",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "95:3-95:32",
+               "type" : "Concatenate",
+               "operand" : [ {
+                  "locator" : "95:3-95:24",
+                  "type" : "Concatenate",
+                  "operand" : [ {
+                     "locator" : "95:3-95:18",
+                     "path" : "code",
+                     "type" : "Property",
+                     "source" : {
+                        "locator" : "95:3-95:13",
+                        "name" : "Age Group",
+                        "type" : "ExpressionRef"
+                     }
+                  }, {
+                     "locator" : "95:22-95:24",
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : ":",
+                     "type" : "Literal"
+                  } ]
+               }, {
+                  "locator" : "95:28-95:32",
+                  "name" : "Sex",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "locator" : "98:1-103:3",
+            "name" : "Last Location",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "99:3-103:3",
+               "type" : "Last",
+               "source" : {
+                  "locator" : "99:8-102:11",
+                  "type" : "Query",
+                  "source" : [ {
+                     "locator" : "99:8-99:20",
+                     "alias" : "E",
+                     "expression" : {
+                        "locator" : "99:8-99:18",
+                        "dataType" : "{http://hl7.org/fhir}Encounter",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                        "type" : "Retrieve"
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "return" : {
+                     "locator" : "100:5-102:11",
+                     "expression" : {
+                        "locator" : "100:12-102:11",
+                        "type" : "SingletonFrom",
+                        "operand" : {
+                           "locator" : "100:27-102:11",
+                           "type" : "Query",
+                           "source" : [ {
+                              "alias" : "$this",
+                              "expression" : {
+                                 "locator" : "100:27-102:5",
+                                 "type" : "Query",
+                                 "source" : [ {
+                                    "locator" : "100:28-100:39",
+                                    "alias" : "L",
+                                    "expression" : {
+                                       "locator" : "100:28-100:37",
+                                       "path" : "location",
+                                       "scope" : "E",
+                                       "type" : "Property"
+                                    }
+                                 } ],
+                                 "relationship" : [ ],
+                                 "return" : {
+                                    "locator" : "101:7-101:33",
+                                    "expression" : {
+                                       "locator" : "101:14-101:33",
+                                       "path" : "reference",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "locator" : "101:14-101:23",
+                                          "path" : "location",
+                                          "scope" : "L",
+                                          "type" : "Property"
+                                       }
+                                    }
+                                 }
+                              }
+                           } ],
+                           "where" : {
+                              "type" : "Not",
+                              "operand" : {
+                                 "type" : "IsNull",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "name" : "$this",
+                                       "type" : "AliasRef"
+                                    }
+                                 }
+                              }
+                           },
+                           "return" : {
+                              "distinct" : false,
+                              "expression" : {
+                                 "path" : "value",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "name" : "$this",
+                                    "type" : "AliasRef"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }, {
+            "locator" : "106:1-113:75",
+            "name" : "OpenMRS Location",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "107:3-113:75",
+               "type" : "Query",
+               "source" : [ {
+                  "locator" : "107:3-107:13",
+                  "alias" : "P",
+                  "expression" : {
+                     "locator" : "107:3-107:11",
+                     "dataType" : "{http://hl7.org/fhir}Patient",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                     "type" : "Retrieve"
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "locator" : "109:5-112:113",
+                  "type" : "Or",
+                  "operand" : [ {
+                     "locator" : "109:11-111:104",
+                     "type" : "Or",
+                     "operand" : [ {
+                        "locator" : "109:11-110:113",
+                        "type" : "Or",
+                        "operand" : [ {
+                           "locator" : "109:11-109:107",
+                           "type" : "SingletonFrom",
+                           "operand" : {
+                              "locator" : "109:26-109:107",
+                              "type" : "List",
+                              "element" : [ {
+                                 "locator" : "109:27-109:106",
+                                 "type" : "Equivalent",
+                                 "operand" : [ {
+                                    "name" : "ToString",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "locator" : "109:27-109:55",
+                                       "path" : "url",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "locator" : "109:27-109:51",
+                                          "type" : "Indexer",
+                                          "operand" : [ {
+                                             "locator" : "109:27-109:48",
+                                             "type" : "Flatten",
+                                             "operand" : {
+                                                "type" : "Query",
+                                                "source" : [ {
+                                                   "alias" : "$this",
+                                                   "expression" : {
+                                                      "locator" : "109:27-109:38",
+                                                      "path" : "identifier",
+                                                      "scope" : "P",
+                                                      "type" : "Property"
+                                                   }
+                                                } ],
+                                                "where" : {
+                                                   "type" : "Not",
+                                                   "operand" : {
+                                                      "type" : "IsNull",
+                                                      "operand" : {
+                                                         "path" : "extension",
+                                                         "type" : "Property",
+                                                         "source" : {
+                                                            "name" : "$this",
+                                                            "type" : "AliasRef"
+                                                         }
+                                                      }
+                                                   }
+                                                },
+                                                "return" : {
+                                                   "distinct" : false,
+                                                   "expression" : {
+                                                      "path" : "extension",
+                                                      "type" : "Property",
+                                                      "source" : {
+                                                         "name" : "$this",
+                                                         "type" : "AliasRef"
+                                                      }
+                                                   }
+                                                }
+                                             }
+                                          }, {
+                                             "locator" : "109:50",
+                                             "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                             "value" : "0",
+                                             "type" : "Literal"
+                                          } ]
+                                       }
+                                    } ]
+                                 }, {
+                                    "locator" : "109:59-109:106",
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "http://fhir.openmrs.org/ext/patient/identifier",
+                                    "type" : "Literal"
+                                 } ]
+                              } ]
+                           }
+                        }, {
+                           "locator" : "110:8-110:113",
+                           "type" : "SingletonFrom",
+                           "operand" : {
+                              "locator" : "110:23-110:113",
+                              "type" : "List",
+                              "element" : [ {
+                                 "locator" : "110:24-110:112",
+                                 "type" : "Equivalent",
+                                 "operand" : [ {
+                                    "name" : "ToString",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "locator" : "110:24-110:52",
+                                       "path" : "url",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "locator" : "110:24-110:48",
+                                          "type" : "Indexer",
+                                          "operand" : [ {
+                                             "locator" : "110:24-110:45",
+                                             "type" : "Flatten",
+                                             "operand" : {
+                                                "type" : "Query",
+                                                "source" : [ {
+                                                   "alias" : "$this",
+                                                   "expression" : {
+                                                      "locator" : "110:24-110:35",
+                                                      "path" : "identifier",
+                                                      "scope" : "P",
+                                                      "type" : "Property"
+                                                   }
+                                                } ],
+                                                "where" : {
+                                                   "type" : "Not",
+                                                   "operand" : {
+                                                      "type" : "IsNull",
+                                                      "operand" : {
+                                                         "path" : "extension",
+                                                         "type" : "Property",
+                                                         "source" : {
+                                                            "name" : "$this",
+                                                            "type" : "AliasRef"
+                                                         }
+                                                      }
+                                                   }
+                                                },
+                                                "return" : {
+                                                   "distinct" : false,
+                                                   "expression" : {
+                                                      "path" : "extension",
+                                                      "type" : "Property",
+                                                      "source" : {
+                                                         "name" : "$this",
+                                                         "type" : "AliasRef"
+                                                      }
+                                                   }
+                                                }
+                                             }
+                                          }, {
+                                             "locator" : "110:47",
+                                             "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                             "value" : "0",
+                                             "type" : "Literal"
+                                          } ]
+                                       }
+                                    } ]
+                                 }, {
+                                    "locator" : "110:56-110:112",
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+                                    "type" : "Literal"
+                                 } ]
+                              } ]
+                           }
+                        } ]
+                     }, {
+                        "locator" : "111:8-111:104",
+                        "type" : "SingletonFrom",
+                        "operand" : {
+                           "locator" : "111:23-111:104",
+                           "type" : "List",
+                           "element" : [ {
+                              "locator" : "111:24-111:103",
+                              "type" : "Equivalent",
+                              "operand" : [ {
+                                 "name" : "ToString",
+                                 "libraryName" : "FHIRHelpers",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "locator" : "111:24-111:52",
+                                    "path" : "url",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "locator" : "111:24-111:48",
+                                       "type" : "Indexer",
+                                       "operand" : [ {
+                                          "locator" : "111:24-111:45",
+                                          "type" : "Flatten",
+                                          "operand" : {
+                                             "type" : "Query",
+                                             "source" : [ {
+                                                "alias" : "$this",
+                                                "expression" : {
+                                                   "locator" : "111:24-111:35",
+                                                   "path" : "identifier",
+                                                   "scope" : "P",
+                                                   "type" : "Property"
+                                                }
+                                             } ],
+                                             "where" : {
+                                                "type" : "Not",
+                                                "operand" : {
+                                                   "type" : "IsNull",
+                                                   "operand" : {
+                                                      "path" : "extension",
+                                                      "type" : "Property",
+                                                      "source" : {
+                                                         "name" : "$this",
+                                                         "type" : "AliasRef"
+                                                      }
+                                                   }
+                                                }
+                                             },
+                                             "return" : {
+                                                "distinct" : false,
+                                                "expression" : {
+                                                   "path" : "extension",
+                                                   "type" : "Property",
+                                                   "source" : {
+                                                      "name" : "$this",
+                                                      "type" : "AliasRef"
+                                                   }
+                                                }
+                                             }
+                                          }
+                                       }, {
+                                          "locator" : "111:47",
+                                          "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                          "value" : "1",
+                                          "type" : "Literal"
+                                       } ]
+                                    }
+                                 } ]
+                              }, {
+                                 "locator" : "111:56-111:103",
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                 "value" : "http://fhir.openmrs.org/ext/patient/identifier",
+                                 "type" : "Literal"
+                              } ]
+                           } ]
+                        }
+                     } ]
+                  }, {
+                     "locator" : "112:8-112:113",
+                     "type" : "SingletonFrom",
+                     "operand" : {
+                        "locator" : "112:23-112:113",
+                        "type" : "List",
+                        "element" : [ {
+                           "locator" : "112:24-112:112",
+                           "type" : "Equivalent",
+                           "operand" : [ {
+                              "name" : "ToString",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "locator" : "112:24-112:52",
+                                 "path" : "url",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "locator" : "112:24-112:48",
+                                    "type" : "Indexer",
+                                    "operand" : [ {
+                                       "locator" : "112:24-112:45",
+                                       "type" : "Flatten",
+                                       "operand" : {
+                                          "type" : "Query",
+                                          "source" : [ {
+                                             "alias" : "$this",
+                                             "expression" : {
+                                                "locator" : "112:24-112:35",
+                                                "path" : "identifier",
+                                                "scope" : "P",
+                                                "type" : "Property"
+                                             }
+                                          } ],
+                                          "where" : {
+                                             "type" : "Not",
+                                             "operand" : {
+                                                "type" : "IsNull",
+                                                "operand" : {
+                                                   "path" : "extension",
+                                                   "type" : "Property",
+                                                   "source" : {
+                                                      "name" : "$this",
+                                                      "type" : "AliasRef"
+                                                   }
+                                                }
+                                             }
+                                          },
+                                          "return" : {
+                                             "distinct" : false,
+                                             "expression" : {
+                                                "path" : "extension",
+                                                "type" : "Property",
+                                                "source" : {
+                                                   "name" : "$this",
+                                                   "type" : "AliasRef"
+                                                }
+                                             }
+                                          }
+                                       }
+                                    }, {
+                                       "locator" : "112:47",
+                                       "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                       "value" : "1",
+                                       "type" : "Literal"
+                                    } ]
+                                 }
+                              } ]
+                           }, {
+                              "locator" : "112:56-112:112",
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+                              "type" : "Literal"
+                           } ]
+                        } ]
+                     }
+                  } ]
+               },
+               "return" : {
+                  "locator" : "113:5-113:75",
+                  "expression" : {
+                     "locator" : "113:12-113:75",
+                     "type" : "SingletonFrom",
+                     "operand" : {
+                        "locator" : "113:27-113:75",
+                        "type" : "List",
+                        "element" : [ {
+                           "locator" : "113:28-113:74",
+                           "path" : "value",
+                           "type" : "Property",
+                           "source" : {
+                              "locator" : "113:28-113:68",
+                              "path" : "reference",
+                              "type" : "Property",
+                              "source" : {
+                                 "locator" : "113:28-113:58",
+                                 "path" : "value",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "locator" : "113:28-113:52",
+                                    "type" : "Indexer",
+                                    "operand" : [ {
+                                       "locator" : "113:28-113:49",
+                                       "type" : "Flatten",
+                                       "operand" : {
+                                          "type" : "Query",
+                                          "source" : [ {
+                                             "alias" : "$this",
+                                             "expression" : {
+                                                "locator" : "113:28-113:39",
+                                                "path" : "identifier",
+                                                "scope" : "P",
+                                                "type" : "Property"
+                                             }
+                                          } ],
+                                          "where" : {
+                                             "type" : "Not",
+                                             "operand" : {
+                                                "type" : "IsNull",
+                                                "operand" : {
+                                                   "path" : "extension",
+                                                   "type" : "Property",
+                                                   "source" : {
+                                                      "name" : "$this",
+                                                      "type" : "AliasRef"
+                                                   }
+                                                }
+                                             }
+                                          },
+                                          "return" : {
+                                             "distinct" : false,
+                                             "expression" : {
+                                                "path" : "extension",
+                                                "type" : "Property",
+                                                "source" : {
+                                                   "name" : "$this",
+                                                   "type" : "AliasRef"
+                                                }
+                                             }
+                                          }
+                                       }
+                                    }, {
+                                       "locator" : "113:51",
+                                       "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                       "value" : "0",
+                                       "type" : "Literal"
+                                    } ]
+                                 }
+                              }
+                           }
+                        } ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "locator" : "117:1-122:58",
+            "name" : "Last serviceProvider",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "120:3-122:58",
+               "type" : "Query",
+               "source" : [ {
+                  "locator" : "120:3-120:15",
+                  "alias" : "E",
+                  "expression" : {
+                     "locator" : "120:3-120:13",
+                     "dataType" : "{http://hl7.org/fhir}Encounter",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                     "type" : "Retrieve"
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "locator" : "121:5-121:39",
+                  "type" : "Not",
+                  "operand" : {
+                     "locator" : "121:11-121:39",
+                     "type" : "IsNull",
+                     "operand" : {
+                        "locator" : "121:11-121:27",
+                        "path" : "serviceProvider",
+                        "scope" : "E",
+                        "type" : "Property"
+                     }
+                  }
+               },
+               "return" : {
+                  "locator" : "122:3-122:58",
+                  "expression" : {
+                     "locator" : "122:10-122:58",
+                     "path" : "value",
+                     "type" : "Property",
+                     "source" : {
+                        "locator" : "122:10-122:52",
+                        "path" : "reference",
+                        "type" : "Property",
+                        "source" : {
+                           "locator" : "122:10-122:42",
+                           "path" : "serviceProvider",
+                           "type" : "Property",
+                           "source" : {
+                              "locator" : "122:10-122:26",
+                              "type" : "Last",
+                              "source" : {
+                                 "locator" : "122:15-122:25",
+                                 "dataType" : "{http://hl7.org/fhir}Encounter",
+                                 "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                                 "type" : "Retrieve"
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }, {
+            "locator" : "126:1-133:11",
+            "name" : "Location",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "127:3-133:11",
+               "type" : "If",
+               "condition" : {
+                  "locator" : "127:6-127:32",
+                  "type" : "Not",
+                  "operand" : {
+                     "locator" : "127:6-127:32",
+                     "type" : "IsNull",
+                     "operand" : {
+                        "locator" : "127:6-127:20",
+                        "name" : "Last Location",
+                        "type" : "ExpressionRef"
+                     }
+                  }
+               },
+               "then" : {
+                  "type" : "As",
+                  "operand" : {
+                     "locator" : "127:39-127:55",
+                     "name" : "Last Location",
+                     "type" : "ExpressionRef"
+                  },
+                  "asTypeSpecifier" : {
+                     "type" : "ChoiceTypeSpecifier",
+                     "choice" : [ {
+                        "name" : "{urn:hl7-org:elm-types:r1}String",
+                        "type" : "NamedTypeSpecifier"
+                     }, {
+                        "type" : "ListTypeSpecifier",
+                        "elementType" : {
+                           "name" : "{urn:hl7-org:elm-types:r1}String",
+                           "type" : "NamedTypeSpecifier"
+                        }
+                     } ]
+                  }
+               },
+               "else" : {
+                  "type" : "As",
+                  "operand" : {
+                     "locator" : "130:3-133:11",
+                     "type" : "If",
+                     "condition" : {
+                        "locator" : "130:6-130:39",
+                        "type" : "Not",
+                        "operand" : {
+                           "locator" : "130:6-130:39",
+                           "type" : "IsNull",
+                           "operand" : {
+                              "locator" : "130:6-130:27",
+                              "name" : "Last serviceProvider",
+                              "type" : "ExpressionRef"
+                           }
+                        }
+                     },
+                     "then" : {
+                        "locator" : "130:46-130:67",
+                        "name" : "Last serviceProvider",
+                        "type" : "ExpressionRef"
+                     },
+                     "else" : {
+                        "locator" : "132:3-133:11",
+                        "type" : "If",
+                        "condition" : {
+                           "locator" : "132:6-132:35",
+                           "type" : "Not",
+                           "operand" : {
+                              "locator" : "132:6-132:35",
+                              "type" : "IsNull",
+                              "operand" : {
+                                 "locator" : "132:6-132:23",
+                                 "name" : "OpenMRS Location",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        },
+                        "then" : {
+                           "locator" : "132:42-132:61",
+                           "name" : "OpenMRS Location",
+                           "type" : "ExpressionRef"
+                        },
+                        "else" : {
+                           "type" : "As",
+                           "operand" : {
+                              "locator" : "133:8-133:11",
+                              "type" : "Null"
+                           },
+                           "asTypeSpecifier" : {
+                              "type" : "ListTypeSpecifier",
+                              "elementType" : {
+                                 "name" : "{urn:hl7-org:elm-types:r1}String",
+                                 "type" : "NamedTypeSpecifier"
+                              }
+                           }
+                        }
+                     }
+                  },
+                  "asTypeSpecifier" : {
+                     "type" : "ChoiceTypeSpecifier",
+                     "choice" : [ {
+                        "name" : "{urn:hl7-org:elm-types:r1}String",
+                        "type" : "NamedTypeSpecifier"
+                     }, {
+                        "type" : "ListTypeSpecifier",
+                        "elementType" : {
+                           "name" : "{urn:hl7-org:elm-types:r1}String",
+                           "type" : "NamedTypeSpecifier"
+                        }
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "locator" : "137:1-145:5",
+            "name" : "Location Case Switch",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "138:3-145:5",
+               "type" : "Case",
+               "caseItem" : [ {
+                  "locator" : "140:5-140:65",
+                  "when" : {
+                     "locator" : "140:10-140:39",
+                     "type" : "Not",
+                     "operand" : {
+                        "locator" : "140:10-140:39",
+                        "type" : "IsNull",
+                        "operand" : {
+                           "locator" : "140:10-140:27",
+                           "name" : "OpenMRS Location",
+                           "type" : "ExpressionRef"
+                        }
+                     }
+                  },
+                  "then" : {
+                     "type" : "As",
+                     "operand" : {
+                        "locator" : "140:46-140:65",
+                        "name" : "OpenMRS Location",
+                        "type" : "ExpressionRef"
+                     },
+                     "asTypeSpecifier" : {
+                        "type" : "ChoiceTypeSpecifier",
+                        "choice" : [ {
+                           "type" : "ListTypeSpecifier",
+                           "elementType" : {
+                              "name" : "{urn:hl7-org:elm-types:r1}String",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        }, {
+                           "name" : "{urn:hl7-org:elm-types:r1}String",
+                           "type" : "NamedTypeSpecifier"
+                        } ]
+                     }
+                  }
+               }, {
+                  "locator" : "142:5-142:59",
+                  "when" : {
+                     "locator" : "142:10-142:36",
+                     "type" : "Not",
+                     "operand" : {
+                        "locator" : "142:10-142:36",
+                        "type" : "IsNull",
+                        "operand" : {
+                           "locator" : "142:10-142:24",
+                           "name" : "Last Location",
+                           "type" : "ExpressionRef"
+                        }
+                     }
+                  },
+                  "then" : {
+                     "type" : "As",
+                     "operand" : {
+                        "locator" : "142:43-142:59",
+                        "name" : "Last Location",
+                        "type" : "ExpressionRef"
+                     },
+                     "asTypeSpecifier" : {
+                        "type" : "ChoiceTypeSpecifier",
+                        "choice" : [ {
+                           "type" : "ListTypeSpecifier",
+                           "elementType" : {
+                              "name" : "{urn:hl7-org:elm-types:r1}String",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        }, {
+                           "name" : "{urn:hl7-org:elm-types:r1}String",
+                           "type" : "NamedTypeSpecifier"
+                        } ]
+                     }
+                  }
+               } ],
+               "else" : {
+                  "type" : "As",
+                  "operand" : {
+                     "locator" : "144:10-144:31",
+                     "name" : "Last serviceProvider",
+                     "type" : "ExpressionRef"
+                  },
+                  "asTypeSpecifier" : {
+                     "type" : "ChoiceTypeSpecifier",
+                     "choice" : [ {
+                        "type" : "ListTypeSpecifier",
+                        "elementType" : {
+                           "name" : "{urn:hl7-org:elm-types:r1}String",
+                           "type" : "NamedTypeSpecifier"
+                        }
+                     }, {
+                        "name" : "{urn:hl7-org:elm-types:r1}String",
+                        "type" : "NamedTypeSpecifier"
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "locator" : "148:1-149:51",
+            "name" : "Age Group/Sex/Location",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "149:3-149:51",
+               "type" : "Concatenate",
+               "operand" : [ {
+                  "locator" : "149:3-149:38",
+                  "type" : "Concatenate",
+                  "operand" : [ {
+                     "locator" : "149:3-149:32",
+                     "type" : "Concatenate",
+                     "operand" : [ {
+                        "locator" : "149:3-149:24",
+                        "type" : "Concatenate",
+                        "operand" : [ {
+                           "locator" : "149:3-149:18",
+                           "path" : "code",
+                           "type" : "Property",
+                           "source" : {
+                              "locator" : "149:3-149:13",
+                              "name" : "Age Group",
+                              "type" : "ExpressionRef"
+                           }
+                        }, {
+                           "locator" : "149:22-149:24",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : ":",
+                           "type" : "Literal"
+                        } ]
+                     }, {
+                        "locator" : "149:28-149:32",
+                        "name" : "Sex",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }, {
+                     "locator" : "149:36-149:38",
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : ":",
+                     "type" : "Literal"
+                  } ]
+               }, {
+                  "asType" : "{urn:hl7-org:elm-types:r1}String",
+                  "type" : "As",
+                  "operand" : {
+                     "locator" : "149:42-149:51",
+                     "name" : "Location",
+                     "type" : "ExpressionRef"
+                  }
+               } ]
+            }
+         }, {
+            "locator" : "152:1-153:58",
+            "name" : "Age Group/Sex/Location TXCURR",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "153:3-153:58",
+               "type" : "Concatenate",
+               "operand" : [ {
+                  "locator" : "153:3-153:45",
+                  "type" : "Concatenate",
+                  "operand" : [ {
+                     "locator" : "153:3-153:39",
+                     "type" : "Concatenate",
+                     "operand" : [ {
+                        "locator" : "153:3-153:31",
+                        "type" : "Concatenate",
+                        "operand" : [ {
+                           "locator" : "153:3-153:25",
+                           "path" : "code",
+                           "type" : "Property",
+                           "source" : {
+                              "locator" : "153:3-153:20",
+                              "name" : "Age Group TXCURR",
+                              "type" : "ExpressionRef"
+                           }
+                        }, {
+                           "locator" : "153:29-153:31",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : ":",
+                           "type" : "Literal"
+                        } ]
+                     }, {
+                        "locator" : "153:35-153:39",
+                        "name" : "Sex",
+                        "type" : "ExpressionRef"
+                     } ]
+                  }, {
+                     "locator" : "153:43-153:45",
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : ":",
+                     "type" : "Literal"
+                  } ]
+               }, {
+                  "asType" : "{urn:hl7-org:elm-types:r1}String",
+                  "type" : "As",
+                  "operand" : {
+                     "locator" : "153:49-153:58",
+                     "name" : "Location",
+                     "type" : "ExpressionRef"
+                  }
+               } ]
+            }
+         } ]
+      }
+   }
+}

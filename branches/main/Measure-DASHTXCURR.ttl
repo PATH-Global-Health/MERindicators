@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Measure/DASHTXCURR> a fhir:Measure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DASHTXCURR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Measure</b><a name=\"DASHTXCURR\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Measure &quot;DASHTXCURR&quot; </p></div><p><b>url</b>: <code>https://intrahealth.github.io/simple-hiv-ig/Measure/MERTXCURR</code></p><p><b>identifier</b>: id: MERTXCURR, id: 12345</p><p><b>version</b>: 0.0.1</p><p><b>name</b>: MERTXCURR</p><p><b>title</b>: MERTXCURR</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: 2021-07-01</p><p><b>publisher</b>: PATH</p><p><b>contact</b>: PATH: <a href=\"https://www.path.org\">https://www.path.org</a>,<a href=\"mailto:info@path.org\">info@path.org</a>, PATH: <a href=\"mailto:info@path.org\">info@path.org</a></p><p><b>description</b>: MERTXCURR</p><p><b>jurisdiction</b>: World <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>library</b>: <a href=\"Library-TXCURR.html\">TXCURR</a></p><p><b>scoring</b>: Cohort <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-scoring.html\">MeasureScoring</a>#cohort)</span></p><blockquote><p><b>group</b></p><p><b>code</b>: cohort <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OpenHIE.html\">OpenHIE CodeSystem</a>#cohort)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#initial-population)</span></p><p><b>description</b>: Initial Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>text/cql</td><td>Initial Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator Exclusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#numerator-exclusion)</span></p><p><b>description</b>: Numerator-Exclusion</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>text/cql</td><td>Numerator-Exclusion</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#numerator)</span></p><p><b>description</b>: Numerator</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>text/cql</td><td>Numerator</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>text/cql</td><td>Stratifier</td></tr></table></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intrahealth.github.io/simple-hiv-ig/Measure/MERTXCURR"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://intrahealth.github.io/simple-hiv-ig/Measure/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MERTXCURR" ]
+  ] [
+     fhir:system [ fhir:v "https://datim.org/factsinfo/mechanism"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "MERTXCURR"] ; # 
+  fhir:title [ fhir:v "MERTXCURR"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-07-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "MERTXCURR"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:library ( [
+     fhir:v "https://path-global-health.github.io/MERindicators/Library/TXCURR"^^xsd:anyURI ;
+     fhir:link <https://path-global-health.github.io/MERindicators/Library/TXCURR>
+  ] ) ; # 
+  fhir:scoring [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-scoring"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cohort" ]
+     ] )
+  ] ; # 
+  fhir:group ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cohort" ] ;
+         fhir:display [ fhir:v "cohort" ]
+       ] )
+     ] ;
+     fhir:population ( [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-population"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "initial-population" ]
+         ] )
+       ] ;
+       fhir:description [ fhir:v "Initial Population" ] ;
+       fhir:criteria [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Initial Population" ]
+       ]
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-population"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "numerator-exclusion" ]
+         ] )
+       ] ;
+       fhir:description [ fhir:v "Numerator-Exclusion" ] ;
+       fhir:criteria [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Numerator-Exclusion" ]
+       ]
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-population"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "numerator" ]
+         ] )
+       ] ;
+       fhir:description [ fhir:v "Numerator" ] ;
+       fhir:criteria [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Numerator" ]
+       ]
+     ] ) ;
+     fhir:stratifier ( [
+       fhir:criteria [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Stratifier" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

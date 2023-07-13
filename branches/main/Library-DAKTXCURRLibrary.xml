@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library xmlns="http://hl7.org/fhir">
+  <id value="DAKTXCURRLibrary"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Related Artifacts</h2><table class="grid"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.1</code></td></tr><tr><td>depends-on</td><td><code>https://path-global-health.github.io/MERindicators/Library/FHIRCommon|4.0.1</code></td></tr><tr><td>depends-on</td><td><a href="Library-DAKConcepts.html">DAKConcepts</a></td></tr><tr><td>depends-on</td><td><a href="Library-DAKDataElements.html">DAKDataElements</a></td></tr><tr><td>depends-on</td><td><a href="Library-DAKStratifiers.html">DAKStratifiers</a></td></tr></table><h2>Parameters</h2><table class="grid"><tr><td>Patient</td><td>out</td><td>0</td><td>1</td><td>Patient</td></tr><tr><td>Initial Population</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Stratification</td><td>out</td><td>0</td><td>1</td><td>string</td></tr><tr><td>Dispense Stratification</td><td>out</td><td>0</td><td>1</td><td>string</td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">// TX_CURR, WHO HIV.IND.AV.1
+// numerator only
+// Number of adults and children currently receiving antiretroviral therapy (ART)
+// Sum of age/sex disaggregates
+
+
+library DAKTXCURR version '0.1.0'
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.1'
+include FHIRCommon version '4.0.1' called FC
+
+include DAKConcepts called Cx
+include DAKDataElements called PatientData
+include DAKStratifiers called DAKStratifiers
+
+context Patient
+
+define &quot;Initial Population&quot;: 
+  PatientData.&quot;On ART&quot; and not PatientData.&quot;Deceased&quot;
+
+/* For continuous variable
+
+define &quot;Initial Population&quot;: 
+  PatientData.&quot;On ART&quot;
+
+define &quot;Measure Population&quot;:
+  PatientData.&quot;On ART&quot;
+
+define &quot;Measure Population Exclusion&quot;:
+  PatientData.&quot;Deceased&quot;
+
+define &quot;Measure Observation&quot;:
+  PatientData.&quot;On ART&quot;
+*/
+
+/* for proportion
+define &quot;Initial Population&quot;: 
+  PatientData.&quot;PLHIV&quot;
+
+define &quot;Denominator&quot;:
+  PatientData.&quot;PLHIV&quot;
+
+define &quot;Denominator-Exclusion&quot;:
+  PatientData.&quot;Deceased&quot;
+
+define &quot;Numerator-Exclusion&quot;: 
+  PatientData.&quot;Deceased&quot;
+
+
+// todo: this is not showing up as true
+
+define &quot;Numerator&quot;:
+  PatientData.&quot;On ART&quot;
+*/
+
+define &quot;Stratification&quot;: 
+  DAKStratifiers.&quot;Age Group/Sex/Location TXCURR&quot;
+
+define &quot;Dispense Stratification&quot;:
+  DAKStratifiers.&quot;Dispensing Quantity/Coarse Age/Sex/Location&quot;
+
+// define &quot;Initial population&quot;:
+//     exists &quot;Anti Retroviral Therapy Adults And Children&quot;
+  
+// define &quot;Anti Retroviral Therapy Adults And Children&quot;:
+//     ( [Observation: &quot;Anti Retroviral Therapy&quot;] ) o
+//         where o.value.coding[1]= &quot;Coded Answer&quot;
+//         or o.value.coding[2]= &quot;Coded Answer&quot;
+//         and o.status in {'final', 'amended', 'corrected'}
+//         and o.effective in day of &quot;Measurement Period&quot;
+</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 2Kb)</p><p><code>Content not shown - (</code><code>application/elm+json</code>, size = 4Kb)</p></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/Library/DAKTXCURR"/>
+  <version value="0.1.0"/>
+  <name value="DAKTXCURR"/>
+  <title value="DAKTXCURR"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+      <code value="logic-library"/>
+    </coding>
+  </type>
+  <date value="2023-07-13T22:55:34+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DAKTXCURR"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <resource value="http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <resource value="http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <resource value="https://path-global-health.github.io/MERindicators/Library/FHIRCommon|4.0.1"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <resource value="https://path-global-health.github.io/MERindicators/Library/DAKConcepts"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <resource value="https://path-global-health.github.io/MERindicators/Library/DAKDataElements"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <resource value="https://path-global-health.github.io/MERindicators/Library/DAKStratifiers"/>
+  </relatedArtifact>
+  <parameter>
+    <name value="Patient"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="Patient"/>
+  </parameter>
+  <parameter>
+    <name value="Initial Population"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="boolean"/>
+  </parameter>
+  <parameter>
+    <name value="Stratification"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="Dispense Stratification"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="string"/>
+  </parameter>
+  <content>
+    <contentType value="text/cql"/>
+    <data value="Ly8gVFhfQ1VSUiwgV0hPIEhJVi5JTkQuQVYuMQ0KLy8gbnVtZXJhdG9yIG9ubHkNCi8vIE51bWJlciBvZiBhZHVsdHMgYW5kIGNoaWxkcmVuIGN1cnJlbnRseSByZWNlaXZpbmcgYW50aXJldHJvdmlyYWwgdGhlcmFweSAoQVJUKQ0KLy8gU3VtIG9mIGFnZS9zZXggZGlzYWdncmVnYXRlcw0KDQoNCmxpYnJhcnkgREFLVFhDVVJSIHZlcnNpb24gJzAuMS4wJw0KDQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJw0KDQppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4xJw0KaW5jbHVkZSBGSElSQ29tbW9uIHZlcnNpb24gJzQuMC4xJyBjYWxsZWQgRkMNCg0KaW5jbHVkZSBEQUtDb25jZXB0cyBjYWxsZWQgQ3gNCmluY2x1ZGUgREFLRGF0YUVsZW1lbnRzIGNhbGxlZCBQYXRpZW50RGF0YQ0KaW5jbHVkZSBEQUtTdHJhdGlmaWVycyBjYWxsZWQgREFLU3RyYXRpZmllcnMNCg0KY29udGV4dCBQYXRpZW50DQoNCmRlZmluZSAiSW5pdGlhbCBQb3B1bGF0aW9uIjogDQogIFBhdGllbnREYXRhLiJPbiBBUlQiIGFuZCBub3QgUGF0aWVudERhdGEuIkRlY2Vhc2VkIg0KDQovKiBGb3IgY29udGludW91cyB2YXJpYWJsZQ0KDQpkZWZpbmUgIkluaXRpYWwgUG9wdWxhdGlvbiI6IA0KICBQYXRpZW50RGF0YS4iT24gQVJUIg0KDQpkZWZpbmUgIk1lYXN1cmUgUG9wdWxhdGlvbiI6DQogIFBhdGllbnREYXRhLiJPbiBBUlQiDQoNCmRlZmluZSAiTWVhc3VyZSBQb3B1bGF0aW9uIEV4Y2x1c2lvbiI6DQogIFBhdGllbnREYXRhLiJEZWNlYXNlZCINCg0KZGVmaW5lICJNZWFzdXJlIE9ic2VydmF0aW9uIjoNCiAgUGF0aWVudERhdGEuIk9uIEFSVCINCiovDQoNCi8qIGZvciBwcm9wb3J0aW9uDQpkZWZpbmUgIkluaXRpYWwgUG9wdWxhdGlvbiI6IA0KICBQYXRpZW50RGF0YS4iUExISVYiDQoNCmRlZmluZSAiRGVub21pbmF0b3IiOg0KICBQYXRpZW50RGF0YS4iUExISVYiDQoNCmRlZmluZSAiRGVub21pbmF0b3ItRXhjbHVzaW9uIjoNCiAgUGF0aWVudERhdGEuIkRlY2Vhc2VkIg0KDQpkZWZpbmUgIk51bWVyYXRvci1FeGNsdXNpb24iOiANCiAgUGF0aWVudERhdGEuIkRlY2Vhc2VkIg0KDQoNCi8vIHRvZG86IHRoaXMgaXMgbm90IHNob3dpbmcgdXAgYXMgdHJ1ZQ0KDQpkZWZpbmUgIk51bWVyYXRvciI6DQogIFBhdGllbnREYXRhLiJPbiBBUlQiDQoqLw0KDQpkZWZpbmUgIlN0cmF0aWZpY2F0aW9uIjogDQogIERBS1N0cmF0aWZpZXJzLiJBZ2UgR3JvdXAvU2V4L0xvY2F0aW9uIFRYQ1VSUiINCg0KZGVmaW5lICJEaXNwZW5zZSBTdHJhdGlmaWNhdGlvbiI6DQogIERBS1N0cmF0aWZpZXJzLiJEaXNwZW5zaW5nIFF1YW50aXR5L0NvYXJzZSBBZ2UvU2V4L0xvY2F0aW9uIg0KDQovLyBkZWZpbmUgIkluaXRpYWwgcG9wdWxhdGlvbiI6DQovLyAgICAgZXhpc3RzICJBbnRpIFJldHJvdmlyYWwgVGhlcmFweSBBZHVsdHMgQW5kIENoaWxkcmVuIg0KICANCi8vIGRlZmluZSAiQW50aSBSZXRyb3ZpcmFsIFRoZXJhcHkgQWR1bHRzIEFuZCBDaGlsZHJlbiI6DQovLyAgICAgKCBbT2JzZXJ2YXRpb246ICJBbnRpIFJldHJvdmlyYWwgVGhlcmFweSJdICkgbw0KLy8gICAgICAgICB3aGVyZSBvLnZhbHVlLmNvZGluZ1sxXT0gIkNvZGVkIEFuc3dlciINCi8vICAgICAgICAgb3Igby52YWx1ZS5jb2RpbmdbMl09ICJDb2RlZCBBbnN3ZXIiDQovLyAgICAgICAgIGFuZCBvLnN0YXR1cyBpbiB7J2ZpbmFsJywgJ2FtZW5kZWQnLCAnY29ycmVjdGVkJ30NCi8vICAgICAgICAgYW5kIG8uZWZmZWN0aXZlIGluIGRheSBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIg0K"/>
+  </content>
+  <content>
+    <contentType value="application/elm+xml"/>
+    <data value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGxpYnJhcnkgeG1sbnM9InVybjpobDctb3JnOmVsbTpyMSIgeG1sbnM6dD0idXJuOmhsNy1vcmc6ZWxtLXR5cGVzOnIxIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczpmaGlyPSJodHRwOi8vaGw3Lm9yZy9maGlyIiB4bWxuczpxZG00Mz0idXJuOmhlYWx0aGl0LWdvdjpxZG06djRfMyIgeG1sbnM6cWRtNTM9InVybjpoZWFsdGhpdC1nb3Y6cWRtOnY1XzMiIHhtbG5zOmE9InVybjpobDctb3JnOmNxbC1hbm5vdGF0aW9uczpyMSI+CiAgIDxhbm5vdGF0aW9uIHRyYW5zbGF0b3JPcHRpb25zPSJFbmFibGVMb2NhdG9ycyxEaXNhYmxlTGlzdERlbW90aW9uLERpc2FibGVMaXN0UHJvbW90aW9uIiB4c2k6dHlwZT0iYTpDcWxUb0VsbUluZm8iLz4KICAgPGlkZW50aWZpZXIgaWQ9IkRBS1RYQ1VSUiIgc3lzdGVtPSJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycyIgdmVyc2lvbj0iMC4xLjAiLz4KICAgPHNjaGVtYUlkZW50aWZpZXIgaWQ9InVybjpobDctb3JnOmVsbSIgdmVyc2lvbj0icjEiLz4KICAgPHVzaW5ncz4KICAgICAgPGRlZiBsb2NhbElkZW50aWZpZXI9IlN5c3RlbSIgdXJpPSJ1cm46aGw3LW9yZzplbG0tdHlwZXM6cjEiLz4KICAgICAgPGRlZiBsb2NhdG9yPSI5OjEtOToyNiIgbG9jYWxJZGVudGlmaWVyPSJGSElSIiB1cmk9Imh0dHA6Ly9obDcub3JnL2ZoaXIiIHZlcnNpb249IjQuMC4xIi8+CiAgIDwvdXNpbmdzPgogICA8aW5jbHVkZXM+CiAgICAgIDxkZWYgbG9jYXRvcj0iMTE6MS0xMTozNSIgbG9jYWxJZGVudGlmaWVyPSJGSElSSGVscGVycyIgcGF0aD0iaHR0cHM6Ly9wYXRoLWdsb2JhbC1oZWFsdGguZ2l0aHViLmlvL01FUmluZGljYXRvcnMvRkhJUkhlbHBlcnMiIHZlcnNpb249IjQuMC4xIi8+CiAgICAgIDxkZWYgbG9jYXRvcj0iMTI6MS0xMjo0NCIgbG9jYWxJZGVudGlmaWVyPSJGQyIgcGF0aD0iaHR0cHM6Ly9wYXRoLWdsb2JhbC1oZWFsdGguZ2l0aHViLmlvL01FUmluZGljYXRvcnMvRkhJUkNvbW1vbiIgdmVyc2lvbj0iNC4wLjEiLz4KICAgICAgPGRlZiBsb2NhdG9yPSIxNDoxLTE0OjI5IiBsb2NhbElkZW50aWZpZXI9IkN4IiBwYXRoPSJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycy9EQUtDb25jZXB0cyIvPgogICAgICA8ZGVmIGxvY2F0b3I9IjE1OjEtMTU6NDIiIGxvY2FsSWRlbnRpZmllcj0iUGF0aWVudERhdGEiIHBhdGg9Imh0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL0RBS0RhdGFFbGVtZW50cyIvPgogICAgICA8ZGVmIGxvY2F0b3I9IjE2OjEtMTY6NDQiIGxvY2FsSWRlbnRpZmllcj0iREFLU3RyYXRpZmllcnMiIHBhdGg9Imh0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL0RBS1N0cmF0aWZpZXJzIi8+CiAgIDwvaW5jbHVkZXM+CiAgIDxjb250ZXh0cz4KICAgICAgPGRlZiBsb2NhdG9yPSIxODoxLTE4OjE1IiBuYW1lPSJQYXRpZW50Ii8+CiAgIDwvY29udGV4dHM+CiAgIDxzdGF0ZW1lbnRzPgogICAgICA8ZGVmIGxvY2F0b3I9IjE4OjEtMTg6MTUiIG5hbWU9IlBhdGllbnQiIGNvbnRleHQ9IlBhdGllbnQiPgogICAgICAgICA8ZXhwcmVzc2lvbiB4c2k6dHlwZT0iU2luZ2xldG9uRnJvbSI+CiAgICAgICAgICAgIDxvcGVyYW5kIGxvY2F0b3I9IjE4OjEtMTg6MTUiIGRhdGFUeXBlPSJmaGlyOlBhdGllbnQiIHRlbXBsYXRlSWQ9Imh0dHA6Ly9obDcub3JnL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9QYXRpZW50IiB4c2k6dHlwZT0iUmV0cmlldmUiLz4KICAgICAgICAgPC9leHByZXNzaW9uPgogICAgICA8L2RlZj4KICAgICAgPGRlZiBsb2NhdG9yPSIyMDoxLTIxOjUzIiBuYW1lPSJJbml0aWFsIFBvcHVsYXRpb24iIGNvbnRleHQ9IlBhdGllbnQiIGFjY2Vzc0xldmVsPSJQdWJsaWMiPgogICAgICAgICA8ZXhwcmVzc2lvbiBsb2NhdG9yPSIyMTozLTIxOjUzIiB4c2k6dHlwZT0iQW5kIj4KICAgICAgICAgICAgPG9wZXJhbmQgbG9jYXRvcj0iMjE6My0yMToyMiIgbmFtZT0iT24gQVJUIiBsaWJyYXJ5TmFtZT0iUGF0aWVudERhdGEiIHhzaTp0eXBlPSJFeHByZXNzaW9uUmVmIi8+CiAgICAgICAgICAgIDxvcGVyYW5kIGxvY2F0b3I9IjIxOjI4LTIxOjUzIiB4c2k6dHlwZT0iTm90Ij4KICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYXRvcj0iMjE6MzItMjE6NTMiIG5hbWU9IkRlY2Vhc2VkIiBsaWJyYXJ5TmFtZT0iUGF0aWVudERhdGEiIHhzaTp0eXBlPSJFeHByZXNzaW9uUmVmIi8+CiAgICAgICAgICAgIDwvb3BlcmFuZD4KICAgICAgICAgPC9leHByZXNzaW9uPgogICAgICA8L2RlZj4KICAgICAgPGRlZiBsb2NhdG9yPSI1ODoxLTU5OjQ4IiBuYW1lPSJTdHJhdGlmaWNhdGlvbiIgY29udGV4dD0iUGF0aWVudCIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+CiAgICAgICAgIDxleHByZXNzaW9uIGxvY2F0b3I9IjU5OjMtNTk6NDgiIG5hbWU9IkFnZSBHcm91cC9TZXgvTG9jYXRpb24gVFhDVVJSIiBsaWJyYXJ5TmFtZT0iREFLU3RyYXRpZmllcnMiIHhzaTp0eXBlPSJFeHByZXNzaW9uUmVmIi8+CiAgICAgIDwvZGVmPgogICAgICA8ZGVmIGxvY2F0b3I9IjYxOjEtNjI6NjIiIG5hbWU9IkRpc3BlbnNlIFN0cmF0aWZpY2F0aW9uIiBjb250ZXh0PSJQYXRpZW50IiBhY2Nlc3NMZXZlbD0iUHVibGljIj4KICAgICAgICAgPGV4cHJlc3Npb24gbG9jYXRvcj0iNjI6My02Mjo2MiIgbmFtZT0iRGlzcGVuc2luZyBRdWFudGl0eS9Db2Fyc2UgQWdlL1NleC9Mb2NhdGlvbiIgbGlicmFyeU5hbWU9IkRBS1N0cmF0aWZpZXJzIiB4c2k6dHlwZT0iRXhwcmVzc2lvblJlZiIvPgogICAgICA8L2RlZj4KICAgPC9zdGF0ZW1lbnRzPgo8L2xpYnJhcnk+Cg=="/>
+  </content>
+  <content>
+    <contentType value="application/elm+json"/>
+    <data value="ewogICAibGlicmFyeSIgOiB7CiAgICAgICJhbm5vdGF0aW9uIiA6IFsgewogICAgICAgICAidHJhbnNsYXRvck9wdGlvbnMiIDogIkVuYWJsZUxvY2F0b3JzLERpc2FibGVMaXN0RGVtb3Rpb24sRGlzYWJsZUxpc3RQcm9tb3Rpb24iLAogICAgICAgICAidHlwZSIgOiAiQ3FsVG9FbG1JbmZvIgogICAgICB9IF0sCiAgICAgICJpZGVudGlmaWVyIiA6IHsKICAgICAgICAgImlkIiA6ICJEQUtUWENVUlIiLAogICAgICAgICAic3lzdGVtIiA6ICJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycyIsCiAgICAgICAgICJ2ZXJzaW9uIiA6ICIwLjEuMCIKICAgICAgfSwKICAgICAgInNjaGVtYUlkZW50aWZpZXIiIDogewogICAgICAgICAiaWQiIDogInVybjpobDctb3JnOmVsbSIsCiAgICAgICAgICJ2ZXJzaW9uIiA6ICJyMSIKICAgICAgfSwKICAgICAgInVzaW5ncyIgOiB7CiAgICAgICAgICJkZWYiIDogWyB7CiAgICAgICAgICAgICJsb2NhbElkZW50aWZpZXIiIDogIlN5c3RlbSIsCiAgICAgICAgICAgICJ1cmkiIDogInVybjpobDctb3JnOmVsbS10eXBlczpyMSIKICAgICAgICAgfSwgewogICAgICAgICAgICAibG9jYXRvciIgOiAiOToxLTk6MjYiLAogICAgICAgICAgICAibG9jYWxJZGVudGlmaWVyIiA6ICJGSElSIiwKICAgICAgICAgICAgInVyaSIgOiAiaHR0cDovL2hsNy5vcmcvZmhpciIsCiAgICAgICAgICAgICJ2ZXJzaW9uIiA6ICI0LjAuMSIKICAgICAgICAgfSBdCiAgICAgIH0sCiAgICAgICJpbmNsdWRlcyIgOiB7CiAgICAgICAgICJkZWYiIDogWyB7CiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxMToxLTExOjM1IiwKICAgICAgICAgICAgImxvY2FsSWRlbnRpZmllciIgOiAiRkhJUkhlbHBlcnMiLAogICAgICAgICAgICAicGF0aCIgOiAiaHR0cHM6Ly9wYXRoLWdsb2JhbC1oZWFsdGguZ2l0aHViLmlvL01FUmluZGljYXRvcnMvRkhJUkhlbHBlcnMiLAogICAgICAgICAgICAidmVyc2lvbiIgOiAiNC4wLjEiCiAgICAgICAgIH0sIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjEyOjEtMTI6NDQiLAogICAgICAgICAgICAibG9jYWxJZGVudGlmaWVyIiA6ICJGQyIsCiAgICAgICAgICAgICJwYXRoIiA6ICJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycy9GSElSQ29tbW9uIiwKICAgICAgICAgICAgInZlcnNpb24iIDogIjQuMC4xIgogICAgICAgICB9LCB7CiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxNDoxLTE0OjI5IiwKICAgICAgICAgICAgImxvY2FsSWRlbnRpZmllciIgOiAiQ3giLAogICAgICAgICAgICAicGF0aCIgOiAiaHR0cHM6Ly9wYXRoLWdsb2JhbC1oZWFsdGguZ2l0aHViLmlvL01FUmluZGljYXRvcnMvREFLQ29uY2VwdHMiCiAgICAgICAgIH0sIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjE1OjEtMTU6NDIiLAogICAgICAgICAgICAibG9jYWxJZGVudGlmaWVyIiA6ICJQYXRpZW50RGF0YSIsCiAgICAgICAgICAgICJwYXRoIiA6ICJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycy9EQUtEYXRhRWxlbWVudHMiCiAgICAgICAgIH0sIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjE2OjEtMTY6NDQiLAogICAgICAgICAgICAibG9jYWxJZGVudGlmaWVyIiA6ICJEQUtTdHJhdGlmaWVycyIsCiAgICAgICAgICAgICJwYXRoIiA6ICJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycy9EQUtTdHJhdGlmaWVycyIKICAgICAgICAgfSBdCiAgICAgIH0sCiAgICAgICJjb250ZXh0cyIgOiB7CiAgICAgICAgICJkZWYiIDogWyB7CiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxODoxLTE4OjE1IiwKICAgICAgICAgICAgIm5hbWUiIDogIlBhdGllbnQiCiAgICAgICAgIH0gXQogICAgICB9LAogICAgICAic3RhdGVtZW50cyIgOiB7CiAgICAgICAgICJkZWYiIDogWyB7CiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxODoxLTE4OjE1IiwKICAgICAgICAgICAgIm5hbWUiIDogIlBhdGllbnQiLAogICAgICAgICAgICAiY29udGV4dCIgOiAiUGF0aWVudCIsCiAgICAgICAgICAgICJleHByZXNzaW9uIiA6IHsKICAgICAgICAgICAgICAgInR5cGUiIDogIlNpbmdsZXRvbkZyb20iLAogICAgICAgICAgICAgICAib3BlcmFuZCIgOiB7CiAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxODoxLTE4OjE1IiwKICAgICAgICAgICAgICAgICAgImRhdGFUeXBlIiA6ICJ7aHR0cDovL2hsNy5vcmcvZmhpcn1QYXRpZW50IiwKICAgICAgICAgICAgICAgICAgInRlbXBsYXRlSWQiIDogImh0dHA6Ly9obDcub3JnL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9QYXRpZW50IiwKICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlJldHJpZXZlIgogICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgfSwgewogICAgICAgICAgICAibG9jYXRvciIgOiAiMjA6MS0yMTo1MyIsCiAgICAgICAgICAgICJuYW1lIiA6ICJJbml0aWFsIFBvcHVsYXRpb24iLAogICAgICAgICAgICAiY29udGV4dCIgOiAiUGF0aWVudCIsCiAgICAgICAgICAgICJhY2Nlc3NMZXZlbCIgOiAiUHVibGljIiwKICAgICAgICAgICAgImV4cHJlc3Npb24iIDogewogICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMjE6My0yMTo1MyIsCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbmQiLAogICAgICAgICAgICAgICAib3BlcmFuZCIgOiBbIHsKICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjIxOjMtMjE6MjIiLAogICAgICAgICAgICAgICAgICAibmFtZSIgOiAiT24gQVJUIiwKICAgICAgICAgICAgICAgICAgImxpYnJhcnlOYW1lIiA6ICJQYXRpZW50RGF0YSIsCiAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJFeHByZXNzaW9uUmVmIgogICAgICAgICAgICAgICB9LCB7CiAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyMToyOC0yMTo1MyIsCiAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJOb3QiLAogICAgICAgICAgICAgICAgICAib3BlcmFuZCIgOiB7CiAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyMTozMi0yMTo1MyIsCiAgICAgICAgICAgICAgICAgICAgICJuYW1lIiA6ICJEZWNlYXNlZCIsCiAgICAgICAgICAgICAgICAgICAgICJsaWJyYXJ5TmFtZSIgOiAiUGF0aWVudERhdGEiLAogICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiRXhwcmVzc2lvblJlZiIKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICB9IF0KICAgICAgICAgICAgfQogICAgICAgICB9LCB7CiAgICAgICAgICAgICJsb2NhdG9yIiA6ICI1ODoxLTU5OjQ4IiwKICAgICAgICAgICAgIm5hbWUiIDogIlN0cmF0aWZpY2F0aW9uIiwKICAgICAgICAgICAgImNvbnRleHQiIDogIlBhdGllbnQiLAogICAgICAgICAgICAiYWNjZXNzTGV2ZWwiIDogIlB1YmxpYyIsCiAgICAgICAgICAgICJleHByZXNzaW9uIiA6IHsKICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjU5OjMtNTk6NDgiLAogICAgICAgICAgICAgICAibmFtZSIgOiAiQWdlIEdyb3VwL1NleC9Mb2NhdGlvbiBUWENVUlIiLAogICAgICAgICAgICAgICAibGlicmFyeU5hbWUiIDogIkRBS1N0cmF0aWZpZXJzIiwKICAgICAgICAgICAgICAgInR5cGUiIDogIkV4cHJlc3Npb25SZWYiCiAgICAgICAgICAgIH0KICAgICAgICAgfSwgewogICAgICAgICAgICAibG9jYXRvciIgOiAiNjE6MS02Mjo2MiIsCiAgICAgICAgICAgICJuYW1lIiA6ICJEaXNwZW5zZSBTdHJhdGlmaWNhdGlvbiIsCiAgICAgICAgICAgICJjb250ZXh0IiA6ICJQYXRpZW50IiwKICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLAogICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7CiAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICI2MjozLTYyOjYyIiwKICAgICAgICAgICAgICAgIm5hbWUiIDogIkRpc3BlbnNpbmcgUXVhbnRpdHkvQ29hcnNlIEFnZS9TZXgvTG9jYXRpb24iLAogICAgICAgICAgICAgICAibGlicmFyeU5hbWUiIDogIkRBS1N0cmF0aWZpZXJzIiwKICAgICAgICAgICAgICAgInR5cGUiIDogIkV4cHJlc3Npb25SZWYiCiAgICAgICAgICAgIH0KICAgICAgICAgfSBdCiAgICAgIH0KICAgfQp9"/>
+  </content>
+</Library>

@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KeyPopCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PWID<a name=\"KeyPopCS-PWID\"> </a></td><td>People who inject drugs (PWID)</td></tr><tr><td style=\"white-space:nowrap\">MSM<a name=\"KeyPopCS-MSM\"> </a></td><td>Men who have sex with men (MSM)</td></tr><tr><td style=\"white-space:nowrap\">TG<a name=\"KeyPopCS-TG\"> </a></td><td>Transgender people (TG)</td></tr><tr><td style=\"white-space:nowrap\">FSW<a name=\"KeyPopCS-FSW\"> </a></td><td>Female sex workers (FSW)</td></tr><tr><td style=\"white-space:nowrap\">PRISON<a name=\"KeyPopCS-PRISON\"> </a></td><td>People in prison and other closed settings</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KeyPopCS"] ; # 
+  fhir:title [ fhir:v "KeyPop"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-13T22:55:34+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "KeyPop"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "PWID" ] ;
+     fhir:display [ fhir:v "People who inject drugs (PWID)" ]
+  ] [
+     fhir:code [ fhir:v "MSM" ] ;
+     fhir:display [ fhir:v "Men who have sex with men (MSM)" ]
+  ] [
+     fhir:code [ fhir:v "TG" ] ;
+     fhir:display [ fhir:v "Transgender people (TG)" ]
+  ] [
+     fhir:code [ fhir:v "FSW" ] ;
+     fhir:display [ fhir:v "Female sex workers (FSW)" ]
+  ] [
+     fhir:code [ fhir:v "PRISON" ] ;
+     fhir:display [ fhir:v "People in prison and other closed settings" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

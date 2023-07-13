@@ -1,0 +1,1612 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableLocators,DisableListDemotion,DisableListPromotion",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "MERDataElements",
+         "system" : "https://path-global-health.github.io/MERindicators",
+         "version" : "0.1.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "locator" : "3:1-3:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "locator" : "5:1-5:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRHelpers",
+            "version" : "4.0.1"
+         }, {
+            "locator" : "6:1-6:44",
+            "localIdentifier" : "FC",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRCommon",
+            "version" : "4.0.1"
+         }, {
+            "locator" : "7:1-7:29",
+            "localIdentifier" : "Cx",
+            "path" : "https://path-global-health.github.io/MERindicators/MERConcepts"
+         } ]
+      },
+      "parameters" : {
+         "def" : [ {
+            "locator" : "11:1-11:94",
+            "name" : "Measurement Period",
+            "accessLevel" : "Public",
+            "default" : {
+               "locator" : "11:59-11:94",
+               "lowClosed" : true,
+               "highClosed" : true,
+               "type" : "Interval",
+               "low" : {
+                  "locator" : "11:68-11:79",
+                  "type" : "DateTime",
+                  "year" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "1990",
+                     "type" : "Literal"
+                  },
+                  "month" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "1",
+                     "type" : "Literal"
+                  },
+                  "day" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "1",
+                     "type" : "Literal"
+                  }
+               },
+               "high" : {
+                  "locator" : "11:82-11:93",
+                  "type" : "DateTime",
+                  "year" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "2022",
+                     "type" : "Literal"
+                  },
+                  "month" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "12",
+                     "type" : "Literal"
+                  },
+                  "day" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "31",
+                     "type" : "Literal"
+                  }
+               }
+            },
+            "parameterTypeSpecifier" : {
+               "locator" : "11:32-11:49",
+               "type" : "IntervalTypeSpecifier",
+               "pointType" : {
+                  "locator" : "11:41-11:48",
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "locator" : "13:1-13:15",
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "locator" : "13:1-13:15",
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "locator" : "13:1-13:15",
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "locator" : "16:1-18:87",
+            "name" : "Deceased",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "17:3-18:87",
+               "type" : "And",
+               "operand" : [ {
+                  "locator" : "17:3-17:30",
+                  "type" : "Not",
+                  "operand" : {
+                     "locator" : "17:3-17:30",
+                     "type" : "IsNull",
+                     "operand" : {
+                        "locator" : "17:3-17:18",
+                        "path" : "deceased",
+                        "type" : "Property",
+                        "source" : {
+                           "locator" : "17:3-17:9",
+                           "name" : "Patient",
+                           "type" : "ExpressionRef"
+                        }
+                     }
+                  }
+               }, {
+                  "locator" : "18:7-18:87",
+                  "type" : "Or",
+                  "operand" : [ {
+                     "locator" : "18:8-18:31",
+                     "type" : "IsTrue",
+                     "operand" : {
+                        "name" : "ToBoolean",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}boolean",
+                           "type" : "As",
+                           "operand" : {
+                              "locator" : "18:8-18:23",
+                              "path" : "deceased",
+                              "type" : "Property",
+                              "source" : {
+                                 "locator" : "18:8-18:14",
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        } ]
+                     }
+                  }, {
+                     "locator" : "18:36-18:86",
+                     "type" : "Before",
+                     "operand" : [ {
+                        "name" : "ToDateTime",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}dateTime",
+                           "type" : "As",
+                           "operand" : {
+                              "locator" : "18:36-18:51",
+                              "path" : "deceased",
+                              "type" : "Property",
+                              "source" : {
+                                 "locator" : "18:36-18:42",
+                                 "name" : "Patient",
+                                 "type" : "ExpressionRef"
+                              }
+                           }
+                        } ]
+                     }, {
+                        "locator" : "18:60-18:86",
+                        "type" : "End",
+                        "operand" : {
+                           "locator" : "18:67-18:86",
+                           "name" : "Measurement Period",
+                           "type" : "ParameterRef"
+                        }
+                     } ]
+                  } ]
+               } ]
+            }
+         }, {
+            "locator" : "52:1-53:48",
+            "name" : "Pregnant",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "53:3-53:48",
+               "type" : "Exists",
+               "operand" : {
+                  "locator" : "53:10-53:48",
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "~",
+                  "type" : "Retrieve",
+                  "codes" : {
+                     "type" : "ToList",
+                     "operand" : {
+                        "locator" : "53:24-53:47",
+                        "name" : "Pregnancy (finding)",
+                        "libraryName" : "Cx",
+                        "type" : "CodeRef"
+                     }
+                  }
+               }
+            }
+         }, {
+            "locator" : "99:1-101:25",
+            "name" : "Contact date",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "100:3-101:25",
+               "type" : "Query",
+               "source" : [ {
+                  "locator" : "100:3-100:15",
+                  "alias" : "E",
+                  "expression" : {
+                     "locator" : "100:3-100:13",
+                     "dataType" : "{http://hl7.org/fhir}Encounter",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                     "type" : "Retrieve"
+                  }
+               } ],
+               "relationship" : [ ],
+               "return" : {
+                  "locator" : "101:5-101:25",
+                  "expression" : {
+                     "locator" : "101:12-101:25",
+                     "path" : "start",
+                     "type" : "Property",
+                     "source" : {
+                        "locator" : "101:12-101:19",
+                        "path" : "period",
+                        "scope" : "E",
+                        "type" : "Property"
+                     }
+                  }
+               }
+            }
+         }, {
+            "locator" : "112:1-117:54",
+            "name" : "on ART PLIR",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "113:5-117:54",
+               "type" : "Query",
+               "source" : [ {
+                  "locator" : "113:5-113:52",
+                  "alias" : "o",
+                  "expression" : {
+                     "locator" : "113:5-113:50",
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "type" : "ToList",
+                        "operand" : {
+                           "locator" : "113:23-113:47",
+                           "name" : "Currently taking ARV",
+                           "libraryName" : "Cx",
+                           "type" : "CodeRef"
+                        }
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "locator" : "114:9-117:54",
+                  "type" : "Or",
+                  "operand" : [ {
+                     "locator" : "114:15-114:50",
+                     "type" : "Equal",
+                     "operand" : [ {
+                        "name" : "ToCode",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "locator" : "114:15-114:31",
+                           "type" : "Indexer",
+                           "operand" : [ {
+                              "locator" : "114:15-114:28",
+                              "path" : "coding",
+                              "type" : "Property",
+                              "source" : {
+                                 "locator" : "114:15-114:21",
+                                 "path" : "value",
+                                 "scope" : "o",
+                                 "type" : "Property"
+                              }
+                           }, {
+                              "locator" : "114:30",
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "value" : "1",
+                              "type" : "Literal"
+                           } ]
+                        } ]
+                     }, {
+                        "locator" : "114:34-114:50",
+                        "name" : "Coded Answer",
+                        "libraryName" : "Cx",
+                        "type" : "CodeRef"
+                     } ]
+                  }, {
+                     "locator" : "115:12-117:54",
+                     "type" : "And",
+                     "operand" : [ {
+                        "locator" : "115:12-116:57",
+                        "type" : "And",
+                        "operand" : [ {
+                           "locator" : "115:12-115:47",
+                           "type" : "Equal",
+                           "operand" : [ {
+                              "name" : "ToCode",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "locator" : "115:12-115:28",
+                                 "type" : "Indexer",
+                                 "operand" : [ {
+                                    "locator" : "115:12-115:25",
+                                    "path" : "coding",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "locator" : "115:12-115:18",
+                                       "path" : "value",
+                                       "scope" : "o",
+                                       "type" : "Property"
+                                    }
+                                 }, {
+                                    "locator" : "115:27",
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                                    "value" : "2",
+                                    "type" : "Literal"
+                                 } ]
+                              } ]
+                           }, {
+                              "locator" : "115:31-115:47",
+                              "name" : "Coded Answer",
+                              "libraryName" : "Cx",
+                              "type" : "CodeRef"
+                           } ]
+                        }, {
+                           "locator" : "116:13-116:57",
+                           "type" : "In",
+                           "operand" : [ {
+                              "name" : "ToString",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "locator" : "116:13-116:20",
+                                 "path" : "status",
+                                 "scope" : "o",
+                                 "type" : "Property"
+                              } ]
+                           }, {
+                              "locator" : "116:25-116:57",
+                              "type" : "List",
+                              "element" : [ {
+                                 "locator" : "116:26-116:32",
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                 "value" : "final",
+                                 "type" : "Literal"
+                              }, {
+                                 "locator" : "116:35-116:43",
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                 "value" : "amended",
+                                 "type" : "Literal"
+                              }, {
+                                 "locator" : "116:46-116:56",
+                                 "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                 "value" : "corrected",
+                                 "type" : "Literal"
+                              } ]
+                           } ]
+                        } ]
+                     }, {
+                        "locator" : "117:13-117:54",
+                        "precision" : "Day",
+                        "type" : "In",
+                        "operand" : [ {
+                           "type" : "Case",
+                           "caseItem" : [ {
+                              "when" : {
+                                 "isType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "Is",
+                                 "operand" : {
+                                    "locator" : "117:13-117:23",
+                                    "path" : "effective",
+                                    "scope" : "o",
+                                    "type" : "Property"
+                                 }
+                              },
+                              "then" : {
+                                 "name" : "ToDateTime",
+                                 "libraryName" : "FHIRHelpers",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "asType" : "{http://hl7.org/fhir}dateTime",
+                                    "type" : "As",
+                                    "operand" : {
+                                       "locator" : "117:13-117:23",
+                                       "path" : "effective",
+                                       "scope" : "o",
+                                       "type" : "Property"
+                                    }
+                                 } ]
+                              }
+                           }, {
+                              "when" : {
+                                 "isType" : "{http://hl7.org/fhir}instant",
+                                 "type" : "Is",
+                                 "operand" : {
+                                    "locator" : "117:13-117:23",
+                                    "path" : "effective",
+                                    "scope" : "o",
+                                    "type" : "Property"
+                                 }
+                              },
+                              "then" : {
+                                 "name" : "ToDateTime",
+                                 "libraryName" : "FHIRHelpers",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "asType" : "{http://hl7.org/fhir}instant",
+                                    "type" : "As",
+                                    "operand" : {
+                                       "locator" : "117:13-117:23",
+                                       "path" : "effective",
+                                       "scope" : "o",
+                                       "type" : "Property"
+                                    }
+                                 } ]
+                              }
+                           } ],
+                           "else" : {
+                              "resultTypeName" : "{urn:hl7-org:elm-types:r1}DateTime",
+                              "type" : "Null"
+                           }
+                        }, {
+                           "locator" : "117:35-117:54",
+                           "name" : "Measurement Period",
+                           "type" : "ParameterRef"
+                        } ]
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "locator" : "120:1-123:50",
+            "name" : "on ART PLIR debug",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "121:3-123:50",
+               "type" : "Query",
+               "source" : [ {
+                  "locator" : "121:3-121:46",
+                  "alias" : "o",
+                  "expression" : {
+                     "locator" : "121:3-121:44",
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "type" : "ToList",
+                        "operand" : {
+                           "locator" : "121:19-121:43",
+                           "name" : "Currently taking ARV",
+                           "libraryName" : "Cx",
+                           "type" : "CodeRef"
+                        }
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "locator" : "122:5-123:50",
+                  "type" : "And",
+                  "operand" : [ {
+                     "locator" : "122:11-122:55",
+                     "type" : "In",
+                     "operand" : [ {
+                        "name" : "ToString",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "locator" : "122:11-122:18",
+                           "path" : "status",
+                           "scope" : "o",
+                           "type" : "Property"
+                        } ]
+                     }, {
+                        "locator" : "122:23-122:55",
+                        "type" : "List",
+                        "element" : [ {
+                           "locator" : "122:24-122:30",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "final",
+                           "type" : "Literal"
+                        }, {
+                           "locator" : "122:33-122:41",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "amended",
+                           "type" : "Literal"
+                        }, {
+                           "locator" : "122:44-122:54",
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "corrected",
+                           "type" : "Literal"
+                        } ]
+                     } ]
+                  }, {
+                     "locator" : "123:9-123:50",
+                     "precision" : "Day",
+                     "type" : "In",
+                     "operand" : [ {
+                        "type" : "Case",
+                        "caseItem" : [ {
+                           "when" : {
+                              "isType" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "Is",
+                              "operand" : {
+                                 "locator" : "123:9-123:19",
+                                 "path" : "effective",
+                                 "scope" : "o",
+                                 "type" : "Property"
+                              }
+                           },
+                           "then" : {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "locator" : "123:9-123:19",
+                                    "path" : "effective",
+                                    "scope" : "o",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }
+                        }, {
+                           "when" : {
+                              "isType" : "{http://hl7.org/fhir}instant",
+                              "type" : "Is",
+                              "operand" : {
+                                 "locator" : "123:9-123:19",
+                                 "path" : "effective",
+                                 "scope" : "o",
+                                 "type" : "Property"
+                              }
+                           },
+                           "then" : {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}instant",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "locator" : "123:9-123:19",
+                                    "path" : "effective",
+                                    "scope" : "o",
+                                    "type" : "Property"
+                                 }
+                              } ]
+                           }
+                        } ],
+                        "else" : {
+                           "resultTypeName" : "{urn:hl7-org:elm-types:r1}DateTime",
+                           "type" : "Null"
+                        }
+                     }, {
+                        "locator" : "123:31-123:50",
+                        "name" : "Measurement Period",
+                        "type" : "ParameterRef"
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "locator" : "126:1-128:28",
+            "name" : "ART Therapy Observation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "127:3-128:28",
+               "type" : "Query",
+               "source" : [ {
+                  "locator" : "127:3-127:71",
+                  "alias" : "O",
+                  "expression" : {
+                     "locator" : "127:3-127:69",
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "type" : "ToList",
+                        "operand" : {
+                           "locator" : "127:19-127:68",
+                           "name" : "History of antiretroviral therapy (situation)",
+                           "libraryName" : "Cx",
+                           "type" : "CodeRef"
+                        }
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "locator" : "128:5-128:28",
+                  "type" : "Equal",
+                  "operand" : [ {
+                     "name" : "ToString",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "locator" : "128:11-128:18",
+                        "path" : "status",
+                        "scope" : "O",
+                        "type" : "Property"
+                     } ]
+                  }, {
+                     "locator" : "128:22-128:28",
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "final",
+                     "type" : "Literal"
+                  } ]
+               }
+            }
+         }, {
+            "locator" : "134:1-137:40",
+            "name" : "ART Therapy Condition",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "135:3-137:40",
+               "type" : "Query",
+               "source" : [ {
+                  "locator" : "135:3-135:69",
+                  "alias" : "C",
+                  "expression" : {
+                     "locator" : "135:3-135:67",
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "type" : "ToList",
+                        "operand" : {
+                           "locator" : "135:17-135:66",
+                           "name" : "History of antiretroviral therapy (situation)",
+                           "libraryName" : "Cx",
+                           "type" : "CodeRef"
+                        }
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "locator" : "136:5-137:40",
+                  "type" : "And",
+                  "operand" : [ {
+                     "locator" : "136:11-136:47",
+                     "type" : "Equivalent",
+                     "operand" : [ {
+                        "name" : "ToConcept",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "locator" : "136:11-136:30",
+                           "path" : "verificationStatus",
+                           "scope" : "C",
+                           "type" : "Property"
+                        } ]
+                     }, {
+                        "type" : "ToConcept",
+                        "operand" : {
+                           "locator" : "136:34-136:47",
+                           "name" : "confirmed",
+                           "libraryName" : "FC",
+                           "type" : "CodeRef"
+                        }
+                     } ]
+                  }, {
+                     "locator" : "137:11-137:40",
+                     "type" : "Equivalent",
+                     "operand" : [ {
+                        "name" : "ToConcept",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "locator" : "137:11-137:26",
+                           "path" : "clinicalStatus",
+                           "scope" : "C",
+                           "type" : "Property"
+                        } ]
+                     }, {
+                        "type" : "ToConcept",
+                        "operand" : {
+                           "locator" : "137:30-137:40",
+                           "name" : "active",
+                           "libraryName" : "FC",
+                           "type" : "CodeRef"
+                        }
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "locator" : "145:1-148:50",
+            "name" : "ART Therapy Medication",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "146:3-148:50",
+               "type" : "Query",
+               "source" : [ {
+                  "locator" : "146:3-146:47",
+                  "alias" : "M",
+                  "expression" : {
+                     "locator" : "146:3-146:45",
+                     "type" : "Union",
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "locator" : "146:25-146:44",
+                           "name" : "ART Medications",
+                           "libraryName" : "Cx",
+                           "type" : "ValueSetRef"
+                        }
+                     }, {
+                        "locator" : "146:3-146:45",
+                        "dataType" : "{http://hl7.org/fhir}MedicationRequest",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+                        "codeProperty" : "medication",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "locator" : "146:25-146:44",
+                           "name" : "ART Medications",
+                           "libraryName" : "Cx",
+                           "type" : "ValueSetRef"
+                        }
+                     } ]
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "locator" : "148:5-148:50",
+                  "type" : "In",
+                  "operand" : [ {
+                     "name" : "ToDateTime",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "locator" : "148:11-148:22",
+                        "path" : "authoredOn",
+                        "scope" : "M",
+                        "type" : "Property"
+                     } ]
+                  }, {
+                     "locator" : "148:31-148:50",
+                     "name" : "Measurement Period",
+                     "type" : "ParameterRef"
+                  } ]
+               }
+            }
+         }, {
+            "locator" : "152:1-155:58",
+            "name" : "ART Dates",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "153:3-155:58",
+               "type" : "Union",
+               "operand" : [ {
+                  "locator" : "153:3-154:64",
+                  "type" : "Union",
+                  "operand" : [ {
+                     "locator" : "153:3-153:62",
+                     "type" : "Query",
+                     "source" : [ {
+                        "locator" : "153:4-153:30",
+                        "alias" : "O",
+                        "expression" : {
+                           "locator" : "153:4-153:28",
+                           "name" : "ART Therapy Observation",
+                           "type" : "ExpressionRef"
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "return" : {
+                        "locator" : "153:32-153:61",
+                        "expression" : {
+                           "locator" : "153:39-153:61",
+                           "strict" : false,
+                           "type" : "As",
+                           "operand" : {
+                              "locator" : "153:39-153:49",
+                              "path" : "effective",
+                              "scope" : "O",
+                              "type" : "Property"
+                           },
+                           "asTypeSpecifier" : {
+                              "locator" : "153:54-153:61",
+                              "name" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        }
+                     }
+                  }, {
+                     "locator" : "154:11-154:64",
+                     "type" : "Query",
+                     "source" : [ {
+                        "locator" : "154:12-154:36",
+                        "alias" : "C",
+                        "expression" : {
+                           "locator" : "154:12-154:34",
+                           "name" : "ART Therapy Condition",
+                           "type" : "ExpressionRef"
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "return" : {
+                        "locator" : "154:38-154:63",
+                        "expression" : {
+                           "locator" : "154:45-154:63",
+                           "strict" : false,
+                           "type" : "As",
+                           "operand" : {
+                              "locator" : "154:45-154:51",
+                              "path" : "onset",
+                              "scope" : "C",
+                              "type" : "Property"
+                           },
+                           "asTypeSpecifier" : {
+                              "locator" : "154:56-154:63",
+                              "name" : "{http://hl7.org/fhir}dateTime",
+                              "type" : "NamedTypeSpecifier"
+                           }
+                        }
+                     }
+                  } ]
+               }, {
+                  "locator" : "155:11-155:58",
+                  "type" : "Query",
+                  "source" : [ {
+                     "locator" : "155:12-155:37",
+                     "alias" : "M",
+                     "expression" : {
+                        "locator" : "155:12-155:35",
+                        "name" : "ART Therapy Medication",
+                        "type" : "ExpressionRef"
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "return" : {
+                     "locator" : "155:39-155:57",
+                     "expression" : {
+                        "locator" : "155:46-155:57",
+                        "path" : "authoredOn",
+                        "scope" : "M",
+                        "type" : "Property"
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "locator" : "160:1-161:18",
+            "name" : "Date of First Evidence of ART",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "161:3-161:18",
+               "type" : "Min",
+               "source" : {
+                  "type" : "Query",
+                  "source" : [ {
+                     "alias" : "X",
+                     "expression" : {
+                        "locator" : "161:7-161:17",
+                        "name" : "ART Dates",
+                        "type" : "ExpressionRef"
+                     }
+                  } ],
+                  "return" : {
+                     "distinct" : false,
+                     "expression" : {
+                        "name" : "ToDateTime",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "name" : "X",
+                           "type" : "AliasRef"
+                        } ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "locator" : "172:1-177:5",
+            "name" : "On ART",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "173:3-177:5",
+               "type" : "Or",
+               "operand" : [ {
+                  "locator" : "173:3-173:60",
+                  "type" : "Exists",
+                  "operand" : {
+                     "locator" : "173:10-173:60",
+                     "type" : "Query",
+                     "source" : [ {
+                        "locator" : "173:11-173:23",
+                        "alias" : "D",
+                        "expression" : {
+                           "locator" : "173:11-173:21",
+                           "name" : "ART Dates",
+                           "type" : "ExpressionRef"
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "where" : {
+                        "locator" : "173:25-173:59",
+                        "type" : "In",
+                        "operand" : [ {
+                           "name" : "ToDateTime",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "locator" : "173:31",
+                              "name" : "D",
+                              "type" : "AliasRef"
+                           } ]
+                        }, {
+                           "locator" : "173:40-173:59",
+                           "name" : "Measurement Period",
+                           "type" : "ParameterRef"
+                        } ]
+                     }
+                  }
+               }, {
+                  "locator" : "174:8-177:5",
+                  "type" : "Exists",
+                  "operand" : {
+                     "locator" : "174:15-177:5",
+                     "type" : "Query",
+                     "source" : [ {
+                        "locator" : "175:7-175:31",
+                        "alias" : "C",
+                        "expression" : {
+                           "locator" : "175:7-175:29",
+                           "name" : "ART Therapy Condition",
+                           "type" : "ExpressionRef"
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "where" : {
+                        "locator" : "176:9-176:74",
+                        "type" : "Overlaps",
+                        "operand" : [ {
+                           "type" : "Interval",
+                           "low" : {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "low",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "locator" : "176:15-176:44",
+                                       "lowClosed" : true,
+                                       "highClosed" : true,
+                                       "type" : "Interval",
+                                       "low" : {
+                                          "locator" : "176:24-176:30",
+                                          "path" : "onset",
+                                          "scope" : "C",
+                                          "type" : "Property"
+                                       },
+                                       "high" : {
+                                          "locator" : "176:33-176:43",
+                                          "path" : "abatement",
+                                          "scope" : "C",
+                                          "type" : "Property"
+                                       }
+                                    }
+                                 }
+                              } ]
+                           },
+                           "lowClosedExpression" : {
+                              "path" : "lowClosed",
+                              "type" : "Property",
+                              "source" : {
+                                 "locator" : "176:15-176:44",
+                                 "lowClosed" : true,
+                                 "highClosed" : true,
+                                 "type" : "Interval",
+                                 "low" : {
+                                    "locator" : "176:24-176:30",
+                                    "path" : "onset",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 },
+                                 "high" : {
+                                    "locator" : "176:33-176:43",
+                                    "path" : "abatement",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 }
+                              }
+                           },
+                           "high" : {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "high",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "locator" : "176:15-176:44",
+                                       "lowClosed" : true,
+                                       "highClosed" : true,
+                                       "type" : "Interval",
+                                       "low" : {
+                                          "locator" : "176:24-176:30",
+                                          "path" : "onset",
+                                          "scope" : "C",
+                                          "type" : "Property"
+                                       },
+                                       "high" : {
+                                          "locator" : "176:33-176:43",
+                                          "path" : "abatement",
+                                          "scope" : "C",
+                                          "type" : "Property"
+                                       }
+                                    }
+                                 }
+                              } ]
+                           },
+                           "highClosedExpression" : {
+                              "path" : "highClosed",
+                              "type" : "Property",
+                              "source" : {
+                                 "locator" : "176:15-176:44",
+                                 "lowClosed" : true,
+                                 "highClosed" : true,
+                                 "type" : "Interval",
+                                 "low" : {
+                                    "locator" : "176:24-176:30",
+                                    "path" : "onset",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 },
+                                 "high" : {
+                                    "locator" : "176:33-176:43",
+                                    "path" : "abatement",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 }
+                              }
+                           }
+                        }, {
+                           "locator" : "176:55-176:74",
+                           "name" : "Measurement Period",
+                           "type" : "ParameterRef"
+                        } ]
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "locator" : "207:1-208:61",
+            "name" : "Newly enrolled on antiretroviral therapy (ART) during measurement period",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "208:3-208:61",
+               "type" : "In",
+               "operand" : [ {
+                  "locator" : "208:3-208:33",
+                  "name" : "Date of First Evidence of ART",
+                  "type" : "ExpressionRef"
+               }, {
+                  "locator" : "208:42-208:61",
+                  "name" : "Measurement Period",
+                  "type" : "ParameterRef"
+               } ]
+            }
+         }, {
+            "locator" : "211:1-216:3",
+            "name" : "Is Pregnant",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "212:3-216:3",
+               "type" : "Exists",
+               "operand" : {
+                  "locator" : "212:10-216:3",
+                  "type" : "Query",
+                  "source" : [ {
+                     "locator" : "212:11-212:57",
+                     "alias" : "C",
+                     "expression" : {
+                        "locator" : "212:11-212:55",
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "codes" : {
+                           "type" : "ToList",
+                           "operand" : {
+                              "locator" : "212:23-212:54",
+                              "name" : "Pregnancy status - Reported",
+                              "libraryName" : "Cx",
+                              "type" : "CodeRef"
+                           }
+                        }
+                     }
+                  } ],
+                  "relationship" : [ ],
+                  "where" : {
+                     "locator" : "213:5-215:45",
+                     "type" : "And",
+                     "operand" : [ {
+                        "locator" : "213:11-214:40",
+                        "type" : "And",
+                        "operand" : [ {
+                           "locator" : "213:11-213:47",
+                           "type" : "Equivalent",
+                           "operand" : [ {
+                              "name" : "ToConcept",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "locator" : "213:11-213:30",
+                                 "path" : "verificationStatus",
+                                 "scope" : "C",
+                                 "type" : "Property"
+                              } ]
+                           }, {
+                              "type" : "ToConcept",
+                              "operand" : {
+                                 "locator" : "213:34-213:47",
+                                 "name" : "confirmed",
+                                 "libraryName" : "FC",
+                                 "type" : "CodeRef"
+                              }
+                           } ]
+                        }, {
+                           "locator" : "214:11-214:40",
+                           "type" : "Equivalent",
+                           "operand" : [ {
+                              "name" : "ToConcept",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "locator" : "214:11-214:26",
+                                 "path" : "clinicalStatus",
+                                 "scope" : "C",
+                                 "type" : "Property"
+                              } ]
+                           }, {
+                              "type" : "ToConcept",
+                              "operand" : {
+                                 "locator" : "214:30-214:40",
+                                 "name" : "active",
+                                 "libraryName" : "FC",
+                                 "type" : "CodeRef"
+                              }
+                           } ]
+                        } ]
+                     }, {
+                        "locator" : "215:11-215:45",
+                        "type" : "IncludedIn",
+                        "operand" : [ {
+                           "name" : "ToInterval",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "asType" : "{http://hl7.org/fhir}Period",
+                              "type" : "As",
+                              "operand" : {
+                                 "locator" : "215:11-215:17",
+                                 "path" : "onset",
+                                 "scope" : "C",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        }, {
+                           "locator" : "215:26-215:45",
+                           "name" : "Measurement Period",
+                           "type" : "ParameterRef"
+                        } ]
+                     } ]
+                  }
+               }
+            }
+         }, {
+            "locator" : "226:1-228:79",
+            "name" : "Newly enrolled on antiretroviral therapy (ART) during measurement period (pregnant and breastfeeding)",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "228:3-228:79",
+               "type" : "And",
+               "operand" : [ {
+                  "locator" : "228:3-228:15",
+                  "name" : "Is Pregnant",
+                  "type" : "ExpressionRef"
+               }, {
+                  "locator" : "228:21-228:79",
+                  "type" : "In",
+                  "operand" : [ {
+                     "locator" : "228:21-228:51",
+                     "name" : "Date of First Evidence of ART",
+                     "type" : "ExpressionRef"
+                  }, {
+                     "locator" : "228:60-228:79",
+                     "name" : "Measurement Period",
+                     "type" : "ParameterRef"
+                  } ]
+               } ]
+            }
+         }, {
+            "locator" : "231:1-236:5",
+            "name" : "Receiving antiretroviral therapy (ART) during measurement period",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "232:3-236:5",
+               "type" : "Or",
+               "operand" : [ {
+                  "locator" : "232:3-232:60",
+                  "type" : "Exists",
+                  "operand" : {
+                     "locator" : "232:10-232:60",
+                     "type" : "Query",
+                     "source" : [ {
+                        "locator" : "232:11-232:23",
+                        "alias" : "D",
+                        "expression" : {
+                           "locator" : "232:11-232:21",
+                           "name" : "ART Dates",
+                           "type" : "ExpressionRef"
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "where" : {
+                        "locator" : "232:25-232:59",
+                        "type" : "In",
+                        "operand" : [ {
+                           "name" : "ToDateTime",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "locator" : "232:31",
+                              "name" : "D",
+                              "type" : "AliasRef"
+                           } ]
+                        }, {
+                           "locator" : "232:40-232:59",
+                           "name" : "Measurement Period",
+                           "type" : "ParameterRef"
+                        } ]
+                     }
+                  }
+               }, {
+                  "locator" : "233:8-236:5",
+                  "type" : "Exists",
+                  "operand" : {
+                     "locator" : "233:15-236:5",
+                     "type" : "Query",
+                     "source" : [ {
+                        "locator" : "234:7-234:31",
+                        "alias" : "C",
+                        "expression" : {
+                           "locator" : "234:7-234:29",
+                           "name" : "ART Therapy Condition",
+                           "type" : "ExpressionRef"
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "where" : {
+                        "locator" : "235:9-235:74",
+                        "type" : "Overlaps",
+                        "operand" : [ {
+                           "type" : "Interval",
+                           "low" : {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "low",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "locator" : "235:15-235:44",
+                                       "lowClosed" : true,
+                                       "highClosed" : true,
+                                       "type" : "Interval",
+                                       "low" : {
+                                          "locator" : "235:24-235:30",
+                                          "path" : "onset",
+                                          "scope" : "C",
+                                          "type" : "Property"
+                                       },
+                                       "high" : {
+                                          "locator" : "235:33-235:43",
+                                          "path" : "abatement",
+                                          "scope" : "C",
+                                          "type" : "Property"
+                                       }
+                                    }
+                                 }
+                              } ]
+                           },
+                           "lowClosedExpression" : {
+                              "path" : "lowClosed",
+                              "type" : "Property",
+                              "source" : {
+                                 "locator" : "235:15-235:44",
+                                 "lowClosed" : true,
+                                 "highClosed" : true,
+                                 "type" : "Interval",
+                                 "low" : {
+                                    "locator" : "235:24-235:30",
+                                    "path" : "onset",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 },
+                                 "high" : {
+                                    "locator" : "235:33-235:43",
+                                    "path" : "abatement",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 }
+                              }
+                           },
+                           "high" : {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "As",
+                                 "operand" : {
+                                    "path" : "high",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "locator" : "235:15-235:44",
+                                       "lowClosed" : true,
+                                       "highClosed" : true,
+                                       "type" : "Interval",
+                                       "low" : {
+                                          "locator" : "235:24-235:30",
+                                          "path" : "onset",
+                                          "scope" : "C",
+                                          "type" : "Property"
+                                       },
+                                       "high" : {
+                                          "locator" : "235:33-235:43",
+                                          "path" : "abatement",
+                                          "scope" : "C",
+                                          "type" : "Property"
+                                       }
+                                    }
+                                 }
+                              } ]
+                           },
+                           "highClosedExpression" : {
+                              "path" : "highClosed",
+                              "type" : "Property",
+                              "source" : {
+                                 "locator" : "235:15-235:44",
+                                 "lowClosed" : true,
+                                 "highClosed" : true,
+                                 "type" : "Interval",
+                                 "low" : {
+                                    "locator" : "235:24-235:30",
+                                    "path" : "onset",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 },
+                                 "high" : {
+                                    "locator" : "235:33-235:43",
+                                    "path" : "abatement",
+                                    "scope" : "C",
+                                    "type" : "Property"
+                                 }
+                              }
+                           }
+                        }, {
+                           "locator" : "235:55-235:74",
+                           "name" : "Measurement Period",
+                           "type" : "ParameterRef"
+                        } ]
+                     }
+                  }
+               } ]
+            }
+         }, {
+            "locator" : "239:1-240:81",
+            "name" : "Year Preceding the Measurement Period",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "240:3-240:81",
+               "lowClosed" : true,
+               "highClosed" : false,
+               "type" : "Interval",
+               "low" : {
+                  "locator" : "240:12-240:49",
+                  "type" : "Subtract",
+                  "operand" : [ {
+                     "locator" : "240:12-240:40",
+                     "type" : "Start",
+                     "operand" : {
+                        "locator" : "240:21-240:40",
+                        "name" : "Measurement Period",
+                        "type" : "ParameterRef"
+                     }
+                  }, {
+                     "locator" : "240:44-240:49",
+                     "value" : 1,
+                     "unit" : "year",
+                     "type" : "Quantity"
+                  } ]
+               },
+               "high" : {
+                  "locator" : "240:52-240:80",
+                  "type" : "Start",
+                  "operand" : {
+                     "locator" : "240:61-240:80",
+                     "name" : "Measurement Period",
+                     "type" : "ParameterRef"
+                  }
+               }
+            }
+         }, {
+            "locator" : "243:1-244:120",
+            "name" : "Month Before the Year Preceding the Measurement Period",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "244:3-244:120",
+               "lowClosed" : true,
+               "highClosed" : false,
+               "type" : "Interval",
+               "low" : {
+                  "locator" : "244:12-244:69",
+                  "type" : "Subtract",
+                  "operand" : [ {
+                     "locator" : "244:12-244:59",
+                     "type" : "Start",
+                     "operand" : {
+                        "locator" : "244:21-244:59",
+                        "name" : "Year Preceding the Measurement Period",
+                        "type" : "ExpressionRef"
+                     }
+                  }, {
+                     "locator" : "244:63-244:69",
+                     "value" : 1,
+                     "unit" : "month",
+                     "type" : "Quantity"
+                  } ]
+               },
+               "high" : {
+                  "locator" : "244:72-244:119",
+                  "type" : "Start",
+                  "operand" : {
+                     "locator" : "244:81-244:119",
+                     "name" : "Year Preceding the Measurement Period",
+                     "type" : "ExpressionRef"
+                  }
+               }
+            }
+         }, {
+            "locator" : "247:1-249:74",
+            "name" : "Receiving antiretroviral therapy (ART) at 12 months after initiating",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "248:3-249:74",
+               "type" : "And",
+               "operand" : [ {
+                  "locator" : "248:3-248:97",
+                  "type" : "In",
+                  "operand" : [ {
+                     "locator" : "248:3-248:33",
+                     "name" : "Date of First Evidence of ART",
+                     "type" : "ExpressionRef"
+                  }, {
+                     "locator" : "248:42-248:97",
+                     "name" : "Month Before the Year Preceding the Measurement Period",
+                     "type" : "ExpressionRef"
+                  } ]
+               }, {
+                  "locator" : "249:9-249:74",
+                  "name" : "Receiving antiretroviral therapy (ART) during measurement period",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "locator" : "252:1-254:21",
+            "name" : "Receiving antiretroviral therapy (ART) at 12 months after initiating (pregnant and breastfeeding)",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "253:3-254:21",
+               "type" : "And",
+               "operand" : [ {
+                  "locator" : "253:3-253:72",
+                  "name" : "Receiving antiretroviral therapy (ART) at 12 months after initiating",
+                  "type" : "ExpressionRef"
+               }, {
+                  "locator" : "254:9-254:21",
+                  "name" : "Is Pregnant",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "locator" : "258:1-259:80",
+            "name" : "Initiated antiretroviral therapy (ART) in the 12 months prior to measurement period",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "259:3-259:80",
+               "type" : "In",
+               "operand" : [ {
+                  "locator" : "259:3-259:33",
+                  "name" : "Date of First Evidence of ART",
+                  "type" : "ExpressionRef"
+               }, {
+                  "locator" : "259:42-259:80",
+                  "name" : "Year Preceding the Measurement Period",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "locator" : "290:1-292:76",
+            "name" : "Pregnant and receiving antiretroviral therapy (ART) to reduce the risk of mother-to-child-transmission during pregnancy",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "locator" : "291:5-292:76",
+               "type" : "And",
+               "operand" : [ {
+                  "locator" : "291:5-291:17",
+                  "name" : "Is Pregnant",
+                  "type" : "ExpressionRef"
+               }, {
+                  "locator" : "292:11-292:76",
+                  "name" : "Receiving antiretroviral therapy (ART) during measurement period",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         } ]
+      }
+   }
+}

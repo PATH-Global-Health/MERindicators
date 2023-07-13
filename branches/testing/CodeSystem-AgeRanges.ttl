@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AgeRanges"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">P0Y--P1Y<a name=\"AgeRanges-P0Y--P1Y\"> </a></td><td>&lt; 1 year</td></tr><tr><td style=\"white-space:nowrap\">P1Y--P5Y<a name=\"AgeRanges-P1Y--P5Y\"> </a></td><td>1-4 years</td></tr><tr><td style=\"white-space:nowrap\">P5Y--P10Y<a name=\"AgeRanges-P5Y--P10Y\"> </a></td><td>5-9 year</td></tr><tr><td style=\"white-space:nowrap\">P10Y--P15Y<a name=\"AgeRanges-P10Y--P15Y\"> </a></td><td>10-15 year</td></tr><tr><td style=\"white-space:nowrap\">P15Y--P20Y<a name=\"AgeRanges-P15Y--P20Y\"> </a></td><td>15-19 year</td></tr><tr><td style=\"white-space:nowrap\">P20Y--P25Y<a name=\"AgeRanges-P20Y--P25Y\"> </a></td><td>20-24 year</td></tr><tr><td style=\"white-space:nowrap\">P25Y--P30Y<a name=\"AgeRanges-P25Y--P30Y\"> </a></td><td>25-29 year</td></tr><tr><td style=\"white-space:nowrap\">P30Y--P35Y<a name=\"AgeRanges-P30Y--P35Y\"> </a></td><td>30-34 year</td></tr><tr><td style=\"white-space:nowrap\">P35Y--P40Y<a name=\"AgeRanges-P35Y--P40Y\"> </a></td><td>35-39 year</td></tr><tr><td style=\"white-space:nowrap\">P40Y--P45Y<a name=\"AgeRanges-P40Y--P45Y\"> </a></td><td>40-45 year</td></tr><tr><td style=\"white-space:nowrap\">P45Y--P50Y<a name=\"AgeRanges-P45Y--P50Y\"> </a></td><td>45-50 year</td></tr><tr><td style=\"white-space:nowrap\">P50Y--P9999Y<a name=\"AgeRanges-P50Y--P9999Y\"> </a></td><td>50+ years</td></tr><tr><td style=\"white-space:nowrap\">P50Y--P55Y<a name=\"AgeRanges-P50Y--P55Y\"> </a></td><td>50-55 year</td></tr><tr><td style=\"white-space:nowrap\">P55Y--P60Y<a name=\"AgeRanges-P55Y--P60Y\"> </a></td><td>55-60 year</td></tr><tr><td style=\"white-space:nowrap\">P60Y--P65Y<a name=\"AgeRanges-P60Y--P65Y\"> </a></td><td>60-65 year</td></tr><tr><td style=\"white-space:nowrap\">P65Y--P9999Y<a name=\"AgeRanges-P65Y--P9999Y\"> </a></td><td>65+ years</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "AgeRanges"] ; # 
+  fhir:title [ fhir:v "AgeRanges"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-08T15:38:48+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "AgeRanges"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "16"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "P0Y--P1Y" ] ;
+     fhir:display [ fhir:v "< 1 year" ]
+  ] [
+     fhir:code [ fhir:v "P1Y--P5Y" ] ;
+     fhir:display [ fhir:v "1-4 years" ]
+  ] [
+     fhir:code [ fhir:v "P5Y--P10Y" ] ;
+     fhir:display [ fhir:v "5-9 year" ]
+  ] [
+     fhir:code [ fhir:v "P10Y--P15Y" ] ;
+     fhir:display [ fhir:v "10-15 year" ]
+  ] [
+     fhir:code [ fhir:v "P15Y--P20Y" ] ;
+     fhir:display [ fhir:v "15-19 year" ]
+  ] [
+     fhir:code [ fhir:v "P20Y--P25Y" ] ;
+     fhir:display [ fhir:v "20-24 year" ]
+  ] [
+     fhir:code [ fhir:v "P25Y--P30Y" ] ;
+     fhir:display [ fhir:v "25-29 year" ]
+  ] [
+     fhir:code [ fhir:v "P30Y--P35Y" ] ;
+     fhir:display [ fhir:v "30-34 year" ]
+  ] [
+     fhir:code [ fhir:v "P35Y--P40Y" ] ;
+     fhir:display [ fhir:v "35-39 year" ]
+  ] [
+     fhir:code [ fhir:v "P40Y--P45Y" ] ;
+     fhir:display [ fhir:v "40-45 year" ]
+  ] [
+     fhir:code [ fhir:v "P45Y--P50Y" ] ;
+     fhir:display [ fhir:v "45-50 year" ]
+  ] [
+     fhir:code [ fhir:v "P50Y--P9999Y" ] ;
+     fhir:display [ fhir:v "50+ years" ]
+  ] [
+     fhir:code [ fhir:v "P50Y--P55Y" ] ;
+     fhir:display [ fhir:v "50-55 year" ]
+  ] [
+     fhir:code [ fhir:v "P55Y--P60Y" ] ;
+     fhir:display [ fhir:v "55-60 year" ]
+  ] [
+     fhir:code [ fhir:v "P60Y--P65Y" ] ;
+     fhir:display [ fhir:v "60-65 year" ]
+  ] [
+     fhir:code [ fhir:v "P65Y--P9999Y" ] ;
+     fhir:display [ fhir:v "65+ years" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

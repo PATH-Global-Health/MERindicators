@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableLocators,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <annotation xsi:type="a:Annotation">
+      <a:t name="author" value="Bryn Rhodes"/>
+      <a:t name="description" value="Common terminologies and functions used in FHIR-based CQL artifacts"/>
+   </annotation>
+   <identifier id="FHIRCommon" system="https://path-global-health.github.io/MERindicators" version="4.0.1"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def locator="7:1-7:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1"/>
+   </usings>
+   <includes>
+      <def locator="9:1-9:35" localIdentifier="FHIRHelpers" path="https://path-global-health.github.io/MERindicators/FHIRHelpers" version="4.0.1"/>
+   </includes>
+   <codeSystems>
+      <def locator="11:1-11:38" name="LOINC" id="http://loinc.org" accessLevel="Public"/>
+      <def locator="12:1-12:47" name="SNOMEDCT" id="http://snomed.info/sct" accessLevel="Public"/>
+      <def locator="13:1-13:74" name="RoleCode" id="http://terminology.hl7.org/CodeSystem/v3-RoleCode" accessLevel="Public"/>
+      <def locator="14:1-14:83" name="Diagnosis Role" id="http://terminology.hl7.org/CodeSystem/diagnosis-role" accessLevel="Public"/>
+      <def locator="15:1-15:82" name="RequestIntent" id="http://terminology.hl7.org/CodeSystem/request-intent" accessLevel="Public"/>
+      <def locator="16:1-16:106" name="MedicationRequestCategory" id="http://terminology.hl7.org/CodeSystem/medicationrequest-category" accessLevel="Public"/>
+      <def locator="17:1-17:101" name="ConditionClinicalStatusCodes" id="http://terminology.hl7.org/CodeSystem/condition-clinical" accessLevel="Public"/>
+      <def locator="18:1-18:107" name="ConditionVerificationStatusCodes" id="http://terminology.hl7.org/CodeSystem/condition-ver-status" accessLevel="Public"/>
+      <def locator="19:1-19:119" name="AllergyIntoleranceClinicalStatusCodes" id="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" accessLevel="Public"/>
+      <def locator="20:1-20:127" name="AllergyIntoleranceVerificationStatusCodes" id="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" accessLevel="Public"/>
+   </codeSystems>
+   <valueSets>
+      <def locator="22:1-22:90" name="Active Condition" id="http://fhir.org/guides/cqf/common/ValueSet/active-condition" accessLevel="Public"/>
+      <def locator="23:1-23:94" name="Inactive Condition" id="http://fhir.org/guides/cqf/common/ValueSet/inactive-condition" accessLevel="Public"/>
+   </valueSets>
+   <codes>
+      <def locator="25:1-25:61" name="Birthdate" id="21112-8" display="Birth date" accessLevel="Public">
+         <codeSystem locator="25:34-25:40" name="LOINC"/>
+      </def>
+      <def locator="26:1-26:55" name="Dead" id="419099009" display="Dead" accessLevel="Public">
+         <codeSystem locator="26:31-26:40" name="SNOMEDCT"/>
+      </def>
+      <def locator="27:1-27:56" name="ER" id="ER" display="Emergency room" accessLevel="Public">
+         <codeSystem locator="27:22-27:31" name="RoleCode"/>
+      </def>
+      <def locator="28:1-28:63" name="ICU" id="ICU" display="Intensive care unit" accessLevel="Public">
+         <codeSystem locator="28:24-28:33" name="RoleCode"/>
+      </def>
+      <def locator="29:1-29:65" name="Billing" id="billing" display="Billing" accessLevel="Public">
+         <codeSystem locator="29:32-29:47" name="Diagnosis Role"/>
+      </def>
+      <def locator="32:1-32:59" name="active" id="active" accessLevel="Public">
+         <codeSystem locator="32:30-32:59" name="ConditionClinicalStatusCodes"/>
+      </def>
+      <def locator="33:1-33:67" name="recurrence" id="recurrence" accessLevel="Public">
+         <codeSystem locator="33:38-33:67" name="ConditionClinicalStatusCodes"/>
+      </def>
+      <def locator="34:1-34:61" name="relapse" id="relapse" accessLevel="Public">
+         <codeSystem locator="34:32-34:61" name="ConditionClinicalStatusCodes"/>
+      </def>
+      <def locator="35:1-35:63" name="inactive" id="inactive" accessLevel="Public">
+         <codeSystem locator="35:34-35:63" name="ConditionClinicalStatusCodes"/>
+      </def>
+      <def locator="36:1-36:65" name="remission" id="remission" accessLevel="Public">
+         <codeSystem locator="36:36-36:65" name="ConditionClinicalStatusCodes"/>
+      </def>
+      <def locator="37:1-37:63" name="resolved" id="resolved" accessLevel="Public">
+         <codeSystem locator="37:34-37:63" name="ConditionClinicalStatusCodes"/>
+      </def>
+      <def locator="40:1-40:71" name="unconfirmed" id="unconfirmed" accessLevel="Public">
+         <codeSystem locator="40:40-40:71" name="ConditionVerificationStatusCodes"/>
+      </def>
+      <def locator="41:1-41:71" name="provisional" id="provisional" accessLevel="Public">
+         <codeSystem locator="41:40-41:71" name="ConditionVerificationStatusCodes"/>
+      </def>
+      <def locator="42:1-42:73" name="differential" id="differential" accessLevel="Public">
+         <codeSystem locator="42:42-42:73" name="ConditionVerificationStatusCodes"/>
+      </def>
+      <def locator="43:1-43:67" name="confirmed" id="confirmed" accessLevel="Public">
+         <codeSystem locator="43:36-43:67" name="ConditionVerificationStatusCodes"/>
+      </def>
+      <def locator="44:1-44:63" name="refuted" id="refuted" accessLevel="Public">
+         <codeSystem locator="44:32-44:63" name="ConditionVerificationStatusCodes"/>
+      </def>
+      <def locator="45:1-45:81" name="entered-in-error" id="entered-in-error" accessLevel="Public">
+         <codeSystem locator="45:50-45:81" name="ConditionVerificationStatusCodes"/>
+      </def>
+      <def locator="47:1-47:76" name="allergy-active" id="active" accessLevel="Public">
+         <codeSystem locator="47:38-47:76" name="AllergyIntoleranceClinicalStatusCodes"/>
+      </def>
+      <def locator="48:1-48:80" name="allergy-inactive" id="inactive" accessLevel="Public">
+         <codeSystem locator="48:42-48:80" name="AllergyIntoleranceClinicalStatusCodes"/>
+      </def>
+      <def locator="49:1-49:80" name="allergy-resolved" id="resolved" accessLevel="Public">
+         <codeSystem locator="49:42-49:80" name="AllergyIntoleranceClinicalStatusCodes"/>
+      </def>
+      <def locator="52:1-52:88" name="allergy-unconfirmed" id="unconfirmed" accessLevel="Public">
+         <codeSystem locator="52:48-52:88" name="AllergyIntoleranceVerificationStatusCodes"/>
+      </def>
+      <def locator="53:1-53:84" name="allergy-confirmed" id="confirmed" accessLevel="Public">
+         <codeSystem locator="53:44-53:84" name="AllergyIntoleranceVerificationStatusCodes"/>
+      </def>
+      <def locator="54:1-54:80" name="allergy-refuted" id="refuted" accessLevel="Public">
+         <codeSystem locator="54:40-54:80" name="AllergyIntoleranceVerificationStatusCodes"/>
+      </def>
+      <def locator="57:1-57:82" name="Community" id="community" display="Community" accessLevel="Public">
+         <codeSystem locator="57:36-57:62" name="MedicationRequestCategory"/>
+      </def>
+      <def locator="58:1-58:82" name="Discharge" id="discharge" display="Discharge" accessLevel="Public">
+         <codeSystem locator="58:36-58:62" name="MedicationRequestCategory"/>
+      </def>
+      <def locator="61:1-61:67" name="AD" id="AD" display="Admission diagnosis" accessLevel="Public">
+         <codeSystem locator="61:22-61:37" name="Diagnosis Role"/>
+      </def>
+      <def locator="62:1-62:67" name="DD" id="DD" display="Discharge diagnosis" accessLevel="Public">
+         <codeSystem locator="62:22-62:37" name="Diagnosis Role"/>
+      </def>
+      <def locator="63:1-63:63" name="CC" id="CC" display="Chief complaint" accessLevel="Public">
+         <codeSystem locator="63:22-63:37" name="Diagnosis Role"/>
+      </def>
+      <def locator="64:1-64:69" name="CM" id="CM" display="Comorbidity diagnosis" accessLevel="Public">
+         <codeSystem locator="64:22-64:37" name="Diagnosis Role"/>
+      </def>
+      <def locator="65:1-65:72" name="pre-op" id="pre-op" display="pre-op diagnosis" accessLevel="Public">
+         <codeSystem locator="65:30-65:45" name="Diagnosis Role"/>
+      </def>
+      <def locator="66:1-66:75" name="post-op" id="post-op" display="post-op diagnosis" accessLevel="Public">
+         <codeSystem locator="66:32-66:47" name="Diagnosis Role"/>
+      </def>
+      <def locator="67:1-67:75" name="billing" id="billing" display="billing diagnosis" accessLevel="Public">
+         <codeSystem locator="67:32-67:47" name="Diagnosis Role"/>
+      </def>
+   </codes>
+   <contexts>
+      <def locator="69:1-69:15" name="Patient"/>
+   </contexts>
+   <statements>
+      <def locator="69:1-69:15" name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="69:1-69:15" dataType="fhir:Patient" templateId="http://hl7.org/fhir/StructureDefinition/Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def locator="79:1-99:4" name="ToInterval" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Normalizes a value that is a choice of timing-valued types to an equivalent interval"/>
+            <a:t name="comment" value="Normalizes a choice type of FHIR.dateTime, FHIR.Period, FHIR.Timing, FHIR.instance, FHIR.string, FHIR.Age, or FHIR.Range types&#xa;to an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible&#xa;representations for timing-valued elements in FHIR, allowing this function to be used across any resource. NOTE: Due to the&#xa;complexity of determining a single interval from a Timing or String type, this function will throw a run-time exception if it is used&#xa;with a Timing or String."/>
+         </annotation>
+         <expression locator="80:3-99:4" xsi:type="Case">
+            <caseItem locator="81:4-82:111">
+               <when locator="81:9-81:31" xsi:type="Is">
+                  <operand locator="81:9-81:14" name="choice" xsi:type="OperandRef"/>
+                  <isTypeSpecifier locator="81:19-81:31" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+               </when>
+               <then locator="82:6-82:111" lowClosed="true" highClosed="true" xsi:type="Interval">
+                  <low locator="82:15-82:61" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="82:38-82:60" strict="false" xsi:type="As">
+                        <operand locator="82:38-82:43" name="choice" xsi:type="OperandRef"/>
+                        <asTypeSpecifier locator="82:48-82:60" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                     </operand>
+                  </low>
+                  <high locator="82:64-82:110" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="82:87-82:109" strict="false" xsi:type="As">
+                        <operand locator="82:87-82:92" name="choice" xsi:type="OperandRef"/>
+                        <asTypeSpecifier locator="82:97-82:109" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                     </operand>
+                  </high>
+               </then>
+            </caseItem>
+            <caseItem locator="83:3-84:49">
+               <when locator="83:8-83:28" xsi:type="Is">
+                  <operand locator="83:8-83:13" name="choice" xsi:type="OperandRef"/>
+                  <isTypeSpecifier locator="83:18-83:28" name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+               </when>
+               <then locator="84:5-84:49" name="ToInterval" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="84:28-84:48" strict="false" xsi:type="As">
+                     <operand locator="84:28-84:33" name="choice" xsi:type="OperandRef"/>
+                     <asTypeSpecifier locator="84:38-84:48" name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                  </operand>
+               </then>
+            </caseItem>
+            <caseItem locator="85:3-86:107">
+               <when locator="85:8-85:29" xsi:type="Is">
+                  <operand locator="85:8-85:13" name="choice" xsi:type="OperandRef"/>
+                  <isTypeSpecifier locator="85:18-85:29" name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+               </when>
+               <then locator="86:4-86:107" lowClosed="true" highClosed="true" xsi:type="Interval">
+                  <low locator="86:13-86:58" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="86:36-86:57" strict="false" xsi:type="As">
+                        <operand locator="86:36-86:41" name="choice" xsi:type="OperandRef"/>
+                        <asTypeSpecifier locator="86:46-86:57" name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                     </operand>
+                  </low>
+                  <high locator="86:61-86:106" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="86:84-86:105" strict="false" xsi:type="As">
+                        <operand locator="86:84-86:89" name="choice" xsi:type="OperandRef"/>
+                        <asTypeSpecifier locator="86:94-86:105" name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                     </operand>
+                  </high>
+               </then>
+            </caseItem>
+            <caseItem locator="87:3-89:97">
+               <when locator="87:8-87:25" xsi:type="Is">
+                  <operand locator="87:8-87:13" name="choice" xsi:type="OperandRef"/>
+                  <isTypeSpecifier locator="87:18-87:25" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+               </when>
+               <then xsi:type="Interval">
+                  <low xsi:type="ToDateTime">
+                     <operand path="low" xsi:type="Property">
+                        <source locator="88:5-89:97" lowClosed="true" highClosed="false" xsi:type="Interval">
+                           <low locator="88:14-88:95" xsi:type="Add">
+                              <operand locator="88:14-88:50" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="88:33-88:49" path="birthDate" xsi:type="Property">
+                                    <source locator="88:33-88:39" name="Patient" xsi:type="ExpressionRef"/>
+                                 </operand>
+                              </operand>
+                              <operand locator="88:54-88:95" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="88:77-88:94" strict="false" xsi:type="As">
+                                    <operand locator="88:77-88:82" name="choice" xsi:type="OperandRef"/>
+                                    <asTypeSpecifier locator="88:87-88:94" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                 </operand>
+                              </operand>
+                           </low>
+                           <high locator="89:6-89:96" xsi:type="Add">
+                              <operand locator="89:6-89:87" xsi:type="Add">
+                                 <operand locator="89:6-89:42" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="89:25-89:41" path="birthDate" xsi:type="Property">
+                                       <source locator="89:25-89:31" name="Patient" xsi:type="ExpressionRef"/>
+                                    </operand>
+                                 </operand>
+                                 <operand locator="89:46-89:87" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="89:69-89:86" strict="false" xsi:type="As">
+                                       <operand locator="89:69-89:74" name="choice" xsi:type="OperandRef"/>
+                                       <asTypeSpecifier locator="89:79-89:86" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                    </operand>
+                                 </operand>
+                              </operand>
+                              <operand locator="89:91-89:96" value="1" unit="year" xsi:type="Quantity"/>
+                           </high>
+                        </source>
+                     </operand>
+                  </low>
+                  <lowClosedExpression path="lowClosed" xsi:type="Property">
+                     <source locator="88:5-89:97" lowClosed="true" highClosed="false" xsi:type="Interval">
+                        <low locator="88:14-88:95" xsi:type="Add">
+                           <operand locator="88:14-88:50" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="88:33-88:49" path="birthDate" xsi:type="Property">
+                                 <source locator="88:33-88:39" name="Patient" xsi:type="ExpressionRef"/>
+                              </operand>
+                           </operand>
+                           <operand locator="88:54-88:95" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="88:77-88:94" strict="false" xsi:type="As">
+                                 <operand locator="88:77-88:82" name="choice" xsi:type="OperandRef"/>
+                                 <asTypeSpecifier locator="88:87-88:94" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                              </operand>
+                           </operand>
+                        </low>
+                        <high locator="89:6-89:96" xsi:type="Add">
+                           <operand locator="89:6-89:87" xsi:type="Add">
+                              <operand locator="89:6-89:42" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="89:25-89:41" path="birthDate" xsi:type="Property">
+                                    <source locator="89:25-89:31" name="Patient" xsi:type="ExpressionRef"/>
+                                 </operand>
+                              </operand>
+                              <operand locator="89:46-89:87" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="89:69-89:86" strict="false" xsi:type="As">
+                                    <operand locator="89:69-89:74" name="choice" xsi:type="OperandRef"/>
+                                    <asTypeSpecifier locator="89:79-89:86" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                 </operand>
+                              </operand>
+                           </operand>
+                           <operand locator="89:91-89:96" value="1" unit="year" xsi:type="Quantity"/>
+                        </high>
+                     </source>
+                  </lowClosedExpression>
+                  <high xsi:type="ToDateTime">
+                     <operand path="high" xsi:type="Property">
+                        <source locator="88:5-89:97" lowClosed="true" highClosed="false" xsi:type="Interval">
+                           <low locator="88:14-88:95" xsi:type="Add">
+                              <operand locator="88:14-88:50" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="88:33-88:49" path="birthDate" xsi:type="Property">
+                                    <source locator="88:33-88:39" name="Patient" xsi:type="ExpressionRef"/>
+                                 </operand>
+                              </operand>
+                              <operand locator="88:54-88:95" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="88:77-88:94" strict="false" xsi:type="As">
+                                    <operand locator="88:77-88:82" name="choice" xsi:type="OperandRef"/>
+                                    <asTypeSpecifier locator="88:87-88:94" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                 </operand>
+                              </operand>
+                           </low>
+                           <high locator="89:6-89:96" xsi:type="Add">
+                              <operand locator="89:6-89:87" xsi:type="Add">
+                                 <operand locator="89:6-89:42" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="89:25-89:41" path="birthDate" xsi:type="Property">
+                                       <source locator="89:25-89:31" name="Patient" xsi:type="ExpressionRef"/>
+                                    </operand>
+                                 </operand>
+                                 <operand locator="89:46-89:87" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="89:69-89:86" strict="false" xsi:type="As">
+                                       <operand locator="89:69-89:74" name="choice" xsi:type="OperandRef"/>
+                                       <asTypeSpecifier locator="89:79-89:86" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                    </operand>
+                                 </operand>
+                              </operand>
+                              <operand locator="89:91-89:96" value="1" unit="year" xsi:type="Quantity"/>
+                           </high>
+                        </source>
+                     </operand>
+                  </high>
+                  <highClosedExpression path="highClosed" xsi:type="Property">
+                     <source locator="88:5-89:97" lowClosed="true" highClosed="false" xsi:type="Interval">
+                        <low locator="88:14-88:95" xsi:type="Add">
+                           <operand locator="88:14-88:50" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="88:33-88:49" path="birthDate" xsi:type="Property">
+                                 <source locator="88:33-88:39" name="Patient" xsi:type="ExpressionRef"/>
+                              </operand>
+                           </operand>
+                           <operand locator="88:54-88:95" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="88:77-88:94" strict="false" xsi:type="As">
+                                 <operand locator="88:77-88:82" name="choice" xsi:type="OperandRef"/>
+                                 <asTypeSpecifier locator="88:87-88:94" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                              </operand>
+                           </operand>
+                        </low>
+                        <high locator="89:6-89:96" xsi:type="Add">
+                           <operand locator="89:6-89:87" xsi:type="Add">
+                              <operand locator="89:6-89:42" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="89:25-89:41" path="birthDate" xsi:type="Property">
+                                    <source locator="89:25-89:31" name="Patient" xsi:type="ExpressionRef"/>
+                                 </operand>
+                              </operand>
+                              <operand locator="89:46-89:87" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="89:69-89:86" strict="false" xsi:type="As">
+                                    <operand locator="89:69-89:74" name="choice" xsi:type="OperandRef"/>
+                                    <asTypeSpecifier locator="89:79-89:86" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                 </operand>
+                              </operand>
+                           </operand>
+                           <operand locator="89:91-89:96" value="1" unit="year" xsi:type="Quantity"/>
+                        </high>
+                     </source>
+                  </highClosedExpression>
+               </then>
+            </caseItem>
+            <caseItem locator="90:3-92:106">
+               <when locator="90:8-90:27" xsi:type="Is">
+                  <operand locator="90:8-90:13" name="choice" xsi:type="OperandRef"/>
+                  <isTypeSpecifier locator="90:18-90:27" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+               </when>
+               <then xsi:type="Interval">
+                  <low xsi:type="ToDateTime">
+                     <operand path="low" xsi:type="Property">
+                        <source locator="91:5-92:106" lowClosed="true" highClosed="false" xsi:type="Interval">
+                           <low locator="91:14-91:103" xsi:type="Add">
+                              <operand locator="91:14-91:50" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="91:33-91:49" path="birthDate" xsi:type="Property">
+                                    <source locator="91:33-91:39" name="Patient" xsi:type="ExpressionRef"/>
+                                 </operand>
+                              </operand>
+                              <operand locator="91:54-91:103" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="91:77-91:102" path="low" xsi:type="Property">
+                                    <source locator="91:77-91:98" strict="false" xsi:type="As">
+                                       <operand locator="91:78-91:83" name="choice" xsi:type="OperandRef"/>
+                                       <asTypeSpecifier locator="91:88-91:97" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                    </source>
+                                 </operand>
+                              </operand>
+                           </low>
+                           <high locator="92:6-92:105" xsi:type="Add">
+                              <operand locator="92:6-92:96" xsi:type="Add">
+                                 <operand locator="92:6-92:42" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="92:25-92:41" path="birthDate" xsi:type="Property">
+                                       <source locator="92:25-92:31" name="Patient" xsi:type="ExpressionRef"/>
+                                    </operand>
+                                 </operand>
+                                 <operand locator="92:46-92:96" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="92:69-92:95" path="high" xsi:type="Property">
+                                       <source locator="92:69-92:90" strict="false" xsi:type="As">
+                                          <operand locator="92:70-92:75" name="choice" xsi:type="OperandRef"/>
+                                          <asTypeSpecifier locator="92:80-92:89" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                       </source>
+                                    </operand>
+                                 </operand>
+                              </operand>
+                              <operand locator="92:100-92:105" value="1" unit="year" xsi:type="Quantity"/>
+                           </high>
+                        </source>
+                     </operand>
+                  </low>
+                  <lowClosedExpression path="lowClosed" xsi:type="Property">
+                     <source locator="91:5-92:106" lowClosed="true" highClosed="false" xsi:type="Interval">
+                        <low locator="91:14-91:103" xsi:type="Add">
+                           <operand locator="91:14-91:50" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="91:33-91:49" path="birthDate" xsi:type="Property">
+                                 <source locator="91:33-91:39" name="Patient" xsi:type="ExpressionRef"/>
+                              </operand>
+                           </operand>
+                           <operand locator="91:54-91:103" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="91:77-91:102" path="low" xsi:type="Property">
+                                 <source locator="91:77-91:98" strict="false" xsi:type="As">
+                                    <operand locator="91:78-91:83" name="choice" xsi:type="OperandRef"/>
+                                    <asTypeSpecifier locator="91:88-91:97" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                 </source>
+                              </operand>
+                           </operand>
+                        </low>
+                        <high locator="92:6-92:105" xsi:type="Add">
+                           <operand locator="92:6-92:96" xsi:type="Add">
+                              <operand locator="92:6-92:42" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="92:25-92:41" path="birthDate" xsi:type="Property">
+                                    <source locator="92:25-92:31" name="Patient" xsi:type="ExpressionRef"/>
+                                 </operand>
+                              </operand>
+                              <operand locator="92:46-92:96" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="92:69-92:95" path="high" xsi:type="Property">
+                                    <source locator="92:69-92:90" strict="false" xsi:type="As">
+                                       <operand locator="92:70-92:75" name="choice" xsi:type="OperandRef"/>
+                                       <asTypeSpecifier locator="92:80-92:89" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                    </source>
+                                 </operand>
+                              </operand>
+                           </operand>
+                           <operand locator="92:100-92:105" value="1" unit="year" xsi:type="Quantity"/>
+                        </high>
+                     </source>
+                  </lowClosedExpression>
+                  <high xsi:type="ToDateTime">
+                     <operand path="high" xsi:type="Property">
+                        <source locator="91:5-92:106" lowClosed="true" highClosed="false" xsi:type="Interval">
+                           <low locator="91:14-91:103" xsi:type="Add">
+                              <operand locator="91:14-91:50" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="91:33-91:49" path="birthDate" xsi:type="Property">
+                                    <source locator="91:33-91:39" name="Patient" xsi:type="ExpressionRef"/>
+                                 </operand>
+                              </operand>
+                              <operand locator="91:54-91:103" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="91:77-91:102" path="low" xsi:type="Property">
+                                    <source locator="91:77-91:98" strict="false" xsi:type="As">
+                                       <operand locator="91:78-91:83" name="choice" xsi:type="OperandRef"/>
+                                       <asTypeSpecifier locator="91:88-91:97" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                    </source>
+                                 </operand>
+                              </operand>
+                           </low>
+                           <high locator="92:6-92:105" xsi:type="Add">
+                              <operand locator="92:6-92:96" xsi:type="Add">
+                                 <operand locator="92:6-92:42" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="92:25-92:41" path="birthDate" xsi:type="Property">
+                                       <source locator="92:25-92:31" name="Patient" xsi:type="ExpressionRef"/>
+                                    </operand>
+                                 </operand>
+                                 <operand locator="92:46-92:96" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="92:69-92:95" path="high" xsi:type="Property">
+                                       <source locator="92:69-92:90" strict="false" xsi:type="As">
+                                          <operand locator="92:70-92:75" name="choice" xsi:type="OperandRef"/>
+                                          <asTypeSpecifier locator="92:80-92:89" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                       </source>
+                                    </operand>
+                                 </operand>
+                              </operand>
+                              <operand locator="92:100-92:105" value="1" unit="year" xsi:type="Quantity"/>
+                           </high>
+                        </source>
+                     </operand>
+                  </high>
+                  <highClosedExpression path="highClosed" xsi:type="Property">
+                     <source locator="91:5-92:106" lowClosed="true" highClosed="false" xsi:type="Interval">
+                        <low locator="91:14-91:103" xsi:type="Add">
+                           <operand locator="91:14-91:50" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="91:33-91:49" path="birthDate" xsi:type="Property">
+                                 <source locator="91:33-91:39" name="Patient" xsi:type="ExpressionRef"/>
+                              </operand>
+                           </operand>
+                           <operand locator="91:54-91:103" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand locator="91:77-91:102" path="low" xsi:type="Property">
+                                 <source locator="91:77-91:98" strict="false" xsi:type="As">
+                                    <operand locator="91:78-91:83" name="choice" xsi:type="OperandRef"/>
+                                    <asTypeSpecifier locator="91:88-91:97" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                 </source>
+                              </operand>
+                           </operand>
+                        </low>
+                        <high locator="92:6-92:105" xsi:type="Add">
+                           <operand locator="92:6-92:96" xsi:type="Add">
+                              <operand locator="92:6-92:42" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="92:25-92:41" path="birthDate" xsi:type="Property">
+                                    <source locator="92:25-92:31" name="Patient" xsi:type="ExpressionRef"/>
+                                 </operand>
+                              </operand>
+                              <operand locator="92:46-92:96" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="92:69-92:95" path="high" xsi:type="Property">
+                                    <source locator="92:69-92:90" strict="false" xsi:type="As">
+                                       <operand locator="92:70-92:75" name="choice" xsi:type="OperandRef"/>
+                                       <asTypeSpecifier locator="92:80-92:89" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                    </source>
+                                 </operand>
+                              </operand>
+                           </operand>
+                           <operand locator="92:100-92:105" value="1" unit="year" xsi:type="Quantity"/>
+                        </high>
+                     </source>
+                  </highClosedExpression>
+               </then>
+            </caseItem>
+            <caseItem locator="93:3-94:114">
+               <when locator="93:8-93:28" xsi:type="Is">
+                  <operand locator="93:8-93:13" name="choice" xsi:type="OperandRef"/>
+                  <isTypeSpecifier locator="93:18-93:28" name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+               </when>
+               <then locator="94:5-94:114" xsi:type="Message">
+                  <source locator="94:13-94:38" strict="false" xsi:type="As">
+                     <operand locator="94:13-94:16" xsi:type="Null"/>
+                     <asTypeSpecifier locator="94:21-94:38" xsi:type="IntervalTypeSpecifier">
+                        <pointType locator="94:30-94:37" name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                     </asTypeSpecifier>
+                  </source>
+                  <condition locator="94:41-94:44" valueType="t:Boolean" value="true" xsi:type="Literal"/>
+                  <code locator="94:47-94:49" valueType="t:String" value="1" xsi:type="Literal"/>
+                  <severity locator="94:52-94:58" valueType="t:String" value="Error" xsi:type="Literal"/>
+                  <message locator="94:61-94:113" valueType="t:String" value="Cannot compute a single interval from a Timing type" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem locator="95:5-96:111">
+               <when locator="95:10-95:30" xsi:type="Is">
+                  <operand locator="95:10-95:15" name="choice" xsi:type="OperandRef"/>
+                  <isTypeSpecifier locator="95:20-95:30" name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+               </when>
+               <then locator="96:7-96:111" xsi:type="Message">
+                  <source locator="96:15-96:40" strict="false" xsi:type="As">
+                     <operand locator="96:15-96:18" xsi:type="Null"/>
+                     <asTypeSpecifier locator="96:23-96:40" xsi:type="IntervalTypeSpecifier">
+                        <pointType locator="96:32-96:39" name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                     </asTypeSpecifier>
+                  </source>
+                  <condition locator="96:43-96:46" valueType="t:Boolean" value="true" xsi:type="Literal"/>
+                  <code locator="96:49-96:51" valueType="t:String" value="1" xsi:type="Literal"/>
+                  <severity locator="96:54-96:60" valueType="t:String" value="Error" xsi:type="Literal"/>
+                  <message locator="96:63-96:110" valueType="t:String" value="Cannot compute an interval from a String value" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <else locator="98:4-98:29" strict="false" xsi:type="As">
+               <operand locator="98:4-98:7" xsi:type="Null"/>
+               <asTypeSpecifier locator="98:12-98:29" xsi:type="IntervalTypeSpecifier">
+                  <pointType locator="98:21-98:28" name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+               </asTypeSpecifier>
+            </else>
+         </expression>
+         <operand name="choice">
+            <operandTypeSpecifier locator="79:35-79:130" xsi:type="ChoiceTypeSpecifier">
+               <choice locator="79:42-79:54" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+               <choice locator="79:57-79:67" name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+               <choice locator="79:70-79:80" name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+               <choice locator="79:83-79:94" name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+               <choice locator="79:97-79:107" name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+               <choice locator="79:110-79:117" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+               <choice locator="79:120-79:129" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+            </operandTypeSpecifier>
+         </operand>
+      </def>
+      <def locator="106:1-121:10" name="ToAbatementInterval" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns an interval representing the normalized Abatement of a given Condition resource."/>
+            <a:t name="comment" value="NOTE: Due to the complexity of determining an interval from a String, this function will throw&#xa;a run-time exception if used with a Condition instance that has a String as the abatement value."/>
+         </annotation>
+         <expression locator="107:2-121:10" xsi:type="If">
+            <condition locator="107:5-107:40" xsi:type="Is">
+               <operand locator="107:5-107:23" path="abatement" xsi:type="Property">
+                  <source locator="107:5-107:13" name="condition" xsi:type="OperandRef"/>
+               </operand>
+               <isTypeSpecifier locator="107:28-107:40" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+            </condition>
+            <then locator="108:4-108:135" lowClosed="true" highClosed="true" xsi:type="Interval">
+               <low locator="108:13-108:72" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="108:36-108:71" strict="false" xsi:type="As">
+                     <operand locator="108:36-108:54" path="abatement" xsi:type="Property">
+                        <source locator="108:36-108:44" name="condition" xsi:type="OperandRef"/>
+                     </operand>
+                     <asTypeSpecifier locator="108:59-108:71" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                  </operand>
+               </low>
+               <high locator="108:75-108:134" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="108:98-108:133" strict="false" xsi:type="As">
+                     <operand locator="108:98-108:116" path="abatement" xsi:type="Property">
+                        <source locator="108:98-108:106" name="condition" xsi:type="OperandRef"/>
+                     </operand>
+                     <asTypeSpecifier locator="108:121-108:133" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                  </operand>
+               </high>
+            </then>
+            <else locator="109:7-121:10" xsi:type="If">
+               <condition locator="109:10-109:43" xsi:type="Is">
+                  <operand locator="109:10-109:28" path="abatement" xsi:type="Property">
+                     <source locator="109:10-109:18" name="condition" xsi:type="OperandRef"/>
+                  </operand>
+                  <isTypeSpecifier locator="109:33-109:43" name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+               </condition>
+               <then locator="110:4-110:61" name="ToInterval" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="110:27-110:60" strict="false" xsi:type="As">
+                     <operand locator="110:27-110:45" path="abatement" xsi:type="Property">
+                        <source locator="110:27-110:35" name="condition" xsi:type="OperandRef"/>
+                     </operand>
+                     <asTypeSpecifier locator="110:50-110:60" name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                  </operand>
+               </then>
+               <else locator="111:7-121:10" xsi:type="If">
+                  <condition locator="111:10-111:43" xsi:type="Is">
+                     <operand locator="111:10-111:28" path="abatement" xsi:type="Property">
+                        <source locator="111:10-111:18" name="condition" xsi:type="OperandRef"/>
+                     </operand>
+                     <isTypeSpecifier locator="111:33-111:43" name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+                  </condition>
+                  <then locator="112:5-112:109" xsi:type="Message">
+                     <source locator="112:13-112:38" strict="false" xsi:type="As">
+                        <operand locator="112:13-112:16" xsi:type="Null"/>
+                        <asTypeSpecifier locator="112:21-112:38" xsi:type="IntervalTypeSpecifier">
+                           <pointType locator="112:30-112:37" name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                        </asTypeSpecifier>
+                     </source>
+                     <condition locator="112:41-112:44" valueType="t:Boolean" value="true" xsi:type="Literal"/>
+                     <code locator="112:47-112:49" valueType="t:String" value="1" xsi:type="Literal"/>
+                     <severity locator="112:52-112:58" valueType="t:String" value="Error" xsi:type="Literal"/>
+                     <message locator="112:61-112:108" valueType="t:String" value="Cannot compute an interval from a String value" xsi:type="Literal"/>
+                  </then>
+                  <else locator="113:7-121:10" xsi:type="If">
+                     <condition locator="113:10-113:40" xsi:type="Is">
+                        <operand locator="113:10-113:28" path="abatement" xsi:type="Property">
+                           <source locator="113:10-113:18" name="condition" xsi:type="OperandRef"/>
+                        </operand>
+                        <isTypeSpecifier locator="113:33-113:40" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                     </condition>
+                     <then xsi:type="Interval">
+                        <low xsi:type="ToDateTime">
+                           <operand path="low" xsi:type="Property">
+                              <source locator="114:3-115:108" lowClosed="true" highClosed="false" xsi:type="Interval">
+                                 <low locator="114:12-114:106" xsi:type="Add">
+                                    <operand locator="114:12-114:48" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="114:31-114:47" path="birthDate" xsi:type="Property">
+                                          <source locator="114:31-114:37" name="Patient" xsi:type="ExpressionRef"/>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="114:52-114:106" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="114:75-114:105" strict="false" xsi:type="As">
+                                          <operand locator="114:75-114:93" path="abatement" xsi:type="Property">
+                                             <source locator="114:75-114:83" name="condition" xsi:type="OperandRef"/>
+                                          </operand>
+                                          <asTypeSpecifier locator="114:98-114:105" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                       </operand>
+                                    </operand>
+                                 </low>
+                                 <high locator="115:4-115:107" xsi:type="Add">
+                                    <operand locator="115:4-115:98" xsi:type="Add">
+                                       <operand locator="115:4-115:40" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="115:23-115:39" path="birthDate" xsi:type="Property">
+                                             <source locator="115:23-115:29" name="Patient" xsi:type="ExpressionRef"/>
+                                          </operand>
+                                       </operand>
+                                       <operand locator="115:44-115:98" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="115:67-115:97" strict="false" xsi:type="As">
+                                             <operand locator="115:67-115:85" path="abatement" xsi:type="Property">
+                                                <source locator="115:67-115:75" name="condition" xsi:type="OperandRef"/>
+                                             </operand>
+                                             <asTypeSpecifier locator="115:90-115:97" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                          </operand>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="115:102-115:107" value="1" unit="year" xsi:type="Quantity"/>
+                                 </high>
+                              </source>
+                           </operand>
+                        </low>
+                        <lowClosedExpression path="lowClosed" xsi:type="Property">
+                           <source locator="114:3-115:108" lowClosed="true" highClosed="false" xsi:type="Interval">
+                              <low locator="114:12-114:106" xsi:type="Add">
+                                 <operand locator="114:12-114:48" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="114:31-114:47" path="birthDate" xsi:type="Property">
+                                       <source locator="114:31-114:37" name="Patient" xsi:type="ExpressionRef"/>
+                                    </operand>
+                                 </operand>
+                                 <operand locator="114:52-114:106" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="114:75-114:105" strict="false" xsi:type="As">
+                                       <operand locator="114:75-114:93" path="abatement" xsi:type="Property">
+                                          <source locator="114:75-114:83" name="condition" xsi:type="OperandRef"/>
+                                       </operand>
+                                       <asTypeSpecifier locator="114:98-114:105" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                    </operand>
+                                 </operand>
+                              </low>
+                              <high locator="115:4-115:107" xsi:type="Add">
+                                 <operand locator="115:4-115:98" xsi:type="Add">
+                                    <operand locator="115:4-115:40" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="115:23-115:39" path="birthDate" xsi:type="Property">
+                                          <source locator="115:23-115:29" name="Patient" xsi:type="ExpressionRef"/>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="115:44-115:98" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="115:67-115:97" strict="false" xsi:type="As">
+                                          <operand locator="115:67-115:85" path="abatement" xsi:type="Property">
+                                             <source locator="115:67-115:75" name="condition" xsi:type="OperandRef"/>
+                                          </operand>
+                                          <asTypeSpecifier locator="115:90-115:97" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                       </operand>
+                                    </operand>
+                                 </operand>
+                                 <operand locator="115:102-115:107" value="1" unit="year" xsi:type="Quantity"/>
+                              </high>
+                           </source>
+                        </lowClosedExpression>
+                        <high xsi:type="ToDateTime">
+                           <operand path="high" xsi:type="Property">
+                              <source locator="114:3-115:108" lowClosed="true" highClosed="false" xsi:type="Interval">
+                                 <low locator="114:12-114:106" xsi:type="Add">
+                                    <operand locator="114:12-114:48" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="114:31-114:47" path="birthDate" xsi:type="Property">
+                                          <source locator="114:31-114:37" name="Patient" xsi:type="ExpressionRef"/>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="114:52-114:106" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="114:75-114:105" strict="false" xsi:type="As">
+                                          <operand locator="114:75-114:93" path="abatement" xsi:type="Property">
+                                             <source locator="114:75-114:83" name="condition" xsi:type="OperandRef"/>
+                                          </operand>
+                                          <asTypeSpecifier locator="114:98-114:105" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                       </operand>
+                                    </operand>
+                                 </low>
+                                 <high locator="115:4-115:107" xsi:type="Add">
+                                    <operand locator="115:4-115:98" xsi:type="Add">
+                                       <operand locator="115:4-115:40" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="115:23-115:39" path="birthDate" xsi:type="Property">
+                                             <source locator="115:23-115:29" name="Patient" xsi:type="ExpressionRef"/>
+                                          </operand>
+                                       </operand>
+                                       <operand locator="115:44-115:98" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="115:67-115:97" strict="false" xsi:type="As">
+                                             <operand locator="115:67-115:85" path="abatement" xsi:type="Property">
+                                                <source locator="115:67-115:75" name="condition" xsi:type="OperandRef"/>
+                                             </operand>
+                                             <asTypeSpecifier locator="115:90-115:97" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                          </operand>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="115:102-115:107" value="1" unit="year" xsi:type="Quantity"/>
+                                 </high>
+                              </source>
+                           </operand>
+                        </high>
+                        <highClosedExpression path="highClosed" xsi:type="Property">
+                           <source locator="114:3-115:108" lowClosed="true" highClosed="false" xsi:type="Interval">
+                              <low locator="114:12-114:106" xsi:type="Add">
+                                 <operand locator="114:12-114:48" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="114:31-114:47" path="birthDate" xsi:type="Property">
+                                       <source locator="114:31-114:37" name="Patient" xsi:type="ExpressionRef"/>
+                                    </operand>
+                                 </operand>
+                                 <operand locator="114:52-114:106" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                    <operand locator="114:75-114:105" strict="false" xsi:type="As">
+                                       <operand locator="114:75-114:93" path="abatement" xsi:type="Property">
+                                          <source locator="114:75-114:83" name="condition" xsi:type="OperandRef"/>
+                                       </operand>
+                                       <asTypeSpecifier locator="114:98-114:105" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                    </operand>
+                                 </operand>
+                              </low>
+                              <high locator="115:4-115:107" xsi:type="Add">
+                                 <operand locator="115:4-115:98" xsi:type="Add">
+                                    <operand locator="115:4-115:40" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="115:23-115:39" path="birthDate" xsi:type="Property">
+                                          <source locator="115:23-115:29" name="Patient" xsi:type="ExpressionRef"/>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="115:44-115:98" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="115:67-115:97" strict="false" xsi:type="As">
+                                          <operand locator="115:67-115:85" path="abatement" xsi:type="Property">
+                                             <source locator="115:67-115:75" name="condition" xsi:type="OperandRef"/>
+                                          </operand>
+                                          <asTypeSpecifier locator="115:90-115:97" name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                       </operand>
+                                    </operand>
+                                 </operand>
+                                 <operand locator="115:102-115:107" value="1" unit="year" xsi:type="Quantity"/>
+                              </high>
+                           </source>
+                        </highClosedExpression>
+                     </then>
+                     <else locator="116:7-121:10" xsi:type="If">
+                        <condition locator="116:10-116:42" xsi:type="Is">
+                           <operand locator="116:10-116:28" path="abatement" xsi:type="Property">
+                              <source locator="116:10-116:18" name="condition" xsi:type="OperandRef"/>
+                           </operand>
+                           <isTypeSpecifier locator="116:33-116:42" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                        </condition>
+                        <then xsi:type="Interval">
+                           <low xsi:type="ToDateTime">
+                              <operand path="low" xsi:type="Property">
+                                 <source locator="117:4-118:118" lowClosed="true" highClosed="false" xsi:type="Interval">
+                                    <low locator="117:13-117:115" xsi:type="Add">
+                                       <operand locator="117:13-117:49" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="117:32-117:48" path="birthDate" xsi:type="Property">
+                                             <source locator="117:32-117:38" name="Patient" xsi:type="ExpressionRef"/>
+                                          </operand>
+                                       </operand>
+                                       <operand locator="117:53-117:115" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="117:76-117:114" path="low" xsi:type="Property">
+                                             <source locator="117:76-117:110" strict="false" xsi:type="As">
+                                                <operand locator="117:77-117:95" path="abatement" xsi:type="Property">
+                                                   <source locator="117:77-117:85" name="condition" xsi:type="OperandRef"/>
+                                                </operand>
+                                                <asTypeSpecifier locator="117:100-117:109" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                             </source>
+                                          </operand>
+                                       </operand>
+                                    </low>
+                                    <high locator="118:5-118:117" xsi:type="Add">
+                                       <operand locator="118:5-118:108" xsi:type="Add">
+                                          <operand locator="118:5-118:41" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                             <operand locator="118:24-118:40" path="birthDate" xsi:type="Property">
+                                                <source locator="118:24-118:30" name="Patient" xsi:type="ExpressionRef"/>
+                                             </operand>
+                                          </operand>
+                                          <operand locator="118:45-118:108" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                             <operand locator="118:68-118:107" path="high" xsi:type="Property">
+                                                <source locator="118:68-118:102" strict="false" xsi:type="As">
+                                                   <operand locator="118:69-118:87" path="abatement" xsi:type="Property">
+                                                      <source locator="118:69-118:77" name="condition" xsi:type="OperandRef"/>
+                                                   </operand>
+                                                   <asTypeSpecifier locator="118:92-118:101" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                                </source>
+                                             </operand>
+                                          </operand>
+                                       </operand>
+                                       <operand locator="118:112-118:117" value="1" unit="year" xsi:type="Quantity"/>
+                                    </high>
+                                 </source>
+                              </operand>
+                           </low>
+                           <lowClosedExpression path="lowClosed" xsi:type="Property">
+                              <source locator="117:4-118:118" lowClosed="true" highClosed="false" xsi:type="Interval">
+                                 <low locator="117:13-117:115" xsi:type="Add">
+                                    <operand locator="117:13-117:49" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="117:32-117:48" path="birthDate" xsi:type="Property">
+                                          <source locator="117:32-117:38" name="Patient" xsi:type="ExpressionRef"/>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="117:53-117:115" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="117:76-117:114" path="low" xsi:type="Property">
+                                          <source locator="117:76-117:110" strict="false" xsi:type="As">
+                                             <operand locator="117:77-117:95" path="abatement" xsi:type="Property">
+                                                <source locator="117:77-117:85" name="condition" xsi:type="OperandRef"/>
+                                             </operand>
+                                             <asTypeSpecifier locator="117:100-117:109" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                          </source>
+                                       </operand>
+                                    </operand>
+                                 </low>
+                                 <high locator="118:5-118:117" xsi:type="Add">
+                                    <operand locator="118:5-118:108" xsi:type="Add">
+                                       <operand locator="118:5-118:41" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="118:24-118:40" path="birthDate" xsi:type="Property">
+                                             <source locator="118:24-118:30" name="Patient" xsi:type="ExpressionRef"/>
+                                          </operand>
+                                       </operand>
+                                       <operand locator="118:45-118:108" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="118:68-118:107" path="high" xsi:type="Property">
+                                             <source locator="118:68-118:102" strict="false" xsi:type="As">
+                                                <operand locator="118:69-118:87" path="abatement" xsi:type="Property">
+                                                   <source locator="118:69-118:77" name="condition" xsi:type="OperandRef"/>
+                                                </operand>
+                                                <asTypeSpecifier locator="118:92-118:101" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                             </source>
+                                          </operand>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="118:112-118:117" value="1" unit="year" xsi:type="Quantity"/>
+                                 </high>
+                              </source>
+                           </lowClosedExpression>
+                           <high xsi:type="ToDateTime">
+                              <operand path="high" xsi:type="Property">
+                                 <source locator="117:4-118:118" lowClosed="true" highClosed="false" xsi:type="Interval">
+                                    <low locator="117:13-117:115" xsi:type="Add">
+                                       <operand locator="117:13-117:49" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="117:32-117:48" path="birthDate" xsi:type="Property">
+                                             <source locator="117:32-117:38" name="Patient" xsi:type="ExpressionRef"/>
+                                          </operand>
+                                       </operand>
+                                       <operand locator="117:53-117:115" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="117:76-117:114" path="low" xsi:type="Property">
+                                             <source locator="117:76-117:110" strict="false" xsi:type="As">
+                                                <operand locator="117:77-117:95" path="abatement" xsi:type="Property">
+                                                   <source locator="117:77-117:85" name="condition" xsi:type="OperandRef"/>
+                                                </operand>
+                                                <asTypeSpecifier locator="117:100-117:109" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                             </source>
+                                          </operand>
+                                       </operand>
+                                    </low>
+                                    <high locator="118:5-118:117" xsi:type="Add">
+                                       <operand locator="118:5-118:108" xsi:type="Add">
+                                          <operand locator="118:5-118:41" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                             <operand locator="118:24-118:40" path="birthDate" xsi:type="Property">
+                                                <source locator="118:24-118:30" name="Patient" xsi:type="ExpressionRef"/>
+                                             </operand>
+                                          </operand>
+                                          <operand locator="118:45-118:108" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                             <operand locator="118:68-118:107" path="high" xsi:type="Property">
+                                                <source locator="118:68-118:102" strict="false" xsi:type="As">
+                                                   <operand locator="118:69-118:87" path="abatement" xsi:type="Property">
+                                                      <source locator="118:69-118:77" name="condition" xsi:type="OperandRef"/>
+                                                   </operand>
+                                                   <asTypeSpecifier locator="118:92-118:101" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                                </source>
+                                             </operand>
+                                          </operand>
+                                       </operand>
+                                       <operand locator="118:112-118:117" value="1" unit="year" xsi:type="Quantity"/>
+                                    </high>
+                                 </source>
+                              </operand>
+                           </high>
+                           <highClosedExpression path="highClosed" xsi:type="Property">
+                              <source locator="117:4-118:118" lowClosed="true" highClosed="false" xsi:type="Interval">
+                                 <low locator="117:13-117:115" xsi:type="Add">
+                                    <operand locator="117:13-117:49" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="117:32-117:48" path="birthDate" xsi:type="Property">
+                                          <source locator="117:32-117:38" name="Patient" xsi:type="ExpressionRef"/>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="117:53-117:115" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                       <operand locator="117:76-117:114" path="low" xsi:type="Property">
+                                          <source locator="117:76-117:110" strict="false" xsi:type="As">
+                                             <operand locator="117:77-117:95" path="abatement" xsi:type="Property">
+                                                <source locator="117:77-117:85" name="condition" xsi:type="OperandRef"/>
+                                             </operand>
+                                             <asTypeSpecifier locator="117:100-117:109" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                          </source>
+                                       </operand>
+                                    </operand>
+                                 </low>
+                                 <high locator="118:5-118:117" xsi:type="Add">
+                                    <operand locator="118:5-118:108" xsi:type="Add">
+                                       <operand locator="118:5-118:41" name="ToDate" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="118:24-118:40" path="birthDate" xsi:type="Property">
+                                             <source locator="118:24-118:30" name="Patient" xsi:type="ExpressionRef"/>
+                                          </operand>
+                                       </operand>
+                                       <operand locator="118:45-118:108" name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                          <operand locator="118:68-118:107" path="high" xsi:type="Property">
+                                             <source locator="118:68-118:102" strict="false" xsi:type="As">
+                                                <operand locator="118:69-118:87" path="abatement" xsi:type="Property">
+                                                   <source locator="118:69-118:77" name="condition" xsi:type="OperandRef"/>
+                                                </operand>
+                                                <asTypeSpecifier locator="118:92-118:101" name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                             </source>
+                                          </operand>
+                                       </operand>
+                                    </operand>
+                                    <operand locator="118:112-118:117" value="1" unit="year" xsi:type="Quantity"/>
+                                 </high>
+                              </source>
+                           </highClosedExpression>
+                        </then>
+                        <else locator="119:7-121:10" xsi:type="If">
+                           <condition locator="119:10-119:44" xsi:type="Is">
+                              <operand locator="119:10-119:28" path="abatement" xsi:type="Property">
+                                 <source locator="119:10-119:18" name="condition" xsi:type="OperandRef"/>
+                              </operand>
+                              <isTypeSpecifier locator="119:33-119:44" name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                           </condition>
+                           <then locator="120:4-120:71" lowClosed="true" highClosed="false" xsi:type="Interval">
+                              <low locator="120:13-120:46" xsi:type="End">
+                                 <operand locator="120:20-120:46" name="ToInterval" xsi:type="FunctionRef">
+                                    <operand locator="120:31-120:45" path="onset" xsi:type="Property">
+                                       <source locator="120:31-120:39" name="condition" xsi:type="OperandRef"/>
+                                    </operand>
+                                 </operand>
+                              </low>
+                              <high name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand locator="120:49-120:70" path="recordedDate" xsi:type="Property">
+                                    <source locator="120:49-120:57" name="condition" xsi:type="OperandRef"/>
+                                 </operand>
+                              </high>
+                           </then>
+                           <else xsi:type="As">
+                              <operand locator="121:7-121:10" xsi:type="Null"/>
+                              <asTypeSpecifier xsi:type="IntervalTypeSpecifier">
+                                 <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                              </asTypeSpecifier>
+                           </else>
+                        </else>
+                     </else>
+                  </else>
+               </else>
+            </else>
+         </expression>
+         <operand name="condition">
+            <operandTypeSpecifier locator="106:47-106:55" name="fhir:Condition" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="128:1-134:87" name="ToPrevalenceInterval" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns an interval representing the normalized prevalence period of a given Condition resource."/>
+            <a:t name="comment" value="Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from&#xa;onset to abatement as specified in the given Condition."/>
+         </annotation>
+         <expression locator="129:1-134:87" xsi:type="If">
+            <condition locator="129:4-131:41" xsi:type="Or">
+               <operand locator="129:4-130:44" xsi:type="Or">
+                  <operand locator="129:4-129:38" xsi:type="Equivalent">
+                     <operand name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand locator="129:4-129:27" path="clinicalStatus" xsi:type="Property">
+                           <source locator="129:4-129:12" name="condition" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                     <operand xsi:type="ToConcept">
+                        <operand locator="129:31-129:38" name="active" xsi:type="CodeRef"/>
+                     </operand>
+                  </operand>
+                  <operand locator="130:6-130:44" xsi:type="Equivalent">
+                     <operand name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand locator="130:6-130:29" path="clinicalStatus" xsi:type="Property">
+                           <source locator="130:6-130:14" name="condition" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                     <operand xsi:type="ToConcept">
+                        <operand locator="130:33-130:44" name="recurrence" xsi:type="CodeRef"/>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand locator="131:6-131:41" xsi:type="Equivalent">
+                  <operand name="ToConcept" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand locator="131:6-131:29" path="clinicalStatus" xsi:type="Property">
+                        <source locator="131:6-131:14" name="condition" xsi:type="OperandRef"/>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="ToConcept">
+                     <operand locator="131:33-131:41" name="relapse" xsi:type="CodeRef"/>
+                  </operand>
+               </operand>
+            </condition>
+            <then locator="132:3-132:87" lowClosed="true" highClosed="true" xsi:type="Interval">
+               <low locator="132:12-132:47" xsi:type="Start">
+                  <operand locator="132:21-132:47" name="ToInterval" xsi:type="FunctionRef">
+                     <operand locator="132:32-132:46" path="onset" xsi:type="Property">
+                        <source locator="132:32-132:40" name="condition" xsi:type="OperandRef"/>
+                     </operand>
+                  </operand>
+               </low>
+               <high locator="132:50-132:86" xsi:type="End">
+                  <operand locator="132:57-132:86" name="ToAbatementInterval" xsi:type="FunctionRef">
+                     <operand locator="132:77-132:85" name="condition" xsi:type="OperandRef"/>
+                  </operand>
+               </high>
+            </then>
+            <else locator="134:3-134:87" lowClosed="true" highClosed="false" xsi:type="Interval">
+               <low locator="134:12-134:47" xsi:type="Start">
+                  <operand locator="134:21-134:47" name="ToInterval" xsi:type="FunctionRef">
+                     <operand locator="134:32-134:46" path="onset" xsi:type="Property">
+                        <source locator="134:32-134:40" name="condition" xsi:type="OperandRef"/>
+                     </operand>
+                  </operand>
+               </low>
+               <high locator="134:50-134:86" xsi:type="End">
+                  <operand locator="134:57-134:86" name="ToAbatementInterval" xsi:type="FunctionRef">
+                     <operand locator="134:77-134:85" name="condition" xsi:type="OperandRef"/>
+                  </operand>
+               </high>
+            </else>
+         </expression>
+         <operand name="condition">
+            <operandTypeSpecifier locator="128:48-128:56" name="fhir:Condition" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="142:1-145:10" name="Extensions" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns any extensions defined on the given resource with the specified url."/>
+            <a:t name="comment" value="NOTE: Extensions are not the preferred approach, but are used as a way to access&#xa;content that is defined by extensions but not yet surfaced in the&#xa;CQL model info."/>
+         </annotation>
+         <expression locator="143:3-145:10" xsi:type="Query">
+            <source locator="143:3-143:28" alias="E">
+               <expression locator="143:3-143:26" path="extension" xsi:type="Property">
+                  <source name="domainResource" xsi:type="OperandRef"/>
+               </expression>
+            </source>
+            <where locator="144:4-144:20" xsi:type="Equal">
+               <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="144:10-144:14" path="url" scope="E" xsi:type="Property"/>
+               </operand>
+               <operand locator="144:18-144:20" name="url" xsi:type="OperandRef"/>
+            </where>
+            <return locator="145:3-145:10">
+               <expression locator="145:10" name="E" xsi:type="AliasRef"/>
+            </return>
+         </expression>
+         <operand name="domainResource">
+            <operandTypeSpecifier locator="142:43-142:56" name="fhir:DomainResource" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="url">
+            <operandTypeSpecifier locator="142:63-142:68" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="152:1-153:50" name="Extension" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns the single extension (if present) on the given resource with the specified url."/>
+            <a:t name="comment" value="This function uses singleton from to ensure that a run-time exception is thrown if there&#xa;is more than one extension on the given resource with the specified url."/>
+         </annotation>
+         <expression locator="153:3-153:50" xsi:type="SingletonFrom">
+            <operand locator="153:18-153:50" name="Extensions" xsi:type="FunctionRef">
+               <operand locator="153:31-153:44" name="domainResource" xsi:type="OperandRef"/>
+               <operand locator="153:47-153:49" name="url" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="domainResource">
+            <operandTypeSpecifier locator="152:42-152:55" name="fhir:DomainResource" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="url">
+            <operandTypeSpecifier locator="152:62-152:67" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="160:1-163:10" name="Extensions" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns any extensions defined on the given element with the specified url."/>
+            <a:t name="comment" value="NOTE: Extensions are not the preferred approach, but are used as a way to access&#xa;content that is defined by extensions but not yet surfaced in the CQL model info."/>
+         </annotation>
+         <expression locator="161:3-163:10" xsi:type="Query">
+            <source locator="161:3-161:21" alias="E">
+               <expression locator="161:3-161:19" path="extension" xsi:type="Property">
+                  <source name="element" xsi:type="OperandRef"/>
+               </expression>
+            </source>
+            <where locator="162:4-162:20" xsi:type="Equal">
+               <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="162:10-162:14" path="url" scope="E" xsi:type="Property"/>
+               </operand>
+               <operand locator="162:18-162:20" name="url" xsi:type="OperandRef"/>
+            </where>
+            <return locator="163:3-163:10">
+               <expression locator="163:10" name="E" xsi:type="AliasRef"/>
+            </return>
+         </expression>
+         <operand name="element">
+            <operandTypeSpecifier locator="160:36-160:42" name="fhir:Element" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="url">
+            <operandTypeSpecifier locator="160:49-160:54" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="170:1-171:41" name="Extension" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns the single extension (if present) on the given element with the specified url."/>
+            <a:t name="comment" value="This function uses singleton from to ensure that a run-time exception is thrown if there&#xa;is more than one extension on the given resource with the specified url."/>
+         </annotation>
+         <expression locator="171:3-171:41" xsi:type="SingletonFrom">
+            <operand locator="171:18-171:41" name="Extensions" xsi:type="FunctionRef">
+               <operand locator="171:29-171:35" name="element" xsi:type="OperandRef"/>
+               <operand locator="171:38-171:40" name="url" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="element">
+            <operandTypeSpecifier locator="170:35-170:41" name="fhir:Element" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="url">
+            <operandTypeSpecifier locator="170:48-170:53" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="179:1-182:10" name="ModifierExtensions" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns any modifier extensions defined on the given resource with the specified url."/>
+            <a:t name="comment" value="NOTE: Extensions are not the preferred approach, but are used as a way to access&#xa;content that is defined by extensions but not yet surfaced in the&#xa;CQL model info."/>
+         </annotation>
+         <expression locator="180:3-182:10" xsi:type="Query">
+            <source locator="180:3-180:36" alias="E">
+               <expression locator="180:3-180:34" path="modifierExtension" xsi:type="Property">
+                  <source name="domainResource" xsi:type="OperandRef"/>
+               </expression>
+            </source>
+            <where locator="181:4-181:20" xsi:type="Equal">
+               <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="181:10-181:14" path="url" scope="E" xsi:type="Property"/>
+               </operand>
+               <operand locator="181:18-181:20" name="url" xsi:type="OperandRef"/>
+            </where>
+            <return locator="182:3-182:10">
+               <expression locator="182:10" name="E" xsi:type="AliasRef"/>
+            </return>
+         </expression>
+         <operand name="domainResource">
+            <operandTypeSpecifier locator="179:51-179:64" name="fhir:DomainResource" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="url">
+            <operandTypeSpecifier locator="179:71-179:76" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="189:1-190:56" name="ModifierExtension" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns the single modifier extension (if present) on the given resource with the specified url."/>
+            <a:t name="comment" value="This function uses singleton from to ensure that a run-time exception is thrown if there&#xa;is more than one extension on the given resource with the specified url."/>
+         </annotation>
+         <expression locator="190:3-190:56" xsi:type="SingletonFrom">
+            <operand locator="190:18-190:56" name="ModifierExtensions" xsi:type="FunctionRef">
+               <operand locator="190:37-190:50" name="domainResource" xsi:type="OperandRef"/>
+               <operand locator="190:53-190:55" name="url" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="domainResource">
+            <operandTypeSpecifier locator="189:50-189:63" name="fhir:DomainResource" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="url">
+            <operandTypeSpecifier locator="189:70-189:75" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="197:1-200:10" name="ModifierExtensions" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns any modifier extensions defined on the given element with the specified url."/>
+            <a:t name="comment" value="NOTE: Extensions are not the preferred approach, but are used as a way to access&#xa;content that is defined by extensions but not yet surfaced in the CQL model info."/>
+         </annotation>
+         <expression locator="198:3-200:10" xsi:type="Query">
+            <source locator="198:3-198:29" alias="E">
+               <expression locator="198:3-198:27" path="modifierExtension" xsi:type="Property">
+                  <source name="element" xsi:type="OperandRef"/>
+               </expression>
+            </source>
+            <where locator="199:4-199:20" xsi:type="Equal">
+               <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="199:10-199:14" path="url" scope="E" xsi:type="Property"/>
+               </operand>
+               <operand locator="199:18-199:20" name="url" xsi:type="OperandRef"/>
+            </where>
+            <return locator="200:3-200:10">
+               <expression locator="200:10" name="E" xsi:type="AliasRef"/>
+            </return>
+         </expression>
+         <operand name="element">
+            <operandTypeSpecifier locator="197:44-197:58" name="fhir:BackboneElement" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="url">
+            <operandTypeSpecifier locator="197:65-197:70" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="207:1-208:49" name="ModifierExtension" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns the single modifier extension (if present) on the given element with the specified url."/>
+            <a:t name="comment" value="This function uses singleton from to ensure that a run-time exception is thrown if there&#xa;is more than one extension on the given resource with the specified url."/>
+         </annotation>
+         <expression locator="208:3-208:49" xsi:type="SingletonFrom">
+            <operand locator="208:18-208:49" name="ModifierExtensions" xsi:type="FunctionRef">
+               <operand locator="208:37-208:43" name="element" xsi:type="OperandRef"/>
+               <operand locator="208:46-208:48" name="url" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="element">
+            <operandTypeSpecifier locator="207:43-207:57" name="fhir:BackboneElement" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="url">
+            <operandTypeSpecifier locator="207:64-207:69" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="215:1-218:10" name="BaseExtensions" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns any base-FHIR extensions defined on the given resource with the specified id."/>
+            <a:t name="comment" value="NOTE: Extensions are not the preferred approach, but are used as a way to access&#xa;content that is defined by extensions but not yet surfaced in the CQL model info."/>
+         </annotation>
+         <expression locator="216:3-218:10" xsi:type="Query">
+            <source locator="216:3-216:28" alias="E">
+               <expression locator="216:3-216:26" path="extension" xsi:type="Property">
+                  <source name="domainResource" xsi:type="OperandRef"/>
+               </expression>
+            </source>
+            <where locator="217:4-217:66" xsi:type="Equal">
+               <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="217:10-217:14" path="url" scope="E" xsi:type="Property"/>
+               </operand>
+               <operand locator="217:18-217:66" xsi:type="Concatenate">
+                  <operand locator="217:19-217:60" valueType="t:String" value="http://hl7.org/fhir/StructureDefinition/" xsi:type="Literal"/>
+                  <operand locator="217:64-217:65" name="id" xsi:type="OperandRef"/>
+               </operand>
+            </where>
+            <return locator="218:3-218:10">
+               <expression locator="218:10" name="E" xsi:type="AliasRef"/>
+            </return>
+         </expression>
+         <operand name="domainResource">
+            <operandTypeSpecifier locator="215:47-215:60" name="fhir:DomainResource" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier locator="215:66-215:71" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="225:1-226:51" name="BaseExtension" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns the single base-FHIR extension (if present) on the given resource with the specified id."/>
+            <a:t name="comment" value="This function uses singleton from to ensure that a run-time exception is thrown if there&#xa;is more than one extension on the given resource with the specified url."/>
+         </annotation>
+         <expression locator="226:3-226:51" xsi:type="SingletonFrom">
+            <operand locator="226:18-226:51" name="BaseExtensions" xsi:type="FunctionRef">
+               <operand locator="226:33-226:46" name="domainResource" xsi:type="OperandRef"/>
+               <operand locator="226:49-226:50" name="id" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="domainResource">
+            <operandTypeSpecifier locator="225:46-225:59" name="fhir:DomainResource" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier locator="225:65-225:70" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="233:1-236:10" name="BaseExtensions" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns any base-FHIR extensions defined on the given element with the specified id."/>
+            <a:t name="comment" value="NOTE: Extensions are not the preferred approach, but are used as a way to access&#xa;content that is defined by extensions but not yet surfaced in the CQL model info."/>
+         </annotation>
+         <expression locator="234:3-236:10" xsi:type="Query">
+            <source locator="234:3-234:21" alias="E">
+               <expression locator="234:3-234:19" path="extension" xsi:type="Property">
+                  <source name="element" xsi:type="OperandRef"/>
+               </expression>
+            </source>
+            <where locator="235:4-235:66" xsi:type="Equal">
+               <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="235:10-235:14" path="url" scope="E" xsi:type="Property"/>
+               </operand>
+               <operand locator="235:18-235:66" xsi:type="Concatenate">
+                  <operand locator="235:19-235:60" valueType="t:String" value="http://hl7.org/fhir/StructureDefinition/" xsi:type="Literal"/>
+                  <operand locator="235:64-235:65" name="id" xsi:type="OperandRef"/>
+               </operand>
+            </where>
+            <return locator="236:3-236:10">
+               <expression locator="236:10" name="E" xsi:type="AliasRef"/>
+            </return>
+         </expression>
+         <operand name="element">
+            <operandTypeSpecifier locator="233:40-233:46" name="fhir:Element" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier locator="233:52-233:57" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="243:1-244:44" name="BaseExtension" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns the single base-FHIR extension (if present) on the given element with the specified id."/>
+            <a:t name="comment" value="This function uses singleton from to ensure that a run-time exception is thrown if there&#xa;is more than one extension on the given resource with the specified url."/>
+         </annotation>
+         <expression locator="244:3-244:44" xsi:type="SingletonFrom">
+            <operand locator="244:18-244:44" name="BaseExtensions" xsi:type="FunctionRef">
+               <operand locator="244:33-244:39" name="element" xsi:type="OperandRef"/>
+               <operand locator="244:42-244:43" name="id" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="element">
+            <operandTypeSpecifier locator="243:39-243:45" name="fhir:Element" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier locator="243:51-243:56" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="251:1-254:10" name="BaseModifierExtensions" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns any base-FHIR modifier extensions defined on the given resource with the specified id."/>
+            <a:t name="comment" value="NOTE: Extensions are not the preferred approach, but are used as a way to access&#xa;content that is defined by extensions but not yet surfaced in the CQL model info."/>
+         </annotation>
+         <expression locator="252:3-254:10" xsi:type="Query">
+            <source locator="252:3-252:36" alias="E">
+               <expression locator="252:3-252:34" path="modifierExtension" xsi:type="Property">
+                  <source name="domainResource" xsi:type="OperandRef"/>
+               </expression>
+            </source>
+            <where locator="253:4-253:66" xsi:type="Equal">
+               <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="253:10-253:14" path="url" scope="E" xsi:type="Property"/>
+               </operand>
+               <operand locator="253:18-253:66" xsi:type="Concatenate">
+                  <operand locator="253:19-253:60" valueType="t:String" value="http://hl7.org/fhir/StructureDefinition/" xsi:type="Literal"/>
+                  <operand locator="253:64-253:65" name="id" xsi:type="OperandRef"/>
+               </operand>
+            </where>
+            <return locator="254:3-254:10">
+               <expression locator="254:10" name="E" xsi:type="AliasRef"/>
+            </return>
+         </expression>
+         <operand name="domainResource">
+            <operandTypeSpecifier locator="251:55-251:68" name="fhir:DomainResource" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier locator="251:74-251:79" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="261:1-262:59" name="BaseModifierExtension" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns the single base-FHIR modifier extension (if present) on the given resource with the specified id."/>
+            <a:t name="comment" value="This function uses singleton from to ensure that a run-time exception is thrown if there&#xa;is more than one extension on the given resource with the specified url."/>
+         </annotation>
+         <expression locator="262:3-262:59" xsi:type="SingletonFrom">
+            <operand locator="262:18-262:59" name="BaseModifierExtensions" xsi:type="FunctionRef">
+               <operand locator="262:41-262:54" name="domainResource" xsi:type="OperandRef"/>
+               <operand locator="262:57-262:58" name="id" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="domainResource">
+            <operandTypeSpecifier locator="261:54-261:67" name="fhir:DomainResource" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier locator="261:73-261:78" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="269:1-272:10" name="BaseModifierExtensions" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns any base-FHIR modifier extensions defined on the given element with the specified id."/>
+            <a:t name="comment" value="NOTE: Extensions are not the preferred approach, but are used as a way to access&#xa;content that is defined by extensions but not yet surfaced in the CQL model info."/>
+         </annotation>
+         <expression locator="270:3-272:10" xsi:type="Query">
+            <source locator="270:3-270:29" alias="E">
+               <expression locator="270:3-270:27" path="modifierExtension" xsi:type="Property">
+                  <source name="element" xsi:type="OperandRef"/>
+               </expression>
+            </source>
+            <where locator="271:4-271:66" xsi:type="Equal">
+               <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand locator="271:10-271:14" path="url" scope="E" xsi:type="Property"/>
+               </operand>
+               <operand locator="271:18-271:66" xsi:type="Concatenate">
+                  <operand locator="271:19-271:60" valueType="t:String" value="http://hl7.org/fhir/StructureDefinition/" xsi:type="Literal"/>
+                  <operand locator="271:64-271:65" name="id" xsi:type="OperandRef"/>
+               </operand>
+            </where>
+            <return locator="272:3-272:10">
+               <expression locator="272:10" name="E" xsi:type="AliasRef"/>
+            </return>
+         </expression>
+         <operand name="element">
+            <operandTypeSpecifier locator="269:48-269:62" name="fhir:BackboneElement" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier locator="269:68-269:73" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def locator="279:1-280:52" name="BaseModifierExtension" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:t name="description" value="Returns the single base-FHIR extension (if present) on the given element with the specified id."/>
+            <a:t name="comment" value="This function uses singleton from to ensure that a run-time exception is thrown if there&#xa;is more than one extension on the given resource with the specified url."/>
+         </annotation>
+         <expression locator="280:3-280:52" xsi:type="SingletonFrom">
+            <operand locator="280:18-280:52" name="BaseModifierExtensions" xsi:type="FunctionRef">
+               <operand locator="280:41-280:47" name="element" xsi:type="OperandRef"/>
+               <operand locator="280:50-280:51" name="id" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="element">
+            <operandTypeSpecifier locator="279:47-279:61" name="fhir:BackboneElement" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier locator="279:67-279:72" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+   </statements>
+</library>

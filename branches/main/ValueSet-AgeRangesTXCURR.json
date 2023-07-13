@@ -1,0 +1,108 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "AgeRangesTXCURR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-AgeRanges.html\"><code>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P0Y--P1Y\">P0Y--P1Y</a></td><td>&lt; 1 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P1Y--P5Y\">P1Y--P5Y</a></td><td>1-4 years</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P5Y--P10Y\">P5Y--P10Y</a></td><td>5-9 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P10Y--P15Y\">P10Y--P15Y</a></td><td>10-15 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P15Y--P20Y\">P15Y--P20Y</a></td><td>15-19 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P20Y--P25Y\">P20Y--P25Y</a></td><td>20-24 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P25Y--P30Y\">P25Y--P30Y</a></td><td>25-29 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P30Y--P35Y\">P30Y--P35Y</a></td><td>30-34 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P35Y--P40Y\">P35Y--P40Y</a></td><td>35-39 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P40Y--P45Y\">P40Y--P45Y</a></td><td>40-45 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P45Y--P50Y\">P45Y--P50Y</a></td><td>45-50 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P50Y--P55Y\">P50Y--P55Y</a></td><td>50-55 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P55Y--P60Y\">P55Y--P60Y</a></td><td>55-60 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P60Y--P65Y\">P60Y--P65Y</a></td><td>60-65 year</td></tr><tr><td><a href=\"CodeSystem-AgeRanges.html#AgeRanges-P65Y--P9999Y\">P65Y--P9999Y</a></td><td>65+ years</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR",
+  "version" : "0.1.0",
+  "name" : "AgeRangesTXCURR",
+  "title" : "AgeRangesTXCURR",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-07-13T22:55:34+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "AgeRangesTXCURR",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+      "concept" : [{
+        "code" : "P0Y--P1Y",
+        "display" : "< 1 year"
+      },
+      {
+        "code" : "P1Y--P5Y",
+        "display" : "1-4 years"
+      },
+      {
+        "code" : "P5Y--P10Y",
+        "display" : "5-9 year"
+      },
+      {
+        "code" : "P10Y--P15Y",
+        "display" : "10-15 year"
+      },
+      {
+        "code" : "P15Y--P20Y",
+        "display" : "15-19 year"
+      },
+      {
+        "code" : "P20Y--P25Y",
+        "display" : "20-24 year"
+      },
+      {
+        "code" : "P25Y--P30Y",
+        "display" : "25-29 year"
+      },
+      {
+        "code" : "P30Y--P35Y",
+        "display" : "30-34 year"
+      },
+      {
+        "code" : "P35Y--P40Y",
+        "display" : "35-39 year"
+      },
+      {
+        "code" : "P40Y--P45Y",
+        "display" : "40-45 year"
+      },
+      {
+        "code" : "P45Y--P50Y",
+        "display" : "45-50 year"
+      },
+      {
+        "code" : "P50Y--P55Y",
+        "display" : "50-55 year"
+      },
+      {
+        "code" : "P55Y--P60Y",
+        "display" : "55-60 year"
+      },
+      {
+        "code" : "P60Y--P65Y",
+        "display" : "60-65 year"
+      },
+      {
+        "code" : "P65Y--P9999Y",
+        "display" : "65+ years"
+      }]
+    }]
+  }
+}

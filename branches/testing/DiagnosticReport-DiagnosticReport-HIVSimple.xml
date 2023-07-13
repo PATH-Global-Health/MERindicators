@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="DiagnosticReport-HIVSimple"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 75622-1}">HIV 1 and 2 tests - Meaningful Use set</span> </h2><table class="grid"><tr><td>Subject</td><td><b>Mittens Cat</b> female, DoB: 1985-01-01</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href="Observation-Observation-HIVSimple.html"><span title="Codes: {http://loinc.org 75622-1}">HIV 1 and 2 tests - Meaningful Use set</span></a></td><td><span title="Codes: {http://snomed.info/sct 165816005}">HIV Positive</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="75622-1"/>
+      <display value="HIV 1 and 2 tests - Meaningful Use set"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-HIVSimple"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Encounter-HIVSimple"/>
+  </encounter>
+  <result>
+    <reference value="Observation/Observation-HIVSimple"/>
+  </result>
+</DiagnosticReport>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KeyPopCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">PWID<a name="KeyPopCS-PWID"> </a></td><td>People who inject drugs (PWID)</td></tr><tr><td style="white-space:nowrap">MSM<a name="KeyPopCS-MSM"> </a></td><td>Men who have sex with men (MSM)</td></tr><tr><td style="white-space:nowrap">TG<a name="KeyPopCS-TG"> </a></td><td>Transgender people (TG)</td></tr><tr><td style="white-space:nowrap">FSW<a name="KeyPopCS-FSW"> </a></td><td>Female sex workers (FSW)</td></tr><tr><td style="white-space:nowrap">PRISON<a name="KeyPopCS-PRISON"> </a></td><td>People in prison and other closed settings</td></tr></table></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"/>
+  <version value="0.1.0"/>
+  <name value="KeyPopCS"/>
+  <title value="KeyPop"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-07-08T15:38:48+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="KeyPop"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="PWID"/>
+    <display value="People who inject drugs (PWID)"/>
+  </concept>
+  <concept>
+    <code value="MSM"/>
+    <display value="Men who have sex with men (MSM)"/>
+  </concept>
+  <concept>
+    <code value="TG"/>
+    <display value="Transgender people (TG)"/>
+  </concept>
+  <concept>
+    <code value="FSW"/>
+    <display value="Female sex workers (FSW)"/>
+  </concept>
+  <concept>
+    <code value="PRISON"/>
+    <display value="People in prison and other closed settings"/>
+  </concept>
+</CodeSystem>

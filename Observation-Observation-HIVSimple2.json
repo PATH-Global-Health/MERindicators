@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Observation-HIVSimple2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-HIVSimple2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-HIVSimple2&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 and 2 tests - Meaningful Use set <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#75622-1)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-HIVSimple2.html\">Patient/Patient-HIVSimple2</a> &quot; CAT&quot;</p><p><b>encounter</b>: <a href=\"Encounter-Encounter-HIVSimple2.html\">Encounter/Encounter-HIVSimple2</a></p><p><b>value</b>: HIV Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#165816005)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "75622-1",
+      "display" : "HIV 1 and 2 tests - Meaningful Use set"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-HIVSimple2"
+  },
+  "encounter" : {
+    "reference" : "Encounter/Encounter-HIVSimple2"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "165816005",
+      "display" : "HIV Positive"
+    }]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KeyPopCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PWID<a name=\"KeyPopCS-PWID\"> </a></td><td>People who inject drugs (PWID)</td></tr><tr><td style=\"white-space:nowrap\">MSM<a name=\"KeyPopCS-MSM\"> </a></td><td>Men who have sex with men (MSM)</td></tr><tr><td style=\"white-space:nowrap\">TG<a name=\"KeyPopCS-TG\"> </a></td><td>Transgender people (TG)</td></tr><tr><td style=\"white-space:nowrap\">FSW<a name=\"KeyPopCS-FSW\"> </a></td><td>Female sex workers (FSW)</td></tr><tr><td style=\"white-space:nowrap\">PRISON<a name=\"KeyPopCS-PRISON\"> </a></td><td>People in prison and other closed settings</td></tr></table></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS",
+  "version" : "0.1.0",
+  "name" : "KeyPopCS",
+  "title" : "KeyPop",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-07-08T15:38:48+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "KeyPop",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "PWID",
+    "display" : "People who inject drugs (PWID)"
+  },
+  {
+    "code" : "MSM",
+    "display" : "Men who have sex with men (MSM)"
+  },
+  {
+    "code" : "TG",
+    "display" : "Transgender people (TG)"
+  },
+  {
+    "code" : "FSW",
+    "display" : "Female sex workers (FSW)"
+  },
+  {
+    "code" : "PRISON",
+    "display" : "People in prison and other closed settings"
+  }]
+}

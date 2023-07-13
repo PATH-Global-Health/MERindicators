@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableLocators,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <identifier id="DAKTXCURR" system="https://path-global-health.github.io/MERindicators" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def locator="9:1-9:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1"/>
+   </usings>
+   <includes>
+      <def locator="11:1-11:35" localIdentifier="FHIRHelpers" path="https://path-global-health.github.io/MERindicators/FHIRHelpers" version="4.0.1"/>
+      <def locator="12:1-12:44" localIdentifier="FC" path="https://path-global-health.github.io/MERindicators/FHIRCommon" version="4.0.1"/>
+      <def locator="14:1-14:29" localIdentifier="Cx" path="https://path-global-health.github.io/MERindicators/DAKConcepts"/>
+      <def locator="15:1-15:42" localIdentifier="PatientData" path="https://path-global-health.github.io/MERindicators/DAKDataElements"/>
+      <def locator="16:1-16:44" localIdentifier="DAKStratifiers" path="https://path-global-health.github.io/MERindicators/DAKStratifiers"/>
+   </includes>
+   <contexts>
+      <def locator="18:1-18:15" name="Patient"/>
+   </contexts>
+   <statements>
+      <def locator="18:1-18:15" name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="18:1-18:15" dataType="fhir:Patient" templateId="http://hl7.org/fhir/StructureDefinition/Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def locator="20:1-21:53" name="Initial Population" context="Patient" accessLevel="Public">
+         <expression locator="21:3-21:53" xsi:type="And">
+            <operand locator="21:3-21:22" name="On ART" libraryName="PatientData" xsi:type="ExpressionRef"/>
+            <operand locator="21:28-21:53" xsi:type="Not">
+               <operand locator="21:32-21:53" name="Deceased" libraryName="PatientData" xsi:type="ExpressionRef"/>
+            </operand>
+         </expression>
+      </def>
+      <def locator="58:1-59:48" name="Stratification" context="Patient" accessLevel="Public">
+         <expression locator="59:3-59:48" name="Age Group/Sex/Location TXCURR" libraryName="DAKStratifiers" xsi:type="ExpressionRef"/>
+      </def>
+      <def locator="61:1-62:62" name="Dispense Stratification" context="Patient" accessLevel="Public">
+         <expression locator="62:3-62:62" name="Dispensing Quantity/Coarse Age/Sex/Location" libraryName="DAKStratifiers" xsi:type="ExpressionRef"/>
+      </def>
+   </statements>
+</library>

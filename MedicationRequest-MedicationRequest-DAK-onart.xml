@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="MedicationRequest-DAK-onart"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="MedicationRequest-DAK-onart"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;MedicationRequest-DAK-onart&quot; </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Abacavir <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-DAKICD11.html">ICD-11 codes from the HIV DAK</a>#XM35P4)</span></p><p><b>subject</b>: <a href="Patient-Patient-DAK-onart.html">Patient/Patient-DAK-onart</a> &quot; CAT&quot;</p><p><b>authoredOn</b>: 2023-07-03</p></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-11"/>
+      <code value="XM35P4"/>
+      <display value="Abacavir"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/Patient-DAK-onart"/>
+  </subject>
+  <authoredOn value="2023-07-03"/>
+</MedicationRequest>

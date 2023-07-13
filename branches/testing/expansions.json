@@ -1,0 +1,648 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "435e0209-89ad-484d-abc5-577b36252b11",
+  "meta" : {
+    "lastUpdated" : "2023-07-08T15:38:48.725+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/Pregnant",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-CIEL.html\">CIEL v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-77386006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>http://snomed.info/sct</td><td>Pregnancy (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---openconceptlab.org-orgs-CIEL-sources-CIEL-1434\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CIEL.html#CIEL-1434\">1434</a></td><td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td><td>Currently pregnant</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/Pregnant",
+      "version" : "0.1.0",
+      "name" : "Pregnant",
+      "title" : "Pregnant",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:b4804b96-f169-4f15-af74-1bbc183aed24",
+        "timestamp" : "2023-07-08T15:39:42+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "77386006",
+          "display" : "Pregnancy (finding)"
+        },
+        {
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code" : "1434",
+          "display" : "Currently pregnant"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/SNOMEDHIVMedications",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-376938001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/376938001\">376938001</a></td><td>http://snomed.info/sct</td><td>Zidovudine 300 mg oral tablet</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/SNOMEDHIVMedications",
+      "version" : "0.1.0",
+      "name" : "SNOMEDHIVMedications",
+      "title" : "SNOMEDHIVMedications",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3b9afdf8-e9af-4e39-ad9b-fcf89e659926",
+        "timestamp" : "2023-07-08T15:39:43+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "376938001",
+          "display" : "Zidovudine 300 mg oral tablet"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/MMDInterval",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MMDIntervalCS.html\">MMDIntervalCS v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-MMDIntervalCS-3to5MMD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MMDIntervalCS.html#MMDIntervalCS-3to5MMD\">3to5MMD</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-MMDIntervalCS-6MMD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MMDIntervalCS.html#MMDIntervalCS-6MMD\">6MMD</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS</td><td/></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/MMDInterval",
+      "version" : "0.1.0",
+      "name" : "MMDInterval",
+      "title" : "MMDInterval",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f928a1cb-1a48-4f51-82f2-a9826beb8142",
+        "timestamp" : "2023-07-08T15:39:43+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS",
+          "code" : "3to5MMD"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS",
+          "code" : "6MMD"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/KeyPop",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KeyPopCS.html\">KeyPop v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-PWID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KeyPopCS.html#KeyPopCS-PWID\">PWID</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td><td>People who inject drugs (PWID)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-MSM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KeyPopCS.html#KeyPopCS-MSM\">MSM</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td><td>Men who have sex with men (MSM)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-TG\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KeyPopCS.html#KeyPopCS-TG\">TG</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td><td>Transgender people (TG)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-FSW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KeyPopCS.html#KeyPopCS-FSW\">FSW</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td><td>Female sex workers (FSW)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-KeyPopCS-PRISON\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KeyPopCS.html#KeyPopCS-PRISON\">PRISON</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS</td><td>People in prison and other closed settings</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/KeyPop",
+      "version" : "0.1.0",
+      "name" : "KeyPop",
+      "title" : "KeyPop",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:85857512-37e1-41da-9b5c-781953e8085e",
+        "timestamp" : "2023-07-08T15:39:43+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS",
+          "code" : "PWID",
+          "display" : "People who inject drugs (PWID)"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS",
+          "code" : "MSM",
+          "display" : "Men who have sex with men (MSM)"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS",
+          "code" : "TG",
+          "display" : "Transgender people (TG)"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS",
+          "code" : "FSW",
+          "display" : "Female sex workers (FSW)"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS",
+          "code" : "PRISON",
+          "display" : "People in prison and other closed settings"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CIEL.html\">CIEL v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---openconceptlab.org-orgs-CIEL-sources-CIEL-86663\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CIEL.html#CIEL-86663\">86663</a></td><td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td><td>Zidovudine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---openconceptlab.org-orgs-CIEL-sources-CIEL-74807\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CIEL.html#CIEL-74807\">74807</a></td><td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td><td>Didanosine</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications",
+      "version" : "0.1.0",
+      "name" : "CIELHIVMedications",
+      "title" : "CIELHIVMedications",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6bcc90d4-debd-4978-bac3-45a496b1b61b",
+        "timestamp" : "2023-07-08T15:39:44+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code" : "86663",
+          "display" : "Zidovudine"
+        },
+        {
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code" : "74807",
+          "display" : "Didanosine"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-AgeRanges.html\">AgeRanges v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P0Y--P1Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P0Y--P1Y\">P0Y--P1Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>&lt; 1 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P1Y--P5Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P1Y--P5Y\">P1Y--P5Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>1-4 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P5Y--P10Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P5Y--P10Y\">P5Y--P10Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>5-9 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P10Y--P15Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P10Y--P15Y\">P10Y--P15Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>10-15 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P15Y--P20Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P15Y--P20Y\">P15Y--P20Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>15-19 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P20Y--P25Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P20Y--P25Y\">P20Y--P25Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>20-24 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P25Y--P30Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P25Y--P30Y\">P25Y--P30Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>25-29 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P30Y--P35Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P30Y--P35Y\">P30Y--P35Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>30-34 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P35Y--P40Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P35Y--P40Y\">P35Y--P40Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>35-39 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P40Y--P45Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P40Y--P45Y\">P40Y--P45Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>40-45 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P45Y--P50Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P45Y--P50Y\">P45Y--P50Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>45-50 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P50Y--P55Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P50Y--P55Y\">P50Y--P55Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>50-55 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P55Y--P60Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P55Y--P60Y\">P55Y--P60Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>55-60 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P60Y--P65Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P60Y--P65Y\">P60Y--P65Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>60-65 year</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-AgeRanges-P65Y--P9999Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AgeRanges.html#AgeRanges-P65Y--P9999Y\">P65Y--P9999Y</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges</td><td>65+ years</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR",
+      "version" : "0.1.0",
+      "name" : "AgeRangesTXCURR",
+      "title" : "AgeRangesTXCURR",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:42e20a1f-a423-4d9e-8ae4-ffd873cfa2f5",
+        "timestamp" : "2023-07-08T15:39:44+00:00",
+        "total" : 15,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P0Y--P1Y",
+          "display" : "< 1 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P1Y--P5Y",
+          "display" : "1-4 years"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P5Y--P10Y",
+          "display" : "5-9 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P10Y--P15Y",
+          "display" : "10-15 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P15Y--P20Y",
+          "display" : "15-19 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P20Y--P25Y",
+          "display" : "20-24 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P25Y--P30Y",
+          "display" : "25-29 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P30Y--P35Y",
+          "display" : "30-34 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P35Y--P40Y",
+          "display" : "35-39 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P40Y--P45Y",
+          "display" : "40-45 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P45Y--P50Y",
+          "display" : "45-50 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P50Y--P55Y",
+          "display" : "50-55 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P55Y--P60Y",
+          "display" : "55-60 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P60Y--P65Y",
+          "display" : "60-65 year"
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/AgeRanges",
+          "code" : "P65Y--P9999Y",
+          "display" : "65+ years"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/OnARV",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-CIEL.html\">CIEL v0.1.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-OpenHIE.html\">OpenHIE CodeSystem v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---path-global-health.github.io-MERindicators-CodeSystem-OpenHIE-432101000124108\"> </a>\u00a0\u00a0<a href=\"CodeSystem-OpenHIE.html#OpenHIE-432101000124108\">432101000124108</a></td><td>https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE</td><td>History of antiretroviral therapy (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---openconceptlab.org-orgs-CIEL-sources-CIEL-160119\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CIEL.html#CIEL-160119\">160119</a></td><td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td><td>CURRENTLY TAKING ARV</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/OnARV",
+      "version" : "0.1.0",
+      "name" : "OnARV",
+      "title" : "History of antiretroviral therapy (situation)",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d34065d0-f7ef-4599-91bc-03ce50584174",
+        "timestamp" : "2023-07-08T15:39:44+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE",
+          "code" : "432101000124108",
+          "display" : "History of antiretroviral therapy (situation)"
+        },
+        {
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code" : "160119",
+          "display" : "CURRENTLY TAKING ARV"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 28 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on RxNorm version ??</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199663\"> </a>\u00a0\u00a0199663</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>zidovudine 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-284988\"> </a>\u00a0\u00a0284988</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>didanosine 400 MG Delayed Release Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-313760\"> </a>\u00a0\u00a0313760</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>zalcitabine 0.75 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-313110\"> </a>\u00a0\u00a0313110</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>stavudine 40 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349491\"> </a>\u00a0\u00a0349491</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>lamivudine 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-200082\"> </a>\u00a0\u00a0200082</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>lamivudine 150 MG / zidovudine 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310988\"> </a>\u00a0\u00a0310988</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>indinavir 400 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-859863\"> </a>\u00a0\u00a0859863</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>saquinavir mesylate 500 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-317150\"> </a>\u00a0\u00a0317150</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>ritonavir 100 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-403978\"> </a>\u00a0\u00a0403978</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>nelfinavir 625 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349477\"> </a>\u00a0\u00a0349477</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>efavirenz 600 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-597730\"> </a>\u00a0\u00a0597730</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>lopinavir 200 MG / ritonavir 50 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349251\"> </a>\u00a0\u00a0349251</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-403875\"> </a>\u00a0\u00a0403875</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>emtricitabine 200 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-476556\"> </a>\u00a0\u00a0476556</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1147334\"> </a>\u00a0\u00a01147334</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-643066\"> </a>\u00a0\u00a0643066</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1306292\"> </a>\u00a0\u00a01306292</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-744842\"> </a>\u00a0\u00a0744842</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>raltegravir 400 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1433873\"> </a>\u00a0\u00a01433873</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>dolutegravir 50 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-402109\"> </a>\u00a0\u00a0402109</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>fosamprenavir 700 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-664741\"> </a>\u00a0\u00a0664741</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>atazanavir 300 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1359269\"> </a>\u00a0\u00a01359269</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>darunavir 800 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-2003249\"> </a>\u00a0\u00a02003249</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1747691\"> </a>\u00a0\u00a01747691</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1999667\"> </a>\u00a0\u00a01999667</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1721613\"> </a>\u00a0\u00a01721613</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-2122519\"> </a>\u00a0\u00a02122519</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>dolutegravir 50 MG / lamivudine 300 MG Oral Tablet</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+      "version" : "0.1.0",
+      "name" : "SyntheaHIVMedications",
+      "title" : "Synthea HIV MedicationsVS",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:86186fac-2906-4596-bdd0-50b9b06128a6",
+        "timestamp" : "2023-07-08T15:39:46+00:00",
+        "total" : 28,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://www.nlm.nih.gov/research/umls/rxnorm|??"
+        }],
+        "contains" : [{
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "199663",
+          "display" : "zidovudine 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "284988",
+          "display" : "didanosine 400 MG Delayed Release Oral Capsule"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "313760",
+          "display" : "zalcitabine 0.75 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "313110",
+          "display" : "stavudine 40 MG Oral Capsule"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "349491",
+          "display" : "lamivudine 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "200082",
+          "display" : "lamivudine 150 MG / zidovudine 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "310988",
+          "display" : "indinavir 400 MG Oral Capsule"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "859863",
+          "display" : "saquinavir mesylate 500 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "317150",
+          "display" : "ritonavir 100 MG Oral Capsule"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "403978",
+          "display" : "nelfinavir 625 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "349477",
+          "display" : "efavirenz 600 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "597730",
+          "display" : "lopinavir 200 MG / ritonavir 50 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "349251",
+          "display" : "tenofovir disoproxil fumarate 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "403875",
+          "display" : "emtricitabine 200 MG Oral Capsule"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "476556",
+          "display" : "emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "1147334",
+          "display" : "emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "643066",
+          "display" : "efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "1306292",
+          "display" : "cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "744842",
+          "display" : "raltegravir 400 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "1433873",
+          "display" : "dolutegravir 50 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "402109",
+          "display" : "fosamprenavir 700 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "664741",
+          "display" : "atazanavir 300 MG Oral Capsule"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "1359269",
+          "display" : "darunavir 800 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "2003249",
+          "display" : "lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "1747691",
+          "display" : "emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "1999667",
+          "display" : "bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "1721613",
+          "display" : "cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "2122519",
+          "display" : "dolutegravir 50 MG / lamivudine 300 MG Oral Tablet"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/FocusPop",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-FocusPopCS.html\">FocusPopCS v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/FocusPop",
+      "version" : "0.1.0",
+      "name" : "FocusPop",
+      "title" : "FocusPop",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-08T15:38:48+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:990e6340-4290-41a1-8980-992b46247cdd",
+        "timestamp" : "2023-07-08T15:39:46+00:00",
+        "total" : 0,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://path-global-health.github.io/MERindicators/CodeSystem/FocusPopCS|0.1.0"
+        }]
+      }
+    }
+  }]
+}

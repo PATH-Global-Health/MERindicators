@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Observation-HIVSimple"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Observation-HIVSimple"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Observation-HIVSimple&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 and 2 tests - Meaningful Use set <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75622-1)</span></p><p><b>subject</b>: <a href="Patient-Patient-HIVSimple.html">Patient/Patient-HIVSimple</a> &quot; CAT&quot;</p><p><b>encounter</b>: <a href="Encounter-Encounter-HIVSimple.html">Encounter/Encounter-HIVSimple</a></p><p><b>value</b>: HIV Positive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#165816005)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="75622-1"/>
+      <display value="HIV 1 and 2 tests - Meaningful Use set"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-HIVSimple"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Encounter-HIVSimple"/>
+  </encounter>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="165816005"/>
+      <display value="HIV Positive"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

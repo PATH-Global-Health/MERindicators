@@ -1,0 +1,120 @@
+{
+  "resourceType" : "Library",
+  "id" : "TXCURR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Related Artifacts</h2><table class=\"grid\"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.1</code></td></tr><tr><td>depends-on</td><td><code>https://path-global-health.github.io/MERindicators/Library/FHIRCommon|4.0.1</code></td></tr><tr><td>depends-on</td><td><a href=\"Library-MERConcepts.html\">MERConcepts</a></td></tr><tr><td>depends-on</td><td><a href=\"Library-MERDataElements.html\">MERDataElements</a></td></tr><tr><td>depends-on</td><td><a href=\"Library-MERStratifiers.html\">MERStratifiers</a></td></tr></table><h2>Parameters</h2><table class=\"grid\"><tr><td>Patient</td><td>out</td><td>0</td><td>1</td><td>Patient</td></tr><tr><td>Initial Population</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Numerator-Exclusion</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Numerator</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Stratifier</td><td>out</td><td>0</td><td>1</td><td>string</td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class=\"language-sql\">// TX_CURR, WHO HIV.IND.AV.1\r\n// numerator only\r\n// Number of adults and children currently receiving antiretroviral therapy (ART)\r\n// Sum of age/sex disaggregates\r\n\r\n\r\nlibrary TXCURR version '0.1.0'\r\n\r\nusing FHIR version '4.0.1'\r\n\r\ninclude FHIRHelpers version '4.0.1'\r\ninclude FHIRCommon version '4.0.1' called FC\r\n\r\ninclude MERConcepts called Cx\r\ninclude MERDataElements called PatientData\r\ninclude MERStratifiers called MERStratifiers\r\n\r\ncontext Patient\r\n\r\ndefine &quot;Initial Population&quot;: true\r\n\r\ndefine &quot;Numerator-Exclusion&quot;: \r\n  PatientData.&quot;Deceased&quot;\r\n\r\n\r\n// todo: this is not showing up as true\r\ndefine &quot;Numerator&quot;:\r\n  PatientData.&quot;On ART&quot;\r\n\r\n\r\ndefine &quot;Stratifier&quot;: \r\n  MERStratifiers.&quot;Age Group/Sex/Location TXCURR&quot;\r\n\r\n\r\n\r\n// define &quot;Initial population&quot;:\r\n//     exists &quot;Anti Retroviral Therapy Adults And Children&quot;\r\n  \r\n// define &quot;Anti Retroviral Therapy Adults And Children&quot;:\r\n//     ( [Observation: &quot;Anti Retroviral Therapy&quot;] ) o\r\n//         where o.value.coding[1]= &quot;Coded Answer&quot;\r\n//         or o.value.coding[2]= &quot;Coded Answer&quot;\r\n//         and o.status in {'final', 'amended', 'corrected'}\r\n//         and o.effective in day of &quot;Measurement Period&quot;\r\n</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 2Kb)</p><p><code>Content not shown - (</code><code>application/elm+json</code>, size = 3Kb)</p></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/Library/TXCURR",
+  "version" : "0.1.0",
+  "name" : "TXCURR",
+  "title" : "TXCURR",
+  "status" : "draft",
+  "experimental" : true,
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+      "code" : "logic-library"
+    }]
+  },
+  "date" : "2023-07-08T15:38:48+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "TXCURR",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "relatedArtifact" : [{
+    "type" : "depends-on",
+    "resource" : "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://path-global-health.github.io/MERindicators/Library/FHIRCommon|4.0.1"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://path-global-health.github.io/MERindicators/Library/MERConcepts"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://path-global-health.github.io/MERindicators/Library/MERDataElements"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://path-global-health.github.io/MERindicators/Library/MERStratifiers"
+  }],
+  "parameter" : [{
+    "name" : "Patient",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "type" : "Patient"
+  },
+  {
+    "name" : "Initial Population",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "type" : "boolean"
+  },
+  {
+    "name" : "Numerator-Exclusion",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "type" : "boolean"
+  },
+  {
+    "name" : "Numerator",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "type" : "boolean"
+  },
+  {
+    "name" : "Stratifier",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "type" : "string"
+  }],
+  "content" : [{
+    "contentType" : "text/cql",
+    "data" : "Ly8gVFhfQ1VSUiwgV0hPIEhJVi5JTkQuQVYuMQ0KLy8gbnVtZXJhdG9yIG9ubHkNCi8vIE51bWJlciBvZiBhZHVsdHMgYW5kIGNoaWxkcmVuIGN1cnJlbnRseSByZWNlaXZpbmcgYW50aXJldHJvdmlyYWwgdGhlcmFweSAoQVJUKQ0KLy8gU3VtIG9mIGFnZS9zZXggZGlzYWdncmVnYXRlcw0KDQoNCmxpYnJhcnkgVFhDVVJSIHZlcnNpb24gJzAuMS4wJw0KDQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJw0KDQppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4xJw0KaW5jbHVkZSBGSElSQ29tbW9uIHZlcnNpb24gJzQuMC4xJyBjYWxsZWQgRkMNCg0KaW5jbHVkZSBNRVJDb25jZXB0cyBjYWxsZWQgQ3gNCmluY2x1ZGUgTUVSRGF0YUVsZW1lbnRzIGNhbGxlZCBQYXRpZW50RGF0YQ0KaW5jbHVkZSBNRVJTdHJhdGlmaWVycyBjYWxsZWQgTUVSU3RyYXRpZmllcnMNCg0KY29udGV4dCBQYXRpZW50DQoNCmRlZmluZSAiSW5pdGlhbCBQb3B1bGF0aW9uIjogdHJ1ZQ0KDQpkZWZpbmUgIk51bWVyYXRvci1FeGNsdXNpb24iOiANCiAgUGF0aWVudERhdGEuIkRlY2Vhc2VkIg0KDQoNCi8vIHRvZG86IHRoaXMgaXMgbm90IHNob3dpbmcgdXAgYXMgdHJ1ZQ0KZGVmaW5lICJOdW1lcmF0b3IiOg0KICBQYXRpZW50RGF0YS4iT24gQVJUIg0KDQoNCmRlZmluZSAiU3RyYXRpZmllciI6IA0KICBNRVJTdHJhdGlmaWVycy4iQWdlIEdyb3VwL1NleC9Mb2NhdGlvbiBUWENVUlIiDQoNCg0KDQovLyBkZWZpbmUgIkluaXRpYWwgcG9wdWxhdGlvbiI6DQovLyAgICAgZXhpc3RzICJBbnRpIFJldHJvdmlyYWwgVGhlcmFweSBBZHVsdHMgQW5kIENoaWxkcmVuIg0KICANCi8vIGRlZmluZSAiQW50aSBSZXRyb3ZpcmFsIFRoZXJhcHkgQWR1bHRzIEFuZCBDaGlsZHJlbiI6DQovLyAgICAgKCBbT2JzZXJ2YXRpb246ICJBbnRpIFJldHJvdmlyYWwgVGhlcmFweSJdICkgbw0KLy8gICAgICAgICB3aGVyZSBvLnZhbHVlLmNvZGluZ1sxXT0gIkNvZGVkIEFuc3dlciINCi8vICAgICAgICAgb3Igby52YWx1ZS5jb2RpbmdbMl09ICJDb2RlZCBBbnN3ZXIiDQovLyAgICAgICAgIGFuZCBvLnN0YXR1cyBpbiB7J2ZpbmFsJywgJ2FtZW5kZWQnLCAnY29ycmVjdGVkJ30NCi8vICAgICAgICAgYW5kIG8uZWZmZWN0aXZlIGluIGRheSBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIg0K"
+  },
+  {
+    "contentType" : "application/elm+xml",
+    "data" : "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGxpYnJhcnkgeG1sbnM9InVybjpobDctb3JnOmVsbTpyMSIgeG1sbnM6dD0idXJuOmhsNy1vcmc6ZWxtLXR5cGVzOnIxIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczpmaGlyPSJodHRwOi8vaGw3Lm9yZy9maGlyIiB4bWxuczpxZG00Mz0idXJuOmhlYWx0aGl0LWdvdjpxZG06djRfMyIgeG1sbnM6cWRtNTM9InVybjpoZWFsdGhpdC1nb3Y6cWRtOnY1XzMiIHhtbG5zOmE9InVybjpobDctb3JnOmNxbC1hbm5vdGF0aW9uczpyMSI+CiAgIDxhbm5vdGF0aW9uIHRyYW5zbGF0b3JPcHRpb25zPSJFbmFibGVMb2NhdG9ycyxEaXNhYmxlTGlzdERlbW90aW9uLERpc2FibGVMaXN0UHJvbW90aW9uIiB4c2k6dHlwZT0iYTpDcWxUb0VsbUluZm8iLz4KICAgPGlkZW50aWZpZXIgaWQ9IlRYQ1VSUiIgc3lzdGVtPSJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycyIgdmVyc2lvbj0iMC4xLjAiLz4KICAgPHNjaGVtYUlkZW50aWZpZXIgaWQ9InVybjpobDctb3JnOmVsbSIgdmVyc2lvbj0icjEiLz4KICAgPHVzaW5ncz4KICAgICAgPGRlZiBsb2NhbElkZW50aWZpZXI9IlN5c3RlbSIgdXJpPSJ1cm46aGw3LW9yZzplbG0tdHlwZXM6cjEiLz4KICAgICAgPGRlZiBsb2NhdG9yPSI5OjEtOToyNiIgbG9jYWxJZGVudGlmaWVyPSJGSElSIiB1cmk9Imh0dHA6Ly9obDcub3JnL2ZoaXIiIHZlcnNpb249IjQuMC4xIi8+CiAgIDwvdXNpbmdzPgogICA8aW5jbHVkZXM+CiAgICAgIDxkZWYgbG9jYXRvcj0iMTE6MS0xMTozNSIgbG9jYWxJZGVudGlmaWVyPSJGSElSSGVscGVycyIgcGF0aD0iaHR0cDovL2hsNy5vcmcvZmhpci9GSElSSGVscGVycyIgdmVyc2lvbj0iNC4wLjEiLz4KICAgICAgPGRlZiBsb2NhdG9yPSIxMjoxLTEyOjQ0IiBsb2NhbElkZW50aWZpZXI9IkZDIiBwYXRoPSJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycy9GSElSQ29tbW9uIiB2ZXJzaW9uPSI0LjAuMSIvPgogICAgICA8ZGVmIGxvY2F0b3I9IjE0OjEtMTQ6MjkiIGxvY2FsSWRlbnRpZmllcj0iQ3giIHBhdGg9Imh0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL01FUkNvbmNlcHRzIi8+CiAgICAgIDxkZWYgbG9jYXRvcj0iMTU6MS0xNTo0MiIgbG9jYWxJZGVudGlmaWVyPSJQYXRpZW50RGF0YSIgcGF0aD0iaHR0cHM6Ly9wYXRoLWdsb2JhbC1oZWFsdGguZ2l0aHViLmlvL01FUmluZGljYXRvcnMvTUVSRGF0YUVsZW1lbnRzIi8+CiAgICAgIDxkZWYgbG9jYXRvcj0iMTY6MS0xNjo0NCIgbG9jYWxJZGVudGlmaWVyPSJNRVJTdHJhdGlmaWVycyIgcGF0aD0iaHR0cHM6Ly9wYXRoLWdsb2JhbC1oZWFsdGguZ2l0aHViLmlvL01FUmluZGljYXRvcnMvTUVSU3RyYXRpZmllcnMiLz4KICAgPC9pbmNsdWRlcz4KICAgPGNvbnRleHRzPgogICAgICA8ZGVmIGxvY2F0b3I9IjE4OjEtMTg6MTUiIG5hbWU9IlBhdGllbnQiLz4KICAgPC9jb250ZXh0cz4KICAgPHN0YXRlbWVudHM+CiAgICAgIDxkZWYgbG9jYXRvcj0iMTg6MS0xODoxNSIgbmFtZT0iUGF0aWVudCIgY29udGV4dD0iUGF0aWVudCI+CiAgICAgICAgIDxleHByZXNzaW9uIHhzaTp0eXBlPSJTaW5nbGV0b25Gcm9tIj4KICAgICAgICAgICAgPG9wZXJhbmQgbG9jYXRvcj0iMTg6MS0xODoxNSIgZGF0YVR5cGU9ImZoaXI6UGF0aWVudCIgdGVtcGxhdGVJZD0iaHR0cDovL2hsNy5vcmcvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uL1BhdGllbnQiIHhzaTp0eXBlPSJSZXRyaWV2ZSIvPgogICAgICAgICA8L2V4cHJlc3Npb24+CiAgICAgIDwvZGVmPgogICAgICA8ZGVmIGxvY2F0b3I9IjIwOjEtMjA6MzMiIG5hbWU9IkluaXRpYWwgUG9wdWxhdGlvbiIgY29udGV4dD0iUGF0aWVudCIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+CiAgICAgICAgIDxleHByZXNzaW9uIGxvY2F0b3I9IjIwOjMwLTIwOjMzIiB2YWx1ZVR5cGU9InQ6Qm9vbGVhbiIgdmFsdWU9InRydWUiIHhzaTp0eXBlPSJMaXRlcmFsIi8+CiAgICAgIDwvZGVmPgogICAgICA8ZGVmIGxvY2F0b3I9IjIyOjEtMjM6MjQiIG5hbWU9Ik51bWVyYXRvci1FeGNsdXNpb24iIGNvbnRleHQ9IlBhdGllbnQiIGFjY2Vzc0xldmVsPSJQdWJsaWMiPgogICAgICAgICA8ZXhwcmVzc2lvbiBsb2NhdG9yPSIyMzozLTIzOjI0IiBuYW1lPSJEZWNlYXNlZCIgbGlicmFyeU5hbWU9IlBhdGllbnREYXRhIiB4c2k6dHlwZT0iRXhwcmVzc2lvblJlZiIvPgogICAgICA8L2RlZj4KICAgICAgPGRlZiBsb2NhdG9yPSIyNzoxLTI4OjIyIiBuYW1lPSJOdW1lcmF0b3IiIGNvbnRleHQ9IlBhdGllbnQiIGFjY2Vzc0xldmVsPSJQdWJsaWMiPgogICAgICAgICA8ZXhwcmVzc2lvbiBsb2NhdG9yPSIyODozLTI4OjIyIiBuYW1lPSJPbiBBUlQiIGxpYnJhcnlOYW1lPSJQYXRpZW50RGF0YSIgeHNpOnR5cGU9IkV4cHJlc3Npb25SZWYiLz4KICAgICAgPC9kZWY+CiAgICAgIDxkZWYgbG9jYXRvcj0iMzE6MS0zMjo0OCIgbmFtZT0iU3RyYXRpZmllciIgY29udGV4dD0iUGF0aWVudCIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+CiAgICAgICAgIDxleHByZXNzaW9uIGxvY2F0b3I9IjMyOjMtMzI6NDgiIG5hbWU9IkFnZSBHcm91cC9TZXgvTG9jYXRpb24gVFhDVVJSIiBsaWJyYXJ5TmFtZT0iTUVSU3RyYXRpZmllcnMiIHhzaTp0eXBlPSJFeHByZXNzaW9uUmVmIi8+CiAgICAgIDwvZGVmPgogICA8L3N0YXRlbWVudHM+CjwvbGlicmFyeT4K"
+  },
+  {
+    "contentType" : "application/elm+json",
+    "data" : "ewogICAibGlicmFyeSIgOiB7CiAgICAgICJhbm5vdGF0aW9uIiA6IFsgewogICAgICAgICAidHJhbnNsYXRvck9wdGlvbnMiIDogIkVuYWJsZUxvY2F0b3JzLERpc2FibGVMaXN0RGVtb3Rpb24sRGlzYWJsZUxpc3RQcm9tb3Rpb24iLAogICAgICAgICAidHlwZSIgOiAiQ3FsVG9FbG1JbmZvIgogICAgICB9IF0sCiAgICAgICJpZGVudGlmaWVyIiA6IHsKICAgICAgICAgImlkIiA6ICJUWENVUlIiLAogICAgICAgICAic3lzdGVtIiA6ICJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycyIsCiAgICAgICAgICJ2ZXJzaW9uIiA6ICIwLjEuMCIKICAgICAgfSwKICAgICAgInNjaGVtYUlkZW50aWZpZXIiIDogewogICAgICAgICAiaWQiIDogInVybjpobDctb3JnOmVsbSIsCiAgICAgICAgICJ2ZXJzaW9uIiA6ICJyMSIKICAgICAgfSwKICAgICAgInVzaW5ncyIgOiB7CiAgICAgICAgICJkZWYiIDogWyB7CiAgICAgICAgICAgICJsb2NhbElkZW50aWZpZXIiIDogIlN5c3RlbSIsCiAgICAgICAgICAgICJ1cmkiIDogInVybjpobDctb3JnOmVsbS10eXBlczpyMSIKICAgICAgICAgfSwgewogICAgICAgICAgICAibG9jYXRvciIgOiAiOToxLTk6MjYiLAogICAgICAgICAgICAibG9jYWxJZGVudGlmaWVyIiA6ICJGSElSIiwKICAgICAgICAgICAgInVyaSIgOiAiaHR0cDovL2hsNy5vcmcvZmhpciIsCiAgICAgICAgICAgICJ2ZXJzaW9uIiA6ICI0LjAuMSIKICAgICAgICAgfSBdCiAgICAgIH0sCiAgICAgICJpbmNsdWRlcyIgOiB7CiAgICAgICAgICJkZWYiIDogWyB7CiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxMToxLTExOjM1IiwKICAgICAgICAgICAgImxvY2FsSWRlbnRpZmllciIgOiAiRkhJUkhlbHBlcnMiLAogICAgICAgICAgICAicGF0aCIgOiAiaHR0cDovL2hsNy5vcmcvZmhpci9GSElSSGVscGVycyIsCiAgICAgICAgICAgICJ2ZXJzaW9uIiA6ICI0LjAuMSIKICAgICAgICAgfSwgewogICAgICAgICAgICAibG9jYXRvciIgOiAiMTI6MS0xMjo0NCIsCiAgICAgICAgICAgICJsb2NhbElkZW50aWZpZXIiIDogIkZDIiwKICAgICAgICAgICAgInBhdGgiIDogImh0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL0ZISVJDb21tb24iLAogICAgICAgICAgICAidmVyc2lvbiIgOiAiNC4wLjEiCiAgICAgICAgIH0sIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjE0OjEtMTQ6MjkiLAogICAgICAgICAgICAibG9jYWxJZGVudGlmaWVyIiA6ICJDeCIsCiAgICAgICAgICAgICJwYXRoIiA6ICJodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycy9NRVJDb25jZXB0cyIKICAgICAgICAgfSwgewogICAgICAgICAgICAibG9jYXRvciIgOiAiMTU6MS0xNTo0MiIsCiAgICAgICAgICAgICJsb2NhbElkZW50aWZpZXIiIDogIlBhdGllbnREYXRhIiwKICAgICAgICAgICAgInBhdGgiIDogImh0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL01FUkRhdGFFbGVtZW50cyIKICAgICAgICAgfSwgewogICAgICAgICAgICAibG9jYXRvciIgOiAiMTY6MS0xNjo0NCIsCiAgICAgICAgICAgICJsb2NhbElkZW50aWZpZXIiIDogIk1FUlN0cmF0aWZpZXJzIiwKICAgICAgICAgICAgInBhdGgiIDogImh0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL01FUlN0cmF0aWZpZXJzIgogICAgICAgICB9IF0KICAgICAgfSwKICAgICAgImNvbnRleHRzIiA6IHsKICAgICAgICAgImRlZiIgOiBbIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjE4OjEtMTg6MTUiLAogICAgICAgICAgICAibmFtZSIgOiAiUGF0aWVudCIKICAgICAgICAgfSBdCiAgICAgIH0sCiAgICAgICJzdGF0ZW1lbnRzIiA6IHsKICAgICAgICAgImRlZiIgOiBbIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjE4OjEtMTg6MTUiLAogICAgICAgICAgICAibmFtZSIgOiAiUGF0aWVudCIsCiAgICAgICAgICAgICJjb250ZXh0IiA6ICJQYXRpZW50IiwKICAgICAgICAgICAgImV4cHJlc3Npb24iIDogewogICAgICAgICAgICAgICAidHlwZSIgOiAiU2luZ2xldG9uRnJvbSIsCiAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IHsKICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjE4OjEtMTg6MTUiLAogICAgICAgICAgICAgICAgICAiZGF0YVR5cGUiIDogIntodHRwOi8vaGw3Lm9yZy9maGlyfVBhdGllbnQiLAogICAgICAgICAgICAgICAgICAidGVtcGxhdGVJZCIgOiAiaHR0cDovL2hsNy5vcmcvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uL1BhdGllbnQiLAogICAgICAgICAgICAgICAgICAidHlwZSIgOiAiUmV0cmlldmUiCiAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICB9LCB7CiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyMDoxLTIwOjMzIiwKICAgICAgICAgICAgIm5hbWUiIDogIkluaXRpYWwgUG9wdWxhdGlvbiIsCiAgICAgICAgICAgICJjb250ZXh0IiA6ICJQYXRpZW50IiwKICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLAogICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7CiAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyMDozMC0yMDozMyIsCiAgICAgICAgICAgICAgICJ2YWx1ZVR5cGUiIDogInt1cm46aGw3LW9yZzplbG0tdHlwZXM6cjF9Qm9vbGVhbiIsCiAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAidHJ1ZSIsCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJMaXRlcmFsIgogICAgICAgICAgICB9CiAgICAgICAgIH0sIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjIyOjEtMjM6MjQiLAogICAgICAgICAgICAibmFtZSIgOiAiTnVtZXJhdG9yLUV4Y2x1c2lvbiIsCiAgICAgICAgICAgICJjb250ZXh0IiA6ICJQYXRpZW50IiwKICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLAogICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7CiAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyMzozLTIzOjI0IiwKICAgICAgICAgICAgICAgIm5hbWUiIDogIkRlY2Vhc2VkIiwKICAgICAgICAgICAgICAgImxpYnJhcnlOYW1lIiA6ICJQYXRpZW50RGF0YSIsCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJFeHByZXNzaW9uUmVmIgogICAgICAgICAgICB9CiAgICAgICAgIH0sIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjI3OjEtMjg6MjIiLAogICAgICAgICAgICAibmFtZSIgOiAiTnVtZXJhdG9yIiwKICAgICAgICAgICAgImNvbnRleHQiIDogIlBhdGllbnQiLAogICAgICAgICAgICAiYWNjZXNzTGV2ZWwiIDogIlB1YmxpYyIsCiAgICAgICAgICAgICJleHByZXNzaW9uIiA6IHsKICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjI4OjMtMjg6MjIiLAogICAgICAgICAgICAgICAibmFtZSIgOiAiT24gQVJUIiwKICAgICAgICAgICAgICAgImxpYnJhcnlOYW1lIiA6ICJQYXRpZW50RGF0YSIsCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJFeHByZXNzaW9uUmVmIgogICAgICAgICAgICB9CiAgICAgICAgIH0sIHsKICAgICAgICAgICAgImxvY2F0b3IiIDogIjMxOjEtMzI6NDgiLAogICAgICAgICAgICAibmFtZSIgOiAiU3RyYXRpZmllciIsCiAgICAgICAgICAgICJjb250ZXh0IiA6ICJQYXRpZW50IiwKICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLAogICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7CiAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzMjozLTMyOjQ4IiwKICAgICAgICAgICAgICAgIm5hbWUiIDogIkFnZSBHcm91cC9TZXgvTG9jYXRpb24gVFhDVVJSIiwKICAgICAgICAgICAgICAgImxpYnJhcnlOYW1lIiA6ICJNRVJTdHJhdGlmaWVycyIsCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJFeHByZXNzaW9uUmVmIgogICAgICAgICAgICB9CiAgICAgICAgIH0gXQogICAgICB9CiAgIH0KfQ=="
+  }]
+}
