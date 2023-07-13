@@ -12,109 +12,77 @@ parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T,
 context Patient
 
 
-
 define "Exists Patient": 
   exists ["Patient"] P
 
 
+// deceased in period, returns null, ideally returns boolean
 define "Deceased":
   Patient.deceased is not null 
   and (Patient.deceased is true or Patient.deceased before end of "Measurement Period")
-  // and Patient.deceased.value.not()
-  // and Patient.deceased.not()
-  // // alternatively
-  // where P.deceased is false
-  //   or P.deceased before Today()
+  // is false
 
 
+// deceased but after period, thus censored, returns null, ideally returns boolean
+define "Right-Censored":
+  Patient.deceased is not null
+  and (Patient.deceased is true and Patient.deceased after end of "Measurement Period")
+  // is true
+
+
+// assume living because either the boolean value is not reported or datetime after period
+// returns null, ideally returns true
 define "Living Patient":
-  Deceased is null
+  Patient.deceased is null
+  or (Patient.deceased is false or Patient.deceased after end of "Measurement Period")
+  // is true
 
 
-// synthea
-// define "HIV Condition":
-//   exists ["Condition": Cx."HIV Condition Positive"]
-//   // synthea
-//   or exists [Observation: Cx."Acquired immune deficiency syndrome (disorder)"]
-//   or exists [Encounter] E
-//     // where E.reasonCode in Cx."Acquired immune deficiency syndrome (disorder)"
-//     where (Last(E.reasonCode) ~ Cx."Acquired immune deficiency syndrome (disorder)")
+define "HIV Condition":
+  exists ["Condition": Cx."HIV Condition Positive"]
+  or exists [Observation: Cx."Acquired immune deficiency syndrome (disorder)"]
+  or exists [Encounter] E
+    // where E.reasonCode in Cx."Acquired immune deficiency syndrome (disorder)"
+    where (Last(E.reasonCode) ~ Cx."Acquired immune deficiency syndrome (disorder)")
 
 
-// define "Is HIV Positive":
-//   "HIV Condition"
+define "Is HIV Positive":
+  "HIV Condition"
 
 
-// define "Is HIV Negative":
-//   not "HIV Condition"
+define "Is HIV Negative":
+  not "HIV Condition"
 
 
-// define "HIV Test Results":
-//   case
-//     when "Is HIV Positive" then "HIV Positive Observation"
-//     when "Is HIV Negative" then "HIV Negative Observation"
-//     else null
-//   end
+define "HIV Test Results":
+  case
+    when "Is HIV Positive" then "HIV Positive Observation"
+    when "Is HIV Negative" then "HIV Negative Observation"
+    else null
+  end
 
 
 define "Pregnant":
   exists ["Condition": Cx."Pregnancy (finding)"]
 
 
-// define "HIV Test Exists":
-//   exists ([Observation: Cx."HIV 1 and 2 tests - Meaningful Use set"])
+define "HIV Test Exists":
+  exists ([Observation: Cx."HIV 1 and 2 tests - Meaningful Use set"])
 
 
-// define "HIV Positive Observation":
-//   [Observation: Cx."HIV 1 and 2 tests - Meaningful Use set"] Observation
-//     where Observation.value = "Is HIV Positive"
+define "HIV Positive Observation":
+  [Observation: Cx."HIV 1 and 2 tests - Meaningful Use set"] Observation
+    where Observation.value = "Is HIV Positive"
 
 
-// define "HIV Negative Observation":
-//   [Observation: Cx."HIV 1 and 2 tests - Meaningful Use set"] Observation
-//     where Observation.value = "Is HIV Negative"
-
-// this union is a placeholder for implementer or dak valuesets
-// define "Viral Load Test Result":
-//   ["Observation": Cx."HIV 1 RNA NAA+probe (Specimen)"] Obs
-//   union ["Observation": Cx."HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection"] Obs
-//     // where Obs.status = 'final'
-//     // and Obs.value is not null
-//   // synthea
-//     // when Obs.effective during "Measurement Period"
-
-
-// define "Living with HIV and on ART with suppressed viral load results (<1000 copies/mL)":
-//   "Viral Load Test Result" Observation
-//     where Observation.value < 1000 '{copies}/mL'
-
-
-// define "Living with HIV and on ART with unsuppressed viral load results (>1000 copies/mL)":
-//   "Viral Load Test Result" Observation
-//     where Observation.value >= 1000 '{copies}/mL'
-
-
-// define "Suppressed":
-//   "Viral Load Test Result" Observation
-//     where Observation.value < 1000 '{copies}/mL'
-
-
-// define "Unsuppressed":
-//   "Viral Load Test Result" Observation
-//     where Observation.value >= 1000 '{copies}/mL'
-
+define "HIV Negative Observation":
+  [Observation: Cx."HIV 1 and 2 tests - Meaningful Use set"] Observation
+    where Observation.value = "Is HIV Negative"
 
 define "Contact date":
   [Encounter] E
     return E.period.start
 
-
-// define "HIV Positive but no VL test":
-//   "Is HIV Positive" = true
-
-
-
-// Rest of HIVIndicators
 
 define "on ART PLIR":
   ["Observation": Cx."Currently taking ARV"] o
@@ -159,10 +127,6 @@ define "ART Therapy Condition":
       and C.clinicalStatus ~ FC."active"
 
 
-// define "ART Therapy Medication":
-//   ["MedicationDispense": Cx."ART Medications"] M
-//     where M.status = 'completed'
-
 // synthea
 define "ART Therapy Medication":
   ["MedicationRequest": Cx."ART Medications"] M
@@ -178,17 +142,8 @@ define "ART Dates":
     // union ("ART Therapy Medication" M return M)
 
 
-
 define "Date of First Evidence of ART":
   Min("ART Dates")
-
-
-// define "PMTCT ART Status":
-//   case
-//     when "Date of First Evidence of ART" before start of "Measurement Period" then Cx."Currently taking ARV"
-//     when "Date of First Evidence of ART" during "Measurement Period" then Cx."New on ART"
-//     else null
-//   end
 
 
 define "On ART":
@@ -199,31 +154,22 @@ define "On ART":
     )
 
 
-// define "HIV Test Observation":
-//   [Observation: Cx."HIV 1 and 2 tests - Meaningful Use set"] O
-//     // where O.status = 'final'
-//     //   and O.value is not null
+define "HIV Test Observation":
+  [Observation: Cx."HIV 1 and 2 tests - Meaningful Use set"] O
+    // where O.status = 'final'
+    //   and O.value is not null
 
 
-// define "Date of First Evidence of HIV Status":
-//   Min("HIV Test Observation" O return O.effective)
+define "Date of First Evidence of HIV Status":
+  Min("HIV Test Observation" O return O.effective)
 
 
-// define "Date of First Evidence of HIV Positive":
-//   Min("HIV Positive Observation" O return O.effective)
+define "Date of First Evidence of HIV Positive":
+  Min("HIV Positive Observation" O return O.effective)
 
 
-// define "Date of First Evidence of HIV Negative":
-//   Min("HIV Negative Observation" O return O.effective)
-
-
-// define "PMTCT HIV Status":
-//   case
-//     when "Date of First Evidence of HIV Positive" before start of "Measurement Period" then 'Known Positive'
-//     when "Date of First Evidence of HIV Positive" during "Measurement Period" then 'Newly Identified Positive'
-//     when "Date of First Evidence of HIV Negative" during "Measurement Period" then 'Newly Identified Negative'
-//     else null
-//   end
+define "Date of First Evidence of HIV Negative":
+  Min("HIV Negative Observation" O return O.effective)
 
 
 define "Newly enrolled on antiretroviral therapy (ART) during measurement period":
@@ -281,75 +227,7 @@ define "Initiated antiretroviral therapy (ART) in the 12 months prior to measure
   "Date of First Evidence of ART" during "Year Preceding the Measurement Period"
 
 
-// define "Antenatal Care Visit":
-//   // [Encounter: Cx."Prenatal initial visit (regime/therapy)"] E
-//   [Encounter: Cx."Prenatal initial visit (regime/therapy)"] E
-//     where E.status = 'finished'
-//       and E.period during Interval[start of "Year Preceding the Measurement Period", end of "Measurement Period"]
-
-
-// define "Live Birth Procedure":
-//   [Procedure: Cx."Livebirth (finding)"] P
-//     where P.status = 'completed'
-
-
-// define "Antenatal Care Visit or Live Birth during the Measurement Period":
-//   ("Is Pregnant" and exists ("Antenatal Care Visit" V where V.period during "Measurement Period"))
-//     or exists ("Live Birth Procedure" P where P.performed during "Measurement Period")
-
-
-// define "Antenatal Care Visit or Live Birth during Measurement Period (HIV Positive)":
-//   "Is HIV Positive"
-//     and "Antenatal Care Visit or Live Birth during the Measurement Period"
-
-
-// define "HIV-positive, pregnant, and receiving antiretroviral therapy (ART) to reduce the risk of mother-to-child-transmission during pregnancy":
-//   "Is HIV Positive"
-//     and "Is Pregnant"
-//     and "Receiving antiretroviral therapy (ART) during measurement period"
-
-
 define "Pregnant and receiving antiretroviral therapy (ART) to reduce the risk of mother-to-child-transmission during pregnancy":
     "Is Pregnant"
       and "Receiving antiretroviral therapy (ART) during measurement period"
 
-// define "Viral Load Test Result":
-//   ["Observation": Cx."Viral Load Test"] O
-//     where O.status = 'final'
-//       and O.value is not null
-
-
-// define "Living with HIV and on ART with suppressed viral load results (<1000 copies/mL)":
-//   "Is HIV Positive"
-//     and Cx."Receiving antiretroviral therapy (ART) during measurement period"
-//     and exists (
-//       Cx."Viral Load Test Result" R
-//         where R.effective during "Measurement Period"
-//           and R.value < 1000 '{copies}/mL'
-//       )
-
-
-// define "Received HIV Testing Services (HTS) and Received Test Results":
-//   ["Observation": Cx."HIV Testing Services"] O
-//     where O.status = 'final'
-//       and O.value is not null
-
-
-// define "First antenatal care visit":
-//   First("Antenatal Care Visit" V sort by start of period)
-
-
-// define "Date of First Evidence of HIV Status":
-//   Min("HIV Test Observation" O return O.effective)
-
-
-// define "HIV Status Known at First Antenatal Care Visit":
-//   "Date of First Evidence of HIV Status" on or before start of "First antenatal care visit".period
-
-
-// define "Receiving antiretroviral therapty (ART) and Viral Load Measurement in the past 12 months":
-//   "Receiving antiretroviral therapy (ART) during measurement period"
-//     and exists (
-//       "Viral Load Test Result" R
-//         where R.effective during "Year Preceding the Measurement Period"
-//     )

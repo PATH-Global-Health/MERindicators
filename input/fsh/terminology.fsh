@@ -43,9 +43,40 @@ Description: "Columbia International eHealth Laboratory (CIEL)"
 * #138405 "Human immunodeficiency virus (HIV) disease" // coded
 * #160119 "CURRENTLY TAKING ARV" // q&a
 * #116128 "Malaria" // For tests from OMRS IG
-// WIP
-* #86663 "Zidovudine"
+* #160540 "Method of enrollment"
+* #160542 "Outpatient department"
+* #1193 "CURRENT DRUGS USED"
+* #5096 "RETURN VISIT DATE"
+// wip
+* #160104 "Efavirenz / Lamivudine / Stavudine"
+* #160105 "Efavirenz / Stavudine / Zidovudine"
+* #160124 "Efavirenz / Lamivudine / Zidovudine"
+* #161361 "efavirenz / lamivudine / tenofovir disoproxil"
+* #161363 "lamivudine / stavudine"
+* #161364 "Lamivudine / tenofovir disoproxil"
+* #1652 "Lamivudine / nevirapine / zidovudine"
+* #5424 "Other antiretroviral drug"
+* #5811 "Unknown antiretroviral drug"
+* #630 "Lamivudine / zidovudine"
+* #103166 "Abacavir / lamivudine"
+* #70056 "Abacavir"
+* #71647 "Atazanavir"
 * #74807 "Didanosine"
+* #75523 "Efavirenz"
+* #75628 "Efavirenz"
+* #77995 "Indinavir"
+* #78643 "Lamivudine"
+* #79040 "Lopinavir"
+* #792 "Lamivudine / nevirapine / stavudine"
+* #794 "Lopinavir / ritonavir"
+* #80487 "Nelfinavir"
+* #80586 "Nevirapine"
+* #83412 "Ritonavir"
+* #84309 "Stavudine"
+* #84795 "Tenofovir"
+* #86663 "Zidovudine"
+//wip: this exact case sensitive entry doesn't exist in ciel
+* #01234 "Tenofovir / Lamivudine / Dolutegravir"
 
 
 // placeholder, can be different in implementations
@@ -213,23 +244,44 @@ Description: "Synthea HIV MedicationsVS"
 * $RxNorm#2122519 "dolutegravir 50 MG / lamivudine 300 MG Oral Tablet"
 
 
-// TODO: WIP
+// WIP
 
-ValueSet: SNOMEDHIVMedications
-Id: SNOMEDHIVMedications
-Title: "SNOMEDHIVMedications"
-Description: "SNOMEDHIVMedications"
-* ^experimental = true
-* ^url = $SNOMEDHIVMedications
-* $SCT#376938001 "Zidovudine 300 mg oral tablet"
-
-// TODO: WIP
-
+// source of codes: https://pastebin.com/nqufFVvz
 ValueSet: CIELHIVMedications
 Id: CIELHIVMedications
 Title: "CIELHIVMedications"
 Description: "CIELHIVMedications"
+* ^status = #draft
 * ^experimental = true
 * ^url = $CIELHIVMedications
-* $CIEL#86663 "Zidovudine"
+* $CIEL#160104 "Efavirenz / Lamivudine / Stavudine"
+* $CIEL#160105 "Efavirenz / Stavudine / Zidovudine"
+* $CIEL#160124 "Efavirenz / Lamivudine / Zidovudine"
+* $CIEL#161361 "efavirenz / lamivudine / tenofovir disoproxil"
+* $CIEL#161363 "lamivudine / stavudine"
+* $CIEL#161364 "Lamivudine / tenofovir disoproxil"
+* $CIEL#1652 "Lamivudine / nevirapine / zidovudine"
+* $CIEL#5424 "Other antiretroviral drug"
+* $CIEL#5811 "Unknown antiretroviral drug"
+* $CIEL#630 "Lamivudine / zidovudine"
+* $CIEL#103166 "Abacavir / lamivudine"
+* $CIEL#70056 "Abacavir"
+* $CIEL#71647 "Atazanavir"
 * $CIEL#74807 "Didanosine"
+* $CIEL#75523 "Efavirenz"
+* $CIEL#75628 "Efavirenz"
+* $CIEL#77995 "Indinavir"
+* $CIEL#78643 "Lamivudine"
+* $CIEL#79040 "Lopinavir"
+* $CIEL#792 "Lamivudine / nevirapine / stavudine"
+* $CIEL#794 "Lopinavir / ritonavir"
+* $CIEL#80487 "Nelfinavir"
+* $CIEL#80586 "Nevirapine"
+* $CIEL#83412 "Ritonavir"
+* $CIEL#84309 "Stavudine"
+* $CIEL#84795 "Tenofovir"
+* $CIEL#86663 "Zidovudine"
+// temp: this exact case sensitive entry doesn't exist in ciel
+* $CIEL#01234 "Tenofovir / Lamivudine / Dolutegravir"
+
+// Tenofovir / Lamivudine / Dolutegravir

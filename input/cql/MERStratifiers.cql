@@ -31,9 +31,6 @@ code "P60Y--P65Y": 'P50Y--P60Y' from "ISO-8601-Derived Periods" display '60-65 y
 code "P65Y--P9999Y": 'P50Y--P9999Y' from "ISO-8601-Derived Periods" display '65+ years'
 
 
-// need DateTime eg @2014-01-25T not Date, eg not this: @2014-01-25
-// parameter "Measurement Period" Interval<DateTime>
-// comment out for testing, will be overridden by $evaluate-measure operation in any case
 parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T00:00:00.0, @2022-08-30T00:00:00.0]
 
 // Not included yet: Key Population Type [Required]
@@ -56,6 +53,7 @@ define "Sex":
 // Age Group
 define "Age Group":
   case
+    // age at start of measurement period or end of it?
     when AgeInYearsAt(start of "Measurement Period") in Interval[0, 1) then "P0Y--P1Y"
     when AgeInYearsAt(start of "Measurement Period") in Interval[1, 5) then "P1Y--P5Y"
     when AgeInYearsAt(start of "Measurement Period") in Interval[5, 10) then "P5Y--P10Y"
@@ -107,11 +105,13 @@ define "Last Location":
 
 define "OpenMRS Location":
   [Patient] P
-    // remove #location at end of url for cql engine
+    // this url is in the ig, but is not correct: 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location'}
     where singleton from {P.identifier.extension[0].url ~ 'http://fhir.openmrs.org/ext/patient/identifier'}
-    // this url is in the ig, but is not correct
-    // or singleton from {P.identifier.extension[0].url ~ 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location'}
-  return singleton from {P.identifier.extension[0].value.reference}
+    or singleton from {P.identifier.extension[0].url ~ 'http://fhir.openmrs.org/ext/patient/identifier#location'}
+    or singleton from {P.identifier.extension[1].url ~ 'http://fhir.openmrs.org/ext/patient/identifier'}
+    or singleton from {P.identifier.extension[1].url ~ 'http://fhir.openmrs.org/ext/patient/identifier#location'}
+    return singleton from {P.identifier.extension[0].value.reference.value}
+
 
 
 define "Last serviceProvider":
@@ -125,23 +125,24 @@ define "Last serviceProvider":
 // if..then..else
 define "Location":
   if "Last Location" is not null then ("Last Location")
-  // the singleton has to be here but errors above?
-  else singleton from ("Last serviceProvider")
+  // else "Last serviceProvider"
+  else
+  if "Last serviceProvider" is not null then "Last serviceProvider"
+  else
+  if "OpenMRS Location" is not null then ("OpenMRS Location")
+  else null
 
 
-define "Location Deux":
+// case switch does not work
+define "Location Case Switch":
   case
-    // then location of last encounter
-    when "Last Location" is null then ("Last Location")
     // location identifier on patient
     when "OpenMRS Location" is not null then ("OpenMRS Location")
+    // then location of last encounter
+    when "Last Location" is not null then ("Last Location")
     // then organization of last encounter
-    else singleton from ("Last serviceProvider")
+    else "Last serviceProvider"
   end
-
-
-// define "Location Troi":
-//   Coalesce("OpenMRS Location", "Last Location", "Last serviceProvider")
 
 
 define "Age Group/Sex/Location":
