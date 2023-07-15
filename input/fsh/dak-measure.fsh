@@ -76,8 +76,25 @@ Description: "DAKTXCURR"
 * description = "DAKTXCURR"
 * url = "https://path-global-health.github.io/MERindicators/Measure/DAKTXCURR"
 * identifier[0].value = "MERTXCURR"
-// continuous variable version
 
+// cohort scoring version
+* scoring = $measure-scoring#cohort
+* library[+] = Canonical(DAKTXCURRLibrary)
+* group[+]
+  * code = $OpenHIE#cohort "cohort"
+  * population[+]
+    * description = "Initial Population"
+    * code = $measure-population#initial-population
+    * criteria.language = #text/cql
+    * criteria.expression = "Initial Population"
+  * stratifier[+]
+    * criteria.language = #text/cql
+    * criteria.expression = "Stratification"
+  * stratifier[+]
+    * criteria.language = #text/cql
+    * criteria.expression = "Dispense Stratification"
+// continuous variable version
+/*
 * scoring = $measure-scoring#continuous-variable
 * library[+] = Canonical(DAKTXCURRLibrary)
 * group[+]
@@ -103,24 +120,6 @@ Description: "DAKTXCURR"
     * code = $measure-population#measure-observation
     * criteria.language = #text/cql
     * criteria.expression = "Measure Observation"
-  * stratifier[+]
-    * criteria.language = #text/cql
-    * criteria.expression = "Stratification"
-  * stratifier[+]
-    * criteria.language = #text/cql
-    * criteria.expression = "Dispense Stratification"
-
-// cohort scoring version
-/*
-* scoring = $measure-scoring#cohort
-* library[+] = Canonical(DAKTXCURRLibrary)
-* group[+]
-  * code = $OpenHIE#cohort "cohort"
-  * population[+]
-    * description = "Initial Population"
-    * code = $measure-population#initial-population
-    * criteria.language = #text/cql
-    * criteria.expression = "Initial Population"
   * stratifier[+]
     * criteria.language = #text/cql
     * criteria.expression = "Stratification"
