@@ -124,9 +124,9 @@ define "Last Location":
 
 define "Dispensing Quantity":
   case 
-    when PatientData."Most Recent Dispensed Days" in Interval[0, 90] then "notMMD"
-    when PatientData."Most Recent Dispensed Days" in Interval[90, 180] then "3to5MMD"
-    when PatientData."Most Recent Dispensed Days" in Interval[180, null] then "6MMD"
+    when PatientData."Most Recent Dispensed Observation Days" in Interval[0, 90] then "notMMD"
+    when PatientData."Most Recent Dispensed Observation Days" in Interval[90, 180] then "3to5MMD"
+    when PatientData."Most Recent Dispensed Observation Days" in Interval[180, null] then "6MMD"
     else null
   end
 

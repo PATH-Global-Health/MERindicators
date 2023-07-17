@@ -8,7 +8,7 @@ include DAKConcepts called Cx
 // include DAKStratifiers called Strat
 
 // parameter "Measurement Period" Interval<DateTime>
-parameter "Measurement Period" Interval<DateTime> default Interval[@2023-01-01T, @2023-12-31T]
+parameter "Measurement Period" Interval<DateTime> default Interval[@2022-01-01T, @2022-12-31T]
 
 context Patient
 
@@ -97,6 +97,10 @@ define "On ART":
   ( "Date of Last HIV Transfer" during "Measurement Period"
     and if exists ( "Stopped ART Observation" ) then "Date of Last Stopped ART" before "Date of Last HIV Transfer" else true
   )
+  or
+  (
+    "Most Recent Dispensed Observation Finish Date" after "Measurement Period"
+  )
 
 define "Dispensed Observations":
   [Observation] O
@@ -107,8 +111,17 @@ define "Dispensed Observations":
 define "Most Recent Dispensed Observation":
   First( "Dispensed Observations")
 
-define "Most Recent Dispensed Days":
+define "Most Recent Dispensed Observation Days":
   ("Most Recent Dispensed Observation".value as integer)
+
+define "Dispensed in Days":
+  ToQuantity(ToString("Most Recent Dispensed Observation Days") + ' days')
+
+define "Most Recent Dispensed Observation Date":
+  ("Most Recent Dispensed Observation".effective as dateTime)
+
+define "Most Recent Dispensed Observation Finish Date":
+  "Most Recent Dispensed Observation Date" + "Dispensed in Days"
 
 define "Stopped ART Observation":
   [Observation] O
@@ -129,7 +142,25 @@ define "Date of Last HIV Transfer":
 define "Newly enrolled on antiretroviral therapy (ART) during measurement period":
   "Date of First Evidence of ART" during "Measurement Period"
 
+define "Requested ARTs":
+  [MedicationRequest] M
+    where M.medication in Cx."DAK ART Medications"
+      and M.status = 'active'
+    sort by date from (authoredOn as FHIR.dateTime) desc
 
+define "Most Recent Requested ART":
+  First( "Requested ARTs" )
+
+define "Most Recent Requested ART Date":
+  "Most Recent Requested ART".authoredOn as dateTime
+
+
+define "Patient with IIT":
+  "Most Recent Requested ART Date" after now() + 28 days
+
+
+
+/*
 define "Is Pregnant":
   exists ([Condition: Cx."Pregnancy status - Reported"] C
     where C.verificationStatus ~ FC."confirmed"
@@ -177,3 +208,4 @@ define "Initiated antiretroviral therapy (ART) in the 12 months prior to measure
 define "Pregnant and receiving antiretroviral therapy (ART) to reduce the risk of mother-to-child-transmission during pregnancy":
     "Is Pregnant"
       and "Receiving antiretroviral therapy (ART) during measurement period"
+*/
