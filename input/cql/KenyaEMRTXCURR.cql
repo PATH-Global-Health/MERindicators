@@ -26,6 +26,7 @@ PLHIV are enrolled in an HIV program.
 On Observation resource: $CIEL#160540 "Method of enrollment"
 On Observation.value.coding: $CIEL#160542 "Outpatient department"
 Observation.status is not in example bundle, e.g. Obs.status in {'final', 'amended', 'corrected'}
+Note that the CQL is using the CIEL codes only, even if others are provided.
 */
 
 /*
@@ -33,13 +34,12 @@ Devs:
 'exists' keyword evaluates result as boolean or null (unknown)
 From the CQL docs: we use the equivalent operator (~) rather than equality (=). 
 For codes, equivalence tests only that the code system and code are the same, but does not check the code system version.
-todo: singleton doesn't work with Obs.value.coding
 */
 
 define "PLHIV Observation":
   ["Observation": Cx."Method of enrollment"] Obs
-    where Obs.value.coding[0] ~ Cx."Outpatient department"
-    or Obs.value.coding[1] ~ Cx."Outpatient department"
+    where Obs.value ~ Cx."Outpatient department"
+    or Obs.value ~ Cx."Institutional entry point HIV treatment"
     and (Obs.effective.value during "Measurement Period" or Obs.effective before "Measurement Period")
 
 
@@ -56,6 +56,9 @@ Deceased patients are not in numerator.
 Deceased is unknown when not indicated on Patient.deceased.
 If Patient.deceased has a value, then check whether deceased before end of period.
 Null (unknown) is returned if the field doesn't exist (patient assumed to be alive in source.)
+
+Todo: Confirm this works as expected for exclusion calculations
+true -> should be excluded, if they are in the initial-population
 */
 
 define "Deceased":
@@ -95,7 +98,7 @@ define DrugInterval: Interval[DrugStart, DrugStop]
 define "DrugStart":
   Last(["Observation": Cx."CURRENT DRUGS USED"] Obs
     where singleton from Obs.value.coding in Cx."CIELHIVMedications" 
-    and (Obs.effective.value during "Measurement Period" or Obs.effective before "Measurement Period")    
+    and (Obs.effective.value during "Measurement Period" or Obs.effective before "Measurement Period")
     return Obs.effective.value
     )
 
@@ -123,6 +126,8 @@ define "On ART": "Last Return"
 define "Measure Population": "On ART"
 
 
+// should work without #location
+// how to clean it up with identifier[].extension[]
 define "OpenMRS Location":
   [Patient] P
     // this url is in the ig, but is not correct: 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location'}

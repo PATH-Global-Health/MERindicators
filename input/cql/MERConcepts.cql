@@ -47,7 +47,7 @@ code "Acquired immune deficiency syndrome (disorder)": '62479008' from "SNOMED-C
 code "HIV Condition Positive": '86406008' from "SNOMED-CT" display 'HIV infection'
 code "HIV Negative": '165815009' from "SNOMED-CT" display 'HIV Negative'
 code "History of antiretroviral therapy (situation)": '432101000124108' from "OpenHIE" display 'History of antiretroviral therapy (situation)'
-// code "Institutional entry point HIV treatment": '45252-4' from "LOINC" display 'Institutional entry point HIV treatment'
+code "Institutional entry point HIV treatment": '45252-4' from "LOINC" display 'Institutional entry point HIV treatment'
 // code "New on ART": 'new-on-art' from "PMTCT ART Status Codes" display 'New on ART'
 
 
