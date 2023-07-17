@@ -105,6 +105,7 @@ Description: "DAKTXCURR"
     * criteria.language = #text/cql
     * criteria.expression = "Initial Population"
   * population[+]
+    * id = "measure-population"
     * description = "Measure Population"
     * code = $measure-population#measure-population
     * criteria.language = #text/cql
@@ -115,7 +116,7 @@ Description: "DAKTXCURR"
     * criteria.language = #text/cql
     * criteria.expression = "Measure Population Exclusion"
   * population[+]
-    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "measure-observation"
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "measure-population"
     * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod].valueCode = #count
     * description = "Measure Observation"
     * code = $measure-population#measure-observation
