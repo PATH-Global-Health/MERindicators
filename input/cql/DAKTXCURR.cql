@@ -17,24 +17,25 @@ include DAKStratifiers called DAKStratifiers
 
 context Patient
 // for cohort
+/*
 define "Initial Population": 
   PatientData."PLHIV" and PatientData."On ART" and not PatientData."Deceased"
-
+*/
 
 // For continuous variable
-/*
+
 define "Initial Population": 
   PatientData."PLHIV" and PatientData."On ART"
 
 define "Measure Population":
-  PatientData."On ART"
+  PatientData."PLHIV" and PatientData."On ART"
 
 define "Measure Population Exclusion":
   PatientData."Deceased"
 
 define function "Measure Observation" (Patient "Patient"):
-  true
-*/
+  1
+
 
 /* for proportion
 define "Initial Population": 

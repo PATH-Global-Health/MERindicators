@@ -78,6 +78,7 @@ Description: "DAKTXCURR"
 * identifier[0].value = "MERTXCURR"
 
 // cohort scoring version
+/*
 * scoring = $measure-scoring#cohort
 * library[+] = Canonical(DAKTXCURRLibrary)
 * group[+]
@@ -93,8 +94,8 @@ Description: "DAKTXCURR"
   * stratifier[+]
     * criteria.language = #text/cql
     * criteria.expression = "Dispense Stratification"
+*/
 // continuous variable version
-/*
 * scoring = $measure-scoring#continuous-variable
 * library[+] = Canonical(DAKTXCURRLibrary)
 * group[+]
@@ -126,7 +127,7 @@ Description: "DAKTXCURR"
   * stratifier[+]
     * criteria.language = #text/cql
     * criteria.expression = "Dispense Stratification"
-*/
+
 // proportion scoring version
 /*
 * scoring = $measure-scoring#proportion

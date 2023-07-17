@@ -1,0 +1,177 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a",
+      "request": {
+        "url": "Patient",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "given": [
+              "Mittens"
+            ],
+            "family": "Cat",
+            "text": "Mittens Cat"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1966-12-02",
+	"deceasedBoolean": true
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:db41ab11-0358-4cf8-8fa9-bd62aad09985",
+      "request": {
+        "url": "Condition",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "737378009",
+              "system": "http://snomed.info/sct",
+              "display": "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding)"
+            }
+          ]
+        },
+        "onsetDateTime": "1995-10-10"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:11ad7100-7808-40dd-9bf1-0afb7b44b8a2",
+      "request": {
+        "url": "Observation",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "182929008",
+              "system": "http://snomed.info/sct",
+              "display": "Drug prophylaxis (procedure)"
+            }
+          ]
+        },
+        "valueBoolean": true,
+        "effectiveDateTime": "2004-04-05"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a317e426-f6ce-40ab-a91d-bec107e9cd46",
+      "request": {
+        "url": "Encounter",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": {
+          "code": "ACUTE",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a"
+        },
+        "serviceProvider": {
+          "reference": "Organization/Organization-DAK"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/Location-DAK"
+            }
+          }
+        ],
+        "period": {
+          "start": "2022-02-11",
+          "end": "2022-02-11"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:276726ad-84a1-4d21-8e21-4f5e229012bc",
+      "request": {
+        "url": "Observation",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "encounter": {
+          "reference": "urn:uuid:a317e426-f6ce-40ab-a91d-bec107e9cd46"
+        },
+        "subject": {
+          "reference": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "258703001",
+              "system": "http://snomed.info/sct",
+              "display": "Day (qualifier value)"
+            }
+          ]
+        },
+        "valueInteger": 90,
+        "effectiveDateTime": "2022-02-11"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a2f7a043-cccf-451a-9464-494bd251a335",
+      "request": {
+        "url": "Observation",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "413947000",
+              "system": "http://snomed.info/sct",
+              "display": "Date treatment stopped (observable entity)"
+            }
+          ]
+        },
+        "valueDateTime": "2022-03-12",
+        "effectiveDateTime": "2022-03-12"
+      }
+    }
+  ]
+}
