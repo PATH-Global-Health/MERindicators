@@ -64,6 +64,45 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:bf698b19-4625-45ea-bc86-51e15a845d56",
+      "request": {
+        "url": "Condition",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "182929008",
+              "system": "http://snomed.info/sct",
+              "display": "Drug prophylaxis (procedure)"
+            }
+          ]
+        },
+        "onsetDateTime": "2007-07-11"
+      }
+    },
+    {
       "fullUrl": "urn:uuid:11ad7100-7808-40dd-9bf1-0afb7b44b8a2",
       "request": {
         "url": "Observation",
@@ -146,31 +185,6 @@
         },
         "valueInteger": 90,
         "effectiveDateTime": "2022-02-11"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:a2f7a043-cccf-451a-9464-494bd251a335",
-      "request": {
-        "url": "Observation",
-        "method": "POST"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "status": "final",
-        "subject": {
-          "reference": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "413947000",
-              "system": "http://snomed.info/sct",
-              "display": "Date treatment stopped (observable entity)"
-            }
-          ]
-        },
-        "valueDateTime": "2022-03-12",
-        "effectiveDateTime": "2022-03-12"
       }
     }
   ]

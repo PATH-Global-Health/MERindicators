@@ -94,13 +94,16 @@ define "On ART":
     and if exists( "Stopped ART Observation" ) then "Date of Last Stopped ART" before "Date of Last Evidence of ART" else true
   )
   or 
-  ( "Date of Last HIV Transfer" during "Measurement Period"
-    and if exists ( "Stopped ART Observation" ) then "Date of Last Stopped ART" before "Date of Last HIV Transfer" else true
+  ( if exists( "HIV Transfer Observation" )
+    then "Date of Last HIV Transfer" during "Measurement Period"
+            and if exists ( "Stopped ART Observation" ) then "Date of Last Stopped ART" before "Date of Last HIV Transfer" else true
+    else false
   )
   or
   (
     "Most Recent Dispensed Observation Finish Date" after "Measurement Period"
   )
+
 
 define "Dispensed Observations":
   [Observation] O

@@ -25,10 +25,10 @@ define "Initial Population":
 // For continuous variable
 
 define "Initial Population": 
-  PatientData."PLHIV" and PatientData."On ART"
+  PatientData."PLHIV"
 
 define "Measure Population":
-  PatientData."PLHIV" and PatientData."On ART"
+  PatientData."On ART"
 
 define "Measure Population Exclusion":
   PatientData."Deceased"
