@@ -70,7 +70,7 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 dependencies:
   openmrs.fhir.core: current
   hl7.fhir.uv.cpg: 1.0.0
-  hl7.fhir.us.cqfmeasures: current
+  hl7.fhir.us.cqfmeasures: 4.0.0
   # doesn't seem to be required
   # fhir.cqf.common: 4.0.1
 

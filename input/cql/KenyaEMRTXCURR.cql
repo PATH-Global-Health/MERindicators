@@ -49,7 +49,7 @@ define "PLHIV Boolean": exists "PLHIV Observation"
 define "Initial Population": "PLHIV Boolean"
 
 
-// Numerator-Exclusion
+// Measure Population Exclusion
 
 /*
 Deceased patients are not in numerator.
@@ -63,10 +63,10 @@ define "Deceased":
   and (Patient.deceased is true or Patient.deceased before end of "Measurement Period")
 
 
-define "Numerator-Exclusion": "Deceased"
+define "Measure Population Exclusion": "Deceased"
 
 
-// Numerator
+// Measure Population
 
 /*
 Approach by the source system:
@@ -120,7 +120,7 @@ define "Last Return": "Overlaps Measurement Period"
 define "On ART": "Last Return"
 
 
-define "Numerator": "On ART"
+define "Measure Population": "On ART"
 
 
 define "OpenMRS Location":
@@ -135,6 +135,8 @@ define "OpenMRS Location":
 
 // todo: debugging needed on location
 
-define "Stratifier": 
+define "Stratification": 
   MERStratifiers."Age Group/Sex/Location TXCURR"
 
+
+define "Stratifiers": "Stratification"
