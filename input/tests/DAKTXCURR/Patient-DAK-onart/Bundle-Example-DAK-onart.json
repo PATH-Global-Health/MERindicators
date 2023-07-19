@@ -128,7 +128,7 @@
         "location": [
           {
             "location": {
-              "reference": "Location-DAL"
+              "reference": "Location/Location-DAK"
             }
           }
         ],
@@ -136,35 +136,6 @@
           "start": "2023-07-03",
           "end": "2023-07-03"
         }
-      }
-    },
-    {
-      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart",
-      "request": {
-        "url": "Observation/Observation-DAK-onart",
-        "method": "PUT"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "id": "Observation-DAK-onart",
-        "status": "final",
-        "encounter": {
-          "reference": "Encounter/Encounter-DAK-onart"
-        },
-        "subject": {
-          "reference": "Patient/Patient-DAK-onart"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "182929008",
-              "system": "http://snomed.info/sct",
-              "display": "Drug prophylaxis (procedure)"
-            }
-          ]
-        },
-        "valueBoolean": true,
-        "effectiveDateTime": "2023-07-03"
       }
     },
     {
