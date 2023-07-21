@@ -10,7 +10,9 @@ Description: "ICD-11 codes from the HIV DAK"
 * #1C62.1 "HIV disease clinical stage 2 without mention of tuberculosis or malaria"
 * #1C62.2 "HIV disease clinical stage 3 without mention of tuberculosis or malaria"
 * #1C62.3 "HIV disease clinical stage 4 without mention of tuberculosis or malaria"
+* #1C62.Z	"Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified"
 * #XM63K0 "Anti-infective antiviral"
+* #QA14	  "Contact with health services for human immunodeficiency virus counselling"
 * #XM35P4 "Abacavir"
 * #XM2L06 "Emtricitabine"
 * #XM5471 "Lamivudine"
@@ -80,6 +82,21 @@ Description: "WHO HIV Clinical Stages"
 * $SCT#737379001 "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 2 (finding)"
 * $SCT#737380003 "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 3 (finding)"
 * $SCT#737381004 "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 4 (finding)"
+
+ValueSet: DAKARTVisit
+Id: DAKARTVisit
+Title: "DAK ART Visit codes"
+Description: "DAK ART Visit codes"
+* ^experimental = false
+* $ICD11#1C62.Z	"Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified"
+* $ICD11#XM63K0 "Anti-infective antiviral"
+* $ICD11#QA14	"Contact with health services for human immunodeficiency virus counselling"
+* $LNC#45683-0	"HIV infection [Minimum Data Set]"
+* $LNC#45260-7	"HIV ART medication"
+* $LNC#68834-1	"Primary care Note  best fit"
+* $SCT#781087000	"Medical care (regime/therapy)"
+* $SCT#788081006	"Medicinal product acting as antiviral (product)"
+
 
 ValueSet: DAKARVDrugPickup
 Id: DAKARVDrugPickup
