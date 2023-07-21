@@ -12,6 +12,8 @@ parameter "Measurement Period" Interval<DateTime> default Interval[@2022-01-01T,
 
 context Patient
 
+define "debug name":
+  First(Patient.name.text.value)
 
 define "Deceased":
   Patient.deceased is not null 
@@ -38,7 +40,7 @@ define "Is HIV Negative":
   not exists( "HIV Condition" )
 
 define "PLHIV":
-  "Is HIV Positive" or "On ART"
+  "Is HIV Positive"
 
 
 define "Pregnant":
@@ -64,9 +66,8 @@ define "ART Therapy Condition":
 
 define "ART Therapy Medication":
   ["MedicationRequest"] M
-    // where M.status = 'active'
-    where M.medication in Cx."DAK ART Medications"
-      and M.authoredOn during "Measurement Period"
+    where M.status = 'active'
+      and M.medication in Cx."DAK ART Medications"
 
 
 
@@ -146,9 +147,7 @@ define "Newly enrolled on antiretroviral therapy (ART) during measurement period
   "Date of First Evidence of ART" during "Measurement Period"
 
 define "Requested ARTs":
-  [MedicationRequest] M
-    where M.medication in Cx."DAK ART Medications"
-      and M.status = 'active'
+  "ART Therapy Medication" M
     sort by date from (authoredOn as FHIR.dateTime) desc
 
 define "Most Recent Requested ART":

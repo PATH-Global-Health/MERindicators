@@ -16,7 +16,7 @@
               "Mittens"
             ],
             "family": "Cat",
-            "text": "Mittens Cat"
+            "text": "PLHIV On ART Obs 09-02"
           }
         ],
         "gender": "female",
@@ -84,67 +84,7 @@
           ]
         },
         "valueBoolean": true,
-        "effectiveDateTime": "2022-08-02"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:01fe57d4-fdda-4e14-bcf7-43a363c6521b",
-      "request": {
-        "url": "Encounter",
-        "method": "POST"
-      },
-      "resource": {
-        "resourceType": "Encounter",
-        "status": "finished",
-        "class": {
-          "code": "ACUTE",
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-        },
-        "subject": {
-          "reference": "urn:uuid:eba2a5ea-dcc8-4d1b-b6db-87c3bd995657"
-        },
-        "serviceProvider": {
-          "reference": "Organization/Organization-DAK"
-        },
-        "location": [
-          {
-            "location": {
-              "reference": "Location/Location-DAK"
-            }
-          }
-        ],
-        "period": {
-          "start": "2022-01-02",
-          "end": "2022-01-02"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:311a4485-cbc9-441e-9e87-d2a89febe092",
-      "request": {
-        "url": "Observation",
-        "method": "POST"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "status": "final",
-        "encounter": {
-          "reference": "urn:uuid:01fe57d4-fdda-4e14-bcf7-43a363c6521b"
-        },
-        "subject": {
-          "reference": "urn:uuid:eba2a5ea-dcc8-4d1b-b6db-87c3bd995657"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "258703001",
-              "system": "http://snomed.info/sct",
-              "display": "Day (qualifier value)"
-            }
-          ]
-        },
-        "valueInteger": 30,
-        "effectiveDateTime": "2022-01-02"
+        "effectiveDateTime": "2022-09-02"
       }
     }
   ]

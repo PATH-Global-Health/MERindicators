@@ -37,6 +37,7 @@ define function "Measure Observation" (Patient "Patient"):
   1
 
 
+
 /* for proportion
 define "Initial Population": 
   PatientData."PLHIV"

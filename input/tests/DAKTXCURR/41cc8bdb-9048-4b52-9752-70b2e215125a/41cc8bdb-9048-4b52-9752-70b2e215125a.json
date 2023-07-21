@@ -16,12 +16,12 @@
               "Mittens"
             ],
             "family": "Cat",
-            "text": "Mittens Cat"
+            "text": "PLHIV Deceased MMD 90 02-11"
           }
         ],
         "gender": "male",
         "birthDate": "1966-12-02",
-	"deceasedBoolean": true
+	      "deceasedDateTime": "2022-05-03"
       }
     },
     {
@@ -100,31 +100,6 @@
           ]
         },
         "onsetDateTime": "2007-07-11"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:11ad7100-7808-40dd-9bf1-0afb7b44b8a2",
-      "request": {
-        "url": "Observation",
-        "method": "POST"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "status": "final",
-        "subject": {
-          "reference": "urn:uuid:41cc8bdb-9048-4b52-9752-70b2e215125a"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "182929008",
-              "system": "http://snomed.info/sct",
-              "display": "Drug prophylaxis (procedure)"
-            }
-          ]
-        },
-        "valueBoolean": true,
-        "effectiveDateTime": "2004-04-05"
       }
     },
     {

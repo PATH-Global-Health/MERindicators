@@ -42,6 +42,7 @@ Description: "DAKDispensingQuantityCS"
 * #notMMD "<3 months of ARVs"
 * #3to5MMD "3-5 months of ARVs"
 * #6MMD "6 or more months of ARVs"
+* #NoData "No Data"
 
 CodeSystem: DAKCoarseAgeRangeCS
 Id: DAKCoarseAgeRangeCS

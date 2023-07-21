@@ -37,6 +37,7 @@ codesystem "DAK Dispensing Quantity CS": 'https://path-global-health.github.io/M
 code "notMMD": 'notMMD' from "DAK Dispensing Quantity CS" display '<3 months of ARVs'
 code "3to5MMD": '3to5MMD' from "DAK Dispensing Quantity CS" display '3-5 months of ARVs'
 code "6MMD": '6MMD' from "DAK Dispensing Quantity CS" display '6 or more months of ARVs'
+code "NoData": 'NoData' from "DAK Dispensing Quantity CS" display 'No Data'
 
 codesystem "DAK Coarse Age Range CS": 'https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS'
 code "lt15": 'lt15' from "DAK Coarse Age Range CS" display '<15'
@@ -127,7 +128,7 @@ define "Dispensing Quantity":
     when PatientData."Most Recent Dispensed Observation Days" in Interval[0, 90] then "notMMD"
     when PatientData."Most Recent Dispensed Observation Days" in Interval[90, 180] then "3to5MMD"
     when PatientData."Most Recent Dispensed Observation Days" in Interval[180, null] then "6MMD"
-    else null
+    else "NoData"
   end
 
 define "Dispensing Quantity/Coarse Age/Sex/Location":
@@ -152,9 +153,12 @@ define "Last serviceProvider":
 
 // if..then..else
 define "Location":
-  if "Last Location" is not null then ("Last Location")
+  case
+    when "Last Location" is not null then ("Last Location")
   // the singleton has to be here but errors above?
-  else singleton from ("Last serviceProvider")
+    when singleton from ("Last serviceProvider") is not null then singleton from ("Last serviceProvider")
+    else 'Unknown Location'
+  end
 
 
 define "Location Deux":

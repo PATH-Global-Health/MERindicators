@@ -16,7 +16,7 @@
               "Mittens"
             ],
             "family": "Cat",
-            "text": "Mittens Cat"
+            "text": "PLHIV MMD 180 10-25"
           }
         ],
         "gender": "male",
@@ -60,31 +60,6 @@
           ]
         },
         "onsetDateTime": "2018-12-05"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:abf076a6-5f58-4d53-ab7e-c783364826cb",
-      "request": {
-        "url": "Observation",
-        "method": "POST"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "status": "final",
-        "subject": {
-          "reference": "urn:uuid:19f61111-19cf-4cfe-b272-1eb60e18c64f"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "182929008",
-              "system": "http://snomed.info/sct",
-              "display": "Drug prophylaxis (procedure)"
-            }
-          ]
-        },
-        "valueBoolean": true,
-        "effectiveDateTime": "2020-09-07"
       }
     },
     {
