@@ -40,6 +40,8 @@ Title:        "DAK TXCURR Observation for On ART"
 Description:  "DAK Observation for TXCURR for On ART"
 
 * status = #final
+* encounter 1..1
+* encounter only Reference (DAKARTVisitEncounter or DAKDrugPickupEncounter)
 * code 1..1
 * code from DAKONART (required)
 
