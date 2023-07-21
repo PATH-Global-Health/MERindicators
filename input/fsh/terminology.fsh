@@ -79,6 +79,48 @@ Description: "Columbia International eHealth Laboratory (CIEL)"
 * #01234 "Tenofovir / Lamivudine / Dolutegravir"
 
 
+// https://fhir.staging.openconceptlab.org/orgs/Kenya_SMART_Guidelines/CodeSystem/enrollment_methods/
+
+Alias: $0203 = http://hl7.org/fhir/v2/0203
+
+CodeSystem: EnrollmentMethods
+Id: EnrollmentMethods
+Title: "Enrollment Methods for HIV program"
+Description: "1"
+* ^name = "EnrollmentMethods"
+* ^status = #draft
+* ^language = #en
+// * ^count = 10
+// * ^property[0].code = #conceptclass
+// * ^property[=].uri = "https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts"
+// * ^property[=].description = "Standard list of concept classes."
+// * ^property[=].type = #string
+// * ^property[+].code = #datatype
+// * ^property[=].uri = "https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts"
+// * ^property[=].description = "Standard list of concept datatypes."
+// * ^property[=].type = #string
+// * ^property[+].code = #inactive
+// * ^property[=].uri = "http://hl7.org/fhir/concept-properties"
+// * ^property[=].description = "True if the concept is not considered active."
+// * ^property[=].type = #coding
+* ^meta.lastUpdated = "2023-07-20T15:56:38.013277Z"
+* ^version = "1"
+* ^identifier.system = "https://api.staging.openconceptlab.org"
+* ^identifier.value = "/orgs/Kenya_SMART_Guidelines/CodeSystem/enrollment_methods/"
+* ^identifier.type.text = "Accession ID"
+* ^identifier.type = $0203#ACSN "Accession ID"
+* #159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "HBTC"
+* #160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "VCT Site"
+* #159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "MCH"
+* #160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "IPD-Adult"
+* #160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "IPD-Child"
+* #160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "TB Clinic"
+* #160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "OPD"
+* #162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "CCC"
+* #160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "Self Test"
+* #5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "Other(eg STI)"
+
+
 // placeholder, can be different in implementations
 CodeSystem: FocusPopCS
 Id: FocusPopCS
@@ -285,3 +327,23 @@ Description: "CIELHIVMedications"
 * $CIEL#01234 "Tenofovir / Lamivudine / Dolutegravir"
 
 // Tenofovir / Lamivudine / Dolutegravir
+
+
+// https://fhir.staging.openconceptlab.org/orgs/Kenya_SMART_Guidelines/ValueSet/enrollment_methods/
+Alias: $enrollment_methods = https://kenyaemr.ke/MERindicators/CodeSystem/enrollment_methods
+Alias: $0203 = http://hl7.org/fhir/v2/0203
+
+ValueSet: EnrollmentMethodsforHIVProgram
+Id: EnrollmentMethodsforHIVProgram
+Title: "Enrollment Methods in KenyaEMR HIV Program"
+Description: "1"
+* ^name = "Enrollment Methods for HIV Program"
+* ^version = "1"
+* ^url = $EnrollmentMethodsforHIVProgram
+* ^status = #draft
+* ^meta.lastUpdated = "2023-07-20T15:51:47.328070Z"
+* ^identifier.system = "https://api.staging.openconceptlab.org"
+* ^identifier.value = "/orgs/Kenya_SMART_Guidelines/ValueSet/enrollment_methods/"
+* ^identifier.type.text = "Accession ID"
+* ^identifier.type = $0203#ACSN "Accession ID"
+* include codes from system $EnrollmentMethods

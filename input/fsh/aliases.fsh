@@ -37,7 +37,7 @@ Alias: $OpenHIE = https://path-global-health.github.io/MERindicators/CodeSystem/
 Alias: $PEPFAR = https://path-global-health.github.io/MERindicators/CodeSystem/PEPFAR
 Alias: $PMTCTHIVStatusCodes = https://path-global-health.github.io/MERindicators/CodeSystem/PMTCTHIVStatusCodes
 Alias: $PMTCTARTStatusCodes = https://path-global-health.github.io/MERindicators/CodeSystem/PMTCTARTStatusCodes
-
+Alias: $EnrollmentMethods = https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods
 
 // Local value sets
 Alias: $AgeRangesTXCURR = https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR
@@ -49,5 +49,4 @@ Alias: $OnARV = https://path-global-health.github.io/MERindicators/ValueSet/OnAR
 Alias: $Pregnant = https://path-global-health.github.io/MERindicators/ValueSet/Pregnant
 Alias: $SNOMEDHIVMedications = https://path-global-health.github.io/MERindicators/ValueSet/SNOMEDHIVMedications
 Alias: $SyntheaHIVMedications = https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications
-
-
+Alias: $EnrollmentMethodsforHIVProgram = https://path-global-health.github.io/MERindicators/ValueSet/EnrollmentMethodsforHIVProgram

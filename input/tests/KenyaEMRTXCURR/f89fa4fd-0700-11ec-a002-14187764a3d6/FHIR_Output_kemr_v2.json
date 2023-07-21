@@ -1,0 +1,3198 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "f89fa4fd-0700-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2021-08-27T09:35:29.000+03:00"
+      },
+      "identifier": [ {
+        "id": "f8a73f10-0700-11ec-a002-14187764a3d6",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type": "Location",
+            "display": "Lumumba Sub County Hospital"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGMGF3"
+      }, {
+        "id": "f89fecbf-0700-11ec-a002-14187764a3d6",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type": "Location",
+            "display": "Lumumba Sub County Hospital"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "b4d66522-11fc-45c7-83e3-39a1af21ae0d"
+          } ],
+          "text": "Patient Clinic Number"
+        },
+        "value": "01515KLM-6"
+      }, {
+        "id": "f89fd3f3-0700-11ec-a002-14187764a3d6",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type": "Location",
+            "display": "Lumumba Sub County Hospital"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1373801515"
+      }, {
+        "id": "9d0fc65a-49b7-4bc1-8b43-57811a839c80",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type": "Location",
+            "display": "Lumumba Sub County Hospital"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "13126840"
+      }, {
+        "id": "1b3143a0-cd54-4841-851e-bae5e59c6b5c",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type": "Location",
+            "display": "Lumumba Sub County Hospital"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "MOH1667885967"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "f89fb1ff-0700-11ec-a002-14187764a3d6",
+        "family": "Cosmas",
+        "given": [ "Cosmas", "Cosmas" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1975-10-20",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "f89fbfb1-0700-11ec-a002-14187764a3d6",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "2850 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address2",
+            "valueString": "2850 address2"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "North Alego"
+          } ]
+        } ],
+        "use": "home",
+        "city": "UMALA",
+        "district": "Siaya",
+        "state": "Alego Usonga"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b3dce22d-0705-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2018-09-04T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "160540",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4",
+          "display": "Method of enrollment"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/b3dccd92-0705-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2006-02-20T00:00:00+03:00",
+      "issued": "2018-09-04T00:00:00.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Voluntary counseling and testing program"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "160539",
+          "display": "Voluntary counseling and testing program"
+        } ],
+        "text": "Voluntary counseling and testing program"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7907ef58-2830-459d-94c7-8f5016aa9303",
+      "meta": {
+        "lastUpdated": "2023-02-22T12:08:07.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "1193",
+          "display": "CURRENT DRUGS USED"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/8115671c-15b6-44a4-a21e-182d8fe9595b",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2007-11-05T00:00:00+03:00",
+      "issued": "2023-02-22T12:08:07.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "792AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "LAMIVUDINE / NEVIRAPINE / STAVUDINE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "792",
+          "display": "LAMIVUDINE / NEVIRAPINE / STAVUDINE"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "428009005",
+          "display": "LAMIVUDINE / NEVIRAPINE / STAVUDINE"
+        } ],
+        "text": "LAMIVUDINE / NEVIRAPINE / STAVUDINE"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e9e1f7a7-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2018-09-04T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/e9e19b8b-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2006-02-20T00:00:00+03:00",
+      "issued": "2018-09-04T00:00:00.000+03:00",
+      "valueDateTime": "2006-03-06T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e9e6e763-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2007-08-10T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/e9e6c090-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2007-07-24T00:00:00+03:00",
+      "issued": "2007-08-10T00:00:00.000+03:00",
+      "valueDateTime": "2007-08-07T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e9f8beaa-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2007-08-28T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/e9ed12e6-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2007-08-27T00:00:00+03:00",
+      "issued": "2007-08-28T00:00:00.000+03:00",
+      "valueDateTime": "2007-09-24T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea1a4adb-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2007-09-24T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/e9fef05e-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2007-09-24T00:00:00+03:00",
+      "issued": "2007-09-24T00:00:00.000+03:00",
+      "valueDateTime": "2007-11-19T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea25417b-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2007-10-08T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea251e39-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2007-10-08T00:00:00+03:00",
+      "issued": "2007-10-08T00:00:00.000+03:00",
+      "valueDateTime": "2007-11-05T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea2a4161-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2007-11-05T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea2a2e1b-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2007-11-05T00:00:00+03:00",
+      "issued": "2007-11-05T00:00:00.000+03:00",
+      "valueDateTime": "2007-11-19T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea2f6907-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2007-11-19T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea2f4d2e-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2007-11-19T00:00:00+03:00",
+      "issued": "2007-11-19T00:00:00.000+03:00",
+      "valueDateTime": "2007-12-17T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea3484bf-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2007-12-17T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea346731-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2007-12-17T00:00:00+03:00",
+      "issued": "2007-12-17T00:00:00.000+03:00",
+      "valueDateTime": "2008-01-28T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea39a1d6-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2008-01-29T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea39831d-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2008-01-28T00:00:00+03:00",
+      "issued": "2008-01-29T00:00:00.000+03:00",
+      "valueDateTime": "2008-02-25T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea3eb757-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2008-02-25T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea3e9af5-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2008-02-18T00:00:00+03:00",
+      "issued": "2008-02-25T00:00:00.000+03:00",
+      "valueDateTime": "2008-04-21T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea43de5e-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2008-04-22T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea43b830-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2008-04-21T00:00:00+03:00",
+      "issued": "2008-04-22T00:00:00.000+03:00",
+      "valueDateTime": "2008-05-19T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea48f19a-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2008-05-20T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea48cfdc-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2008-05-19T00:00:00+03:00",
+      "issued": "2008-05-20T00:00:00.000+03:00",
+      "valueDateTime": "2008-07-14T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea4e02d4-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2008-07-14T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea4de272-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2008-07-14T00:00:00+03:00",
+      "issued": "2008-07-14T00:00:00.000+03:00",
+      "valueDateTime": "2008-09-08T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea531fe2-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2008-09-08T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea530294-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2008-09-08T00:00:00+03:00",
+      "issued": "2008-09-08T00:00:00.000+03:00",
+      "valueDateTime": "2008-10-06T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea583056-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2008-10-06T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea5814f0-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2008-10-06T00:00:00+03:00",
+      "issued": "2008-10-06T00:00:00.000+03:00",
+      "valueDateTime": "2008-12-01T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea5d5a92-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2008-12-01T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea5d38c5-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2008-12-01T00:00:00+03:00",
+      "issued": "2008-12-01T00:00:00.000+03:00",
+      "valueDateTime": "2009-01-26T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea62767f-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-01-26T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea62504a-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-01-26T00:00:00+03:00",
+      "issued": "2009-01-26T00:00:00.000+03:00",
+      "valueDateTime": "2009-02-23T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea6788aa-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-02-24T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea6767d5-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-02-23T00:00:00+03:00",
+      "issued": "2009-02-24T00:00:00.000+03:00",
+      "valueDateTime": "2009-03-23T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea6c9eff-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-03-23T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea6c7ec4-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-03-23T00:00:00+03:00",
+      "issued": "2009-03-23T00:00:00.000+03:00",
+      "valueDateTime": "2009-05-18T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea71c95a-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-05-18T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea71a120-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-05-18T00:00:00+03:00",
+      "issued": "2009-05-18T00:00:00.000+03:00",
+      "valueDateTime": "2009-06-15T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea76c565-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-06-16T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea76a9a4-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-06-16T00:00:00+03:00",
+      "issued": "2009-06-16T00:00:00.000+03:00",
+      "valueDateTime": "2009-07-14T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea7bde6b-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-07-14T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea7bc330-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-07-14T00:00:00+03:00",
+      "issued": "2009-07-14T00:00:00.000+03:00",
+      "valueDateTime": "2009-09-08T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea811be9-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-09-09T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea80efc1-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-09-08T00:00:00+03:00",
+      "issued": "2009-09-09T00:00:00.000+03:00",
+      "valueDateTime": "2009-10-10T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eaa1f4c5-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-12-03T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ea9912a4-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-12-02T00:00:00+03:00",
+      "issued": "2009-12-03T00:00:00.000+03:00",
+      "valueDateTime": "2009-12-16T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eaa74125-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2009-12-17T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eaa71aec-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2009-12-16T00:00:00+03:00",
+      "issued": "2009-12-17T00:00:00.000+03:00",
+      "valueDateTime": "2010-02-10T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eaac4ad8-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2010-02-03T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eaac28e6-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2010-02-02T00:00:00+03:00",
+      "issued": "2010-02-03T00:00:00.000+03:00",
+      "valueDateTime": "2010-03-30T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eab15d19-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2010-04-05T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eab1401d-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2010-03-31T00:00:00+03:00",
+      "issued": "2010-04-05T00:00:00.000+03:00",
+      "valueDateTime": "2010-06-23T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eab66a36-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2010-06-25T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eab65109-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2010-06-23T00:00:00+03:00",
+      "issued": "2010-06-25T00:00:00.000+03:00",
+      "valueDateTime": "2010-09-15T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eabb8aaf-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2010-09-16T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eabb6a4d-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2010-09-15T00:00:00+03:00",
+      "issued": "2010-09-16T00:00:00.000+03:00",
+      "valueDateTime": "2010-12-08T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eac0a562-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2010-12-09T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eac0893d-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2010-12-08T00:00:00+03:00",
+      "issued": "2010-12-09T00:00:00.000+03:00",
+      "valueDateTime": "2011-03-02T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eacae64f-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2011-03-02T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eacaccb3-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2011-03-01T00:00:00+03:00",
+      "issued": "2011-03-02T00:00:00.000+03:00",
+      "valueDateTime": "2011-03-29T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ead0080c-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2011-04-04T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eacfdc08-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2011-03-30T00:00:00+03:00",
+      "issued": "2011-04-04T00:00:00.000+03:00",
+      "valueDateTime": "2011-06-22T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ead65a75-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2011-06-24T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ead63ad9-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2011-06-22T00:00:00+03:00",
+      "issued": "2011-06-24T00:00:00.000+03:00",
+      "valueDateTime": "2011-09-13T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eadb60f7-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2011-09-14T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eadb447c-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2011-09-13T00:00:00+03:00",
+      "issued": "2011-09-14T00:00:00.000+03:00",
+      "valueDateTime": "2011-11-08T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eae07fba-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2011-11-11T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eae062be-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2011-11-08T00:00:00+03:00",
+      "issued": "2011-11-11T00:00:00.000+03:00",
+      "valueDateTime": "2012-01-31T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eae5a235-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2012-02-01T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eae57d60-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2012-01-31T00:00:00+03:00",
+      "issued": "2012-02-01T00:00:00.000+03:00",
+      "valueDateTime": "2012-04-24T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eaeabcfa-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2012-04-24T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eaea93a8-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2012-04-24T00:00:00+03:00",
+      "issued": "2012-04-24T00:00:00.000+03:00",
+      "valueDateTime": "2012-05-22T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eaf04594-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2012-05-23T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eaefc0a2-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2012-05-22T00:00:00+03:00",
+      "issued": "2012-05-23T00:00:00.000+03:00",
+      "valueDateTime": "2012-08-14T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eaf68358-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2012-08-15T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eaf60d33-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2012-08-14T00:00:00+03:00",
+      "issued": "2012-08-15T00:00:00.000+03:00",
+      "valueDateTime": "2012-10-09T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eafcd3d5-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2012-10-09T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eafc63b2-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2012-10-09T00:00:00+03:00",
+      "issued": "2012-10-09T00:00:00.000+03:00",
+      "valueDateTime": "2012-11-06T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb02f3a8-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2012-11-06T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb02c78a-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2012-11-06T00:00:00+03:00",
+      "issued": "2012-11-06T00:00:00.000+03:00",
+      "valueDateTime": "2012-11-20T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb09c05b-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2012-11-23T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb0933be-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2012-11-20T00:00:00+03:00",
+      "issued": "2012-11-23T00:00:00.000+03:00",
+      "valueDateTime": "2013-02-12T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb0ffcc1-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2013-02-19T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb0f84d8-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2013-02-12T00:00:00+03:00",
+      "issued": "2013-02-19T00:00:00.000+03:00",
+      "valueDateTime": "2013-04-09T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb1673e2-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2013-04-10T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb15ecf8-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2013-04-09T00:00:00+03:00",
+      "issued": "2013-04-10T00:00:00.000+03:00",
+      "valueDateTime": "2013-05-15T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb3338d4-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2013-05-17T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb1d9597-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2013-05-15T00:00:00+03:00",
+      "issued": "2013-05-17T00:00:00.000+03:00",
+      "valueDateTime": "2013-06-12T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb436d03-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2013-06-13T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb38510d-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2013-06-12T00:00:00+03:00",
+      "issued": "2013-06-13T00:00:00.000+03:00",
+      "valueDateTime": "2013-09-04T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb494bff-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2013-09-05T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb48d6e0-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2013-09-04T00:00:00+03:00",
+      "issued": "2013-09-05T00:00:00.000+03:00",
+      "valueDateTime": "2013-11-27T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb4f8302-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2013-11-29T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb4f318e-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2013-11-27T00:00:00+03:00",
+      "issued": "2013-11-29T00:00:00.000+03:00",
+      "valueDateTime": "2014-01-15T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb5617d2-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2014-01-15T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb559172-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2014-01-15T00:00:00+03:00",
+      "issued": "2014-01-15T00:00:00.000+03:00",
+      "valueDateTime": "2014-04-09T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb5c5ab6-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2014-07-08T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb5bf31c-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2014-07-02T00:00:00+03:00",
+      "issued": "2014-07-08T00:00:00.000+03:00",
+      "valueDateTime": "2014-12-19T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb6d03fc-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2014-12-18T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb6c91d6-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2014-12-17T00:00:00+03:00",
+      "issued": "2014-12-18T00:00:00.000+03:00",
+      "valueDateTime": "2015-02-11T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb73337e-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2015-02-11T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb72e07b-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-02-11T00:00:00+03:00",
+      "issued": "2015-02-11T00:00:00.000+03:00",
+      "valueDateTime": "2015-05-06T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb79977e-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2015-05-07T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb794044-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-05-05T00:00:00+03:00",
+      "issued": "2015-05-07T00:00:00.000+03:00",
+      "valueDateTime": "2015-07-28T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb8044d6-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2015-07-27T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb7fb1ea-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-07-27T00:00:00+03:00",
+      "issued": "2015-07-27T00:00:00.000+03:00",
+      "valueDateTime": "2015-10-19T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb865c55-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2015-10-19T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb85f781-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-10-19T00:00:00+03:00",
+      "issued": "2015-10-19T00:00:00.000+03:00",
+      "valueDateTime": "2016-01-18T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb985a94-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2016-01-25T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb97ccd1-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-01-25T00:00:00+03:00",
+      "issued": "2016-01-25T00:00:00.000+03:00",
+      "valueDateTime": "2016-02-22T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb9ea5c9-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2016-02-22T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eb9e2fa8-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-02-22T00:00:00+03:00",
+      "issued": "2016-02-22T00:00:00.000+03:00",
+      "valueDateTime": "2016-05-16T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eba51f8c-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2016-05-17T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eba48f92-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-05-16T00:00:00+03:00",
+      "issued": "2016-05-17T00:00:00.000+03:00",
+      "valueDateTime": "2016-08-09T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebab8262-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2016-08-12T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebaaf3b3-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-08-10T00:00:00+03:00",
+      "issued": "2016-08-12T00:00:00.000+03:00",
+      "valueDateTime": "2017-01-25T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebb1db99-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2017-01-26T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebb149d1-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-01-25T00:00:00+03:00",
+      "issued": "2017-01-26T00:00:00.000+03:00",
+      "valueDateTime": "2017-02-28T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebd993dd-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2017-03-01T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebb7b6c3-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-02-28T00:00:00+03:00",
+      "issued": "2017-03-01T00:00:00.000+03:00",
+      "valueDateTime": "2017-05-23T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebdf9780-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2017-05-24T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebdf1cb2-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-23T00:00:00+03:00",
+      "issued": "2017-05-24T00:00:00.000+03:00",
+      "valueDateTime": "2017-08-22T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebe60185-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2017-08-25T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebe57c36-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-22T00:00:00+03:00",
+      "issued": "2017-08-25T00:00:00.000+03:00",
+      "valueDateTime": "2017-11-14T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebec677b-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2017-11-14T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebebe719-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-11-14T00:00:00+03:00",
+      "issued": "2017-11-14T00:00:00.000+03:00",
+      "valueDateTime": "2018-02-07T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebf2a748-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2018-02-06T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebf237f9-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-02-06T00:00:00+03:00",
+      "issued": "2018-02-06T00:00:00.000+03:00",
+      "valueDateTime": "2018-05-02T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebf96915-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2018-05-03T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebf8a6ca-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-02T00:00:00+03:00",
+      "issued": "2018-05-03T00:00:00.000+03:00",
+      "valueDateTime": "2018-10-17T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec060975-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2018-10-18T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec05654f-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-10-17T00:00:00+03:00",
+      "issued": "2018-10-18T00:00:00.000+03:00",
+      "valueDateTime": "2019-01-23T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec12a540-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2019-01-23T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec121ae1-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-01-23T00:00:00+03:00",
+      "issued": "2019-01-23T00:00:00.000+03:00",
+      "valueDateTime": "2019-03-06T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec190eaf-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2019-03-05T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec188e65-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-03-05T00:00:00+03:00",
+      "issued": "2019-03-05T00:00:00.000+03:00",
+      "valueDateTime": "2019-03-18T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec1e1d9b-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2019-03-19T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec1d9ed5-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-03-18T00:00:00+03:00",
+      "issued": "2019-03-19T00:00:00.000+03:00",
+      "valueDateTime": "2019-06-03T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec2869ef-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2019-06-04T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec27d9a7-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-06-03T00:00:00+03:00",
+      "issued": "2019-06-04T00:00:00.000+03:00",
+      "valueDateTime": "2019-07-01T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec2da0c5-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2019-07-01T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec2cf9ef-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-07-01T00:00:00+03:00",
+      "issued": "2019-07-01T00:00:00.000+03:00",
+      "valueDateTime": "2019-09-23T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec37a702-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2019-12-16T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec371fe2-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-12-16T00:00:00+03:00",
+      "issued": "2019-12-16T00:00:00.000+03:00",
+      "valueDateTime": "2020-06-03T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec41917b-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2020-06-03T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec41598c-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-06-03T00:00:00+03:00",
+      "issued": "2020-06-03T00:00:00.000+03:00",
+      "valueDateTime": "2020-09-02T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec470991-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2020-09-02T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec4671e2-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-09-02T00:00:00+03:00",
+      "issued": "2020-09-02T00:00:00.000+03:00",
+      "valueDateTime": "2021-02-16T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec57b831-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2021-02-15T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec55c884-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-02-15T00:00:00+03:00",
+      "issued": "2021-02-15T00:00:00.000+03:00",
+      "valueDateTime": "2021-05-10T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec5c9b5d-0767-11ec-a002-14187764a3d6",
+      "meta": {
+        "lastUpdated": "2021-05-11T00:00:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ec5c1401-0767-11ec-a002-14187764a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-05-10T00:00:00+03:00",
+      "issued": "2021-05-11T00:00:00.000+03:00",
+      "valueDateTime": "2021-10-25T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a570025a-8d08-4ecb-af2e-9c194db0799e",
+      "meta": {
+        "lastUpdated": "2021-10-25T12:13:17.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebc95b35-300d-4304-894e-92712b547899",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-10-25T08:23:46+03:00",
+      "issued": "2021-10-25T12:13:17.000+03:00",
+      "valueDateTime": "2022-04-25T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "070bcf88-e963-4c0b-9bae-dffa1fa118c6",
+      "meta": {
+        "lastUpdated": "2022-04-25T14:59:42.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/a05c24f2-b176-49d2-a33f-0efedd635fa0",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-04-25T09:21:00+03:00",
+      "issued": "2022-04-25T14:59:42.000+03:00",
+      "valueDateTime": "2022-10-31T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8fbfa701-4e8e-4e9a-9065-f4723eaad768",
+      "meta": {
+        "lastUpdated": "2022-10-31T11:01:33.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/4b6133bb-bfcb-4c22-a0ff-3a7961d82afb",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-10-31T09:15:14+03:00",
+      "issued": "2022-10-31T11:01:33.000+03:00",
+      "valueDateTime": "2023-05-02T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "923138cc-3f42-4620-8fbe-f08396c16a12",
+      "meta": {
+        "lastUpdated": "2023-05-03T10:25:00.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/eab07cbf-daab-4f46-b166-52267f66119e",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-05-03T09:12:41+03:00",
+      "issued": "2023-05-03T10:25:00.000+03:00",
+      "valueDateTime": "2023-05-31T00:00:00+03:00"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ac590ec7-eefb-4b1c-8f6f-596e6cc4aba8",
+      "meta": {
+        "lastUpdated": "2023-05-31T11:31:47.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "161555",
+          "display": "Reason for discontinuation of program"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/f89fa4fd-0700-11ec-a002-14187764a3d6",
+        "type": "Patient",
+        "display": "Cosmas Cosmas Cosmas (OpenMRS ID: MGMGF3)"
+      },
+      "encounter": {
+        "reference": "Encounter/19607aed-4662-4cc8-bab0-f096d7486498",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-05-31T11:30:14+03:00",
+      "issued": "2023-05-31T11:31:47.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Transferred out"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "159492",
+          "display": "Transferred out"
+        } ],
+        "text": "Transferred out"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  } ]
+}

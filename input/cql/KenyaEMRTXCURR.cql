@@ -31,7 +31,6 @@ Note that the CQL is using the CIEL codes only, even if others are provided.
 
 /*
 Devs:
-'exists' keyword evaluates result as boolean or null (unknown)
 From the CQL docs: we use the equivalent operator (~) rather than equality (=). 
 For codes, equivalence tests only that the code system and code are the same, but does not check the code system version.
 */
@@ -43,6 +42,7 @@ define "PLHIV Observation":
     and (Obs.effective.value during "Measurement Period" or Obs.effective before "Measurement Period")
 
 
+// 'exists' keyword evaluates result as boolean or null (unknown)
 define "PLHIV Boolean": exists "PLHIV Observation"
 
 
@@ -57,16 +57,28 @@ Deceased is unknown when not indicated on Patient.deceased.
 If Patient.deceased has a value, then check whether deceased before end of period.
 Null (unknown) is returned if the field doesn't exist (patient assumed to be alive in source.)
 
+In FHIR, deceased[x] is a choice type, of either boolean or datetime.
+It also has a cardinality of 0..1. meaning that deceasedBoolean and deceasedDateTime cannot coexist.
+There can only be one deceased[x] element.
+If true is used, there's no way to know from that field when the patient died. DateTime is better for accuracy.
+
 Todo: Confirm this works as expected for exclusion calculations
 true -> should be excluded, if they are in the initial-population
 */
 
+// This expression allows deceasedBoolean which has no datetime.
 define "Deceased":
   Patient.deceased is not null 
   and (Patient.deceased is true or Patient.deceased before end of "Measurement Period")
 
 
-define "Measure Population Exclusion": "Deceased"
+// This expression requires patients to be noted with datetime on Patient.deceased.
+define "Deceased DateTime Only":
+  Patient.deceased is not null 
+  and Patient.deceased before end of "Measurement Period"
+
+
+define "Measure Population Exclusion": "Deceased DateTime Only"
 
 
 // Measure Population
@@ -94,6 +106,12 @@ define DrugStop: [Observation: ATRDrugStop].single().value as DateTime
 define DrugInterval: Interval[DrugStart, DrugStop]
 */
 
+// there may be original and current regimen
+// 'current drugs' concept captures regimen changes
+// more of a history of regimen of original and most current
+// bundle includes original regimen
+// clinical visits:
+// 
 
 define "DrugStart":
   Last(["Observation": Cx."CURRENT DRUGS USED"] Obs
@@ -113,8 +131,7 @@ define "DrugStop":
 define "DrugInterval": Interval[DrugStart, DrugStop]
 
 
-define "Overlaps Measurement Period":
-  "DrugInterval" overlaps "Measurement Period"
+define "Overlaps Measurement Period": "DrugInterval" overlaps "Measurement Period"
 
 
 define "Last Return": "Overlaps Measurement Period"
