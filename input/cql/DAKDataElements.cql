@@ -92,12 +92,10 @@ define "On ART":
           where Interval[FHIRHelpers.ToDateTime(C.onset as FHIR.dateTime), FHIRHelpers.ToDateTime(C.abatement as FHIR.dateTime)] overlaps "Measurement Period"
       )
     )
-    and if exists( "Stopped ART Observation" ) then "Date of Last Stopped ART" before "Date of Last Evidence of ART" else true
   )
   or 
   ( if exists( "HIV Transfer Observation" )
     then "Date of Last HIV Transfer" during "Measurement Period"
-            and if exists ( "Stopped ART Observation" ) then "Date of Last Stopped ART" before "Date of Last HIV Transfer" else true
     else false
   )
   or
@@ -105,6 +103,11 @@ define "On ART":
     "Most Recent Dispensed Observation Finish Date" after "Measurement Period"
   )
 
+define "Stopped ART":
+  if exists( "Stopped ART Observation" ) 
+  then "Date of Last Stopped ART" after 
+    Max( { "Date of Last Evidence of ART", "Date of Last HIV Transfer", "Most Recent Dispensed Observation Finish Date" } )
+  else false
 
 define "Dispensed Observations":
   [Observation] O

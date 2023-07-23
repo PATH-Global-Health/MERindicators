@@ -31,7 +31,7 @@ define "Measure Population":
   "Initial Population"
 
 define "Measure Population Exclusion":
-  PatientData."Deceased"
+  PatientData."Deceased" or PatientData."Stopped ART"
 
 define function "Measure Observation" (Patient "Patient"):
   1
