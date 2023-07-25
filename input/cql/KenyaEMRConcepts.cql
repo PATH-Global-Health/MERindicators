@@ -49,7 +49,8 @@ code "HIV Negative": '165815009' from "SNOMED-CT" display 'HIV Negative'
 code "History of antiretroviral therapy (situation)": '432101000124108' from "OpenHIE" display 'History of antiretroviral therapy (situation)'
 code "Institutional entry point HIV treatment": '45252-4' from "LOINC" display 'Institutional entry point HIV treatment'
 // code "New on ART": 'new-on-art' from "PMTCT ART Status Codes" display 'New on ART'
-
+// need to change to valueset
+code "Reason for discontinuation of program": '161555' from "CIEL" display 'Reason for discontinuation of program'
 
 // valuesets
 valueset AgeRangesTXCURR: 'https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR'

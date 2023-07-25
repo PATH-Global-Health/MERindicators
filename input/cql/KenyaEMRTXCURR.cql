@@ -6,8 +6,8 @@ using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
 include FHIRCommon version '4.0.1' called FC
-include MERConcepts called Cx
-include MERStratifiers called MERStratifiers
+include KenyaEMRConcepts called Cx
+include KenyaEMRStratifiers called Stratifiers
 
 
 // Provide a default interval or period-based tests will fail when evaluating CQL against test cases
@@ -21,7 +21,6 @@ context Patient
 
 
 /*
-
 On ART is any patient with a regimen history as below:
 
 Patients started on ART drugs (participating in program)
@@ -41,7 +40,6 @@ AND
 30 days (one month) have not passed since the last missed appointment. (Q: How is this coded?)
 
 Exclude those who interrupted treatment for any reason, etc, etc. "Measure Population Exclusion"
-
 */
 
 
@@ -229,8 +227,18 @@ define "Measure Population":
 // Exclude those who interrupted treatment for any reason, etc, etc. "Measure Population Exclusion"
 
 
+// Todo: double check
+// "effectiveDateTime": "2023-05-31T11:30:14+03:00",
+define "Discontinuation":
+  ["Observation": Cx."Reason for discontinuation of program"] Obs
+  where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
+
+
+define "Discontinuation Boolean": exists "Discontinuation"
+
+
 // Todo
-define "Measure Population Exclusion": false
+define "Measure Population Exclusion": "Discontinuation Boolean"
 
 
 
@@ -253,7 +261,7 @@ define "OpenMRS Location":
 // todo: debugging needed on location
 
 define "Stratification": 
-  MERStratifiers."Age Group/Sex/Location TXCURR"
+  Stratifiers."Age Group/Sex/Location TXCURR"
 
 
-define "Stratifiers": "Stratification"
+// define "Stratifiers": "Stratification"

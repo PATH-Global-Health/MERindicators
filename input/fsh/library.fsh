@@ -54,60 +54,46 @@ Description: "Debug"
 * content.id = "ig-loader-Debug.cql"
 
 
-Instance: MERConcepts
+Instance: KenyaEMRConcepts
 InstanceOf: Library
-Title: "MERConcepts"
-Description: "MERConcepts"
+Title: "KenyaEMRConcepts"
+Description: "KenyaEMRConcepts"
 * insert lib-common
-* name = "MERConcepts"
-* title = "MERConcepts"
-* description = "MERConcepts"
+* name = "KenyaEMRConcepts"
+* title = "KenyaEMRConcepts"
+* description = "KenyaEMRConcepts"
 * version = "0.1.0"
-* url = "https://path-global-health.github.io/MERindicators/Library/MERConcepts"
-// * identifier.value = "MERConcepts"
-* content.id = "ig-loader-MERConcepts.cql"
+* url = "https://path-global-health.github.io/MERindicators/Library/KenyaEMRConcepts"
+// * identifier.value = "KenyaEMRConcepts"
+* content.id = "ig-loader-KenyaEMRConcepts.cql"
 
 
-Instance: MERDataElements
+// Instance: MERDataElements
+// InstanceOf: Library
+// Title: "MERDataElements"
+// Description: "MERDataElements"
+// * insert lib-common
+// * name = "MERDataElements"
+// * title = "MERDataElements"
+// * description = "MERDataElements"
+// * version = "0.1.0"
+// * url = "https://path-global-health.github.io/MERindicators/Library/MERDataElements"
+// // * identifier.value = "MERDataElements"
+// * content.id = "ig-loader-MERDataElements.cql"
+
+
+Instance: KenyaEMRStratifiers
 InstanceOf: Library
-Title: "MERDataElements"
-Description: "MERDataElements"
+Title: "KenyaEMRStratifiers"
+Description: "KenyaEMRStratifiers"
 * insert lib-common
-* name = "MERDataElements"
-* title = "MERDataElements"
-* description = "MERDataElements"
+* name = "KenyaEMRStratifiers"
+* title = "KenyaEMRStratifiers"
+* description = "KenyaEMRStratifiers"
 * version = "0.1.0"
-* url = "https://path-global-health.github.io/MERindicators/Library/MERDataElements"
-// * identifier.value = "MERDataElements"
-* content.id = "ig-loader-MERDataElements.cql"
-
-
-Instance: MERStratifiers
-InstanceOf: Library
-Title: "MERStratifiers"
-Description: "MERStratifiers"
-* insert lib-common
-* name = "MERStratifiers"
-* title = "MERStratifiers"
-* description = "MERStratifiers"
-* version = "0.1.0"
-* url = "https://path-global-health.github.io/MERindicators/Library/MERStratifiers"
-// * identifier.value = "MERStratifiers"
-* content.id = "ig-loader-MERStratifiers.cql"
-
-
-Instance: MERTXCURR
-InstanceOf: Library
-Title: "MERTXCURR"
-Description: "MERTXCURR"
-* insert lib-common
-* name = "MERTXCURR"
-* title = "MERTXCURR"
-* description = "MERTXCURR"
-* version = "0.1.0"
-* url = "https://path-global-health.github.io/MERindicators/Library/MERTXCURR"
-// * identifier.value = "MERTXCURR"
-* content.id = "ig-loader-MERTXCURR.cql"
+* url = "https://path-global-health.github.io/MERindicators/Library/KenyaEMRStratifiers"
+// * identifier.value = "KenyaEMRStratifiers"
+* content.id = "ig-loader-KenyaEMRStratifiers.cql"
 
 
 Instance: KenyaEMRTXCURR
@@ -122,3 +108,17 @@ Description: "KenyaEMRTXCURR"
 * url = "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"
 // * identifier.value = "KenyaEMRTXCURR"
 * content.id = "ig-loader-KenyaEMRTXCURR.cql"
+
+
+// Instance: KenyaEMRTXCURR
+// InstanceOf: Library
+// Title: "KenyaEMRTXCURR"
+// Description: "KenyaEMRTXCURR"
+// * insert lib-common
+// * name = "KenyaEMRTXCURR"
+// * title = "KenyaEMRTXCURR"
+// * description = "KenyaEMRTXCURR"
+// * version = "0.1.0"
+// * url = "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"
+// // * identifier.value = "KenyaEMRTXCURR"
+// * content.id = "ig-loader-KenyaEMRTXCURR.cql"
