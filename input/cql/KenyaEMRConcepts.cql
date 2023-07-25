@@ -1,4 +1,4 @@
-library MERConcepts version '0.1.0'
+library KenyaEMRConcepts version '0.1.0'
 
 using FHIR version '4.0.1'
 
@@ -62,3 +62,4 @@ valueset "Viral Load Test": 'https://path-global-health.github.io/MERindicators/
 // valueset "Synthea HIV Medications": 'https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications'
 valueset "ART Medications": 'https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications'
 valueset "CIELHIVMedications": 'https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications'
+// valueset "EnrollmentMethods": 

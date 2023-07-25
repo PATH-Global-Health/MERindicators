@@ -17,7 +17,7 @@ Description: "MERTXCURR"
 * url = "https://path-global-health.github.io/MERindicators/Measure/MERTXCURR"
 * identifier[0].value = "MERTXCURR"
 * scoring = $measure-scoring#continuous-variable // not cohort
-* library[+] = Canonical(TXCURR)
+* library[+] = Canonical(MERTXCURR)
 * group[+]
   * population[+]
     * description = "Initial Population"

@@ -110,7 +110,7 @@ Description: "1"
 * ^identifier.type.text = "Accession ID"
 * ^identifier.type = $0203#ACSN "Accession ID"
 * #159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "HBTC"
-* #160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "VCT Site"
+* #160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "VCT Site" // Voluntary counseling and testing program
 * #159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "MCH"
 * #160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "IPD-Adult"
 * #160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "IPD-Child"
@@ -119,6 +119,7 @@ Description: "1"
 * #162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "CCC"
 * #160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "Self Test"
 * #5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "Other(eg STI)"
+
 
 
 // placeholder, can be different in implementations
@@ -330,7 +331,7 @@ Description: "CIELHIVMedications"
 
 
 // https://fhir.staging.openconceptlab.org/orgs/Kenya_SMART_Guidelines/ValueSet/enrollment_methods/
-Alias: $enrollment_methods = https://kenyaemr.ke/MERindicators/CodeSystem/enrollment_methods
+// Alias: $enrollment_methods = https://kenyaemr.ke/MERindicators/CodeSystem/enrollment_methods
 Alias: $0203 = http://hl7.org/fhir/v2/0203
 
 ValueSet: EnrollmentMethodsforHIVProgram

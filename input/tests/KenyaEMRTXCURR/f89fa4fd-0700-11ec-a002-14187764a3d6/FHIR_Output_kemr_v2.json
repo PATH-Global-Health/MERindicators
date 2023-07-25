@@ -1,5 +1,10 @@
 {
   "resourceType": "Bundle",
+  "id": "bundle-transaction",
+  "meta": {
+    "lastUpdated": "2014-08-18T01:43:30Z"
+  },
+  "type": "transaction",
   "entry": [ {
     "resource": {
       "resourceType": "Patient",

@@ -96,18 +96,18 @@ Description: "MERStratifiers"
 * content.id = "ig-loader-MERStratifiers.cql"
 
 
-Instance: TXCURR
+Instance: MERTXCURR
 InstanceOf: Library
-Title: "TXCURR"
-Description: "TXCURR"
+Title: "MERTXCURR"
+Description: "MERTXCURR"
 * insert lib-common
-* name = "TXCURR"
-* title = "TXCURR"
-* description = "TXCURR"
+* name = "MERTXCURR"
+* title = "MERTXCURR"
+* description = "MERTXCURR"
 * version = "0.1.0"
-* url = "https://path-global-health.github.io/MERindicators/Library/TXCURR"
-// * identifier.value = "TXCURR"
-* content.id = "ig-loader-TXCURR.cql"
+* url = "https://path-global-health.github.io/MERindicators/Library/MERTXCURR"
+// * identifier.value = "MERTXCURR"
+* content.id = "ig-loader-MERTXCURR.cql"
 
 
 Instance: KenyaEMRTXCURR
