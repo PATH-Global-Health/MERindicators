@@ -33,11 +33,8 @@ period and beyond
 
 PLUS
 
-Patients who missed their appointment (Q: How do we know this?)
-
-AND
-
-30 days (one month) have not passed since the last missed appointment. (Q: How is this coded?)
+Patients who missed their appointment AND 30 days (one month) have not passed since the last missed appointment.
+[30 days since last missed appointment]
 
 Exclude those who interrupted treatment for any reason, etc, etc. "Measure Population Exclusion"
 */
@@ -57,13 +54,13 @@ If true is used, there's no way to know from that field when the patient died. D
 // This expression allows deceasedBoolean which has no datetime.
 define "Deceased Boolean":
   Patient.deceased is not null 
-  and (Patient.deceased is true or Patient.deceased before end of "Measurement Period")
+  and (Patient.deceased is true or Patient.deceased on or before end of "Measurement Period")
 
 
 // This expression requires patients to have datetime on Patient.deceased (more accurate).
 define "Deceased DateTime Only":
   Patient.deceased is not null 
-  and Patient.deceased before end of "Measurement Period"
+  and Patient.deceased on or before end of "Measurement Period"
 
 
 /*
@@ -101,6 +98,7 @@ define "Initial Population":
 
 // Patients started on ART drugs (participating in program)
 // who made a clinic visit during the reporting period (Q: Any type?)
+// Todo: just clinic visits associated with HIV, need a new VS/code for this
 
 
 // "RETURN VISIT DATE"
@@ -131,6 +129,7 @@ define "Last Return Visit During Period":
 define "Drugs Visit During Period":
   ["Observation": Cx."CURRENT DRUGS USED"] Obs
     where (Obs.effective during "Measurement Period")
+    // Todo:
     // this is needed but will not evaluate if system is missing
     // and singleton from {Obs.value.coding in Cx."CIELHIVMedications"}
 
@@ -154,8 +153,6 @@ define "Drugs Effective":
 
     
 
-// Patient who made a clinic visit in the past and were given medicine to last the reporting period and beyond
-
 /*
 Additional notes:
 The assumption is that a patient is considered to be on a particular regimen until there is a change, substitution, or stop events.
@@ -171,6 +168,8 @@ bundle includes original regimen
 Fix coming: The code in KenyaEMR doesn't include a system identifier. CQL requires this. 
 */
 
+// Patient who made a clinic visit in the past and were given medicine to last the reporting period and beyond
+
 /*
 Expressions give that drug start and stop, then use to create an interval
 last to get max or if multiple use aggregate clause of a query to sort them and turn into intervals by taking the next
@@ -179,9 +178,18 @@ define DrugStop: [Observation: ATRDrugStop].single().value as DateTime
 define DrugInterval: Interval[DrugStart, DrugStop]
 */
 
+
+// Revisit this. This may work for other systems.
+// Indicate whether patient started on drugs or not.
+// enroll in HIV, but not started on drugs yet
+// current drugs used: this captures that they are on art, switches drugs, substitutions
+// current drugs used does not capture dispense
+// appointment captures when drugs scrip ends
+
 define "DrugStart":
   Last(["Observation": Cx."CURRENT DRUGS USED"] Obs
     where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
+    // todo:
     // this is needed but will not evaluate if system is missing
     // and singleton from Obs.value.coding in Cx."CIELHIVMedications" 
     return Obs.effective.value
