@@ -1,0 +1,2803 @@
+{
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "797dffdb-e884-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2023-08-01T12:31:49.000+03:00"
+        },
+        "identifier": [
+          {
+            "id": "79857bfb-e884-11ea-87c2-00155d017200",
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                "valueReference": {
+                  "reference": "Location/f4934663-bf3a-4778-81b8-4c1e79398069",
+                  "type": "Location",
+                  "display": "Machakos Level 5 Hospital"
+                }
+              }
+            ],
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+                }
+              ],
+              "text": "OpenMRS ID"
+            },
+            "value": "MGK9XC"
+          },
+          {
+            "id": "797e409c-e884-11ea-87c2-00155d017200",
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                "valueReference": {
+                  "reference": "Location/f4934663-bf3a-4778-81b8-4c1e79398069",
+                  "type": "Location",
+                  "display": "Machakos Level 5 Hospital"
+                }
+              }
+            ],
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+                }
+              ],
+              "text": "Unique Patient Number"
+            },
+            "value": "1243809218"
+          },
+          {
+            "id": "2678e9f4-e69c-41f2-8fee-1ceae403eef6",
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                "valueReference": {
+                  "reference": "Location/f4934663-bf3a-4778-81b8-4c1e79398069",
+                  "type": "Location",
+                  "display": "Machakos Level 5 Hospital"
+                }
+              }
+            ],
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+                }
+              ],
+              "text": "National ID"
+            },
+            "value": "0070738"
+          },
+          {
+            "id": "eeb481bc-039b-4e12-a0da-d46040b7e4b9",
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                "valueReference": {
+                  "reference": "Location/f4934663-bf3a-4778-81b8-4c1e79398069",
+                  "type": "Location",
+                  "display": "Machakos Level 5 Hospital"
+                }
+              }
+            ],
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+                }
+              ],
+              "text": "National Unique patient identifier"
+            },
+            "value": "MOH76V6XLQ13Y"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "id": "797e109b-e884-11ea-87c2-00155d017200",
+            "family": "MUKEI  JOHN",
+            "given": [
+              "MUKEI  JOHN",
+              "MUKEI  JOHN"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1954-01-02",
+        "deceasedDateTime": "2023-07-10T00:00:00+03:00",
+        "address": [
+          {
+            "id": "797e23d5-e884-11ea-87c2-00155d017200",
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/address",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address#address1",
+                    "valueString": "2494 address1"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address#address2",
+                    "valueString": "2494 address2"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address#address4",
+                    "valueString": "Machakos Central"
+                  }
+                ]
+              }
+            ],
+            "use": "home",
+            "city": "TOWNSHIP",
+            "district": "Machakos",
+            "state": "MachakosKola"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "886b80ce-e888-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-06-21T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "Method of enrollment"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "160540",
+              "display": "Method of enrollment"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "45252-4",
+              "display": "Method of enrollment"
+            }
+          ],
+          "text": "Method of enrollment"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/886b70e4-e888-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2012-11-23T00:00:00+03:00",
+        "issued": "2013-06-21T00:00:00.000+03:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "Comprehensive care center"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "162050",
+              "display": "Comprehensive care center"
+            }
+          ],
+          "text": "Comprehensive care center"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "de28fc67-8e9d-412b-b3a4-de87f837a8e0",
+        "meta": {
+          "lastUpdated": "2021-03-24T12:11:38.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "CURRENT DRUGS USED"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "1193",
+              "display": "CURRENT DRUGS USED"
+            }
+          ],
+          "text": "CURRENT DRUGS USED"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/4e3f27bc-f95e-47f3-82f1-7d11134ee750",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-02-25T00:00:00+03:00",
+        "issued": "2021-03-24T12:11:38.000+03:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "Lamivudine / Efavirenz / Tenofovir"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "164505",
+              "display": "Lamivudine / Efavirenz / Tenofovir"
+            }
+          ],
+          "text": "Lamivudine / Efavirenz / Tenofovir"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb0ecaf-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-06-21T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6ba7f292-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2012-11-23T00:00:00+03:00",
+        "issued": "2013-06-21T00:00:00.000+03:00",
+        "valueDateTime": "2013-01-25T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb1635e-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-06-21T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb13825-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2013-01-25T00:00:00+03:00",
+        "issued": "2013-06-21T00:00:00.000+03:00",
+        "valueDateTime": "2013-03-18T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb1c964-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-06-21T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb19e07-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2013-03-19T00:00:00+03:00",
+        "issued": "2013-06-21T00:00:00.000+03:00",
+        "valueDateTime": "2013-05-21T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb284e7-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-06-21T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb25ad6-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2013-05-15T00:00:00+03:00",
+        "issued": "2013-06-21T00:00:00.000+03:00",
+        "valueDateTime": "2013-05-20T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb2e659-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-06-21T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb2bbb2-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2013-05-21T00:00:00+03:00",
+        "issued": "2013-06-21T00:00:00.000+03:00",
+        "valueDateTime": "2013-06-06T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb34a33-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-06-21T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb32009-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2013-06-06T00:00:00+03:00",
+        "issued": "2013-06-21T00:00:00.000+03:00",
+        "valueDateTime": "2013-07-09T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb3ab8d-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-07-11T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb3810d-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2013-07-09T00:00:00+03:00",
+        "issued": "2013-07-11T00:00:00.000+03:00",
+        "valueDateTime": "2013-10-08T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb412d2-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-10-10T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb3e9a0-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2013-10-10T00:00:00+03:00",
+        "issued": "2013-10-10T00:00:00.000+03:00",
+        "valueDateTime": "2013-11-18T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb4fb46-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2013-11-18T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb4cd43-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2013-11-18T00:00:00+03:00",
+        "issued": "2013-11-18T00:00:00.000+03:00",
+        "valueDateTime": "2014-01-20T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb5791f-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2014-02-12T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb53f00-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2014-02-12T00:00:00+03:00",
+        "issued": "2014-02-12T00:00:00.000+03:00",
+        "valueDateTime": "2014-06-10T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb74575-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2014-03-26T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb71605-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2014-03-26T00:00:00+03:00",
+        "issued": "2014-03-26T00:00:00.000+03:00",
+        "valueDateTime": "2014-05-14T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb7aba0-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2014-05-15T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb78010-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2014-05-15T00:00:00+03:00",
+        "issued": "2014-05-15T00:00:00.000+03:00",
+        "valueDateTime": "2014-05-29T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb80f72-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2014-05-29T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb7e561-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2014-05-29T00:00:00+03:00",
+        "issued": "2014-05-29T00:00:00.000+03:00",
+        "valueDateTime": "2014-07-28T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb877c0-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-03-20T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb84d6b-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2014-08-11T00:00:00+03:00",
+        "issued": "2015-03-20T00:00:00.000+03:00",
+        "valueDateTime": "2014-08-26T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb8d9ac-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-03-20T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb8aff4-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2014-08-21T00:00:00+03:00",
+        "issued": "2015-03-20T00:00:00.000+03:00",
+        "valueDateTime": "2014-10-15T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb93ab6-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-03-20T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb9110c-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2014-10-09T00:00:00+03:00",
+        "issued": "2015-03-20T00:00:00.000+03:00",
+        "valueDateTime": "2014-12-10T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bb99f9e-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-03-20T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb9716c-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2014-11-24T00:00:00+03:00",
+        "issued": "2015-03-20T00:00:00.000+03:00",
+        "valueDateTime": "2015-01-05T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bc2e47f-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-03-20T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bb9d8a1-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-01-29T00:00:00+03:00",
+        "issued": "2015-03-20T00:00:00.000+03:00",
+        "valueDateTime": "2015-02-25T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bccc902-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-03-20T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bc32d70-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-02-25T00:00:00+03:00",
+        "issued": "2015-03-20T00:00:00.000+03:00",
+        "valueDateTime": "2015-03-11T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bdb1aef-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-03-20T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bdaeb22-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-03-11T00:00:00+03:00",
+        "issued": "2015-03-20T00:00:00.000+03:00",
+        "valueDateTime": "2015-04-08T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6be7db47-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-04-09T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6be7abb4-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-04-08T00:00:00+03:00",
+        "issued": "2015-04-09T00:00:00.000+03:00",
+        "valueDateTime": "2015-06-03T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6be840d7-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-06-02T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6be81645-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-05-29T00:00:00+03:00",
+        "issued": "2015-06-02T00:00:00.000+03:00",
+        "valueDateTime": "2015-06-03T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6be8a1bf-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-06-04T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6be87844-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-06-03T00:00:00+03:00",
+        "issued": "2015-06-04T00:00:00.000+03:00",
+        "valueDateTime": "2015-08-26T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6be902db-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-08-10T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6be8d960-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-08-10T00:00:00+03:00",
+        "issued": "2015-08-10T00:00:00.000+03:00",
+        "valueDateTime": "2015-11-02T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6be9747e-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2015-11-09T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6be939aa-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2015-11-09T00:00:00+03:00",
+        "issued": "2015-11-09T00:00:00.000+03:00",
+        "valueDateTime": "2016-02-01T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6be9f08f-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2016-01-15T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6be9bfc8-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2016-01-14T00:00:00+03:00",
+        "issued": "2016-01-15T00:00:00.000+03:00",
+        "valueDateTime": "2016-04-06T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bea53a9-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2016-04-06T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bea29ca-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2016-04-06T00:00:00+03:00",
+        "issued": "2016-04-06T00:00:00.000+03:00",
+        "valueDateTime": "2016-06-29T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6beabc8e-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2016-06-29T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bea91fa-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2016-06-29T00:00:00+03:00",
+        "issued": "2016-06-29T00:00:00.000+03:00",
+        "valueDateTime": "2016-09-21T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6beb2182-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2016-09-05T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6beaf631-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2016-09-05T00:00:00+03:00",
+        "issued": "2016-09-05T00:00:00.000+03:00",
+        "valueDateTime": "2016-11-28T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6beb98d7-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2016-11-08T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6beb6679-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2016-11-07T00:00:00+03:00",
+        "issued": "2016-11-08T00:00:00.000+03:00",
+        "valueDateTime": "2016-11-28T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bec049f-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2016-11-16T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bebd90a-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2016-11-15T00:00:00+03:00",
+        "issued": "2016-11-16T00:00:00.000+03:00",
+        "valueDateTime": "2017-02-21T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf56736-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2017-02-27T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bedc680-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2017-02-22T00:00:00+03:00",
+        "issued": "2017-02-27T00:00:00.000+03:00",
+        "valueDateTime": "2017-05-24T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf5f158-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2017-03-09T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf5beea-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2017-03-09T00:00:00+03:00",
+        "issued": "2017-03-09T00:00:00.000+03:00",
+        "valueDateTime": "2017-05-24T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf65831-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2017-05-27T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf62d89-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2017-05-24T00:00:00+03:00",
+        "issued": "2017-05-27T00:00:00.000+03:00",
+        "valueDateTime": "2017-07-19T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf6baaf-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2017-07-04T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf69033-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2017-07-03T00:00:00+03:00",
+        "issued": "2017-07-04T00:00:00.000+03:00",
+        "valueDateTime": "2017-10-10T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf71be2-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2017-10-10T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf6f1f7-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2017-10-06T00:00:00+03:00",
+        "issued": "2017-10-10T00:00:00.000+03:00",
+        "valueDateTime": "2018-01-24T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf77ceb-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2018-01-25T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf75344-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2018-01-24T00:00:00+03:00",
+        "issued": "2018-01-25T00:00:00.000+03:00",
+        "valueDateTime": "2018-04-24T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf7df72-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2018-05-23T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf7b3ab-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2018-05-17T00:00:00+03:00",
+        "issued": "2018-05-23T00:00:00.000+03:00",
+        "valueDateTime": "2018-06-18T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf8af00-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2018-06-21T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf8272d-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2018-06-18T00:00:00+03:00",
+        "issued": "2018-06-21T00:00:00.000+03:00",
+        "valueDateTime": "2018-09-18T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf92ac6-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2018-08-31T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf8f4fa-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2018-08-30T00:00:00+03:00",
+        "issued": "2018-08-31T00:00:00.000+03:00",
+        "valueDateTime": "2018-10-08T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bf9b256-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2018-10-22T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf969ce-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2018-10-22T00:00:00+03:00",
+        "issued": "2018-10-22T00:00:00.000+03:00",
+        "valueDateTime": "2018-11-21T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bfa5327-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2018-11-29T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bf9f400-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2018-11-29T00:00:00+03:00",
+        "issued": "2018-11-29T00:00:00.000+03:00",
+        "valueDateTime": "2018-12-17T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bfedee9-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2018-12-07T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bfe6bed-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2018-12-05T00:00:00+03:00",
+        "issued": "2018-12-07T00:00:00.000+03:00",
+        "valueDateTime": "2019-01-28T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6bff99f7-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2019-01-28T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bff22be-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2019-01-28T00:00:00+03:00",
+        "issued": "2019-01-28T00:00:00.000+03:00",
+        "valueDateTime": "2019-03-31T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6c0024de-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2019-03-26T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6bffdaf8-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2019-03-26T00:00:00+03:00",
+        "issued": "2019-03-26T00:00:00.000+03:00",
+        "valueDateTime": "2019-04-25T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6c00ea5b-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2019-04-29T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6c00632d-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2019-04-29T00:00:00+03:00",
+        "issued": "2019-04-29T00:00:00.000+03:00",
+        "valueDateTime": "2019-06-07T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6c01ad26-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2019-06-07T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6c012bdf-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2019-06-07T00:00:00+03:00",
+        "issued": "2019-06-07T00:00:00.000+03:00",
+        "valueDateTime": "2019-07-12T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6c02510e-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2019-07-10T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6c01f011-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2019-07-10T00:00:00+03:00",
+        "issued": "2019-07-10T00:00:00.000+03:00",
+        "valueDateTime": "2019-10-17T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6c02e43e-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2019-10-16T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6c028fd2-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2019-10-16T00:00:00+03:00",
+        "issued": "2019-10-16T00:00:00.000+03:00",
+        "valueDateTime": "2020-02-05T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6c0394fe-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2020-02-04T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6c03226b-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2020-02-04T00:00:00+03:00",
+        "issued": "2020-02-04T00:00:00.000+03:00",
+        "valueDateTime": "2020-05-05T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6c0432af-e88c-11ea-87c2-00155d017200",
+        "meta": {
+          "lastUpdated": "2020-05-04T00:00:00.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/6c03d509-e88c-11ea-87c2-00155d017200",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2020-05-04T00:00:00+03:00",
+        "issued": "2020-05-04T00:00:00.000+03:00",
+        "valueDateTime": "2020-11-02T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "be76470f-f561-483d-b421-c7dda1ec1dd2",
+        "meta": {
+          "lastUpdated": "2020-11-05T15:27:16.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/17a4d8fc-a0c1-4635-a30a-e9de516eeccf",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2020-11-05T15:10:21+03:00",
+        "issued": "2020-11-05T15:27:16.000+03:00",
+        "valueDateTime": "2021-02-03T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "27a84024-430f-4113-826c-8cc4ef2a97db",
+        "meta": {
+          "lastUpdated": "2021-01-20T11:32:58.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/d5945559-42d5-4655-9111-914a5134fc3c",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2021-01-20T11:19:32+03:00",
+        "issued": "2021-01-20T11:32:58.000+03:00",
+        "valueDateTime": "2021-05-19T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "812ab418-e964-4c5b-a11f-6214e632cb90",
+        "meta": {
+          "lastUpdated": "2021-05-26T12:24:36.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/7bac7ec8-c8c0-4929-8830-c76d2ca86603",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2021-05-26T12:09:47+03:00",
+        "issued": "2021-05-26T12:24:36.000+03:00",
+        "valueDateTime": "2021-08-25T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "af5872d2-19bc-4f5a-817d-3d896a686ab3",
+        "meta": {
+          "lastUpdated": "2021-08-30T11:26:57.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/f3863b6c-859e-4c05-9c3c-6401109a0226",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2021-08-30T11:10:43+03:00",
+        "issued": "2021-08-30T11:26:57.000+03:00",
+        "valueDateTime": "2021-11-29T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f5f84114-71fe-475f-bc8f-a5d77dbfb215",
+        "meta": {
+          "lastUpdated": "2021-12-06T11:43:40.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/33c64e2f-e365-4455-81b8-a65f9042a32b",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2021-12-06T11:18:59+03:00",
+        "issued": "2021-12-06T11:43:40.000+03:00",
+        "valueDateTime": "2022-03-14T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2df75ed7-32e5-47d0-a1ba-3fcecd5b01fb",
+        "meta": {
+          "lastUpdated": "2022-03-15T10:58:07.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/d628c4ac-782d-4c1e-806a-f08089ff5486",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2022-03-15T10:25:39+03:00",
+        "issued": "2022-03-15T10:58:07.000+03:00",
+        "valueDateTime": "2022-07-12T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a85878e2-7f45-4aee-b0b9-59af70679bc1",
+        "meta": {
+          "lastUpdated": "2022-07-07T11:48:02.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/3bfe910a-8e93-4617-a4bd-f5b567256c01",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2022-07-07T11:01:29+03:00",
+        "issued": "2022-07-07T11:48:02.000+03:00",
+        "valueDateTime": "2022-11-29T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d13f1b0f-71e6-4e1b-a707-1bf83880fda4",
+        "meta": {
+          "lastUpdated": "2023-03-01T17:39:57.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/9a6ea832-2c05-449e-a031-32c065d617eb",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2022-11-23T11:45:06+03:00",
+        "issued": "2023-03-01T17:39:57.000+03:00",
+        "valueDateTime": "2023-03-03T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "969bfb01-d38a-4617-926f-b2c0757237ed",
+        "meta": {
+          "lastUpdated": "2023-03-02T13:50:40.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/f914ebc4-1ad2-4220-a265-c909d7a43e5e",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2023-03-02T13:34:22+03:00",
+        "issued": "2023-03-02T13:50:40.000+03:00",
+        "valueDateTime": "2023-06-15T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b4442567-5e35-4f8c-af4e-b163e70100cb",
+        "meta": {
+          "lastUpdated": "2023-06-08T12:49:15.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/55f9bee1-f8d4-4c32-854c-d89924dfde60",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2023-06-08T12:34:08+03:00",
+        "issued": "2023-06-08T12:49:15.000+03:00",
+        "valueDateTime": "2023-07-07T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "21ff8112-5ac3-4bc3-97e7-977445b87235",
+        "meta": {
+          "lastUpdated": "2023-07-18T16:44:44.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "RETURN VISIT DATE"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "5096",
+              "display": "RETURN VISIT DATE"
+            }
+          ],
+          "text": "RETURN VISIT DATE"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/d6acac35-a13c-4e16-8662-150bd69098df",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2023-07-07T16:43:00+03:00",
+        "issued": "2023-07-18T16:44:44.000+03:00",
+        "valueDateTime": "2023-08-09T00:00:00+03:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9d7a061a-4828-4fb0-9484-6e608d5eab1a",
+        "meta": {
+          "lastUpdated": "2023-08-01T12:31:15.000+03:00"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "Reason for discontinuation of program"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "161555",
+              "display": "Reason for discontinuation of program"
+            }
+          ],
+          "text": "Reason for discontinuation of program"
+        },
+        "subject": {
+          "reference": "Patient/797dffdb-e884-11ea-87c2-00155d017200",
+          "type": "Patient",
+          "display": "MUKEI  JOHN MUKEI  JOHN MUKEI  JOHN (OpenMRS ID: MGK9XC)"
+        },
+        "encounter": {
+          "reference": "Encounter/e965c083-e41d-4258-bcba-d657cec630f2",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2023-07-10T12:30:25+03:00",
+        "issued": "2023-08-01T12:31:15.000+03:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "160034AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "Died"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "160034",
+              "display": "Died"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "397709008",
+              "display": "Died"
+            }
+          ],
+          "text": "Died"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}
