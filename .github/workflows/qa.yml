@@ -14,8 +14,8 @@ jobs:
     container:
       image: alphora/cqf-ruler:latest
     defaults:
-      # run:
-        
+      run:
+        working-directory: /
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
