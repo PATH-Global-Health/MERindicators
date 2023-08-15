@@ -1,0 +1,27 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DAKDispensingQuantityCS",
+  "id": "DAKDispensingQuantityCS",
+  "title": "DAKDispensingQuantityCS",
+  "description": "DAKDispensingQuantityCS",
+  "url": "https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS",
+  "concept": [
+    {
+      "code": "notMMD",
+      "display": "<3 months of ARVs"
+    },
+    {
+      "code": "3to5MMD",
+      "display": "3-5 months of ARVs"
+    },
+    {
+      "code": "6MMD",
+      "display": "6 or more months of ARVs"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": false,
+  "count": 3
+}

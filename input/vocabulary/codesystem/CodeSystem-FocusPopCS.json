@@ -1,0 +1,12 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FocusPopCS",
+  "id": "FocusPopCS",
+  "title": "FocusPopCS",
+  "description": "FocusPopCS",
+  "url": "https://path-global-health.github.io/MERindicators/CodeSystem/FocusPopCS",
+  "experimental": true,
+  "caseSensitive": false
+}

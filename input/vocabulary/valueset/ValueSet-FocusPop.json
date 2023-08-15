@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "FocusPop",
+  "id": "FocusPop",
+  "title": "FocusPop",
+  "description": "FocusPop",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/FocusPop",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://path-global-health.github.io/MERindicators/CodeSystem/FocusPopCS"
+      }
+    ]
+  }
+}

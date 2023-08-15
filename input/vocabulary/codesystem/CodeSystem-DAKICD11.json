@@ -1,0 +1,119 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DAKICD11",
+  "id": "DAKICD11",
+  "title": "ICD-11 codes from the HIV DAK",
+  "description": "ICD-11 codes from the HIV DAK",
+  "url": "http://hl7.org/fhir/sid/icd-11",
+  "concept": [
+    {
+      "code": "1C62.0",
+      "display": "HIV disease clinical stage 1 without mention of tuberculosis or malaria"
+    },
+    {
+      "code": "1C62.1",
+      "display": "HIV disease clinical stage 2 without mention of tuberculosis or malaria"
+    },
+    {
+      "code": "1C62.2",
+      "display": "HIV disease clinical stage 3 without mention of tuberculosis or malaria"
+    },
+    {
+      "code": "1C62.3",
+      "display": "HIV disease clinical stage 4 without mention of tuberculosis or malaria"
+    },
+    {
+      "code": "XM63K0",
+      "display": "Anti-infective antiviral"
+    },
+    {
+      "code": "XM35P4",
+      "display": "Abacavir"
+    },
+    {
+      "code": "XM2L06",
+      "display": "Emtricitabine"
+    },
+    {
+      "code": "XM5471",
+      "display": "Lamivudine"
+    },
+    {
+      "code": "XM9C07",
+      "display": "Zidovudine"
+    },
+    {
+      "code": "XM8Z78",
+      "display": "Didanosine"
+    },
+    {
+      "code": "XM7RM1",
+      "display": "Stavudine"
+    },
+    {
+      "code": "XM67N3",
+      "display": "Tenofovir disoproxil"
+    },
+    {
+      "code": "XM1DX2",
+      "display": "Efavirenz"
+    },
+    {
+      "code": "XM7N44",
+      "display": "Etravirine"
+    },
+    {
+      "code": "XM10T5",
+      "display": "Nevirapine"
+    },
+    {
+      "code": "XM1KD4",
+      "display": "Rilpivirine"
+    },
+    {
+      "code": "XM4TF3",
+      "display": "Atazanavir and Ritonavir"
+    },
+    {
+      "code": "XM3EH7",
+      "display": "Lopinavir and Ritonavir"
+    },
+    {
+      "code": "XM8ZN1",
+      "display": "Darunavir and Ritonavir"
+    },
+    {
+      "code": "XM56L1",
+      "display": "Ritonavir"
+    },
+    {
+      "code": "XM6K45",
+      "display": "Dolutegravir"
+    },
+    {
+      "code": "XM82D3",
+      "display": "Raltegravir"
+    },
+    {
+      "code": "XM8QY9",
+      "display": "Lamivudine, Tenofovir disoproxil and Dolutegravir"
+    },
+    {
+      "code": "XM3U67",
+      "display": "Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit"
+    },
+    {
+      "code": "XM9NL2",
+      "display": "Lamivudine, Tenofovir disoproxil and Efavirenz"
+    },
+    {
+      "code": "XM2UU9",
+      "display": "Lamivudine, Abacavir and Dolutegravir"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": false,
+  "count": 26
+}

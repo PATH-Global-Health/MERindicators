@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DAKDispensingQuantity",
+  "id": "DAKDispensingQuantity",
+  "title": "DAKDispensingQuantity",
+  "description": "DAKDispensingQuantity",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS"
+      }
+    ]
+  }
+}

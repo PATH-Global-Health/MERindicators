@@ -1,0 +1,180 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DAKARTMeds",
+  "id": "DAKARTMeds",
+  "title": "ART medications",
+  "description": "ART medications from the HIV DAK",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-11",
+        "concept": [
+          {
+            "code": "XM35P4",
+            "display": "Abacavir"
+          },
+          {
+            "code": "XM2L06",
+            "display": "Emtricitabine"
+          },
+          {
+            "code": "XM5471",
+            "display": "Lamivudine"
+          },
+          {
+            "code": "XM9C07",
+            "display": "Zidovudine"
+          },
+          {
+            "code": "XM8Z78",
+            "display": "Didanosine"
+          },
+          {
+            "code": "XM7RM1",
+            "display": "Stavudine"
+          },
+          {
+            "code": "XM67N3",
+            "display": "Tenofovir disoproxil"
+          },
+          {
+            "code": "XM1DX2",
+            "display": "Efavirenz"
+          },
+          {
+            "code": "XM7N44",
+            "display": "Etravirine"
+          },
+          {
+            "code": "XM10T5",
+            "display": "Nevirapine"
+          },
+          {
+            "code": "XM1KD4",
+            "display": "Rilpivirine"
+          },
+          {
+            "code": "XM4TF3",
+            "display": "Atazanavir and Ritonavir"
+          },
+          {
+            "code": "XM3EH7",
+            "display": "Lopinavir and Ritonavir"
+          },
+          {
+            "code": "XM8ZN1",
+            "display": "Darunavir and Ritonavir"
+          },
+          {
+            "code": "XM56L1",
+            "display": "Ritonavir"
+          },
+          {
+            "code": "XM6K45",
+            "display": "Dolutegravir"
+          },
+          {
+            "code": "XM82D3",
+            "display": "Raltegravir"
+          },
+          {
+            "code": "XM8QY9",
+            "display": "Lamivudine, Tenofovir disoproxil and Dolutegravir"
+          },
+          {
+            "code": "XM3U67",
+            "display": "Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit"
+          },
+          {
+            "code": "XM9NL2",
+            "display": "Lamivudine, Tenofovir disoproxil and Efavirenz"
+          },
+          {
+            "code": "XM2UU9",
+            "display": "Lamivudine, Abacavir and Dolutegravir"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "387005008",
+            "display": "Abacavir (substance)"
+          },
+          {
+            "code": "404856006",
+            "display": "Emtricitabine (substance)"
+          },
+          {
+            "code": "386897000",
+            "display": "Lamivudine (substance)"
+          },
+          {
+            "code": "387151007",
+            "display": "Zidovudine (substance)"
+          },
+          {
+            "code": "387105006",
+            "display": "Didanosine (substance)"
+          },
+          {
+            "code": "386895008",
+            "display": "Stavudine (substance)"
+          },
+          {
+            "code": "422091007",
+            "display": "Tenofovir (substance)"
+          },
+          {
+            "code": "387001004",
+            "display": "Efavirenz (substance)"
+          },
+          {
+            "code": "432121008",
+            "display": "Etravirine (substance)"
+          },
+          {
+            "code": "386898005",
+            "display": "Nevirapine (substance)"
+          },
+          {
+            "code": "703123005",
+            "display": "Rilpivirine (substance)"
+          },
+          {
+            "code": "427314002",
+            "display": "Antiviral therapy (procedure)"
+          },
+          {
+            "code": "776569000",
+            "display": "Product containing only lopinavir and ritonavir (medicinal product)"
+          },
+          {
+            "code": "386896009",
+            "display": "Ritonavir (substance)"
+          },
+          {
+            "code": "713464000",
+            "display": "Dolutegravir (substance)"
+          },
+          {
+            "code": "429707008",
+            "display": "Raltegravir (substance)"
+          },
+          {
+            "code": "708255002",
+            "display": "First-line treatment (procedure)"
+          },
+          {
+            "code": "708256001",
+            "display": "Second-line treatment (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

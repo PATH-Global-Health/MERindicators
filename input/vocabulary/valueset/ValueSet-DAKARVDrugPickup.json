@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DAKARVDrugPickup",
+  "id": "DAKARVDrugPickup",
+  "title": "DAK Drug Pickup Appointment codes",
+  "description": "DAK Drug Pickup Appointment codes",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-11",
+        "concept": [
+          {
+            "code": "XM63K0",
+            "display": "Code title:  Anti-infective antiviral"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "788081006",
+            "display": "Medicinal product acting as antiviral (product)"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "45260-7",
+            "display": "HIV ART medication"
+          }
+        ]
+      }
+    ]
+  }
+}

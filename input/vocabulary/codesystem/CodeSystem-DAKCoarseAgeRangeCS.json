@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DAKCoarseAgeRangeCS",
+  "id": "DAKCoarseAgeRangeCS",
+  "title": "DAKCoarseAgeRangeCS",
+  "description": "DAKCoarseAgeRangeCS",
+  "url": "https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS",
+  "concept": [
+    {
+      "code": "lt15",
+      "display": "<15"
+    },
+    {
+      "code": "gt15",
+      "display": "15+"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": false,
+  "count": 2
+}

@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "OpenHIE",
+  "id": "OpenHIE",
+  "title": "OpenHIE CodeSystem",
+  "description": "OpenHIE CodeSystem",
+  "url": "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE",
+  "concept": [
+    {
+      "code": "cohort",
+      "display": "cohort"
+    },
+    {
+      "code": "432101000124108",
+      "display": "History of antiretroviral therapy (situation)"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": false,
+  "count": 2
+}

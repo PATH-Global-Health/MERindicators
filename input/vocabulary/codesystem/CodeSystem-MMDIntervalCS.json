@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "MMDIntervalCS",
+  "id": "MMDIntervalCS",
+  "title": "MMDIntervalCS",
+  "description": "MMDIntervalCS",
+  "url": "https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS",
+  "concept": [
+    {
+      "code": "3to5MMD"
+    },
+    {
+      "code": "6MMD"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": false,
+  "count": 2
+}

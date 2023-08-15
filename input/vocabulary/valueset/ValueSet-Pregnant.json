@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "Pregnant",
+  "id": "Pregnant",
+  "title": "Pregnant",
+  "description": "Currently pregnant",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/Pregnant",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "77386006",
+            "display": "Pregnancy (finding)"
+          }
+        ]
+      },
+      {
+        "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+        "concept": [
+          {
+            "code": "1434",
+            "display": "Currently pregnant"
+          }
+        ]
+      }
+    ]
+  }
+}

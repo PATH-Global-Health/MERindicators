@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MMDInterval",
+  "id": "MMDInterval",
+  "title": "MMDInterval",
+  "description": "Multi-month dispensing interval",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/MMDInterval",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://path-global-health.github.io/MERindicators/CodeSystem/MMDIntervalCS"
+      }
+    ]
+  }
+}

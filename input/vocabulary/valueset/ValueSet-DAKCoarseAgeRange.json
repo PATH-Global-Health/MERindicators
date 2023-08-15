@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DAKCoarseAgeRange",
+  "id": "DAKCoarseAgeRange",
+  "title": "DAKCoarseAgeRange",
+  "description": "DAKCoarseAgeRange",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS"
+      }
+    ]
+  }
+}

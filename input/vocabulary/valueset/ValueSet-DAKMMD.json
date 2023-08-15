@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DAKMMD",
+  "id": "DAKMMD",
+  "title": "DAK Multi-Month Dispense codes",
+  "description": "DAK Multi-Month Dispense codes for number of days dispensed",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "258703001",
+            "display": "Day (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

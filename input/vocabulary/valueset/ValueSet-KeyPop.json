@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "KeyPop",
+  "id": "KeyPop",
+  "title": "KeyPop",
+  "description": "KeyPop",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/KeyPop",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS"
+      }
+    ]
+  }
+}

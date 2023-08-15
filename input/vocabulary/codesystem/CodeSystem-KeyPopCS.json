@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KeyPopCS",
+  "id": "KeyPopCS",
+  "title": "KeyPop",
+  "description": "KeyPop",
+  "url": "https://path-global-health.github.io/MERindicators/CodeSystem/KeyPopCS",
+  "concept": [
+    {
+      "code": "PWID",
+      "display": "People who inject drugs (PWID)"
+    },
+    {
+      "code": "MSM",
+      "display": "Men who have sex with men (MSM)"
+    },
+    {
+      "code": "TG",
+      "display": "Transgender people (TG)"
+    },
+    {
+      "code": "FSW",
+      "display": "Female sex workers (FSW)"
+    },
+    {
+      "code": "PRISON",
+      "display": "People in prison and other closed settings"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": false,
+  "count": 5
+}

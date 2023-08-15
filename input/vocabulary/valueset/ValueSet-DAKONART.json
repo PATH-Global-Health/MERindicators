@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DAKONART",
+  "id": "DAKONART",
+  "title": "DAK Codes for On ART",
+  "description": "HIV DAK codes for on ART",
+  "url": "https://path-global-health.github.io/MERindicators/ValueSet/DAKONART",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+        "concept": [
+          {
+            "code": "160119",
+            "display": "Currently taking ARV"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-11",
+        "concept": [
+          {
+            "code": "XM63K0",
+            "display": "Anti-infective antiviral"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "182929008",
+            "display": "Drug prophylaxis (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "CIEL",
+  "id": "CIEL",
+  "title": "CIEL",
+  "description": "Columbia International eHealth Laboratory (CIEL)",
+  "url": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+  "concept": [
+    {
+      "code": "1065",
+      "display": "YES"
+    },
+    {
+      "code": "1066",
+      "display": "NO"
+    },
+    {
+      "code": "1067",
+      "display": "Unknown"
+    },
+    {
+      "code": "1434",
+      "display": "Currently pregnant"
+    },
+    {
+      "code": "138405",
+      "display": "Human immunodeficiency virus (HIV) disease"
+    },
+    {
+      "code": "160119",
+      "display": "CURRENTLY TAKING ARV"
+    },
+    {
+      "code": "116128",
+      "display": "Malaria"
+    },
+    {
+      "code": "160540",
+      "display": "Method of enrollment"
+    },
+    {
+      "code": "160542",
+      "display": "Outpatient department"
+    },
+    {
+      "code": "1193",
+      "display": "CURRENT DRUGS USED"
+    },
+    {
+      "code": "5096",
+      "display": "RETURN VISIT DATE"
+    },
+    {
+      "code": "160104",
+      "display": "Efavirenz / Lamivudine / Stavudine"
+    },
+    {
+      "code": "160105",
+      "display": "Efavirenz / Stavudine / Zidovudine"
+    },
+    {
+      "code": "160124",
+      "display": "Efavirenz / Lamivudine / Zidovudine"
+    },
+    {
+      "code": "161361",
+      "display": "efavirenz / lamivudine / tenofovir disoproxil"
+    },
+    {
+      "code": "161363",
+      "display": "lamivudine / stavudine"
+    },
+    {
+      "code": "161364",
+      "display": "Lamivudine / tenofovir disoproxil"
+    },
+    {
+      "code": "1652",
+      "display": "Lamivudine / nevirapine / zidovudine"
+    },
+    {
+      "code": "5424",
+      "display": "Other antiretroviral drug"
+    },
+    {
+      "code": "5811",
+      "display": "Unknown antiretroviral drug"
+    },
+    {
+      "code": "630",
+      "display": "Lamivudine / zidovudine"
+    },
+    {
+      "code": "103166",
+      "display": "Abacavir / lamivudine"
+    },
+    {
+      "code": "70056",
+      "display": "Abacavir"
+    },
+    {
+      "code": "71647",
+      "display": "Atazanavir"
+    },
+    {
+      "code": "74807",
+      "display": "Didanosine"
+    },
+    {
+      "code": "75523",
+      "display": "Efavirenz"
+    },
+    {
+      "code": "75628",
+      "display": "Efavirenz"
+    },
+    {
+      "code": "77995",
+      "display": "Indinavir"
+    },
+    {
+      "code": "78643",
+      "display": "Lamivudine"
+    },
+    {
+      "code": "79040",
+      "display": "Lopinavir"
+    },
+    {
+      "code": "792",
+      "display": "Lamivudine / nevirapine / stavudine"
+    },
+    {
+      "code": "794",
+      "display": "Lopinavir / ritonavir"
+    },
+    {
+      "code": "80487",
+      "display": "Nelfinavir"
+    },
+    {
+      "code": "80586",
+      "display": "Nevirapine"
+    },
+    {
+      "code": "83412",
+      "display": "Ritonavir"
+    },
+    {
+      "code": "84309",
+      "display": "Stavudine"
+    },
+    {
+      "code": "84795",
+      "display": "Tenofovir"
+    },
+    {
+      "code": "86663",
+      "display": "Zidovudine"
+    },
+    {
+      "code": "01234",
+      "display": "Tenofovir / Lamivudine / Dolutegravir"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": false,
+  "count": 39
+}
