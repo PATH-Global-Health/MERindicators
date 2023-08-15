@@ -15,11 +15,13 @@ jobs:
       image: alphora/cqf-ruler:latest
     defaults:
       run:
-        working-directory: /_w
+        working-directory: /
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run QA script
         run: |
+          ls
+          cd /_w
           pwd
           ls
