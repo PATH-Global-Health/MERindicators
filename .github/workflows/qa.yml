@@ -21,4 +21,4 @@ jobs:
     steps:
       - name: Run QA script
         run: |
-          ls
+          ls -la
