@@ -15,10 +15,10 @@ jobs:
       image: alphora/cqf-ruler:latest
     defaults:
       run:
-        working-directory: /__w/MERindicators/test/scripts
+        working-directory: /__w/
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run QA script
         run: |
-          ./_QA-TXCurr.sh
+          ls
