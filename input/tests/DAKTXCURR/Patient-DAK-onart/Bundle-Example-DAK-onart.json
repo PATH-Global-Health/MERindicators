@@ -18,7 +18,7 @@
               "Mittens"
             ],
             "family": "Cat",
-            "text": "Mittens Cat"
+            "text": "PLHIV ON ART Condition"
           }
         ],
         "gender": "female",
@@ -116,9 +116,17 @@
         "id": "Encounter-DAK-onart",
         "status": "finished",
         "class": {
-          "code": "ACUTE",
+          "code": "AMB",
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
         },
+	"serviceType": {
+	  "coding": [
+	    {
+	      "code": "788081006",
+	      "system": "http://snomed.info/sct"
+	    }
+	  ]
+	},
         "subject": {
           "reference": "Patient/Patient-DAK-onart"
         },
@@ -128,72 +136,14 @@
         "location": [
           {
             "location": {
-              "reference": "Location-DAL"
+              "reference": "Location/Location-DAK"
             }
           }
         ],
         "period": {
-          "start": "2023-07-03",
-          "end": "2023-07-03"
+          "start": "2022-07-03",
+          "end": "2022-07-03"
         }
-      }
-    },
-    {
-      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart",
-      "request": {
-        "url": "Observation/Observation-DAK-onart",
-        "method": "PUT"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "id": "Observation-DAK-onart",
-        "status": "final",
-        "encounter": {
-          "reference": "Encounter/Encounter-DAK-onart"
-        },
-        "subject": {
-          "reference": "Patient/Patient-DAK-onart"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "182929008",
-              "system": "http://snomed.info/sct",
-              "display": "Drug prophylaxis (procedure)"
-            }
-          ]
-        },
-        "valueBoolean": true,
-        "effectiveDateTime": "2023-07-03"
-      }
-    },
-    {
-      "fullUrl": "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart",
-      "request": {
-        "url": "Observation/Observation-DAK-onart",
-        "method": "PUT"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "id": "Observation-DAK-onart",
-        "status": "final",
-        "encounter": {
-          "reference": "Encounter/Encounter-DAK-onart"
-        },
-        "subject": {
-          "reference": "Patient/Patient-DAK-onart"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "182929008",
-              "system": "http://snomed.info/sct",
-              "display": "Drug prophylaxis (procedure)"
-            }
-          ]
-        },
-        "valueBoolean": true,
-        "effectiveDateTime": "2023-07-03"
       }
     },
     {
@@ -222,7 +172,7 @@
           ]
         },
         "valueInteger": 90,
-        "effectiveDateTime": "2023-07-03"
+        "effectiveDateTime": "2022-07-03"
       }
     },
     {
@@ -239,7 +189,7 @@
         "subject": {
           "reference": "Patient/Patient-DAK-onart"
         },
-        "authoredOn": "2023-07-03",
+        "authoredOn": "2022-07-03",
         "medicationCodeableConcept": {
           "coding": [
             {

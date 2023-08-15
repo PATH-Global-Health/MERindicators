@@ -16,7 +16,7 @@
               "Mittens"
             ],
             "family": "Cat",
-            "text": "Mittens Cat"
+            "text": "PLHIV MMD 180 10-25"
           }
         ],
         "gender": "male",
@@ -63,31 +63,6 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:abf076a6-5f58-4d53-ab7e-c783364826cb",
-      "request": {
-        "url": "Observation",
-        "method": "POST"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "status": "final",
-        "subject": {
-          "reference": "urn:uuid:19f61111-19cf-4cfe-b272-1eb60e18c64f"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "182929008",
-              "system": "http://snomed.info/sct",
-              "display": "Drug prophylaxis (procedure)"
-            }
-          ]
-        },
-        "valueBoolean": true,
-        "effectiveDateTime": "2020-09-07"
-      }
-    },
-    {
       "fullUrl": "urn:uuid:b17e1935-6975-4c9e-821f-112adbbe4ada",
       "request": {
         "url": "Encounter",
@@ -97,9 +72,17 @@
         "resourceType": "Encounter",
         "status": "finished",
         "class": {
-          "code": "ACUTE",
+          "code": "AMB",
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
         },
+	"serviceType": {
+	  "coding": [
+	    {
+	      "code": "788081006",
+	      "system": "http://snomed.info/sct"
+	    }
+	  ]
+	},
         "subject": {
           "reference": "urn:uuid:19f61111-19cf-4cfe-b272-1eb60e18c64f"
         },

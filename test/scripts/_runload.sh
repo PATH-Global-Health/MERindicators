@@ -58,8 +58,6 @@ for FILE in ${output}/Bundle-Example*.json ; do echo ${FILE} ; done
 for FILE in ${output}/Bundle-Example*.json ; do curl -XPOST -H "$HEADER" --data @${FILE} $FHIR | jq . ; done
 
 
-curl $FHIR'/Measure/MERTXCURR/$evaluate-measure?periodStart=2000-01-01&periodEnd=2021-12-31' | jq . 
+curl $FHIR'/Measure/KEMRTXCURR/$evaluate-measure?periodStart=2000-01-01&periodEnd=2023-12-31' | jq . 
 
-# cat measurereports/MERTXCURR.json | jq '.group[] | .stratifier[] | .stratum'
-
-# cat measurereports/MERTXCURR.json | jq -r '.group[] | .stratifier[] | .stratum | (. | map(leaf_paths) | unique) as $cols | map (. as $row | ($cols | map(. as $col | $row | getpath($col)))) as $rows | ([($cols | map(. | tostring))] + $rows) | map(@csv) | .[]' > measurereports/MERTXCURR.csv
+curl $FHIR'/Measure/KEMRTXCURR/$evaluate-measure?periodStart=2000-01-01&periodEnd=2023-12-31' | jq '.group[] | .stratifier[] | .stratum | (. | map(leaf_paths) | unique) as $cols | map (. as $row | ($cols | map(. as $col | $row | getpath($col)))) as $rows | ([($cols | map(. | tostring))] + $rows) | map(@csv) | .[]' > measurereports/KEMRTXCURR.csv

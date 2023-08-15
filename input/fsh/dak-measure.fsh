@@ -100,17 +100,20 @@ Description: "DAKTXCURR"
 * library[+] = Canonical(DAKTXCURRLibrary)
 * group[+]
   * population[+]
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
     * description = "Initial Population"
     * code = $measure-population#initial-population
     * criteria.language = #text/cql
     * criteria.expression = "Initial Population"
   * population[+]
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
     * id = "measure-population"
     * description = "Measure Population"
     * code = $measure-population#measure-population
     * criteria.language = #text/cql
     * criteria.expression = "Measure Population"
   * population[+]
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
     * description = "Measure Population Exclusion"
     * code = $measure-population#measure-population-exclusion
     * criteria.language = #text/cql

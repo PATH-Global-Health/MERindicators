@@ -25,16 +25,17 @@ define "Initial Population":
 // For continuous variable
 
 define "Initial Population": 
-  PatientData."PLHIV"
+  PatientData."PLHIV" and PatientData."On ART"
 
 define "Measure Population":
-  PatientData."On ART"
+  "Initial Population"
 
 define "Measure Population Exclusion":
-  PatientData."Deceased"
+  PatientData."Deceased" or PatientData."Stopped ART"
 
 define function "Measure Observation" (Patient "Patient"):
   1
+
 
 
 /* for proportion

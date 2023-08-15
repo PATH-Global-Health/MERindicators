@@ -12,6 +12,8 @@ parameter "Measurement Period" Interval<DateTime> default Interval[@2022-01-01T,
 
 context Patient
 
+define "debug name":
+  First(Patient.name.text.value)
 
 define "Deceased":
   Patient.deceased is not null 
@@ -38,7 +40,7 @@ define "Is HIV Negative":
   not exists( "HIV Condition" )
 
 define "PLHIV":
-  "Is HIV Positive" or "On ART"
+  "Is HIV Positive"
 
 
 define "Pregnant":
@@ -64,9 +66,8 @@ define "ART Therapy Condition":
 
 define "ART Therapy Medication":
   ["MedicationRequest"] M
-    // where M.status = 'active'
-    where M.medication in Cx."DAK ART Medications"
-      and M.authoredOn during "Measurement Period"
+    where M.status = 'active'
+      and M.medication in Cx."DAK ART Medications"
 
 
 
@@ -91,12 +92,10 @@ define "On ART":
           where Interval[FHIRHelpers.ToDateTime(C.onset as FHIR.dateTime), FHIRHelpers.ToDateTime(C.abatement as FHIR.dateTime)] overlaps "Measurement Period"
       )
     )
-    and if exists( "Stopped ART Observation" ) then "Date of Last Stopped ART" before "Date of Last Evidence of ART" else true
   )
   or 
   ( if exists( "HIV Transfer Observation" )
     then "Date of Last HIV Transfer" during "Measurement Period"
-            and if exists ( "Stopped ART Observation" ) then "Date of Last Stopped ART" before "Date of Last HIV Transfer" else true
     else false
   )
   or
@@ -104,6 +103,11 @@ define "On ART":
     "Most Recent Dispensed Observation Finish Date" after "Measurement Period"
   )
 
+define "Stopped ART":
+  if exists( "Stopped ART Observation" ) 
+  then "Date of Last Stopped ART" after 
+    Max( { "Date of Last Evidence of ART", "Date of Last HIV Transfer", "Most Recent Dispensed Observation Finish Date" } )
+  else false
 
 define "Dispensed Observations":
   [Observation] O
@@ -146,9 +150,7 @@ define "Newly enrolled on antiretroviral therapy (ART) during measurement period
   "Date of First Evidence of ART" during "Measurement Period"
 
 define "Requested ARTs":
-  [MedicationRequest] M
-    where M.medication in Cx."DAK ART Medications"
-      and M.status = 'active'
+  "ART Therapy Medication" M
     sort by date from (authoredOn as FHIR.dateTime) desc
 
 define "Most Recent Requested ART":
