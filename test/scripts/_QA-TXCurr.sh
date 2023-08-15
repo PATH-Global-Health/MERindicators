@@ -4,7 +4,7 @@ RED='\033[0;31m'
 YEL='\033[1;33m'
 NC='\033[0m' # No Color
 
-# do this first, wait 2-3 min before running
+# do this first, wait 2-3 min before running - GitHub Actions will ensure this is available.
 # docker run -d -p 8080:8080 alphora/cqf-ruler:latest
 
 ## fyi: hapi fhir hosted demo doesn't support measure eval
@@ -14,9 +14,9 @@ export FHIR="http://localhost:8080/fhir"
 # export FHIR="http://ryzen.local:8080/fhir"
 
 export HEADER="Content-Type: application/fhir+json"
-export output="../../output"
-export OUTPUT="@../../output"
-export SCRIPTS="../test/scripts"
+# export output="../../output"
+# export OUTPUT="@../../output"
+# export SCRIPTS="../test/scripts"
 
 # function confirmation {
 #     printf '\nDo you wish to continue (y/n)? '
@@ -53,12 +53,30 @@ Loader Measure
 Loader Organization
 Loader Location
 
-# patient bundles: must POST a transaction bundle of POST methods on each resource
-for FILE in ${output}/Bundle-Example*.json ; do echo ${FILE} ; done
-for FILE in ${output}/Bundle-Example*.json ; do curl -XPOST -H "$HEADER" --data @${FILE} $FHIR | jq . ; done
 
 
-curl $FHIR'/Measure/MERTXCURR/$evaluate-measure?periodStart=2000-01-01&periodEnd=2021-12-31' | jq . 
+curl_output=$(curl $FHIR'/Measure/MERTXCURR/$evaluate-measure?periodStart=2000-01-01&periodEnd=2021-12-31')
+
+
+# Extract relevant values from the curl output
+numerator=$(echo "$curl_output" | jq -r '.numerator')
+denominator=$(echo "$curl_output" | jq -r '.denominator')
+TX_CURR=$(echo "$curl_output" | jq -r '.TX_CURR')
+
+
+# Create a JSON object
+json_output=$(cat <<EOF
+{
+  "numerator": $numerator,
+  "denominator": $denominator,
+  "TX_CURR": "$TX_CURR"
+}
+EOF
+)
+
+# Save the JSON object to a file
+echo "$json_output" > output.json
+
 
 # cat measurereports/MERTXCURR.json | jq '.group[] | .stratifier[] | .stratum'
 
