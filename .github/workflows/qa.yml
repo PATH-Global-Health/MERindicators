@@ -16,7 +16,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # - uses: actions/checkout@v1
       - name: Run QA script
         working-directory: /MERindicators/test/scripts/
         run: |
