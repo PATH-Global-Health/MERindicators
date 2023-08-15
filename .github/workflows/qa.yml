@@ -13,10 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: alphora/cqf-ruler:latest
+    defaults:
+      run:
+        working-directory: ./test/scripts
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run QA script
-        working-directory: /MERindicators/test/scripts/
         run: |
           ./_QA-TXCurr.sh
