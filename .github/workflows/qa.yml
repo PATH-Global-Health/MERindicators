@@ -20,5 +20,4 @@ jobs:
         uses: actions/checkout@v3
       - name: Run QA script
         run: |
-          cd $GITHUB_WORKSPACE
-          ls -la
+          ./test/scripts/_QA-TXCurr.sh
