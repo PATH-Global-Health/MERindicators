@@ -17,6 +17,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run QA script
-        working-directory: ./test/scripts
+        working-directory: /test/scripts/
         run: |
           ./_QA-TXCurr.sh
