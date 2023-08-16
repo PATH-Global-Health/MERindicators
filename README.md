@@ -86,30 +86,13 @@ docker run -d -p 8080:8080 alphora/cqf-ruler:latest
 # wait 1-2 min before using it
 ```
 
-The following is now necessary:
+The next steps are to load FHIR conformance resources and the CQL/Library and Measure resources; then load the locations, organizations, and other prerequisites for Patient test cases; then patient clinical records. Next, run the $evaluate-measure operation with parameters for the period start and end.
 
-* Load the FHIR Library resources.
-
-* Load the FHIR Measure resources.
-
-* Load necessary CodeSystems and ValueSets.
-
-* Load locations, organizations, and other prerequisites for clinical resources.
-
-* Load test bundles associated with test patients.
-
-* Run the $evaluate-measure operation with parameters for the period start and end.
-
-This is captured in a bash script in tests/scripts.
+This is captured in a bash script in the root of the repository called `_runload.sh`.
 
 * Ensure [jq](https://jqlang.github.io/jq/download/) is installed. 
 ```bash
 jq --version
-```
-
-Change directory to test/scripts.
-```bash
-cd test/scripts
 ```
 
 > **_NOTE:_** On creating patient resources for testing, batch-type bundles may create duplicate resources on each POST, while transaction-type bundles with PUT will update or create if resources do not exist. Conformance resources should use PUT to update them or create if they don't exist. Users should upload their own patients for testing.
@@ -118,8 +101,6 @@ Run the _runload.sh script.
 ```bash
 bash _runload.sh
 ```
-
-This will output stdout and also populate a CSV of the results by stratifier at test/scripts/measurereports/KEMRTXCURR.csv.
 
 ### About the Build Script
 
