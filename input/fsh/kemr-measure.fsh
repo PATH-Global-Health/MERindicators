@@ -51,8 +51,8 @@ InstanceOf: Measure
 Title: "KEMRTXCURR"
 Description: "KEMRTXCURR"
 * id = "KEMRTXCURR"
-* identifier[0].system = "https://path-global-health.github.io/MERindicators/Measure/"
-* identifier[1].system = "https://datim.org/factsinfo/mechanism"
+// * identifier[0].system = "https://path-global-health.github.io/MERindicators/Measure/"
+// * identifier[1].system = "https://datim.org/factsinfo/mechanism"
 // * identifier[1].value = "12345"
 * version = "0.1.0"
 * status = #draft
