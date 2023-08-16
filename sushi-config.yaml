@@ -203,9 +203,6 @@ parameters:
     - input/resources/device
     - input/vocabulary/valueset/cqf_valuesets
   path-binary: input/cql
-  path-pages:
-    - input/pagecontent
-    - fsh-generated/includes
   active-tables: 'false'
   apply-contact: 'true'
   apply-jurisdiction: 'true'
