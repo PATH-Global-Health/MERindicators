@@ -122,4 +122,3 @@ bash _refresh.sh
 bash _genonce.sh -no-sushi 
 ```
 
-
