@@ -5,7 +5,7 @@ This IG is designed to produce the PEPFAR Monitoring, Evaluation, and Reporting 
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://PATH-Global-Health.github.io/MERindicators/branches/main/index.html__  
+Continuous Build: __http://PATH-Global-Health.github.io/MERindicators/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
