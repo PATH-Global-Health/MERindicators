@@ -17,8 +17,8 @@ Description: "KEMRBundle"
 * insert conformance-bundle
 
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE"
-* entry[=].request.url = "Patient/PatientCIEL"
-* entry[=].resource = PatientCIEL
+* entry[=].request.url = "CodeSystem/OpenHIE"
+* entry[=].resource = OpenHIE
 * insert conformance-bundle
 
 // value sets
@@ -80,11 +80,6 @@ Description: "KEMRBundle"
 * entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"
 * entry[=].request.url = "Library/KenyaEMRTXCURR"
 * entry[=].resource = KenyaEMRTXCURR
-* insert conformance-bundle
-
-* entry[+].fullUrl = "https://path-global-health.github.io/MERindicators/Library/"
-* entry[=].request.url = "Library/"
-* entry[=].resource = EnrollmentMethodsforHIVProgram
 * insert conformance-bundle
 
 

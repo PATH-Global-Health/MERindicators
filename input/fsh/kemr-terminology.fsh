@@ -81,7 +81,7 @@ Description: "Columbia International eHealth Laboratory (CIEL)"
 
 // https://fhir.staging.openconceptlab.org/orgs/Kenya_SMART_Guidelines/CodeSystem/enrollment_methods/
 
-Alias: $0203 = http://hl7.org/fhir/v2/0203
+// Alias: $0203 = http://hl7.org/fhir/v2/0203
 
 CodeSystem: EnrollmentMethods
 Id: EnrollmentMethods
@@ -105,10 +105,10 @@ Description: "1"
 // * ^property[=].type = #coding
 * ^meta.lastUpdated = "2023-07-20T15:56:38.013277Z"
 * ^version = "1"
-* ^identifier.system = "https://api.staging.openconceptlab.org"
-* ^identifier.value = "/orgs/Kenya_SMART_Guidelines/CodeSystem/enrollment_methods/"
-* ^identifier.type.text = "Accession ID"
-* ^identifier.type = $0203#ACSN "Accession ID"
+// * ^identifier.system = "https://api.staging.openconceptlab.org"
+// * ^identifier.value = "/orgs/Kenya_SMART_Guidelines/CodeSystem/enrollment_methods/"
+// * ^identifier.type.text = "Accession ID"
+// * ^identifier.type = $0203#ACSN "Accession ID"
 * #159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "HBTC"
 * #160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "VCT Site" // Voluntary counseling and testing program
 * #159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "MCH"
@@ -332,7 +332,7 @@ Description: "CIELHIVMedications"
 
 // https://fhir.staging.openconceptlab.org/orgs/Kenya_SMART_Guidelines/ValueSet/enrollment_methods/
 // Alias: $enrollment_methods = https://kenyaemr.ke/MERindicators/CodeSystem/enrollment_methods
-Alias: $0203 = http://hl7.org/fhir/v2/0203
+// Alias: $0203 = http://hl7.org/fhir/v2/0203
 
 ValueSet: EnrollmentMethodsforHIVProgram
 Id: EnrollmentMethodsforHIVProgram
@@ -343,8 +343,8 @@ Description: "1"
 * ^url = $EnrollmentMethodsforHIVProgram
 * ^status = #draft
 * ^meta.lastUpdated = "2023-07-20T15:51:47.328070Z"
-* ^identifier.system = "https://api.staging.openconceptlab.org"
-* ^identifier.value = "/orgs/Kenya_SMART_Guidelines/ValueSet/enrollment_methods/"
-* ^identifier.type.text = "Accession ID"
-* ^identifier.type = $0203#ACSN "Accession ID"
+// * ^identifier.system = "https://api.staging.openconceptlab.org"
+// * ^identifier.value = "/orgs/Kenya_SMART_Guidelines/ValueSet/enrollment_methods/"
+// * ^identifier.type.text = "Accession ID"
+// * ^identifier.type = $0203#ACSN "Accession ID"
 * include codes from system $EnrollmentMethods

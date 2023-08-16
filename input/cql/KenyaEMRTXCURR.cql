@@ -272,4 +272,4 @@ define "Stratification":
   Stratifiers."Age Group/Sex/Location TXCURR"
 
 
-// define "Stratifiers": "Stratification"
+define "Stratifier": "Stratification"

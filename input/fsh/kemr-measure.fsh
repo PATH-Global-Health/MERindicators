@@ -82,13 +82,13 @@ Description: "KEMRTXCURR"
     * code = $measure-population#measure-population-exclusion
     * criteria.language = #text/cql
     * criteria.expression = "Measure Population Exclusion"
-  * population[+]
-    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "measure-observation"
-    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod].valueCode = #count
-    * description = "Measure Observation"
-    * code = $measure-population#measure-observation
-    * criteria.language = #text/cql
-    * criteria.expression = "Measure Observation"
+  // * population[+]
+  //   * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "measure-observation"
+  //   * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod].valueCode = #count
+  //   * description = "Measure Observation"
+  //   * code = $measure-population#measure-observation
+  //   * criteria.language = #text/cql
+  //   * criteria.expression = "Measure Observation"
   * stratifier[+]
     * criteria.language = #text/cql
     * criteria.expression = "Stratification"
