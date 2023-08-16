@@ -108,17 +108,3 @@ Description: "KenyaEMRTXCURR"
 * url = "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"
 // * identifier.value = "KenyaEMRTXCURR"
 * content.id = "ig-loader-KenyaEMRTXCURR.cql"
-
-
-// Instance: KenyaEMRTXCURR
-// InstanceOf: Library
-// Title: "KenyaEMRTXCURR"
-// Description: "KenyaEMRTXCURR"
-// * insert lib-common
-// * name = "KenyaEMRTXCURR"
-// * title = "KenyaEMRTXCURR"
-// * description = "KenyaEMRTXCURR"
-// * version = "0.1.0"
-// * url = "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"
-// // * identifier.value = "KenyaEMRTXCURR"
-// * content.id = "ig-loader-KenyaEMRTXCURR.cql"

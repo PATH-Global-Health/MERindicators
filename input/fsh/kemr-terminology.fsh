@@ -1,30 +1,30 @@
 // Code systems
 
-CodeSystem: AgeRanges
-Id: AgeRanges
-Title: "AgeRanges"
-Description: "AgeRanges"
-* ^experimental = true
-* ^caseSensitive = false
-* ^url = $AgeRanges
-* #P0Y--P1Y "< 1 year"
-* #P1Y--P5Y "1-4 years"
-* #P5Y--P10Y "5-9 year"
-* #P10Y--P15Y "10-15 year"
-* #P15Y--P20Y "15-19 year"
-* #P20Y--P25Y "20-24 year"
-* #P25Y--P30Y "25-29 year"
-* #P30Y--P35Y "30-34 year"
-* #P35Y--P40Y "35-39 year"
-* #P40Y--P45Y "40-45 year"
-* #P45Y--P50Y "45-50 year"
-// end at 50+
-* #P50Y--P9999Y "50+ years"
-// and also include 50+ breakdown for TXCURR
-* #P50Y--P55Y "50-55 year"
-* #P55Y--P60Y "55-60 year"
-* #P60Y--P65Y "60-65 year"
-* #P65Y--P9999Y "65+ years"
+// CodeSystem: AgeRanges
+// Id: AgeRanges
+// Title: "AgeRanges"
+// Description: "AgeRanges"
+// * ^experimental = true
+// * ^caseSensitive = false
+// * ^url = $AgeRanges
+// * #P0Y--P1Y "< 1 year"
+// * #P1Y--P5Y "1-4 years"
+// * #P5Y--P10Y "5-9 year"
+// * #P10Y--P15Y "10-15 year"
+// * #P15Y--P20Y "15-19 year"
+// * #P20Y--P25Y "20-24 year"
+// * #P25Y--P30Y "25-29 year"
+// * #P30Y--P35Y "30-34 year"
+// * #P35Y--P40Y "35-39 year"
+// * #P40Y--P45Y "40-45 year"
+// * #P45Y--P50Y "45-50 year"
+// // end at 50+
+// * #P50Y--P9999Y "50+ years"
+// // and also include 50+ breakdown for TXCURR
+// * #P50Y--P55Y "50-55 year"
+// * #P55Y--P60Y "55-60 year"
+// * #P60Y--P65Y "60-65 year"
+// * #P65Y--P9999Y "65+ years"
 
 
 // TODO: It is unclear if external IDs are also used in implementations, and if they are attached to a system (URL).
@@ -123,38 +123,38 @@ Description: "1"
 
 
 // placeholder, can be different in implementations
-CodeSystem: FocusPopCS
-Id: FocusPopCS
-Title: "FocusPopCS"
-Description: "FocusPopCS"
-* ^experimental = true
-* ^caseSensitive = false
-* ^url = $FocusPopCS
+// CodeSystem: FocusPopCS
+// Id: FocusPopCS
+// Title: "FocusPopCS"
+// Description: "FocusPopCS"
+// * ^experimental = true
+// * ^caseSensitive = false
+// * ^url = $FocusPopCS
 
 
-CodeSystem: KeyPopCS
-Id: KeyPopCS
-Title: "KeyPop"
-Description: "KeyPop"
-* ^experimental = true
-* ^caseSensitive = false
-* ^url = $KeyPopCS
-* #PWID "People who inject drugs (PWID)"
-* #MSM "Men who have sex with men (MSM)"
-* #TG "Transgender people (TG)"
-* #FSW "Female sex workers (FSW)"
-* #PRISON "People in prison and other closed settings"
+// CodeSystem: KeyPopCS
+// Id: KeyPopCS
+// Title: "KeyPop"
+// Description: "KeyPop"
+// * ^experimental = true
+// * ^caseSensitive = false
+// * ^url = $KeyPopCS
+// * #PWID "People who inject drugs (PWID)"
+// * #MSM "Men who have sex with men (MSM)"
+// * #TG "Transgender people (TG)"
+// * #FSW "Female sex workers (FSW)"
+// * #PRISON "People in prison and other closed settings"
 
 
-CodeSystem: MMDIntervalCS
-Id: MMDIntervalCS
-Title: "MMDIntervalCS"
-Description: "MMDIntervalCS"
-* ^experimental = true
-* ^caseSensitive = false
-* ^url = $MMDIntervalCS
-* #3to5MMD
-* #6MMD
+// CodeSystem: MMDIntervalCS
+// Id: MMDIntervalCS
+// Title: "MMDIntervalCS"
+// Description: "MMDIntervalCS"
+// * ^experimental = true
+// * ^caseSensitive = false
+// * ^url = $MMDIntervalCS
+// * #3to5MMD
+// * #6MMD
 
 
 CodeSystem: OpenHIE
@@ -171,56 +171,56 @@ Description: "OpenHIE CodeSystem"
 
 // Value sets
 
-ValueSet: AgeRangesTXCURR
-Id: AgeRangesTXCURR
-Title: "AgeRangesTXCURR"
-Description: "AgeRangesTXCURR"
-* ^experimental = true
-* ^url = $AgeRangesTXCURR
-* $AgeRanges#P0Y--P1Y "< 1 year"
-* $AgeRanges#P1Y--P5Y "1-4 years"
-* $AgeRanges#P5Y--P10Y "5-9 year"
-* $AgeRanges#P10Y--P15Y "10-15 year"
-* $AgeRanges#P15Y--P20Y "15-19 year"
-* $AgeRanges#P20Y--P25Y "20-24 year"
-* $AgeRanges#P25Y--P30Y "25-29 year"
-* $AgeRanges#P30Y--P35Y "30-34 year"
-* $AgeRanges#P35Y--P40Y "35-39 year"
-* $AgeRanges#P40Y--P45Y "40-45 year"
-* $AgeRanges#P45Y--P50Y "45-50 year"
-// * $AgeRanges#P50Y--P9999Y "50+ years"
-// detailed for TXCURR
-* $AgeRanges#P50Y--P55Y "50-55 year"
-* $AgeRanges#P55Y--P60Y "55-60 year"
-* $AgeRanges#P60Y--P65Y "60-65 year"
-* $AgeRanges#P65Y--P9999Y "65+ years"
+// ValueSet: AgeRangesTXCURR
+// Id: AgeRangesTXCURR
+// Title: "AgeRangesTXCURR"
+// Description: "AgeRangesTXCURR"
+// * ^experimental = true
+// * ^url = $AgeRangesTXCURR
+// * $AgeRanges#P0Y--P1Y "< 1 year"
+// * $AgeRanges#P1Y--P5Y "1-4 years"
+// * $AgeRanges#P5Y--P10Y "5-9 year"
+// * $AgeRanges#P10Y--P15Y "10-15 year"
+// * $AgeRanges#P15Y--P20Y "15-19 year"
+// * $AgeRanges#P20Y--P25Y "20-24 year"
+// * $AgeRanges#P25Y--P30Y "25-29 year"
+// * $AgeRanges#P30Y--P35Y "30-34 year"
+// * $AgeRanges#P35Y--P40Y "35-39 year"
+// * $AgeRanges#P40Y--P45Y "40-45 year"
+// * $AgeRanges#P45Y--P50Y "45-50 year"
+// // * $AgeRanges#P50Y--P9999Y "50+ years"
+// // detailed for TXCURR
+// * $AgeRanges#P50Y--P55Y "50-55 year"
+// * $AgeRanges#P55Y--P60Y "55-60 year"
+// * $AgeRanges#P60Y--P65Y "60-65 year"
+// * $AgeRanges#P65Y--P9999Y "65+ years"
 
 
-ValueSet: FocusPop
-Id: FocusPop
-Title: "FocusPop"
-Description: "FocusPop"
-* ^experimental = true
-* ^url = $FocusPop
-* include codes from system $FocusPopCS
+// ValueSet: FocusPop
+// Id: FocusPop
+// Title: "FocusPop"
+// Description: "FocusPop"
+// * ^experimental = true
+// * ^url = $FocusPop
+// * include codes from system $FocusPopCS
 
 
-ValueSet: KeyPop
-Id: KeyPop
-Title: "KeyPop"
-Description: "KeyPop"
-* ^experimental = true
-* ^url = $KeyPop
-* include codes from system $KeyPopCS
+// ValueSet: KeyPop
+// Id: KeyPop
+// Title: "KeyPop"
+// Description: "KeyPop"
+// * ^experimental = true
+// * ^url = $KeyPop
+// * include codes from system $KeyPopCS
 
 
-ValueSet: MMDInterval
-Id: MMDInterval
-Title: "MMDInterval"
-Description: "Multi-month dispensing interval"
-* ^experimental = true
-* ^url = $MMDInterval
-* include codes from system $MMDIntervalCS
+// ValueSet: MMDInterval
+// Id: MMDInterval
+// Title: "MMDInterval"
+// Description: "Multi-month dispensing interval"
+// * ^experimental = true
+// * ^url = $MMDInterval
+// * include codes from system $MMDIntervalCS
 
 
 ValueSet: OnARV
@@ -336,9 +336,9 @@ Alias: $0203 = http://hl7.org/fhir/v2/0203
 
 ValueSet: EnrollmentMethodsforHIVProgram
 Id: EnrollmentMethodsforHIVProgram
-Title: "Enrollment Methods in KenyaEMR HIV Program"
+Title: "EnrollmentMethodsforHIVProgram"
 Description: "1"
-* ^name = "Enrollment Methods for HIV Program"
+* ^name = "EnrollmentMethodsforHIVProgram"
 * ^version = "1"
 * ^url = $EnrollmentMethodsforHIVProgram
 * ^status = #draft

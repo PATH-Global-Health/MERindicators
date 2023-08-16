@@ -6,3 +6,6 @@ RuleSet: location-bundle
 
 RuleSet: organization-bundle
 * entry[=].request.method = #PUT
+
+RuleSet: conformance-bundle
+* entry[=].request.method = #PUT

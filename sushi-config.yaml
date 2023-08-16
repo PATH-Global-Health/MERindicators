@@ -201,6 +201,7 @@ parameters:
     # - input/examples-src/output
     # for cqf tooling
     - input/resources/device
+    - input/vocabulary/valueset/cqf_valuesets
   path-binary: input/cql
   path-pages:
     - input/pagecontent
