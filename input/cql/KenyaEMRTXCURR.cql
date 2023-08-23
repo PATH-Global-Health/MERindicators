@@ -20,6 +20,8 @@ parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T,
 context Patient
 
 
+define "End Measurement Period": end of "Measurement Period"
+
 /*
 On ART is any patient with a regimen history as below:
 
@@ -43,27 +45,6 @@ Exclude those who interrupted treatment for any reason, etc, etc. "Measure Popul
 // Data elements
 
 /*
-Deceased patients are not in numerator.
-In FHIR, deceased[x] is a choice type, of either boolean or datetime.
-It also has a cardinality of 0..1. meaning that deceasedBoolean and deceasedDateTime cannot coexist.
-There can only be one deceased[x] element.
-If true is used, there's no way to know from that field when the patient died. DateTime is better for accuracy.
-*/
-
-
-// This expression allows deceasedBoolean which has no datetime.
-define "Deceased Boolean":
-  Patient.deceased is not null 
-  and (Patient.deceased is true or Patient.deceased on or before end of "Measurement Period")
-
-
-// This expression requires patients to have datetime on Patient.deceased (more accurate).
-define "Deceased DateTime Only":
-  Patient.deceased is not null 
-  and Patient.deceased on or before end of "Measurement Period"
-
-
-/*
 PLHIV are enrolled in an HIV program.
 On Observation resource: $CIEL#160540 "Method of enrollment"
 On Observation.value.coding: $CIEL#160542 "Outpatient department"
@@ -77,10 +58,9 @@ For codes, equivalence tests only that the code system and code are the same, bu
 // Todo: This requires a valueset
 define "PLHIV Observation":
   ["Observation": Cx."Method of enrollment"] Obs
-    // where Obs.value ~ Cx."Outpatient department"
+    where (Obs.value ~ Cx."Outpatient department")
     // or Obs.value ~ Cx."Institutional entry point HIV treatment"
-    // and (Obs.effective.value during "Measurement Period" or Obs.effective before "Measurement Period")
-    where (Obs.effective.value during "Measurement Period" or Obs.effective before "Measurement Period")
+    and (Obs.effective before end of "Measurement Period")
 
 
 // 'exists' keyword evaluates result as boolean or null (unknown)
@@ -91,8 +71,7 @@ define "PLHIV Boolean": exists "PLHIV Observation"
 
 define "Initial Population": 
   "PLHIV Boolean"
-  and "Deceased DateTime Only" is null 
-    or "Deceased DateTime Only" is false
+    // and ("Deceased DateTime Only" is null or "Deceased DateTime Only" is false)
 
 
 
@@ -210,9 +189,6 @@ define "DrugInterval": Interval[DrugStart, DrugStop]
 // Todo: How long after measurement period does the return date count?
 
 
-define "End Measurement Period": end of "Measurement Period"
-
-
 define "Interval Hack": Interval["End Measurement Period", "End Measurement Period"]
 
 
@@ -231,8 +207,32 @@ define "Measure Population":
 // 30 days (one month) have not passed since the last missed appointment. (Q: How is this coded?)
 
 
-// Measure Population Exclusion: Exclude those who interrupted treatment for any reason, etc, etc.
+// Measure Population Exclusion
+// Deceased
+// Exclude those who interrupted treatment for any reason, etc, etc.
 // Exclude those who interrupted treatment for any reason, etc, etc. "Measure Population Exclusion"
+
+
+/*
+Deceased patients are not in numerator.
+In FHIR, deceased[x] is a choice type, of either boolean or datetime.
+It also has a cardinality of 0..1. meaning that deceasedBoolean and deceasedDateTime cannot coexist.
+There can only be one deceased[x] element.
+If true is used, there's no way to know from that field when the patient died. DateTime is better for accuracy.
+*/
+
+
+// This expression allows deceasedBoolean which has no datetime.
+define "Deceased Boolean":
+  Patient.deceased is not null 
+  and (Patient.deceased is true or Patient.deceased on or before "End Measurement Period")
+
+
+// This expression requires patients to have datetime on Patient.deceased (more accurate).
+define "Deceased DateTime Only":
+  Patient.deceased is not null 
+  and Patient.deceased on or before end of "Measurement Period"
+
 
 
 // Todo: double check
@@ -246,7 +246,9 @@ define "Discontinuation Boolean": exists "Discontinuation"
 
 
 // Todo
-define "Measure Population Exclusion": "Discontinuation Boolean"
+define "Measure Population Exclusion": 
+  "Discontinuation Boolean"
+  or ("Deceased Boolean" is true or "Deceased DateTime Only" is true)
 
 
 
