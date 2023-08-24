@@ -20,8 +20,6 @@ parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T,
 context Patient
 
 
-define "End Measurement Period": end of "Measurement Period"
-
 /*
 On ART is any patient with a regimen history as below:
 
@@ -58,9 +56,7 @@ For codes, equivalence tests only that the code system and code are the same, bu
 // Todo: This requires a valueset
 define "PLHIV Observation":
   ["Observation": Cx."Method of enrollment"] Obs
-    where (Obs.value ~ Cx."Outpatient department")
-    // or Obs.value ~ Cx."Institutional entry point HIV treatment"
-    and (Obs.effective before end of "Measurement Period")
+    where (Obs.effective before end of "Measurement Period")
 
 
 // 'exists' keyword evaluates result as boolean or null (unknown)
@@ -82,19 +78,29 @@ define "Initial Population":
 
 // "RETURN VISIT DATE"
 
+/*
+Someone visits 1 July. 
+Given appt in 1 month - 1 August.
+Check that patient had visit by 24th August/by 30 days.
++ add 30 days.
+
+*/
+
 // return visit during period
-// uses effectivedatetime
-// the other datetime fields are not used
 define "Return Visits During Period":
   ["Observation": Cx."RETURN VISIT DATE"] Obs
-  // where (Obs.effective.value during "Measurement Period" or Obs.effective.value after "Measurement Period")
-  where (Obs.effective.value during "Measurement Period")
+  // where (Obs.value during "Measurement Period" or Obs.value before (end of "Measurement Period" + 30 days))
+  where (Obs.effective before end of "Measurement Period" and Obs.value after start of "Measurement Period")
+  // Get last visit during measure period, "return visit date" + 30 days > end of the period
+  // todo...
+
 
 
 define "Any Return Visit During Period": 
   exists "Return Visits During Period"
 
 
+// todo: change to boolean or remove?
 define "Last Return Visit During Period": 
   Last("Return Visits During Period")
 
@@ -105,12 +111,11 @@ define "Last Return Visit During Period":
 // the other datetime fields are not used
 
 
+// check on being started on ART
+// this is not 'picking up drugs'
 define "Drugs Visit During Period":
   ["Observation": Cx."CURRENT DRUGS USED"] Obs
     where (Obs.effective during "Measurement Period")
-    // Todo:
-    // this is needed but will not evaluate if system is missing
-    // and singleton from {Obs.value.coding in Cx."CIELHIVMedications"}
 
 
 define "Drugs Visit During Period Boolean": exists "Drugs Visit During Period"
@@ -119,9 +124,7 @@ define "Drugs Visit During Period Boolean": exists "Drugs Visit During Period"
 // Observations for drugs where issuedDateTime is during measurement period
 define "Drugs During Period":
   ["Observation": Cx."CURRENT DRUGS USED"] Obs
-    where (Obs.effective during "Measurement Period")
-    // this is needed but will not evaluate if system is missing
-    // and singleton from {Obs.value.coding in Cx."CIELHIVMedications"}
+    where (Obs.effective before end of "Measurement Period")
 
 
 // Sort and take get the last one
@@ -188,6 +191,7 @@ define "DrugInterval": Interval[DrugStart, DrugStop]
 // keyword is 'and beyond'. 
 // Todo: How long after measurement period does the return date count?
 
+define "End Measurement Period": end of "Measurement Period"
 
 define "Interval Hack": Interval["End Measurement Period", "End Measurement Period"]
 
