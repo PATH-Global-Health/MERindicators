@@ -11,12 +11,10 @@ include KenyaEMRStratifiers called Stratifiers
 
 
 // Provide a default interval or period-based tests will fail when evaluating CQL against test cases
-// Need DateTime eg @2014-01-25T not Date, eg not this: @2014-01-25
 // The $evaluate-measure operation's parameters 'periodStart' and 'periodEnd' override this in any case
 parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T, @2023-12-31T]
 
 
-// Start with the patient and traverse their clinical resources
 context Patient
 
 
@@ -40,51 +38,42 @@ Exclude those who interrupted treatment for any reason, etc, etc. "Measure Popul
 */
 
 
-// Data elements
+// Initial Population
+// Patients who have started an ART drugs program
 
 /*
 PLHIV are enrolled in an HIV program.
 On Observation resource: $CIEL#160540 "Method of enrollment"
-On Observation.value.coding: $CIEL#160542 "Outpatient department"
 Observation.status is not in example bundle, can't do 'Obs.status in {'final', 'amended', 'corrected'}'
-Note that the CQL is using the CIEL codes only, even if others are provided.
-From the CQL docs: we use the equivalent operator (~) rather than equality (=). 
-For codes, equivalence tests only that the code system and code are the same, but does not check the code system version.
+Using the CIEL codes only, even if others are provided.
+Use the equivalent operator (~) rather than equality (=) which checks the code system version.
 */
 
 
-// Todo: This requires a valueset
+
 define "PLHIV Observation":
   ["Observation": Cx."Method of enrollment"] Obs
     where (Obs.effective before end of "Measurement Period")
 
 
-// 'exists' keyword evaluates result as boolean or null (unknown)
 define "PLHIV Boolean": exists "PLHIV Observation"
 
 
-// Initial Population: Patients who are not deceased and have started on ART drugs (participating in program).
-
 define "Initial Population": 
   "PLHIV Boolean"
-    // and ("Deceased DateTime Only" is null or "Deceased DateTime Only" is false)
 
-
-
-// Patients started on ART drugs (participating in program)
-// who made a clinic visit during the reporting period (Q: Any type?)
-// Todo: just clinic visits associated with HIV, need a new VS/code for this
-
-
-// "RETURN VISIT DATE"
 
 /*
 Someone visits 1 July. 
 Given appt in 1 month - 1 August.
 Check that patient had visit by 24th August/by 30 days.
 + add 30 days.
-
 */
+
+
+// "RETURN VISIT DATE"
+// Patients started on ART drugs (participating in program)
+// who made a clinic visit during the reporting period (Q: Any type? A: yes)
 
 // return visit during period
 define "Return Visits During Period":
@@ -95,24 +84,15 @@ define "Return Visits During Period":
   // todo...
 
 
-
 define "Any Return Visit During Period": 
   exists "Return Visits During Period"
-
-
-// todo: change to boolean or remove?
-define "Last Return Visit During Period": 
-  Last("Return Visits During Period")
 
 
 
 // "CURRENT DRUGS USED" are prescriptions
 // effectivedatetime captures when those drugs started
 // the other datetime fields are not used
-
-
-// check on being started on ART
-// this is not 'picking up drugs'
+// checks on being started on ART, this is not 'picking up drugs'
 define "Drugs Visit During Period":
   ["Observation": Cx."CURRENT DRUGS USED"] Obs
     where (Obs.effective during "Measurement Period")
@@ -127,7 +107,6 @@ define "Drugs During Period":
     where (Obs.effective before end of "Measurement Period")
 
 
-// Sort and take get the last one
 define "Drugs Effective":
   Last("Drugs During Period" Obs
     sort by effective.value
@@ -146,8 +125,6 @@ The drugs observation tells when a patient was first started on drugs.
 'current drugs' concept captures regimen changes
 more of a history of regimen of original and most current - there may be original and current regimen
 bundle includes original regimen
-
-Fix coming: The code in KenyaEMR doesn't include a system identifier. CQL requires this. 
 */
 
 // Patient who made a clinic visit in the past and were given medicine to last the reporting period and beyond
@@ -188,8 +165,7 @@ define "DrugInterval": Interval[DrugStart, DrugStop]
 
 
 // Patient who made a clinic visit in the past and were given medicine to last the reporting period and beyond
-// keyword is 'and beyond'. 
-// Todo: How long after measurement period does the return date count?
+// keyword is 'and beyond' = 30 days
 
 define "End Measurement Period": end of "Measurement Period"
 
@@ -207,20 +183,14 @@ define "Measure Population":
 
 
 
-// Todo:
-// 30 days (one month) have not passed since the last missed appointment. (Q: How is this coded?)
-
-
 // Measure Population Exclusion
-// Deceased
-// Exclude those who interrupted treatment for any reason, etc, etc.
-// Exclude those who interrupted treatment for any reason, etc, etc. "Measure Population Exclusion"
+// Deceased and those who interrupted treatment for any reason, etc, etc.
 
 
 /*
 Deceased patients are not in numerator.
 In FHIR, deceased[x] is a choice type, of either boolean or datetime.
-It also has a cardinality of 0..1. meaning that deceasedBoolean and deceasedDateTime cannot coexist.
+It also has a cardinality of 0..1. so deceasedBoolean and deceasedDateTime cannot coexist.
 There can only be one deceased[x] element.
 If true is used, there's no way to know from that field when the patient died. DateTime is better for accuracy.
 */
@@ -239,8 +209,7 @@ define "Deceased DateTime Only":
 
 
 
-// Todo: double check
-// "effectiveDateTime": "2023-05-31T11:30:14+03:00",
+// Todo: double check: "effectiveDateTime": "2023-05-31T11:30:14+03:00",
 define "Discontinuation":
   ["Observation": Cx."Reason for discontinuation of program"] Obs
   where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
@@ -256,12 +225,12 @@ define "Measure Population Exclusion":
 
 
 
-
 // Stratifiers
 
 
 // should work without #location
 // how to clean it up with identifier[].extension[]
+// todo: debugging needed on location
 define "OpenMRS Location":
   [Patient] P
     // this url is in the ig, but is not correct: 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location'}
@@ -271,8 +240,6 @@ define "OpenMRS Location":
     or singleton from {P.identifier.extension[1].url ~ 'http://fhir.openmrs.org/ext/patient/identifier#location'}
     return singleton from {P.identifier.extension[0].value.reference.value}
 
-
-// todo: debugging needed on location
 
 define "Stratification": 
   Stratifiers."Age Group/Sex/Location TXCURR"
