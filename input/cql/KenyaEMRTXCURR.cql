@@ -12,7 +12,7 @@ include KenyaEMRStratifiers called Stratifiers
 
 // Provide a default interval or period-based tests will fail when evaluating CQL against test cases
 // The $evaluate-measure operation's parameters 'periodStart' and 'periodEnd' override this in any case
-parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T, @2023-12-31T]
+parameter "Measurement Period" Interval<DateTime> default Interval[@1990-01-01T, @2023-06-30T]
 
 
 context Patient
@@ -79,20 +79,35 @@ Check that patient had visit by 24th August/by 30 days.
 define "Return Visits During Period":
   ["Observation": Cx."RETURN VISIT DATE"] Obs
   // where (Obs.value during "Measurement Period" or Obs.value before (end of "Measurement Period" + 30 days))
-  where (Obs.effective before end of "Measurement Period" and Obs.value after start of "Measurement Period")
-  // Get last visit during measure period, "return visit date" + 30 days > end of the period
-  // todo...
+  // where (Obs.effective before end of "Measurement Period" and Obs.value after start of "Measurement Period")
+  where (Obs.effective before end of "Measurement Period")
+  sort by date from (effective as FHIR.dateTime) desc
 
 
 define "Any Return Visit During Period": 
   exists "Return Visits During Period"
 
+define "Most Recent Return Visit During Period":
+  First("Return Visits During Period")
+
+define "Return Visit Date":
+  "Most Recent Return Visit During Period".value.value
+
+// Get last visit during measure period, "return visit date" + 30 days > end of the period
+// Does the most recent "return visit date" need to be within the period as long as the value is after it?
+define "Return Visit within 30 days of Period":
+  ("Most Recent Return Visit During Period".value as FHIR.dateTime) + 30 days after end of "Measurement Period"
 
 
 // "CURRENT DRUGS USED" are prescriptions
 // effectivedatetime captures when those drugs started
 // the other datetime fields are not used
 // checks on being started on ART, this is not 'picking up drugs'
+
+define "Has started ART":
+  exists( ["Observation": Cx."CURRENT DRUGS USED"] )
+
+/*
 define "Drugs Visit During Period":
   ["Observation": Cx."CURRENT DRUGS USED"] Obs
     where (Obs.effective during "Measurement Period")
@@ -111,7 +126,7 @@ define "Drugs Effective":
   Last("Drugs During Period" Obs
     sort by effective.value
   )
-
+*/
     
 
 /*
@@ -145,6 +160,7 @@ define DrugInterval: Interval[DrugStart, DrugStop]
 // current drugs used does not capture dispense
 // appointment captures when drugs scrip ends
 
+/*
 define "DrugStart":
   Last(["Observation": Cx."CURRENT DRUGS USED"] Obs
     where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
@@ -174,13 +190,15 @@ define "Interval Hack": Interval["End Measurement Period", "End Measurement Peri
 
 // Interval must overlap with END of the period
 define "Last Return": "DrugInterval" overlaps ("Interval Hack")
-
+*/
 
 define "Measure Population": 
+  "Return Visit within 30 days of Period" and "Has started ART"
+  /*
   "Last Return" is true
   or "Drugs Visit During Period Boolean" is true
   or "Any Return Visit During Period" is true
-
+  */
 
 
 // Measure Population Exclusion
@@ -199,7 +217,7 @@ If true is used, there's no way to know from that field when the patient died. D
 // This expression allows deceasedBoolean which has no datetime.
 define "Deceased Boolean":
   Patient.deceased is not null 
-  and (Patient.deceased is true or Patient.deceased on or before "End Measurement Period")
+  and ((Patient.deceased as FHIR.boolean) is true or (Patient.deceased as FHIR.dateTime) on or before end of "Measurement Period")
 
 
 // This expression requires patients to have datetime on Patient.deceased (more accurate).
@@ -212,7 +230,8 @@ define "Deceased DateTime Only":
 // Todo: double check: "effectiveDateTime": "2023-05-31T11:30:14+03:00",
 define "Discontinuation":
   ["Observation": Cx."Reason for discontinuation of program"] Obs
-  where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
+  where Obs.effective during "Measurement Period" and Obs.effective after "Most Recent Return Visit During Period".effective
+  //where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
 
 
 define "Discontinuation Boolean": exists "Discontinuation"
@@ -221,7 +240,8 @@ define "Discontinuation Boolean": exists "Discontinuation"
 // Todo
 define "Measure Population Exclusion": 
   "Discontinuation Boolean"
-  or ("Deceased Boolean" is true or "Deceased DateTime Only" is true)
+  or "Deceased Boolean"
+  //or ("Deceased Boolean" is true or "Deceased DateTime Only" is true)
 
 
 
