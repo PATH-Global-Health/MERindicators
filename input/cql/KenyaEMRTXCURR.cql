@@ -262,7 +262,7 @@ define "OpenMRS Location":
 
 
 define "Stratification": 
-  Stratifiers."Age Group/Sex/Location TXCURR"
+  Stratifiers."Age Group/Sex"
 
 
-define "Stratifier": "Stratification"
+// define "Stratifier": "Stratification"
