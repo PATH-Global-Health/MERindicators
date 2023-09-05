@@ -68,17 +68,17 @@ define "Sex":
 // Age Group
 define "Age Group":
   case
-    when AgeInYearsAt(start of "Measurement Period") in Interval[0, 1] then "P0Y--P1Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[1, 5] then "P1Y--P5Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[5, 10] then "P5Y--P10Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[10, 15] then "P10Y--P15Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[15, 20] then "P15Y--P20Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[20, 25] then "P20Y--P25Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[25, 30] then "P25Y--P30Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[30, 35] then "P30Y--P35Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[35, 40] then "P35Y--P40Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[40, 45] then "P40Y--P45Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[45, 50] then "P45Y--P50Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[0, 1) then "P0Y--P1Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[1, 5) then "P1Y--P5Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[5, 10) then "P5Y--P10Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[10, 15) then "P10Y--P15Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[15, 20) then "P15Y--P20Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[20, 25) then "P20Y--P25Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[25, 30) then "P25Y--P30Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[30, 35) then "P30Y--P35Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[35, 40) then "P35Y--P40Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[40, 45) then "P40Y--P45Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[45, 50) then "P45Y--P50Y"
     when AgeInYearsAt(start of "Measurement Period") in Interval[50, null] then "P50Y--P9999Y"
     else null
   end
@@ -86,27 +86,27 @@ define "Age Group":
 
 define "Age Group TXCURR":
   case
-    when AgeInYearsAt(start of "Measurement Period") in Interval[0, 1] then "P0Y--P1Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[1, 5] then "P1Y--P5Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[5, 10] then "P5Y--P10Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[10, 15] then "P10Y--P15Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[15, 20] then "P15Y--P20Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[20, 25] then "P20Y--P25Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[25, 30] then "P25Y--P30Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[30, 35] then "P30Y--P35Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[35, 40] then "P35Y--P40Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[40, 45] then "P40Y--P45Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[45, 50] then "P45Y--P50Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[50, 55] then "P50Y--P55Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[55, 60] then "P55Y--P60Y"
-    when AgeInYearsAt(start of "Measurement Period") in Interval[60, 65] then "P60Y--P65Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[0, 1) then "P0Y--P1Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[1, 5) then "P1Y--P5Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[5, 10) then "P5Y--P10Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[10, 15) then "P10Y--P15Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[15, 20) then "P15Y--P20Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[20, 25) then "P20Y--P25Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[25, 30) then "P25Y--P30Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[30, 35) then "P30Y--P35Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[35, 40) then "P35Y--P40Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[40, 45) then "P40Y--P45Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[45, 50) then "P45Y--P50Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[50, 55) then "P50Y--P55Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[55, 60) then "P55Y--P60Y"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[60, 65) then "P60Y--P65Y"
     when AgeInYearsAt(start of "Measurement Period") in Interval[65, null] then "P65Y--P9999Y"
     else null
   end
 
 define "Coarse Age Group":
   case
-    when AgeInYearsAt(start of "Measurement Period") in Interval[0, 15] then "lt15"
+    when AgeInYearsAt(start of "Measurement Period") in Interval[0, 15) then "lt15"
     when AgeInYearsAt(start of "Measurement Period") in Interval[15, null] then "gt15"
     else null
   end
@@ -126,8 +126,8 @@ define "Last Location":
 define "Dispensing Quantity":
   case 
     when PatientData."Most Recent Dispensed Observation Days" in Interval[0, 90] then "notMMD"
-    when PatientData."Most Recent Dispensed Observation Days" in Interval[90, 180] then "3to5MMD"
-    when PatientData."Most Recent Dispensed Observation Days" in Interval[180, null] then "6MMD"
+    when PatientData."Most Recent Dispensed Observation Days" in Interval[91, 180] then "3to5MMD"
+    when PatientData."Most Recent Dispensed Observation Days" in Interval[181, null] then "6MMD"
     else "NoData"
   end
 
