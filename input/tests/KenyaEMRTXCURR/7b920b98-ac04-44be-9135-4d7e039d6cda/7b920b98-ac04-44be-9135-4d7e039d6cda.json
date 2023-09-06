@@ -210,7 +210,11 @@
         "coding": [ {
           "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
           "display": "Concept #5096"
-        } ],
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        }  ],
         "text": "Concept #5096"
       },
       "subject": {
@@ -244,7 +248,11 @@
         "coding": [ {
           "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
           "display": "Concept #5096"
-        } ],
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        }  ],
         "text": "Concept #5096"
       },
       "subject": {
