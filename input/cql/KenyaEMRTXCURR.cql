@@ -230,7 +230,7 @@ define "Deceased DateTime Only":
 // Todo: double check: "effectiveDateTime": "2023-05-31T11:30:14+03:00",
 define "Discontinuation":
   ["Observation": Cx."Reason for discontinuation of program"] Obs
-  where Obs.effective during "Measurement Period" and Obs.effective after "Most Recent Return Visit During Period".effective
+  where Obs.effective before end of "Measurement Period" and Obs.effective after "Most Recent Return Visit During Period".effective
   //where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
 
 

@@ -1,0 +1,2124 @@
+{
+  "resourceType": "Bundle",
+  "id": "12d1996a-a4d8-448d-bae2-9f40ffc6ffc5",
+  "meta": {
+    "lastUpdated": "2023-09-06T16:30:25.800+00:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [ {
+    "relation": "self",
+    "url": "http://localhost:8080/fhir/Patient?_revinclude=Observation%3Asubject&identifier=1068700400"
+  } ],
+  "entry": [ {
+    "fullUrl": "http://localhost:8080/fhir/Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b136d284-aef2-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "identifier": [ {
+        "id": "b1421a6b-aef2-11ea-8b98-7812f081b2f7",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/7a03f739-4fc1-4608-b0da-0290ca10410a",
+            "type": "Location",
+            "display": "Maragua Ridge Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "system": "urn:oid:1.2.840.113619.2.1.3",
+        "value": "MGFG73"
+      }, {
+        "id": "b1373075-aef2-11ea-8b98-7812f081b2f7",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/7a03f739-4fc1-4608-b0da-0290ca10410a",
+            "type": "Location",
+            "display": "Maragua Ridge Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1068700400"
+      }, {
+        "id": "e91932e0-5e89-427f-9a2f-88ab87919d84",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/7a03f739-4fc1-4608-b0da-0290ca10410a",
+            "type": "Location",
+            "display": "Maragua Ridge Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "b4d66522-11fc-45c7-83e3-39a1af21ae0d"
+          } ],
+          "text": "Patient Clinic Number"
+        },
+        "system": "urn:oid:1.2.840.113619.2.1.3",
+        "value": "1068700400"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b136ee18-aef2-11ea-8b98-7812f081b2f7",
+        "family": "KABUI",
+        "given": [ "KABUI", "KABUI" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1972-09-05",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "b1370bfc-aef2-11ea-8b98-7812f081b2f7",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "30 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address2",
+            "valueString": "30 address2"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Kambiti"
+          } ]
+        } ],
+        "use": "home",
+        "city": "KAMBITI",
+        "district": "Muranga",
+        "state": "Maragwa"
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1f8c24e0-aef3-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1f8c24e0-aef3-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "160540",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4",
+          "display": "Method of enrollment"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1f8c24e0-aef3-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-01-07T00:00:00+03:00",
+      "issued": "2020-06-15T13:29:41.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Comprehensive care center"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "162050",
+          "display": "Comprehensive care center"
+        } ],
+        "text": "Comprehensive care center"
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/97e603fe-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "97e603fe-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "1193",
+          "display": "CURRENT DRUGS USED"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/97e603fe-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-01-07T00:00:00+03:00",
+      "issued": "2020-06-15T13:40:13.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "164505",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/122ae9fa-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "122ae9fa-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/122ae9fa-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-01-07T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:28.000+03:00",
+      "valueDateTime": "2016-02-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12355698-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12355698-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12355698-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-03-03T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:28.000+03:00",
+      "valueDateTime": "2016-04-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/123e166d-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "123e166d-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/123e166d-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-04-07T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:28.000+03:00",
+      "valueDateTime": "2016-05-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12498a08-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12498a08-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12498a08-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-05-05T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2016-06-05T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12512ddd-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12512ddd-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12512ddd-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-07-07T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2016-08-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1258dbd0-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1258dbd0-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1258dbd0-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-08-04T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2016-09-08T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/126082dd-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "126082dd-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/126082dd-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-09-01T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2016-10-06T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1269937f-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1269937f-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1269937f-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-10-06T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2016-11-06T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12726ed6-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12726ed6-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12726ed6-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-11-03T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2016-12-08T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1279f163-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1279f163-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1279f163-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-12-08T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-01-08T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1281b7c8-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1281b7c8-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1281b7c8-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-01-10T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-02-10T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12893c79-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12893c79-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12893c79-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-02-02T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-03-02T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12910afe-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12910afe-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12910afe-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-03-02T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-04-06T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/129a75e9-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "129a75e9-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/129a75e9-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-04-06T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-05-06T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12a2bff0-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12a2bff0-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12a2bff0-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-04T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-06-08T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12aba2e3-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12aba2e3-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12aba2e3-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-06-08T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-07-08T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12b34f08-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12b34f08-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12b34f08-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-07-06T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-08-03T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12baeb75-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12baeb75-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12baeb75-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-01T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-09-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12c3dc79-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12c3dc79-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12c3dc79-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-29T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-10-05T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12ce108f-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12ce108f-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12ce108f-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-10-05T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-11-09T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12d727a3-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12d727a3-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12d727a3-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-11-09T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:29.000+03:00",
+      "valueDateTime": "2017-12-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12dfdeed-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12dfdeed-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12dfdeed-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-12-06T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2018-01-11T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12e8d080-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12e8d080-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12e8d080-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-01-11T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2018-07-12T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12f06e4c-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12f06e4c-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12f06e4c-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-04-12T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2018-07-13T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12f6c86f-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12f6c86f-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12f6c86f-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-07-12T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2018-10-10T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/12fd3803-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12fd3803-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/12fd3803-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-10-11T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2018-11-10T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/130388e1-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "130388e1-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/130388e1-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-11-15T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2019-01-14T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1309efc3-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1309efc3-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1309efc3-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-01-10T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2019-02-09T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/131056a8-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "131056a8-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/131056a8-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-02-13T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2019-04-14T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1317f710-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1317f710-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1317f710-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-04-09T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2019-06-08T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/131f98e5-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "131f98e5-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/131f98e5-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-06-06T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2019-08-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1329ecfb-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1329ecfb-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1329ecfb-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-08-08T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2019-10-10T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/13354137-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "13354137-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/13354137-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-10-09T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2019-12-09T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/13489a25-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "13489a25-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/13489a25-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-12-04T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2020-03-04T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/135a6abd-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "135a6abd-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/135a6abd-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-03-04T00:00:00+03:00",
+      "issued": "2020-06-15T13:36:30.000+03:00",
+      "valueDateTime": "2020-06-02T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/15e8bfe3-5c80-460e-b8d4-0abccfef2041",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "15e8bfe3-5c80-460e-b8d4-0abccfef2041",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/15e8bfe3-5c80-460e-b8d4-0abccfef2041",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-06-02T11:31:00+03:00",
+      "issued": "2020-06-19T11:38:37.000+03:00",
+      "valueDateTime": "2020-08-03T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/1e38bf50-9257-4002-ab3a-3ddfb5ac8676",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1e38bf50-9257-4002-ab3a-3ddfb5ac8676",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/1e38bf50-9257-4002-ab3a-3ddfb5ac8676",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-08-03T11:22:00+03:00",
+      "issued": "2020-08-14T11:27:25.000+03:00",
+      "valueDateTime": "2020-10-15T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/e123d36d-c78b-4cfc-90df-920430a2c11c",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e123d36d-c78b-4cfc-90df-920430a2c11c",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/e123d36d-c78b-4cfc-90df-920430a2c11c",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-10T11:08:00+03:00",
+      "issued": "2020-11-20T11:11:10.000+03:00",
+      "valueDateTime": "2021-02-09T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/f1f16cbb-bb1e-40a6-b5de-284476e9193d",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f1f16cbb-bb1e-40a6-b5de-284476e9193d",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/f1f16cbb-bb1e-40a6-b5de-284476e9193d",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-02-09T00:02:00+03:00",
+      "issued": "2021-02-24T00:04:02.000+03:00",
+      "valueDateTime": "2021-05-06T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/75b6296e-b41a-47bd-8ce2-9d8514487851",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "75b6296e-b41a-47bd-8ce2-9d8514487851",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/75b6296e-b41a-47bd-8ce2-9d8514487851",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-05-06T13:19:00+03:00",
+      "issued": "2021-05-27T13:34:39.000+03:00",
+      "valueDateTime": "2021-06-04T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/212620e2-8975-4513-b99f-328b8e380b04",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "212620e2-8975-4513-b99f-328b8e380b04",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/212620e2-8975-4513-b99f-328b8e380b04",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-06-04T10:52:00+03:00",
+      "issued": "2021-06-08T10:54:27.000+03:00",
+      "valueDateTime": "2021-07-08T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/50a6ccfa-24cf-48ae-8930-673b3f11b492",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "50a6ccfa-24cf-48ae-8930-673b3f11b492",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/50a6ccfa-24cf-48ae-8930-673b3f11b492",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-07-07T12:54:00+03:00",
+      "issued": "2021-07-12T12:56:12.000+03:00",
+      "valueDateTime": "2021-08-04T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/dbceee7d-54a1-491b-a20c-6fd73d5b99f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dbceee7d-54a1-491b-a20c-6fd73d5b99f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/dbceee7d-54a1-491b-a20c-6fd73d5b99f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-08-04T10:55:00+03:00",
+      "issued": "2021-12-04T11:57:59.000+03:00",
+      "valueDateTime": "2022-02-09T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/70c2b796-de2d-4982-9233-91ea1e3906f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "70c2b796-de2d-4982-9233-91ea1e3906f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/70c2b796-de2d-4982-9233-91ea1e3906f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-02-09T10:57:00+03:00",
+      "issued": "2022-02-17T10:58:46.000+03:00",
+      "valueDateTime": "2022-05-11T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/da8f51d8-3be5-466e-8e3b-a43f21e86e54",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "da8f51d8-3be5-466e-8e3b-a43f21e86e54",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/da8f51d8-3be5-466e-8e3b-a43f21e86e54",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-05-11T12:16:00+03:00",
+      "issued": "2022-06-03T12:20:14.000+03:00",
+      "valueDateTime": "2022-08-03T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/0d208c11-b767-4565-99d5-3fba513b2ca8",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0d208c11-b767-4565-99d5-3fba513b2ca8",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/0d208c11-b767-4565-99d5-3fba513b2ca8",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-08-10T15:06:00+03:00",
+      "issued": "2022-08-12T15:08:44.000+03:00",
+      "valueDateTime": "2022-11-10T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/e8d86afa-19d3-413c-b136-6350098bdcb9",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e8d86afa-19d3-413c-b136-6350098bdcb9",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/e8d86afa-19d3-413c-b136-6350098bdcb9",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-11-10T10:00:54+03:00",
+      "issued": "2022-11-10T10:04:23.000+03:00",
+      "valueDateTime": "2023-02-13T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/149929c2-33f7-4bc6-8cc9-023b0c991081",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "149929c2-33f7-4bc6-8cc9-023b0c991081",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/149929c2-33f7-4bc6-8cc9-023b0c991081",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-02-14T10:08:00+03:00",
+      "issued": "2023-02-16T10:12:41.000+03:00",
+      "valueDateTime": "2023-05-09T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/305608e4-7887-4694-9ff2-9176f735beb9",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "305608e4-7887-4694-9ff2-9176f735beb9",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/305608e4-7887-4694-9ff2-9176f735beb9",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-05-09T13:12:18+03:00",
+      "issued": "2023-05-09T13:14:17.000+03:00",
+      "valueDateTime": "2023-08-15T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/ddae25bd-92e6-4756-8d92-314f2bf88d5a",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ddae25bd-92e6-4756-8d92-314f2bf88d5a",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:23.003+00:00",
+        "source": "#JzwE9WbxpareLwM5"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "161555",
+          "display": "Reason for discontinuation of program"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/b136d284-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "KABUI KABUI KABUI (OpenMRS ID: MGFG73)"
+      },
+      "encounter": {
+        "reference": "Encounter/ddae25bd-92e6-4756-8d92-314f2bf88d5a",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-05-09T13:15:22+03:00",
+      "issued": "2023-05-09T13:15:54.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Transferred out"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "159492",
+          "display": "Transferred out"
+        } ],
+        "text": "Transferred out"
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  } ]
+}

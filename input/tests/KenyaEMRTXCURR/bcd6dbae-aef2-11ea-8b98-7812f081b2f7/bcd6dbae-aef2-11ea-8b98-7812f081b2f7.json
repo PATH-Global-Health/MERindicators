@@ -1,0 +1,383 @@
+{
+  "resourceType": "Bundle",
+  "id": "5887eaaf-634e-42bb-982e-5946bf9aa3d2",
+  "meta": {
+    "lastUpdated": "2023-08-23T17:45:40.856+00:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [ {
+    "relation": "self",
+    "url": "http://localhost:8080/fhir/Patient?_id=bcd6dbae-aef2-11ea-8b98-7812f081b2f7&_revinclude=Observation%3Apatient"
+  } ],
+  "entry": [ {
+    "fullUrl": "http://localhost:8080/fhir/Patient/bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Patient",
+      "id": "bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:52:48.367+00:00",
+        "source": "#BVxNJAo9MLCgW7PW"
+      },
+      "identifier": [ {
+        "id": "bce103f3-aef2-11ea-8b98-7812f081b2f7",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/7a03f739-4fc1-4608-b0da-0290ca10410a",
+            "type": "Location",
+            "display": "Maragua Ridge Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "system": "urn:oid:1.2.840.113619.2.1.3",
+        "value": "MGFRKV"
+      }, {
+        "id": "bcd70f52-aef2-11ea-8b98-7812f081b2f7",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/7a03f739-4fc1-4608-b0da-0290ca10410a",
+            "type": "Location",
+            "display": "Maragua Ridge Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1068700077"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "bcd6edc5-aef2-11ea-8b98-7812f081b2f7",
+        "family": "Ndila",
+        "given": [ "Ndila", "Ndila" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1997-12-12",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "bcd6fc0f-aef2-11ea-8b98-7812f081b2f7",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "240 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address2",
+            "valueString": "240 address2"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/23ef24cd-aef3-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "23ef24cd-aef3-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:52:48.367+00:00",
+        "source": "#BVxNJAo9MLCgW7PW"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "160540",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4",
+          "display": "Method of enrollment"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "Ndila Ndila Ndila (OpenMRS ID: MGFRKV)"
+      },
+      "encounter": {
+        "reference": "Encounter/23ef24cd-aef3-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-01-05T00:00:00+03:00",
+      "issued": "2020-06-15T13:29:49.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "160542",
+          "display": "Outpatient department"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "33022008",
+          "display": "Outpatient department"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/a47a2613-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a47a2613-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:52:48.367+00:00",
+        "source": "#BVxNJAo9MLCgW7PW"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "1193",
+          "display": "CURRENT DRUGS USED"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "Ndila Ndila Ndila (OpenMRS ID: MGFRKV)"
+      },
+      "encounter": {
+        "reference": "Encounter/a47a2613-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-10-24T00:00:00+03:00",
+      "issued": "2020-06-15T13:40:34.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "164505",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/7fe840fa-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7fe840fa-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:52:48.367+00:00",
+        "source": "#BVxNJAo9MLCgW7PW"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "Ndila Ndila Ndila (OpenMRS ID: MGFRKV)"
+      },
+      "encounter": {
+        "reference": "Encounter/7fe840fa-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-10-24T00:00:00+03:00",
+      "issued": "2020-06-15T13:39:32.000+03:00",
+      "valueDateTime": "2016-11-24T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/7fefe859-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7fefe859-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:52:48.367+00:00",
+        "source": "#BVxNJAo9MLCgW7PW"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "Ndila Ndila Ndila (OpenMRS ID: MGFRKV)"
+      },
+      "encounter": {
+        "reference": "Encounter/7fefe859-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-11-01T00:00:00+03:00",
+      "issued": "2020-06-15T13:39:32.000+03:00",
+      "valueDateTime": "2016-12-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/7ff78b79-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7ff78b79-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:52:48.367+00:00",
+        "source": "#BVxNJAo9MLCgW7PW"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "Ndila Ndila Ndila (OpenMRS ID: MGFRKV)"
+      },
+      "encounter": {
+        "reference": "Encounter/7ff78b79-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-12-06T00:00:00+03:00",
+      "issued": "2020-06-15T13:39:33.000+03:00",
+      "valueDateTime": "2017-02-06T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/7fff307d-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7fff307d-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:52:48.367+00:00",
+        "source": "#BVxNJAo9MLCgW7PW"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "Ndila Ndila Ndila (OpenMRS ID: MGFRKV)"
+      },
+      "encounter": {
+        "reference": "Encounter/7fff307d-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-01-24T00:00:00+03:00",
+      "issued": "2020-06-15T13:39:33.000+03:00",
+      "valueDateTime": "2017-03-02T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/80082344-aef4-11ea-8b98-7812f081b2f7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "80082344-aef4-11ea-8b98-7812f081b2f7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:52:48.367+00:00",
+        "source": "#BVxNJAo9MLCgW7PW"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/bcd6dbae-aef2-11ea-8b98-7812f081b2f7",
+        "type": "Patient",
+        "display": "Ndila Ndila Ndila (OpenMRS ID: MGFRKV)"
+      },
+      "encounter": {
+        "reference": "Encounter/80082344-aef4-11ea-8b98-7812f081b2f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-03-02T00:00:00+03:00",
+      "issued": "2020-06-15T13:39:33.000+03:00",
+      "valueDateTime": "2017-04-06T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  } ]
+}
