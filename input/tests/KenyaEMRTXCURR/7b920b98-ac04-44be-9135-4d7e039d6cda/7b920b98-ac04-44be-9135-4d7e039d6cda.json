@@ -1,0 +1,823 @@
+{
+  "resourceType": "Bundle",
+  "id": "3a952497-0506-46da-82bb-0bf83022dca4",
+  "meta": {
+    "lastUpdated": "2023-09-06T16:37:26.605+00:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [ {
+    "relation": "self",
+    "url": "http://localhost:8080/fhir/Patient?_revinclude=Observation%3Asubject&identifier=1068700123"
+  } ],
+  "entry": [ {
+    "fullUrl": "http://localhost:8080/fhir/Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+    "resource": {
+      "resourceType": "Patient",
+      "id": "7b920b98-ac04-44be-9135-4d7e039d6cda",
+      "meta": {
+        "versionId": "2",
+        "lastUpdated": "2023-08-24T13:25:48.760+00:00",
+        "source": "#TyTCyhT1aiAO9I0Z"
+      },
+      "identifier": [ {
+        "id": "4ed23c7e-2cae-4841-84bb-b126730002aa",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/b547e305-dbf7-4d19-9bb4-20394a910163",
+            "type": "Location",
+            "display": "Location-7031"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGHPCE"
+      }, {
+        "id": "4b9e3685-4e2e-4ce3-86ae-969b75ee6765",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/b547e305-dbf7-4d19-9bb4-20394a910163",
+            "type": "Location",
+            "display": "Location-7031"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "b4d66522-11fc-45c7-83e3-39a1af21ae0d"
+          } ],
+          "text": "Patient Clinic Number"
+        },
+        "value": "1068700123"
+      }, {
+        "id": "1129ffee-a246-4268-8511-c81838c3f0f3",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/b547e305-dbf7-4d19-9bb4-20394a910163",
+            "type": "Location",
+            "display": "Location-7031"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1068700123"
+      }, {
+        "id": "20f60042-6944-4779-9a17-62d2d401bc37",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/b547e305-dbf7-4d19-9bb4-20394a910163",
+            "type": "Location",
+            "display": "Location-7031"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "13272342"
+      }, {
+        "id": "cb2adb43-cf90-4554-9697-898e2a6f6df6",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/b547e305-dbf7-4d19-9bb4-20394a910163",
+            "type": "Location",
+            "display": "Location-7031"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "MOH1668680086"
+      } ],
+      "active": true,
+      "gender": "male",
+      "birthDate": "1973-12-12",
+      "deceasedBoolean": false
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/b76eb12d-3da3-4b05-a32d-63a76d4a96e6",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b76eb12d-3da3-4b05-a32d-63a76d4a96e6",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/b76eb12d-3da3-4b05-a32d-63a76d4a96e6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-09-08T12:23:51+03:00",
+      "issued": "2022-09-08T12:24:25.000+03:00",
+      "valueDateTime": "2022-12-01T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/a63a56de-2d1d-4051-92ff-2c69d681471c",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a63a56de-2d1d-4051-92ff-2c69d681471c",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/a63a56de-2d1d-4051-92ff-2c69d681471c",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-12-01T12:10:37+03:00",
+      "issued": "2022-12-01T12:13:40.000+03:00",
+      "valueDateTime": "2023-02-23T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/41e38888-374a-45f6-a622-4600e33a66fd",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "41e38888-374a-45f6-a622-4600e33a66fd",
+      "meta": {
+        "versionId": "2",
+        "lastUpdated": "2023-08-24T13:25:48.760+00:00",
+        "source": "#TyTCyhT1aiAO9I0Z"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Concept #5096"
+        } ],
+        "text": "Concept #5096"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": " (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/41e38888-374a-45f6-a622-4600e33a66fd",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-02-23T09:55:00+03:00",
+      "issued": "2023-03-01T09:57:21.000+03:00",
+      "valueDateTime": "2023-05-16T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/f9fd5be1-abc2-4191-9fa0-6bec622a4a77",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f9fd5be1-abc2-4191-9fa0-6bec622a4a77",
+      "meta": {
+        "versionId": "2",
+        "lastUpdated": "2023-08-24T13:25:48.760+00:00",
+        "source": "#TyTCyhT1aiAO9I0Z"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Concept #5096"
+        } ],
+        "text": "Concept #5096"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": " (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/f9fd5be1-abc2-4191-9fa0-6bec622a4a77",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-05-16T15:26:02+03:00",
+      "issued": "2023-05-16T15:29:35.000+03:00",
+      "valueDateTime": "2023-08-16T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/ff1016dc-1451-480d-92db-c76916c38ebf",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ff1016dc-1451-480d-92db-c76916c38ebf",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "160540",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4",
+          "display": "Method of enrollment"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/ff1016dc-1451-480d-92db-c76916c38ebf",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-06-04T10:48:12+03:00",
+      "issued": "2020-07-02T10:48:59.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "160542",
+          "display": "Outpatient department"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "33022008",
+          "display": "Outpatient department"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/dcd81528-bdca-4842-9fad-96c59e34116e",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dcd81528-bdca-4842-9fad-96c59e34116e",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "1193",
+          "display": "CURRENT DRUGS USED"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/dcd81528-bdca-4842-9fad-96c59e34116e",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-06-04T00:00:00+03:00",
+      "issued": "2022-06-03T13:29:57.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "9fb85385-b4fb-468c-b7c1-22f75834b4b0",
+          "display": "Tenofovir / Lamivudine / Dolutegravir"
+        } ],
+        "text": "Tenofovir / Lamivudine / Dolutegravir"
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/ebeb7cc5-b156-4ad6-a60b-711af8af0127",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebeb7cc5-b156-4ad6-a60b-711af8af0127",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/ebeb7cc5-b156-4ad6-a60b-711af8af0127",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-06-04T10:51:00+03:00",
+      "issued": "2020-07-02T10:53:21.000+03:00",
+      "valueDateTime": "2020-07-16T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/790bc11a-c17a-4fcf-9059-4a541a53d251",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "790bc11a-c17a-4fcf-9059-4a541a53d251",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/790bc11a-c17a-4fcf-9059-4a541a53d251",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-07-16T11:03:00+03:00",
+      "issued": "2020-08-03T11:04:56.000+03:00",
+      "valueDateTime": "2020-09-15T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/008cf7cb-5f29-407b-b9d5-7e5fed28096e",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "008cf7cb-5f29-407b-b9d5-7e5fed28096e",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/008cf7cb-5f29-407b-b9d5-7e5fed28096e",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-09-16T13:56:00+03:00",
+      "issued": "2020-09-25T13:57:35.000+03:00",
+      "valueDateTime": "2020-10-15T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/0cfb2e6e-e310-47b6-9fbf-7fff97fe27f4",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0cfb2e6e-e310-47b6-9fbf-7fff97fe27f4",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/0cfb2e6e-e310-47b6-9fbf-7fff97fe27f4",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-15T12:24:00+03:00",
+      "issued": "2020-11-03T12:25:08.000+03:00",
+      "valueDateTime": "2020-11-16T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/114234dc-3d72-480d-bb5f-e37f55680041",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "114234dc-3d72-480d-bb5f-e37f55680041",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/114234dc-3d72-480d-bb5f-e37f55680041",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-16T11:35:00+03:00",
+      "issued": "2020-11-20T11:37:06.000+03:00",
+      "valueDateTime": "2020-12-17T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/b17170c5-bd3c-46b1-9cf8-25b992350683",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b17170c5-bd3c-46b1-9cf8-25b992350683",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/b17170c5-bd3c-46b1-9cf8-25b992350683",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-12-16T21:12:00+03:00",
+      "issued": "2021-01-06T21:13:31.000+03:00",
+      "valueDateTime": "2021-03-16T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/489fa491-05e4-4a05-8c03-1e871a469017",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "489fa491-05e4-4a05-8c03-1e871a469017",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/489fa491-05e4-4a05-8c03-1e871a469017",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-03-16T01:16:00+03:00",
+      "issued": "2021-03-23T01:17:54.000+03:00",
+      "valueDateTime": "2021-06-14T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/29315710-7910-4901-8cbe-ea7048de8321",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "29315710-7910-4901-8cbe-ea7048de8321",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/29315710-7910-4901-8cbe-ea7048de8321",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-06-14T11:18:00+03:00",
+      "issued": "2021-06-15T11:20:16.000+03:00",
+      "valueDateTime": "2021-09-13T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/3add10a6-1aae-496e-b676-7f8639afbfc7",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3add10a6-1aae-496e-b676-7f8639afbfc7",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/3add10a6-1aae-496e-b676-7f8639afbfc7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-09-13T11:03:00+03:00",
+      "issued": "2021-09-20T11:05:38.000+03:00",
+      "valueDateTime": "2021-12-14T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/d0308448-2c55-47de-ab5b-ba5e39862a48",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d0308448-2c55-47de-ab5b-ba5e39862a48",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/d0308448-2c55-47de-ab5b-ba5e39862a48",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-12-14T00:00:00+03:00",
+      "issued": "2022-01-04T10:43:46.000+03:00",
+      "valueDateTime": "2022-03-15T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/47d08eb5-eb23-4f1d-a088-a6dafd622ae8",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "47d08eb5-eb23-4f1d-a088-a6dafd622ae8",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/47d08eb5-eb23-4f1d-a088-a6dafd622ae8",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-03-15T10:25:00+03:00",
+      "issued": "2022-03-17T10:26:06.000+03:00",
+      "valueDateTime": "2022-06-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://localhost:8080/fhir/Observation/3e89320c-a7b5-4145-ae0c-75fe683ab2ed",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3e89320c-a7b5-4145-ae0c-75fe683ab2ed",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-22T13:53:05.651+00:00",
+        "source": "#mSHpW0yxkwbxxtNp"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code": "5096",
+          "display": "RETURN VISIT DATE"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/7b920b98-ac04-44be-9135-4d7e039d6cda",
+        "type": "Patient",
+        "display": "WAWINJA WAWINJA WAWINJA (OpenMRS ID: MGHPCE)"
+      },
+      "encounter": {
+        "reference": "Encounter/3e89320c-a7b5-4145-ae0c-75fe683ab2ed",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-06-06T11:42:00+03:00",
+      "issued": "2022-08-15T11:45:07.000+03:00",
+      "valueDateTime": "2022-09-07T00:00:00+03:00"
+    },
+    "search": {
+      "mode": "include"
+    }
+  } ]
+}
