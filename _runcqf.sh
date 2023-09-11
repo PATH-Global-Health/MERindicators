@@ -18,7 +18,8 @@ cp fsh-generated/resources/Library-* input/resources/library/
 bash _refresh.sh
 
 # run publisher without sushi
-bash _genonce.sh -no-sushi 
+# bash _genonce.sh -no-sushi 
+java -Xmx4g -jar ./input-cache/publisher.jar publisher -ig . -no-sushi
 
 # put CQL test cases in place
 # this has to be updated by hand
