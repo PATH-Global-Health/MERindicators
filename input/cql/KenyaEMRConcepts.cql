@@ -51,6 +51,7 @@ code "Institutional entry point HIV treatment": '45252-4' from "LOINC" display '
 // code "New on ART": 'new-on-art' from "PMTCT ART Status Codes" display 'New on ART'
 // need to change to valueset
 code "Reason for discontinuation of program": '161555' from "CIEL" display 'Reason for discontinuation of program'
+code "Treatment end date": '164384' from "CIEL" display 'Treatment end date'
 
 // valuesets
 valueset AgeRangesTXCURR: 'https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR'

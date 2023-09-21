@@ -47,6 +47,8 @@ Description: "Columbia International eHealth Laboratory (CIEL)"
 * #160542 "Outpatient department"
 * #1193 "CURRENT DRUGS USED"
 * #5096 "RETURN VISIT DATE"
+* #164384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA "Treatment end date"
+* #164384 "Treatment end date"
 // wip
 * #160104 "Efavirenz / Lamivudine / Stavudine"
 * #160105 "Efavirenz / Stavudine / Zidovudine"
