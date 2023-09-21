@@ -234,12 +234,22 @@ define "Discontinuation":
   //where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
 
 
+// valueDateTime
+define "Transfer Out":
+  ["Observation": Cx."Treatment end date"] Obs
+  where Obs.value before end of "Measurement Period" and Obs.value after "Most Recent Return Visit During Period".effective
+
+
 define "Discontinuation Boolean": exists "Discontinuation"
+
+
+define "Transfer Out Boolean": exists "Transfer Out"
 
 
 // Todo
 define "Measure Population Exclusion": 
   "Discontinuation Boolean"
+  or "Transfer Out Boolean"
   or "Deceased Boolean"
   //or ("Deceased Boolean" is true or "Deceased DateTime Only" is true)
 
