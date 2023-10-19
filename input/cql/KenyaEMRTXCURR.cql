@@ -75,14 +75,14 @@ Check that patient had visit by 24th August/by 30 days.
 // Patients started on ART drugs (participating in program)
 // who made a clinic visit during the reporting period (Q: Any type? A: yes)
 
+define "Return Visit Observations":
+  ["Observation": Cx."RETURN VISIT DATE"]
+
 // return visit during period
 define "Return Visits During Period":
-  ["Observation": Cx."RETURN VISIT DATE"] Obs
-  // where (Obs.value during "Measurement Period" or Obs.value before (end of "Measurement Period" + 30 days))
-  // where (Obs.effective before end of "Measurement Period" and Obs.value after start of "Measurement Period")
+  ("Return Visit Observations") Obs
   where (Obs.effective before end of "Measurement Period")
   sort by date from (effective as FHIR.dateTime) desc
-
 
 define "Any Return Visit During Period": 
   exists "Return Visits During Period"
@@ -104,30 +104,12 @@ define "Return Visit within 30 days of Period":
 // the other datetime fields are not used
 // checks on being started on ART, this is not 'picking up drugs'
 
+define "Current Drugs Used Observations":
+  ["Observation": Cx."CURRENT DRUGS USED"]
+
 define "Has started ART":
-  exists( ["Observation": Cx."CURRENT DRUGS USED"] )
+  exists("Current Drugs Used Observations")
 
-/*
-define "Drugs Visit During Period":
-  ["Observation": Cx."CURRENT DRUGS USED"] Obs
-    where (Obs.effective during "Measurement Period")
-
-
-define "Drugs Visit During Period Boolean": exists "Drugs Visit During Period"
-
-
-// Observations for drugs where issuedDateTime is during measurement period
-define "Drugs During Period":
-  ["Observation": Cx."CURRENT DRUGS USED"] Obs
-    where (Obs.effective before end of "Measurement Period")
-
-
-define "Drugs Effective":
-  Last("Drugs During Period" Obs
-    sort by effective.value
-  )
-*/
-    
 
 /*
 Additional notes:
@@ -144,61 +126,9 @@ bundle includes original regimen
 
 // Patient who made a clinic visit in the past and were given medicine to last the reporting period and beyond
 
-/*
-Expressions give that drug start and stop, then use to create an interval
-last to get max or if multiple use aggregate clause of a query to sort them and turn into intervals by taking the next
-define DrugStart: [Observation: ATRDrug].single().value as DateTime
-define DrugStop: [Observation: ATRDrugStop].single().value as DateTime
-define DrugInterval: Interval[DrugStart, DrugStop]
-*/
-
-
-// Revisit this. This may work for other systems.
-// Indicate whether patient started on drugs or not.
-// enroll in HIV, but not started on drugs yet
-// current drugs used: this captures that they are on art, switches drugs, substitutions
-// current drugs used does not capture dispense
-// appointment captures when drugs scrip ends
-
-/*
-define "DrugStart":
-  Last(["Observation": Cx."CURRENT DRUGS USED"] Obs
-    where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
-    // todo:
-    // this is needed but will not evaluate if system is missing
-    // and singleton from Obs.value.coding in Cx."CIELHIVMedications" 
-    return Obs.effective.value
-    )
-
-
-define "DrugStop":
-  Last(["Observation": Cx."RETURN VISIT DATE"] Obs
-    return Obs.effective.value
-    )
-
-
-define "DrugInterval": Interval[DrugStart, DrugStop]
-
-
-// Patient who made a clinic visit in the past and were given medicine to last the reporting period and beyond
-// keyword is 'and beyond' = 30 days
-
-define "End Measurement Period": end of "Measurement Period"
-
-define "Interval Hack": Interval["End Measurement Period", "End Measurement Period"]
-
-
-// Interval must overlap with END of the period
-define "Last Return": "DrugInterval" overlaps ("Interval Hack")
-*/
 
 define "Measure Population": 
   "Return Visit within 30 days of Period" and "Has started ART"
-  /*
-  "Last Return" is true
-  or "Drugs Visit During Period Boolean" is true
-  or "Any Return Visit During Period" is true
-  */
 
 
 // Measure Population Exclusion
@@ -231,7 +161,6 @@ define "Deceased DateTime Only":
 define "Discontinuation":
   ["Observation": Cx."Reason for discontinuation of program"] Obs
   where Obs.effective before end of "Measurement Period" and Obs.effective after "Most Recent Return Visit During Period".effective
-  //where (Obs.effective during "Measurement Period" or Obs.effective before "Measurement Period")
 
 
 // valueDateTime
@@ -246,7 +175,6 @@ define "Discontinuation Boolean": exists "Discontinuation"
 define "Transfer Out Boolean": exists "Transfer Out"
 
 
-// Todo
 define "Measure Population Exclusion": 
   "Discontinuation Boolean"
   or "Transfer Out Boolean"

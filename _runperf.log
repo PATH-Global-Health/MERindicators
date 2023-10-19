@@ -1,0 +1,32 @@
+run pings to see latency of overall r/t links
+round-trip min/avg/max/stddev = 255.051/255.051/255.051/0.000 ms
+round-trip min/avg/max/stddev = 250.146/250.146/250.146/nan ms
+round-trip min/avg/max/stddev = 250.705/250.705/250.705/nan ms
+round-trip min/avg/max/stddev = 252.852/252.852/252.852/0.000 ms
+round-trip min/avg/max/stddev = 251.704/251.704/251.704/nan ms
+
+run existing version of measure
+'real' is wall time including link latency
+real	0m19.887s
+real	0m18.668s
+real	0m18.132s
+real	0m17.194s
+real	0m18.356s
+real	0m18.635s
+real	0m19.645s
+real	0m19.558s
+real	0m19.787s
+real	0m19.855s
+
+run new version of measure
+'real' is wall time including link latency
+real	0m20.399s
+real	0m18.438s
+real	0m18.696s
+real	0m19.247s
+real	0m20.659s
+real	0m19.727s
+real	0m19.339s
+real	0m19.598s
+real	0m19.126s
+real	0m19.691s
