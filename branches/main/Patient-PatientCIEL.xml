@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientCIEL"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Mittens Cat</b> female, DoB: 1985-01-01 ( OpenMRS ID: 1234567 (use: OFFICIAL))</p><hr/></div>
+  </text>
+  <identifier>
+    <extension url="http://fhir.openmrs.org/ext/patient/identifier#location">
+      <valueReference>
+        <reference value="Location/LocationCIEL"/>
+        <type value="Location"/>
+        <display value="Inpatient Ward"/>
+      </valueReference>
+    </extension>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+      </coding>
+      <text value="OpenMRS ID"/>
+    </type>
+    <value value="1234567"/>
+  </identifier>
+  <name>
+    <text value="Mittens Cat"/>
+    <family value="Cat"/>
+    <given value="Mittens"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1985-01-01"/>
+</Patient>

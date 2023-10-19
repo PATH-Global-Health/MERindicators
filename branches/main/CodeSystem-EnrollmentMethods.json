@@ -1,0 +1,88 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "EnrollmentMethods",
+  "meta" : {
+    "lastUpdated" : "2023-07-20T15:56:38.013277Z"
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This  code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>HBTC</td></tr><tr><td style=\"white-space:nowrap\">160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>VCT Site</td></tr><tr><td style=\"white-space:nowrap\">159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>MCH</td></tr><tr><td style=\"white-space:nowrap\">160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>IPD-Adult</td></tr><tr><td style=\"white-space:nowrap\">160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>IPD-Child</td></tr><tr><td style=\"white-space:nowrap\">160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>TB Clinic</td></tr><tr><td style=\"white-space:nowrap\">160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>OPD</td></tr><tr><td style=\"white-space:nowrap\">162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>CCC</td></tr><tr><td style=\"white-space:nowrap\">160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>Self Test</td></tr><tr><td style=\"white-space:nowrap\">5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>Other(eg STI)</td></tr></table></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods",
+  "version" : "0.1.0",
+  "name" : "EnrollmentMethods",
+  "title" : "Enrollment Methods for HIV program",
+  "status" : "draft",
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "1",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "HBTC"
+  },
+  {
+    "code" : "160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "VCT Site"
+  },
+  {
+    "code" : "159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "MCH"
+  },
+  {
+    "code" : "160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "IPD-Adult"
+  },
+  {
+    "code" : "160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "IPD-Child"
+  },
+  {
+    "code" : "160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "TB Clinic"
+  },
+  {
+    "code" : "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "OPD"
+  },
+  {
+    "code" : "162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "CCC"
+  },
+  {
+    "code" : "160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "Self Test"
+  },
+  {
+    "code" : "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "Other(eg STI)"
+  }]
+}

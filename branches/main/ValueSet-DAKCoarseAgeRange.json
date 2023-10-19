@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DAKCoarseAgeRange",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-DAKCoarseAgeRangeCS.html\"><code>https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS</code></a></li></ul></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange",
+  "version" : "0.1.0",
+  "name" : "DAKCoarseAgeRange",
+  "title" : "DAKCoarseAgeRange",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DAKCoarseAgeRange",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS"
+    }]
+  }
+}

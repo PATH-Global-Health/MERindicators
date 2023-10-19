@@ -1,0 +1,160 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SyntheaHIVMedications",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>199663</td><td>zidovudine 300 MG Oral Tablet</td></tr><tr><td>284988</td><td>didanosine 400 MG Delayed Release Oral Capsule</td></tr><tr><td>313760</td><td>zalcitabine 0.75 MG Oral Tablet</td></tr><tr><td>313110</td><td>stavudine 40 MG Oral Capsule</td></tr><tr><td>349491</td><td>lamivudine 300 MG Oral Tablet</td></tr><tr><td>200082</td><td>lamivudine 150 MG / zidovudine 300 MG Oral Tablet</td></tr><tr><td>310988</td><td>indinavir 400 MG Oral Capsule</td></tr><tr><td>859863</td><td>saquinavir mesylate 500 MG Oral Tablet</td></tr><tr><td>317150</td><td>ritonavir 100 MG Oral Capsule</td></tr><tr><td>403978</td><td>nelfinavir 625 MG Oral Tablet</td></tr><tr><td>349477</td><td>efavirenz 600 MG Oral Tablet</td></tr><tr><td>597730</td><td>lopinavir 200 MG / ritonavir 50 MG Oral Tablet</td></tr><tr><td>349251</td><td>tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>403875</td><td>emtricitabine 200 MG Oral Capsule</td></tr><tr><td>476556</td><td>emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>1147334</td><td>emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>643066</td><td>efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>1306292</td><td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>744842</td><td>raltegravir 400 MG Oral Tablet</td></tr><tr><td>1433873</td><td>dolutegravir 50 MG Oral Tablet</td></tr><tr><td>402109</td><td>fosamprenavir 700 MG Oral Tablet</td></tr><tr><td>664741</td><td>atazanavir 300 MG Oral Capsule</td></tr><tr><td>1359269</td><td>darunavir 800 MG Oral Tablet</td></tr><tr><td>2003249</td><td>lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>1747691</td><td>emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table</td></tr><tr><td>1999667</td><td>bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet</td></tr><tr><td>1721613</td><td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet</td></tr><tr><td>2122519</td><td>dolutegravir 50 MG / lamivudine 300 MG Oral Tablet</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+  "version" : "0.1.0",
+  "name" : "SyntheaHIVMedications",
+  "title" : "Synthea HIV MedicationsVS",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Synthea HIV MedicationsVS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "199663",
+        "display" : "zidovudine 300 MG Oral Tablet"
+      },
+      {
+        "code" : "284988",
+        "display" : "didanosine 400 MG Delayed Release Oral Capsule"
+      },
+      {
+        "code" : "313760",
+        "display" : "zalcitabine 0.75 MG Oral Tablet"
+      },
+      {
+        "code" : "313110",
+        "display" : "stavudine 40 MG Oral Capsule"
+      },
+      {
+        "code" : "349491",
+        "display" : "lamivudine 300 MG Oral Tablet"
+      },
+      {
+        "code" : "200082",
+        "display" : "lamivudine 150 MG / zidovudine 300 MG Oral Tablet"
+      },
+      {
+        "code" : "310988",
+        "display" : "indinavir 400 MG Oral Capsule"
+      },
+      {
+        "code" : "859863",
+        "display" : "saquinavir mesylate 500 MG Oral Tablet"
+      },
+      {
+        "code" : "317150",
+        "display" : "ritonavir 100 MG Oral Capsule"
+      },
+      {
+        "code" : "403978",
+        "display" : "nelfinavir 625 MG Oral Tablet"
+      },
+      {
+        "code" : "349477",
+        "display" : "efavirenz 600 MG Oral Tablet"
+      },
+      {
+        "code" : "597730",
+        "display" : "lopinavir 200 MG / ritonavir 50 MG Oral Tablet"
+      },
+      {
+        "code" : "349251",
+        "display" : "tenofovir disoproxil fumarate 300 MG Oral Tablet"
+      },
+      {
+        "code" : "403875",
+        "display" : "emtricitabine 200 MG Oral Capsule"
+      },
+      {
+        "code" : "476556",
+        "display" : "emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+      },
+      {
+        "code" : "1147334",
+        "display" : "emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+      },
+      {
+        "code" : "643066",
+        "display" : "efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+      },
+      {
+        "code" : "1306292",
+        "display" : "cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+      },
+      {
+        "code" : "744842",
+        "display" : "raltegravir 400 MG Oral Tablet"
+      },
+      {
+        "code" : "1433873",
+        "display" : "dolutegravir 50 MG Oral Tablet"
+      },
+      {
+        "code" : "402109",
+        "display" : "fosamprenavir 700 MG Oral Tablet"
+      },
+      {
+        "code" : "664741",
+        "display" : "atazanavir 300 MG Oral Capsule"
+      },
+      {
+        "code" : "1359269",
+        "display" : "darunavir 800 MG Oral Tablet"
+      },
+      {
+        "code" : "2003249",
+        "display" : "lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+      },
+      {
+        "code" : "1747691",
+        "display" : "emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table"
+      },
+      {
+        "code" : "1999667",
+        "display" : "bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet"
+      },
+      {
+        "code" : "1721613",
+        "display" : "cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet"
+      },
+      {
+        "code" : "2122519",
+        "display" : "dolutegravir 50 MG / lamivudine 300 MG Oral Tablet"
+      }]
+    }]
+  }
+}

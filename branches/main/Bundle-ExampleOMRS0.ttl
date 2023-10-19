@@ -1,0 +1,215 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Bundle/ExampleOMRS0> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOMRS0"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/PatientOMRS0"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/PatientOMRS0> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Patient/PatientOMRS0"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Location/LocationExample"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Location/LocationExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Location/LocationExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Encounter/EncounterOMRS0"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Encounter/EncounterOMRS0> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Encounter/EncounterOMRS0"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Observation/ObservationOMRS0"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Observation/ObservationOMRS0> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/ObservationOMRS0"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/PatientOMRS0> a fhir:Patient ;
+  fhir:id [ fhir:v "PatientOMRS0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"PatientOMRS0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;PatientOMRS0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-omrs-patient.html\">OpenMRS Patient</a></p></div><p><b>identifier</b>: OpenMRS ID: 4343534 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Ricky Jeannette </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1996-12-12</p><p><b>deceased</b>: false</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://path-global-health.github.io/MERindicators/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> ;
+         fhir:reference [ fhir:v "Location/a3b793f0-eb53-4cda-92ce-fe0a77106252" ] ;
+         fhir:type [ fhir:v "Location"^^xsd:anyURI ] ;
+         fhir:display [ fhir:v "Inpatient Ward" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] ) ;
+       fhir:text [ fhir:v "OpenMRS ID" ]
+     ] ;
+     fhir:value [ fhir:v "4343534" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Jeannette" ] ;
+     fhir:given ( [ fhir:v "Ricky" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1996-12-12"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] . # 
+
+<https://path-global-health.github.io/MERindicators/Location/LocationExample> a fhir:Location ;
+  fhir:id [ fhir:v "a3b793f0-eb53-4cda-92ce-fe0a77106252"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-location"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"a3b793f0-eb53-4cda-92ce-fe0a77106252\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;a3b793f0-eb53-4cda-92ce-fe0a77106252&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-omrs-location.html\">OpenMRS Location</a></p></div><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: Sleep disorders unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#SLEEP)</span></p><p><b>telecom</b>: ph: (+1) 734-677-7777, fax: (+1) 734-677-6622, <a href=\"mailto:hq@HL7.org\">hq@HL7.org</a></p><p><b>address</b>: 3300 Washtenaw Avenue, Suite 227 Ann Arbor MI 48104 USA (HOME)</p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>-83.69471</td><td>42.2565</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Outpatient Clinic"] ; # 
+  fhir:description [ fhir:v "Outpatient Clinic"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SLEEP" ] ;
+       fhir:display [ fhir:v "Sleep disorders unit" ]
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(+1) 734-677-7777" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "(+1) 734-677-6622" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "hq@HL7.org" ]
+  ] ) ; # 
+  fhir:address [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "3300 Washtenaw Avenue, Suite 227" ] ) ;
+     fhir:city [ fhir:v "Ann Arbor" ] ;
+     fhir:district [ fhir:v "Mukono" ] ;
+     fhir:state [ fhir:v "MI" ] ;
+     fhir:postalCode [ fhir:v "48104" ] ;
+     fhir:country [ fhir:v "USA" ]
+  ] ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v "-83.69471"^^xsd:decimal ] ;
+     fhir:latitude [ fhir:v "42.2565"^^xsd:decimal ]
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/Encounter/EncounterOMRS0> a fhir:Encounter ;
+  fhir:id [ fhir:v "EncounterOMRS0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EncounterOMRS0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EncounterOMRS0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-omrs-encounter.html\">Openmrs Encounter</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: Vitals <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (encounter-type#67a71486-1a54-468f-ac3e-7091a9a79584)</span></p><p><b>subject</b>: <a href=\"#Patient_PatientOMRS0\">See above (Patient/PatientOMRS0)</a></p><p><b>period</b>: 2022-06-22 --&gt; 2022-06-22</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_a3b793f0-eb53-4cda-92ce-fe0a77106252\">See above (Location/a3b793f0-eb53-4cda-92ce-fe0a77106252)</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "unknown"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.openmrs.org/code-system/encounter-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "67a71486-1a54-468f-ac3e-7091a9a79584" ] ;
+       fhir:display [ fhir:v "Vitals" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/PatientOMRS0> ;
+     fhir:reference [ fhir:v "Patient/PatientOMRS0" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-06-22"^^xsd:date ] ;
+     fhir:end [ fhir:v "2022-06-22"^^xsd:date ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://path-global-health.github.io/MERindicators/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> ;
+       fhir:reference [ fhir:v "Location/a3b793f0-eb53-4cda-92ce-fe0a77106252" ]
+     ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Observation/ObservationOMRS0> a fhir:Observation ;
+  fhir:id [ fhir:v "ObservationOMRS0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationOMRS0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ObservationOMRS0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-OpenMRS-observation.html\">OpenMRS Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Exam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Currently taking ARV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CIEL.html\">CIEL</a>#160119)</span></p><p><b>subject</b>: <a href=\"#Patient_PatientOMRS0\">See above (Patient/PatientOMRS0)</a></p><p><b>encounter</b>: <a href=\"Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CIEL.html\">CIEL</a>#1065)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "exam" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://openconceptlab.org/orgs/CIEL/sources/CIEL"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "160119" ] ;
+       fhir:display [ fhir:v "Currently taking ARV" ]
+     ] ) ;
+     fhir:text [ fhir:v "Currently taking ARV" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/PatientOMRS0> ;
+     fhir:reference [ fhir:v "Patient/PatientOMRS0" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;
+     fhir:reference [ fhir:v "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://openconceptlab.org/orgs/CIEL/sources/CIEL"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1065" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="OnARV"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/432101000124108">432101000124108</a></td><td>History of antiretroviral therapy (situation)</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-OpenHIE.html"><code>https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-OpenHIE.html#OpenHIE-432101000124108">432101000124108</a></td><td>History of antiretroviral therapy (situation)</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-CIEL.html"><code>https://openconceptlab.org/orgs/CIEL/sources/CIEL</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-160119">160119</a></td><td>CURRENTLY TAKING ARV</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/ValueSet/OnARV"/>
+  <version value="0.1.0"/>
+  <name value="OnARV"/>
+  <title value="History of antiretroviral therapy (situation)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-10-19T20:59:19+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="History of antiretroviral therapy (situation)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="432101000124108"/>
+        <display value="History of antiretroviral therapy (situation)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE"/>
+      <concept>
+        <code value="432101000124108"/>
+        <display value="History of antiretroviral therapy (situation)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+      <concept>
+        <code value="160119"/>
+        <display value="CURRENTLY TAKING ARV"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

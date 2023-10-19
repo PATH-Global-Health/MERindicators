@@ -1,0 +1,652 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion",
+         "type" : "CqlToElmInfo"
+      }, {
+         "type" : "Annotation",
+         "s" : {
+            "r" : "38",
+            "s" : [ {
+               "value" : [ "","library DAKConcepts version '0.1.0'" ]
+            } ]
+         }
+      } ],
+      "identifier" : {
+         "id" : "DAKConcepts",
+         "system" : "https://path-global-health.github.io/MERindicators",
+         "version" : "0.1.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localId" : "1",
+            "locator" : "3:1-3:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "1",
+                  "s" : [ {
+                     "value" : [ "","using " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIR" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localId" : "2",
+            "locator" : "5:1-5:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRHelpers",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "2",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIRHelpers" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "3",
+            "locator" : "6:1-6:44",
+            "localIdentifier" : "FC",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRCommon",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "3",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIRCommon" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'"," called ","FC" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "localId" : "4",
+            "locator" : "9:1-9:48",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "SNOMED-CT",
+            "id" : "http://snomed.info/sct",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "4",
+                  "s" : [ {
+                     "value" : [ "// codesystems\n","codesystem ","\"SNOMED-CT\"",": ","'http://snomed.info/sct'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "5",
+            "locator" : "10:1-10:38",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "LOINC",
+            "id" : "http://loinc.org",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "5",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"LOINC\"",": ","'http://loinc.org'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "6",
+            "locator" : "11:1-11:66",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "RxNorm",
+            "id" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "6",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"RxNorm\"",": ","'http://www.nlm.nih.gov/research/umls/rxnorm'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "7",
+            "locator" : "12:1-12:53",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "ICD-11",
+            "id" : "http://hl7.org/fhir/sid/icd-11",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "7",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"ICD-11\"",": ","'http://hl7.org/fhir/sid/icd-11'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "8",
+            "locator" : "15:1-15:70",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "CIEL",
+            "id" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "8",
+                  "s" : [ {
+                     "value" : [ "// local codesystems\n","codesystem ","\"CIEL\"",": ","'https://openconceptlab.org/orgs/CIEL/sources/CIEL'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "9",
+            "locator" : "16:1-16:43",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "OpenHIE",
+            "id" : "https://openhie.org",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "9",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"OpenHIE\"",": ","'https://openhie.org'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "10",
+            "locator" : "17:1-17:128",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "DAK Dispensing Quantity CS",
+            "id" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "10",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"DAK Dispensing Quantity CS\"",": ","'https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "11",
+            "locator" : "18:1-18:121",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "DAK Coarse Age Range CS",
+            "id" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "11",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"DAK Coarse Age Range CS\"",": ","'https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "localId" : "12",
+            "locator" : "21:1-21:90",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "HL7 Administrative Gender",
+            "id" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "12",
+                  "s" : [ {
+                     "value" : [ "// FHIR CS and VS\n","valueset ","\"HL7 Administrative Gender\"",": ","'http://hl7.org/fhir/ValueSet/administrative-gender'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "27",
+            "locator" : "40:1-40:103",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "AgeRangesTXCURR",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "27",
+                  "s" : [ {
+                     "value" : [ "// code \"New on ART\": 'new-on-art' from \"PMTCT ART Status Codes\" display 'New on ART'\n\n// valuesets\n","valueset ","AgeRangesTXCURR",": ","'https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "28",
+            "locator" : "45:1-45:103",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "Viral Load Test",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "28",
+                  "s" : [ {
+                     "value" : [ "// valueset \"HIV Testing Services\": 'https://path-global-health.github.io/MERindicators/ValueSet/HIVTestingServices' // Should use HIV tests\n// viral load tests, results\n// commenting out for now and the union\n// valueset \"Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)\": 'urn:oid:2.16.840.1.113762.1.4.1056.50' // Used by CMS349\n","valueset ","\"Viral Load Test\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "29",
+            "locator" : "46:1-46:92",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK PLHIV",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "29",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK PLHIV\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "30",
+            "locator" : "47:1-47:88",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK MMD",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "30",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK MMD\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "31",
+            "locator" : "48:1-48:93",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK On ART",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKONART",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "31",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK On ART\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKONART'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "32",
+            "locator" : "49:1-49:108",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK HIV Transfer In",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "32",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK HIV Transfer In\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "33",
+            "locator" : "50:1-50:110",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK ARV Drug Pickup",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "33",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK ARV Drug Pickup\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "34",
+            "locator" : "51:1-51:104",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK ART Medications",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "34",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK ART Medications\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "35",
+            "locator" : "52:1-52:119",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK Dispensing Quantity",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "35",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK Dispensing Quantity\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "36",
+            "locator" : "53:1-53:112",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK Coarse Age Range",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "36",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK Coarse Age Range\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "37",
+            "locator" : "54:1-54:100",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK ART Stopped",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "37",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK ART Stopped\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "38",
+            "locator" : "55:1-55:108",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "DAK HIV Transferred",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "38",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"DAK HIV Transferred\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "localId" : "14",
+            "locator" : "25:1-25:85",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Pregnancy (finding)",
+            "id" : "77386006",
+            "display" : "Pregnancy (finding)",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "14",
+                  "s" : [ {
+                     "value" : [ "// codes\n// The display \"Pregnancy (finding)\" is not a valid display for the code {http://snomed.info/sct}77386006\n","code ","\"Pregnancy (finding)\"",": ","'77386006'"," from " ]
+                  }, {
+                     "r" : "13",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Pregnancy (finding)'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "13",
+               "locator" : "25:45-25:55",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "16",
+            "locator" : "26:1-26:64",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Pregnant",
+            "id" : "146789000",
+            "display" : "Pregnant",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "16",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Pregnant\"",": ","'146789000'"," from " ]
+                  }, {
+                     "r" : "15",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Pregnant'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "15",
+               "locator" : "26:35-26:45",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "18",
+            "locator" : "28:1-28:126",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Prenatal initial visit (regime/therapy)",
+            "id" : "424441002",
+            "display" : "Prenatal initial visit (regime/therapy)",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "18",
+                  "s" : [ {
+                     "value" : [ "// code \"Breastfeeding\": '169750002' from \"SNOMED-CT\" display 'Breastfeeding'\n","code ","\"Prenatal initial visit (regime/therapy)\"",": ","'424441002'"," from " ]
+                  }, {
+                     "r" : "17",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Prenatal initial visit (regime/therapy)'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "17",
+               "locator" : "28:66-28:76",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "20",
+            "locator" : "29:1-29:96",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Pregnancy status - Reported",
+            "id" : "11449-6",
+            "display" : "Pregnancy status - Reported",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "20",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Pregnancy status - Reported\"",": ","'11449-6'"," from " ]
+                  }, {
+                     "r" : "19",
+                     "s" : [ {
+                        "value" : [ "\"LOINC\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Pregnancy status - Reported'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "19",
+               "locator" : "29:52-29:58",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "LOINC"
+            }
+         }, {
+            "localId" : "22",
+            "locator" : "33:1-33:80",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Currently taking ARV",
+            "id" : "160119",
+            "display" : "Currently taking ARV",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "22",
+                  "s" : [ {
+                     "value" : [ "// code \"Livebirth (finding)\": '281050002' from \"SNOMED-CT\" display 'Livebirth (finding)'\n// code \"Postpartum state (finding)\": '86569001' from \"SNOMED-CT\" display 'Postpartum state (finding)'\n// code \"Normal breast feeding (finding)\": '69840006' from \"SNOMED-CT\" display 'Normal breast feeding (finding)'\n","code ","\"Currently taking ARV\"",": ","'160119'"," from " ]
+                  }, {
+                     "r" : "21",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Currently taking ARV'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "21",
+               "locator" : "33:44-33:49",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "24",
+            "locator" : "34:1-34:53",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Coded Answer",
+            "id" : "1065",
+            "display" : "Yes",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "24",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Coded Answer\"",": ","'1065'"," from " ]
+                  }, {
+                     "r" : "23",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Yes'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "23",
+               "locator" : "34:34-34:39",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "26",
+            "locator" : "35:1-35:142",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "History of antiretroviral therapy (situation)",
+            "id" : "432101000124108",
+            "display" : "History of antiretroviral therapy (situation)",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "26",
+                  "s" : [ {
+                     "value" : [ "","code ","\"History of antiretroviral therapy (situation)\"",": ","'432101000124108'"," from " ]
+                  }, {
+                     "r" : "25",
+                     "s" : [ {
+                        "value" : [ "\"OpenHIE\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'History of antiretroviral therapy (situation)'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "25",
+               "locator" : "35:78-35:86",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "OpenHIE"
+            }
+         } ]
+      }
+   }
+}

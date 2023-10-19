@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DAKCoarseAgeRangeCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">lt15<a name=\"DAKCoarseAgeRangeCS-lt15\"> </a></td><td>&lt;15</td></tr><tr><td style=\"white-space:nowrap\">gt15<a name=\"DAKCoarseAgeRangeCS-gt15\"> </a></td><td>15+</td></tr></table></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS",
+  "version" : "0.1.0",
+  "name" : "DAKCoarseAgeRangeCS",
+  "title" : "DAKCoarseAgeRangeCS",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DAKCoarseAgeRangeCS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "lt15",
+    "display" : "<15"
+  },
+  {
+    "code" : "gt15",
+    "display" : "15+"
+  }]
+}

@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EnrollmentMethods"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2023-07-20T15:56:38.013277Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This  code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>HBTC</td></tr><tr><td style=\"white-space:nowrap\">160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>VCT Site</td></tr><tr><td style=\"white-space:nowrap\">159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>MCH</td></tr><tr><td style=\"white-space:nowrap\">160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>IPD-Adult</td></tr><tr><td style=\"white-space:nowrap\">160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>IPD-Child</td></tr><tr><td style=\"white-space:nowrap\">160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>TB Clinic</td></tr><tr><td style=\"white-space:nowrap\">160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>OPD</td></tr><tr><td style=\"white-space:nowrap\">162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>CCC</td></tr><tr><td style=\"white-space:nowrap\">160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>Self Test</td></tr><tr><td style=\"white-space:nowrap\">5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"EnrollmentMethods-5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>Other(eg STI)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EnrollmentMethods"] ; # 
+  fhir:title [ fhir:v "Enrollment Methods for HIV program"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-10-19T20:59:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "1"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "HBTC" ]
+  ] [
+     fhir:code [ fhir:v "160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "VCT Site" ]
+  ] [
+     fhir:code [ fhir:v "159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "MCH" ]
+  ] [
+     fhir:code [ fhir:v "160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "IPD-Adult" ]
+  ] [
+     fhir:code [ fhir:v "160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "IPD-Child" ]
+  ] [
+     fhir:code [ fhir:v "160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "TB Clinic" ]
+  ] [
+     fhir:code [ fhir:v "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "OPD" ]
+  ] [
+     fhir:code [ fhir:v "162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "CCC" ]
+  ] [
+     fhir:code [ fhir:v "160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "Self Test" ]
+  ] [
+     fhir:code [ fhir:v "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+     fhir:display [ fhir:v "Other(eg STI)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

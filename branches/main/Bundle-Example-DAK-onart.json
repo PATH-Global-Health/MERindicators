@@ -1,0 +1,228 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "Example-DAK-onart",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "Patient-DAK-onart",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Patient-DAK-onart\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Patient-DAK-onart&quot; </p></div><p><b>name</b>: Mittens Cat</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-01-01</p></div>"
+      },
+      "name" : [{
+        "text" : "Mittens Cat",
+        "family" : "Cat",
+        "given" : ["Mittens"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1985-01-01"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/Patient-DAK-onart"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-hiv",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "Condition-DAK-onart-hiv",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition-DAK-onart-hiv\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition-DAK-onart-hiv&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#737378009)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>onset</b>: 2020-01-01</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "737378009",
+          "display" : "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Patient-DAK-onart"
+      },
+      "onsetDateTime" : "2020-01-01"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/Condition-DAK-onart-hiv"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-art",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "Condition-DAK-onart-art",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition-DAK-onart-art\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition-DAK-onart-art&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Drug prophylaxis (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#182929008)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>onset</b>: 2020-01-01</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "182929008",
+          "display" : "Drug prophylaxis (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Patient-DAK-onart"
+      },
+      "onsetDateTime" : "2020-01-01"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/Condition-DAK-onart-art"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Patient/Encounter-DAK-onart",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "Encounter-DAK-onart",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"Encounter-DAK-onart\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;Encounter-DAK-onart&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>period</b>: 2023-07-03 --&gt; 2023-07-03</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-Location-DAK.html\">Location/Location-DAK</a> &quot;DAK Location&quot;</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-Organization-DAK.html\">Organization/Organization-DAK</a> &quot;DAK Organization&quot;</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "ACUTE"
+      },
+      "subject" : {
+        "reference" : "Patient/Patient-DAK-onart"
+      },
+      "period" : {
+        "start" : "2023-07-03",
+        "end" : "2023-07-03"
+      },
+      "location" : [{
+        "location" : {
+          "reference" : "Location/Location-DAK"
+        }
+      }],
+      "serviceProvider" : {
+        "reference" : "Organization/Organization-DAK"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/Encounter-DAK-onartonart"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Observation-DAK-onart",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-DAK-onart\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-DAK-onart&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Drug prophylaxis (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#182929008)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-DAK-onart\">See above (Encounter/Encounter-DAK-onart)</a></p><p><b>effective</b>: 2023-07-03</p><p><b>value</b>: true</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "182929008",
+          "display" : "Drug prophylaxis (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Patient-DAK-onart"
+      },
+      "encounter" : {
+        "reference" : "Encounter/Encounter-DAK-onart"
+      },
+      "effectiveDateTime" : "2023-07-03",
+      "valueBoolean" : true
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/Observation-DAK-onart"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart-dispense",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Observation-DAK-onart-dispense",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-DAK-onart-dispense\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-DAK-onart-dispense&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Day (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258703001)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-DAK-onart\">See above (Encounter/Encounter-DAK-onart)</a></p><p><b>effective</b>: 2023-07-03</p><p><b>value</b>: 90</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "258703001",
+          "display" : "Day (qualifier value)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Patient-DAK-onart"
+      },
+      "encounter" : {
+        "reference" : "Encounter/Encounter-DAK-onart"
+      },
+      "effectiveDateTime" : "2023-07-03",
+      "valueInteger" : 90
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/Observation-DAK-onart-dispense"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Patient/MedicationRequest-DAK-onart",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "MedicationRequest-DAK-onart",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"MedicationRequest-DAK-onart\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;MedicationRequest-DAK-onart&quot; </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Abacavir <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-DAKICD11.html\">ICD-11 codes from the HIV DAK</a>#XM35P4)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>authoredOn</b>: 2023-07-03</p></div>"
+      },
+      "status" : "active",
+      "intent" : "order",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-11",
+          "code" : "XM35P4",
+          "display" : "Abacavir"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Patient-DAK-onart"
+      },
+      "authoredOn" : "2023-07-03"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/MedicationRequest-DAK-onart"
+    }
+  }]
+}

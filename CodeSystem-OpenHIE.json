@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "OpenHIE",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">cohort<a name=\"OpenHIE-cohort\"> </a></td><td>cohort</td></tr><tr><td style=\"white-space:nowrap\">432101000124108<a name=\"OpenHIE-432101000124108\"> </a></td><td>History of antiretroviral therapy (situation)</td></tr></table></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE",
+  "version" : "0.1.0",
+  "name" : "OpenHIE",
+  "title" : "OpenHIE CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "OpenHIE CodeSystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "cohort",
+    "display" : "cohort"
+  },
+  {
+    "code" : "432101000124108",
+    "display" : "History of antiretroviral therapy (situation)"
+  }]
+}

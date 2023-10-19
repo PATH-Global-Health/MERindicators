@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="Encounter-HIVSimple2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="Encounter-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;Encounter-HIVSimple2&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href="Patient-Patient-HIVSimple2.html">Patient/Patient-HIVSimple2</a> &quot; CAT&quot;</p><p><b>period</b>: 2011-01-01 --&gt; 2011-01-01</p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-Location-HIVSimple2.html">Location/Location-HIVSimple2</a></td></tr></table><p><b>serviceProvider</b>: <span>id: Organization-HIVSimple2</span></p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="ACUTE"/>
+  </class>
+  <subject>
+    <reference value="Patient/Patient-HIVSimple2"/>
+  </subject>
+  <period>
+    <start value="2011-01-01"/>
+    <end value="2011-01-01"/>
+  </period>
+  <location>
+    <location>
+      <reference value="Location/Location-HIVSimple2"/>
+    </location>
+  </location>
+  <serviceProvider>
+    <identifier>
+      <system value="https://github.com/synthetichealth/synthea"/>
+      <value value="Organization-HIVSimple2"/>
+    </identifier>
+  </serviceProvider>
+</Encounter>

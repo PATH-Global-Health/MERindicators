@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DAKARTStop"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/413947000">413947000</a></td><td>Date treatment stopped (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop"/>
+  <version value="0.1.0"/>
+  <name value="DAKARTStop"/>
+  <title value="DAK Codes for ART Stopped"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-10-19T20:59:19+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="HIV DAK codes for ART Stopped"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="413947000"/>
+        <display value="Date treatment stopped (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

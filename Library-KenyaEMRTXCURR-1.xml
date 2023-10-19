@@ -1,0 +1,2111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <annotation xsi:type="a:Annotation">
+      <a:s r="202">
+         <a:s>library KenyaEMRTXCURR version '0.1.0'</a:s>
+      </a:s>
+   </annotation>
+   <identifier id="KenyaEMRTXCURR" system="https://path-global-health.github.io/MERindicators" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="5:1-5:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>// Test cases are located in /input/tests/&lt;Library Name>/&lt;Patient.id>/&lt;bundle source>
+using </a:s>
+               <a:s>
+                  <a:s>FHIR</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="7:1-7:35" localIdentifier="FHIRHelpers" path="https://path-global-health.github.io/MERindicators/FHIRHelpers" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="3" locator="8:1-8:44" localIdentifier="FC" path="https://path-global-health.github.io/MERindicators/FHIRCommon" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="3">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRCommon</a:s>
+               </a:s>
+               <a:s> version '4.0.1' called FC</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="4" locator="9:1-9:34" localIdentifier="Cx" path="https://path-global-health.github.io/MERindicators/KenyaEMRConcepts">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="4">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>KenyaEMRConcepts</a:s>
+               </a:s>
+               <a:s> called Cx</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="5" locator="10:1-10:46" localIdentifier="Stratifiers" path="https://path-global-health.github.io/MERindicators/KenyaEMRStratifiers">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="5">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>KenyaEMRStratifiers</a:s>
+               </a:s>
+               <a:s> called Stratifiers</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <parameters>
+      <def localId="11" locator="15:1-15:94" name="Measurement Period" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="11">
+               <a:s>// Provide a default interval or period-based tests will fail when evaluating CQL against test cases
+// The $evaluate-measure operation's parameters 'periodStart' and 'periodEnd' override this in any case
+parameter &quot;Measurement Period&quot; </a:s>
+               <a:s r="10">
+                  <a:s>Interval&lt;</a:s>
+                  <a:s r="9">
+                     <a:s>DateTime</a:s>
+                  </a:s>
+                  <a:s>></a:s>
+               </a:s>
+               <a:s> default </a:s>
+               <a:s r="8">
+                  <a:s r="6">Interval[@1990-01-01T, @2023-06-30T]</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+            <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <default localId="8" locator="15:59-15:94" lowClosed="true" highClosed="true" xsi:type="Interval">
+            <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+               <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <low localId="6" locator="15:68-15:79" resultTypeName="t:DateTime" xsi:type="DateTime">
+               <year valueType="t:Integer" value="1990" xsi:type="Literal"/>
+               <month valueType="t:Integer" value="1" xsi:type="Literal"/>
+               <day valueType="t:Integer" value="1" xsi:type="Literal"/>
+            </low>
+            <high localId="7" locator="15:82-15:93" resultTypeName="t:DateTime" xsi:type="DateTime">
+               <year valueType="t:Integer" value="2023" xsi:type="Literal"/>
+               <month valueType="t:Integer" value="6" xsi:type="Literal"/>
+               <day valueType="t:Integer" value="30" xsi:type="Literal"/>
+            </high>
+         </default>
+         <parameterTypeSpecifier localId="10" locator="15:32-15:49" xsi:type="IntervalTypeSpecifier">
+            <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+               <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <pointType localId="9" locator="15:41-15:48" resultTypeName="t:DateTime" name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+         </parameterTypeSpecifier>
+      </def>
+   </parameters>
+   <contexts>
+      <def locator="18:1-18:15" name="Patient"/>
+   </contexts>
+   <statements>
+      <def locator="18:1-18:15" name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="18:1-18:15" dataType="fhir:Patient" templateId="http://hl7.org/fhir/StructureDefinition/Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def localId="20" locator="54:1-56:60" name="PLHIV Observation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="20">
+               <a:s>/*
+On ART is any patient with a regimen history as below:
+
+Patients started on ART drugs (participating in program)
+who made a clinic visit during the reporting period
+
+PLUS
+
+Patient who made a clinic visit in the past and were given medicine to last the reporting 
+period and beyond
+
+PLUS
+
+Patients who missed their appointment AND 30 days (one month) have not passed since the last missed appointment.
+[30 days since last missed appointment]
+
+Exclude those who interrupted treatment for any reason, etc, etc. &quot;Measure Population Exclusion&quot;
+*/
+
+
+// Initial Population
+// Patients who have started an ART drugs program
+
+/*
+PLHIV are enrolled in an HIV program.
+On Observation resource: $CIEL#160540 &quot;Method of enrollment&quot;
+Observation.status is not in example bundle, can't do 'Obs.status in {'final', 'amended', 'corrected'}'
+Using the CIEL codes only, even if others are provided.
+Use the equivalent operator (~) rather than equality (=) which checks the code system version.
+*/
+define &quot;PLHIV Observation&quot;:
+  </a:s>
+               <a:s r="19">
+                  <a:s>
+                     <a:s r="13">
+                        <a:s r="12">
+                           <a:s r="12">
+                              <a:s>[&quot;Observation&quot;: </a:s>
+                              <a:s>
+                                 <a:s>Cx.&quot;Method of enrollment&quot;</a:s>
+                              </a:s>
+                              <a:s>]</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> Obs</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>
+    </a:s>
+                  <a:s r="18">
+                     <a:s>where </a:s>
+                     <a:s r="18">
+                        <a:s>(</a:s>
+                        <a:s r="18">
+                           <a:s r="15">
+                              <a:s r="14">
+                                 <a:s>Obs</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="15">
+                                 <a:s>effective</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s r="18"> before </a:s>
+                           <a:s r="17">
+                              <a:s>end of </a:s>
+                              <a:s r="16">
+                                 <a:s>&quot;Measurement Period&quot;</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <expression localId="19" locator="55:3-56:60" xsi:type="Query">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <source localId="13" locator="55:3-55:48" alias="Obs">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+               <expression localId="12" locator="55:3-55:44" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                  <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                     <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+                  </resultTypeSpecifier>
+                  <codes xsi:type="ToList">
+                     <operand locator="55:19-55:43" resultTypeName="t:Code" name="Method of enrollment" libraryName="Cx" xsi:type="CodeRef"/>
+                  </codes>
+               </expression>
+            </source>
+            <where localId="18" locator="56:5-56:60" resultTypeName="t:Boolean" xsi:type="Before">
+               <operand xsi:type="Case">
+                  <caseItem>
+                     <when isType="fhir:dateTime" xsi:type="Is">
+                        <operand localId="15" locator="56:12-56:24" path="effective" scope="Obs" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                        </operand>
+                     </when>
+                     <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand asType="fhir:dateTime" xsi:type="As">
+                           <operand localId="15" locator="56:12-56:24" path="effective" scope="Obs" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                        </operand>
+                     </then>
+                  </caseItem>
+                  <caseItem>
+                     <when isType="fhir:instant" xsi:type="Is">
+                        <operand localId="15" locator="56:12-56:24" path="effective" scope="Obs" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                        </operand>
+                     </when>
+                     <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand asType="fhir:instant" xsi:type="As">
+                           <operand localId="15" locator="56:12-56:24" path="effective" scope="Obs" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                        </operand>
+                     </then>
+                  </caseItem>
+                  <else resultTypeName="t:DateTime" xsi:type="Null"/>
+               </operand>
+               <operand localId="17" locator="56:33-56:59" resultTypeName="t:DateTime" xsi:type="End">
+                  <operand localId="16" locator="56:40-56:59" name="Measurement Period" xsi:type="ParameterRef">
+                     <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+                        <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                  </operand>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def localId="23" locator="59:1-59:50" resultTypeName="t:Boolean" name="PLHIV Boolean" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="23">
+               <a:s>define &quot;PLHIV Boolean&quot;: </a:s>
+               <a:s r="22">
+                  <a:s>exists </a:s>
+                  <a:s r="21">
+                     <a:s>&quot;PLHIV Observation&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="22" locator="59:25-59:50" resultTypeName="t:Boolean" xsi:type="Exists">
+            <operand localId="21" locator="59:32-59:50" name="PLHIV Observation" xsi:type="ExpressionRef">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+            </operand>
+         </expression>
+      </def>
+      <def localId="25" locator="62:1-63:17" resultTypeName="t:Boolean" name="Initial Population" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="25">
+               <a:s>define &quot;Initial Population&quot;: 
+  </a:s>
+               <a:s r="24">
+                  <a:s>&quot;PLHIV Boolean&quot;</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="24" locator="63:3-63:17" resultTypeName="t:Boolean" name="PLHIV Boolean" xsi:type="ExpressionRef"/>
+      </def>
+      <def localId="27" locator="78:1-79:41" name="Return Visit Observations" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="27">
+               <a:s>/*
+Someone visits 1 July. 
+Given appt in 1 month - 1 August.
+Check that patient had visit by 24th August/by 30 days.
++ add 30 days.
+*/
+
+
+// &quot;RETURN VISIT DATE&quot;
+// Patients started on ART drugs (participating in program)
+// who made a clinic visit during the reporting period (Q: Any type? A: yes)define &quot;Return Visit Observations&quot;:
+  </a:s>
+               <a:s r="26">
+                  <a:s>[&quot;Observation&quot;: </a:s>
+                  <a:s>
+                     <a:s>Cx.&quot;RETURN VISIT DATE&quot;</a:s>
+                  </a:s>
+                  <a:s>]</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <expression localId="26" locator="79:3-79:41" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <codes xsi:type="ToList">
+               <operand locator="79:19-79:40" resultTypeName="t:Code" name="RETURN VISIT DATE" libraryName="Cx" xsi:type="CodeRef"/>
+            </codes>
+         </expression>
+      </def>
+      <def localId="42" locator="82:1-85:53" name="Return Visits During Period" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="42">
+               <a:s>// return visit during period
+define &quot;Return Visits During Period&quot;:
+  </a:s>
+               <a:s r="41">
+                  <a:s>
+                     <a:s r="29">
+                        <a:s r="28">
+                           <a:s>(</a:s>
+                           <a:s r="28">
+                              <a:s>&quot;Return Visit Observations&quot;</a:s>
+                           </a:s>
+                           <a:s>)</a:s>
+                        </a:s>
+                        <a:s> Obs</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>
+  </a:s>
+                  <a:s r="34">
+                     <a:s>where </a:s>
+                     <a:s r="34">
+                        <a:s>(</a:s>
+                        <a:s r="34">
+                           <a:s r="31">
+                              <a:s r="30">
+                                 <a:s>Obs</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="31">
+                                 <a:s>effective</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s r="34"> before </a:s>
+                           <a:s r="33">
+                              <a:s>end of </a:s>
+                              <a:s r="32">
+                                 <a:s>&quot;Measurement Period&quot;</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>
+  </a:s>
+                  <a:s r="40">
+                     <a:s>sort by </a:s>
+                     <a:s r="39">
+                        <a:s r="38">
+                           <a:s>date from </a:s>
+                           <a:s r="37">
+                              <a:s>(</a:s>
+                              <a:s r="37">
+                                 <a:s r="35">
+                                    <a:s>effective</a:s>
+                                 </a:s>
+                                 <a:s> as </a:s>
+                                 <a:s r="36">
+                                    <a:s>FHIR.dateTime</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s>)</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> desc</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <expression localId="41" locator="83:3-85:53" xsi:type="Query">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <source localId="29" locator="83:3-83:35" alias="Obs">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+               <expression localId="28" locator="83:3-83:31" name="Return Visit Observations" xsi:type="ExpressionRef">
+                  <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                     <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+                  </resultTypeSpecifier>
+               </expression>
+            </source>
+            <where localId="34" locator="84:3-84:58" resultTypeName="t:Boolean" xsi:type="Before">
+               <operand xsi:type="Case">
+                  <caseItem>
+                     <when isType="fhir:dateTime" xsi:type="Is">
+                        <operand localId="31" locator="84:10-84:22" path="effective" scope="Obs" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                        </operand>
+                     </when>
+                     <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand asType="fhir:dateTime" xsi:type="As">
+                           <operand localId="31" locator="84:10-84:22" path="effective" scope="Obs" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                        </operand>
+                     </then>
+                  </caseItem>
+                  <caseItem>
+                     <when isType="fhir:instant" xsi:type="Is">
+                        <operand localId="31" locator="84:10-84:22" path="effective" scope="Obs" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                        </operand>
+                     </when>
+                     <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand asType="fhir:instant" xsi:type="As">
+                           <operand localId="31" locator="84:10-84:22" path="effective" scope="Obs" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                        </operand>
+                     </then>
+                  </caseItem>
+                  <else resultTypeName="t:DateTime" xsi:type="Null"/>
+               </operand>
+               <operand localId="33" locator="84:31-84:57" resultTypeName="t:DateTime" xsi:type="End">
+                  <operand localId="32" locator="84:38-84:57" name="Measurement Period" xsi:type="ParameterRef">
+                     <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+                        <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                  </operand>
+               </operand>
+            </where>
+            <sort localId="40" locator="85:3-85:53">
+               <by localId="39" locator="85:11-85:53" resultTypeName="t:Date" direction="desc" xsi:type="ByExpression">
+                  <expression localId="38" locator="85:11-85:48" resultTypeName="t:Date" xsi:type="DateFrom">
+                     <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand localId="37" locator="85:21-85:48" resultTypeName="fhir:dateTime" strict="false" xsi:type="As">
+                           <operand localId="35" locator="85:22-85:30" name="effective" xsi:type="IdentifierRef">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                           <asTypeSpecifier localId="36" locator="85:35-85:47" resultTypeName="fhir:dateTime" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                        </operand>
+                     </operand>
+                  </expression>
+               </by>
+            </sort>
+         </expression>
+      </def>
+      <def localId="45" locator="87:1-88:38" resultTypeName="t:Boolean" name="Any Return Visit During Period" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="45">
+               <a:s>define &quot;Any Return Visit During Period&quot;: 
+  </a:s>
+               <a:s r="44">
+                  <a:s>exists </a:s>
+                  <a:s r="43">
+                     <a:s>&quot;Return Visits During Period&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="44" locator="88:3-88:38" resultTypeName="t:Boolean" xsi:type="Exists">
+            <operand localId="43" locator="88:10-88:38" name="Return Visits During Period" xsi:type="ExpressionRef">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+            </operand>
+         </expression>
+      </def>
+      <def localId="48" locator="90:1-91:38" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="48">
+               <a:s>define &quot;Most Recent Return Visit During Period&quot;:
+  </a:s>
+               <a:s r="47">
+                  <a:s>First(</a:s>
+                  <a:s r="46">
+                     <a:s>&quot;Return Visits During Period&quot;</a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="47" locator="91:3-91:38" resultTypeName="fhir:Observation" xsi:type="First">
+            <source localId="46" locator="91:9-91:37" name="Return Visits During Period" xsi:type="ExpressionRef">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+            </source>
+         </expression>
+      </def>
+      <def localId="52" locator="93:1-94:54" name="Return Visit Date" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="52">
+               <a:s>define &quot;Return Visit Date&quot;:
+  </a:s>
+               <a:s r="51">
+                  <a:s r="50">
+                     <a:s r="49">
+                        <a:s>&quot;Most Recent Return Visit During Period&quot;</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="50">
+                        <a:s>value</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>.</a:s>
+                  <a:s r="51">
+                     <a:s>value</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+            <choice name="t:Boolean" xsi:type="NamedTypeSpecifier"/>
+            <choice name="t:Time" xsi:type="NamedTypeSpecifier"/>
+            <choice name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+            <choice name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+            <choice name="fhir:decimal" xsi:type="NamedTypeSpecifier"/>
+            <choice name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <expression localId="51" locator="94:3-94:54" path="value" xsi:type="Property">
+            <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+               <choice name="t:Boolean" xsi:type="NamedTypeSpecifier"/>
+               <choice name="t:Time" xsi:type="NamedTypeSpecifier"/>
+               <choice name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+               <choice name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+               <choice name="fhir:decimal" xsi:type="NamedTypeSpecifier"/>
+               <choice name="t:String" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <source localId="50" locator="94:3-94:48" path="value" xsi:type="Property">
+               <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                  <choice name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:CodeableConcept" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:integer" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:Ratio" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:SampledData" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:time" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                  <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+               <source localId="49" locator="94:3-94:42" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+            </source>
+         </expression>
+      </def>
+      <def localId="62" locator="98:1-99:111" resultTypeName="t:Boolean" name="Return Visit within 30 days of Period" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="62">
+               <a:s>// Get last visit during measure period, &quot;return visit date&quot; + 30 days > end of the period
+// Does the most recent &quot;return visit date&quot; need to be within the period as long as the value is after it?
+define &quot;Return Visit within 30 days of Period&quot;:
+  </a:s>
+               <a:s r="61">
+                  <a:s r="58">
+                     <a:s r="56">
+                        <a:s>(</a:s>
+                        <a:s r="56">
+                           <a:s r="54">
+                              <a:s r="53">
+                                 <a:s>&quot;Most Recent Return Visit During Period&quot;</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="54">
+                                 <a:s>value</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> as </a:s>
+                           <a:s r="55">
+                              <a:s>FHIR.dateTime</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                     <a:s> + </a:s>
+                     <a:s r="57">
+                        <a:s>30 days</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s r="61"> after </a:s>
+                  <a:s r="60">
+                     <a:s>end of </a:s>
+                     <a:s r="59">
+                        <a:s>&quot;Measurement Period&quot;</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="61" locator="99:3-99:111" resultTypeName="t:Boolean" xsi:type="After">
+            <operand localId="58" locator="99:3-99:77" resultTypeName="t:DateTime" xsi:type="Add">
+               <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand localId="56" locator="99:3-99:67" resultTypeName="fhir:dateTime" strict="false" xsi:type="As">
+                     <operand localId="54" locator="99:4-99:49" path="value" xsi:type="Property">
+                        <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                           <choice name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:CodeableConcept" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:integer" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:Ratio" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:SampledData" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:time" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                        </resultTypeSpecifier>
+                        <source localId="53" locator="99:4-99:43" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                     </operand>
+                     <asTypeSpecifier localId="55" locator="99:54-99:66" resultTypeName="fhir:dateTime" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                  </operand>
+               </operand>
+               <operand localId="57" locator="99:71-99:77" resultTypeName="t:Quantity" value="30" unit="days" xsi:type="Quantity"/>
+            </operand>
+            <operand localId="60" locator="99:85-99:111" resultTypeName="t:DateTime" xsi:type="End">
+               <operand localId="59" locator="99:92-99:111" name="Measurement Period" xsi:type="ParameterRef">
+                  <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+                     <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                  </resultTypeSpecifier>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def localId="64" locator="107:1-108:42" name="Current Drugs Used Observations" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="64">
+               <a:s>// &quot;CURRENT DRUGS USED&quot; are prescriptions
+// effectivedatetime captures when those drugs started
+// the other datetime fields are not used
+// checks on being started on ART, this is not 'picking up drugs'
+define &quot;Current Drugs Used Observations&quot;:
+  </a:s>
+               <a:s r="63">
+                  <a:s>[&quot;Observation&quot;: </a:s>
+                  <a:s>
+                     <a:s>Cx.&quot;CURRENT DRUGS USED&quot;</a:s>
+                  </a:s>
+                  <a:s>]</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <expression localId="63" locator="108:3-108:42" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <codes xsi:type="ToList">
+               <operand locator="108:19-108:41" resultTypeName="t:Code" name="CURRENT DRUGS USED" libraryName="Cx" xsi:type="CodeRef"/>
+            </codes>
+         </expression>
+      </def>
+      <def localId="67" locator="110:1-111:43" resultTypeName="t:Boolean" name="Has started ART" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="67">
+               <a:s>define &quot;Has started ART&quot;:
+  </a:s>
+               <a:s r="66">
+                  <a:s>exists</a:s>
+                  <a:s r="65">
+                     <a:s>(</a:s>
+                     <a:s r="65">
+                        <a:s>&quot;Current Drugs Used Observations&quot;</a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="66" locator="111:3-111:43" resultTypeName="t:Boolean" xsi:type="Exists">
+            <operand localId="65" locator="111:9-111:43" name="Current Drugs Used Observations" xsi:type="ExpressionRef">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+            </operand>
+         </expression>
+      </def>
+      <def localId="71" locator="130:1-131:63" resultTypeName="t:Boolean" name="Measure Population" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="71">
+               <a:s>/*
+Additional notes:
+The assumption is that a patient is considered to be on a particular regimen until there is a change, substitution, or stop events.
+Drugs are prescribed and noted in an Observation.
+The actual drugs are coded concepts in Observation.value.coding but are missing a system identifier.
+The return dates are appointment dates for when the prescription ends and the patient is expected to return.
+The EMR does not use a pharmacy module, and is reliant on appointment dates (return dates) which are based on the amount of drugs given.
+The drugs observation tells when a patient was first started on drugs. 
+'current drugs' concept captures regimen changes
+more of a history of regimen of original and most current - there may be original and current regimen
+bundle includes original regimen
+*/
+
+// Patient who made a clinic visit in the past and were given medicine to last the reporting period and beyonddefine &quot;Measure Population&quot;: 
+  </a:s>
+               <a:s r="70">
+                  <a:s r="68">
+                     <a:s>&quot;Return Visit within 30 days of Period&quot;</a:s>
+                  </a:s>
+                  <a:s> and </a:s>
+                  <a:s r="69">
+                     <a:s>&quot;Has started ART&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="70" locator="131:3-131:63" resultTypeName="t:Boolean" xsi:type="And">
+            <operand localId="68" locator="131:3-131:41" resultTypeName="t:Boolean" name="Return Visit within 30 days of Period" xsi:type="ExpressionRef"/>
+            <operand localId="69" locator="131:47-131:63" resultTypeName="t:Boolean" name="Has started ART" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def localId="89" locator="148:1-150:130" resultTypeName="t:Boolean" name="Deceased Boolean" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="89">
+               <a:s>// Measure Population Exclusion
+// Deceased and those who interrupted treatment for any reason, etc, etc.
+
+
+/*
+Deceased patients are not in numerator.
+In FHIR, deceased[x] is a choice type, of either boolean or datetime.
+It also has a cardinality of 0..1. so deceasedBoolean and deceasedDateTime cannot coexist.
+There can only be one deceased[x] element.
+If true is used, there's no way to know from that field when the patient died. DateTime is better for accuracy.
+*/
+
+
+// This expression allows deceasedBoolean which has no datetime.
+define &quot;Deceased Boolean&quot;:
+  </a:s>
+               <a:s r="88">
+                  <a:s r="74">
+                     <a:s r="73">
+                        <a:s r="72">
+                           <a:s>Patient</a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="73">
+                           <a:s>deceased</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s> is not null</a:s>
+                  </a:s>
+                  <a:s> 
+  and </a:s>
+                  <a:s r="87">
+                     <a:s>(</a:s>
+                     <a:s r="87">
+                        <a:s r="79">
+                           <a:s r="78">
+                              <a:s>(</a:s>
+                              <a:s r="78">
+                                 <a:s r="76">
+                                    <a:s r="75">
+                                       <a:s>Patient</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="76">
+                                       <a:s>deceased</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s> as </a:s>
+                                 <a:s r="77">
+                                    <a:s>FHIR.boolean</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s>)</a:s>
+                           </a:s>
+                           <a:s> is true</a:s>
+                        </a:s>
+                        <a:s> or </a:s>
+                        <a:s r="86">
+                           <a:s r="83">
+                              <a:s>(</a:s>
+                              <a:s r="83">
+                                 <a:s r="81">
+                                    <a:s r="80">
+                                       <a:s>Patient</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="81">
+                                       <a:s>deceased</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s> as </a:s>
+                                 <a:s r="82">
+                                    <a:s>FHIR.dateTime</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s>)</a:s>
+                           </a:s>
+                           <a:s r="86"> on or before </a:s>
+                           <a:s r="85">
+                              <a:s>end of </a:s>
+                              <a:s r="84">
+                                 <a:s>&quot;Measurement Period&quot;</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="88" locator="149:3-150:130" resultTypeName="t:Boolean" xsi:type="And">
+            <operand localId="74" locator="149:3-149:30" resultTypeName="t:Boolean" xsi:type="Not">
+               <operand locator="149:3-149:30" resultTypeName="t:Boolean" xsi:type="IsNull">
+                  <operand localId="73" locator="149:3-149:18" path="deceased" xsi:type="Property">
+                     <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                        <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                        <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                     <source localId="72" locator="149:3-149:9" resultTypeName="fhir:Patient" name="Patient" xsi:type="ExpressionRef"/>
+                  </operand>
+               </operand>
+            </operand>
+            <operand localId="87" locator="150:7-150:130" resultTypeName="t:Boolean" xsi:type="Or">
+               <operand localId="79" locator="150:8-150:49" resultTypeName="t:Boolean" xsi:type="IsTrue">
+                  <operand name="ToBoolean" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="78" locator="150:8-150:41" resultTypeName="fhir:boolean" strict="false" xsi:type="As">
+                        <operand localId="76" locator="150:9-150:24" path="deceased" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <source localId="75" locator="150:9-150:15" resultTypeName="fhir:Patient" name="Patient" xsi:type="ExpressionRef"/>
+                        </operand>
+                        <asTypeSpecifier localId="77" locator="150:29-150:40" resultTypeName="fhir:boolean" name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand localId="86" locator="150:54-150:129" resultTypeName="t:Boolean" xsi:type="SameOrBefore">
+                  <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="83" locator="150:54-150:88" resultTypeName="fhir:dateTime" strict="false" xsi:type="As">
+                        <operand localId="81" locator="150:55-150:70" path="deceased" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <source localId="80" locator="150:55-150:61" resultTypeName="fhir:Patient" name="Patient" xsi:type="ExpressionRef"/>
+                        </operand>
+                        <asTypeSpecifier localId="82" locator="150:75-150:87" resultTypeName="fhir:dateTime" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                     </operand>
+                  </operand>
+                  <operand localId="85" locator="150:103-150:129" resultTypeName="t:DateTime" xsi:type="End">
+                     <operand localId="84" locator="150:110-150:129" name="Measurement Period" xsi:type="ParameterRef">
+                        <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+                           <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                        </resultTypeSpecifier>
+                     </operand>
+                  </operand>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def localId="99" locator="154:1-156:63" resultTypeName="t:Boolean" name="Deceased DateTime Only" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="99">
+               <a:s>// This expression requires patients to have datetime on Patient.deceased (more accurate).
+define &quot;Deceased DateTime Only&quot;:
+  </a:s>
+               <a:s r="98">
+                  <a:s r="92">
+                     <a:s r="91">
+                        <a:s r="90">
+                           <a:s>Patient</a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="91">
+                           <a:s>deceased</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s> is not null</a:s>
+                  </a:s>
+                  <a:s> 
+  and </a:s>
+                  <a:s r="97">
+                     <a:s r="94">
+                        <a:s r="93">
+                           <a:s>Patient</a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="94">
+                           <a:s>deceased</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s r="97"> on or before </a:s>
+                     <a:s r="96">
+                        <a:s>end of </a:s>
+                        <a:s r="95">
+                           <a:s>&quot;Measurement Period&quot;</a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="98" locator="155:3-156:63" resultTypeName="t:Boolean" xsi:type="And">
+            <operand localId="92" locator="155:3-155:30" resultTypeName="t:Boolean" xsi:type="Not">
+               <operand locator="155:3-155:30" resultTypeName="t:Boolean" xsi:type="IsNull">
+                  <operand localId="91" locator="155:3-155:18" path="deceased" xsi:type="Property">
+                     <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                        <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                        <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                     <source localId="90" locator="155:3-155:9" resultTypeName="fhir:Patient" name="Patient" xsi:type="ExpressionRef"/>
+                  </operand>
+               </operand>
+            </operand>
+            <operand localId="97" locator="156:7-156:63" resultTypeName="t:Boolean" xsi:type="SameOrBefore">
+               <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand asType="fhir:dateTime" xsi:type="As">
+                     <operand localId="94" locator="156:7-156:22" path="deceased" xsi:type="Property">
+                        <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                           <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                           <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                        </resultTypeSpecifier>
+                        <source localId="93" locator="156:7-156:13" resultTypeName="fhir:Patient" name="Patient" xsi:type="ExpressionRef"/>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand localId="96" locator="156:37-156:63" resultTypeName="t:DateTime" xsi:type="End">
+                  <operand localId="95" locator="156:44-156:63" name="Measurement Period" xsi:type="ParameterRef">
+                     <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+                        <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                  </operand>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def localId="114" locator="161:1-163:131" name="Discontinuation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="114">
+               <a:s>// Todo: double check: &quot;effectiveDateTime&quot;: &quot;2023-05-31T11:30:14+03:00&quot;,
+define &quot;Discontinuation&quot;:
+  </a:s>
+               <a:s r="113">
+                  <a:s>
+                     <a:s r="101">
+                        <a:s r="100">
+                           <a:s r="100">
+                              <a:s>[&quot;Observation&quot;: </a:s>
+                              <a:s>
+                                 <a:s>Cx.&quot;Reason for discontinuation of program&quot;</a:s>
+                              </a:s>
+                              <a:s>]</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> Obs</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>
+  </a:s>
+                  <a:s r="112">
+                     <a:s>where </a:s>
+                     <a:s r="112">
+                        <a:s r="106">
+                           <a:s r="103">
+                              <a:s r="102">
+                                 <a:s>Obs</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="103">
+                                 <a:s>effective</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s r="106"> before </a:s>
+                           <a:s r="105">
+                              <a:s>end of </a:s>
+                              <a:s r="104">
+                                 <a:s>&quot;Measurement Period&quot;</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> and </a:s>
+                        <a:s r="111">
+                           <a:s r="108">
+                              <a:s r="107">
+                                 <a:s>Obs</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="108">
+                                 <a:s>effective</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s r="111"> after </a:s>
+                           <a:s r="110">
+                              <a:s r="109">
+                                 <a:s>&quot;Most Recent Return Visit During Period&quot;</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="110">
+                                 <a:s>effective</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <expression localId="113" locator="162:3-163:131" xsi:type="Query">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <source localId="101" locator="162:3-162:65" alias="Obs">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+               <expression localId="100" locator="162:3-162:61" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                  <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                     <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+                  </resultTypeSpecifier>
+                  <codes xsi:type="ToList">
+                     <operand locator="162:19-162:60" resultTypeName="t:Code" name="Reason for discontinuation of program" libraryName="Cx" xsi:type="CodeRef"/>
+                  </codes>
+               </expression>
+            </source>
+            <where localId="112" locator="163:3-163:131" resultTypeName="t:Boolean" xsi:type="And">
+               <operand localId="106" locator="163:9-163:56" resultTypeName="t:Boolean" xsi:type="Before">
+                  <operand xsi:type="Case">
+                     <caseItem>
+                        <when isType="fhir:dateTime" xsi:type="Is">
+                           <operand localId="103" locator="163:9-163:21" path="effective" scope="Obs" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                        </when>
+                        <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:dateTime" xsi:type="As">
+                              <operand localId="103" locator="163:9-163:21" path="effective" scope="Obs" xsi:type="Property">
+                                 <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                    <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 </resultTypeSpecifier>
+                              </operand>
+                           </operand>
+                        </then>
+                     </caseItem>
+                     <caseItem>
+                        <when isType="fhir:instant" xsi:type="Is">
+                           <operand localId="103" locator="163:9-163:21" path="effective" scope="Obs" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                        </when>
+                        <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:instant" xsi:type="As">
+                              <operand localId="103" locator="163:9-163:21" path="effective" scope="Obs" xsi:type="Property">
+                                 <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                    <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 </resultTypeSpecifier>
+                              </operand>
+                           </operand>
+                        </then>
+                     </caseItem>
+                     <else resultTypeName="t:DateTime" xsi:type="Null"/>
+                  </operand>
+                  <operand localId="105" locator="163:30-163:56" resultTypeName="t:DateTime" xsi:type="End">
+                     <operand localId="104" locator="163:37-163:56" name="Measurement Period" xsi:type="ParameterRef">
+                        <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+                           <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                        </resultTypeSpecifier>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand localId="111" locator="163:62-163:131" resultTypeName="t:Boolean" xsi:type="After">
+                  <operand xsi:type="Case">
+                     <caseItem>
+                        <when isType="fhir:dateTime" xsi:type="Is">
+                           <operand localId="108" locator="163:62-163:74" path="effective" scope="Obs" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                        </when>
+                        <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:dateTime" xsi:type="As">
+                              <operand localId="108" locator="163:62-163:74" path="effective" scope="Obs" xsi:type="Property">
+                                 <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                    <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 </resultTypeSpecifier>
+                              </operand>
+                           </operand>
+                        </then>
+                     </caseItem>
+                     <caseItem>
+                        <when isType="fhir:instant" xsi:type="Is">
+                           <operand localId="108" locator="163:62-163:74" path="effective" scope="Obs" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                           </operand>
+                        </when>
+                        <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:instant" xsi:type="As">
+                              <operand localId="108" locator="163:62-163:74" path="effective" scope="Obs" xsi:type="Property">
+                                 <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                    <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 </resultTypeSpecifier>
+                              </operand>
+                           </operand>
+                        </then>
+                     </caseItem>
+                     <else resultTypeName="t:DateTime" xsi:type="Null"/>
+                  </operand>
+                  <operand xsi:type="Case">
+                     <caseItem>
+                        <when isType="fhir:dateTime" xsi:type="Is">
+                           <operand localId="110" locator="163:82-163:131" path="effective" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                              <source localId="109" locator="163:82-163:121" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                           </operand>
+                        </when>
+                        <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:dateTime" xsi:type="As">
+                              <operand localId="110" locator="163:82-163:131" path="effective" xsi:type="Property">
+                                 <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                    <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 </resultTypeSpecifier>
+                                 <source localId="109" locator="163:82-163:121" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                              </operand>
+                           </operand>
+                        </then>
+                     </caseItem>
+                     <caseItem>
+                        <when isType="fhir:instant" xsi:type="Is">
+                           <operand localId="110" locator="163:82-163:131" path="effective" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                              <source localId="109" locator="163:82-163:121" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                           </operand>
+                        </when>
+                        <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:instant" xsi:type="As">
+                              <operand localId="110" locator="163:82-163:131" path="effective" xsi:type="Property">
+                                 <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                    <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 </resultTypeSpecifier>
+                                 <source localId="109" locator="163:82-163:121" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                              </operand>
+                           </operand>
+                        </then>
+                     </caseItem>
+                     <else resultTypeName="t:DateTime" xsi:type="Null"/>
+                  </operand>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def localId="129" locator="167:1-169:123" name="Transfer Out" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="129">
+               <a:s>// valueDateTime
+define &quot;Transfer Out&quot;:
+  </a:s>
+               <a:s r="128">
+                  <a:s>
+                     <a:s r="116">
+                        <a:s r="115">
+                           <a:s r="115">
+                              <a:s>[&quot;Observation&quot;: </a:s>
+                              <a:s>
+                                 <a:s>Cx.&quot;Treatment end date&quot;</a:s>
+                              </a:s>
+                              <a:s>]</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> Obs</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>
+  </a:s>
+                  <a:s r="127">
+                     <a:s>where </a:s>
+                     <a:s r="127">
+                        <a:s r="121">
+                           <a:s r="118">
+                              <a:s r="117">
+                                 <a:s>Obs</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="118">
+                                 <a:s>value</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s r="121"> before </a:s>
+                           <a:s r="120">
+                              <a:s>end of </a:s>
+                              <a:s r="119">
+                                 <a:s>&quot;Measurement Period&quot;</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> and </a:s>
+                        <a:s r="126">
+                           <a:s r="123">
+                              <a:s r="122">
+                                 <a:s>Obs</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="123">
+                                 <a:s>value</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s r="126"> after </a:s>
+                           <a:s r="125">
+                              <a:s r="124">
+                                 <a:s>&quot;Most Recent Return Visit During Period&quot;</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="125">
+                                 <a:s>effective</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <expression localId="128" locator="168:3-169:123" xsi:type="Query">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <source localId="116" locator="168:3-168:46" alias="Obs">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+               <expression localId="115" locator="168:3-168:42" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                  <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                     <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+                  </resultTypeSpecifier>
+                  <codes xsi:type="ToList">
+                     <operand locator="168:19-168:41" resultTypeName="t:Code" name="Treatment end date" libraryName="Cx" xsi:type="CodeRef"/>
+                  </codes>
+               </expression>
+            </source>
+            <where localId="127" locator="169:3-169:123" resultTypeName="t:Boolean" xsi:type="And">
+               <operand localId="121" locator="169:9-169:52" resultTypeName="t:Boolean" xsi:type="Before">
+                  <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand asType="fhir:dateTime" xsi:type="As">
+                        <operand localId="118" locator="169:9-169:17" path="value" scope="Obs" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:CodeableConcept" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:integer" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Ratio" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:SampledData" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:time" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand localId="120" locator="169:26-169:52" resultTypeName="t:DateTime" xsi:type="End">
+                     <operand localId="119" locator="169:33-169:52" name="Measurement Period" xsi:type="ParameterRef">
+                        <resultTypeSpecifier xsi:type="IntervalTypeSpecifier">
+                           <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+                        </resultTypeSpecifier>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand localId="126" locator="169:58-169:123" resultTypeName="t:Boolean" xsi:type="After">
+                  <operand name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand asType="fhir:dateTime" xsi:type="As">
+                        <operand localId="123" locator="169:58-169:66" path="value" scope="Obs" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:CodeableConcept" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:integer" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Ratio" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:SampledData" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:time" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="Case">
+                     <caseItem>
+                        <when isType="fhir:dateTime" xsi:type="Is">
+                           <operand localId="125" locator="169:74-169:123" path="effective" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                              <source localId="124" locator="169:74-169:113" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                           </operand>
+                        </when>
+                        <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:dateTime" xsi:type="As">
+                              <operand localId="125" locator="169:74-169:123" path="effective" xsi:type="Property">
+                                 <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                    <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 </resultTypeSpecifier>
+                                 <source localId="124" locator="169:74-169:113" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                              </operand>
+                           </operand>
+                        </then>
+                     </caseItem>
+                     <caseItem>
+                        <when isType="fhir:instant" xsi:type="Is">
+                           <operand localId="125" locator="169:74-169:123" path="effective" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                              <source localId="124" locator="169:74-169:113" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                           </operand>
+                        </when>
+                        <then name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand asType="fhir:instant" xsi:type="As">
+                              <operand localId="125" locator="169:74-169:123" path="effective" xsi:type="Property">
+                                 <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                    <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                    <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 </resultTypeSpecifier>
+                                 <source localId="124" locator="169:74-169:113" resultTypeName="fhir:Observation" name="Most Recent Return Visit During Period" xsi:type="ExpressionRef"/>
+                              </operand>
+                           </operand>
+                        </then>
+                     </caseItem>
+                     <else resultTypeName="t:DateTime" xsi:type="Null"/>
+                  </operand>
+               </operand>
+            </where>
+         </expression>
+      </def>
+      <def localId="132" locator="172:1-172:58" resultTypeName="t:Boolean" name="Discontinuation Boolean" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="132">
+               <a:s>define &quot;Discontinuation Boolean&quot;: </a:s>
+               <a:s r="131">
+                  <a:s>exists </a:s>
+                  <a:s r="130">
+                     <a:s>&quot;Discontinuation&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="131" locator="172:35-172:58" resultTypeName="t:Boolean" xsi:type="Exists">
+            <operand localId="130" locator="172:42-172:58" name="Discontinuation" xsi:type="ExpressionRef">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+            </operand>
+         </expression>
+      </def>
+      <def localId="135" locator="175:1-175:52" resultTypeName="t:Boolean" name="Transfer Out Boolean" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="135">
+               <a:s>define &quot;Transfer Out Boolean&quot;: </a:s>
+               <a:s r="134">
+                  <a:s>exists </a:s>
+                  <a:s r="133">
+                     <a:s>&quot;Transfer Out&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="134" locator="175:32-175:52" resultTypeName="t:Boolean" xsi:type="Exists">
+            <operand localId="133" locator="175:39-175:52" name="Transfer Out" xsi:type="ExpressionRef">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Observation" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+            </operand>
+         </expression>
+      </def>
+      <def localId="141" locator="178:1-181:23" resultTypeName="t:Boolean" name="Measure Population Exclusion" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="141">
+               <a:s>define &quot;Measure Population Exclusion&quot;: 
+  </a:s>
+               <a:s r="140">
+                  <a:s r="138">
+                     <a:s r="136">
+                        <a:s>&quot;Discontinuation Boolean&quot;</a:s>
+                     </a:s>
+                     <a:s>
+  or </a:s>
+                     <a:s r="137">
+                        <a:s>&quot;Transfer Out Boolean&quot;</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>
+  or </a:s>
+                  <a:s r="139">
+                     <a:s>&quot;Deceased Boolean&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="140" locator="179:3-181:23" resultTypeName="t:Boolean" xsi:type="Or">
+            <operand localId="138" locator="179:3-180:27" resultTypeName="t:Boolean" xsi:type="Or">
+               <operand localId="136" locator="179:3-179:27" resultTypeName="t:Boolean" name="Discontinuation Boolean" xsi:type="ExpressionRef"/>
+               <operand localId="137" locator="180:6-180:27" resultTypeName="t:Boolean" name="Transfer Out Boolean" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand localId="139" locator="181:6-181:23" resultTypeName="t:Boolean" name="Deceased Boolean" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def localId="199" locator="192:1-199:75" name="OpenMRS Location" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="199">
+               <a:s>//or (&quot;Deceased Boolean&quot; is true or &quot;Deceased DateTime Only&quot; is true)
+
+
+
+// Stratifiers
+
+
+// should work without #location
+// how to clean it up with identifier[].extension[]
+// todo: debugging needed on location
+define &quot;OpenMRS Location&quot;:
+  </a:s>
+               <a:s r="198">
+                  <a:s>
+                     <a:s r="143">
+                        <a:s r="142">
+                           <a:s r="142">
+                              <a:s>[Patient]</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> P</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>
+    // this url is in the ig, but is not correct: 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location'}
+    </a:s>
+                  <a:s r="186">
+                     <a:s>where </a:s>
+                     <a:s r="186">
+                        <a:s r="175">
+                           <a:s r="164">
+                              <a:s r="153">
+                                 <a:s>singleton from </a:s>
+                                 <a:s r="152">
+                                    <a:s>{</a:s>
+                                    <a:s r="151">
+                                       <a:s r="149">
+                                          <a:s r="148">
+                                             <a:s r="146">
+                                                <a:s r="145">
+                                                   <a:s r="144">
+                                                      <a:s>P</a:s>
+                                                   </a:s>
+                                                   <a:s>.</a:s>
+                                                   <a:s r="145">
+                                                      <a:s>identifier</a:s>
+                                                   </a:s>
+                                                </a:s>
+                                                <a:s>.</a:s>
+                                                <a:s r="146">
+                                                   <a:s>extension</a:s>
+                                                </a:s>
+                                             </a:s>
+                                             <a:s r="147">[0]</a:s>
+                                          </a:s>
+                                          <a:s>.</a:s>
+                                          <a:s r="149">
+                                             <a:s>url</a:s>
+                                          </a:s>
+                                       </a:s>
+                                       <a:s> ~ </a:s>
+                                       <a:s r="150">
+                                          <a:s>'http://fhir.openmrs.org/ext/patient/identifier'</a:s>
+                                       </a:s>
+                                    </a:s>
+                                    <a:s>}</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s>
+    or </a:s>
+                              <a:s r="163">
+                                 <a:s>singleton from </a:s>
+                                 <a:s r="162">
+                                    <a:s>{</a:s>
+                                    <a:s r="161">
+                                       <a:s r="159">
+                                          <a:s r="158">
+                                             <a:s r="156">
+                                                <a:s r="155">
+                                                   <a:s r="154">
+                                                      <a:s>P</a:s>
+                                                   </a:s>
+                                                   <a:s>.</a:s>
+                                                   <a:s r="155">
+                                                      <a:s>identifier</a:s>
+                                                   </a:s>
+                                                </a:s>
+                                                <a:s>.</a:s>
+                                                <a:s r="156">
+                                                   <a:s>extension</a:s>
+                                                </a:s>
+                                             </a:s>
+                                             <a:s r="157">[0]</a:s>
+                                          </a:s>
+                                          <a:s>.</a:s>
+                                          <a:s r="159">
+                                             <a:s>url</a:s>
+                                          </a:s>
+                                       </a:s>
+                                       <a:s> ~ </a:s>
+                                       <a:s r="160">
+                                          <a:s>'http://fhir.openmrs.org/ext/patient/identifier#location'</a:s>
+                                       </a:s>
+                                    </a:s>
+                                    <a:s>}</a:s>
+                                 </a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>
+    or </a:s>
+                           <a:s r="174">
+                              <a:s>singleton from </a:s>
+                              <a:s r="173">
+                                 <a:s>{</a:s>
+                                 <a:s r="172">
+                                    <a:s r="170">
+                                       <a:s r="169">
+                                          <a:s r="167">
+                                             <a:s r="166">
+                                                <a:s r="165">
+                                                   <a:s>P</a:s>
+                                                </a:s>
+                                                <a:s>.</a:s>
+                                                <a:s r="166">
+                                                   <a:s>identifier</a:s>
+                                                </a:s>
+                                             </a:s>
+                                             <a:s>.</a:s>
+                                             <a:s r="167">
+                                                <a:s>extension</a:s>
+                                             </a:s>
+                                          </a:s>
+                                          <a:s r="168">[1]</a:s>
+                                       </a:s>
+                                       <a:s>.</a:s>
+                                       <a:s r="170">
+                                          <a:s>url</a:s>
+                                       </a:s>
+                                    </a:s>
+                                    <a:s> ~ </a:s>
+                                    <a:s r="171">
+                                       <a:s>'http://fhir.openmrs.org/ext/patient/identifier'</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>}</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>
+    or </a:s>
+                        <a:s r="185">
+                           <a:s>singleton from </a:s>
+                           <a:s r="184">
+                              <a:s>{</a:s>
+                              <a:s r="183">
+                                 <a:s r="181">
+                                    <a:s r="180">
+                                       <a:s r="178">
+                                          <a:s r="177">
+                                             <a:s r="176">
+                                                <a:s>P</a:s>
+                                             </a:s>
+                                             <a:s>.</a:s>
+                                             <a:s r="177">
+                                                <a:s>identifier</a:s>
+                                             </a:s>
+                                          </a:s>
+                                          <a:s>.</a:s>
+                                          <a:s r="178">
+                                             <a:s>extension</a:s>
+                                          </a:s>
+                                       </a:s>
+                                       <a:s r="179">[1]</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="181">
+                                       <a:s>url</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s> ~ </a:s>
+                                 <a:s r="182">
+                                    <a:s>'http://fhir.openmrs.org/ext/patient/identifier#location'</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s>}</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>
+    </a:s>
+                  <a:s r="197">
+                     <a:s>return </a:s>
+                     <a:s r="196">
+                        <a:s>singleton from </a:s>
+                        <a:s r="195">
+                           <a:s>{</a:s>
+                           <a:s r="194">
+                              <a:s r="193">
+                                 <a:s r="192">
+                                    <a:s r="191">
+                                       <a:s r="189">
+                                          <a:s r="188">
+                                             <a:s r="187">
+                                                <a:s>P</a:s>
+                                             </a:s>
+                                             <a:s>.</a:s>
+                                             <a:s r="188">
+                                                <a:s>identifier</a:s>
+                                             </a:s>
+                                          </a:s>
+                                          <a:s>.</a:s>
+                                          <a:s r="189">
+                                             <a:s>extension</a:s>
+                                          </a:s>
+                                       </a:s>
+                                       <a:s r="190">[0]</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="192">
+                                       <a:s>value</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>.</a:s>
+                                 <a:s r="193">
+                                    <a:s>reference</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="194">
+                                 <a:s>value</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>}</a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+         <expression localId="198" locator="193:3-199:75" xsi:type="Query">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType name="t:String" xsi:type="NamedTypeSpecifier"/>
+            </resultTypeSpecifier>
+            <source localId="143" locator="193:3-193:13" alias="P">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="fhir:Patient" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+               <expression localId="142" locator="193:3-193:11" dataType="fhir:Patient" templateId="http://hl7.org/fhir/StructureDefinition/Patient" xsi:type="Retrieve">
+                  <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                     <elementType name="fhir:Patient" xsi:type="NamedTypeSpecifier"/>
+                  </resultTypeSpecifier>
+               </expression>
+            </source>
+            <where localId="186" locator="195:5-198:113" resultTypeName="t:Boolean" xsi:type="Or">
+               <operand localId="175" locator="195:11-197:104" resultTypeName="t:Boolean" xsi:type="Or">
+                  <operand localId="164" locator="195:11-196:113" resultTypeName="t:Boolean" xsi:type="Or">
+                     <operand localId="153" locator="195:11-195:107" resultTypeName="t:Boolean" xsi:type="SingletonFrom">
+                        <operand localId="152" locator="195:26-195:107" xsi:type="List">
+                           <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                              <elementType name="t:Boolean" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <element localId="151" locator="195:27-195:106" resultTypeName="t:Boolean" xsi:type="Equivalent">
+                              <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand localId="149" locator="195:27-195:55" resultTypeName="fhir:uri" path="url" xsi:type="Property">
+                                    <source localId="148" locator="195:27-195:51" resultTypeName="fhir:Extension" xsi:type="Indexer">
+                                       <operand localId="146" locator="195:27-195:48" xsi:type="Flatten">
+                                          <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                             <elementType name="fhir:Extension" xsi:type="NamedTypeSpecifier"/>
+                                          </resultTypeSpecifier>
+                                          <operand xsi:type="Query">
+                                             <source alias="$this">
+                                                <expression localId="145" locator="195:27-195:38" path="identifier" scope="P" xsi:type="Property">
+                                                   <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                                      <elementType name="fhir:Identifier" xsi:type="NamedTypeSpecifier"/>
+                                                   </resultTypeSpecifier>
+                                                </expression>
+                                             </source>
+                                             <where xsi:type="Not">
+                                                <operand xsi:type="IsNull">
+                                                   <operand path="extension" xsi:type="Property">
+                                                      <source name="$this" xsi:type="AliasRef"/>
+                                                   </operand>
+                                                </operand>
+                                             </where>
+                                             <return distinct="false">
+                                                <expression path="extension" xsi:type="Property">
+                                                   <source name="$this" xsi:type="AliasRef"/>
+                                                </expression>
+                                             </return>
+                                          </operand>
+                                       </operand>
+                                       <operand localId="147" locator="195:50" resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+                                    </source>
+                                 </operand>
+                              </operand>
+                              <operand localId="150" locator="195:59-195:106" resultTypeName="t:String" valueType="t:String" value="http://fhir.openmrs.org/ext/patient/identifier" xsi:type="Literal"/>
+                           </element>
+                        </operand>
+                     </operand>
+                     <operand localId="163" locator="196:8-196:113" resultTypeName="t:Boolean" xsi:type="SingletonFrom">
+                        <operand localId="162" locator="196:23-196:113" xsi:type="List">
+                           <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                              <elementType name="t:Boolean" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <element localId="161" locator="196:24-196:112" resultTypeName="t:Boolean" xsi:type="Equivalent">
+                              <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                                 <operand localId="159" locator="196:24-196:52" resultTypeName="fhir:uri" path="url" xsi:type="Property">
+                                    <source localId="158" locator="196:24-196:48" resultTypeName="fhir:Extension" xsi:type="Indexer">
+                                       <operand localId="156" locator="196:24-196:45" xsi:type="Flatten">
+                                          <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                             <elementType name="fhir:Extension" xsi:type="NamedTypeSpecifier"/>
+                                          </resultTypeSpecifier>
+                                          <operand xsi:type="Query">
+                                             <source alias="$this">
+                                                <expression localId="155" locator="196:24-196:35" path="identifier" scope="P" xsi:type="Property">
+                                                   <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                                      <elementType name="fhir:Identifier" xsi:type="NamedTypeSpecifier"/>
+                                                   </resultTypeSpecifier>
+                                                </expression>
+                                             </source>
+                                             <where xsi:type="Not">
+                                                <operand xsi:type="IsNull">
+                                                   <operand path="extension" xsi:type="Property">
+                                                      <source name="$this" xsi:type="AliasRef"/>
+                                                   </operand>
+                                                </operand>
+                                             </where>
+                                             <return distinct="false">
+                                                <expression path="extension" xsi:type="Property">
+                                                   <source name="$this" xsi:type="AliasRef"/>
+                                                </expression>
+                                             </return>
+                                          </operand>
+                                       </operand>
+                                       <operand localId="157" locator="196:47" resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+                                    </source>
+                                 </operand>
+                              </operand>
+                              <operand localId="160" locator="196:56-196:112" resultTypeName="t:String" valueType="t:String" value="http://fhir.openmrs.org/ext/patient/identifier#location" xsi:type="Literal"/>
+                           </element>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand localId="174" locator="197:8-197:104" resultTypeName="t:Boolean" xsi:type="SingletonFrom">
+                     <operand localId="173" locator="197:23-197:104" xsi:type="List">
+                        <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                           <elementType name="t:Boolean" xsi:type="NamedTypeSpecifier"/>
+                        </resultTypeSpecifier>
+                        <element localId="172" locator="197:24-197:103" resultTypeName="t:Boolean" xsi:type="Equivalent">
+                           <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand localId="170" locator="197:24-197:52" resultTypeName="fhir:uri" path="url" xsi:type="Property">
+                                 <source localId="169" locator="197:24-197:48" resultTypeName="fhir:Extension" xsi:type="Indexer">
+                                    <operand localId="167" locator="197:24-197:45" xsi:type="Flatten">
+                                       <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                          <elementType name="fhir:Extension" xsi:type="NamedTypeSpecifier"/>
+                                       </resultTypeSpecifier>
+                                       <operand xsi:type="Query">
+                                          <source alias="$this">
+                                             <expression localId="166" locator="197:24-197:35" path="identifier" scope="P" xsi:type="Property">
+                                                <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                                   <elementType name="fhir:Identifier" xsi:type="NamedTypeSpecifier"/>
+                                                </resultTypeSpecifier>
+                                             </expression>
+                                          </source>
+                                          <where xsi:type="Not">
+                                             <operand xsi:type="IsNull">
+                                                <operand path="extension" xsi:type="Property">
+                                                   <source name="$this" xsi:type="AliasRef"/>
+                                                </operand>
+                                             </operand>
+                                          </where>
+                                          <return distinct="false">
+                                             <expression path="extension" xsi:type="Property">
+                                                <source name="$this" xsi:type="AliasRef"/>
+                                             </expression>
+                                          </return>
+                                       </operand>
+                                    </operand>
+                                    <operand localId="168" locator="197:47" resultTypeName="t:Integer" valueType="t:Integer" value="1" xsi:type="Literal"/>
+                                 </source>
+                              </operand>
+                           </operand>
+                           <operand localId="171" locator="197:56-197:103" resultTypeName="t:String" valueType="t:String" value="http://fhir.openmrs.org/ext/patient/identifier" xsi:type="Literal"/>
+                        </element>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand localId="185" locator="198:8-198:113" resultTypeName="t:Boolean" xsi:type="SingletonFrom">
+                  <operand localId="184" locator="198:23-198:113" xsi:type="List">
+                     <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                        <elementType name="t:Boolean" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                     <element localId="183" locator="198:24-198:112" resultTypeName="t:Boolean" xsi:type="Equivalent">
+                        <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand localId="181" locator="198:24-198:52" resultTypeName="fhir:uri" path="url" xsi:type="Property">
+                              <source localId="180" locator="198:24-198:48" resultTypeName="fhir:Extension" xsi:type="Indexer">
+                                 <operand localId="178" locator="198:24-198:45" xsi:type="Flatten">
+                                    <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                       <elementType name="fhir:Extension" xsi:type="NamedTypeSpecifier"/>
+                                    </resultTypeSpecifier>
+                                    <operand xsi:type="Query">
+                                       <source alias="$this">
+                                          <expression localId="177" locator="198:24-198:35" path="identifier" scope="P" xsi:type="Property">
+                                             <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                                <elementType name="fhir:Identifier" xsi:type="NamedTypeSpecifier"/>
+                                             </resultTypeSpecifier>
+                                          </expression>
+                                       </source>
+                                       <where xsi:type="Not">
+                                          <operand xsi:type="IsNull">
+                                             <operand path="extension" xsi:type="Property">
+                                                <source name="$this" xsi:type="AliasRef"/>
+                                             </operand>
+                                          </operand>
+                                       </where>
+                                       <return distinct="false">
+                                          <expression path="extension" xsi:type="Property">
+                                             <source name="$this" xsi:type="AliasRef"/>
+                                          </expression>
+                                       </return>
+                                    </operand>
+                                 </operand>
+                                 <operand localId="179" locator="198:47" resultTypeName="t:Integer" valueType="t:Integer" value="1" xsi:type="Literal"/>
+                              </source>
+                           </operand>
+                        </operand>
+                        <operand localId="182" locator="198:56-198:112" resultTypeName="t:String" valueType="t:String" value="http://fhir.openmrs.org/ext/patient/identifier#location" xsi:type="Literal"/>
+                     </element>
+                  </operand>
+               </operand>
+            </where>
+            <return localId="197" locator="199:5-199:75">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType name="t:String" xsi:type="NamedTypeSpecifier"/>
+               </resultTypeSpecifier>
+               <expression localId="196" locator="199:12-199:75" resultTypeName="t:String" xsi:type="SingletonFrom">
+                  <operand localId="195" locator="199:27-199:75" xsi:type="List">
+                     <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                        <elementType name="t:String" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                     <element localId="194" locator="199:28-199:74" resultTypeName="t:String" path="value" xsi:type="Property">
+                        <source localId="193" locator="199:28-199:68" path="reference" xsi:type="Property">
+                           <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                              <choice name="fhir:uri" xsi:type="NamedTypeSpecifier"/>
+                              <choice name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <source localId="192" locator="199:28-199:58" path="value" xsi:type="Property">
+                              <resultTypeSpecifier xsi:type="ChoiceTypeSpecifier">
+                                 <choice name="fhir:base64Binary" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:boolean" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:canonical" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:code" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:date" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:decimal" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:id" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:instant" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:integer" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:markdown" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:oid" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:positiveInt" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:string" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:time" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:unsignedInt" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:uri" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:url" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:uuid" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Address" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Age" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Annotation" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Attachment" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:CodeableConcept" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Coding" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:ContactPoint" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Count" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Distance" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Duration" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:HumanName" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Identifier" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Money" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Period" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Range" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Ratio" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Reference" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:SampledData" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Signature" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Timing" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:ContactDetail" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Contributor" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:DataRequirement" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Expression" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:ParameterDefinition" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:RelatedArtifact" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:TriggerDefinition" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:UsageContext" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Dosage" xsi:type="NamedTypeSpecifier"/>
+                                 <choice name="fhir:Meta" xsi:type="NamedTypeSpecifier"/>
+                              </resultTypeSpecifier>
+                              <source localId="191" locator="199:28-199:52" resultTypeName="fhir:Extension" xsi:type="Indexer">
+                                 <operand localId="189" locator="199:28-199:49" xsi:type="Flatten">
+                                    <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                       <elementType name="fhir:Extension" xsi:type="NamedTypeSpecifier"/>
+                                    </resultTypeSpecifier>
+                                    <operand xsi:type="Query">
+                                       <source alias="$this">
+                                          <expression localId="188" locator="199:28-199:39" path="identifier" scope="P" xsi:type="Property">
+                                             <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                                                <elementType name="fhir:Identifier" xsi:type="NamedTypeSpecifier"/>
+                                             </resultTypeSpecifier>
+                                          </expression>
+                                       </source>
+                                       <where xsi:type="Not">
+                                          <operand xsi:type="IsNull">
+                                             <operand path="extension" xsi:type="Property">
+                                                <source name="$this" xsi:type="AliasRef"/>
+                                             </operand>
+                                          </operand>
+                                       </where>
+                                       <return distinct="false">
+                                          <expression path="extension" xsi:type="Property">
+                                             <source name="$this" xsi:type="AliasRef"/>
+                                          </expression>
+                                       </return>
+                                    </operand>
+                                 </operand>
+                                 <operand localId="190" locator="199:51" resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+                              </source>
+                           </source>
+                        </source>
+                     </element>
+                  </operand>
+               </expression>
+            </return>
+         </expression>
+      </def>
+      <def localId="202" locator="202:1-203:29" resultTypeName="t:String" name="Stratification" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="202">
+               <a:s>define &quot;Stratification&quot;: 
+  </a:s>
+               <a:s r="201">
+                  <a:s r="200">
+                     <a:s>Stratifiers</a:s>
+                  </a:s>
+                  <a:s>.</a:s>
+                  <a:s r="201">
+                     <a:s>&quot;Age Group/Sex&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="201" locator="203:3-203:29" resultTypeName="t:String" name="Age Group/Sex" libraryName="Stratifiers" xsi:type="ExpressionRef"/>
+      </def>
+   </statements>
+</library>

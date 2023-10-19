@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="EnrollmentMethods"/>
+  <meta>
+    <lastUpdated value="2023-07-20T15:56:38.013277Z"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This  code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>HBTC</td></tr><tr><td style="white-space:nowrap">160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>VCT Site</td></tr><tr><td style="white-space:nowrap">159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>MCH</td></tr><tr><td style="white-space:nowrap">160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>IPD-Adult</td></tr><tr><td style="white-space:nowrap">160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>IPD-Child</td></tr><tr><td style="white-space:nowrap">160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>TB Clinic</td></tr><tr><td style="white-space:nowrap">160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>OPD</td></tr><tr><td style="white-space:nowrap">162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>CCC</td></tr><tr><td style="white-space:nowrap">160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>Self Test</td></tr><tr><td style="white-space:nowrap">5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name="EnrollmentMethods-5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a></td><td>Other(eg STI)</td></tr></table></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+  <version value="0.1.0"/>
+  <name value="EnrollmentMethods"/>
+  <title value="Enrollment Methods for HIV program"/>
+  <status value="draft"/>
+  <date value="2023-10-19T20:59:19+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="1"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="HBTC"/>
+  </concept>
+  <concept>
+    <code value="160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="VCT Site"/>
+  </concept>
+  <concept>
+    <code value="159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="MCH"/>
+  </concept>
+  <concept>
+    <code value="160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="IPD-Adult"/>
+  </concept>
+  <concept>
+    <code value="160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="IPD-Child"/>
+  </concept>
+  <concept>
+    <code value="160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="TB Clinic"/>
+  </concept>
+  <concept>
+    <code value="160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="OPD"/>
+  </concept>
+  <concept>
+    <code value="162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="CCC"/>
+  </concept>
+  <concept>
+    <code value="160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="Self Test"/>
+  </concept>
+  <concept>
+    <code value="5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+    <display value="Other(eg STI)"/>
+  </concept>
+</CodeSystem>

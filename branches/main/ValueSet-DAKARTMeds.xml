@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DAKARTMeds"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-DAKICD11.html"><code>http://hl7.org/fhir/sid/icd-11</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM35P4">XM35P4</a></td><td>Abacavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM2L06">XM2L06</a></td><td>Emtricitabine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM5471">XM5471</a></td><td>Lamivudine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM9C07">XM9C07</a></td><td>Zidovudine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM8Z78">XM8Z78</a></td><td>Didanosine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM7RM1">XM7RM1</a></td><td>Stavudine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM67N3">XM67N3</a></td><td>Tenofovir disoproxil</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM1DX2">XM1DX2</a></td><td>Efavirenz</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM7N44">XM7N44</a></td><td>Etravirine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM10T5">XM10T5</a></td><td>Nevirapine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM1KD4">XM1KD4</a></td><td>Rilpivirine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM4TF3">XM4TF3</a></td><td>Atazanavir and Ritonavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM3EH7">XM3EH7</a></td><td>Lopinavir and Ritonavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM8ZN1">XM8ZN1</a></td><td>Darunavir and Ritonavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM56L1">XM56L1</a></td><td>Ritonavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM6K45">XM6K45</a></td><td>Dolutegravir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM82D3">XM82D3</a></td><td>Raltegravir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM8QY9">XM8QY9</a></td><td>Lamivudine, Tenofovir disoproxil and Dolutegravir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM3U67">XM3U67</a></td><td>Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM9NL2">XM9NL2</a></td><td>Lamivudine, Tenofovir disoproxil and Efavirenz</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM2UU9">XM2UU9</a></td><td>Lamivudine, Abacavir and Dolutegravir</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/387005008">387005008</a></td><td>Abacavir (substance)</td></tr><tr><td><a href="http://snomed.info/id/404856006">404856006</a></td><td>Emtricitabine (substance)</td></tr><tr><td><a href="http://snomed.info/id/386897000">386897000</a></td><td>Lamivudine (substance)</td></tr><tr><td><a href="http://snomed.info/id/387151007">387151007</a></td><td>Zidovudine (substance)</td></tr><tr><td><a href="http://snomed.info/id/387105006">387105006</a></td><td>Didanosine (substance)</td></tr><tr><td><a href="http://snomed.info/id/386895008">386895008</a></td><td>Stavudine (substance)</td></tr><tr><td><a href="http://snomed.info/id/422091007">422091007</a></td><td>Tenofovir (substance)</td></tr><tr><td><a href="http://snomed.info/id/387001004">387001004</a></td><td>Efavirenz (substance)</td></tr><tr><td><a href="http://snomed.info/id/432121008">432121008</a></td><td>Etravirine (substance)</td></tr><tr><td><a href="http://snomed.info/id/386898005">386898005</a></td><td>Nevirapine (substance)</td></tr><tr><td><a href="http://snomed.info/id/703123005">703123005</a></td><td>Rilpivirine (substance)</td></tr><tr><td><a href="http://snomed.info/id/427314002">427314002</a></td><td>Antiviral therapy (procedure)</td></tr><tr><td><a href="http://snomed.info/id/776569000">776569000</a></td><td>Product containing only lopinavir and ritonavir (medicinal product)</td></tr><tr><td><a href="http://snomed.info/id/386896009">386896009</a></td><td>Ritonavir (substance)</td></tr><tr><td><a href="http://snomed.info/id/713464000">713464000</a></td><td>Dolutegravir (substance)</td></tr><tr><td><a href="http://snomed.info/id/429707008">429707008</a></td><td>Raltegravir (substance)</td></tr><tr><td><a href="http://snomed.info/id/708255002">708255002</a></td><td>First-line treatment (procedure)</td></tr><tr><td><a href="http://snomed.info/id/708256001">708256001</a></td><td>Second-line treatment (procedure)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds"/>
+  <version value="0.1.0"/>
+  <name value="DAKARTMeds"/>
+  <title value="ART medications"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-10-19T20:59:19+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ART medications from the HIV DAK"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-11"/>
+      <concept>
+        <code value="XM35P4"/>
+        <display value="Abacavir"/>
+      </concept>
+      <concept>
+        <code value="XM2L06"/>
+        <display value="Emtricitabine"/>
+      </concept>
+      <concept>
+        <code value="XM5471"/>
+        <display value="Lamivudine"/>
+      </concept>
+      <concept>
+        <code value="XM9C07"/>
+        <display value="Zidovudine"/>
+      </concept>
+      <concept>
+        <code value="XM8Z78"/>
+        <display value="Didanosine"/>
+      </concept>
+      <concept>
+        <code value="XM7RM1"/>
+        <display value="Stavudine"/>
+      </concept>
+      <concept>
+        <code value="XM67N3"/>
+        <display value="Tenofovir disoproxil"/>
+      </concept>
+      <concept>
+        <code value="XM1DX2"/>
+        <display value="Efavirenz"/>
+      </concept>
+      <concept>
+        <code value="XM7N44"/>
+        <display value="Etravirine"/>
+      </concept>
+      <concept>
+        <code value="XM10T5"/>
+        <display value="Nevirapine"/>
+      </concept>
+      <concept>
+        <code value="XM1KD4"/>
+        <display value="Rilpivirine"/>
+      </concept>
+      <concept>
+        <code value="XM4TF3"/>
+        <display value="Atazanavir and Ritonavir"/>
+      </concept>
+      <concept>
+        <code value="XM3EH7"/>
+        <display value="Lopinavir and Ritonavir"/>
+      </concept>
+      <concept>
+        <code value="XM8ZN1"/>
+        <display value="Darunavir and Ritonavir"/>
+      </concept>
+      <concept>
+        <code value="XM56L1"/>
+        <display value="Ritonavir"/>
+      </concept>
+      <concept>
+        <code value="XM6K45"/>
+        <display value="Dolutegravir"/>
+      </concept>
+      <concept>
+        <code value="XM82D3"/>
+        <display value="Raltegravir"/>
+      </concept>
+      <concept>
+        <code value="XM8QY9"/>
+        <display value="Lamivudine, Tenofovir disoproxil and Dolutegravir"/>
+      </concept>
+      <concept>
+        <code value="XM3U67"/>
+        <display value="Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit"/>
+      </concept>
+      <concept>
+        <code value="XM9NL2"/>
+        <display value="Lamivudine, Tenofovir disoproxil and Efavirenz"/>
+      </concept>
+      <concept>
+        <code value="XM2UU9"/>
+        <display value="Lamivudine, Abacavir and Dolutegravir"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="387005008"/>
+        <display value="Abacavir (substance)"/>
+      </concept>
+      <concept>
+        <code value="404856006"/>
+        <display value="Emtricitabine (substance)"/>
+      </concept>
+      <concept>
+        <code value="386897000"/>
+        <display value="Lamivudine (substance)"/>
+      </concept>
+      <concept>
+        <code value="387151007"/>
+        <display value="Zidovudine (substance)"/>
+      </concept>
+      <concept>
+        <code value="387105006"/>
+        <display value="Didanosine (substance)"/>
+      </concept>
+      <concept>
+        <code value="386895008"/>
+        <display value="Stavudine (substance)"/>
+      </concept>
+      <concept>
+        <code value="422091007"/>
+        <display value="Tenofovir (substance)"/>
+      </concept>
+      <concept>
+        <code value="387001004"/>
+        <display value="Efavirenz (substance)"/>
+      </concept>
+      <concept>
+        <code value="432121008"/>
+        <display value="Etravirine (substance)"/>
+      </concept>
+      <concept>
+        <code value="386898005"/>
+        <display value="Nevirapine (substance)"/>
+      </concept>
+      <concept>
+        <code value="703123005"/>
+        <display value="Rilpivirine (substance)"/>
+      </concept>
+      <concept>
+        <code value="427314002"/>
+        <display value="Antiviral therapy (procedure)"/>
+      </concept>
+      <concept>
+        <code value="776569000"/>
+        <display value="Product containing only lopinavir and ritonavir (medicinal product)"/>
+      </concept>
+      <concept>
+        <code value="386896009"/>
+        <display value="Ritonavir (substance)"/>
+      </concept>
+      <concept>
+        <code value="713464000"/>
+        <display value="Dolutegravir (substance)"/>
+      </concept>
+      <concept>
+        <code value="429707008"/>
+        <display value="Raltegravir (substance)"/>
+      </concept>
+      <concept>
+        <code value="708255002"/>
+        <display value="First-line treatment (procedure)"/>
+      </concept>
+      <concept>
+        <code value="708256001"/>
+        <display value="Second-line treatment (procedure)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

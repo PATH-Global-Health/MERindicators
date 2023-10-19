@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CIELHIVMedications"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-CIEL.html"><code>https://openconceptlab.org/orgs/CIEL/sources/CIEL</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-160104">160104</a></td><td>Efavirenz / Lamivudine / Stavudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-160105">160105</a></td><td>Efavirenz / Stavudine / Zidovudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-160124">160124</a></td><td>Efavirenz / Lamivudine / Zidovudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-161361">161361</a></td><td>efavirenz / lamivudine / tenofovir disoproxil</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-161363">161363</a></td><td>lamivudine / stavudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-161364">161364</a></td><td>Lamivudine / tenofovir disoproxil</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-1652">1652</a></td><td>Lamivudine / nevirapine / zidovudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-5424">5424</a></td><td>Other antiretroviral drug</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-5811">5811</a></td><td>Unknown antiretroviral drug</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-630">630</a></td><td>Lamivudine / zidovudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-103166">103166</a></td><td>Abacavir / lamivudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-70056">70056</a></td><td>Abacavir</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-71647">71647</a></td><td>Atazanavir</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-74807">74807</a></td><td>Didanosine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-75523">75523</a></td><td>Efavirenz</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-75628">75628</a></td><td>Efavirenz</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-77995">77995</a></td><td>Indinavir</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-78643">78643</a></td><td>Lamivudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-79040">79040</a></td><td>Lopinavir</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-792">792</a></td><td>Lamivudine / nevirapine / stavudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-794">794</a></td><td>Lopinavir / ritonavir</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-80487">80487</a></td><td>Nelfinavir</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-80586">80586</a></td><td>Nevirapine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-83412">83412</a></td><td>Ritonavir</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-84309">84309</a></td><td>Stavudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-84795">84795</a></td><td>Tenofovir</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-86663">86663</a></td><td>Zidovudine</td></tr><tr><td><a href="CodeSystem-CIEL.html#CIEL-01234">01234</a></td><td>Tenofovir / Lamivudine / Dolutegravir</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications"/>
+  <version value="0.1.0"/>
+  <name value="CIELHIVMedications"/>
+  <title value="CIELHIVMedications"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-10-19T20:59:19+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CIELHIVMedications"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+      <concept>
+        <code value="160104"/>
+        <display value="Efavirenz / Lamivudine / Stavudine"/>
+      </concept>
+      <concept>
+        <code value="160105"/>
+        <display value="Efavirenz / Stavudine / Zidovudine"/>
+      </concept>
+      <concept>
+        <code value="160124"/>
+        <display value="Efavirenz / Lamivudine / Zidovudine"/>
+      </concept>
+      <concept>
+        <code value="161361"/>
+        <display value="efavirenz / lamivudine / tenofovir disoproxil"/>
+      </concept>
+      <concept>
+        <code value="161363"/>
+        <display value="lamivudine / stavudine"/>
+      </concept>
+      <concept>
+        <code value="161364"/>
+        <display value="Lamivudine / tenofovir disoproxil"/>
+      </concept>
+      <concept>
+        <code value="1652"/>
+        <display value="Lamivudine / nevirapine / zidovudine"/>
+      </concept>
+      <concept>
+        <code value="5424"/>
+        <display value="Other antiretroviral drug"/>
+      </concept>
+      <concept>
+        <code value="5811"/>
+        <display value="Unknown antiretroviral drug"/>
+      </concept>
+      <concept>
+        <code value="630"/>
+        <display value="Lamivudine / zidovudine"/>
+      </concept>
+      <concept>
+        <code value="103166"/>
+        <display value="Abacavir / lamivudine"/>
+      </concept>
+      <concept>
+        <code value="70056"/>
+        <display value="Abacavir"/>
+      </concept>
+      <concept>
+        <code value="71647"/>
+        <display value="Atazanavir"/>
+      </concept>
+      <concept>
+        <code value="74807"/>
+        <display value="Didanosine"/>
+      </concept>
+      <concept>
+        <code value="75523"/>
+        <display value="Efavirenz"/>
+      </concept>
+      <concept>
+        <code value="75628"/>
+        <display value="Efavirenz"/>
+      </concept>
+      <concept>
+        <code value="77995"/>
+        <display value="Indinavir"/>
+      </concept>
+      <concept>
+        <code value="78643"/>
+        <display value="Lamivudine"/>
+      </concept>
+      <concept>
+        <code value="79040"/>
+        <display value="Lopinavir"/>
+      </concept>
+      <concept>
+        <code value="792"/>
+        <display value="Lamivudine / nevirapine / stavudine"/>
+      </concept>
+      <concept>
+        <code value="794"/>
+        <display value="Lopinavir / ritonavir"/>
+      </concept>
+      <concept>
+        <code value="80487"/>
+        <display value="Nelfinavir"/>
+      </concept>
+      <concept>
+        <code value="80586"/>
+        <display value="Nevirapine"/>
+      </concept>
+      <concept>
+        <code value="83412"/>
+        <display value="Ritonavir"/>
+      </concept>
+      <concept>
+        <code value="84309"/>
+        <display value="Stavudine"/>
+      </concept>
+      <concept>
+        <code value="84795"/>
+        <display value="Tenofovir"/>
+      </concept>
+      <concept>
+        <code value="86663"/>
+        <display value="Zidovudine"/>
+      </concept>
+      <concept>
+        <code value="01234"/>
+        <display value="Tenofovir / Lamivudine / Dolutegravir"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,500 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Bundle/Example-HIVSimple> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-HIVSimple"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Patient/Patient-HIVSimple"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Organization/Organization-HIVSimple1"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Location/Location-HIVSimple1"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Condition/Condition-HIVSimple"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Condition/Condition-HIVSimple> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Condition/Condition-HIVSimple"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Condition/Condition-Pregnancy"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Condition/Condition-Pregnancy> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Condition/Condition-Pregnancy"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Encounter/Encounter-HIVSimple"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-HIVSimple"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-HIVSimple> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "DiagnosticReport/DiagnosticReport-HIVSimple"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Observation/Observation-HIVSimple"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Observation/Observation-HIVSimple> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/Observation-HIVSimple"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Encounter/Encounter-ViralLoad"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-ViralLoad"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-ViralLoad> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "DiagnosticReport/DiagnosticReport-ViralLoad"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/Observation-ViralLoad"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Encounter/Encounter2-ViralLoad"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport2-ViralLoad"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport2-ViralLoad> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "DiagnosticReport/DiagnosticReport2-ViralLoad"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Observation/Observation2-ViralLoad"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Observation/Observation2-ViralLoad> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/Observation2-ViralLoad"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> a fhir:Patient ;
+  fhir:id [ fhir:v "Patient-HIVSimple"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Patient-HIVSimple\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Patient-HIVSimple&quot; </p></div><p><b>name</b>: Mittens Cat</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-01-01</p></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Mittens Cat" ] ;
+     fhir:family [ fhir:v "Cat" ] ;
+     fhir:given ( [ fhir:v "Mittens" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-01-01"^^xsd:date] . # 
+
+<https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple1> a fhir:Organization ;
+  fhir:id [ fhir:v "Organization-HIVSimple1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Organization-HIVSimple1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Organization-HIVSimple1&quot; </p></div><p><b>identifier</b>: id: Organization-HIVSimple1</p><p><b>name</b>: Organization-HIVSimple Government Hospital</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Organization-HIVSimple1" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Organization-HIVSimple Government Hospital"] . # 
+
+<https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1> a fhir:Location ;
+  fhir:id [ fhir:v "Location-HIVSimple1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"Location-HIVSimple1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;Location-HIVSimple1&quot; </p></div><p><b>identifier</b>: id: Location-HIVSimple1</p><p><b>managingOrganization</b>: <span>id: Organization-HIVSimple1</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Location-HIVSimple1" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Organization-HIVSimple1" ]
+     ]
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/Condition/Condition-HIVSimple> a fhir:Condition ;
+  fhir:id [ fhir:v "Condition-HIVSimple"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition-HIVSimple\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition-HIVSimple&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: HIV - Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>onset</b>: 2010-01-01</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:86406008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86406008" ] ;
+       fhir:display [ fhir:v "HIV - Human immunodeficiency virus infection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2010-01-01"^^xsd:date] . # 
+
+<https://path-global-health.github.io/MERindicators/Condition/Condition-Pregnancy> a fhir:Condition ;
+  fhir:id [ fhir:v "Condition-Pregnancy"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition-Pregnancy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition-Pregnancy&quot; </p></div><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Pregnancy (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#77386006)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>onset</b>: 2020-01-01</p><p><b>abatement</b>: 2020-09-30</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inactive" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:77386006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77386006" ] ;
+       fhir:display [ fhir:v "Pregnancy (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2020-01-01"^^xsd:date] ; # 
+  fhir:abatement [ fhir:v "2020-09-30"^^xsd:date] . # 
+
+<https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple> a fhir:Encounter ;
+  fhir:id [ fhir:v "Encounter-HIVSimple"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"Encounter-HIVSimple\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;Encounter-HIVSimple&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>period</b>: 2011-01-01 --&gt; 2011-01-01</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_Location-HIVSimple1\">See above (Location/Location-HIVSimple1)</a></td></tr></table><p><b>serviceProvider</b>: <span>id: Organization-HIVSimple1</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ACUTE" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2011-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2011-01-01"^^xsd:date ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1> ;
+       fhir:reference [ fhir:v "Location/Location-HIVSimple1" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Organization-HIVSimple1" ]
+     ]
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-HIVSimple> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "DiagnosticReport-HIVSimple"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"DiagnosticReport-HIVSimple\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;DiagnosticReport-HIVSimple&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 and 2 tests - Meaningful Use set <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#75622-1)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-HIVSimple\">See above (Encounter/Encounter-HIVSimple)</a></p><p><b>result</b>: <a href=\"#Observation_Observation-HIVSimple\">See above (Observation/Observation-HIVSimple)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:75622-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "75622-1" ] ;
+       fhir:display [ fhir:v "HIV 1 and 2 tests - Meaningful Use set" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple> ;
+     fhir:reference [ fhir:v "Encounter/Encounter-HIVSimple" ]
+  ] ; # 
+  fhir:result ( [
+     fhir:link <https://path-global-health.github.io/MERindicators/Observation/Observation-HIVSimple> ;
+     fhir:reference [ fhir:v "Observation/Observation-HIVSimple" ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Observation/Observation-HIVSimple> a fhir:Observation ;
+  fhir:id [ fhir:v "Observation-HIVSimple"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-HIVSimple\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-HIVSimple&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 and 2 tests - Meaningful Use set <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#75622-1)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-HIVSimple\">See above (Encounter/Encounter-HIVSimple)</a></p><p><b>value</b>: HIV Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#165816005)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:75622-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "75622-1" ] ;
+       fhir:display [ fhir:v "HIV 1 and 2 tests - Meaningful Use set" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple> ;
+     fhir:reference [ fhir:v "Encounter/Encounter-HIVSimple" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:165816005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "165816005" ] ;
+       fhir:display [ fhir:v "HIV Positive" ]
+     ] )
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad> a fhir:Encounter ;
+  fhir:id [ fhir:v "Encounter-ViralLoad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"Encounter-ViralLoad\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;Encounter-ViralLoad&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>period</b>: 2020-06-01 --&gt; 2020-06-01</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_Location-HIVSimple1\">See above (Location/Location-HIVSimple1)</a></td></tr></table><p><b>serviceProvider</b>: <span>id: Organization-HIVSimple1</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ACUTE" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-06-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2020-06-01"^^xsd:date ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1> ;
+       fhir:reference [ fhir:v "Location/Location-HIVSimple1" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Organization-HIVSimple1" ]
+     ]
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-ViralLoad> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "DiagnosticReport-ViralLoad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"DiagnosticReport-ViralLoad\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;DiagnosticReport-ViralLoad&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-ViralLoad\">See above (Encounter/Encounter-ViralLoad)</a></p><p><b>result</b>: <a href=\"#Observation_Observation-ViralLoad\">See above (Observation/Observation-ViralLoad)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:25836-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "25836-8" ] ;
+       fhir:display [ fhir:v "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad> ;
+     fhir:reference [ fhir:v "Encounter/Encounter-ViralLoad" ]
+  ] ; # 
+  fhir:result ( [
+     fhir:link <https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad> ;
+     fhir:reference [ fhir:v "Observation/Observation-ViralLoad" ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad> a fhir:Observation ;
+  fhir:id [ fhir:v "Observation-ViralLoad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-ViralLoad\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-ViralLoad&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-ViralLoad\">See above (Encounter/Encounter-ViralLoad)</a></p><p><b>issued</b>: Jun 1, 2020, 11:28:17 AM</p><p><b>value</b>: 741660 copies/mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {copies}/mL = '{copies}/mL')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:25836-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "25836-8" ] ;
+       fhir:display [ fhir:v "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad> ;
+     fhir:reference [ fhir:v "Encounter/Encounter-ViralLoad" ]
+  ] ; # 
+  fhir:issued [ fhir:v "2020-06-01T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "741660"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "copies/mL" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "{copies}/mL" ]
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad> a fhir:Encounter ;
+  fhir:id [ fhir:v "Encounter2-ViralLoad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"Encounter2-ViralLoad\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;Encounter2-ViralLoad&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>period</b>: 2020-06-01 --&gt; 2020-06-01</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_Location-HIVSimple1\">See above (Location/Location-HIVSimple1)</a></td></tr></table><p><b>serviceProvider</b>: <span>id: Organization-HIVSimple1</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ACUTE" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-06-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2020-06-01"^^xsd:date ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple1> ;
+       fhir:reference [ fhir:v "Location/Location-HIVSimple1" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://github.com/synthetichealth/synthea"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Organization-HIVSimple1" ]
+     ]
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport2-ViralLoad> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "DiagnosticReport2-ViralLoad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"DiagnosticReport2-ViralLoad\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;DiagnosticReport2-ViralLoad&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter2-ViralLoad\">See above (Encounter/Encounter2-ViralLoad)</a></p><p><b>result</b>: <a href=\"#Observation_Observation2-ViralLoad\">See above (Observation/Observation2-ViralLoad)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:25836-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "25836-8" ] ;
+       fhir:display [ fhir:v "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad> ;
+     fhir:reference [ fhir:v "Encounter/Encounter2-ViralLoad" ]
+  ] ; # 
+  fhir:result ( [
+     fhir:link <https://path-global-health.github.io/MERindicators/Observation/Observation2-ViralLoad> ;
+     fhir:reference [ fhir:v "Observation/Observation2-ViralLoad" ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Observation/Observation2-ViralLoad> a fhir:Observation ;
+  fhir:id [ fhir:v "Observation2-ViralLoad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation2-ViralLoad\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation2-ViralLoad&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-HIVSimple\">See above (Patient/Patient-HIVSimple)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter2-ViralLoad\">See above (Encounter/Encounter2-ViralLoad)</a></p><p><b>issued</b>: Sep 1, 2020, 11:28:17 AM</p><p><b>value</b>: 800 copies/mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {copies}/mL = '{copies}/mL')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:25836-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "25836-8" ] ;
+       fhir:display [ fhir:v "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad> ;
+     fhir:reference [ fhir:v "Encounter/Encounter2-ViralLoad" ]
+  ] ; # 
+  fhir:issued [ fhir:v "2020-09-01T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "800"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "copies/mL" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "{copies}/mL" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

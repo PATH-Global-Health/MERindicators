@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR> a fhir:Measure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KEMRTXCURR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Measure</b><a name=\"KEMRTXCURR\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Measure &quot;KEMRTXCURR&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR</code></p><p><b>identifier</b>: id: KEMRTXCURR</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: KEMRTXCURR</p><p><b>title</b>: KEMRTXCURR</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: 2023-07-01</p><p><b>publisher</b>: PATH</p><p><b>contact</b>: PATH: <a href=\"https://www.path.org\">https://www.path.org</a>,<a href=\"mailto:info@path.org\">info@path.org</a>, PATH: <a href=\"mailto:info@path.org\">info@path.org</a></p><p><b>description</b>: KEMRTXCURR</p><p><b>jurisdiction</b>: World <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>library</b>: <a href=\"Library-KenyaEMRTXCURR.html\">KenyaEMRTXCURR</a></p><p><b>scoring</b>: Continuous Variable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-scoring.html\">MeasureScoring</a>#continuous-variable)</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#initial-population)</span></p><p><b>description</b>: Initial Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Initial Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Measure Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-population)</span></p><p><b>description</b>: Measure Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Measure Population Exclusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-population-exclusion)</span></p><p><b>description</b>: Measure Population Exclusion</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Population Exclusion</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Stratification</td></tr></table></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "KEMRTXCURR" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KEMRTXCURR"] ; # 
+  fhir:title [ fhir:v "KEMRTXCURR"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "KEMRTXCURR"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:library ( [
+     fhir:v "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"^^xsd:anyURI ;
+     fhir:link <https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR>
+  ] ) ; # 
+  fhir:scoring [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-scoring"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "continuous-variable" ]
+     ] )
+  ] ; # 
+  fhir:group ( [
+     fhir:population ( [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-population"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "initial-population" ]
+         ] )
+       ] ;
+       fhir:description [ fhir:v "Initial Population" ] ;
+       fhir:criteria [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Initial Population" ]
+       ]
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-population"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "measure-population" ]
+         ] )
+       ] ;
+       fhir:description [ fhir:v "Measure Population" ] ;
+       fhir:criteria [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Measure Population" ]
+       ]
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-population"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "measure-population-exclusion" ]
+         ] )
+       ] ;
+       fhir:description [ fhir:v "Measure Population Exclusion" ] ;
+       fhir:criteria [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Measure Population Exclusion" ]
+       ]
+     ] ) ;
+     fhir:stratifier ( [
+       fhir:criteria [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Stratification" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

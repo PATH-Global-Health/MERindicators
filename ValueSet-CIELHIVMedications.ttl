@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CIELHIVMedications"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CIEL.html\"><code>https://openconceptlab.org/orgs/CIEL/sources/CIEL</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-160104\">160104</a></td><td>Efavirenz / Lamivudine / Stavudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-160105\">160105</a></td><td>Efavirenz / Stavudine / Zidovudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-160124\">160124</a></td><td>Efavirenz / Lamivudine / Zidovudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-161361\">161361</a></td><td>efavirenz / lamivudine / tenofovir disoproxil</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-161363\">161363</a></td><td>lamivudine / stavudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-161364\">161364</a></td><td>Lamivudine / tenofovir disoproxil</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-1652\">1652</a></td><td>Lamivudine / nevirapine / zidovudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-5424\">5424</a></td><td>Other antiretroviral drug</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-5811\">5811</a></td><td>Unknown antiretroviral drug</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-630\">630</a></td><td>Lamivudine / zidovudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-103166\">103166</a></td><td>Abacavir / lamivudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-70056\">70056</a></td><td>Abacavir</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-71647\">71647</a></td><td>Atazanavir</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-74807\">74807</a></td><td>Didanosine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-75523\">75523</a></td><td>Efavirenz</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-75628\">75628</a></td><td>Efavirenz</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-77995\">77995</a></td><td>Indinavir</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-78643\">78643</a></td><td>Lamivudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-79040\">79040</a></td><td>Lopinavir</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-792\">792</a></td><td>Lamivudine / nevirapine / stavudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-794\">794</a></td><td>Lopinavir / ritonavir</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-80487\">80487</a></td><td>Nelfinavir</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-80586\">80586</a></td><td>Nevirapine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-83412\">83412</a></td><td>Ritonavir</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-84309\">84309</a></td><td>Stavudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-84795\">84795</a></td><td>Tenofovir</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-86663\">86663</a></td><td>Zidovudine</td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-01234\">01234</a></td><td>Tenofovir / Lamivudine / Dolutegravir</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CIELHIVMedications"] ; # 
+  fhir:title [ fhir:v "CIELHIVMedications"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-19T20:59:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CIELHIVMedications"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://openconceptlab.org/orgs/CIEL/sources/CIEL"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "160104" ] ;
+         fhir:display [ fhir:v "Efavirenz / Lamivudine / Stavudine" ]
+       ] [
+         fhir:code [ fhir:v "160105" ] ;
+         fhir:display [ fhir:v "Efavirenz / Stavudine / Zidovudine" ]
+       ] [
+         fhir:code [ fhir:v "160124" ] ;
+         fhir:display [ fhir:v "Efavirenz / Lamivudine / Zidovudine" ]
+       ] [
+         fhir:code [ fhir:v "161361" ] ;
+         fhir:display [ fhir:v "efavirenz / lamivudine / tenofovir disoproxil" ]
+       ] [
+         fhir:code [ fhir:v "161363" ] ;
+         fhir:display [ fhir:v "lamivudine / stavudine" ]
+       ] [
+         fhir:code [ fhir:v "161364" ] ;
+         fhir:display [ fhir:v "Lamivudine / tenofovir disoproxil" ]
+       ] [
+         fhir:code [ fhir:v "1652" ] ;
+         fhir:display [ fhir:v "Lamivudine / nevirapine / zidovudine" ]
+       ] [
+         fhir:code [ fhir:v "5424" ] ;
+         fhir:display [ fhir:v "Other antiretroviral drug" ]
+       ] [
+         fhir:code [ fhir:v "5811" ] ;
+         fhir:display [ fhir:v "Unknown antiretroviral drug" ]
+       ] [
+         fhir:code [ fhir:v "630" ] ;
+         fhir:display [ fhir:v "Lamivudine / zidovudine" ]
+       ] [
+         fhir:code [ fhir:v "103166" ] ;
+         fhir:display [ fhir:v "Abacavir / lamivudine" ]
+       ] [
+         fhir:code [ fhir:v "70056" ] ;
+         fhir:display [ fhir:v "Abacavir" ]
+       ] [
+         fhir:code [ fhir:v "71647" ] ;
+         fhir:display [ fhir:v "Atazanavir" ]
+       ] [
+         fhir:code [ fhir:v "74807" ] ;
+         fhir:display [ fhir:v "Didanosine" ]
+       ] [
+         fhir:code [ fhir:v "75523" ] ;
+         fhir:display [ fhir:v "Efavirenz" ]
+       ] [
+         fhir:code [ fhir:v "75628" ] ;
+         fhir:display [ fhir:v "Efavirenz" ]
+       ] [
+         fhir:code [ fhir:v "77995" ] ;
+         fhir:display [ fhir:v "Indinavir" ]
+       ] [
+         fhir:code [ fhir:v "78643" ] ;
+         fhir:display [ fhir:v "Lamivudine" ]
+       ] [
+         fhir:code [ fhir:v "79040" ] ;
+         fhir:display [ fhir:v "Lopinavir" ]
+       ] [
+         fhir:code [ fhir:v "792" ] ;
+         fhir:display [ fhir:v "Lamivudine / nevirapine / stavudine" ]
+       ] [
+         fhir:code [ fhir:v "794" ] ;
+         fhir:display [ fhir:v "Lopinavir / ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "80487" ] ;
+         fhir:display [ fhir:v "Nelfinavir" ]
+       ] [
+         fhir:code [ fhir:v "80586" ] ;
+         fhir:display [ fhir:v "Nevirapine" ]
+       ] [
+         fhir:code [ fhir:v "83412" ] ;
+         fhir:display [ fhir:v "Ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "84309" ] ;
+         fhir:display [ fhir:v "Stavudine" ]
+       ] [
+         fhir:code [ fhir:v "84795" ] ;
+         fhir:display [ fhir:v "Tenofovir" ]
+       ] [
+         fhir:code [ fhir:v "86663" ] ;
+         fhir:display [ fhir:v "Zidovudine" ]
+       ] [
+         fhir:code [ fhir:v "01234" ] ;
+         fhir:display [ fhir:v "Tenofovir / Lamivudine / Dolutegravir" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

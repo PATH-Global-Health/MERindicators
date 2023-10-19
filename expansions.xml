@@ -1,0 +1,3158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="6aea912a-3878-4f51-91e0-60657b470b46"/>
+  <meta>
+    <lastUpdated value="2023-10-19T20:59:19.521+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 28 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CIEL.html">codesystem CIEL v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-160104"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-160104">160104</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Efavirenz / Lamivudine / Stavudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-160105"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-160105">160105</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Efavirenz / Stavudine / Zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-160124"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-160124">160124</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Efavirenz / Lamivudine / Zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-161361"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-161361">161361</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>efavirenz / lamivudine / tenofovir disoproxil</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-161363"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-161363">161363</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>lamivudine / stavudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-161364"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-161364">161364</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Lamivudine / tenofovir disoproxil</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-1652"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-1652">1652</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Lamivudine / nevirapine / zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-5424"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-5424">5424</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Other antiretroviral drug</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-5811"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-5811">5811</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Unknown antiretroviral drug</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-630"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-630">630</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Lamivudine / zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-103166"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-103166">103166</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Abacavir / lamivudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-70056"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-70056">70056</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Abacavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-71647"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-71647">71647</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Atazanavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-74807"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-74807">74807</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Didanosine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-75523"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-75523">75523</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Efavirenz</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-75628"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-75628">75628</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Efavirenz</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-77995"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-77995">77995</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Indinavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-78643"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-78643">78643</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Lamivudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-79040"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-79040">79040</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Lopinavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-792"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-792">792</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Lamivudine / nevirapine / stavudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-794"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-794">794</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Lopinavir / ritonavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-80487"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-80487">80487</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Nelfinavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-80586"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-80586">80586</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Nevirapine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-83412"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-83412">83412</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Ritonavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-84309"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-84309">84309</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Stavudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-84795"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-84795">84795</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Tenofovir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-86663"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-86663">86663</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-01234"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-01234">01234</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Tenofovir / Lamivudine / Dolutegravir</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications"/>
+        <version value="0.1.0"/>
+        <name value="CIELHIVMedications"/>
+        <title value="CIELHIVMedications"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:50228719-82f9-484d-8254-412df8e97a8f"/>
+          <timestamp value="2023-10-19T21:01:22+00:00"/>
+          <total value="28"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="160104"/>
+            <display value="Efavirenz / Lamivudine / Stavudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="160105"/>
+            <display value="Efavirenz / Stavudine / Zidovudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="160124"/>
+            <display value="Efavirenz / Lamivudine / Zidovudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="161361"/>
+            <display value="efavirenz / lamivudine / tenofovir disoproxil"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="161363"/>
+            <display value="lamivudine / stavudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="161364"/>
+            <display value="Lamivudine / tenofovir disoproxil"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="1652"/>
+            <display value="Lamivudine / nevirapine / zidovudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="5424"/>
+            <display value="Other antiretroviral drug"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="5811"/>
+            <display value="Unknown antiretroviral drug"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="630"/>
+            <display value="Lamivudine / zidovudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="103166"/>
+            <display value="Abacavir / lamivudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="70056"/>
+            <display value="Abacavir"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="71647"/>
+            <display value="Atazanavir"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="74807"/>
+            <display value="Didanosine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="75523"/>
+            <display value="Efavirenz"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="75628"/>
+            <display value="Efavirenz"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="77995"/>
+            <display value="Indinavir"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="78643"/>
+            <display value="Lamivudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="79040"/>
+            <display value="Lopinavir"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="792"/>
+            <display value="Lamivudine / nevirapine / stavudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="794"/>
+            <display value="Lopinavir / ritonavir"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="80487"/>
+            <display value="Nelfinavir"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="80586"/>
+            <display value="Nevirapine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="83412"/>
+            <display value="Ritonavir"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="84309"/>
+            <display value="Stavudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="84795"/>
+            <display value="Tenofovir"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="86663"/>
+            <display value="Zidovudine"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="01234"/>
+            <display value="Tenofovir / Lamivudine / Dolutegravir"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 39 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-DAKICD11.html">codesystem ICD-11 codes from the HIV DAK v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM35P4"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM35P4">XM35P4</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Abacavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM2L06"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM2L06">XM2L06</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Emtricitabine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM5471"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM5471">XM5471</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Lamivudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM9C07"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM9C07">XM9C07</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM8Z78"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM8Z78">XM8Z78</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Didanosine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM7RM1"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM7RM1">XM7RM1</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Stavudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM67N3"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM67N3">XM67N3</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Tenofovir disoproxil</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM1DX2"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM1DX2">XM1DX2</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Efavirenz</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM7N44"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM7N44">XM7N44</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Etravirine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM10T5"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM10T5">XM10T5</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Nevirapine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM1KD4"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM1KD4">XM1KD4</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Rilpivirine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM4TF3"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM4TF3">XM4TF3</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Atazanavir and Ritonavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM3EH7"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM3EH7">XM3EH7</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Lopinavir and Ritonavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM8ZN1"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM8ZN1">XM8ZN1</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Darunavir and Ritonavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM56L1"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM56L1">XM56L1</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Ritonavir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM6K45"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM6K45">XM6K45</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Dolutegravir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM82D3"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM82D3">XM82D3</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Raltegravir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM8QY9"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM8QY9">XM8QY9</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Lamivudine, Tenofovir disoproxil and Dolutegravir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM3U67"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM3U67">XM3U67</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM9NL2"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM9NL2">XM9NL2</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Lamivudine, Tenofovir disoproxil and Efavirenz</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM2UU9"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM2UU9">XM2UU9</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Lamivudine, Abacavir and Dolutegravir</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-387005008"> </a>  
+                  <a href="http://snomed.info/id/387005008">387005008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Abacavir (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-404856006"> </a>  
+                  <a href="http://snomed.info/id/404856006">404856006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Emtricitabine (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-386897000"> </a>  
+                  <a href="http://snomed.info/id/386897000">386897000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lamivudine (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-387151007"> </a>  
+                  <a href="http://snomed.info/id/387151007">387151007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Zidovudine (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-387105006"> </a>  
+                  <a href="http://snomed.info/id/387105006">387105006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Didanosine (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-386895008"> </a>  
+                  <a href="http://snomed.info/id/386895008">386895008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Stavudine (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-422091007"> </a>  
+                  <a href="http://snomed.info/id/422091007">422091007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Tenofovir (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-387001004"> </a>  
+                  <a href="http://snomed.info/id/387001004">387001004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Efavirenz (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-432121008"> </a>  
+                  <a href="http://snomed.info/id/432121008">432121008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Etravirine (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-386898005"> </a>  
+                  <a href="http://snomed.info/id/386898005">386898005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Nevirapine (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-703123005"> </a>  
+                  <a href="http://snomed.info/id/703123005">703123005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rilpivirine (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-427314002"> </a>  
+                  <a href="http://snomed.info/id/427314002">427314002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Antiviral therapy (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-776569000"> </a>  
+                  <a href="http://snomed.info/id/776569000">776569000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Product containing only lopinavir and ritonavir (medicinal product)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-386896009"> </a>  
+                  <a href="http://snomed.info/id/386896009">386896009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ritonavir (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-713464000"> </a>  
+                  <a href="http://snomed.info/id/713464000">713464000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dolutegravir (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-429707008"> </a>  
+                  <a href="http://snomed.info/id/429707008">429707008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Raltegravir (substance)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-708255002"> </a>  
+                  <a href="http://snomed.info/id/708255002">708255002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>First-line treatment (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-708256001"> </a>  
+                  <a href="http://snomed.info/id/708256001">708256001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Second-line treatment (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds"/>
+        <version value="0.1.0"/>
+        <name value="DAKARTMeds"/>
+        <title value="ART medications"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cfff2a44-a479-45b7-8f5a-0af79c34641b"/>
+          <timestamp value="2023-10-19T21:01:22+00:00"/>
+          <total value="39"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-11|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM35P4"/>
+            <display value="Abacavir"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM2L06"/>
+            <display value="Emtricitabine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM5471"/>
+            <display value="Lamivudine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM9C07"/>
+            <display value="Zidovudine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM8Z78"/>
+            <display value="Didanosine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM7RM1"/>
+            <display value="Stavudine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM67N3"/>
+            <display value="Tenofovir disoproxil"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM1DX2"/>
+            <display value="Efavirenz"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM7N44"/>
+            <display value="Etravirine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM10T5"/>
+            <display value="Nevirapine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM1KD4"/>
+            <display value="Rilpivirine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM4TF3"/>
+            <display value="Atazanavir and Ritonavir"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM3EH7"/>
+            <display value="Lopinavir and Ritonavir"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM8ZN1"/>
+            <display value="Darunavir and Ritonavir"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM56L1"/>
+            <display value="Ritonavir"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM6K45"/>
+            <display value="Dolutegravir"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM82D3"/>
+            <display value="Raltegravir"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM8QY9"/>
+            <display value="Lamivudine, Tenofovir disoproxil and Dolutegravir"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM3U67"/>
+            <display value="Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM9NL2"/>
+            <display value="Lamivudine, Tenofovir disoproxil and Efavirenz"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM2UU9"/>
+            <display value="Lamivudine, Abacavir and Dolutegravir"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="387005008"/>
+            <display value="Abacavir (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="404856006"/>
+            <display value="Emtricitabine (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386897000"/>
+            <display value="Lamivudine (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="387151007"/>
+            <display value="Zidovudine (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="387105006"/>
+            <display value="Didanosine (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386895008"/>
+            <display value="Stavudine (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422091007"/>
+            <display value="Tenofovir (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="387001004"/>
+            <display value="Efavirenz (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="432121008"/>
+            <display value="Etravirine (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386898005"/>
+            <display value="Nevirapine (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="703123005"/>
+            <display value="Rilpivirine (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="427314002"/>
+            <display value="Antiviral therapy (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="776569000"/>
+            <display value="Product containing only lopinavir and ritonavir (medicinal product)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386896009"/>
+            <display value="Ritonavir (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="713464000"/>
+            <display value="Dolutegravir (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="429707008"/>
+            <display value="Raltegravir (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="708255002"/>
+            <display value="First-line treatment (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="708256001"/>
+            <display value="Second-line treatment (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-413947000"> </a>  
+                  <a href="http://snomed.info/id/413947000">413947000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Date treatment stopped (observable entity)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop"/>
+        <version value="0.1.0"/>
+        <name value="DAKARTStop"/>
+        <title value="DAK Codes for ART Stopped"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bb03fefb-3a7f-467c-9bd5-38f124b7f0db"/>
+          <timestamp value="2023-10-19T21:01:22+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="413947000"/>
+            <display value="Date treatment stopped (observable entity)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTVisit"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-DAKICD11.html">codesystem ICD-11 codes from the HIV DAK v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>Loinc v2.74</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>Loinc v2.74</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-1C62.Z"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-1C62.46Z">1C62.Z</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM63K0"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM63K0">XM63K0</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Anti-infective antiviral</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-QA14"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-QA14">QA14</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Contact with health services for human immunodeficiency virus counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-45683-0"> </a>  
+                  <a href="https://loinc.org/45683-0/">45683-0</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>HIV infection [Minimum Data Set]</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-45260-7"> </a>  
+                  <a href="https://loinc.org/45260-7/">45260-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>HIV ART medication</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-68834-1"> </a>  
+                  <a href="https://loinc.org/68834-1/">68834-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Primary care Note  best fit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-781087000"> </a>  
+                  <a href="http://snomed.info/id/781087000">781087000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medical care (regime/therapy)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-788081006"> </a>  
+                  <a href="http://snomed.info/id/788081006">788081006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medicinal product acting as antiviral (product)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTVisit"/>
+        <version value="0.1.0"/>
+        <name value="DAKARTVisit"/>
+        <title value="DAK ART Visit codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f70e90dc-2c2e-4627-91e8-0771d2b340b1"/>
+          <timestamp value="2023-10-19T21:01:23+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-11|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="1C62.Z"/>
+            <display value="Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM63K0"/>
+            <display value="Anti-infective antiviral"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="QA14"/>
+            <display value="Contact with health services for human immunodeficiency virus counselling"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="45683-0"/>
+            <display value="HIV infection [Minimum Data Set]"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="45260-7"/>
+            <display value="HIV ART medication"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="68834-1"/>
+            <display value="Primary care Note  best fit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="781087000"/>
+            <display value="Medical care (regime/therapy)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="788081006"/>
+            <display value="Medicinal product acting as antiviral (product)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-DAKICD11.html">codesystem ICD-11 codes from the HIV DAK v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>Loinc v2.74</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>Loinc v2.74</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM63K0"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM63K0">XM63K0</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Code title:  Anti-infective antiviral</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-788081006"> </a>  
+                  <a href="http://snomed.info/id/788081006">788081006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medicinal product acting as antiviral (product)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-45260-7"> </a>  
+                  <a href="https://loinc.org/45260-7/">45260-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>HIV ART medication</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup"/>
+        <version value="0.1.0"/>
+        <name value="DAKARVDrugPickup"/>
+        <title value="DAK Drug Pickup Appointment codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f91ab75a-4dae-4eac-8db3-8b5f7719c9b8"/>
+          <timestamp value="2023-10-19T21:01:23+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-11|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM63K0"/>
+            <display value="Code title:  Anti-infective antiviral"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="788081006"/>
+            <display value="Medicinal product acting as antiviral (product)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="45260-7"/>
+            <display value="HIV ART medication"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DAKCoarseAgeRangeCS.html">codesystem DAKCoarseAgeRangeCS v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-DAKCoarseAgeRangeCS-lt15"> </a>  
+                  <a href="CodeSystem-DAKCoarseAgeRangeCS.html#DAKCoarseAgeRangeCS-lt15">lt15</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS</td>
+                <td>&lt;15</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-DAKCoarseAgeRangeCS-gt15"> </a>  
+                  <a href="CodeSystem-DAKCoarseAgeRangeCS.html#DAKCoarseAgeRangeCS-gt15">gt15</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS</td>
+                <td>15+</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange"/>
+        <version value="0.1.0"/>
+        <name value="DAKCoarseAgeRange"/>
+        <title value="DAKCoarseAgeRange"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7c1919a9-5b5c-45c5-806b-cbc31999a399"/>
+          <timestamp value="2023-10-19T21:01:24+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS"/>
+            <code value="lt15"/>
+            <display value="&lt;15"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS"/>
+            <code value="gt15"/>
+            <display value="15+"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DAKDispensingQuantityCS.html">codesystem DAKDispensingQuantityCS v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-DAKDispensingQuantityCS-notMMD"> </a>  
+                  <a href="CodeSystem-DAKDispensingQuantityCS.html#DAKDispensingQuantityCS-notMMD">notMMD</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS</td>
+                <td>&lt;3 months of ARVs</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-DAKDispensingQuantityCS-3to5MMD"> </a>  
+                  <a href="CodeSystem-DAKDispensingQuantityCS.html#DAKDispensingQuantityCS-3to5MMD">3to5MMD</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS</td>
+                <td>3-5 months of ARVs</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-DAKDispensingQuantityCS-6MMD"> </a>  
+                  <a href="CodeSystem-DAKDispensingQuantityCS.html#DAKDispensingQuantityCS-6MMD">6MMD</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS</td>
+                <td>6 or more months of ARVs</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-DAKDispensingQuantityCS-NoData"> </a>  
+                  <a href="CodeSystem-DAKDispensingQuantityCS.html#DAKDispensingQuantityCS-NoData">NoData</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS</td>
+                <td>No Data</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity"/>
+        <version value="0.1.0"/>
+        <name value="DAKDispensingQuantity"/>
+        <title value="DAKDispensingQuantity"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fa99c533-c25b-4832-940b-1a7a9f3e15e4"/>
+          <timestamp value="2023-10-19T21:01:24+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS"/>
+            <code value="notMMD"/>
+            <display value="&lt;3 months of ARVs"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS"/>
+            <code value="3to5MMD"/>
+            <display value="3-5 months of ARVs"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS"/>
+            <code value="6MMD"/>
+            <display value="6 or more months of ARVs"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS"/>
+            <code value="NoData"/>
+            <display value="No Data"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-413946009"> </a>  
+                  <a href="http://snomed.info/id/413946009">413946009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Date treatment started (observable entity)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer"/>
+        <version value="0.1.0"/>
+        <name value="DAKHIVTransfer"/>
+        <title value="DAK Codes for Transfer in for HIV Care"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:e4d6eae5-780b-4ccb-91fe-c801e87c1b88"/>
+          <timestamp value="2023-10-19T21:01:24+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="413946009"/>
+            <display value="Date treatment started (observable entity)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-258703001"> </a>  
+                  <a href="http://snomed.info/id/258703001">258703001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Day (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD"/>
+        <version value="0.1.0"/>
+        <name value="DAKMMD"/>
+        <title value="DAK Multi-Month Dispense codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:14a81c06-e9db-42df-bfb9-fbea43f744a9"/>
+          <timestamp value="2023-10-19T21:01:24+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258703001"/>
+            <display value="Day (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKONART"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-DAKICD11.html">codesystem ICD-11 codes from the HIV DAK v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>
+                  <a href="CodeSystem-CIEL.html">codesystem CIEL v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-160119"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-160119">160119</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Currently taking ARV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-XM63K0"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM63K0">XM63K0</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>Anti-infective antiviral</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-182929008"> </a>  
+                  <a href="http://snomed.info/id/182929008">182929008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Drug prophylaxis (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKONART"/>
+        <version value="0.1.0"/>
+        <name value="DAKONART"/>
+        <title value="DAK Codes for On ART"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ca146e7d-a244-4162-adc3-2ecee3019217"/>
+          <timestamp value="2023-10-19T21:01:25+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-11|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="160119"/>
+            <display value="Currently taking ARV"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="XM63K0"/>
+            <display value="Anti-infective antiviral"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="182929008"/>
+            <display value="Drug prophylaxis (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-DAKICD11.html">codesystem ICD-11 codes from the HIV DAK v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-1C62.0"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-1C62.460">1C62.0</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>HIV disease clinical stage 1 without mention of tuberculosis or malaria</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-1C62.1"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-1C62.461">1C62.1</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>HIV disease clinical stage 2 without mention of tuberculosis or malaria</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-1C62.2"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-1C62.462">1C62.2</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>HIV disease clinical stage 3 without mention of tuberculosis or malaria</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-icd-11-1C62.3"> </a>  
+                  <a href="CodeSystem-DAKICD11.html#DAKICD11-1C62.463">1C62.3</a>
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-11</td>
+                <td>HIV disease clinical stage 4 without mention of tuberculosis or malaria</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-737378009"> </a>  
+                  <a href="http://snomed.info/id/737378009">737378009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-737379001"> </a>  
+                  <a href="http://snomed.info/id/737379001">737379001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>World Health Organization 2007 Human immunodeficiency virus infection clinical stage 2 (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-737380003"> </a>  
+                  <a href="http://snomed.info/id/737380003">737380003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>World Health Organization 2007 Human immunodeficiency virus infection clinical stage 3 (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-737381004"> </a>  
+                  <a href="http://snomed.info/id/737381004">737381004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>World Health Organization 2007 Human immunodeficiency virus infection clinical stage 4 (finding)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV"/>
+        <version value="0.1.0"/>
+        <name value="DAKPLHIV"/>
+        <title value="WHO HIV Clinical Stages"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:92781ab4-6c1e-4c7f-8753-a4db0557ccfc"/>
+          <timestamp value="2023-10-19T21:01:25+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-11|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="1C62.0"/>
+            <display value="HIV disease clinical stage 1 without mention of tuberculosis or malaria"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="1C62.1"/>
+            <display value="HIV disease clinical stage 2 without mention of tuberculosis or malaria"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="1C62.2"/>
+            <display value="HIV disease clinical stage 3 without mention of tuberculosis or malaria"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-11"/>
+            <code value="1C62.3"/>
+            <display value="HIV disease clinical stage 4 without mention of tuberculosis or malaria"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737378009"/>
+            <display value="World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737379001"/>
+            <display value="World Health Organization 2007 Human immunodeficiency virus infection clinical stage 2 (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737380003"/>
+            <display value="World Health Organization 2007 Human immunodeficiency virus infection clinical stage 3 (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737381004"/>
+            <display value="World Health Organization 2007 Human immunodeficiency virus infection clinical stage 4 (finding)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/EnrollmentMethodsforHIVProgram"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2023-07-20T15:51:47.328070Z"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 10 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="Bundle-KEMRBundle.html">codesystem Enrollment Methods for HIV program v1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>HBTC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>VCT Site</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>MCH</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>IPD-Adult</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>IPD-Child</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>TB Clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>OPD</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>CCC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>Self Test</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-EnrollmentMethods-5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"> </a>  
+                  <a href="Bundle-KEMRBundle.html#EnrollmentMethods-5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</td>
+                <td>Other(eg STI)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/EnrollmentMethodsforHIVProgram"/>
+        <version value="0.1.0"/>
+        <name value="EnrollmentMethodsforHIVProgram"/>
+        <title value="EnrollmentMethodsforHIVProgram"/>
+        <status value="draft"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:05e2b2ee-a457-4f51-ac4b-22f77fd7a1fc"/>
+          <timestamp value="2023-10-19T21:01:25+00:00"/>
+          <total value="10"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods|1"/>
+          </parameter>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="HBTC"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="VCT Site"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="MCH"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="IPD-Adult"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="IPD-Child"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="TB Clinic"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="OPD"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="CCC"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="Self Test"/>
+          </contains>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"/>
+            <code value="5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <display value="Other(eg STI)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/OnARV"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-CIEL.html">codesystem CIEL v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-OpenHIE.html">codesystem OpenHIE CodeSystem v0.1.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---path-global-health.github.io-MERindicators-CodeSystem-OpenHIE-432101000124108"> </a>  
+                  <a href="CodeSystem-OpenHIE.html#OpenHIE-432101000124108">432101000124108</a>
+                </td>
+                <td>https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE</td>
+                <td>History of antiretroviral therapy (situation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-160119"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-160119">160119</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>CURRENTLY TAKING ARV</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/OnARV"/>
+        <version value="0.1.0"/>
+        <name value="OnARV"/>
+        <title value="History of antiretroviral therapy (situation)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8332e46a-fe77-4baa-9edd-c7b2c55f57e9"/>
+          <timestamp value="2023-10-19T21:01:26+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE"/>
+            <code value="432101000124108"/>
+            <display value="History of antiretroviral therapy (situation)"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="160119"/>
+            <display value="CURRENTLY TAKING ARV"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/Pregnant"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>
+                  <a href="CodeSystem-CIEL.html">codesystem CIEL v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-77386006"> </a>  
+                  <a href="http://snomed.info/id/77386006">77386006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pregnancy (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---openconceptlab.org-orgs-CIEL-sources-CIEL-1434"> </a>  
+                  <a href="CodeSystem-CIEL.html#CIEL-1434">1434</a>
+                </td>
+                <td>https://openconceptlab.org/orgs/CIEL/sources/CIEL</td>
+                <td>Currently pregnant</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/Pregnant"/>
+        <version value="0.1.0"/>
+        <name value="Pregnant"/>
+        <title value="Pregnant"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:07947caf-4a22-4cde-b60c-1121735bec4c"/>
+          <timestamp value="2023-10-19T21:01:26+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://openconceptlab.org/orgs/CIEL/sources/CIEL|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Pregnancy (finding)"/>
+          </contains>
+          <contains>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="1434"/>
+            <display value="Currently pregnant"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 28 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem RxNorm version ??</li>
+                <li>system RxNorm version ??</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-199663"> </a>  199663
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>zidovudine 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-284988"> </a>  284988
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>didanosine 400 MG Delayed Release Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-313760"> </a>  313760
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>zalcitabine 0.75 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-313110"> </a>  313110
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>stavudine 40 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-349491"> </a>  349491
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>lamivudine 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-200082"> </a>  200082
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>lamivudine 150 MG / zidovudine 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-310988"> </a>  310988
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>indinavir 400 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-859863"> </a>  859863
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>saquinavir mesylate 500 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-317150"> </a>  317150
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>ritonavir 100 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-403978"> </a>  403978
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>nelfinavir 625 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-349477"> </a>  349477
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>efavirenz 600 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-597730"> </a>  597730
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>lopinavir 200 MG / ritonavir 50 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-349251"> </a>  349251
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-403875"> </a>  403875
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>emtricitabine 200 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-476556"> </a>  476556
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1147334"> </a>  1147334
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-643066"> </a>  643066
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1306292"> </a>  1306292
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-744842"> </a>  744842
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>raltegravir 400 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1433873"> </a>  1433873
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>dolutegravir 50 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-402109"> </a>  402109
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>fosamprenavir 700 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-664741"> </a>  664741
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>atazanavir 300 MG Oral Capsule</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1359269"> </a>  1359269
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>darunavir 800 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-2003249"> </a>  2003249
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1747691"> </a>  1747691
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1999667"> </a>  1999667
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-1721613"> </a>  1721613
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-2122519"> </a>  2122519
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>dolutegravir 50 MG / lamivudine 300 MG Oral Tablet</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications"/>
+        <version value="0.1.0"/>
+        <name value="SyntheaHIVMedications"/>
+        <title value="Synthea HIV MedicationsVS"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-10-19T20:59:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3cdf9350-3ff7-47d3-b748-634add176d18"/>
+          <timestamp value="2023-10-19T21:01:26+00:00"/>
+          <total value="28"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://www.nlm.nih.gov/research/umls/rxnorm|??"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.nlm.nih.gov/research/umls/rxnorm|??"/>
+          </parameter>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="199663"/>
+            <display value="zidovudine 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="284988"/>
+            <display value="didanosine 400 MG Delayed Release Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="313760"/>
+            <display value="zalcitabine 0.75 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="313110"/>
+            <display value="stavudine 40 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="349491"/>
+            <display value="lamivudine 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="200082"/>
+            <display value="lamivudine 150 MG / zidovudine 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="310988"/>
+            <display value="indinavir 400 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="859863"/>
+            <display value="saquinavir mesylate 500 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="317150"/>
+            <display value="ritonavir 100 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="403978"/>
+            <display value="nelfinavir 625 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="349477"/>
+            <display value="efavirenz 600 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="597730"/>
+            <display value="lopinavir 200 MG / ritonavir 50 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="349251"/>
+            <display value="tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="403875"/>
+            <display value="emtricitabine 200 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="476556"/>
+            <display value="emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1147334"/>
+            <display value="emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="643066"/>
+            <display value="efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1306292"/>
+            <display value="cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="744842"/>
+            <display value="raltegravir 400 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1433873"/>
+            <display value="dolutegravir 50 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="402109"/>
+            <display value="fosamprenavir 700 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="664741"/>
+            <display value="atazanavir 300 MG Oral Capsule"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1359269"/>
+            <display value="darunavir 800 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="2003249"/>
+            <display value="lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1747691"/>
+            <display value="emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1999667"/>
+            <display value="bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1721613"/>
+            <display value="cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="2122519"/>
+            <display value="dolutegravir 50 MG / lamivudine 300 MG Oral Tablet"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/guides/cqf/common/ValueSet/active-condition"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html">codesystem Condition Clinical Status Codes v2.0.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-condition-clinical-active"> </a>  
+                  <a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html#condition-clinical-active">active</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/condition-clinical</td>
+                <td>Active</td>
+                <td>
+                  <div>
+                    <p>The subject is currently experiencing the condition or situation, there is evidence of the condition or situation, or considered to be a significant risk.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-condition-clinical-recurrence"> </a>  
+                  <a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html#condition-clinical-recurrence">recurrence</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/condition-clinical</td>
+                <td>Recurrence</td>
+                <td>
+                  <div>
+                    <p>The subject is experiencing a reoccurence or repeating of a previously resolved condition or situation, e.g. urinary tract infection, food insecurity.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-condition-clinical-relapse"> </a>  
+                  <a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html#condition-clinical-relapse">relapse</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/condition-clinical</td>
+                <td>Relapse</td>
+                <td>
+                  <div>
+                    <p>The subject is experiencing a return of a condition or situation after a period of improvement or remission, e.g. relapse of cancer, alcoholism.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/guides/cqf/common/ValueSet/active-condition"/>
+        <version value="0.1.0"/>
+        <name value="CQFActiveCondition"/>
+        <title value="CQF Active Condition"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2019-07-21"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3f17be52-b13d-44f8-a067-5f63cbdd8b93"/>
+          <timestamp value="2023-10-19T21:01:27+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/condition-clinical|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="recurrence"/>
+            <display value="Recurrence"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="relapse"/>
+            <display value="Relapse"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/guides/cqf/common/ValueSet/inactive-condition"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html">codesystem Condition Clinical Status Codes v2.0.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-condition-clinical-inactive"> </a>  
+                  <a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html#condition-clinical-inactive">inactive</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/condition-clinical</td>
+                <td>Inactive</td>
+                <td>
+                  <div>
+                    <p>The subject is no longer experiencing the condition or situation and there is no longer evidence or appreciable risk of the condition or situation.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-condition-clinical-remission"> </a>  
+                  <a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html#condition-clinical-remission">remission</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/condition-clinical</td>
+                <td>Remission</td>
+                <td>
+                  <div>
+                    <p>The subject is not presently experiencing the condition or situation, but there is a risk of the condition or situation returning.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-condition-clinical-resolved"> </a>  
+                  <a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html#condition-clinical-resolved">resolved</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/condition-clinical</td>
+                <td>Resolved</td>
+                <td>
+                  <div>
+                    <p>The subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/guides/cqf/common/ValueSet/inactive-condition"/>
+        <version value="0.1.0"/>
+        <name value="CQFInactiveCondition"/>
+        <title value="CQF Inactive Condition"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2019-07-21"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d13132a6-2587-4a38-ad9a-f3d52489eed2"/>
+          <timestamp value="2023-10-19T21:01:27+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/condition-clinical|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="inactive"/>
+            <display value="Inactive"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="remission"/>
+            <display value="Remission"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="resolved"/>
+            <display value="Resolved"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

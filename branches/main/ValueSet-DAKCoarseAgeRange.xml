@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DAKCoarseAgeRange"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-DAKCoarseAgeRangeCS.html"><code>https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS</code></a></li></ul></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange"/>
+  <version value="0.1.0"/>
+  <name value="DAKCoarseAgeRange"/>
+  <title value="DAKCoarseAgeRange"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-10-19T20:59:19+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DAKCoarseAgeRange"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS"/>
+    </include>
+  </compose>
+</ValueSet>

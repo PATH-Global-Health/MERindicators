@@ -1,0 +1,15 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"TXCURRelements","TXCURRelements","","","",0,*,"","","","null {[]} {[]}
+","TXCURRelements","Base elements required for TXCURR","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"TXCURRelements.deceased[x]","TXCURRelements.deceased[x]","","","",0,1,"","","","boolean {[]} {[]}
+dateTime {[]} {[]}","Indication if the human is deceased","Indication if the human is deceased","","","","","","","","","",,,,,"",,,,"TXCURRelements.deceased[x]",0,1,"",""
+"TXCURRelements.birthDate","TXCURRelements.birthDate","","","",0,1,"","","","dateTime {[]} {[]}
+","The date of birth, if known","The date of birth, if known","","","","","","","","","",,,,,"",,,,"TXCURRelements.birthDate",0,1,"",""
+"TXCURRelements.gender","TXCURRelements.gender","","","",1,1,"","","","Coding {[]} {[]}
+","Gender of the patient","Gender of the patient","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/administrative-gender","",,,,"TXCURRelements.gender",1,1,"",""
+"TXCURRelements.facility","TXCURRelements.facility","","","",1,1,"","","","Reference {[]} {[]}
+","Last known facility where the patient received care","Last known facility where the patient received care","","","","","","","","","",,,,,"",,,,"TXCURRelements.facility",1,1,"",""
+"TXCURRelements.pregnant","TXCURRelements.pregnant","","","",1,1,"","","","Coding {[]} {[]}
+","If patient is pregnant during reporting period","If patient is pregnant during reporting period","","","","","","","","","",,"required","","https://path-global-health.github.io/MERindicators/ValueSet/Pregnant","",,,,"TXCURRelements.pregnant",1,1,"",""
+"TXCURRelements.onarv","TXCURRelements.onarv","","","",1,1,"","","","Coding {[]} {[]}
+","Currently on ARV","Currently on ARV","","","","","","","","","",,"required","","https://path-global-health.github.io/MERindicators/ValueSet/OnARV","",,,,"TXCURRelements.onarv",1,1,"",""

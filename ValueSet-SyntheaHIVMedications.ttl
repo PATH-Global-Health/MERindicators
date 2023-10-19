@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SyntheaHIVMedications"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>199663</td><td>zidovudine 300 MG Oral Tablet</td></tr><tr><td>284988</td><td>didanosine 400 MG Delayed Release Oral Capsule</td></tr><tr><td>313760</td><td>zalcitabine 0.75 MG Oral Tablet</td></tr><tr><td>313110</td><td>stavudine 40 MG Oral Capsule</td></tr><tr><td>349491</td><td>lamivudine 300 MG Oral Tablet</td></tr><tr><td>200082</td><td>lamivudine 150 MG / zidovudine 300 MG Oral Tablet</td></tr><tr><td>310988</td><td>indinavir 400 MG Oral Capsule</td></tr><tr><td>859863</td><td>saquinavir mesylate 500 MG Oral Tablet</td></tr><tr><td>317150</td><td>ritonavir 100 MG Oral Capsule</td></tr><tr><td>403978</td><td>nelfinavir 625 MG Oral Tablet</td></tr><tr><td>349477</td><td>efavirenz 600 MG Oral Tablet</td></tr><tr><td>597730</td><td>lopinavir 200 MG / ritonavir 50 MG Oral Tablet</td></tr><tr><td>349251</td><td>tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>403875</td><td>emtricitabine 200 MG Oral Capsule</td></tr><tr><td>476556</td><td>emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>1147334</td><td>emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>643066</td><td>efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>1306292</td><td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>744842</td><td>raltegravir 400 MG Oral Tablet</td></tr><tr><td>1433873</td><td>dolutegravir 50 MG Oral Tablet</td></tr><tr><td>402109</td><td>fosamprenavir 700 MG Oral Tablet</td></tr><tr><td>664741</td><td>atazanavir 300 MG Oral Capsule</td></tr><tr><td>1359269</td><td>darunavir 800 MG Oral Tablet</td></tr><tr><td>2003249</td><td>lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</td></tr><tr><td>1747691</td><td>emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table</td></tr><tr><td>1999667</td><td>bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet</td></tr><tr><td>1721613</td><td>cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet</td></tr><tr><td>2122519</td><td>dolutegravir 50 MG / lamivudine 300 MG Oral Tablet</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SyntheaHIVMedications"] ; # 
+  fhir:title [ fhir:v "Synthea HIV MedicationsVS"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-19T20:59:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Synthea HIV MedicationsVS"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "199663" ] ;
+         fhir:display [ fhir:v "zidovudine 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "284988" ] ;
+         fhir:display [ fhir:v "didanosine 400 MG Delayed Release Oral Capsule" ]
+       ] [
+         fhir:code [ fhir:v "313760" ] ;
+         fhir:display [ fhir:v "zalcitabine 0.75 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "313110" ] ;
+         fhir:display [ fhir:v "stavudine 40 MG Oral Capsule" ]
+       ] [
+         fhir:code [ fhir:v "349491" ] ;
+         fhir:display [ fhir:v "lamivudine 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "200082" ] ;
+         fhir:display [ fhir:v "lamivudine 150 MG / zidovudine 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "310988" ] ;
+         fhir:display [ fhir:v "indinavir 400 MG Oral Capsule" ]
+       ] [
+         fhir:code [ fhir:v "859863" ] ;
+         fhir:display [ fhir:v "saquinavir mesylate 500 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "317150" ] ;
+         fhir:display [ fhir:v "ritonavir 100 MG Oral Capsule" ]
+       ] [
+         fhir:code [ fhir:v "403978" ] ;
+         fhir:display [ fhir:v "nelfinavir 625 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "349477" ] ;
+         fhir:display [ fhir:v "efavirenz 600 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "597730" ] ;
+         fhir:display [ fhir:v "lopinavir 200 MG / ritonavir 50 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "349251" ] ;
+         fhir:display [ fhir:v "tenofovir disoproxil fumarate 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "403875" ] ;
+         fhir:display [ fhir:v "emtricitabine 200 MG Oral Capsule" ]
+       ] [
+         fhir:code [ fhir:v "476556" ] ;
+         fhir:display [ fhir:v "emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "1147334" ] ;
+         fhir:display [ fhir:v "emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "643066" ] ;
+         fhir:display [ fhir:v "efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "1306292" ] ;
+         fhir:display [ fhir:v "cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "744842" ] ;
+         fhir:display [ fhir:v "raltegravir 400 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "1433873" ] ;
+         fhir:display [ fhir:v "dolutegravir 50 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "402109" ] ;
+         fhir:display [ fhir:v "fosamprenavir 700 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "664741" ] ;
+         fhir:display [ fhir:v "atazanavir 300 MG Oral Capsule" ]
+       ] [
+         fhir:code [ fhir:v "1359269" ] ;
+         fhir:display [ fhir:v "darunavir 800 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "2003249" ] ;
+         fhir:display [ fhir:v "lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "1747691" ] ;
+         fhir:display [ fhir:v "emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table" ]
+       ] [
+         fhir:code [ fhir:v "1999667" ] ;
+         fhir:display [ fhir:v "bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "1721613" ] ;
+         fhir:display [ fhir:v "cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet" ]
+       ] [
+         fhir:code [ fhir:v "2122519" ] ;
+         fhir:display [ fhir:v "dolutegravir 50 MG / lamivudine 300 MG Oral Tablet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

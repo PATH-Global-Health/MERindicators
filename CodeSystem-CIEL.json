@@ -1,0 +1,210 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CIEL",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://openconceptlab.org/orgs/CIEL/sources/CIEL</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1065<a name=\"CIEL-1065\"> </a></td><td>YES</td></tr><tr><td style=\"white-space:nowrap\">1066<a name=\"CIEL-1066\"> </a></td><td>NO</td></tr><tr><td style=\"white-space:nowrap\">1067<a name=\"CIEL-1067\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">1434<a name=\"CIEL-1434\"> </a></td><td>Currently pregnant</td></tr><tr><td style=\"white-space:nowrap\">138405<a name=\"CIEL-138405\"> </a></td><td>Human immunodeficiency virus (HIV) disease</td></tr><tr><td style=\"white-space:nowrap\">160119<a name=\"CIEL-160119\"> </a></td><td>CURRENTLY TAKING ARV</td></tr><tr><td style=\"white-space:nowrap\">116128<a name=\"CIEL-116128\"> </a></td><td>Malaria</td></tr><tr><td style=\"white-space:nowrap\">160540<a name=\"CIEL-160540\"> </a></td><td>Method of enrollment</td></tr><tr><td style=\"white-space:nowrap\">160542<a name=\"CIEL-160542\"> </a></td><td>Outpatient department</td></tr><tr><td style=\"white-space:nowrap\">1193<a name=\"CIEL-1193\"> </a></td><td>CURRENT DRUGS USED</td></tr><tr><td style=\"white-space:nowrap\">5096<a name=\"CIEL-5096\"> </a></td><td>RETURN VISIT DATE</td></tr><tr><td style=\"white-space:nowrap\">164384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<a name=\"CIEL-164384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"> </a></td><td>Treatment end date</td></tr><tr><td style=\"white-space:nowrap\">164384<a name=\"CIEL-164384\"> </a></td><td>Treatment end date</td></tr><tr><td style=\"white-space:nowrap\">160104<a name=\"CIEL-160104\"> </a></td><td>Efavirenz / Lamivudine / Stavudine</td></tr><tr><td style=\"white-space:nowrap\">160105<a name=\"CIEL-160105\"> </a></td><td>Efavirenz / Stavudine / Zidovudine</td></tr><tr><td style=\"white-space:nowrap\">160124<a name=\"CIEL-160124\"> </a></td><td>Efavirenz / Lamivudine / Zidovudine</td></tr><tr><td style=\"white-space:nowrap\">161361<a name=\"CIEL-161361\"> </a></td><td>efavirenz / lamivudine / tenofovir disoproxil</td></tr><tr><td style=\"white-space:nowrap\">161363<a name=\"CIEL-161363\"> </a></td><td>lamivudine / stavudine</td></tr><tr><td style=\"white-space:nowrap\">161364<a name=\"CIEL-161364\"> </a></td><td>Lamivudine / tenofovir disoproxil</td></tr><tr><td style=\"white-space:nowrap\">1652<a name=\"CIEL-1652\"> </a></td><td>Lamivudine / nevirapine / zidovudine</td></tr><tr><td style=\"white-space:nowrap\">5424<a name=\"CIEL-5424\"> </a></td><td>Other antiretroviral drug</td></tr><tr><td style=\"white-space:nowrap\">5811<a name=\"CIEL-5811\"> </a></td><td>Unknown antiretroviral drug</td></tr><tr><td style=\"white-space:nowrap\">630<a name=\"CIEL-630\"> </a></td><td>Lamivudine / zidovudine</td></tr><tr><td style=\"white-space:nowrap\">103166<a name=\"CIEL-103166\"> </a></td><td>Abacavir / lamivudine</td></tr><tr><td style=\"white-space:nowrap\">70056<a name=\"CIEL-70056\"> </a></td><td>Abacavir</td></tr><tr><td style=\"white-space:nowrap\">71647<a name=\"CIEL-71647\"> </a></td><td>Atazanavir</td></tr><tr><td style=\"white-space:nowrap\">74807<a name=\"CIEL-74807\"> </a></td><td>Didanosine</td></tr><tr><td style=\"white-space:nowrap\">75523<a name=\"CIEL-75523\"> </a></td><td>Efavirenz</td></tr><tr><td style=\"white-space:nowrap\">75628<a name=\"CIEL-75628\"> </a></td><td>Efavirenz</td></tr><tr><td style=\"white-space:nowrap\">77995<a name=\"CIEL-77995\"> </a></td><td>Indinavir</td></tr><tr><td style=\"white-space:nowrap\">78643<a name=\"CIEL-78643\"> </a></td><td>Lamivudine</td></tr><tr><td style=\"white-space:nowrap\">79040<a name=\"CIEL-79040\"> </a></td><td>Lopinavir</td></tr><tr><td style=\"white-space:nowrap\">792<a name=\"CIEL-792\"> </a></td><td>Lamivudine / nevirapine / stavudine</td></tr><tr><td style=\"white-space:nowrap\">794<a name=\"CIEL-794\"> </a></td><td>Lopinavir / ritonavir</td></tr><tr><td style=\"white-space:nowrap\">80487<a name=\"CIEL-80487\"> </a></td><td>Nelfinavir</td></tr><tr><td style=\"white-space:nowrap\">80586<a name=\"CIEL-80586\"> </a></td><td>Nevirapine</td></tr><tr><td style=\"white-space:nowrap\">83412<a name=\"CIEL-83412\"> </a></td><td>Ritonavir</td></tr><tr><td style=\"white-space:nowrap\">84309<a name=\"CIEL-84309\"> </a></td><td>Stavudine</td></tr><tr><td style=\"white-space:nowrap\">84795<a name=\"CIEL-84795\"> </a></td><td>Tenofovir</td></tr><tr><td style=\"white-space:nowrap\">86663<a name=\"CIEL-86663\"> </a></td><td>Zidovudine</td></tr><tr><td style=\"white-space:nowrap\">01234<a name=\"CIEL-01234\"> </a></td><td>Tenofovir / Lamivudine / Dolutegravir</td></tr></table></div>"
+  },
+  "url" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+  "version" : "0.1.0",
+  "name" : "CIEL",
+  "title" : "CIEL",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Columbia International eHealth Laboratory (CIEL)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 41,
+  "concept" : [{
+    "code" : "1065",
+    "display" : "YES"
+  },
+  {
+    "code" : "1066",
+    "display" : "NO"
+  },
+  {
+    "code" : "1067",
+    "display" : "Unknown"
+  },
+  {
+    "code" : "1434",
+    "display" : "Currently pregnant"
+  },
+  {
+    "code" : "138405",
+    "display" : "Human immunodeficiency virus (HIV) disease"
+  },
+  {
+    "code" : "160119",
+    "display" : "CURRENTLY TAKING ARV"
+  },
+  {
+    "code" : "116128",
+    "display" : "Malaria"
+  },
+  {
+    "code" : "160540",
+    "display" : "Method of enrollment"
+  },
+  {
+    "code" : "160542",
+    "display" : "Outpatient department"
+  },
+  {
+    "code" : "1193",
+    "display" : "CURRENT DRUGS USED"
+  },
+  {
+    "code" : "5096",
+    "display" : "RETURN VISIT DATE"
+  },
+  {
+    "code" : "164384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "display" : "Treatment end date"
+  },
+  {
+    "code" : "164384",
+    "display" : "Treatment end date"
+  },
+  {
+    "code" : "160104",
+    "display" : "Efavirenz / Lamivudine / Stavudine"
+  },
+  {
+    "code" : "160105",
+    "display" : "Efavirenz / Stavudine / Zidovudine"
+  },
+  {
+    "code" : "160124",
+    "display" : "Efavirenz / Lamivudine / Zidovudine"
+  },
+  {
+    "code" : "161361",
+    "display" : "efavirenz / lamivudine / tenofovir disoproxil"
+  },
+  {
+    "code" : "161363",
+    "display" : "lamivudine / stavudine"
+  },
+  {
+    "code" : "161364",
+    "display" : "Lamivudine / tenofovir disoproxil"
+  },
+  {
+    "code" : "1652",
+    "display" : "Lamivudine / nevirapine / zidovudine"
+  },
+  {
+    "code" : "5424",
+    "display" : "Other antiretroviral drug"
+  },
+  {
+    "code" : "5811",
+    "display" : "Unknown antiretroviral drug"
+  },
+  {
+    "code" : "630",
+    "display" : "Lamivudine / zidovudine"
+  },
+  {
+    "code" : "103166",
+    "display" : "Abacavir / lamivudine"
+  },
+  {
+    "code" : "70056",
+    "display" : "Abacavir"
+  },
+  {
+    "code" : "71647",
+    "display" : "Atazanavir"
+  },
+  {
+    "code" : "74807",
+    "display" : "Didanosine"
+  },
+  {
+    "code" : "75523",
+    "display" : "Efavirenz"
+  },
+  {
+    "code" : "75628",
+    "display" : "Efavirenz"
+  },
+  {
+    "code" : "77995",
+    "display" : "Indinavir"
+  },
+  {
+    "code" : "78643",
+    "display" : "Lamivudine"
+  },
+  {
+    "code" : "79040",
+    "display" : "Lopinavir"
+  },
+  {
+    "code" : "792",
+    "display" : "Lamivudine / nevirapine / stavudine"
+  },
+  {
+    "code" : "794",
+    "display" : "Lopinavir / ritonavir"
+  },
+  {
+    "code" : "80487",
+    "display" : "Nelfinavir"
+  },
+  {
+    "code" : "80586",
+    "display" : "Nevirapine"
+  },
+  {
+    "code" : "83412",
+    "display" : "Ritonavir"
+  },
+  {
+    "code" : "84309",
+    "display" : "Stavudine"
+  },
+  {
+    "code" : "84795",
+    "display" : "Tenofovir"
+  },
+  {
+    "code" : "86663",
+    "display" : "Zidovudine"
+  },
+  {
+    "code" : "01234",
+    "display" : "Tenofovir / Lamivudine / Dolutegravir"
+  }]
+}

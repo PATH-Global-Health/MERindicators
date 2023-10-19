@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Observation/Observation2-ViralLoad> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Observation2-ViralLoad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation2-ViralLoad\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation2-ViralLoad&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-HIVSimple.html\">Patient/Patient-HIVSimple</a> &quot; CAT&quot;</p><p><b>encounter</b>: <a href=\"Encounter-Encounter2-ViralLoad.html\">Encounter/Encounter2-ViralLoad</a></p><p><b>issued</b>: Sep 1, 2020, 11:28:17 AM</p><p><b>value</b>: 800 copies/mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {copies}/mL = '{copies}/mL')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:25836-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "25836-8" ] ;
+       fhir:display [ fhir:v "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple> ;
+     fhir:reference [ fhir:v "Patient/Patient-HIVSimple" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter2-ViralLoad> ;
+     fhir:reference [ fhir:v "Encounter/Encounter2-ViralLoad" ]
+  ] ; # 
+  fhir:issued [ fhir:v "2020-09-01T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "800"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "copies/mL" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "{copies}/mL" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

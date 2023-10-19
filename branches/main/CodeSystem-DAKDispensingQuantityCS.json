@@ -1,0 +1,62 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DAKDispensingQuantityCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">notMMD<a name=\"DAKDispensingQuantityCS-notMMD\"> </a></td><td>&lt;3 months of ARVs</td></tr><tr><td style=\"white-space:nowrap\">3to5MMD<a name=\"DAKDispensingQuantityCS-3to5MMD\"> </a></td><td>3-5 months of ARVs</td></tr><tr><td style=\"white-space:nowrap\">6MMD<a name=\"DAKDispensingQuantityCS-6MMD\"> </a></td><td>6 or more months of ARVs</td></tr><tr><td style=\"white-space:nowrap\">NoData<a name=\"DAKDispensingQuantityCS-NoData\"> </a></td><td>No Data</td></tr></table></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS",
+  "version" : "0.1.0",
+  "name" : "DAKDispensingQuantityCS",
+  "title" : "DAKDispensingQuantityCS",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DAKDispensingQuantityCS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "notMMD",
+    "display" : "<3 months of ARVs"
+  },
+  {
+    "code" : "3to5MMD",
+    "display" : "3-5 months of ARVs"
+  },
+  {
+    "code" : "6MMD",
+    "display" : "6 or more months of ARVs"
+  },
+  {
+    "code" : "NoData",
+    "display" : "No Data"
+  }]
+}

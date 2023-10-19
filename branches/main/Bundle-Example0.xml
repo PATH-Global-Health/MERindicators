@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Example0"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Patient/example-openmrs-Patient"/>
+    <resource>
+      <Patient>
+        <id value="example-openmrs-Patient"/>
+        <meta>
+          <profile value="http://fhir.openmrs.org/core/StructureDefinition/omrs-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="example-openmrs-Patient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;example-openmrs-Patient&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-omrs-patient.html">OpenMRS Patient</a></p></div><p><b>identifier</b>: OpenMRS ID: 4343534 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Ricky Jeannette </p><p><b>telecom</b>: <a href="tel:+256788232241">+256788232241</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1996-12-12</p><p><b>deceased</b>: false</p><p><b>address</b>: Washington Washington (HOME)</p></div>
+        </text>
+        <identifier>
+          <extension url="http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location">
+            <valueReference>
+              <reference value="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252"/>
+              <type value="Location"/>
+              <display value="Inpatient Ward"/>
+            </valueReference>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
+            <text value="OpenMRS ID"/>
+          </type>
+          <value value="4343534"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Jeannette"/>
+          <given value="Ricky"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="+256788232241"/>
+        </telecom>
+        <gender value="male"/>
+        <birthDate value="1996-12-12"/>
+        <deceasedBoolean value="false"/>
+        <address>
+          <use value="home"/>
+          <city value="Washington"/>
+          <district value="Washington"/>
+          <country value="Washington"/>
+        </address>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/example-openmrs-Patient"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Location/LocationExample"/>
+    <resource>
+      <Location>
+        <id value="a3b793f0-eb53-4cda-92ce-fe0a77106252"/>
+        <meta>
+          <profile value="http://fhir.openmrs.org/core/StructureDefinition/omrs-location"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="a3b793f0-eb53-4cda-92ce-fe0a77106252"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;a3b793f0-eb53-4cda-92ce-fe0a77106252&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-omrs-location.html">OpenMRS Location</a></p></div><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: Sleep disorders unit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#SLEEP)</span></p><p><b>telecom</b>: ph: (+1) 734-677-7777, fax: (+1) 734-677-6622, <a href="mailto:hq@HL7.org">hq@HL7.org</a></p><p><b>address</b>: 3300 Washtenaw Avenue, Suite 227 Ann Arbor MI 48104 USA (HOME)</p><h3>Positions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style="display: none">*</td><td>-83.69471</td><td>42.2565</td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <name value="Outpatient Clinic"/>
+        <description value="Outpatient Clinic"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="SLEEP"/>
+            <display value="Sleep disorders unit"/>
+          </coding>
+        </type>
+        <telecom>
+          <system value="phone"/>
+          <value value="(+1) 734-677-7777"/>
+        </telecom>
+        <telecom>
+          <system value="fax"/>
+          <value value="(+1) 734-677-6622"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="hq@HL7.org"/>
+        </telecom>
+        <address>
+          <use value="home"/>
+          <line value="3300 Washtenaw Avenue, Suite 227"/>
+          <city value="Ann Arbor"/>
+          <district value="Mukono"/>
+          <state value="MI"/>
+          <postalCode value="48104"/>
+          <country value="USA"/>
+        </address>
+        <position>
+          <longitude value="-83.69471"/>
+          <latitude value="42.2565"/>
+        </position>
+      </Location>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Location/LocationExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Condition/ConditionExample"/>
+    <resource>
+      <Condition>
+        <id value="a6867095-e2b1-4a68-9aaa-0d161a37ce9c"/>
+        <meta>
+          <profile value="http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="a6867095-e2b1-4a68-9aaa-0d161a37ce9c"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;a6867095-e2b1-4a68-9aaa-0d161a37ce9c&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-omrs-Condition.html">OpenMRS condition</a></p></div><p><b>code</b>: Malaria <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CIEL.html">CIEL</a>#116128)</span></p><p><b>subject</b>: <a href="#Patient_example-openmrs-Patient">See above (Patient/example-openmrs-Patient: Horatio Hornblower (OpenMRS ID:101-6))</a></p><p><b>recordedDate</b>: 2019-06-18 06:37:26+0300</p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+            <code value="116128"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/example-openmrs-Patient"/>
+          <type value="Patient"/>
+          <identifier>
+            <use value="official"/>
+            <value value="101-6"/>
+          </identifier>
+          <display value="Horatio Hornblower (OpenMRS ID:101-6)"/>
+        </subject>
+        <recordedDate value="2019-06-18T06:37:26+03:00"/>
+      </Condition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Condition/ConditionExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Encounter/EncounterExample"/>
+    <resource>
+      <Encounter>
+        <id value="5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+        <meta>
+          <profile value="http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;5b829d01-34bb-47d1-b1bb-9303c3a9ebcb&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-omrs-encounter.html">Openmrs Encounter</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: Vitals <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (encounter-type#67a71486-1a54-468f-ac3e-7091a9a79584)</span></p><p><b>subject</b>: <a href="#Patient_example-openmrs-Patient">See above (Patient/example-openmrs-Patient)</a></p><p><b>period</b>: 2022-06-22 --&gt; 2022-06-22</p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td><a href="#Location_a3b793f0-eb53-4cda-92ce-fe0a77106252">See above (Location/a3b793f0-eb53-4cda-92ce-fe0a77106252)</a></td></tr></table></div>
+        </text>
+        <status value="unknown"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="AMB"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://fhir.openmrs.org/code-system/encounter-type"/>
+            <code value="67a71486-1a54-468f-ac3e-7091a9a79584"/>
+            <display value="Vitals"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/example-openmrs-Patient"/>
+          <type value="Patient"/>
+        </subject>
+        <period>
+          <start value="2022-06-22"/>
+          <end value="2022-06-22"/>
+        </period>
+        <location>
+          <location>
+            <reference value="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252"/>
+          </location>
+        </location>
+      </Encounter>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Encounter/EncounterExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/DiagnosticReport/example-Openmrs-DiagnosticReport"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="8a849d5e-6011-4279-a124-40ada5a687de"/>
+        <meta>
+          <profile value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DiagnosticReport</b><a name="8a849d5e-6011-4279-a124-40ada5a687de"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DiagnosticReport &quot;8a849d5e-6011-4279-a124-40ada5a687de&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-OpenMRS-diagnostic-report.html">OpenMRS Diagnostic Report</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Systolic blood pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8480-6)</span></p><p><b>subject</b>: <a href="#Patient_example-openmrs-Patient">See above (Patient/example-openmrs-Patient)</a></p><p><b>encounter</b>: <a href="#Encounter_5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">See above (Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb)</a></p><p><b>issued</b>: Mar 4, 2011, 12:45:33 AM</p><p><b>result</b>: <a href="#Observation_example-openmrs-Observation">See above (Observation/example-openmrs-Observation)</a></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8480-6"/>
+            <display value="Systolic blood pressure"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/example-openmrs-Patient"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+        </encounter>
+        <issued value="2011-03-04T11:45:33+11:00"/>
+        <result>
+          <reference value="Observation/example-openmrs-Observation"/>
+        </result>
+      </DiagnosticReport>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="DiagnosticReport/example-Openmrs-DiagnosticReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Observation/example-openmrs-Observation"/>
+    <resource>
+      <Observation>
+        <id value="example-openmrs-Observation"/>
+        <meta>
+          <profile value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="example-openmrs-Observation"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;example-openmrs-Observation&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/mherman22/openmrs-contrib-fhir2-ig//StructureDefinition-OpenMRS-observation.html">OpenMRS Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Exam <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-observation-category.html">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Arterial blood oxygen saturation (pulse oximeter) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#431314004 &quot;SpO2 - saturation of peripheral oxygen&quot;)</span></p><p><b>subject</b>: <a href="#Patient_example-openmrs-Patient">See above (Patient/example-openmrs-Patient)</a></p><p><b>encounter</b>: <a href="#Encounter_5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">See above (Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb)</a></p><p><b>value</b>: 25 DEG C</p><p><b>interpretation</b>: High <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#H)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>10</td><td>272</td><td>absolute <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (reference-range#absolute)</span></td></tr></table></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="431314004"/>
+            <display value="SpO2 - saturation of peripheral oxygen"/>
+          </coding>
+          <text value="Arterial blood oxygen saturation (pulse oximeter)"/>
+        </code>
+        <subject>
+          <reference value="Patient/example-openmrs-Patient"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+        </encounter>
+        <valueQuantity>
+          <value value="25"/>
+          <unit value="DEG C"/>
+        </valueQuantity>
+        <interpretation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="H"/>
+            <display value="High"/>
+          </coding>
+        </interpretation>
+        <referenceRange>
+          <low>
+            <value value="10"/>
+          </low>
+          <high>
+            <value value="272"/>
+          </high>
+          <type>
+            <coding>
+              <system value="http://fhir.openmrs.org/ext/obs/reference-range"/>
+              <code value="absolute"/>
+            </coding>
+          </type>
+        </referenceRange>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/example-openmrs-Observation"/>
+    </request>
+  </entry>
+</Bundle>

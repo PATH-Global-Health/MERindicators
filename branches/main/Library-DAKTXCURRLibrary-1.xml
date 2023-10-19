@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <annotation xsi:type="a:Annotation">
+      <a:s r="29">
+         <a:s>// TX_CURR, WHO HIV.IND.AV.1
+// numerator only
+// Number of adults and children currently receiving antiretroviral therapy (ART)
+// Sum of age/sex disaggregates
+library DAKTXCURR version '0.1.0'</a:s>
+      </a:s>
+   </annotation>
+   <identifier id="DAKTXCURR" system="https://path-global-health.github.io/MERindicators" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="9:1-9:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>using </a:s>
+               <a:s>
+                  <a:s>FHIR</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="11:1-11:35" localIdentifier="FHIRHelpers" path="https://path-global-health.github.io/MERindicators/FHIRHelpers" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="3" locator="12:1-12:44" localIdentifier="FC" path="https://path-global-health.github.io/MERindicators/FHIRCommon" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="3">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRCommon</a:s>
+               </a:s>
+               <a:s> version '4.0.1' called FC</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="4" locator="14:1-14:29" localIdentifier="Cx" path="https://path-global-health.github.io/MERindicators/DAKConcepts">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="4">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>DAKConcepts</a:s>
+               </a:s>
+               <a:s> called Cx</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="5" locator="15:1-15:42" localIdentifier="PatientData" path="https://path-global-health.github.io/MERindicators/DAKDataElements">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="5">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>DAKDataElements</a:s>
+               </a:s>
+               <a:s> called PatientData</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="6" locator="16:1-16:44" localIdentifier="DAKStratifiers" path="https://path-global-health.github.io/MERindicators/DAKStratifiers">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="6">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>DAKStratifiers</a:s>
+               </a:s>
+               <a:s> called DAKStratifiers</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <contexts>
+      <def locator="18:1-18:15" name="Patient"/>
+   </contexts>
+   <statements>
+      <def locator="18:1-18:15" name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="18:1-18:15" dataType="fhir:Patient" templateId="http://hl7.org/fhir/StructureDefinition/Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def localId="12" locator="27:1-28:46" resultTypeName="t:Boolean" name="Initial Population" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="12">
+               <a:s>// for cohort
+/*
+define &quot;Initial Population&quot;: 
+  PatientData.&quot;PLHIV&quot; and PatientData.&quot;On ART&quot; and not PatientData.&quot;Deceased&quot;
+*/
+
+// For continuous variable
+define &quot;Initial Population&quot;: 
+  </a:s>
+               <a:s r="11">
+                  <a:s r="8">
+                     <a:s r="7">
+                        <a:s>PatientData</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="8">
+                        <a:s>&quot;PLHIV&quot;</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s> and </a:s>
+                  <a:s r="10">
+                     <a:s r="9">
+                        <a:s>PatientData</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="10">
+                        <a:s>&quot;On ART&quot;</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="11" locator="28:3-28:46" resultTypeName="t:Boolean" xsi:type="And">
+            <operand localId="8" locator="28:3-28:21" resultTypeName="t:Boolean" name="PLHIV" libraryName="PatientData" xsi:type="ExpressionRef"/>
+            <operand localId="10" locator="28:27-28:46" resultTypeName="t:Boolean" name="On ART" libraryName="PatientData" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def localId="14" locator="30:1-31:22" resultTypeName="t:Boolean" name="Measure Population" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="14">
+               <a:s>define &quot;Measure Population&quot;:
+  </a:s>
+               <a:s r="13">
+                  <a:s>&quot;Initial Population&quot;</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="13" locator="31:3-31:22" resultTypeName="t:Boolean" name="Initial Population" xsi:type="ExpressionRef"/>
+      </def>
+      <def localId="20" locator="33:1-34:53" resultTypeName="t:Boolean" name="Measure Population Exclusion" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="20">
+               <a:s>define &quot;Measure Population Exclusion&quot;:
+  </a:s>
+               <a:s r="19">
+                  <a:s r="16">
+                     <a:s r="15">
+                        <a:s>PatientData</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="16">
+                        <a:s>&quot;Deceased&quot;</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s> or </a:s>
+                  <a:s r="18">
+                     <a:s r="17">
+                        <a:s>PatientData</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="18">
+                        <a:s>&quot;Stopped ART&quot;</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="19" locator="34:3-34:53" resultTypeName="t:Boolean" xsi:type="Or">
+            <operand localId="16" locator="34:3-34:24" resultTypeName="t:Boolean" name="Deceased" libraryName="PatientData" xsi:type="ExpressionRef"/>
+            <operand localId="18" locator="34:29-34:53" resultTypeName="t:Boolean" name="Stopped ART" libraryName="PatientData" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def localId="23" locator="36:1-37:3" resultTypeName="t:Integer" name="Measure Observation" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="23">
+               <a:s>define function &quot;Measure Observation&quot; (Patient </a:s>
+               <a:s r="21">
+                  <a:s>&quot;Patient&quot;</a:s>
+               </a:s>
+               <a:s>):
+  </a:s>
+               <a:s r="22">
+                  <a:s r="22">1</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="22" locator="37:3" resultTypeName="t:Integer" valueType="t:Integer" value="1" xsi:type="Literal"/>
+         <operand name="Patient">
+            <operandTypeSpecifier localId="21" locator="36:48-36:56" resultTypeName="fhir:Patient" name="fhir:Patient" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def localId="26" locator="61:1-62:48" resultTypeName="t:String" name="Stratification" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="26">
+               <a:s>/* for proportion
+define &quot;Initial Population&quot;: 
+  PatientData.&quot;PLHIV&quot;
+
+define &quot;Denominator&quot;:
+  PatientData.&quot;PLHIV&quot;
+
+define &quot;Denominator-Exclusion&quot;:
+  PatientData.&quot;Deceased&quot;
+
+define &quot;Numerator-Exclusion&quot;: 
+  PatientData.&quot;Deceased&quot;
+
+
+// todo: this is not showing up as true
+
+define &quot;Numerator&quot;:
+  PatientData.&quot;On ART&quot;
+*/
+define &quot;Stratification&quot;: 
+  </a:s>
+               <a:s r="25">
+                  <a:s r="24">
+                     <a:s>DAKStratifiers</a:s>
+                  </a:s>
+                  <a:s>.</a:s>
+                  <a:s r="25">
+                     <a:s>&quot;Age Group/Sex/Location TXCURR&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="25" locator="62:3-62:48" resultTypeName="t:String" name="Age Group/Sex/Location TXCURR" libraryName="DAKStratifiers" xsi:type="ExpressionRef"/>
+      </def>
+      <def localId="29" locator="64:1-65:62" resultTypeName="t:String" name="Dispense Stratification" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="29">
+               <a:s>define &quot;Dispense Stratification&quot;:
+  </a:s>
+               <a:s r="28">
+                  <a:s r="27">
+                     <a:s>DAKStratifiers</a:s>
+                  </a:s>
+                  <a:s>.</a:s>
+                  <a:s r="28">
+                     <a:s>&quot;Dispensing Quantity/Coarse Age/Sex/Location&quot;</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="28" locator="65:3-65:62" resultTypeName="t:String" name="Dispensing Quantity/Coarse Age/Sex/Location" libraryName="DAKStratifiers" xsi:type="ExpressionRef"/>
+      </def>
+   </statements>
+</library>

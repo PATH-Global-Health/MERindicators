@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <annotation xsi:type="a:Annotation">
+      <a:s r="53">
+         <a:s>library KenyaEMRConcepts version '0.1.0'</a:s>
+      </a:s>
+   </annotation>
+   <identifier id="KenyaEMRConcepts" system="https://path-global-health.github.io/MERindicators" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="3:1-3:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>using </a:s>
+               <a:s>
+                  <a:s>FHIR</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="5:1-5:35" localIdentifier="FHIRHelpers" path="https://path-global-health.github.io/MERindicators/FHIRHelpers" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="3" locator="6:1-6:44" localIdentifier="FC" path="https://path-global-health.github.io/MERindicators/FHIRCommon" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="3">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRCommon</a:s>
+               </a:s>
+               <a:s> version '4.0.1' called FC</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <codeSystems>
+      <def localId="4" locator="9:1-9:48" resultTypeName="t:CodeSystem" name="SNOMED-CT" id="http://snomed.info/sct" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="4">
+               <a:s>// codesystems
+codesystem &quot;SNOMED-CT&quot;: 'http://snomed.info/sct'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="5" locator="10:1-10:38" resultTypeName="t:CodeSystem" name="LOINC" id="http://loinc.org" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="5">
+               <a:s>codesystem &quot;LOINC&quot;: 'http://loinc.org'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="6" locator="11:1-11:66" resultTypeName="t:CodeSystem" name="RxNorm" id="http://www.nlm.nih.gov/research/umls/rxnorm" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="6">
+               <a:s>codesystem &quot;RxNorm&quot;: 'http://www.nlm.nih.gov/research/umls/rxnorm'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="7" locator="14:1-14:70" resultTypeName="t:CodeSystem" name="CIEL" id="https://openconceptlab.org/orgs/CIEL/sources/CIEL" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="7">
+               <a:s>// local codesystems
+codesystem &quot;CIEL&quot;: 'https://openconceptlab.org/orgs/CIEL/sources/CIEL'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="8" locator="15:1-15:43" resultTypeName="t:CodeSystem" name="OpenHIE" id="https://openhie.org" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="8">
+               <a:s>codesystem &quot;OpenHIE&quot;: 'https://openhie.org'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </codeSystems>
+   <valueSets>
+      <def localId="9" locator="18:1-18:90" resultTypeName="t:ValueSet" name="HL7 Administrative Gender" id="http://hl7.org/fhir/ValueSet/administrative-gender" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="9">
+               <a:s>// FHIR CS and VS
+valueset &quot;HL7 Administrative Gender&quot;: 'http://hl7.org/fhir/ValueSet/administrative-gender'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="48" locator="57:1-57:103" resultTypeName="t:ValueSet" name="AgeRangesTXCURR" id="https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="48">
+               <a:s>// valuesets
+valueset AgeRangesTXCURR: 'https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="51" locator="63:1-63:103" resultTypeName="t:ValueSet" name="Viral Load Test" id="https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="51">
+               <a:s>valueset &quot;Viral Load Test&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="52" locator="65:1-65:111" resultTypeName="t:ValueSet" name="ART Medications" id="https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="52">
+               <a:s>// valueset &quot;Synthea HIV Medications&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications'
+valueset &quot;ART Medications&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="53" locator="66:1-66:111" resultTypeName="t:ValueSet" name="CIELHIVMedications" id="https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="53">
+               <a:s>valueset &quot;CIELHIVMedications&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </valueSets>
+   <codes>
+      <def localId="11" locator="20:1-20:72" resultTypeName="t:Code" name="HIV Positive" id="165816005" display="HIV Positive" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="11">
+               <a:s>code &quot;HIV Positive&quot;: '165816005' from </a:s>
+               <a:s r="10">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'HIV Positive'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="10" locator="20:39-20:49" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="13" locator="25:1-25:85" resultTypeName="t:Code" name="Pregnancy (finding)" id="77386006" display="Pregnancy (finding)" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="13">
+               <a:s>// codes
+
+// The display &quot;Pregnancy (finding)&quot; is not a valid display for the code {http://snomed.info/sct}77386006
+code &quot;Pregnancy (finding)&quot;: '77386006' from </a:s>
+               <a:s r="12">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'Pregnancy (finding)'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="12" locator="25:45-25:55" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="15" locator="26:1-26:64" resultTypeName="t:Code" name="Pregnant" id="146789000" display="Pregnant" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="15">
+               <a:s>code &quot;Pregnant&quot;: '146789000' from </a:s>
+               <a:s r="14">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'Pregnant'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="14" locator="26:35-26:45" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="17" locator="28:1-28:126" resultTypeName="t:Code" name="Prenatal initial visit (regime/therapy)" id="424441002" display="Prenatal initial visit (regime/therapy)" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="17">
+               <a:s>// code &quot;Breastfeeding&quot;: '169750002' from &quot;SNOMED-CT&quot; display 'Breastfeeding'
+code &quot;Prenatal initial visit (regime/therapy)&quot;: '424441002' from </a:s>
+               <a:s r="16">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'Prenatal initial visit (regime/therapy)'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="16" locator="28:66-28:76" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="19" locator="29:1-29:96" resultTypeName="t:Code" name="Pregnancy status - Reported" id="11449-6" display="Pregnancy status - Reported" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="19">
+               <a:s>code &quot;Pregnancy status - Reported&quot;: '11449-6' from </a:s>
+               <a:s r="18">
+                  <a:s>&quot;LOINC&quot;</a:s>
+               </a:s>
+               <a:s> display 'Pregnancy status - Reported'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="18" locator="29:52-29:58" resultTypeName="t:CodeSystem" name="LOINC"/>
+      </def>
+      <def localId="21" locator="36:1-36:80" resultTypeName="t:Code" name="Currently taking ARV" id="160119" display="Currently taking ARV" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="21">
+               <a:s>// code &quot;Livebirth (finding)&quot;: '281050002' from &quot;SNOMED-CT&quot; display 'Livebirth (finding)'
+// code &quot;Postpartum state (finding)&quot;: '86569001' from &quot;SNOMED-CT&quot; display 'Postpartum state (finding)'
+// code &quot;Normal breast feeding (finding)&quot;: '69840006' from &quot;SNOMED-CT&quot; display 'Normal breast feeding (finding)'
+
+
+// ciel hiv/other
+code &quot;Currently taking ARV&quot;: '160119' from </a:s>
+               <a:s r="20">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'Currently taking ARV'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="20" locator="36:44-36:49" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="23" locator="37:1-37:53" resultTypeName="t:Code" name="Coded Answer" id="1065" display="Yes" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="23">
+               <a:s>code &quot;Coded Answer&quot;: '1065' from </a:s>
+               <a:s r="22">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'Yes'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="22" locator="37:34-37:39" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="25" locator="38:1-38:80" resultTypeName="t:Code" name="Method of enrollment" id="160540" display="Method of enrollment" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="25">
+               <a:s>code &quot;Method of enrollment&quot;: '160540' from </a:s>
+               <a:s r="24">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'Method of enrollment'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="24" locator="38:44-38:49" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="27" locator="39:1-39:82" resultTypeName="t:Code" name="Outpatient department" id="160542" display="Outpatient department" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="27">
+               <a:s>code &quot;Outpatient department&quot;: '160542' from </a:s>
+               <a:s r="26">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'Outpatient department'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="26" locator="39:45-39:50" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="29" locator="40:1-40:96" resultTypeName="t:Code" name="Outpatient department SNOMED" id="33022008" display="Outpatient department" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="29">
+               <a:s>code &quot;Outpatient department SNOMED&quot;: '33022008' from </a:s>
+               <a:s r="28">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'Outpatient department'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="28" locator="40:54-40:64" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="31" locator="41:1-41:74" resultTypeName="t:Code" name="CURRENT DRUGS USED" id="1193" display="CURRENT DRUGS USED" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="31">
+               <a:s>code &quot;CURRENT DRUGS USED&quot;: '1193' from </a:s>
+               <a:s r="30">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'CURRENT DRUGS USED'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="30" locator="41:40-41:45" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="33" locator="42:1-42:72" resultTypeName="t:Code" name="RETURN VISIT DATE" id="5096" display="RETURN VISIT DATE" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="33">
+               <a:s>code &quot;RETURN VISIT DATE&quot;: '5096' from </a:s>
+               <a:s r="32">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'RETURN VISIT DATE'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="32" locator="42:39-42:44" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="35" locator="46:1-46:139" resultTypeName="t:Code" name="Acquired immune deficiency syndrome (disorder)" id="62479008" display="Acquired immune deficiency syndrome (disorder)" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="35">
+               <a:s>// snomed and other hiv testing, results, conditions, art
+code &quot;Acquired immune deficiency syndrome (disorder)&quot;: '62479008' from </a:s>
+               <a:s r="34">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'Acquired immune deficiency syndrome (disorder)'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="34" locator="46:72-46:82" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="37" locator="47:1-47:82" resultTypeName="t:Code" name="HIV Condition Positive" id="86406008" display="HIV infection" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="37">
+               <a:s>code &quot;HIV Condition Positive&quot;: '86406008' from </a:s>
+               <a:s r="36">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'HIV infection'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="36" locator="47:48-47:58" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="39" locator="48:1-48:72" resultTypeName="t:Code" name="HIV Negative" id="165815009" display="HIV Negative" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="39">
+               <a:s>code &quot;HIV Negative&quot;: '165815009' from </a:s>
+               <a:s r="38">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'HIV Negative'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="38" locator="48:39-48:49" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="41" locator="49:1-49:142" resultTypeName="t:Code" name="History of antiretroviral therapy (situation)" id="432101000124108" display="History of antiretroviral therapy (situation)" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="41">
+               <a:s>code &quot;History of antiretroviral therapy (situation)&quot;: '432101000124108' from </a:s>
+               <a:s r="40">
+                  <a:s>&quot;OpenHIE&quot;</a:s>
+               </a:s>
+               <a:s> display 'History of antiretroviral therapy (situation)'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="40" locator="49:78-49:86" resultTypeName="t:CodeSystem" name="OpenHIE"/>
+      </def>
+      <def localId="43" locator="50:1-50:120" resultTypeName="t:Code" name="Institutional entry point HIV treatment" id="45252-4" display="Institutional entry point HIV treatment" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="43">
+               <a:s>code &quot;Institutional entry point HIV treatment&quot;: '45252-4' from </a:s>
+               <a:s r="42">
+                  <a:s>&quot;LOINC&quot;</a:s>
+               </a:s>
+               <a:s> display 'Institutional entry point HIV treatment'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="42" locator="50:64-50:70" resultTypeName="t:CodeSystem" name="LOINC"/>
+      </def>
+      <def localId="45" locator="53:1-53:114" resultTypeName="t:Code" name="Reason for discontinuation of program" id="161555" display="Reason for discontinuation of program" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="45">
+               <a:s>// code &quot;New on ART&quot;: 'new-on-art' from &quot;PMTCT ART Status Codes&quot; display 'New on ART'
+// need to change to valueset
+code &quot;Reason for discontinuation of program&quot;: '161555' from </a:s>
+               <a:s r="44">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'Reason for discontinuation of program'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="44" locator="53:61-53:66" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="47" locator="54:1-54:76" resultTypeName="t:Code" name="Treatment end date" id="164384" display="Treatment end date" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="47">
+               <a:s>code &quot;Treatment end date&quot;: '164384' from </a:s>
+               <a:s r="46">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'Treatment end date'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="46" locator="54:42-54:47" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="50" locator="62:1-62:118" resultTypeName="t:Code" name="HIV 1 and 2 tests - Meaningful Use set" id="75622-1" display="HIV 1 and 2 tests - Meaningful Use set" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="50">
+               <a:s>// valueset &quot;HIV Testing Services&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/HIVTestingServices' // Should use HIV tests
+// viral load tests, results
+// commenting out for now and the union
+// valueset &quot;Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)&quot;: 'urn:oid:2.16.840.1.113762.1.4.1056.50' // Used by CMS349
+code &quot;HIV 1 and 2 tests - Meaningful Use set&quot;: '75622-1' from </a:s>
+               <a:s r="49">
+                  <a:s>&quot;LOINC&quot;</a:s>
+               </a:s>
+               <a:s> display 'HIV 1 and 2 tests - Meaningful Use set'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="49" locator="62:63-62:69" resultTypeName="t:CodeSystem" name="LOINC"/>
+      </def>
+   </codes>
+</library>

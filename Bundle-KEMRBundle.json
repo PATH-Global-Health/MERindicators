@@ -1,0 +1,951 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "KEMRBundle",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/CodeSystem/CIEL",
+    "resource" : {
+      "resourceType" : "CodeSystem",
+      "id" : "CIEL",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CodeSystem</b><a name=\"CIEL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CodeSystem &quot;CIEL&quot; </p></div><p><b>url</b>: <code>https://openconceptlab.org/orgs/CIEL/sources/CIEL</code></p><p><b>name</b>: CIEL</p><p><b>title</b>: CIEL</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>description</b>: Columbia International eHealth Laboratory (CIEL)</p><p><b>caseSensitive</b>: false</p><p><b>content</b>: complete</p><p><b>count</b>: 41</p><blockquote><p><b>concept</b></p><p><b>code</b>: 1065</p><p><b>display</b>: YES</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1066</p><p><b>display</b>: NO</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1067</p><p><b>display</b>: Unknown</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1434</p><p><b>display</b>: Currently pregnant</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 138405</p><p><b>display</b>: Human immunodeficiency virus (HIV) disease</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160119</p><p><b>display</b>: CURRENTLY TAKING ARV</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 116128</p><p><b>display</b>: Malaria</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160540</p><p><b>display</b>: Method of enrollment</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160542</p><p><b>display</b>: Outpatient department</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1193</p><p><b>display</b>: CURRENT DRUGS USED</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 5096</p><p><b>display</b>: RETURN VISIT DATE</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 164384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: Treatment end date</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 164384</p><p><b>display</b>: Treatment end date</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160104</p><p><b>display</b>: Efavirenz / Lamivudine / Stavudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160105</p><p><b>display</b>: Efavirenz / Stavudine / Zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160124</p><p><b>display</b>: Efavirenz / Lamivudine / Zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 161361</p><p><b>display</b>: efavirenz / lamivudine / tenofovir disoproxil</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 161363</p><p><b>display</b>: lamivudine / stavudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 161364</p><p><b>display</b>: Lamivudine / tenofovir disoproxil</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1652</p><p><b>display</b>: Lamivudine / nevirapine / zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 5424</p><p><b>display</b>: Other antiretroviral drug</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 5811</p><p><b>display</b>: Unknown antiretroviral drug</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 630</p><p><b>display</b>: Lamivudine / zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 103166</p><p><b>display</b>: Abacavir / lamivudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 70056</p><p><b>display</b>: Abacavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 71647</p><p><b>display</b>: Atazanavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 74807</p><p><b>display</b>: Didanosine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 75523</p><p><b>display</b>: Efavirenz</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 75628</p><p><b>display</b>: Efavirenz</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 77995</p><p><b>display</b>: Indinavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 78643</p><p><b>display</b>: Lamivudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 79040</p><p><b>display</b>: Lopinavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 792</p><p><b>display</b>: Lamivudine / nevirapine / stavudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 794</p><p><b>display</b>: Lopinavir / ritonavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 80487</p><p><b>display</b>: Nelfinavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 80586</p><p><b>display</b>: Nevirapine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 83412</p><p><b>display</b>: Ritonavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 84309</p><p><b>display</b>: Stavudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 84795</p><p><b>display</b>: Tenofovir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 86663</p><p><b>display</b>: Zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 01234</p><p><b>display</b>: Tenofovir / Lamivudine / Dolutegravir</p></blockquote></div>"
+      },
+      "url" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+      "name" : "CIEL",
+      "title" : "CIEL",
+      "status" : "draft",
+      "experimental" : true,
+      "description" : "Columbia International eHealth Laboratory (CIEL)",
+      "caseSensitive" : false,
+      "content" : "complete",
+      "count" : 41,
+      "concept" : [{
+        "code" : "1065",
+        "display" : "YES"
+      },
+      {
+        "code" : "1066",
+        "display" : "NO"
+      },
+      {
+        "code" : "1067",
+        "display" : "Unknown"
+      },
+      {
+        "code" : "1434",
+        "display" : "Currently pregnant"
+      },
+      {
+        "code" : "138405",
+        "display" : "Human immunodeficiency virus (HIV) disease"
+      },
+      {
+        "code" : "160119",
+        "display" : "CURRENTLY TAKING ARV"
+      },
+      {
+        "code" : "116128",
+        "display" : "Malaria"
+      },
+      {
+        "code" : "160540",
+        "display" : "Method of enrollment"
+      },
+      {
+        "code" : "160542",
+        "display" : "Outpatient department"
+      },
+      {
+        "code" : "1193",
+        "display" : "CURRENT DRUGS USED"
+      },
+      {
+        "code" : "5096",
+        "display" : "RETURN VISIT DATE"
+      },
+      {
+        "code" : "164384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "Treatment end date"
+      },
+      {
+        "code" : "164384",
+        "display" : "Treatment end date"
+      },
+      {
+        "code" : "160104",
+        "display" : "Efavirenz / Lamivudine / Stavudine"
+      },
+      {
+        "code" : "160105",
+        "display" : "Efavirenz / Stavudine / Zidovudine"
+      },
+      {
+        "code" : "160124",
+        "display" : "Efavirenz / Lamivudine / Zidovudine"
+      },
+      {
+        "code" : "161361",
+        "display" : "efavirenz / lamivudine / tenofovir disoproxil"
+      },
+      {
+        "code" : "161363",
+        "display" : "lamivudine / stavudine"
+      },
+      {
+        "code" : "161364",
+        "display" : "Lamivudine / tenofovir disoproxil"
+      },
+      {
+        "code" : "1652",
+        "display" : "Lamivudine / nevirapine / zidovudine"
+      },
+      {
+        "code" : "5424",
+        "display" : "Other antiretroviral drug"
+      },
+      {
+        "code" : "5811",
+        "display" : "Unknown antiretroviral drug"
+      },
+      {
+        "code" : "630",
+        "display" : "Lamivudine / zidovudine"
+      },
+      {
+        "code" : "103166",
+        "display" : "Abacavir / lamivudine"
+      },
+      {
+        "code" : "70056",
+        "display" : "Abacavir"
+      },
+      {
+        "code" : "71647",
+        "display" : "Atazanavir"
+      },
+      {
+        "code" : "74807",
+        "display" : "Didanosine"
+      },
+      {
+        "code" : "75523",
+        "display" : "Efavirenz"
+      },
+      {
+        "code" : "75628",
+        "display" : "Efavirenz"
+      },
+      {
+        "code" : "77995",
+        "display" : "Indinavir"
+      },
+      {
+        "code" : "78643",
+        "display" : "Lamivudine"
+      },
+      {
+        "code" : "79040",
+        "display" : "Lopinavir"
+      },
+      {
+        "code" : "792",
+        "display" : "Lamivudine / nevirapine / stavudine"
+      },
+      {
+        "code" : "794",
+        "display" : "Lopinavir / ritonavir"
+      },
+      {
+        "code" : "80487",
+        "display" : "Nelfinavir"
+      },
+      {
+        "code" : "80586",
+        "display" : "Nevirapine"
+      },
+      {
+        "code" : "83412",
+        "display" : "Ritonavir"
+      },
+      {
+        "code" : "84309",
+        "display" : "Stavudine"
+      },
+      {
+        "code" : "84795",
+        "display" : "Tenofovir"
+      },
+      {
+        "code" : "86663",
+        "display" : "Zidovudine"
+      },
+      {
+        "code" : "01234",
+        "display" : "Tenofovir / Lamivudine / Dolutegravir"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CodeSystem/CIEL"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods",
+    "resource" : {
+      "resourceType" : "CodeSystem",
+      "id" : "EnrollmentMethods",
+      "meta" : {
+        "lastUpdated" : "2023-07-20T15:56:38.013277Z"
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Generated Narrative: CodeSystem</b><a name=\"EnrollmentMethods\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CodeSystem &quot;EnrollmentMethods&quot; Updated &quot;2023-07-20 15:56:38+0000&quot;  (Language &quot;en&quot;) </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods</code></p><p><b>version</b>: 1</p><p><b>name</b>: EnrollmentMethods</p><p><b>title</b>: Enrollment Methods for HIV program</p><p><b>status</b>: draft</p><p><b>description</b>: 1</p><p><b>content</b>: complete</p><p><b>count</b>: 10</p><blockquote><p><b>concept</b></p><p><b>code</b>: 159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: HBTC</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: VCT Site</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: MCH</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: IPD-Adult</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: IPD-Child</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: TB Clinic</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: OPD</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: CCC</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: Self Test</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p><p><b>display</b>: Other(eg STI)</p></blockquote></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods",
+      "version" : "1",
+      "name" : "EnrollmentMethods",
+      "title" : "Enrollment Methods for HIV program",
+      "status" : "draft",
+      "description" : "1",
+      "content" : "complete",
+      "count" : 10,
+      "concept" : [{
+        "code" : "159938AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "HBTC"
+      },
+      {
+        "code" : "160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "VCT Site"
+      },
+      {
+        "code" : "159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "MCH"
+      },
+      {
+        "code" : "160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "IPD-Adult"
+      },
+      {
+        "code" : "160537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "IPD-Child"
+      },
+      {
+        "code" : "160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "TB Clinic"
+      },
+      {
+        "code" : "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "OPD"
+      },
+      {
+        "code" : "162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "CCC"
+      },
+      {
+        "code" : "160551AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "Self Test"
+      },
+      {
+        "code" : "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display" : "Other(eg STI)"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CodeSystem/EnrollmentMethods"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE",
+    "resource" : {
+      "resourceType" : "CodeSystem",
+      "id" : "OpenHIE",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CodeSystem</b><a name=\"OpenHIE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CodeSystem &quot;OpenHIE&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE</code></p><p><b>name</b>: OpenHIE</p><p><b>title</b>: OpenHIE CodeSystem</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>description</b>: OpenHIE CodeSystem</p><p><b>caseSensitive</b>: false</p><p><b>content</b>: complete</p><p><b>count</b>: 2</p><blockquote><p><b>concept</b></p><p><b>code</b>: cohort</p><p><b>display</b>: cohort</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 432101000124108</p><p><b>display</b>: History of antiretroviral therapy (situation)</p></blockquote></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE",
+      "name" : "OpenHIE",
+      "title" : "OpenHIE CodeSystem",
+      "status" : "draft",
+      "experimental" : true,
+      "description" : "OpenHIE CodeSystem",
+      "caseSensitive" : false,
+      "content" : "complete",
+      "count" : 2,
+      "concept" : [{
+        "code" : "cohort",
+        "display" : "cohort"
+      },
+      {
+        "code" : "432101000124108",
+        "display" : "History of antiretroviral therapy (situation)"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CodeSystem/OpenHIE"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/OnARV",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "OnARV",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b><a name=\"OnARV\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet &quot;OnARV&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/ValueSet/OnARV</code></p><p><b>name</b>: OnARV</p><p><b>title</b>: History of antiretroviral therapy (situation)</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>description</b>: History of antiretroviral therapy (situation)</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><h3>Concepts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"display: none\">*</td><td>432101000124108</td><td>History of antiretroviral therapy (situation)</td></tr></table></blockquote><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"CodeSystem-OpenHIE.html\">OpenHIE CodeSystem</a></p><h3>Concepts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"display: none\">*</td><td>432101000124108</td><td>History of antiretroviral therapy (situation)</td></tr></table></blockquote><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"CodeSystem-CIEL.html\">CIEL</a></p><h3>Concepts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"display: none\">*</td><td>160119</td><td>CURRENTLY TAKING ARV</td></tr></table></blockquote></blockquote></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/OnARV",
+      "name" : "OnARV",
+      "title" : "History of antiretroviral therapy (situation)",
+      "status" : "draft",
+      "experimental" : true,
+      "description" : "History of antiretroviral therapy (situation)",
+      "compose" : {
+        "include" : [{
+          "system" : "http://snomed.info/sct",
+          "concept" : [{
+            "code" : "432101000124108",
+            "display" : "History of antiretroviral therapy (situation)"
+          }]
+        },
+        {
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE",
+          "concept" : [{
+            "code" : "432101000124108",
+            "display" : "History of antiretroviral therapy (situation)"
+          }]
+        },
+        {
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "concept" : [{
+            "code" : "160119",
+            "display" : "CURRENTLY TAKING ARV"
+          }]
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ValueSet/OnARV"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/Pregnant",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "Pregnant",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b><a name=\"Pregnant\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet &quot;Pregnant&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/ValueSet/Pregnant</code></p><p><b>name</b>: Pregnant</p><p><b>title</b>: Pregnant</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>description</b>: Currently pregnant</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><h3>Concepts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"display: none\">*</td><td>77386006</td><td>Pregnancy (finding)</td></tr></table></blockquote><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"CodeSystem-CIEL.html\">CIEL</a></p><h3>Concepts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"display: none\">*</td><td>1434</td><td>Currently pregnant</td></tr></table></blockquote></blockquote></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/Pregnant",
+      "name" : "Pregnant",
+      "title" : "Pregnant",
+      "status" : "draft",
+      "experimental" : true,
+      "description" : "Currently pregnant",
+      "compose" : {
+        "include" : [{
+          "system" : "http://snomed.info/sct",
+          "concept" : [{
+            "code" : "77386006",
+            "display" : "Pregnancy (finding)"
+          }]
+        },
+        {
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "concept" : [{
+            "code" : "1434",
+            "display" : "Currently pregnant"
+          }]
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ValueSet/Pregnant"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "SyntheaHIVMedications",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b><a name=\"SyntheaHIVMedications\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet &quot;SyntheaHIVMedications&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications</code></p><p><b>name</b>: SyntheaHIVMedications</p><p><b>title</b>: Synthea HIV MedicationsVS</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>description</b>: Synthea HIV MedicationsVS</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-v3-rxNorm.html\">RxNorm</a></p><blockquote><p><b>concept</b></p><p><b>code</b>: 199663</p><p><b>display</b>: zidovudine 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 284988</p><p><b>display</b>: didanosine 400 MG Delayed Release Oral Capsule</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 313760</p><p><b>display</b>: zalcitabine 0.75 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 313110</p><p><b>display</b>: stavudine 40 MG Oral Capsule</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 349491</p><p><b>display</b>: lamivudine 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 200082</p><p><b>display</b>: lamivudine 150 MG / zidovudine 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 310988</p><p><b>display</b>: indinavir 400 MG Oral Capsule</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 859863</p><p><b>display</b>: saquinavir mesylate 500 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 317150</p><p><b>display</b>: ritonavir 100 MG Oral Capsule</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 403978</p><p><b>display</b>: nelfinavir 625 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 349477</p><p><b>display</b>: efavirenz 600 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 597730</p><p><b>display</b>: lopinavir 200 MG / ritonavir 50 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 349251</p><p><b>display</b>: tenofovir disoproxil fumarate 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 403875</p><p><b>display</b>: emtricitabine 200 MG Oral Capsule</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 476556</p><p><b>display</b>: emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1147334</p><p><b>display</b>: emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 643066</p><p><b>display</b>: efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1306292</p><p><b>display</b>: cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 744842</p><p><b>display</b>: raltegravir 400 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1433873</p><p><b>display</b>: dolutegravir 50 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 402109</p><p><b>display</b>: fosamprenavir 700 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 664741</p><p><b>display</b>: atazanavir 300 MG Oral Capsule</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1359269</p><p><b>display</b>: darunavir 800 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 2003249</p><p><b>display</b>: lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1747691</p><p><b>display</b>: emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1999667</p><p><b>display</b>: bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1721613</p><p><b>display</b>: cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 2122519</p><p><b>display</b>: dolutegravir 50 MG / lamivudine 300 MG Oral Tablet</p></blockquote></blockquote></blockquote></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+      "name" : "SyntheaHIVMedications",
+      "title" : "Synthea HIV MedicationsVS",
+      "status" : "draft",
+      "experimental" : true,
+      "description" : "Synthea HIV MedicationsVS",
+      "compose" : {
+        "include" : [{
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "concept" : [{
+            "code" : "199663",
+            "display" : "zidovudine 300 MG Oral Tablet"
+          },
+          {
+            "code" : "284988",
+            "display" : "didanosine 400 MG Delayed Release Oral Capsule"
+          },
+          {
+            "code" : "313760",
+            "display" : "zalcitabine 0.75 MG Oral Tablet"
+          },
+          {
+            "code" : "313110",
+            "display" : "stavudine 40 MG Oral Capsule"
+          },
+          {
+            "code" : "349491",
+            "display" : "lamivudine 300 MG Oral Tablet"
+          },
+          {
+            "code" : "200082",
+            "display" : "lamivudine 150 MG / zidovudine 300 MG Oral Tablet"
+          },
+          {
+            "code" : "310988",
+            "display" : "indinavir 400 MG Oral Capsule"
+          },
+          {
+            "code" : "859863",
+            "display" : "saquinavir mesylate 500 MG Oral Tablet"
+          },
+          {
+            "code" : "317150",
+            "display" : "ritonavir 100 MG Oral Capsule"
+          },
+          {
+            "code" : "403978",
+            "display" : "nelfinavir 625 MG Oral Tablet"
+          },
+          {
+            "code" : "349477",
+            "display" : "efavirenz 600 MG Oral Tablet"
+          },
+          {
+            "code" : "597730",
+            "display" : "lopinavir 200 MG / ritonavir 50 MG Oral Tablet"
+          },
+          {
+            "code" : "349251",
+            "display" : "tenofovir disoproxil fumarate 300 MG Oral Tablet"
+          },
+          {
+            "code" : "403875",
+            "display" : "emtricitabine 200 MG Oral Capsule"
+          },
+          {
+            "code" : "476556",
+            "display" : "emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+          },
+          {
+            "code" : "1147334",
+            "display" : "emtricitabine 200 MG / rilpivirine 25 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+          },
+          {
+            "code" : "643066",
+            "display" : "efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+          },
+          {
+            "code" : "1306292",
+            "display" : "cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+          },
+          {
+            "code" : "744842",
+            "display" : "raltegravir 400 MG Oral Tablet"
+          },
+          {
+            "code" : "1433873",
+            "display" : "dolutegravir 50 MG Oral Tablet"
+          },
+          {
+            "code" : "402109",
+            "display" : "fosamprenavir 700 MG Oral Tablet"
+          },
+          {
+            "code" : "664741",
+            "display" : "atazanavir 300 MG Oral Capsule"
+          },
+          {
+            "code" : "1359269",
+            "display" : "darunavir 800 MG Oral Tablet"
+          },
+          {
+            "code" : "2003249",
+            "display" : "lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet"
+          },
+          {
+            "code" : "1747691",
+            "display" : "emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Table"
+          },
+          {
+            "code" : "1999667",
+            "display" : "bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet"
+          },
+          {
+            "code" : "1721613",
+            "display" : "cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet"
+          },
+          {
+            "code" : "2122519",
+            "display" : "dolutegravir 50 MG / lamivudine 300 MG Oral Tablet"
+          }]
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ValueSet/SyntheaHIVMedications"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "CIELHIVMedications",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b><a name=\"CIELHIVMedications\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet &quot;CIELHIVMedications&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications</code></p><p><b>name</b>: CIELHIVMedications</p><p><b>title</b>: CIELHIVMedications</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>description</b>: CIELHIVMedications</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"CodeSystem-CIEL.html\">CIEL</a></p><blockquote><p><b>concept</b></p><p><b>code</b>: 160104</p><p><b>display</b>: Efavirenz / Lamivudine / Stavudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160105</p><p><b>display</b>: Efavirenz / Stavudine / Zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160124</p><p><b>display</b>: Efavirenz / Lamivudine / Zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 161361</p><p><b>display</b>: efavirenz / lamivudine / tenofovir disoproxil</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 161363</p><p><b>display</b>: lamivudine / stavudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 161364</p><p><b>display</b>: Lamivudine / tenofovir disoproxil</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1652</p><p><b>display</b>: Lamivudine / nevirapine / zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 5424</p><p><b>display</b>: Other antiretroviral drug</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 5811</p><p><b>display</b>: Unknown antiretroviral drug</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 630</p><p><b>display</b>: Lamivudine / zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 103166</p><p><b>display</b>: Abacavir / lamivudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 70056</p><p><b>display</b>: Abacavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 71647</p><p><b>display</b>: Atazanavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 74807</p><p><b>display</b>: Didanosine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 75523</p><p><b>display</b>: Efavirenz</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 75628</p><p><b>display</b>: Efavirenz</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 77995</p><p><b>display</b>: Indinavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 78643</p><p><b>display</b>: Lamivudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 79040</p><p><b>display</b>: Lopinavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 792</p><p><b>display</b>: Lamivudine / nevirapine / stavudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 794</p><p><b>display</b>: Lopinavir / ritonavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 80487</p><p><b>display</b>: Nelfinavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 80586</p><p><b>display</b>: Nevirapine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 83412</p><p><b>display</b>: Ritonavir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 84309</p><p><b>display</b>: Stavudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 84795</p><p><b>display</b>: Tenofovir</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 86663</p><p><b>display</b>: Zidovudine</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 01234</p><p><b>display</b>: Tenofovir / Lamivudine / Dolutegravir</p></blockquote></blockquote></blockquote></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications",
+      "name" : "CIELHIVMedications",
+      "title" : "CIELHIVMedications",
+      "status" : "draft",
+      "experimental" : true,
+      "description" : "CIELHIVMedications",
+      "compose" : {
+        "include" : [{
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "concept" : [{
+            "code" : "160104",
+            "display" : "Efavirenz / Lamivudine / Stavudine"
+          },
+          {
+            "code" : "160105",
+            "display" : "Efavirenz / Stavudine / Zidovudine"
+          },
+          {
+            "code" : "160124",
+            "display" : "Efavirenz / Lamivudine / Zidovudine"
+          },
+          {
+            "code" : "161361",
+            "display" : "efavirenz / lamivudine / tenofovir disoproxil"
+          },
+          {
+            "code" : "161363",
+            "display" : "lamivudine / stavudine"
+          },
+          {
+            "code" : "161364",
+            "display" : "Lamivudine / tenofovir disoproxil"
+          },
+          {
+            "code" : "1652",
+            "display" : "Lamivudine / nevirapine / zidovudine"
+          },
+          {
+            "code" : "5424",
+            "display" : "Other antiretroviral drug"
+          },
+          {
+            "code" : "5811",
+            "display" : "Unknown antiretroviral drug"
+          },
+          {
+            "code" : "630",
+            "display" : "Lamivudine / zidovudine"
+          },
+          {
+            "code" : "103166",
+            "display" : "Abacavir / lamivudine"
+          },
+          {
+            "code" : "70056",
+            "display" : "Abacavir"
+          },
+          {
+            "code" : "71647",
+            "display" : "Atazanavir"
+          },
+          {
+            "code" : "74807",
+            "display" : "Didanosine"
+          },
+          {
+            "code" : "75523",
+            "display" : "Efavirenz"
+          },
+          {
+            "code" : "75628",
+            "display" : "Efavirenz"
+          },
+          {
+            "code" : "77995",
+            "display" : "Indinavir"
+          },
+          {
+            "code" : "78643",
+            "display" : "Lamivudine"
+          },
+          {
+            "code" : "79040",
+            "display" : "Lopinavir"
+          },
+          {
+            "code" : "792",
+            "display" : "Lamivudine / nevirapine / stavudine"
+          },
+          {
+            "code" : "794",
+            "display" : "Lopinavir / ritonavir"
+          },
+          {
+            "code" : "80487",
+            "display" : "Nelfinavir"
+          },
+          {
+            "code" : "80586",
+            "display" : "Nevirapine"
+          },
+          {
+            "code" : "83412",
+            "display" : "Ritonavir"
+          },
+          {
+            "code" : "84309",
+            "display" : "Stavudine"
+          },
+          {
+            "code" : "84795",
+            "display" : "Tenofovir"
+          },
+          {
+            "code" : "86663",
+            "display" : "Zidovudine"
+          },
+          {
+            "code" : "01234",
+            "display" : "Tenofovir / Lamivudine / Dolutegravir"
+          }]
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ValueSet/CIELHIVMedications"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/ValueSet/EnrollmentMethodsforHIVProgram",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "EnrollmentMethodsforHIVProgram",
+      "meta" : {
+        "lastUpdated" : "2023-07-20T15:51:47.328070Z"
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b><a name=\"EnrollmentMethodsforHIVProgram\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet &quot;EnrollmentMethodsforHIVProgram&quot; Updated &quot;2023-07-20 15:51:47+0000&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/ValueSet/EnrollmentMethodsforHIVProgram</code></p><p><b>version</b>: 1</p><p><b>name</b>: EnrollmentMethodsforHIVProgram</p><p><b>title</b>: EnrollmentMethodsforHIVProgram</p><p><b>status</b>: draft</p><p><b>description</b>: 1</p><blockquote><p><b>compose</b></p><h3>Includes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>System</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-KEMRBundle.html\">Enrollment Methods for HIV program</a></td></tr></table></blockquote></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/ValueSet/EnrollmentMethodsforHIVProgram",
+      "version" : "1",
+      "name" : "EnrollmentMethodsforHIVProgram",
+      "title" : "EnrollmentMethodsforHIVProgram",
+      "status" : "draft",
+      "description" : "1",
+      "compose" : {
+        "include" : [{
+          "system" : "https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ValueSet/EnrollmentMethodsforHIVProgram"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Library/FHIRCommon",
+    "resource" : {
+      "resourceType" : "Library",
+      "id" : "FHIRCommon",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Library</b><a name=\"FHIRCommon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Library &quot;FHIRCommon&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Library/FHIRCommon</code></p><p><b>version</b>: 4.0.1</p><p><b>name</b>: FHIRCommon</p><p><b>title</b>: FHIRCommon</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: Logic Library <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-library-type.html\">LibraryType</a>#logic-library)</span></p><p><b>description</b>: FHIRCommon</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>(base64 data - 14775 bytes)</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/Library/FHIRCommon",
+      "version" : "4.0.1",
+      "name" : "FHIRCommon",
+      "title" : "FHIRCommon",
+      "status" : "draft",
+      "experimental" : true,
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+          "code" : "logic-library"
+        }]
+      },
+      "description" : "FHIRCommon",
+      "content" : [{
+        "contentType" : "text/cql",
+        "data" : "LyoKQGF1dGhvcjogQnJ5biBSaG9kZXMKQGRlc2NyaXB0aW9uOiBDb21tb24gdGVybWlub2xvZ2llcyBhbmQgZnVuY3Rpb25zIHVzZWQgaW4gRkhJUi1iYXNlZCBDUUwgYXJ0aWZhY3RzCiovCmxpYnJhcnkgRkhJUkNvbW1vbiB2ZXJzaW9uICc0LjAuMScKCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjEnCgppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4xJwoKY29kZXN5c3RlbSAiTE9JTkMiOiAnaHR0cDovL2xvaW5jLm9yZycKY29kZXN5c3RlbSAiU05PTUVEQ1QiOiAnaHR0cDovL3Nub21lZC5pbmZvL3NjdCcKY29kZXN5c3RlbSAiUm9sZUNvZGUiOiAnaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS92My1Sb2xlQ29kZScKY29kZXN5c3RlbSAiRGlhZ25vc2lzIFJvbGUiOiAnaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9kaWFnbm9zaXMtcm9sZScKY29kZXN5c3RlbSAiUmVxdWVzdEludGVudCI6ICdodHRwOi8vdGVybWlub2xvZ3kuaGw3Lm9yZy9Db2RlU3lzdGVtL3JlcXVlc3QtaW50ZW50Jwpjb2Rlc3lzdGVtICJNZWRpY2F0aW9uUmVxdWVzdENhdGVnb3J5IjogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vbWVkaWNhdGlvbnJlcXVlc3QtY2F0ZWdvcnknCmNvZGVzeXN0ZW0gIkNvbmRpdGlvbkNsaW5pY2FsU3RhdHVzQ29kZXMiOiAnaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9jb25kaXRpb24tY2xpbmljYWwnCmNvZGVzeXN0ZW0gIkNvbmRpdGlvblZlcmlmaWNhdGlvblN0YXR1c0NvZGVzIjogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vY29uZGl0aW9uLXZlci1zdGF0dXMnCmNvZGVzeXN0ZW0gIkFsbGVyZ3lJbnRvbGVyYW5jZUNsaW5pY2FsU3RhdHVzQ29kZXMiOiAnaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9hbGxlcmd5aW50b2xlcmFuY2UtY2xpbmljYWwnCmNvZGVzeXN0ZW0gIkFsbGVyZ3lJbnRvbGVyYW5jZVZlcmlmaWNhdGlvblN0YXR1c0NvZGVzIjogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vYWxsZXJneWludG9sZXJhbmNlLXZlcmlmaWNhdGlvbicKCnZhbHVlc2V0ICJBY3RpdmUgQ29uZGl0aW9uIjogJ2h0dHA6Ly9maGlyLm9yZy9ndWlkZXMvY3FmL2NvbW1vbi9WYWx1ZVNldC9hY3RpdmUtY29uZGl0aW9uJwp2YWx1ZXNldCAiSW5hY3RpdmUgQ29uZGl0aW9uIjogJ2h0dHA6Ly9maGlyLm9yZy9ndWlkZXMvY3FmL2NvbW1vbi9WYWx1ZVNldC9pbmFjdGl2ZS1jb25kaXRpb24nCgpjb2RlICJCaXJ0aGRhdGUiOiAnMjExMTItOCcgZnJvbSAiTE9JTkMiIGRpc3BsYXkgJ0JpcnRoIGRhdGUnCmNvZGUgIkRlYWQiOiAnNDE5MDk5MDA5JyBmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnRGVhZCcKY29kZSAiRVIiOiAnRVInIGZyb20gIlJvbGVDb2RlIiBkaXNwbGF5ICdFbWVyZ2VuY3kgcm9vbScKY29kZSAiSUNVIjogJ0lDVScgZnJvbSAiUm9sZUNvZGUiIGRpc3BsYXkgJ0ludGVuc2l2ZSBjYXJlIHVuaXQnCmNvZGUgIkJpbGxpbmciOiAnYmlsbGluZycgZnJvbSAiRGlhZ25vc2lzIFJvbGUiIGRpc3BsYXkgJ0JpbGxpbmcnCgovLyBDb25kaXRpb24gQ2xpbmljYWwgU3RhdHVzIENvZGVzIC0gQ29uc2lkZXIgdmFsdWUgc2V0cyBmb3IgdGhlc2UKY29kZSAiYWN0aXZlIjogJ2FjdGl2ZScgZnJvbSAiQ29uZGl0aW9uQ2xpbmljYWxTdGF0dXNDb2RlcyIKY29kZSAicmVjdXJyZW5jZSI6ICdyZWN1cnJlbmNlJyBmcm9tICJDb25kaXRpb25DbGluaWNhbFN0YXR1c0NvZGVzIgpjb2RlICJyZWxhcHNlIjogJ3JlbGFwc2UnIGZyb20gIkNvbmRpdGlvbkNsaW5pY2FsU3RhdHVzQ29kZXMiCmNvZGUgImluYWN0aXZlIjogJ2luYWN0aXZlJyBmcm9tICJDb25kaXRpb25DbGluaWNhbFN0YXR1c0NvZGVzIgpjb2RlICJyZW1pc3Npb24iOiAncmVtaXNzaW9uJyBmcm9tICJDb25kaXRpb25DbGluaWNhbFN0YXR1c0NvZGVzIgpjb2RlICJyZXNvbHZlZCI6ICdyZXNvbHZlZCcgZnJvbSAiQ29uZGl0aW9uQ2xpbmljYWxTdGF0dXNDb2RlcyIKCi8vIENvbmRpdGlvbiBWZXJpZmljYXRpb24gU3RhdHVzIENvZGVzIC0gQ29uc2lkZXIgdmFsdWUgc2V0cyBmb3IgdGhlc2UKY29kZSAidW5jb25maXJtZWQiOiAndW5jb25maXJtZWQnIGZyb20gQ29uZGl0aW9uVmVyaWZpY2F0aW9uU3RhdHVzQ29kZXMKY29kZSAicHJvdmlzaW9uYWwiOiAncHJvdmlzaW9uYWwnIGZyb20gQ29uZGl0aW9uVmVyaWZpY2F0aW9uU3RhdHVzQ29kZXMKY29kZSAiZGlmZmVyZW50aWFsIjogJ2RpZmZlcmVudGlhbCcgZnJvbSBDb25kaXRpb25WZXJpZmljYXRpb25TdGF0dXNDb2Rlcwpjb2RlICJjb25maXJtZWQiOiAnY29uZmlybWVkJyBmcm9tIENvbmRpdGlvblZlcmlmaWNhdGlvblN0YXR1c0NvZGVzCmNvZGUgInJlZnV0ZWQiOiAncmVmdXRlZCcgZnJvbSBDb25kaXRpb25WZXJpZmljYXRpb25TdGF0dXNDb2Rlcwpjb2RlICJlbnRlcmVkLWluLWVycm9yIjogJ2VudGVyZWQtaW4tZXJyb3InIGZyb20gQ29uZGl0aW9uVmVyaWZpY2F0aW9uU3RhdHVzQ29kZXMKCmNvZGUgImFsbGVyZ3ktYWN0aXZlIjogJ2FjdGl2ZScgZnJvbSAiQWxsZXJneUludG9sZXJhbmNlQ2xpbmljYWxTdGF0dXNDb2RlcyIKY29kZSAiYWxsZXJneS1pbmFjdGl2ZSI6ICdpbmFjdGl2ZScgZnJvbSAiQWxsZXJneUludG9sZXJhbmNlQ2xpbmljYWxTdGF0dXNDb2RlcyIKY29kZSAiYWxsZXJneS1yZXNvbHZlZCI6ICdyZXNvbHZlZCcgZnJvbSAiQWxsZXJneUludG9sZXJhbmNlQ2xpbmljYWxTdGF0dXNDb2RlcyIKCi8vIEFsbGVyZ3kvSW50b2xlcmFuY2UgVmVyaWZpY2F0aW9uIFN0YXR1cyBDb2RlcyAtIENvbnNpZGVyIHZhbHVlIHNldHMgZm9yIHRoZXNlCmNvZGUgImFsbGVyZ3ktdW5jb25maXJtZWQiOiAndW5jb25maXJtZWQnIGZyb20gQWxsZXJneUludG9sZXJhbmNlVmVyaWZpY2F0aW9uU3RhdHVzQ29kZXMKY29kZSAiYWxsZXJneS1jb25maXJtZWQiOiAnY29uZmlybWVkJyBmcm9tIEFsbGVyZ3lJbnRvbGVyYW5jZVZlcmlmaWNhdGlvblN0YXR1c0NvZGVzCmNvZGUgImFsbGVyZ3ktcmVmdXRlZCI6ICdyZWZ1dGVkJyBmcm9tIEFsbGVyZ3lJbnRvbGVyYW5jZVZlcmlmaWNhdGlvblN0YXR1c0NvZGVzCgovLyBNZWRpY2F0aW9uUmVxdWVzdCBDYXRlZ29yeSBDb2Rlcwpjb2RlICJDb21tdW5pdHkiOiAnY29tbXVuaXR5JyBmcm9tICJNZWRpY2F0aW9uUmVxdWVzdENhdGVnb3J5IiBkaXNwbGF5ICdDb21tdW5pdHknCmNvZGUgIkRpc2NoYXJnZSI6ICdkaXNjaGFyZ2UnIGZyb20gIk1lZGljYXRpb25SZXF1ZXN0Q2F0ZWdvcnkiIGRpc3BsYXkgJ0Rpc2NoYXJnZScKCi8vIERpYWdub3NpcyBSb2xlIENvZGVzCmNvZGUgIkFEIjogJ0FEJyBmcm9tICJEaWFnbm9zaXMgUm9sZSIgZGlzcGxheSAnQWRtaXNzaW9uIGRpYWdub3NpcycKY29kZSAiREQiOiAnREQnIGZyb20gIkRpYWdub3NpcyBSb2xlIiBkaXNwbGF5ICdEaXNjaGFyZ2UgZGlhZ25vc2lzJwpjb2RlICJDQyI6ICdDQycgZnJvbSAiRGlhZ25vc2lzIFJvbGUiIGRpc3BsYXkgJ0NoaWVmIGNvbXBsYWludCcKY29kZSAiQ00iOiAnQ00nIGZyb20gIkRpYWdub3NpcyBSb2xlIiBkaXNwbGF5ICdDb21vcmJpZGl0eSBkaWFnbm9zaXMnCmNvZGUgInByZS1vcCI6ICdwcmUtb3AnIGZyb20gIkRpYWdub3NpcyBSb2xlIiBkaXNwbGF5ICdwcmUtb3AgZGlhZ25vc2lzJwpjb2RlICJwb3N0LW9wIjogJ3Bvc3Qtb3AnIGZyb20gIkRpYWdub3NpcyBSb2xlIiBkaXNwbGF5ICdwb3N0LW9wIGRpYWdub3NpcycKY29kZSAiYmlsbGluZyI6ICdiaWxsaW5nJyBmcm9tICJEaWFnbm9zaXMgUm9sZSIgZGlzcGxheSAnYmlsbGluZyBkaWFnbm9zaXMnCgpjb250ZXh0IFBhdGllbnQKCi8qCkBkZXNjcmlwdGlvbjogTm9ybWFsaXplcyBhIHZhbHVlIHRoYXQgaXMgYSBjaG9pY2Ugb2YgdGltaW5nLXZhbHVlZCB0eXBlcyB0byBhbiBlcXVpdmFsZW50IGludGVydmFsCkBjb21tZW50OiBOb3JtYWxpemVzIGEgY2hvaWNlIHR5cGUgb2YgRkhJUi5kYXRlVGltZSwgRkhJUi5QZXJpb2QsIEZISVIuVGltaW5nLCBGSElSLmluc3RhbmNlLCBGSElSLnN0cmluZywgRkhJUi5BZ2UsIG9yIEZISVIuUmFuZ2UgdHlwZXMKdG8gYW4gZXF1aXZhbGVudCBpbnRlcnZhbC4gVGhpcyBzZWxlY3Rpb24gb2YgY2hvaWNlIHR5cGVzIGlzIGEgc3VwZXJzZXQgb2YgdGhlIG1ham9yaXR5IG9mIGNob2ljZSB0eXBlcyB0aGF0IGFyZSB1c2VkIGFzIHBvc3NpYmxlCnJlcHJlc2VudGF0aW9ucyBmb3IgdGltaW5nLXZhbHVlZCBlbGVtZW50cyBpbiBGSElSLCBhbGxvd2luZyB0aGlzIGZ1bmN0aW9uIHRvIGJlIHVzZWQgYWNyb3NzIGFueSByZXNvdXJjZS4gTk9URTogRHVlIHRvIHRoZQpjb21wbGV4aXR5IG9mIGRldGVybWluaW5nIGEgc2luZ2xlIGludGVydmFsIGZyb20gYSBUaW1pbmcgb3IgU3RyaW5nIHR5cGUsIHRoaXMgZnVuY3Rpb24gd2lsbCB0aHJvdyBhIHJ1bi10aW1lIGV4Y2VwdGlvbiBpZiBpdCBpcyB1c2VkCndpdGggYSBUaW1pbmcgb3IgU3RyaW5nLgoqLwpkZWZpbmUgZnVuY3Rpb24gVG9JbnRlcnZhbChjaG9pY2UgQ2hvaWNlPEZISVIuZGF0ZVRpbWUsIEZISVIuUGVyaW9kLCBGSElSLlRpbWluZywgRkhJUi5pbnN0YW50LCBGSElSLnN0cmluZywgRkhJUi5BZ2UsIEZISVIuUmFuZ2U+KToKICBjYXNlCgkgIHdoZW4gY2hvaWNlIGlzIEZISVIuZGF0ZVRpbWUgdGhlbgogICAgCUludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoY2hvaWNlIGFzIEZISVIuZGF0ZVRpbWUpLCBGSElSSGVscGVycy5Ub0RhdGVUaW1lKGNob2ljZSBhcyBGSElSLmRhdGVUaW1lKV0KCQl3aGVuIGNob2ljZSBpcyBGSElSLlBlcmlvZCB0aGVuCiAgCQlGSElSSGVscGVycy5Ub0ludGVydmFsKGNob2ljZSBhcyBGSElSLlBlcmlvZCkKCQl3aGVuIGNob2ljZSBpcyBGSElSLmluc3RhbnQgdGhlbgoJCQlJbnRlcnZhbFtGSElSSGVscGVycy5Ub0RhdGVUaW1lKGNob2ljZSBhcyBGSElSLmluc3RhbnQpLCBGSElSSGVscGVycy5Ub0RhdGVUaW1lKGNob2ljZSBhcyBGSElSLmluc3RhbnQpXQoJCXdoZW4gY2hvaWNlIGlzIEZISVIuQWdlIHRoZW4KCQkgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZShQYXRpZW50LmJpcnRoRGF0ZSkgKyBGSElSSGVscGVycy5Ub1F1YW50aXR5KGNob2ljZSBhcyBGSElSLkFnZSksCgkJCSAgRkhJUkhlbHBlcnMuVG9EYXRlKFBhdGllbnQuYmlydGhEYXRlKSArIEZISVJIZWxwZXJzLlRvUXVhbnRpdHkoY2hvaWNlIGFzIEZISVIuQWdlKSArIDEgeWVhcikKCQl3aGVuIGNob2ljZSBpcyBGSElSLlJhbmdlIHRoZW4KCQkgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZShQYXRpZW50LmJpcnRoRGF0ZSkgKyBGSElSSGVscGVycy5Ub1F1YW50aXR5KChjaG9pY2UgYXMgRkhJUi5SYW5nZSkubG93KSwKCQkJICBGSElSSGVscGVycy5Ub0RhdGUoUGF0aWVudC5iaXJ0aERhdGUpICsgRkhJUkhlbHBlcnMuVG9RdWFudGl0eSgoY2hvaWNlIGFzIEZISVIuUmFuZ2UpLmhpZ2gpICsgMSB5ZWFyKQoJCXdoZW4gY2hvaWNlIGlzIEZISVIuVGltaW5nIHRoZW4KCQkgIE1lc3NhZ2UobnVsbCBhcyBJbnRlcnZhbDxEYXRlVGltZT4sIHRydWUsICcxJywgJ0Vycm9yJywgJ0Nhbm5vdCBjb21wdXRlIGEgc2luZ2xlIGludGVydmFsIGZyb20gYSBUaW1pbmcgdHlwZScpCiAgICB3aGVuIGNob2ljZSBpcyBGSElSLnN0cmluZyB0aGVuCiAgICAgIE1lc3NhZ2UobnVsbCBhcyBJbnRlcnZhbDxEYXRlVGltZT4sIHRydWUsICcxJywgJ0Vycm9yJywgJ0Nhbm5vdCBjb21wdXRlIGFuIGludGVydmFsIGZyb20gYSBTdHJpbmcgdmFsdWUnKQoJCWVsc2UKCQkJbnVsbCBhcyBJbnRlcnZhbDxEYXRlVGltZT4KCWVuZAoKLyoKQGRlc2NyaXB0aW9uOiBSZXR1cm5zIGFuIGludGVydmFsIHJlcHJlc2VudGluZyB0aGUgbm9ybWFsaXplZCBBYmF0ZW1lbnQgb2YgYSBnaXZlbiBDb25kaXRpb24gcmVzb3VyY2UuCkBjb21tZW50OiBOT1RFOiBEdWUgdG8gdGhlIGNvbXBsZXhpdHkgb2YgZGV0ZXJtaW5pbmcgYW4gaW50ZXJ2YWwgZnJvbSBhIFN0cmluZywgdGhpcyBmdW5jdGlvbiB3aWxsIHRocm93CmEgcnVuLXRpbWUgZXhjZXB0aW9uIGlmIHVzZWQgd2l0aCBhIENvbmRpdGlvbiBpbnN0YW5jZSB0aGF0IGhhcyBhIFN0cmluZyBhcyB0aGUgYWJhdGVtZW50IHZhbHVlLgoqLwpkZWZpbmUgZnVuY3Rpb24gVG9BYmF0ZW1lbnRJbnRlcnZhbChjb25kaXRpb24gQ29uZGl0aW9uKToKCWlmIGNvbmRpdGlvbi5hYmF0ZW1lbnQgaXMgRkhJUi5kYXRlVGltZSB0aGVuCgkgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoY29uZGl0aW9uLmFiYXRlbWVudCBhcyBGSElSLmRhdGVUaW1lKSwgRkhJUkhlbHBlcnMuVG9EYXRlVGltZShjb25kaXRpb24uYWJhdGVtZW50IGFzIEZISVIuZGF0ZVRpbWUpXQoJZWxzZSBpZiBjb25kaXRpb24uYWJhdGVtZW50IGlzIEZISVIuUGVyaW9kIHRoZW4KCSAgRkhJUkhlbHBlcnMuVG9JbnRlcnZhbChjb25kaXRpb24uYWJhdGVtZW50IGFzIEZISVIuUGVyaW9kKQoJZWxzZSBpZiBjb25kaXRpb24uYWJhdGVtZW50IGlzIEZISVIuc3RyaW5nIHRoZW4KICAgIE1lc3NhZ2UobnVsbCBhcyBJbnRlcnZhbDxEYXRlVGltZT4sIHRydWUsICcxJywgJ0Vycm9yJywgJ0Nhbm5vdCBjb21wdXRlIGFuIGludGVydmFsIGZyb20gYSBTdHJpbmcgdmFsdWUnKQoJZWxzZSBpZiBjb25kaXRpb24uYWJhdGVtZW50IGlzIEZISVIuQWdlIHRoZW4KCQlJbnRlcnZhbFtGSElSSGVscGVycy5Ub0RhdGUoUGF0aWVudC5iaXJ0aERhdGUpICsgRkhJUkhlbHBlcnMuVG9RdWFudGl0eShjb25kaXRpb24uYWJhdGVtZW50IGFzIEZISVIuQWdlKSwKCQkJRkhJUkhlbHBlcnMuVG9EYXRlKFBhdGllbnQuYmlydGhEYXRlKSArIEZISVJIZWxwZXJzLlRvUXVhbnRpdHkoY29uZGl0aW9uLmFiYXRlbWVudCBhcyBGSElSLkFnZSkgKyAxIHllYXIpCgllbHNlIGlmIGNvbmRpdGlvbi5hYmF0ZW1lbnQgaXMgRkhJUi5SYW5nZSB0aGVuCgkgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZShQYXRpZW50LmJpcnRoRGF0ZSkgKyBGSElSSGVscGVycy5Ub1F1YW50aXR5KChjb25kaXRpb24uYWJhdGVtZW50IGFzIEZISVIuUmFuZ2UpLmxvdyksCgkJICBGSElSSGVscGVycy5Ub0RhdGUoUGF0aWVudC5iaXJ0aERhdGUpICsgRkhJUkhlbHBlcnMuVG9RdWFudGl0eSgoY29uZGl0aW9uLmFiYXRlbWVudCBhcyBGSElSLlJhbmdlKS5oaWdoKSArIDEgeWVhcikKCWVsc2UgaWYgY29uZGl0aW9uLmFiYXRlbWVudCBpcyBGSElSLmJvb2xlYW4gdGhlbgoJICBJbnRlcnZhbFtlbmQgb2YgVG9JbnRlcnZhbChjb25kaXRpb24ub25zZXQpLCBjb25kaXRpb24ucmVjb3JkZWREYXRlKQoJZWxzZSBudWxsCgovKgpAZGVzY3JpcHRpb246IFJldHVybnMgYW4gaW50ZXJ2YWwgcmVwcmVzZW50aW5nIHRoZSBub3JtYWxpemVkIHByZXZhbGVuY2UgcGVyaW9kIG9mIGEgZ2l2ZW4gQ29uZGl0aW9uIHJlc291cmNlLgpAY29tbWVudDogVXNlcyB0aGUgVG9JbnRlcnZhbCBhbmQgVG9BYmF0ZW1lbnRJbnRlcnZhbCBmdW5jdGlvbnMgdG8gZGV0ZXJtaW5lIHRoZSB3aWRlc3QgcG90ZW50aWFsIGludGVydmFsIGZyb20Kb25zZXQgdG8gYWJhdGVtZW50IGFzIHNwZWNpZmllZCBpbiB0aGUgZ2l2ZW4gQ29uZGl0aW9uLgoqLwpkZWZpbmUgZnVuY3Rpb24gVG9QcmV2YWxlbmNlSW50ZXJ2YWwoY29uZGl0aW9uIENvbmRpdGlvbik6CmlmIGNvbmRpdGlvbi5jbGluaWNhbFN0YXR1cyB+ICJhY3RpdmUiCiAgb3IgY29uZGl0aW9uLmNsaW5pY2FsU3RhdHVzIH4gInJlY3VycmVuY2UiCiAgb3IgY29uZGl0aW9uLmNsaW5pY2FsU3RhdHVzIH4gInJlbGFwc2UiIHRoZW4KICBJbnRlcnZhbFtzdGFydCBvZiBUb0ludGVydmFsKGNvbmRpdGlvbi5vbnNldCksIGVuZCBvZiBUb0FiYXRlbWVudEludGVydmFsKGNvbmRpdGlvbildCmVsc2UKICBJbnRlcnZhbFtzdGFydCBvZiBUb0ludGVydmFsKGNvbmRpdGlvbi5vbnNldCksIGVuZCBvZiBUb0FiYXRlbWVudEludGVydmFsKGNvbmRpdGlvbikpCgovKgpAZGVzY3JpcHRpb246IFJldHVybnMgYW55IGV4dGVuc2lvbnMgZGVmaW5lZCBvbiB0aGUgZ2l2ZW4gcmVzb3VyY2Ugd2l0aCB0aGUgc3BlY2lmaWVkIHVybC4KQGNvbW1lbnQ6IE5PVEU6IEV4dGVuc2lvbnMgYXJlIG5vdCB0aGUgcHJlZmVycmVkIGFwcHJvYWNoLCBidXQgYXJlIHVzZWQgYXMgYSB3YXkgdG8gYWNjZXNzCmNvbnRlbnQgdGhhdCBpcyBkZWZpbmVkIGJ5IGV4dGVuc2lvbnMgYnV0IG5vdCB5ZXQgc3VyZmFjZWQgaW4gdGhlCkNRTCBtb2RlbCBpbmZvLgoqLwpkZWZpbmUgZnVuY3Rpb24gRXh0ZW5zaW9ucyhkb21haW5SZXNvdXJjZSBEb21haW5SZXNvdXJjZSwgdXJsIFN0cmluZyk6CiAgZG9tYWluUmVzb3VyY2UuZXh0ZW5zaW9uIEUKCSAgd2hlcmUgRS51cmwgPSB1cmwKCQlyZXR1cm4gRQoKLyoKQGRlc2NyaXB0aW9uOiBSZXR1cm5zIHRoZSBzaW5nbGUgZXh0ZW5zaW9uIChpZiBwcmVzZW50KSBvbiB0aGUgZ2l2ZW4gcmVzb3VyY2Ugd2l0aCB0aGUgc3BlY2lmaWVkIHVybC4KQGNvbW1lbnQ6IFRoaXMgZnVuY3Rpb24gdXNlcyBzaW5nbGV0b24gZnJvbSB0byBlbnN1cmUgdGhhdCBhIHJ1bi10aW1lIGV4Y2VwdGlvbiBpcyB0aHJvd24gaWYgdGhlcmUKaXMgbW9yZSB0aGFuIG9uZSBleHRlbnNpb24gb24gdGhlIGdpdmVuIHJlc291cmNlIHdpdGggdGhlIHNwZWNpZmllZCB1cmwuCiovCmRlZmluZSBmdW5jdGlvbiBFeHRlbnNpb24oZG9tYWluUmVzb3VyY2UgRG9tYWluUmVzb3VyY2UsIHVybCBTdHJpbmcpOgogIHNpbmdsZXRvbiBmcm9tICJFeHRlbnNpb25zIihkb21haW5SZXNvdXJjZSwgdXJsKQoKLyoKQGRlc2NyaXB0aW9uOiBSZXR1cm5zIGFueSBleHRlbnNpb25zIGRlZmluZWQgb24gdGhlIGdpdmVuIGVsZW1lbnQgd2l0aCB0aGUgc3BlY2lmaWVkIHVybC4KQGNvbW1lbnQ6IE5PVEU6IEV4dGVuc2lvbnMgYXJlIG5vdCB0aGUgcHJlZmVycmVkIGFwcHJvYWNoLCBidXQgYXJlIHVzZWQgYXMgYSB3YXkgdG8gYWNjZXNzCmNvbnRlbnQgdGhhdCBpcyBkZWZpbmVkIGJ5IGV4dGVuc2lvbnMgYnV0IG5vdCB5ZXQgc3VyZmFjZWQgaW4gdGhlIENRTCBtb2RlbCBpbmZvLgoqLwpkZWZpbmUgZnVuY3Rpb24gRXh0ZW5zaW9ucyhlbGVtZW50IEVsZW1lbnQsIHVybCBTdHJpbmcpOgogIGVsZW1lbnQuZXh0ZW5zaW9uIEUKCSAgd2hlcmUgRS51cmwgPSB1cmwKCQlyZXR1cm4gRQoKLyoKQGRlc2NyaXB0aW9uOiBSZXR1cm5zIHRoZSBzaW5nbGUgZXh0ZW5zaW9uIChpZiBwcmVzZW50KSBvbiB0aGUgZ2l2ZW4gZWxlbWVudCB3aXRoIHRoZSBzcGVjaWZpZWQgdXJsLgpAY29tbWVudDogVGhpcyBmdW5jdGlvbiB1c2VzIHNpbmdsZXRvbiBmcm9tIHRvIGVuc3VyZSB0aGF0IGEgcnVuLXRpbWUgZXhjZXB0aW9uIGlzIHRocm93biBpZiB0aGVyZQppcyBtb3JlIHRoYW4gb25lIGV4dGVuc2lvbiBvbiB0aGUgZ2l2ZW4gcmVzb3VyY2Ugd2l0aCB0aGUgc3BlY2lmaWVkIHVybC4KKi8KZGVmaW5lIGZ1bmN0aW9uIEV4dGVuc2lvbihlbGVtZW50IEVsZW1lbnQsIHVybCBTdHJpbmcpOgogIHNpbmdsZXRvbiBmcm9tIEV4dGVuc2lvbnMoZWxlbWVudCwgdXJsKQoKLyoKQGRlc2NyaXB0aW9uOiBSZXR1cm5zIGFueSBtb2RpZmllciBleHRlbnNpb25zIGRlZmluZWQgb24gdGhlIGdpdmVuIHJlc291cmNlIHdpdGggdGhlIHNwZWNpZmllZCB1cmwuCkBjb21tZW50OiBOT1RFOiBFeHRlbnNpb25zIGFyZSBub3QgdGhlIHByZWZlcnJlZCBhcHByb2FjaCwgYnV0IGFyZSB1c2VkIGFzIGEgd2F5IHRvIGFjY2Vzcwpjb250ZW50IHRoYXQgaXMgZGVmaW5lZCBieSBleHRlbnNpb25zIGJ1dCBub3QgeWV0IHN1cmZhY2VkIGluIHRoZQpDUUwgbW9kZWwgaW5mby4KKi8KZGVmaW5lIGZ1bmN0aW9uIE1vZGlmaWVyRXh0ZW5zaW9ucyhkb21haW5SZXNvdXJjZSBEb21haW5SZXNvdXJjZSwgdXJsIFN0cmluZyk6CiAgZG9tYWluUmVzb3VyY2UubW9kaWZpZXJFeHRlbnNpb24gRQoJICB3aGVyZSBFLnVybCA9IHVybAoJCXJldHVybiBFCgovKgpAZGVzY3JpcHRpb246IFJldHVybnMgdGhlIHNpbmdsZSBtb2RpZmllciBleHRlbnNpb24gKGlmIHByZXNlbnQpIG9uIHRoZSBnaXZlbiByZXNvdXJjZSB3aXRoIHRoZSBzcGVjaWZpZWQgdXJsLgpAY29tbWVudDogVGhpcyBmdW5jdGlvbiB1c2VzIHNpbmdsZXRvbiBmcm9tIHRvIGVuc3VyZSB0aGF0IGEgcnVuLXRpbWUgZXhjZXB0aW9uIGlzIHRocm93biBpZiB0aGVyZQppcyBtb3JlIHRoYW4gb25lIGV4dGVuc2lvbiBvbiB0aGUgZ2l2ZW4gcmVzb3VyY2Ugd2l0aCB0aGUgc3BlY2lmaWVkIHVybC4KKi8KZGVmaW5lIGZ1bmN0aW9uIE1vZGlmaWVyRXh0ZW5zaW9uKGRvbWFpblJlc291cmNlIERvbWFpblJlc291cmNlLCB1cmwgU3RyaW5nKToKICBzaW5nbGV0b24gZnJvbSBNb2RpZmllckV4dGVuc2lvbnMoZG9tYWluUmVzb3VyY2UsIHVybCkKCi8qCkBkZXNjcmlwdGlvbjogUmV0dXJucyBhbnkgbW9kaWZpZXIgZXh0ZW5zaW9ucyBkZWZpbmVkIG9uIHRoZSBnaXZlbiBlbGVtZW50IHdpdGggdGhlIHNwZWNpZmllZCB1cmwuCkBjb21tZW50OiBOT1RFOiBFeHRlbnNpb25zIGFyZSBub3QgdGhlIHByZWZlcnJlZCBhcHByb2FjaCwgYnV0IGFyZSB1c2VkIGFzIGEgd2F5IHRvIGFjY2Vzcwpjb250ZW50IHRoYXQgaXMgZGVmaW5lZCBieSBleHRlbnNpb25zIGJ1dCBub3QgeWV0IHN1cmZhY2VkIGluIHRoZSBDUUwgbW9kZWwgaW5mby4KKi8KZGVmaW5lIGZ1bmN0aW9uIE1vZGlmaWVyRXh0ZW5zaW9ucyhlbGVtZW50IEJhY2tib25lRWxlbWVudCwgdXJsIFN0cmluZyk6CiAgZWxlbWVudC5tb2RpZmllckV4dGVuc2lvbiBFCgkgIHdoZXJlIEUudXJsID0gdXJsCgkJcmV0dXJuIEUKCi8qCkBkZXNjcmlwdGlvbjogUmV0dXJucyB0aGUgc2luZ2xlIG1vZGlmaWVyIGV4dGVuc2lvbiAoaWYgcHJlc2VudCkgb24gdGhlIGdpdmVuIGVsZW1lbnQgd2l0aCB0aGUgc3BlY2lmaWVkIHVybC4KQGNvbW1lbnQ6IFRoaXMgZnVuY3Rpb24gdXNlcyBzaW5nbGV0b24gZnJvbSB0byBlbnN1cmUgdGhhdCBhIHJ1bi10aW1lIGV4Y2VwdGlvbiBpcyB0aHJvd24gaWYgdGhlcmUKaXMgbW9yZSB0aGFuIG9uZSBleHRlbnNpb24gb24gdGhlIGdpdmVuIHJlc291cmNlIHdpdGggdGhlIHNwZWNpZmllZCB1cmwuCiovCmRlZmluZSBmdW5jdGlvbiBNb2RpZmllckV4dGVuc2lvbihlbGVtZW50IEJhY2tib25lRWxlbWVudCwgdXJsIFN0cmluZyk6CiAgc2luZ2xldG9uIGZyb20gTW9kaWZpZXJFeHRlbnNpb25zKGVsZW1lbnQsIHVybCkKCi8qCkBkZXNjcmlwdGlvbjogUmV0dXJucyBhbnkgYmFzZS1GSElSIGV4dGVuc2lvbnMgZGVmaW5lZCBvbiB0aGUgZ2l2ZW4gcmVzb3VyY2Ugd2l0aCB0aGUgc3BlY2lmaWVkIGlkLgpAY29tbWVudDogTk9URTogRXh0ZW5zaW9ucyBhcmUgbm90IHRoZSBwcmVmZXJyZWQgYXBwcm9hY2gsIGJ1dCBhcmUgdXNlZCBhcyBhIHdheSB0byBhY2Nlc3MKY29udGVudCB0aGF0IGlzIGRlZmluZWQgYnkgZXh0ZW5zaW9ucyBidXQgbm90IHlldCBzdXJmYWNlZCBpbiB0aGUgQ1FMIG1vZGVsIGluZm8uCiovCmRlZmluZSBmdW5jdGlvbiBCYXNlRXh0ZW5zaW9ucyhkb21haW5SZXNvdXJjZSBEb21haW5SZXNvdXJjZSwgaWQgU3RyaW5nKToKICBkb21haW5SZXNvdXJjZS5leHRlbnNpb24gRQoJICB3aGVyZSBFLnVybCA9ICgnaHR0cDovL2hsNy5vcmcvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uLycgKyBpZCkKCQlyZXR1cm4gRQoKLyoKQGRlc2NyaXB0aW9uOiBSZXR1cm5zIHRoZSBzaW5nbGUgYmFzZS1GSElSIGV4dGVuc2lvbiAoaWYgcHJlc2VudCkgb24gdGhlIGdpdmVuIHJlc291cmNlIHdpdGggdGhlIHNwZWNpZmllZCBpZC4KQGNvbW1lbnQ6IFRoaXMgZnVuY3Rpb24gdXNlcyBzaW5nbGV0b24gZnJvbSB0byBlbnN1cmUgdGhhdCBhIHJ1bi10aW1lIGV4Y2VwdGlvbiBpcyB0aHJvd24gaWYgdGhlcmUKaXMgbW9yZSB0aGFuIG9uZSBleHRlbnNpb24gb24gdGhlIGdpdmVuIHJlc291cmNlIHdpdGggdGhlIHNwZWNpZmllZCB1cmwuCiovCmRlZmluZSBmdW5jdGlvbiBCYXNlRXh0ZW5zaW9uKGRvbWFpblJlc291cmNlIERvbWFpblJlc291cmNlLCBpZCBTdHJpbmcpOgogIHNpbmdsZXRvbiBmcm9tIEJhc2VFeHRlbnNpb25zKGRvbWFpblJlc291cmNlLCBpZCkKCi8qCkBkZXNjcmlwdGlvbjogUmV0dXJucyBhbnkgYmFzZS1GSElSIGV4dGVuc2lvbnMgZGVmaW5lZCBvbiB0aGUgZ2l2ZW4gZWxlbWVudCB3aXRoIHRoZSBzcGVjaWZpZWQgaWQuCkBjb21tZW50OiBOT1RFOiBFeHRlbnNpb25zIGFyZSBub3QgdGhlIHByZWZlcnJlZCBhcHByb2FjaCwgYnV0IGFyZSB1c2VkIGFzIGEgd2F5IHRvIGFjY2Vzcwpjb250ZW50IHRoYXQgaXMgZGVmaW5lZCBieSBleHRlbnNpb25zIGJ1dCBub3QgeWV0IHN1cmZhY2VkIGluIHRoZSBDUUwgbW9kZWwgaW5mby4KKi8KZGVmaW5lIGZ1bmN0aW9uIEJhc2VFeHRlbnNpb25zKGVsZW1lbnQgRWxlbWVudCwgaWQgU3RyaW5nKToKICBlbGVtZW50LmV4dGVuc2lvbiBFCgkgIHdoZXJlIEUudXJsID0gKCdodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vJyArIGlkKQoJCXJldHVybiBFCgovKgpAZGVzY3JpcHRpb246IFJldHVybnMgdGhlIHNpbmdsZSBiYXNlLUZISVIgZXh0ZW5zaW9uIChpZiBwcmVzZW50KSBvbiB0aGUgZ2l2ZW4gZWxlbWVudCB3aXRoIHRoZSBzcGVjaWZpZWQgaWQuCkBjb21tZW50OiBUaGlzIGZ1bmN0aW9uIHVzZXMgc2luZ2xldG9uIGZyb20gdG8gZW5zdXJlIHRoYXQgYSBydW4tdGltZSBleGNlcHRpb24gaXMgdGhyb3duIGlmIHRoZXJlCmlzIG1vcmUgdGhhbiBvbmUgZXh0ZW5zaW9uIG9uIHRoZSBnaXZlbiByZXNvdXJjZSB3aXRoIHRoZSBzcGVjaWZpZWQgdXJsLgoqLwpkZWZpbmUgZnVuY3Rpb24gQmFzZUV4dGVuc2lvbihlbGVtZW50IEVsZW1lbnQsIGlkIFN0cmluZyk6CiAgc2luZ2xldG9uIGZyb20gQmFzZUV4dGVuc2lvbnMoZWxlbWVudCwgaWQpCgovKgpAZGVzY3JpcHRpb246IFJldHVybnMgYW55IGJhc2UtRkhJUiBtb2RpZmllciBleHRlbnNpb25zIGRlZmluZWQgb24gdGhlIGdpdmVuIHJlc291cmNlIHdpdGggdGhlIHNwZWNpZmllZCBpZC4KQGNvbW1lbnQ6IE5PVEU6IEV4dGVuc2lvbnMgYXJlIG5vdCB0aGUgcHJlZmVycmVkIGFwcHJvYWNoLCBidXQgYXJlIHVzZWQgYXMgYSB3YXkgdG8gYWNjZXNzCmNvbnRlbnQgdGhhdCBpcyBkZWZpbmVkIGJ5IGV4dGVuc2lvbnMgYnV0IG5vdCB5ZXQgc3VyZmFjZWQgaW4gdGhlIENRTCBtb2RlbCBpbmZvLgoqLwpkZWZpbmUgZnVuY3Rpb24gQmFzZU1vZGlmaWVyRXh0ZW5zaW9ucyhkb21haW5SZXNvdXJjZSBEb21haW5SZXNvdXJjZSwgaWQgU3RyaW5nKToKICBkb21haW5SZXNvdXJjZS5tb2RpZmllckV4dGVuc2lvbiBFCgkgIHdoZXJlIEUudXJsID0gKCdodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vJyArIGlkKQoJCXJldHVybiBFCgovKgpAZGVzY3JpcHRpb246IFJldHVybnMgdGhlIHNpbmdsZSBiYXNlLUZISVIgbW9kaWZpZXIgZXh0ZW5zaW9uIChpZiBwcmVzZW50KSBvbiB0aGUgZ2l2ZW4gcmVzb3VyY2Ugd2l0aCB0aGUgc3BlY2lmaWVkIGlkLgpAY29tbWVudDogVGhpcyBmdW5jdGlvbiB1c2VzIHNpbmdsZXRvbiBmcm9tIHRvIGVuc3VyZSB0aGF0IGEgcnVuLXRpbWUgZXhjZXB0aW9uIGlzIHRocm93biBpZiB0aGVyZQppcyBtb3JlIHRoYW4gb25lIGV4dGVuc2lvbiBvbiB0aGUgZ2l2ZW4gcmVzb3VyY2Ugd2l0aCB0aGUgc3BlY2lmaWVkIHVybC4KKi8KZGVmaW5lIGZ1bmN0aW9uIEJhc2VNb2RpZmllckV4dGVuc2lvbihkb21haW5SZXNvdXJjZSBEb21haW5SZXNvdXJjZSwgaWQgU3RyaW5nKToKICBzaW5nbGV0b24gZnJvbSBCYXNlTW9kaWZpZXJFeHRlbnNpb25zKGRvbWFpblJlc291cmNlLCBpZCkKCi8qCkBkZXNjcmlwdGlvbjogUmV0dXJucyBhbnkgYmFzZS1GSElSIG1vZGlmaWVyIGV4dGVuc2lvbnMgZGVmaW5lZCBvbiB0aGUgZ2l2ZW4gZWxlbWVudCB3aXRoIHRoZSBzcGVjaWZpZWQgaWQuCkBjb21tZW50OiBOT1RFOiBFeHRlbnNpb25zIGFyZSBub3QgdGhlIHByZWZlcnJlZCBhcHByb2FjaCwgYnV0IGFyZSB1c2VkIGFzIGEgd2F5IHRvIGFjY2Vzcwpjb250ZW50IHRoYXQgaXMgZGVmaW5lZCBieSBleHRlbnNpb25zIGJ1dCBub3QgeWV0IHN1cmZhY2VkIGluIHRoZSBDUUwgbW9kZWwgaW5mby4KKi8KZGVmaW5lIGZ1bmN0aW9uIEJhc2VNb2RpZmllckV4dGVuc2lvbnMoZWxlbWVudCBCYWNrYm9uZUVsZW1lbnQsIGlkIFN0cmluZyk6CiAgZWxlbWVudC5tb2RpZmllckV4dGVuc2lvbiBFCgkgIHdoZXJlIEUudXJsID0gKCdodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vJyArIGlkKQoJCXJldHVybiBFCgovKgpAZGVzY3JpcHRpb246IFJldHVybnMgdGhlIHNpbmdsZSBiYXNlLUZISVIgZXh0ZW5zaW9uIChpZiBwcmVzZW50KSBvbiB0aGUgZ2l2ZW4gZWxlbWVudCB3aXRoIHRoZSBzcGVjaWZpZWQgaWQuCkBjb21tZW50OiBUaGlzIGZ1bmN0aW9uIHVzZXMgc2luZ2xldG9uIGZyb20gdG8gZW5zdXJlIHRoYXQgYSBydW4tdGltZSBleGNlcHRpb24gaXMgdGhyb3duIGlmIHRoZXJlCmlzIG1vcmUgdGhhbiBvbmUgZXh0ZW5zaW9uIG9uIHRoZSBnaXZlbiByZXNvdXJjZSB3aXRoIHRoZSBzcGVjaWZpZWQgdXJsLgoqLwpkZWZpbmUgZnVuY3Rpb24gQmFzZU1vZGlmaWVyRXh0ZW5zaW9uKGVsZW1lbnQgQmFja2JvbmVFbGVtZW50LCBpZCBTdHJpbmcpOgogIHNpbmdsZXRvbiBmcm9tIEJhc2VNb2RpZmllckV4dGVuc2lvbnMoZWxlbWVudCwgaWQp"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Library/FHIRCommon"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Library/FHIRHelpers",
+    "resource" : {
+      "resourceType" : "Library",
+      "id" : "FHIRHelpers",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Library</b><a name=\"FHIRHelpers\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Library &quot;FHIRHelpers&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Library/FHIRHelpers</code></p><p><b>version</b>: 4.0.1</p><p><b>name</b>: FHIRHelpers</p><p><b>title</b>: FHIRHelpers</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: Logic Library <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-library-type.html\">LibraryType</a>#logic-library)</span></p><p><b>description</b>: FHIRHelpers</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>(base64 data - 20586 bytes)</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/Library/FHIRHelpers",
+      "version" : "4.0.1",
+      "name" : "FHIRHelpers",
+      "title" : "FHIRHelpers",
+      "status" : "draft",
+      "experimental" : true,
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+          "code" : "logic-library"
+        }]
+      },
+      "description" : "FHIRHelpers",
+      "content" : [{
+        "contentType" : "text/cql",
+        "data" : "bGlicmFyeSBGSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMScKCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjEnCgpkZWZpbmUgZnVuY3Rpb24gVG9JbnRlcnZhbChwZXJpb2QgRkhJUi5QZXJpb2QpOgogICAgaWYgcGVyaW9kIGlzIG51bGwgdGhlbgogICAgICAgIG51bGwKICAgIGVsc2UKICAgICAgICBpZiBwZXJpb2QuInN0YXJ0IiBpcyBudWxsIHRoZW4KICAgICAgICAgICAgSW50ZXJ2YWwocGVyaW9kLiJzdGFydCIudmFsdWUsIHBlcmlvZC4iZW5kIi52YWx1ZV0KICAgICAgICBlbHNlCiAgICAgICAgICAgIEludGVydmFsW3BlcmlvZC4ic3RhcnQiLnZhbHVlLCBwZXJpb2QuImVuZCIudmFsdWVdCgpkZWZpbmUgZnVuY3Rpb24gVG9DYWxlbmRhclVuaXQodW5pdCBTeXN0ZW0uU3RyaW5nKToKICAgIGNhc2UgdW5pdAogICAgICAgIHdoZW4gJ21zJyB0aGVuICdtaWxsaXNlY29uZCcKICAgICAgICB3aGVuICdzJyB0aGVuICdzZWNvbmQnCiAgICAgICAgd2hlbiAnbWluJyB0aGVuICdtaW51dGUnCiAgICAgICAgd2hlbiAnaCcgdGhlbiAnaG91cicKICAgICAgICB3aGVuICdkJyB0aGVuICdkYXknCiAgICAgICAgd2hlbiAnd2snIHRoZW4gJ3dlZWsnCiAgICAgICAgd2hlbiAnbW8nIHRoZW4gJ21vbnRoJwogICAgICAgIHdoZW4gJ2EnIHRoZW4gJ3llYXInCiAgICAgICAgZWxzZSB1bml0CiAgICBlbmQKCmRlZmluZSBmdW5jdGlvbiBUb1F1YW50aXR5KHF1YW50aXR5IEZISVIuUXVhbnRpdHkpOgogICAgY2FzZQogICAgICAgIHdoZW4gcXVhbnRpdHkgaXMgbnVsbCB0aGVuIG51bGwKICAgICAgICB3aGVuIHF1YW50aXR5LnZhbHVlIGlzIG51bGwgdGhlbiBudWxsCiAgICAgICAgd2hlbiBxdWFudGl0eS5jb21wYXJhdG9yIGlzIG5vdCBudWxsIHRoZW4KICAgICAgICAgICAgTWVzc2FnZShudWxsLCB0cnVlLCAnRkhJUkhlbHBlcnMuVG9RdWFudGl0eS5Db21wYXJhdG9yUXVhbnRpdHlOb3RTdXBwb3J0ZWQnLCAnRXJyb3InLCAnRkhJUiBRdWFudGl0eSB2YWx1ZSBoYXMgYSBjb21wYXJhdG9yIGFuZCBjYW5ub3QgYmUgY29udmVydGVkIHRvIGEgU3lzdGVtLlF1YW50aXR5IHZhbHVlLicpCiAgICAgICAgd2hlbiBxdWFudGl0eS5zeXN0ZW0gaXMgbnVsbCBvciBxdWFudGl0eS5zeXN0ZW0udmFsdWUgPSAnaHR0cDovL3VuaXRzb2ZtZWFzdXJlLm9yZycKICAgICAgICAgICAgICBvciBxdWFudGl0eS5zeXN0ZW0udmFsdWUgPSAnaHR0cDovL2hsNy5vcmcvZmhpcnBhdGgvQ29kZVN5c3RlbS9jYWxlbmRhci11bml0cycgdGhlbgogICAgICAgICAgICBTeXN0ZW0uUXVhbnRpdHkgeyB2YWx1ZTogcXVhbnRpdHkudmFsdWUudmFsdWUsIHVuaXQ6IFRvQ2FsZW5kYXJVbml0KENvYWxlc2NlKHF1YW50aXR5LmNvZGUudmFsdWUsIHF1YW50aXR5LnVuaXQudmFsdWUsICcxJykpIH0KICAgICAgICBlbHNlCiAgICAgICAgICAgIE1lc3NhZ2UobnVsbCwgdHJ1ZSwgJ0ZISVJIZWxwZXJzLlRvUXVhbnRpdHkuSW52YWxpZEZISVJRdWFudGl0eScsICdFcnJvcicsICdJbnZhbGlkIEZISVIgUXVhbnRpdHkgY29kZTogJyAmIHF1YW50aXR5LnVuaXQudmFsdWUgJiAnICgnICYgcXVhbnRpdHkuc3lzdGVtLnZhbHVlICYgJ3wnICYgcXVhbnRpdHkuY29kZS52YWx1ZSAmICcpJykKICAgIGVuZAoKZGVmaW5lIGZ1bmN0aW9uIFRvUXVhbnRpdHlJZ25vcmluZ0NvbXBhcmF0b3IocXVhbnRpdHkgRkhJUi5RdWFudGl0eSk6CiAgICBjYXNlCiAgICAgICAgd2hlbiBxdWFudGl0eSBpcyBudWxsIHRoZW4gbnVsbAogICAgICAgIHdoZW4gcXVhbnRpdHkudmFsdWUgaXMgbnVsbCB0aGVuIG51bGwKICAgICAgICB3aGVuIHF1YW50aXR5LnN5c3RlbSBpcyBudWxsIG9yIHF1YW50aXR5LnN5c3RlbS52YWx1ZSA9ICdodHRwOi8vdW5pdHNvZm1lYXN1cmUub3JnJwogICAgICAgICAgICAgIG9yIHF1YW50aXR5LnN5c3RlbS52YWx1ZSA9ICdodHRwOi8vaGw3Lm9yZy9maGlycGF0aC9Db2RlU3lzdGVtL2NhbGVuZGFyLXVuaXRzJyB0aGVuCiAgICAgICAgICAgIFN5c3RlbS5RdWFudGl0eSB7IHZhbHVlOiBxdWFudGl0eS52YWx1ZS52YWx1ZSwgdW5pdDogVG9DYWxlbmRhclVuaXQoQ29hbGVzY2UocXVhbnRpdHkuY29kZS52YWx1ZSwgcXVhbnRpdHkudW5pdC52YWx1ZSwgJzEnKSkgfQogICAgICAgIGVsc2UKICAgICAgICAgICAgTWVzc2FnZShudWxsLCB0cnVlLCAnRkhJUkhlbHBlcnMuVG9RdWFudGl0eS5JbnZhbGlkRkhJUlF1YW50aXR5JywgJ0Vycm9yJywgJ0ludmFsaWQgRkhJUiBRdWFudGl0eSBjb2RlOiAnICYgcXVhbnRpdHkudW5pdC52YWx1ZSAmICcgKCcgJiBxdWFudGl0eS5zeXN0ZW0udmFsdWUgJiAnfCcgJiBxdWFudGl0eS5jb2RlLnZhbHVlICYgJyknKQogICAgZW5kCgpkZWZpbmUgZnVuY3Rpb24gVG9JbnRlcnZhbChxdWFudGl0eSBGSElSLlF1YW50aXR5KToKICAgIGlmIHF1YW50aXR5IGlzIG51bGwgdGhlbiBudWxsIGVsc2UKICAgICAgICBjYXNlIHF1YW50aXR5LmNvbXBhcmF0b3IudmFsdWUKICAgICAgICAgICAgd2hlbiAnPCcgdGhlbgogICAgICAgICAgICAgICAgSW50ZXJ2YWxbCiAgICAgICAgICAgICAgICAgICAgbnVsbCwKICAgICAgICAgICAgICAgICAgICBUb1F1YW50aXR5SWdub3JpbmdDb21wYXJhdG9yKHF1YW50aXR5KQogICAgICAgICAgICAgICAgKQogICAgICAgICAgICB3aGVuICc8PScgdGhlbgogICAgICAgICAgICAgICAgSW50ZXJ2YWxbCiAgICAgICAgICAgICAgICAgICAgbnVsbCwKICAgICAgICAgICAgICAgICAgICBUb1F1YW50aXR5SWdub3JpbmdDb21wYXJhdG9yKHF1YW50aXR5KQogICAgICAgICAgICAgICAgXQogICAgICAgICAgICB3aGVuICc+PScgdGhlbgogICAgICAgICAgICAgICAgSW50ZXJ2YWxbCiAgICAgICAgICAgICAgICAgICAgVG9RdWFudGl0eUlnbm9yaW5nQ29tcGFyYXRvcihxdWFudGl0eSksCiAgICAgICAgICAgICAgICAgICAgbnVsbAogICAgICAgICAgICAgICAgXQogICAgICAgICAgICB3aGVuICc+JyB0aGVuCiAgICAgICAgICAgICAgICBJbnRlcnZhbCgKICAgICAgICAgICAgICAgICAgICBUb1F1YW50aXR5SWdub3JpbmdDb21wYXJhdG9yKHF1YW50aXR5KSwKICAgICAgICAgICAgICAgICAgICBudWxsCiAgICAgICAgICAgICAgICBdCiAgICAgICAgICAgIGVsc2UKICAgICAgICAgICAgICAgIEludGVydmFsW1RvUXVhbnRpdHkocXVhbnRpdHkpLCBUb1F1YW50aXR5KHF1YW50aXR5KV0KICAgICAgICBlbmQKCmRlZmluZSBmdW5jdGlvbiBUb1JhdGlvKHJhdGlvIEZISVIuUmF0aW8pOgogICAgaWYgcmF0aW8gaXMgbnVsbCB0aGVuCiAgICAgICAgbnVsbAogICAgZWxzZQogICAgICAgIFN5c3RlbS5SYXRpbyB7IG51bWVyYXRvcjogVG9RdWFudGl0eShyYXRpby5udW1lcmF0b3IpLCBkZW5vbWluYXRvcjogVG9RdWFudGl0eShyYXRpby5kZW5vbWluYXRvcikgfQoKZGVmaW5lIGZ1bmN0aW9uIFRvSW50ZXJ2YWwocmFuZ2UgRkhJUi5SYW5nZSk6CiAgICBpZiByYW5nZSBpcyBudWxsIHRoZW4KICAgICAgICBudWxsCiAgICBlbHNlCiAgICAgICAgSW50ZXJ2YWxbVG9RdWFudGl0eShyYW5nZS5sb3cpLCBUb1F1YW50aXR5KHJhbmdlLmhpZ2gpXQoKZGVmaW5lIGZ1bmN0aW9uIFRvQ29kZShjb2RpbmcgRkhJUi5Db2RpbmcpOgogICAgaWYgY29kaW5nIGlzIG51bGwgdGhlbgogICAgICAgIG51bGwKICAgIGVsc2UKICAgICAgICBTeXN0ZW0uQ29kZSB7CiAgICAgICAgICBjb2RlOiBjb2RpbmcuY29kZS52YWx1ZSwKICAgICAgICAgIHN5c3RlbTogY29kaW5nLnN5c3RlbS52YWx1ZSwKICAgICAgICAgIHZlcnNpb246IGNvZGluZy52ZXJzaW9uLnZhbHVlLAogICAgICAgICAgZGlzcGxheTogY29kaW5nLmRpc3BsYXkudmFsdWUKICAgICAgICB9CgpkZWZpbmUgZnVuY3Rpb24gVG9Db25jZXB0KGNvbmNlcHQgRkhJUi5Db2RlYWJsZUNvbmNlcHQpOgogICAgaWYgY29uY2VwdCBpcyBudWxsIHRoZW4KICAgICAgICBudWxsCiAgICBlbHNlCiAgICAgICAgU3lzdGVtLkNvbmNlcHQgewogICAgICAgICAgICBjb2RlczogY29uY2VwdC5jb2RpbmcgQyByZXR1cm4gVG9Db2RlKEMpLAogICAgICAgICAgICBkaXNwbGF5OiBjb25jZXB0LnRleHQudmFsdWUKICAgICAgICB9CgoKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFjY291bnRTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQWN0aW9uQ2FyZGluYWxpdHlCZWhhdmlvcik6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBBY3Rpb25Db25kaXRpb25LaW5kKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFjdGlvbkdyb3VwaW5nQmVoYXZpb3IpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQWN0aW9uUGFydGljaXBhbnRUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFjdGlvblByZWNoZWNrQmVoYXZpb3IpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQWN0aW9uUmVsYXRpb25zaGlwVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBBY3Rpb25SZXF1aXJlZEJlaGF2aW9yKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFjdGlvblNlbGVjdGlvbkJlaGF2aW9yKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFjdGl2aXR5RGVmaW5pdGlvbktpbmQpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQWN0aXZpdHlQYXJ0aWNpcGFudFR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQWRkcmVzc1R5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQWRkcmVzc1VzZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBBZG1pbmlzdHJhdGl2ZUdlbmRlcik6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBBZHZlcnNlRXZlbnRBY3R1YWxpdHkpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQWdncmVnYXRpb25Nb2RlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFsbGVyZ3lJbnRvbGVyYW5jZUNhdGVnb3J5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFsbGVyZ3lJbnRvbGVyYW5jZUNyaXRpY2FsaXR5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFsbGVyZ3lJbnRvbGVyYW5jZVNldmVyaXR5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEFsbGVyZ3lJbnRvbGVyYW5jZVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQXBwb2ludG1lbnRTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQXNzZXJ0aW9uRGlyZWN0aW9uVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBBc3NlcnRpb25PcGVyYXRvclR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQXNzZXJ0aW9uUmVzcG9uc2VUeXBlcyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBBdWRpdEV2ZW50QWN0aW9uKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEF1ZGl0RXZlbnRBZ2VudE5ldHdvcmtUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEF1ZGl0RXZlbnRPdXRjb21lKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEJpbmRpbmdTdHJlbmd0aCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBCaW9sb2dpY2FsbHlEZXJpdmVkUHJvZHVjdENhdGVnb3J5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEJpb2xvZ2ljYWxseURlcml2ZWRQcm9kdWN0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEJpb2xvZ2ljYWxseURlcml2ZWRQcm9kdWN0U3RvcmFnZVNjYWxlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEJ1bmRsZVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ2FwYWJpbGl0eVN0YXRlbWVudEtpbmQpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ2FyZVBsYW5BY3Rpdml0eUtpbmQpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ2FyZVBsYW5BY3Rpdml0eVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDYXJlUGxhbkludGVudCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDYXJlUGxhblN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDYXJlVGVhbVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDYXRhbG9nRW50cnlSZWxhdGlvblR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ2hhcmdlSXRlbURlZmluaXRpb25QcmljZUNvbXBvbmVudFR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ2hhcmdlSXRlbVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDbGFpbVJlc3BvbnNlU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENsYWltU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENsaW5pY2FsSW1wcmVzc2lvblN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDb2RlU2VhcmNoU3VwcG9ydCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDb2RlU3lzdGVtQ29udGVudE1vZGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29kZVN5c3RlbUhpZXJhcmNoeU1lYW5pbmcpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29tbXVuaWNhdGlvblByaW9yaXR5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENvbW11bmljYXRpb25SZXF1ZXN0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENvbW11bmljYXRpb25TdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29tcGFydG1lbnRDb2RlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENvbXBhcnRtZW50VHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDb21wb3NpdGlvbkF0dGVzdGF0aW9uTW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDb21wb3NpdGlvblN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDb25jZXB0TWFwRXF1aXZhbGVuY2UpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29uY2VwdE1hcEdyb3VwVW5tYXBwZWRNb2RlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENvbmRpdGlvbmFsRGVsZXRlU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENvbmRpdGlvbmFsUmVhZFN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDb25zZW50RGF0YU1lYW5pbmcpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29uc2VudFByb3Zpc2lvblR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29uc2VudFN0YXRlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENvbnN0cmFpbnRTZXZlcml0eSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBDb250YWN0UG9pbnRTeXN0ZW0pOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29udGFjdFBvaW50VXNlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENvbnRyYWN0UHVibGljYXRpb25TdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29udHJhY3RTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgQ29udHJpYnV0b3JUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIENvdmVyYWdlU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEN1cnJlbmN5Q29kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEYXlPZldlZWspOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRGF5c09mV2Vlayk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEZXRlY3RlZElzc3VlU2V2ZXJpdHkpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRGV0ZWN0ZWRJc3N1ZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEZXZpY2VNZXRyaWNDYWxpYnJhdGlvblN0YXRlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIERldmljZU1ldHJpY0NhbGlicmF0aW9uVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEZXZpY2VNZXRyaWNDYXRlZ29yeSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEZXZpY2VNZXRyaWNDb2xvcik6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEZXZpY2VNZXRyaWNPcGVyYXRpb25hbFN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEZXZpY2VOYW1lVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEZXZpY2VSZXF1ZXN0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIERldmljZVVzZVN0YXRlbWVudFN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEaWFnbm9zdGljUmVwb3J0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIERpc2NyaW1pbmF0b3JUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIERvY3VtZW50Q29uZmlkZW50aWFsaXR5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIERvY3VtZW50TW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEb2N1bWVudFJlZmVyZW5jZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBEb2N1bWVudFJlbGF0aW9uc2hpcFR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRWxpZ2liaWxpdHlSZXF1ZXN0UHVycG9zZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBFbGlnaWJpbGl0eVJlcXVlc3RTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRWxpZ2liaWxpdHlSZXNwb25zZVB1cnBvc2UpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRWxpZ2liaWxpdHlSZXNwb25zZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBFbmFibGVXaGVuQmVoYXZpb3IpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRW5jb3VudGVyTG9jYXRpb25TdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRW5jb3VudGVyU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEVuZHBvaW50U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEVucm9sbG1lbnRSZXF1ZXN0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEVucm9sbG1lbnRSZXNwb25zZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBFcGlzb2RlT2ZDYXJlU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEV2ZW50Q2FwYWJpbGl0eU1vZGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRXZlbnRUaW1pbmcpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRXZpZGVuY2VWYXJpYWJsZVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRXhhbXBsZVNjZW5hcmlvQWN0b3JUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEV4cGxhbmF0aW9uT2ZCZW5lZml0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEV4cG9zdXJlU3RhdGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRXh0ZW5zaW9uQ29udGV4dFR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRkhJUkFsbFR5cGVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEZISVJEZWZpbmVkVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBGSElSRGV2aWNlU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEZISVJSZXNvdXJjZVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgRkhJUlN1YnN0YW5jZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBGSElSVmVyc2lvbik6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBGYW1pbHlIaXN0b3J5U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEZpbHRlck9wZXJhdG9yKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEZsYWdTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgR29hbExpZmVjeWNsZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBHcmFwaENvbXBhcnRtZW50UnVsZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBHcmFwaENvbXBhcnRtZW50VXNlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEdyb3VwTWVhc3VyZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBHcm91cFR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgR3VpZGFuY2VSZXNwb25zZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBHdWlkZVBhZ2VHZW5lcmF0aW9uKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEd1aWRlUGFyYW1ldGVyQ29kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBIVFRQVmVyYik6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBJZGVudGlmaWVyVXNlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIElkZW50aXR5QXNzdXJhbmNlTGV2ZWwpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgSW1hZ2luZ1N0dWR5U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEltbXVuaXphdGlvbkV2YWx1YXRpb25TdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgSW1tdW5pemF0aW9uU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIEludm9pY2VQcmljZUNvbXBvbmVudFR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgSW52b2ljZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBJc3N1ZVNldmVyaXR5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIElzc3VlVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBMaW5rVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBMaW5rYWdlVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBMaXN0TW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBMaXN0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIExvY2F0aW9uTW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBMb2NhdGlvblN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBNZWFzdXJlUmVwb3J0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE1lYXN1cmVSZXBvcnRUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE1lZGlhU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE1lZGljYXRpb25BZG1pbmlzdHJhdGlvblN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBNZWRpY2F0aW9uRGlzcGVuc2VTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgTWVkaWNhdGlvbktub3dsZWRnZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBNZWRpY2F0aW9uUmVxdWVzdEludGVudCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBNZWRpY2F0aW9uUmVxdWVzdFByaW9yaXR5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE1lZGljYXRpb25SZXF1ZXN0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE1lZGljYXRpb25TdGF0ZW1lbnRTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgTWVkaWNhdGlvblN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBNZXNzYWdlU2lnbmlmaWNhbmNlQ2F0ZWdvcnkpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgTWVzc2FnZWhlYWRlcl9SZXNwb25zZV9SZXF1ZXN0KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE1pbWVUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE5hbWVVc2UpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgTmFtaW5nU3lzdGVtSWRlbnRpZmllclR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgTmFtaW5nU3lzdGVtVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBOYXJyYXRpdmVTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgTm90ZVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgTnV0cml0aWlvbk9yZGVySW50ZW50KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE51dHJpdGlvbk9yZGVyU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE9ic2VydmF0aW9uRGF0YVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgT2JzZXJ2YXRpb25SYW5nZUNhdGVnb3J5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE9ic2VydmF0aW9uU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE9wZXJhdGlvbktpbmQpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgT3BlcmF0aW9uUGFyYW1ldGVyVXNlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIE9yaWVudGF0aW9uVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBQYXJhbWV0ZXJVc2UpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUGFydGljaXBhbnRSZXF1aXJlZCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBQYXJ0aWNpcGFudFN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBQYXJ0aWNpcGF0aW9uU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFBheW1lbnROb3RpY2VTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUGF5bWVudFJlY29uY2lsaWF0aW9uU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFByb2NlZHVyZVN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBQcm9wZXJ0eVJlcHJlc2VudGF0aW9uKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFByb3BlcnR5VHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBQcm92ZW5hbmNlRW50aXR5Um9sZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBQdWJsaWNhdGlvblN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBRdWFsaXR5VHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBRdWFudGl0eUNvbXBhcmF0b3IpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUXVlc3Rpb25uYWlyZUl0ZW1PcGVyYXRvcik6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBRdWVzdGlvbm5haXJlSXRlbVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUXVlc3Rpb25uYWlyZVJlc3BvbnNlU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFJlZmVyZW5jZUhhbmRsaW5nUG9saWN5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFJlZmVyZW5jZVZlcnNpb25SdWxlcyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBSZWZlcnJlZERvY3VtZW50U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFJlbGF0ZWRBcnRpZmFjdFR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUmVtaXR0YW5jZU91dGNvbWUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUmVwb3NpdG9yeVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUmVxdWVzdEludGVudCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBSZXF1ZXN0UHJpb3JpdHkpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUmVxdWVzdFN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBSZXNlYXJjaEVsZW1lbnRUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFJlc2VhcmNoU3R1ZHlTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUmVzZWFyY2hTdWJqZWN0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFJlc291cmNlVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBSZXNvdXJjZVZlcnNpb25Qb2xpY3kpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgUmVzcG9uc2VUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFJlc3RmdWxDYXBhYmlsaXR5TW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBSaXNrQXNzZXNzbWVudFN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTUERYTGljZW5zZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTZWFyY2hDb21wYXJhdG9yKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFNlYXJjaEVudHJ5TW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTZWFyY2hNb2RpZmllckNvZGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgU2VhcmNoUGFyYW1UeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFNlY3Rpb25Nb2RlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFNlcXVlbmNlVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTZXJ2aWNlUmVxdWVzdEludGVudCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTZXJ2aWNlUmVxdWVzdFByaW9yaXR5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFNlcnZpY2VSZXF1ZXN0U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFNsaWNpbmdSdWxlcyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTbG90U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFNvcnREaXJlY3Rpb24pOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgU3BlY2ltZW5Db250YWluZWRQcmVmZXJlbmNlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFNwZWNpbWVuU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTdHJhbmRUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFN0cnVjdHVyZURlZmluaXRpb25LaW5kKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFN0cnVjdHVyZU1hcENvbnRleHRUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFN0cnVjdHVyZU1hcEdyb3VwVHlwZU1vZGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgU3RydWN0dXJlTWFwSW5wdXRNb2RlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFN0cnVjdHVyZU1hcE1vZGVsTW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTdHJ1Y3R1cmVNYXBTb3VyY2VMaXN0TW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTdHJ1Y3R1cmVNYXBUYXJnZXRMaXN0TW9kZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBTdHJ1Y3R1cmVNYXBUcmFuc2Zvcm0pOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgU3Vic2NyaXB0aW9uQ2hhbm5lbFR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgU3Vic2NyaXB0aW9uU3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFN1cHBseURlbGl2ZXJ5U3RhdHVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFN1cHBseVJlcXVlc3RTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgU3lzdGVtUmVzdGZ1bEludGVyYWN0aW9uKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFRhc2tJbnRlbnQpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgVGFza1ByaW9yaXR5KTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFRhc2tTdGF0dXMpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgVGVzdFJlcG9ydEFjdGlvblJlc3VsdCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBUZXN0UmVwb3J0UGFydGljaXBhbnRUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFRlc3RSZXBvcnRSZXN1bHQpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgVGVzdFJlcG9ydFN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBUZXN0U2NyaXB0UmVxdWVzdE1ldGhvZENvZGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgVHJpZ2dlclR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgVHlwZURlcml2YXRpb25SdWxlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFR5cGVSZXN0ZnVsSW50ZXJhY3Rpb24pOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgVURJRW50cnlUeXBlKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFVuaXRzT2ZUaW1lKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFVzZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBWYXJpYWJsZVR5cGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgVmlzaW9uQmFzZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBWaXNpb25FeWVzKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIFZpc2lvblN0YXR1cyk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBYUGF0aFVzYWdlVHlwZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSBiYXNlNjRCaW5hcnkpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9Cb29sZWFuKHZhbHVlIGJvb2xlYW4pOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9EYXRlKHZhbHVlIGRhdGUpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9EYXRlVGltZSh2YWx1ZSBkYXRlVGltZSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb0RlY2ltYWwodmFsdWUgZGVjaW1hbCk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb0RhdGVUaW1lKHZhbHVlIGluc3RhbnQpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9JbnRlZ2VyKHZhbHVlIGludGVnZXIpOiB2YWx1ZS52YWx1ZQpkZWZpbmUgZnVuY3Rpb24gVG9TdHJpbmcodmFsdWUgc3RyaW5nKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvVGltZSh2YWx1ZSB0aW1lKTogdmFsdWUudmFsdWUKZGVmaW5lIGZ1bmN0aW9uIFRvU3RyaW5nKHZhbHVlIHVyaSk6IHZhbHVlLnZhbHVlCmRlZmluZSBmdW5jdGlvbiBUb1N0cmluZyh2YWx1ZSB4aHRtbCk6IHZhbHVlLnZhbHVl"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Library/FHIRHelpers"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Library/Debug",
+    "resource" : {
+      "resourceType" : "Library",
+      "id" : "Debug",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Library</b><a name=\"Debug\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Library &quot;Debug&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Library/Debug</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Debug</p><p><b>title</b>: Debug</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: Logic Library <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-library-type.html\">LibraryType</a>#logic-library)</span></p><p><b>description</b>: Debug</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>(base64 data - 676 bytes)</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/Library/Debug",
+      "version" : "0.1.0",
+      "name" : "Debug",
+      "title" : "Debug",
+      "status" : "draft",
+      "experimental" : true,
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+          "code" : "logic-library"
+        }]
+      },
+      "description" : "Debug",
+      "content" : [{
+        "contentType" : "text/cql",
+        "data" : "bGlicmFyeSBEZWJ1ZyB2ZXJzaW9uICcwLjEuMCcKCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjEnCgppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4xJwppbmNsdWRlIEZISVJDb21tb24gdmVyc2lvbiAnNC4wLjEnIGNhbGxlZCBGQwppbmNsdWRlIEtlbnlhRU1SQ29uY2VwdHMgY2FsbGVkIEN4CmluY2x1ZGUgS2VueWFFTVJTdHJhdGlmaWVycyBjYWxsZWQgU3RyYXRpZmllcnMKCgovLyBQcm92aWRlIGEgZGVmYXVsdCBpbnRlcnZhbCBvciBwZXJpb2QtYmFzZWQgdGVzdHMgd2lsbCBmYWlsIHdoZW4gZXZhbHVhdGluZyBDUUwgYWdhaW5zdCB0ZXN0IGNhc2VzCi8vIE5lZWQgRGF0ZVRpbWUgZWcgQDIwMTQtMDEtMjVUIG5vdCBEYXRlLCBlZyBub3QgdGhpczogQDIwMTQtMDEtMjUKLy8gVGhlICRldmFsdWF0ZS1tZWFzdXJlIG9wZXJhdGlvbidzIHBhcmFtZXRlcnMgJ3BlcmlvZFN0YXJ0JyBhbmQgJ3BlcmlvZEVuZCcgb3ZlcnJpZGUgdGhpcyBpbiBhbnkgY2FzZQpwYXJhbWV0ZXIgIk1lYXN1cmVtZW50IFBlcmlvZCIgSW50ZXJ2YWw8RGF0ZVRpbWU+IGRlZmF1bHQgSW50ZXJ2YWxbQDE5OTAtMDEtMDFULCBAMjAyMy0xMi0zMVRdCgoKLy8gU3RhcnQgd2l0aCB0aGUgcGF0aWVudCBhbmQgdHJhdmVyc2UgdGhlaXIgY2xpbmljYWwgcmVzb3VyY2VzCmNvbnRleHQgUGF0aWVudAoKCg=="
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Library/Debug"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRConcepts",
+    "resource" : {
+      "resourceType" : "Library",
+      "id" : "KenyaEMRConcepts",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Library</b><a name=\"KenyaEMRConcepts\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Library &quot;KenyaEMRConcepts&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Library/KenyaEMRConcepts</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: KenyaEMRConcepts</p><p><b>title</b>: KenyaEMRConcepts</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: Logic Library <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-library-type.html\">LibraryType</a>#logic-library)</span></p><p><b>description</b>: KenyaEMRConcepts</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>(base64 data - 4085 bytes)</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRConcepts",
+      "version" : "0.1.0",
+      "name" : "KenyaEMRConcepts",
+      "title" : "KenyaEMRConcepts",
+      "status" : "draft",
+      "experimental" : true,
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+          "code" : "logic-library"
+        }]
+      },
+      "description" : "KenyaEMRConcepts",
+      "content" : [{
+        "contentType" : "text/cql",
+        "data" : "bGlicmFyeSBLZW55YUVNUkNvbmNlcHRzIHZlcnNpb24gJzAuMS4wJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjEnCmluY2x1ZGUgRkhJUkNvbW1vbiB2ZXJzaW9uICc0LjAuMScgY2FsbGVkIEZDCgovLyBjb2Rlc3lzdGVtcwpjb2Rlc3lzdGVtICJTTk9NRUQtQ1QiOiAnaHR0cDovL3Nub21lZC5pbmZvL3NjdCcKY29kZXN5c3RlbSAiTE9JTkMiOiAnaHR0cDovL2xvaW5jLm9yZycKY29kZXN5c3RlbSAiUnhOb3JtIjogJ2h0dHA6Ly93d3cubmxtLm5paC5nb3YvcmVzZWFyY2gvdW1scy9yeG5vcm0nCgovLyBsb2NhbCBjb2Rlc3lzdGVtcwpjb2Rlc3lzdGVtICJDSUVMIjogJ2h0dHBzOi8vb3BlbmNvbmNlcHRsYWIub3JnL29yZ3MvQ0lFTC9zb3VyY2VzL0NJRUwnCmNvZGVzeXN0ZW0gIk9wZW5ISUUiOiAnaHR0cHM6Ly9vcGVuaGllLm9yZycKCi8vIEZISVIgQ1MgYW5kIFZTCnZhbHVlc2V0ICJITDcgQWRtaW5pc3RyYXRpdmUgR2VuZGVyIjogJ2h0dHA6Ly9obDcub3JnL2ZoaXIvVmFsdWVTZXQvYWRtaW5pc3RyYXRpdmUtZ2VuZGVyJwoKY29kZSAiSElWIFBvc2l0aXZlIjogJzE2NTgxNjAwNScgZnJvbSAiU05PTUVELUNUIiBkaXNwbGF5ICdISVYgUG9zaXRpdmUnCgovLyBjb2RlcwoKLy8gVGhlIGRpc3BsYXkgIlByZWduYW5jeSAoZmluZGluZykiIGlzIG5vdCBhIHZhbGlkIGRpc3BsYXkgZm9yIHRoZSBjb2RlIHtodHRwOi8vc25vbWVkLmluZm8vc2N0fTc3Mzg2MDA2CmNvZGUgIlByZWduYW5jeSAoZmluZGluZykiOiAnNzczODYwMDYnIGZyb20gIlNOT01FRC1DVCIgZGlzcGxheSAnUHJlZ25hbmN5IChmaW5kaW5nKScKY29kZSAiUHJlZ25hbnQiOiAnMTQ2Nzg5MDAwJyBmcm9tICJTTk9NRUQtQ1QiIGRpc3BsYXkgJ1ByZWduYW50JwovLyBjb2RlICJCcmVhc3RmZWVkaW5nIjogJzE2OTc1MDAwMicgZnJvbSAiU05PTUVELUNUIiBkaXNwbGF5ICdCcmVhc3RmZWVkaW5nJwpjb2RlICJQcmVuYXRhbCBpbml0aWFsIHZpc2l0IChyZWdpbWUvdGhlcmFweSkiOiAnNDI0NDQxMDAyJyBmcm9tICJTTk9NRUQtQ1QiIGRpc3BsYXkgJ1ByZW5hdGFsIGluaXRpYWwgdmlzaXQgKHJlZ2ltZS90aGVyYXB5KScKY29kZSAiUHJlZ25hbmN5IHN0YXR1cyAtIFJlcG9ydGVkIjogJzExNDQ5LTYnIGZyb20gIkxPSU5DIiBkaXNwbGF5ICdQcmVnbmFuY3kgc3RhdHVzIC0gUmVwb3J0ZWQnCi8vIGNvZGUgIkxpdmViaXJ0aCAoZmluZGluZykiOiAnMjgxMDUwMDAyJyBmcm9tICJTTk9NRUQtQ1QiIGRpc3BsYXkgJ0xpdmViaXJ0aCAoZmluZGluZyknCi8vIGNvZGUgIlBvc3RwYXJ0dW0gc3RhdGUgKGZpbmRpbmcpIjogJzg2NTY5MDAxJyBmcm9tICJTTk9NRUQtQ1QiIGRpc3BsYXkgJ1Bvc3RwYXJ0dW0gc3RhdGUgKGZpbmRpbmcpJwovLyBjb2RlICJOb3JtYWwgYnJlYXN0IGZlZWRpbmcgKGZpbmRpbmcpIjogJzY5ODQwMDA2JyBmcm9tICJTTk9NRUQtQ1QiIGRpc3BsYXkgJ05vcm1hbCBicmVhc3QgZmVlZGluZyAoZmluZGluZyknCgoKLy8gY2llbCBoaXYvb3RoZXIKY29kZSAiQ3VycmVudGx5IHRha2luZyBBUlYiOiAnMTYwMTE5JyBmcm9tICJDSUVMIiBkaXNwbGF5ICdDdXJyZW50bHkgdGFraW5nIEFSVicKY29kZSAiQ29kZWQgQW5zd2VyIjogJzEwNjUnIGZyb20gIkNJRUwiIGRpc3BsYXkgJ1llcycKY29kZSAiTWV0aG9kIG9mIGVucm9sbG1lbnQiOiAnMTYwNTQwJyBmcm9tICJDSUVMIiBkaXNwbGF5ICdNZXRob2Qgb2YgZW5yb2xsbWVudCcKY29kZSAiT3V0cGF0aWVudCBkZXBhcnRtZW50IjogJzE2MDU0MicgZnJvbSAiQ0lFTCIgZGlzcGxheSAnT3V0cGF0aWVudCBkZXBhcnRtZW50Jwpjb2RlICJPdXRwYXRpZW50IGRlcGFydG1lbnQgU05PTUVEIjogJzMzMDIyMDA4JyBmcm9tICJTTk9NRUQtQ1QiIGRpc3BsYXkgJ091dHBhdGllbnQgZGVwYXJ0bWVudCcKY29kZSAiQ1VSUkVOVCBEUlVHUyBVU0VEIjogJzExOTMnIGZyb20gIkNJRUwiIGRpc3BsYXkgJ0NVUlJFTlQgRFJVR1MgVVNFRCcKY29kZSAiUkVUVVJOIFZJU0lUIERBVEUiOiAnNTA5NicgZnJvbSAiQ0lFTCIgZGlzcGxheSAnUkVUVVJOIFZJU0lUIERBVEUnCgoKLy8gc25vbWVkIGFuZCBvdGhlciBoaXYgdGVzdGluZywgcmVzdWx0cywgY29uZGl0aW9ucywgYXJ0CmNvZGUgIkFjcXVpcmVkIGltbXVuZSBkZWZpY2llbmN5IHN5bmRyb21lIChkaXNvcmRlcikiOiAnNjI0NzkwMDgnIGZyb20gIlNOT01FRC1DVCIgZGlzcGxheSAnQWNxdWlyZWQgaW1tdW5lIGRlZmljaWVuY3kgc3luZHJvbWUgKGRpc29yZGVyKScKY29kZSAiSElWIENvbmRpdGlvbiBQb3NpdGl2ZSI6ICc4NjQwNjAwOCcgZnJvbSAiU05PTUVELUNUIiBkaXNwbGF5ICdISVYgaW5mZWN0aW9uJwpjb2RlICJISVYgTmVnYXRpdmUiOiAnMTY1ODE1MDA5JyBmcm9tICJTTk9NRUQtQ1QiIGRpc3BsYXkgJ0hJViBOZWdhdGl2ZScKY29kZSAiSGlzdG9yeSBvZiBhbnRpcmV0cm92aXJhbCB0aGVyYXB5IChzaXR1YXRpb24pIjogJzQzMjEwMTAwMDEyNDEwOCcgZnJvbSAiT3BlbkhJRSIgZGlzcGxheSAnSGlzdG9yeSBvZiBhbnRpcmV0cm92aXJhbCB0aGVyYXB5IChzaXR1YXRpb24pJwpjb2RlICJJbnN0aXR1dGlvbmFsIGVudHJ5IHBvaW50IEhJViB0cmVhdG1lbnQiOiAnNDUyNTItNCcgZnJvbSAiTE9JTkMiIGRpc3BsYXkgJ0luc3RpdHV0aW9uYWwgZW50cnkgcG9pbnQgSElWIHRyZWF0bWVudCcKLy8gY29kZSAiTmV3IG9uIEFSVCI6ICduZXctb24tYXJ0JyBmcm9tICJQTVRDVCBBUlQgU3RhdHVzIENvZGVzIiBkaXNwbGF5ICdOZXcgb24gQVJUJwovLyBuZWVkIHRvIGNoYW5nZSB0byB2YWx1ZXNldApjb2RlICJSZWFzb24gZm9yIGRpc2NvbnRpbnVhdGlvbiBvZiBwcm9ncmFtIjogJzE2MTU1NScgZnJvbSAiQ0lFTCIgZGlzcGxheSAnUmVhc29uIGZvciBkaXNjb250aW51YXRpb24gb2YgcHJvZ3JhbScKY29kZSAiVHJlYXRtZW50IGVuZCBkYXRlIjogJzE2NDM4NCcgZnJvbSAiQ0lFTCIgZGlzcGxheSAnVHJlYXRtZW50IGVuZCBkYXRlJwoKLy8gdmFsdWVzZXRzCnZhbHVlc2V0IEFnZVJhbmdlc1RYQ1VSUjogJ2h0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL1ZhbHVlU2V0L0FnZVJhbmdlc1RYQ1VSUicKLy8gdmFsdWVzZXQgIkhJViBUZXN0aW5nIFNlcnZpY2VzIjogJ2h0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL1ZhbHVlU2V0L0hJVlRlc3RpbmdTZXJ2aWNlcycgLy8gU2hvdWxkIHVzZSBISVYgdGVzdHMKLy8gdmlyYWwgbG9hZCB0ZXN0cywgcmVzdWx0cwovLyBjb21tZW50aW5nIG91dCBmb3Igbm93IGFuZCB0aGUgdW5pb24KLy8gdmFsdWVzZXQgIkh1bWFuIEltbXVub2RlZmljaWVuY3kgVmlydXMgKEhJVikgTGFib3JhdG9yeSBUZXN0IENvZGVzIChBYiBhbmQgQWcpIjogJ3VybjpvaWQ6Mi4xNi44NDAuMS4xMTM3NjIuMS40LjEwNTYuNTAnIC8vIFVzZWQgYnkgQ01TMzQ5CmNvZGUgIkhJViAxIGFuZCAyIHRlc3RzIC0gTWVhbmluZ2Z1bCBVc2Ugc2V0IjogJzc1NjIyLTEnIGZyb20gIkxPSU5DIiBkaXNwbGF5ICdISVYgMSBhbmQgMiB0ZXN0cyAtIE1lYW5pbmdmdWwgVXNlIHNldCcKdmFsdWVzZXQgIlZpcmFsIExvYWQgVGVzdCI6ICdodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycy9WYWx1ZVNldC9WaXJhbExvYWRUZXN0JwovLyB2YWx1ZXNldCAiU3ludGhlYSBISVYgTWVkaWNhdGlvbnMiOiAnaHR0cHM6Ly9wYXRoLWdsb2JhbC1oZWFsdGguZ2l0aHViLmlvL01FUmluZGljYXRvcnMvVmFsdWVTZXQvU3ludGhlYUhJVk1lZGljYXRpb25zJwp2YWx1ZXNldCAiQVJUIE1lZGljYXRpb25zIjogJ2h0dHBzOi8vcGF0aC1nbG9iYWwtaGVhbHRoLmdpdGh1Yi5pby9NRVJpbmRpY2F0b3JzL1ZhbHVlU2V0L1N5bnRoZWFISVZNZWRpY2F0aW9ucycKdmFsdWVzZXQgIkNJRUxISVZNZWRpY2F0aW9ucyI6ICdodHRwczovL3BhdGgtZ2xvYmFsLWhlYWx0aC5naXRodWIuaW8vTUVSaW5kaWNhdG9ycy9WYWx1ZVNldC9DSUVMSElWTWVkaWNhdGlvbnMnCi8vIHZhbHVlc2V0ICJFbnJvbGxtZW50TWV0aG9kcyI6IAo="
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Library/KenyaEMRConcepts"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRStratifiers",
+    "resource" : {
+      "resourceType" : "Library",
+      "id" : "KenyaEMRStratifiers",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Library</b><a name=\"KenyaEMRStratifiers\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Library &quot;KenyaEMRStratifiers&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Library/KenyaEMRStratifiers</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: KenyaEMRStratifiers</p><p><b>title</b>: KenyaEMRStratifiers</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: Logic Library <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-library-type.html\">LibraryType</a>#logic-library)</span></p><p><b>description</b>: KenyaEMRStratifiers</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>(base64 data - 3540 bytes)</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRStratifiers",
+      "version" : "0.1.0",
+      "name" : "KenyaEMRStratifiers",
+      "title" : "KenyaEMRStratifiers",
+      "status" : "draft",
+      "experimental" : true,
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+          "code" : "logic-library"
+        }]
+      },
+      "description" : "KenyaEMRStratifiers",
+      "content" : [{
+        "contentType" : "text/cql",
+        "data" : "bGlicmFyeSBLZW55YUVNUlN0cmF0aWZpZXJzIHZlcnNpb24gJzAuMS4wJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjEnCmluY2x1ZGUgRkhJUkNvbW1vbiB2ZXJzaW9uICc0LjAuMScgY2FsbGVkIEZDCgppbmNsdWRlIEtlbnlhRU1SQ29uY2VwdHMgY2FsbGVkIEN4CgoKY29kZXN5c3RlbSAiS0VNUiBQZXJpb2RzIjogJ2h0dHA6Ly9vaGllLm9yZy9Db2RlU3lzdGVtL2tlbXItcGVyaW9kcycKY29kZSAiPDEiOiAnPDEnIGZyb20gIktFTVIgUGVyaW9kcyIgZGlzcGxheSAnPDEnCmNvZGUgIjEtOSI6ICcxLTknIGZyb20gIktFTVIgUGVyaW9kcyIgZGlzcGxheSAnMS05Jwpjb2RlICIxMC0xNCI6ICcxMC0xNCcgZnJvbSAiS0VNUiBQZXJpb2RzIiBkaXNwbGF5ICcxMC0xNCcKY29kZSAiMTUtMTkiOiAnMTUtMTknIGZyb20gIktFTVIgUGVyaW9kcyIgZGlzcGxheSAnMTUtMTknCmNvZGUgIjIwLTI0IjogJzIwLTI0JyBmcm9tICJLRU1SIFBlcmlvZHMiIGRpc3BsYXkgJzIwLTI0Jwpjb2RlICIyNSsiOiAnMjUrJyBmcm9tICJLRU1SIFBlcmlvZHMiIGRpc3BsYXkgJzI1KycKCgpwYXJhbWV0ZXIgIk1lYXN1cmVtZW50IFBlcmlvZCIgSW50ZXJ2YWw8RGF0ZVRpbWU+IGRlZmF1bHQgSW50ZXJ2YWxbQDIwMjMtMDQtMDFUMDA6MDA6MDAuMCwgQDIwMjMtMDYtMzBUMDA6MDA6MDAuMF0KCgpjb250ZXh0IFBhdGllbnQKCgpkZWZpbmUgIlNleCI6CiAgUGF0aWVudC5nZW5kZXIudmFsdWUKCgpkZWZpbmUgIkFnZSBHcm91cCI6CiAgY2FzZQogICAgd2hlbiBBZ2VJblllYXJzQXQoc3RhcnQgb2YgIk1lYXN1cmVtZW50IFBlcmlvZCIpIGluIEludGVydmFsWzAsIDEpIHRoZW4gIjwxIgogICAgd2hlbiBBZ2VJblllYXJzQXQoc3RhcnQgb2YgIk1lYXN1cmVtZW50IFBlcmlvZCIpIGluIEludGVydmFsWzEsIDkpIHRoZW4gIjEtOSIKICAgIHdoZW4gQWdlSW5ZZWFyc0F0KHN0YXJ0IG9mICJNZWFzdXJlbWVudCBQZXJpb2QiKSBpbiBJbnRlcnZhbFsxMCwgMTQpIHRoZW4gIjEwLTE0IgogICAgd2hlbiBBZ2VJblllYXJzQXQoc3RhcnQgb2YgIk1lYXN1cmVtZW50IFBlcmlvZCIpIGluIEludGVydmFsWzE1LCAxOSkgdGhlbiAiMTUtMTkiCiAgICB3aGVuIEFnZUluWWVhcnNBdChzdGFydCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIikgaW4gSW50ZXJ2YWxbMjAsIDI0KSB0aGVuICIyMC0yNCIKICAgIHdoZW4gQWdlSW5ZZWFyc0F0KHN0YXJ0IG9mICJNZWFzdXJlbWVudCBQZXJpb2QiKSBpbiBJbnRlcnZhbFsyNSwgbnVsbF0gdGhlbiAiMjUrIgogICAgZWxzZSBudWxsCiAgZW5kCgoKZGVmaW5lICJBZ2UgR3JvdXAvU2V4IjoKICAiQWdlIEdyb3VwIi5jb2RlICsgJzonICsgIlNleCIKCgpkZWZpbmUgIkxhc3QgTG9jYXRpb24iOgogIExhc3QoW0VuY291bnRlcl0gRQogICAgcmV0dXJuIHNpbmdsZXRvbiBmcm9tIChFLmxvY2F0aW9uIEwKICAgICAgcmV0dXJuIEwubG9jYXRpb24ucmVmZXJlbmNlCiAgICApLnZhbHVlCiAgKQoKCi8vIGh0dHA6Ly9maGlyLm9wZW5tcnMub3JnL2V4dC9wYXRpZW50L2lkZW50aWZpZXIjbG9jYXRpb24KCmRlZmluZSAiT3Blbk1SUyBMb2NhdGlvbiI6CiAgW1BhdGllbnRdIFAKICAgIC8vIHRoaXMgdXJsIGlzIGluIHRoZSBpZywgYnV0IGlzIG5vdCBjb3JyZWN0OiAnaHR0cDovL2ZoaXIub3Blbm1ycy5vcmcvY29yZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL29tcnMtcGF0aWVudC1pZGVudGlmaWVyLWxvY2F0aW9uJ30KICAgIHdoZXJlIHNpbmdsZXRvbiBmcm9tIHtQLmlkZW50aWZpZXIuZXh0ZW5zaW9uWzBdLnVybCB+ICdodHRwOi8vZmhpci5vcGVubXJzLm9yZy9leHQvcGF0aWVudC9pZGVudGlmaWVyJ30KICAgIG9yIHNpbmdsZXRvbiBmcm9tIHtQLmlkZW50aWZpZXIuZXh0ZW5zaW9uWzBdLnVybCB+ICdodHRwOi8vZmhpci5vcGVubXJzLm9yZy9leHQvcGF0aWVudC9pZGVudGlmaWVyI2xvY2F0aW9uJ30KICAgIC8vIG9yIHNpbmdsZXRvbiBmcm9tIHtQLmlkZW50aWZpZXIuZXh0ZW5zaW9uWzFdLnVybCB+ICdodHRwOi8vZmhpci5vcGVubXJzLm9yZy9leHQvcGF0aWVudC9pZGVudGlmaWVyJ30KICAgIC8vIG9yIHNpbmdsZXRvbiBmcm9tIHtQLmlkZW50aWZpZXIuZXh0ZW5zaW9uWzFdLnVybCB+ICdodHRwOi8vZmhpci5vcGVubXJzLm9yZy9leHQvcGF0aWVudC9pZGVudGlmaWVyI2xvY2F0aW9uJ30KICAgIHJldHVybiBzaW5nbGV0b24gZnJvbSB7UC5pZGVudGlmaWVyLmV4dGVuc2lvblswXS52YWx1ZS5yZWZlcmVuY2UudmFsdWV9CgoKZGVmaW5lICJMYXN0IHNlcnZpY2VQcm92aWRlciI6CiAgLy8gU29tZSBvZiB0aGUgU3ludGhlYSBlbmNvdW50ZXJzIGRvIG5vdCBoYXZlIGEgc2VydmljZVByb3ZpZGVyLCBzbyB0aGlzIGNhbiByZXR1cm4gbm90aGluZwogIC8vIEZpbHRlciBvdXQgdGhvc2UgdGhhdCBhcmUgbnVsbCwgdGhlbiB0YWtlIHRoZSBsYXN0CiAgW0VuY291bnRlcl0gRQogICAgd2hlcmUgRS5zZXJ2aWNlUHJvdmlkZXIgaXMgbm90IG51bGwKICByZXR1cm4gTGFzdChbRW5jb3VudGVyXSkuc2VydmljZVByb3ZpZGVyLnJlZmVyZW5jZS52YWx1ZQoKCi8vIGlmLi50aGVuLi5lbHNlCmRlZmluZSAiTG9jYXRpb24gRGV1eCI6CiAgaWYgIkxhc3QgTG9jYXRpb24iIGlzIG5vdCBudWxsIHRoZW4gKCJMYXN0IExvY2F0aW9uIikKICBlbHNlIGlmICJMYXN0IHNlcnZpY2VQcm92aWRlciIgaXMgbm90IG51bGwgdGhlbiAoIkxhc3Qgc2VydmljZVByb3ZpZGVyIikKICBlbHNlIGlmICJPcGVuTVJTIExvY2F0aW9uIiBpcyBub3QgbnVsbCB0aGVuICgiT3Blbk1SUyBMb2NhdGlvbiIpCiAgZWxzZSBudWxsCgoKZGVmaW5lICJMb2NhdGlvbiI6CiAgY2FzZQogICAgLy8gbG9jYXRpb24gaWRlbnRpZmllciBvbiBwYXRpZW50CiAgICB3aGVuICJPcGVuTVJTIExvY2F0aW9uIiBpcyBub3QgbnVsbCB0aGVuICgiT3Blbk1SUyBMb2NhdGlvbiIpCiAgICAvLyB0aGVuIGxvY2F0aW9uIG9mIGxhc3QgZW5jb3VudGVyCiAgICB3aGVuICJMYXN0IExvY2F0aW9uIiBpcyBub3QgbnVsbCB0aGVuICgiTGFzdCBMb2NhdGlvbiIpCiAgICAvLyB0aGVuIG9yZ2FuaXphdGlvbiBvZiBsYXN0IGVuY291bnRlcgogICAgd2hlbiAiTGFzdCBzZXJ2aWNlUHJvdmlkZXIiIGlzIG5vdCBudWxsIHRoZW4gKCJMYXN0IHNlcnZpY2VQcm92aWRlciIpCiAgICBlbHNlIG51bGwKICBlbmQKCgpkZWZpbmUgIkRlYnVnIGxvY2F0aW9uIjogCiAgQ29tYmluZSh7ICJMb2NhdGlvbiIsICJTZXgifSwgJzonKQoKCmRlZmluZSAiQWdlIEdyb3VwL1NleC9Mb2NhdGlvbiI6CiAgIkFnZSBHcm91cCIuY29kZSAmICc6JyAmICJTZXgiICYgJzonICYgIkxvY2F0aW9uIgoKCmRlZmluZSAiQWdlIEdyb3VwL1NleC9Mb2NhdGlvbiBUWENVUlIiOgogICJBZ2UgR3JvdXAiLmNvZGUgKyAnOicgKyAiU2V4IiArICc6JyArICJMb2NhdGlvbiIKCgpkZWZpbmUgIkFnZSBHcm91cC9TZXgvTG9jYXRpb24gQ2FzZSBTd2l0Y2giOgogICJBZ2UgR3JvdXAiLmNvZGUgKyAnOicgKyAiU2V4IiArICc6JyArICJMb2NhdGlvbiIK"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Library/KenyaEMRStratifiers"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR",
+    "resource" : {
+      "resourceType" : "Library",
+      "id" : "KenyaEMRTXCURR",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Library</b><a name=\"KenyaEMRTXCURR\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Library &quot;KenyaEMRTXCURR&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: KenyaEMRTXCURR</p><p><b>title</b>: KenyaEMRTXCURR</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: Logic Library <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-library-type.html\">LibraryType</a>#logic-library)</span></p><p><b>description</b>: KenyaEMRTXCURR</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>(base64 data - 7168 bytes)</td></tr></table></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR",
+      "version" : "0.1.0",
+      "name" : "KenyaEMRTXCURR",
+      "title" : "KenyaEMRTXCURR",
+      "status" : "draft",
+      "experimental" : true,
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+          "code" : "logic-library"
+        }]
+      },
+      "description" : "KenyaEMRTXCURR",
+      "content" : [{
+        "contentType" : "text/cql",
+        "data" : "bGlicmFyeSBLZW55YUVNUlRYQ1VSUiB2ZXJzaW9uICcwLjEuMCcKCi8vIFRlc3QgY2FzZXMgYXJlIGxvY2F0ZWQgaW4gL2lucHV0L3Rlc3RzLzxMaWJyYXJ5IE5hbWU+LzxQYXRpZW50LmlkPi88YnVuZGxlIHNvdXJjZT4KCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjEnCgppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4xJwppbmNsdWRlIEZISVJDb21tb24gdmVyc2lvbiAnNC4wLjEnIGNhbGxlZCBGQwppbmNsdWRlIEtlbnlhRU1SQ29uY2VwdHMgY2FsbGVkIEN4CmluY2x1ZGUgS2VueWFFTVJTdHJhdGlmaWVycyBjYWxsZWQgU3RyYXRpZmllcnMKCgovLyBQcm92aWRlIGEgZGVmYXVsdCBpbnRlcnZhbCBvciBwZXJpb2QtYmFzZWQgdGVzdHMgd2lsbCBmYWlsIHdoZW4gZXZhbHVhdGluZyBDUUwgYWdhaW5zdCB0ZXN0IGNhc2VzCi8vIFRoZSAkZXZhbHVhdGUtbWVhc3VyZSBvcGVyYXRpb24ncyBwYXJhbWV0ZXJzICdwZXJpb2RTdGFydCcgYW5kICdwZXJpb2RFbmQnIG92ZXJyaWRlIHRoaXMgaW4gYW55IGNhc2UKcGFyYW1ldGVyICJNZWFzdXJlbWVudCBQZXJpb2QiIEludGVydmFsPERhdGVUaW1lPiBkZWZhdWx0IEludGVydmFsW0AxOTkwLTAxLTAxVCwgQDIwMjMtMDYtMzBUXQoKCmNvbnRleHQgUGF0aWVudAoKCi8qCk9uIEFSVCBpcyBhbnkgcGF0aWVudCB3aXRoIGEgcmVnaW1lbiBoaXN0b3J5IGFzIGJlbG93OgoKUGF0aWVudHMgc3RhcnRlZCBvbiBBUlQgZHJ1Z3MgKHBhcnRpY2lwYXRpbmcgaW4gcHJvZ3JhbSkKd2hvIG1hZGUgYSBjbGluaWMgdmlzaXQgZHVyaW5nIHRoZSByZXBvcnRpbmcgcGVyaW9kCgpQTFVTCgpQYXRpZW50IHdobyBtYWRlIGEgY2xpbmljIHZpc2l0IGluIHRoZSBwYXN0IGFuZCB3ZXJlIGdpdmVuIG1lZGljaW5lIHRvIGxhc3QgdGhlIHJlcG9ydGluZyAKcGVyaW9kIGFuZCBiZXlvbmQKClBMVVMKClBhdGllbnRzIHdobyBtaXNzZWQgdGhlaXIgYXBwb2ludG1lbnQgQU5EIDMwIGRheXMgKG9uZSBtb250aCkgaGF2ZSBub3QgcGFzc2VkIHNpbmNlIHRoZSBsYXN0IG1pc3NlZCBhcHBvaW50bWVudC4KWzMwIGRheXMgc2luY2UgbGFzdCBtaXNzZWQgYXBwb2ludG1lbnRdCgpFeGNsdWRlIHRob3NlIHdobyBpbnRlcnJ1cHRlZCB0cmVhdG1lbnQgZm9yIGFueSByZWFzb24sIGV0YywgZXRjLiAiTWVhc3VyZSBQb3B1bGF0aW9uIEV4Y2x1c2lvbiIKKi8KCgovLyBJbml0aWFsIFBvcHVsYXRpb24KLy8gUGF0aWVudHMgd2hvIGhhdmUgc3RhcnRlZCBhbiBBUlQgZHJ1Z3MgcHJvZ3JhbQoKLyoKUExISVYgYXJlIGVucm9sbGVkIGluIGFuIEhJViBwcm9ncmFtLgpPbiBPYnNlcnZhdGlvbiByZXNvdXJjZTogJENJRUwjMTYwNTQwICJNZXRob2Qgb2YgZW5yb2xsbWVudCIKT2JzZXJ2YXRpb24uc3RhdHVzIGlzIG5vdCBpbiBleGFtcGxlIGJ1bmRsZSwgY2FuJ3QgZG8gJ09icy5zdGF0dXMgaW4geydmaW5hbCcsICdhbWVuZGVkJywgJ2NvcnJlY3RlZCd9JwpVc2luZyB0aGUgQ0lFTCBjb2RlcyBvbmx5LCBldmVuIGlmIG90aGVycyBhcmUgcHJvdmlkZWQuClVzZSB0aGUgZXF1aXZhbGVudCBvcGVyYXRvciAofikgcmF0aGVyIHRoYW4gZXF1YWxpdHkgKD0pIHdoaWNoIGNoZWNrcyB0aGUgY29kZSBzeXN0ZW0gdmVyc2lvbi4KKi8KCgoKZGVmaW5lICJQTEhJViBPYnNlcnZhdGlvbiI6CiAgWyJPYnNlcnZhdGlvbiI6IEN4LiJNZXRob2Qgb2YgZW5yb2xsbWVudCJdIE9icwogICAgd2hlcmUgKE9icy5lZmZlY3RpdmUgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIikKCgpkZWZpbmUgIlBMSElWIEJvb2xlYW4iOiBleGlzdHMgIlBMSElWIE9ic2VydmF0aW9uIgoKCmRlZmluZSAiSW5pdGlhbCBQb3B1bGF0aW9uIjogCiAgIlBMSElWIEJvb2xlYW4iCgoKLyoKU29tZW9uZSB2aXNpdHMgMSBKdWx5LiAKR2l2ZW4gYXBwdCBpbiAxIG1vbnRoIC0gMSBBdWd1c3QuCkNoZWNrIHRoYXQgcGF0aWVudCBoYWQgdmlzaXQgYnkgMjR0aCBBdWd1c3QvYnkgMzAgZGF5cy4KKyBhZGQgMzAgZGF5cy4KKi8KCgovLyAiUkVUVVJOIFZJU0lUIERBVEUiCi8vIFBhdGllbnRzIHN0YXJ0ZWQgb24gQVJUIGRydWdzIChwYXJ0aWNpcGF0aW5nIGluIHByb2dyYW0pCi8vIHdobyBtYWRlIGEgY2xpbmljIHZpc2l0IGR1cmluZyB0aGUgcmVwb3J0aW5nIHBlcmlvZCAoUTogQW55IHR5cGU/IEE6IHllcykKCmRlZmluZSAiUmV0dXJuIFZpc2l0IE9ic2VydmF0aW9ucyI6CiAgWyJPYnNlcnZhdGlvbiI6IEN4LiJSRVRVUk4gVklTSVQgREFURSJdCgovLyByZXR1cm4gdmlzaXQgZHVyaW5nIHBlcmlvZApkZWZpbmUgIlJldHVybiBWaXNpdHMgRHVyaW5nIFBlcmlvZCI6CiAgKCJSZXR1cm4gVmlzaXQgT2JzZXJ2YXRpb25zIikgT2JzCiAgd2hlcmUgKE9icy5lZmZlY3RpdmUgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIikKICBzb3J0IGJ5IGRhdGUgZnJvbSAoZWZmZWN0aXZlIGFzIEZISVIuZGF0ZVRpbWUpIGRlc2MKCmRlZmluZSAiQW55IFJldHVybiBWaXNpdCBEdXJpbmcgUGVyaW9kIjogCiAgZXhpc3RzICJSZXR1cm4gVmlzaXRzIER1cmluZyBQZXJpb2QiCgpkZWZpbmUgIk1vc3QgUmVjZW50IFJldHVybiBWaXNpdCBEdXJpbmcgUGVyaW9kIjoKICBGaXJzdCgiUmV0dXJuIFZpc2l0cyBEdXJpbmcgUGVyaW9kIikKCmRlZmluZSAiUmV0dXJuIFZpc2l0IERhdGUiOgogICJNb3N0IFJlY2VudCBSZXR1cm4gVmlzaXQgRHVyaW5nIFBlcmlvZCIudmFsdWUudmFsdWUKCi8vIEdldCBsYXN0IHZpc2l0IGR1cmluZyBtZWFzdXJlIHBlcmlvZCwgInJldHVybiB2aXNpdCBkYXRlIiArIDMwIGRheXMgPiBlbmQgb2YgdGhlIHBlcmlvZAovLyBEb2VzIHRoZSBtb3N0IHJlY2VudCAicmV0dXJuIHZpc2l0IGRhdGUiIG5lZWQgdG8gYmUgd2l0aGluIHRoZSBwZXJpb2QgYXMgbG9uZyBhcyB0aGUgdmFsdWUgaXMgYWZ0ZXIgaXQ/CmRlZmluZSAiUmV0dXJuIFZpc2l0IHdpdGhpbiAzMCBkYXlzIG9mIFBlcmlvZCI6CiAgKCJNb3N0IFJlY2VudCBSZXR1cm4gVmlzaXQgRHVyaW5nIFBlcmlvZCIudmFsdWUgYXMgRkhJUi5kYXRlVGltZSkgKyAzMCBkYXlzIGFmdGVyIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIgoKCi8vICJDVVJSRU5UIERSVUdTIFVTRUQiIGFyZSBwcmVzY3JpcHRpb25zCi8vIGVmZmVjdGl2ZWRhdGV0aW1lIGNhcHR1cmVzIHdoZW4gdGhvc2UgZHJ1Z3Mgc3RhcnRlZAovLyB0aGUgb3RoZXIgZGF0ZXRpbWUgZmllbGRzIGFyZSBub3QgdXNlZAovLyBjaGVja3Mgb24gYmVpbmcgc3RhcnRlZCBvbiBBUlQsIHRoaXMgaXMgbm90ICdwaWNraW5nIHVwIGRydWdzJwoKZGVmaW5lICJDdXJyZW50IERydWdzIFVzZWQgT2JzZXJ2YXRpb25zIjoKICBbIk9ic2VydmF0aW9uIjogQ3guIkNVUlJFTlQgRFJVR1MgVVNFRCJdCgpkZWZpbmUgIkhhcyBzdGFydGVkIEFSVCI6CiAgZXhpc3RzKCJDdXJyZW50IERydWdzIFVzZWQgT2JzZXJ2YXRpb25zIikKCgovKgpBZGRpdGlvbmFsIG5vdGVzOgpUaGUgYXNzdW1wdGlvbiBpcyB0aGF0IGEgcGF0aWVudCBpcyBjb25zaWRlcmVkIHRvIGJlIG9uIGEgcGFydGljdWxhciByZWdpbWVuIHVudGlsIHRoZXJlIGlzIGEgY2hhbmdlLCBzdWJzdGl0dXRpb24sIG9yIHN0b3AgZXZlbnRzLgpEcnVncyBhcmUgcHJlc2NyaWJlZCBhbmQgbm90ZWQgaW4gYW4gT2JzZXJ2YXRpb24uClRoZSBhY3R1YWwgZHJ1Z3MgYXJlIGNvZGVkIGNvbmNlcHRzIGluIE9ic2VydmF0aW9uLnZhbHVlLmNvZGluZyBidXQgYXJlIG1pc3NpbmcgYSBzeXN0ZW0gaWRlbnRpZmllci4KVGhlIHJldHVybiBkYXRlcyBhcmUgYXBwb2ludG1lbnQgZGF0ZXMgZm9yIHdoZW4gdGhlIHByZXNjcmlwdGlvbiBlbmRzIGFuZCB0aGUgcGF0aWVudCBpcyBleHBlY3RlZCB0byByZXR1cm4uClRoZSBFTVIgZG9lcyBub3QgdXNlIGEgcGhhcm1hY3kgbW9kdWxlLCBhbmQgaXMgcmVsaWFudCBvbiBhcHBvaW50bWVudCBkYXRlcyAocmV0dXJuIGRhdGVzKSB3aGljaCBhcmUgYmFzZWQgb24gdGhlIGFtb3VudCBvZiBkcnVncyBnaXZlbi4KVGhlIGRydWdzIG9ic2VydmF0aW9uIHRlbGxzIHdoZW4gYSBwYXRpZW50IHdhcyBmaXJzdCBzdGFydGVkIG9uIGRydWdzLiAKJ2N1cnJlbnQgZHJ1Z3MnIGNvbmNlcHQgY2FwdHVyZXMgcmVnaW1lbiBjaGFuZ2VzCm1vcmUgb2YgYSBoaXN0b3J5IG9mIHJlZ2ltZW4gb2Ygb3JpZ2luYWwgYW5kIG1vc3QgY3VycmVudCAtIHRoZXJlIG1heSBiZSBvcmlnaW5hbCBhbmQgY3VycmVudCByZWdpbWVuCmJ1bmRsZSBpbmNsdWRlcyBvcmlnaW5hbCByZWdpbWVuCiovCgovLyBQYXRpZW50IHdobyBtYWRlIGEgY2xpbmljIHZpc2l0IGluIHRoZSBwYXN0IGFuZCB3ZXJlIGdpdmVuIG1lZGljaW5lIHRvIGxhc3QgdGhlIHJlcG9ydGluZyBwZXJpb2QgYW5kIGJleW9uZAoKCmRlZmluZSAiTWVhc3VyZSBQb3B1bGF0aW9uIjogCiAgIlJldHVybiBWaXNpdCB3aXRoaW4gMzAgZGF5cyBvZiBQZXJpb2QiIGFuZCAiSGFzIHN0YXJ0ZWQgQVJUIgoKCi8vIE1lYXN1cmUgUG9wdWxhdGlvbiBFeGNsdXNpb24KLy8gRGVjZWFzZWQgYW5kIHRob3NlIHdobyBpbnRlcnJ1cHRlZCB0cmVhdG1lbnQgZm9yIGFueSByZWFzb24sIGV0YywgZXRjLgoKCi8qCkRlY2Vhc2VkIHBhdGllbnRzIGFyZSBub3QgaW4gbnVtZXJhdG9yLgpJbiBGSElSLCBkZWNlYXNlZFt4XSBpcyBhIGNob2ljZSB0eXBlLCBvZiBlaXRoZXIgYm9vbGVhbiBvciBkYXRldGltZS4KSXQgYWxzbyBoYXMgYSBjYXJkaW5hbGl0eSBvZiAwLi4xLiBzbyBkZWNlYXNlZEJvb2xlYW4gYW5kIGRlY2Vhc2VkRGF0ZVRpbWUgY2Fubm90IGNvZXhpc3QuClRoZXJlIGNhbiBvbmx5IGJlIG9uZSBkZWNlYXNlZFt4XSBlbGVtZW50LgpJZiB0cnVlIGlzIHVzZWQsIHRoZXJlJ3Mgbm8gd2F5IHRvIGtub3cgZnJvbSB0aGF0IGZpZWxkIHdoZW4gdGhlIHBhdGllbnQgZGllZC4gRGF0ZVRpbWUgaXMgYmV0dGVyIGZvciBhY2N1cmFjeS4KKi8KCgovLyBUaGlzIGV4cHJlc3Npb24gYWxsb3dzIGRlY2Vhc2VkQm9vbGVhbiB3aGljaCBoYXMgbm8gZGF0ZXRpbWUuCmRlZmluZSAiRGVjZWFzZWQgQm9vbGVhbiI6CiAgUGF0aWVudC5kZWNlYXNlZCBpcyBub3QgbnVsbCAKICBhbmQgKChQYXRpZW50LmRlY2Vhc2VkIGFzIEZISVIuYm9vbGVhbikgaXMgdHJ1ZSBvciAoUGF0aWVudC5kZWNlYXNlZCBhcyBGSElSLmRhdGVUaW1lKSBvbiBvciBiZWZvcmUgZW5kIG9mICJNZWFzdXJlbWVudCBQZXJpb2QiKQoKCi8vIFRoaXMgZXhwcmVzc2lvbiByZXF1aXJlcyBwYXRpZW50cyB0byBoYXZlIGRhdGV0aW1lIG9uIFBhdGllbnQuZGVjZWFzZWQgKG1vcmUgYWNjdXJhdGUpLgpkZWZpbmUgIkRlY2Vhc2VkIERhdGVUaW1lIE9ubHkiOgogIFBhdGllbnQuZGVjZWFzZWQgaXMgbm90IG51bGwgCiAgYW5kIFBhdGllbnQuZGVjZWFzZWQgb24gb3IgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIgoKCgovLyBUb2RvOiBkb3VibGUgY2hlY2s6ICJlZmZlY3RpdmVEYXRlVGltZSI6ICIyMDIzLTA1LTMxVDExOjMwOjE0KzAzOjAwIiwKZGVmaW5lICJEaXNjb250aW51YXRpb24iOgogIFsiT2JzZXJ2YXRpb24iOiBDeC4iUmVhc29uIGZvciBkaXNjb250aW51YXRpb24gb2YgcHJvZ3JhbSJdIE9icwogIHdoZXJlIE9icy5lZmZlY3RpdmUgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIiBhbmQgT2JzLmVmZmVjdGl2ZSBhZnRlciAiTW9zdCBSZWNlbnQgUmV0dXJuIFZpc2l0IER1cmluZyBQZXJpb2QiLmVmZmVjdGl2ZQoKCi8vIHZhbHVlRGF0ZVRpbWUKZGVmaW5lICJUcmFuc2ZlciBPdXQiOgogIFsiT2JzZXJ2YXRpb24iOiBDeC4iVHJlYXRtZW50IGVuZCBkYXRlIl0gT2JzCiAgd2hlcmUgT2JzLnZhbHVlIGJlZm9yZSBlbmQgb2YgIk1lYXN1cmVtZW50IFBlcmlvZCIgYW5kIE9icy52YWx1ZSBhZnRlciAiTW9zdCBSZWNlbnQgUmV0dXJuIFZpc2l0IER1cmluZyBQZXJpb2QiLmVmZmVjdGl2ZQoKCmRlZmluZSAiRGlzY29udGludWF0aW9uIEJvb2xlYW4iOiBleGlzdHMgIkRpc2NvbnRpbnVhdGlvbiIKCgpkZWZpbmUgIlRyYW5zZmVyIE91dCBCb29sZWFuIjogZXhpc3RzICJUcmFuc2ZlciBPdXQiCgoKZGVmaW5lICJNZWFzdXJlIFBvcHVsYXRpb24gRXhjbHVzaW9uIjogCiAgIkRpc2NvbnRpbnVhdGlvbiBCb29sZWFuIgogIG9yICJUcmFuc2ZlciBPdXQgQm9vbGVhbiIKICBvciAiRGVjZWFzZWQgQm9vbGVhbiIKICAvL29yICgiRGVjZWFzZWQgQm9vbGVhbiIgaXMgdHJ1ZSBvciAiRGVjZWFzZWQgRGF0ZVRpbWUgT25seSIgaXMgdHJ1ZSkKCgoKLy8gU3RyYXRpZmllcnMKCgovLyBzaG91bGQgd29yayB3aXRob3V0ICNsb2NhdGlvbgovLyBob3cgdG8gY2xlYW4gaXQgdXAgd2l0aCBpZGVudGlmaWVyW10uZXh0ZW5zaW9uW10KLy8gdG9kbzogZGVidWdnaW5nIG5lZWRlZCBvbiBsb2NhdGlvbgpkZWZpbmUgIk9wZW5NUlMgTG9jYXRpb24iOgogIFtQYXRpZW50XSBQCiAgICAvLyB0aGlzIHVybCBpcyBpbiB0aGUgaWcsIGJ1dCBpcyBub3QgY29ycmVjdDogJ2h0dHA6Ly9maGlyLm9wZW5tcnMub3JnL2NvcmUvU3RydWN0dXJlRGVmaW5pdGlvbi9vbXJzLXBhdGllbnQtaWRlbnRpZmllci1sb2NhdGlvbid9CiAgICB3aGVyZSBzaW5nbGV0b24gZnJvbSB7UC5pZGVudGlmaWVyLmV4dGVuc2lvblswXS51cmwgfiAnaHR0cDovL2ZoaXIub3Blbm1ycy5vcmcvZXh0L3BhdGllbnQvaWRlbnRpZmllcid9CiAgICBvciBzaW5nbGV0b24gZnJvbSB7UC5pZGVudGlmaWVyLmV4dGVuc2lvblswXS51cmwgfiAnaHR0cDovL2ZoaXIub3Blbm1ycy5vcmcvZXh0L3BhdGllbnQvaWRlbnRpZmllciNsb2NhdGlvbid9CiAgICBvciBzaW5nbGV0b24gZnJvbSB7UC5pZGVudGlmaWVyLmV4dGVuc2lvblsxXS51cmwgfiAnaHR0cDovL2ZoaXIub3Blbm1ycy5vcmcvZXh0L3BhdGllbnQvaWRlbnRpZmllcid9CiAgICBvciBzaW5nbGV0b24gZnJvbSB7UC5pZGVudGlmaWVyLmV4dGVuc2lvblsxXS51cmwgfiAnaHR0cDovL2ZoaXIub3Blbm1ycy5vcmcvZXh0L3BhdGllbnQvaWRlbnRpZmllciNsb2NhdGlvbid9CiAgICByZXR1cm4gc2luZ2xldG9uIGZyb20ge1AuaWRlbnRpZmllci5leHRlbnNpb25bMF0udmFsdWUucmVmZXJlbmNlLnZhbHVlfQoKCmRlZmluZSAiU3RyYXRpZmljYXRpb24iOiAKICBTdHJhdGlmaWVycy4iQWdlIEdyb3VwL1NleCIKCgovLyBkZWZpbmUgIlN0cmF0aWZpZXIiOiAiU3RyYXRpZmljYXRpb24iCg=="
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Library/KenyaEMRTXCURR"
+    }
+  },
+  {
+    "fullUrl" : "https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR",
+    "resource" : {
+      "resourceType" : "Measure",
+      "id" : "KEMRTXCURR",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Measure</b><a name=\"KEMRTXCURR\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Measure &quot;KEMRTXCURR&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR</code></p><p><b>identifier</b>: id:\u00a0KEMRTXCURR</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: KEMRTXCURR</p><p><b>title</b>: KEMRTXCURR</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: 2023-07-01</p><p><b>publisher</b>: PATH</p><p><b>description</b>: KEMRTXCURR</p><p><b>library</b>: <a href=\"Library-KenyaEMRTXCURR.html\">KenyaEMRTXCURR</a></p><p><b>scoring</b>: Continuous Variable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-scoring.html\">MeasureScoring</a>#continuous-variable)</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#initial-population)</span></p><p><b>description</b>: Initial Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Initial Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Measure Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-population)</span></p><p><b>description</b>: Measure Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Measure Population Exclusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-population-exclusion)</span></p><p><b>description</b>: Measure Population Exclusion</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Population Exclusion</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Stratification</td></tr></table></blockquote></blockquote></div>"
+      },
+      "url" : "https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR",
+      "identifier" : [{
+        "value" : "KEMRTXCURR"
+      }],
+      "version" : "0.1.0",
+      "name" : "KEMRTXCURR",
+      "title" : "KEMRTXCURR",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2023-07-01",
+      "publisher" : "PATH",
+      "description" : "KEMRTXCURR",
+      "library" : ["https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"],
+      "scoring" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+          "code" : "continuous-variable"
+        }]
+      },
+      "group" : [{
+        "population" : [{
+          "code" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code" : "initial-population"
+            }]
+          },
+          "description" : "Initial Population",
+          "criteria" : {
+            "language" : "text/cql",
+            "expression" : "Initial Population"
+          }
+        },
+        {
+          "code" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code" : "measure-population"
+            }]
+          },
+          "description" : "Measure Population",
+          "criteria" : {
+            "language" : "text/cql",
+            "expression" : "Measure Population"
+          }
+        },
+        {
+          "code" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code" : "measure-population-exclusion"
+            }]
+          },
+          "description" : "Measure Population Exclusion",
+          "criteria" : {
+            "language" : "text/cql",
+            "expression" : "Measure Population Exclusion"
+          }
+        }],
+        "stratifier" : [{
+          "criteria" : {
+            "language" : "text/cql",
+            "expression" : "Stratification"
+          }
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Measure/KEMRTXCURR"
+    }
+  }]
+}

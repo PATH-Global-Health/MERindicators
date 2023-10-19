@@ -1,0 +1,100 @@
+{
+  "resourceType" : "Measure",
+  "id" : "KEMRTXCURR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Measure</b><a name=\"KEMRTXCURR\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Measure &quot;KEMRTXCURR&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR</code></p><p><b>identifier</b>: id:\u00a0KEMRTXCURR</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: KEMRTXCURR</p><p><b>title</b>: KEMRTXCURR</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: 2023-07-01</p><p><b>publisher</b>: PATH</p><p><b>contact</b>: PATH: <a href=\"https://www.path.org\">https://www.path.org</a>,<a href=\"mailto:info@path.org\">info@path.org</a>, PATH: <a href=\"mailto:info@path.org\">info@path.org</a></p><p><b>description</b>: KEMRTXCURR</p><p><b>jurisdiction</b>: World <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>library</b>: <a href=\"Library-KenyaEMRTXCURR.html\">KenyaEMRTXCURR</a></p><p><b>scoring</b>: Continuous Variable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-scoring.html\">MeasureScoring</a>#continuous-variable)</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#initial-population)</span></p><p><b>description</b>: Initial Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Initial Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Measure Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-population)</span></p><p><b>description</b>: Measure Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Measure Population Exclusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-population-exclusion)</span></p><p><b>description</b>: Measure Population Exclusion</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Population Exclusion</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Stratification</td></tr></table></blockquote></blockquote></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR",
+  "identifier" : [{
+    "value" : "KEMRTXCURR"
+  }],
+  "version" : "0.1.0",
+  "name" : "KEMRTXCURR",
+  "title" : "KEMRTXCURR",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-07-01",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "KEMRTXCURR",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "library" : ["https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"],
+  "scoring" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+      "code" : "continuous-variable"
+    }]
+  },
+  "group" : [{
+    "population" : [{
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "initial-population"
+        }]
+      },
+      "description" : "Initial Population",
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Initial Population"
+      }
+    },
+    {
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "measure-population"
+        }]
+      },
+      "description" : "Measure Population",
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Measure Population"
+      }
+    },
+    {
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "measure-population-exclusion"
+        }]
+      },
+      "description" : "Measure Population Exclusion",
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Measure Population Exclusion"
+      }
+    }],
+    "stratifier" : [{
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Stratification"
+      }
+    }]
+  }]
+}

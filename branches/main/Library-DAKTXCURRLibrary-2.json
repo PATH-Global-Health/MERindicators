@@ -1,0 +1,477 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion",
+         "type" : "CqlToElmInfo"
+      }, {
+         "type" : "Annotation",
+         "s" : {
+            "r" : "29",
+            "s" : [ {
+               "value" : [ "// TX_CURR, WHO HIV.IND.AV.1\n// numerator only\n// Number of adults and children currently receiving antiretroviral therapy (ART)\n// Sum of age/sex disaggregates\n","library DAKTXCURR version '0.1.0'" ]
+            } ]
+         }
+      } ],
+      "identifier" : {
+         "id" : "DAKTXCURR",
+         "system" : "https://path-global-health.github.io/MERindicators",
+         "version" : "0.1.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localId" : "1",
+            "locator" : "9:1-9:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "1",
+                  "s" : [ {
+                     "value" : [ "","using " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIR" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localId" : "2",
+            "locator" : "11:1-11:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRHelpers",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "2",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIRHelpers" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "3",
+            "locator" : "12:1-12:44",
+            "localIdentifier" : "FC",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRCommon",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "3",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIRCommon" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'"," called ","FC" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "4",
+            "locator" : "14:1-14:29",
+            "localIdentifier" : "Cx",
+            "path" : "https://path-global-health.github.io/MERindicators/DAKConcepts",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "4",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "DAKConcepts" ]
+                     } ]
+                  }, {
+                     "value" : [ " called ","Cx" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "5",
+            "locator" : "15:1-15:42",
+            "localIdentifier" : "PatientData",
+            "path" : "https://path-global-health.github.io/MERindicators/DAKDataElements",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "5",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "DAKDataElements" ]
+                     } ]
+                  }, {
+                     "value" : [ " called ","PatientData" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "6",
+            "locator" : "16:1-16:44",
+            "localIdentifier" : "DAKStratifiers",
+            "path" : "https://path-global-health.github.io/MERindicators/DAKStratifiers",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "6",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "DAKStratifiers" ]
+                     } ]
+                  }, {
+                     "value" : [ " called ","DAKStratifiers" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "locator" : "18:1-18:15",
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "locator" : "18:1-18:15",
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "locator" : "18:1-18:15",
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "localId" : "12",
+            "locator" : "27:1-28:46",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+            "name" : "Initial Population",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "12",
+                  "s" : [ {
+                     "value" : [ "// for cohort\n/*\ndefine \"Initial Population\": \n  PatientData.\"PLHIV\" and PatientData.\"On ART\" and not PatientData.\"Deceased\"\n*/\n\n// For continuous variable\n","define ","\"Initial Population\"",": \n  " ]
+                  }, {
+                     "r" : "11",
+                     "s" : [ {
+                        "r" : "8",
+                        "s" : [ {
+                           "r" : "7",
+                           "s" : [ {
+                              "value" : [ "PatientData" ]
+                           } ]
+                        }, {
+                           "value" : [ "." ]
+                        }, {
+                           "r" : "8",
+                           "s" : [ {
+                              "value" : [ "\"PLHIV\"" ]
+                           } ]
+                        } ]
+                     }, {
+                        "value" : [ " and " ]
+                     }, {
+                        "r" : "10",
+                        "s" : [ {
+                           "r" : "9",
+                           "s" : [ {
+                              "value" : [ "PatientData" ]
+                           } ]
+                        }, {
+                           "value" : [ "." ]
+                        }, {
+                           "r" : "10",
+                           "s" : [ {
+                              "value" : [ "\"On ART\"" ]
+                           } ]
+                        } ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "11",
+               "locator" : "28:3-28:46",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+               "type" : "And",
+               "operand" : [ {
+                  "localId" : "8",
+                  "locator" : "28:3-28:21",
+                  "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "name" : "PLHIV",
+                  "libraryName" : "PatientData",
+                  "type" : "ExpressionRef"
+               }, {
+                  "localId" : "10",
+                  "locator" : "28:27-28:46",
+                  "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "name" : "On ART",
+                  "libraryName" : "PatientData",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "localId" : "14",
+            "locator" : "30:1-31:22",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+            "name" : "Measure Population",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "14",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Measure Population\"",":\n  " ]
+                  }, {
+                     "r" : "13",
+                     "s" : [ {
+                        "value" : [ "\"Initial Population\"" ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "13",
+               "locator" : "31:3-31:22",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+               "name" : "Initial Population",
+               "type" : "ExpressionRef"
+            }
+         }, {
+            "localId" : "20",
+            "locator" : "33:1-34:53",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+            "name" : "Measure Population Exclusion",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "20",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Measure Population Exclusion\"",":\n  " ]
+                  }, {
+                     "r" : "19",
+                     "s" : [ {
+                        "r" : "16",
+                        "s" : [ {
+                           "r" : "15",
+                           "s" : [ {
+                              "value" : [ "PatientData" ]
+                           } ]
+                        }, {
+                           "value" : [ "." ]
+                        }, {
+                           "r" : "16",
+                           "s" : [ {
+                              "value" : [ "\"Deceased\"" ]
+                           } ]
+                        } ]
+                     }, {
+                        "value" : [ " or " ]
+                     }, {
+                        "r" : "18",
+                        "s" : [ {
+                           "r" : "17",
+                           "s" : [ {
+                              "value" : [ "PatientData" ]
+                           } ]
+                        }, {
+                           "value" : [ "." ]
+                        }, {
+                           "r" : "18",
+                           "s" : [ {
+                              "value" : [ "\"Stopped ART\"" ]
+                           } ]
+                        } ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "19",
+               "locator" : "34:3-34:53",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+               "type" : "Or",
+               "operand" : [ {
+                  "localId" : "16",
+                  "locator" : "34:3-34:24",
+                  "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "name" : "Deceased",
+                  "libraryName" : "PatientData",
+                  "type" : "ExpressionRef"
+               }, {
+                  "localId" : "18",
+                  "locator" : "34:29-34:53",
+                  "resultTypeName" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "name" : "Stopped ART",
+                  "libraryName" : "PatientData",
+                  "type" : "ExpressionRef"
+               } ]
+            }
+         }, {
+            "localId" : "23",
+            "locator" : "36:1-37:3",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Integer",
+            "name" : "Measure Observation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "23",
+                  "s" : [ {
+                     "value" : [ "","define function ","\"Measure Observation\""," (","Patient"," " ]
+                  }, {
+                     "r" : "21",
+                     "s" : [ {
+                        "value" : [ "\"Patient\"" ]
+                     } ]
+                  }, {
+                     "value" : [ "):\n  " ]
+                  }, {
+                     "r" : "22",
+                     "s" : [ {
+                        "r" : "22",
+                        "value" : [ "1" ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "22",
+               "locator" : "37:3",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}Integer",
+               "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+               "value" : "1",
+               "type" : "Literal"
+            },
+            "operand" : [ {
+               "name" : "Patient",
+               "operandTypeSpecifier" : {
+                  "localId" : "21",
+                  "locator" : "36:48-36:56",
+                  "resultTypeName" : "{http://hl7.org/fhir}Patient",
+                  "name" : "{http://hl7.org/fhir}Patient",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "localId" : "26",
+            "locator" : "61:1-62:48",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}String",
+            "name" : "Stratification",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "26",
+                  "s" : [ {
+                     "value" : [ "/* for proportion\ndefine \"Initial Population\": \n  PatientData.\"PLHIV\"\n\ndefine \"Denominator\":\n  PatientData.\"PLHIV\"\n\ndefine \"Denominator-Exclusion\":\n  PatientData.\"Deceased\"\n\ndefine \"Numerator-Exclusion\": \n  PatientData.\"Deceased\"\n\n\n// todo: this is not showing up as true\n\ndefine \"Numerator\":\n  PatientData.\"On ART\"\n*/\n","define ","\"Stratification\"",": \n  " ]
+                  }, {
+                     "r" : "25",
+                     "s" : [ {
+                        "r" : "24",
+                        "s" : [ {
+                           "value" : [ "DAKStratifiers" ]
+                        } ]
+                     }, {
+                        "value" : [ "." ]
+                     }, {
+                        "r" : "25",
+                        "s" : [ {
+                           "value" : [ "\"Age Group/Sex/Location TXCURR\"" ]
+                        } ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "25",
+               "locator" : "62:3-62:48",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}String",
+               "name" : "Age Group/Sex/Location TXCURR",
+               "libraryName" : "DAKStratifiers",
+               "type" : "ExpressionRef"
+            }
+         }, {
+            "localId" : "29",
+            "locator" : "64:1-65:62",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}String",
+            "name" : "Dispense Stratification",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "29",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Dispense Stratification\"",":\n  " ]
+                  }, {
+                     "r" : "28",
+                     "s" : [ {
+                        "r" : "27",
+                        "s" : [ {
+                           "value" : [ "DAKStratifiers" ]
+                        } ]
+                     }, {
+                        "value" : [ "." ]
+                     }, {
+                        "r" : "28",
+                        "s" : [ {
+                           "value" : [ "\"Dispensing Quantity/Coarse Age/Sex/Location\"" ]
+                        } ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "28",
+               "locator" : "65:3-65:62",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}String",
+               "name" : "Dispensing Quantity/Coarse Age/Sex/Location",
+               "libraryName" : "DAKStratifiers",
+               "type" : "ExpressionRef"
+            }
+         } ]
+      }
+   }
+}

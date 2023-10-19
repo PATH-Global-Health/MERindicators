@@ -1,0 +1,25 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "DiagnosticReport2-ViralLoad",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 25836-8}\">HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Mittens Cat</b> female, DoB: 1985-01-01</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-Observation2-ViralLoad.html\"><span title=\"Codes: {http://loinc.org 25836-8}\">HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</span></a></td><td>800 copies/mL</td><td>2020-09-01 13:28:17+0200</td></tr></table></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "25836-8",
+      "display" : "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-HIVSimple"
+  },
+  "encounter" : {
+    "reference" : "Encounter/Encounter2-ViralLoad"
+  },
+  "result" : [{
+    "reference" : "Observation/Observation2-ViralLoad"
+  }]
+}

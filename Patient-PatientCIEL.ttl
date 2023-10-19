@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Patient/PatientCIEL> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientCIEL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Mittens Cat</b> female, DoB: 1985-01-01 ( OpenMRS ID: 1234567 (use: OFFICIAL))</p><hr/></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.openmrs.org/ext/patient/identifier#location"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://path-global-health.github.io/MERindicators/Location/LocationCIEL> ;
+         fhir:reference [ fhir:v "Location/LocationCIEL" ] ;
+         fhir:type [ fhir:v "Location"^^xsd:anyURI ] ;
+         fhir:display [ fhir:v "Inpatient Ward" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] ) ;
+       fhir:text [ fhir:v "OpenMRS ID" ]
+     ] ;
+     fhir:value [ fhir:v "1234567" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Mittens Cat" ] ;
+     fhir:family [ fhir:v "Cat" ] ;
+     fhir:given ( [ fhir:v "Mittens" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-01-01"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

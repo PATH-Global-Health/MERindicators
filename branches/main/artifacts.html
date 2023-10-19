@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - PATH MER Indicators v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://ohie.org/">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PATH MER Indicators</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="workflows.html">Workflows</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+          <span style="float:right;">
+
+            <a href="workflows.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-TXCURRelements.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">PATH MER Indicators, published by PATH. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/PATH-Global-Health/MERindicators">https://github.com/PATH-Global-Health/MERindicators</a> and changes regularly. See the <a href="https://path-global-health.github.io/MERindicators/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#6">Other</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TXCURRelements.html"
+                  title="StructureDefinition/TXCURRelements">TXCURRelements</a>
+            </td>
+            <td>
+<p>Base elements required for TXCURR</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKARTCondition.html"
+                  title="StructureDefinition/DAKARTCondition">DAK TXCURR Condition for On ART</a>
+            </td>
+            <td>
+<p>DAK Condition for TXCURR for On ART</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKHIVCondition.html"
+                  title="StructureDefinition/DAKHIVCondition">DAK TXCURR Condition for PLHIV</a>
+            </td>
+            <td>
+<p>DAK Condition for TXCURR for PLHIV</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKARTVisitEncounter.html"
+                  title="StructureDefinition/DAKARTVisitEncounter">DAK TXCURR Encounter for ART Visit</a>
+            </td>
+            <td>
+<p>DAK Encounter for TXCURR for ART Visit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKDrugPickupEncounter.html"
+                  title="StructureDefinition/DAKDrugPickupEncounter">DAK TXCURR Encounter for Drug Pickup</a>
+            </td>
+            <td>
+<p>DAK Encounter for TXCURR for Drug Pickup</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKMedicationRequest.html"
+                  title="StructureDefinition/DAKMedicationRequest">DAK TXCURR MedicationRequest</a>
+            </td>
+            <td>
+<p>DAK MedicationRequest for TXCURR for On ART</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKDispenseDaysObservation.html"
+                  title="StructureDefinition/DAKDispenseDaysObservation">DAK TXCURR Observation for Dispensed Days</a>
+            </td>
+            <td>
+<p>DAK Observation for TXCURR for Dispensed Days of ART Medication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKARTObservation.html"
+                  title="StructureDefinition/DAKARTObservation">DAK TXCURR Observation for On ART</a>
+            </td>
+            <td>
+<p>DAK Observation for TXCURR for On ART</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKStoppedObservation.html"
+                  title="StructureDefinition/DAKStoppedObservation">DAK TXCURR Observation for Stopped ART</a>
+            </td>
+            <td>
+<p>DAK Observation for TXCURR for Stopped ART</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKTransferOutObservation.html"
+                  title="StructureDefinition/DAKTransferOutObservation">DAK TXCURR Observation for Transfer Out</a>
+            </td>
+            <td>
+<p>DAK Observation for TXCURR for Transfer Out</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DAKPatient.html"
+                  title="StructureDefinition/DAKPatient">DAK TXCURR Patient</a>
+            </td>
+            <td>
+<p>DAK Patient for TXCURR</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKARTMeds.html" title="ValueSet/DAKARTMeds">ART medications</a>
+            </td>
+            <td>
+<p>ART medications from the HIV DAK</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-CIELHIVMedications.html"
+                  title="ValueSet/CIELHIVMedications">CIELHIVMedications</a>
+            </td>
+            <td>
+<p>CIELHIVMedications</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-active-condition.html" title="ValueSet/active-condition">CQF Active Condition</a>
+            </td>
+            <td>
+<p>Active condition clinical status codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-inactive-condition.html"
+                  title="ValueSet/inactive-condition">CQF Inactive Condition</a>
+            </td>
+            <td>
+<p>Inactive condition clinical status codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKARTVisit.html" title="ValueSet/DAKARTVisit">DAK ART Visit codes</a>
+            </td>
+            <td>
+<p>DAK ART Visit codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKARTStop.html" title="ValueSet/DAKARTStop">DAK Codes for ART Stopped</a>
+            </td>
+            <td>
+<p>HIV DAK codes for ART Stopped</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKONART.html" title="ValueSet/DAKONART">DAK Codes for On ART</a>
+            </td>
+            <td>
+<p>HIV DAK codes for on ART</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKHIVTransfer.html" title="ValueSet/DAKHIVTransfer">DAK Codes for Transfer in for HIV Care</a>
+            </td>
+            <td>
+<p>HIV DAK codes for Transfer in for HIV Care</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKARVDrugPickup.html" title="ValueSet/DAKARVDrugPickup">DAK Drug Pickup Appointment codes</a>
+            </td>
+            <td>
+<p>DAK Drug Pickup Appointment codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKMMD.html" title="ValueSet/DAKMMD">DAK Multi-Month Dispense codes</a>
+            </td>
+            <td>
+<p>DAK Multi-Month Dispense codes for number of days dispensed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKCoarseAgeRange.html"
+                  title="ValueSet/DAKCoarseAgeRange">DAKCoarseAgeRange</a>
+            </td>
+            <td>
+<p>DAKCoarseAgeRange</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKDispensingQuantity.html"
+                  title="ValueSet/DAKDispensingQuantity">DAKDispensingQuantity</a>
+            </td>
+            <td>
+<p>DAKDispensingQuantity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-EnrollmentMethodsforHIVProgram.html"
+                  title="ValueSet/EnrollmentMethodsforHIVProgram">EnrollmentMethodsforHIVProgram</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-OnARV.html" title="ValueSet/OnARV">History of antiretroviral therapy (situation)</a>
+            </td>
+            <td>
+<p>History of antiretroviral therapy (situation)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-Pregnant.html" title="ValueSet/Pregnant">Pregnant</a>
+            </td>
+            <td>
+<p>Currently pregnant</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SyntheaHIVMedications.html"
+                  title="ValueSet/SyntheaHIVMedications">Synthea HIV MedicationsVS</a>
+            </td>
+            <td>
+<p>Synthea HIV MedicationsVS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DAKPLHIV.html" title="ValueSet/DAKPLHIV">WHO HIV Clinical Stages</a>
+            </td>
+            <td>
+<p>WHO HIV Clinical Stages</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CIEL.html" title="CodeSystem/CIEL">CIEL</a>
+            </td>
+            <td>
+<p>Columbia International eHealth Laboratory (CIEL)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DAKCoarseAgeRangeCS.html"
+                  title="CodeSystem/DAKCoarseAgeRangeCS">DAKCoarseAgeRangeCS</a>
+            </td>
+            <td>
+<p>DAKCoarseAgeRangeCS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DAKDispensingQuantityCS.html"
+                  title="CodeSystem/DAKDispensingQuantityCS">DAKDispensingQuantityCS</a>
+            </td>
+            <td>
+<p>DAKDispensingQuantityCS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-EnrollmentMethods.html"
+                  title="CodeSystem/EnrollmentMethods">Enrollment Methods for HIV program</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DAKICD11.html" title="CodeSystem/DAKICD11">ICD-11 codes from the HIV DAK</a>
+            </td>
+            <td>
+<p>ICD-11 codes from the HIV DAK</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-OpenHIE.html" title="CodeSystem/OpenHIE">OpenHIE CodeSystem</a>
+            </td>
+            <td>
+<p>OpenHIE CodeSystem</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-Condition-DAK-onart-art.html"
+                  title="Condition/Condition-DAK-onart-art">Condition-DAK-onart-art</a>
+            </td>
+            <td>
+<p>Condition-DAK-onart-art</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-Condition-DAK-onart-hiv.html"
+                  title="Condition/Condition-DAK-onart-hiv">Condition-DAK-onart-hiv</a>
+            </td>
+            <td>
+<p>Condition-DAK-onart-hiv</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-Condition-HIVSimple.html"
+                  title="Condition/Condition-HIVSimple">Condition-HIVSimple</a>
+            </td>
+            <td>
+<p>Condition-HIVSimple</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-Condition-HIVSimple2.html"
+                  title="Condition/Condition-HIVSimple2">Condition-HIVSimple2</a>
+            </td>
+            <td>
+<p>Condition-HIVSimple2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-Condition-Pregnancy.html"
+                  title="Condition/Condition-Pregnancy">Condition-Pregnancy</a>
+            </td>
+            <td>
+<p>Condition-Pregnancy</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-Condition-Pregnancy2.html"
+                  title="Condition/Condition-Pregnancy2">Condition-Pregnancy</a>
+            </td>
+            <td>
+<p>Condition-Pregnancy</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-Condition-PregnancyCIEL.html"
+                  title="Condition/Condition-PregnancyCIEL">Condition-PregnancyCIEL</a>
+            </td>
+            <td>
+<p>Condition-PregnancyCIEL</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-Location-DAK.html" title="Location/Location-DAK">DAK Location</a>
+            </td>
+            <td>
+<p>DAK Location</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Organization-DAK.html"
+                  title="Organization/Organization-DAK">DAK Organization</a>
+            </td>
+            <td>
+<p>DAK Organization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-DAKConcepts.html" title="Library/DAKConcepts">DAKConcepts</a>
+            </td>
+            <td>
+<p>DAKConcepts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-DAKDataElements.html" title="Library/DAKDataElements">DAKDataElements</a>
+            </td>
+            <td>
+<p>DAKDataElements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-DAKStratifiers.html" title="Library/DAKStratifiers">DAKStratifiers</a>
+            </td>
+            <td>
+<p>DAKStratifiers</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-DAKTXCURRLibrary.html" title="Library/DAKTXCURRLibrary">DAKTXCURR</a>
+            </td>
+            <td>
+<p>DAKTXCURR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Measure-DAKTXCURR.html" title="Measure/DAKTXCURR">DAKTXCURR</a>
+            </td>
+            <td>
+<p>DAKTXCURR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-Debug.html" title="Library/Debug">Debug</a>
+            </td>
+            <td>
+<p>Debug</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-DeceasedBoolean.html" title="Patient/DeceasedBoolean">DeceasedBoolean</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-DeceasedDateTime.html" title="Patient/DeceasedDateTime">DeceasedDateTime</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-DiagnosticReport-HIVSimple.html"
+                  title="DiagnosticReport/DiagnosticReport-HIVSimple">DiagnosticReport-HIVSimple</a>
+            </td>
+            <td>
+<p>DiagnosticReport-HIVSimple</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-DiagnosticReport-HIVSimple2.html"
+                  title="DiagnosticReport/DiagnosticReport-HIVSimple2">DiagnosticReport-HIVSimple2</a>
+            </td>
+            <td>
+<p>DiagnosticReport-HIVSimple2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-DiagnosticReport-ViralLoad.html"
+                  title="DiagnosticReport/DiagnosticReport-ViralLoad">DiagnosticReport-ViralLoad</a>
+            </td>
+            <td>
+<p>DiagnosticReport-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-DiagnosticReport-ViralLoad2.html"
+                  title="DiagnosticReport/DiagnosticReport-ViralLoad2">DiagnosticReport-ViralLoad</a>
+            </td>
+            <td>
+<p>DiagnosticReport-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-DiagnosticReport2-ViralLoad.html"
+                  title="DiagnosticReport/DiagnosticReport2-ViralLoad">DiagnosticReport2-ViralLoad</a>
+            </td>
+            <td>
+<p>DiagnosticReport2-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Encounter-DAK-onart.html"
+                  title="Encounter/Encounter-DAK-onart">Encounter-DAK-onart</a>
+            </td>
+            <td>
+<p>Encounter-DAK-onart</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Encounter-HIVSimple.html"
+                  title="Encounter/Encounter-HIVSimple">Encounter-HIVSimple</a>
+            </td>
+            <td>
+<p>Encounter-HIVSimple</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Encounter-HIVSimple2.html"
+                  title="Encounter/Encounter-HIVSimple2">Encounter-HIVSimple2</a>
+            </td>
+            <td>
+<p>Encounter-HIVSimple2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Encounter-ViralLoad.html"
+                  title="Encounter/Encounter-ViralLoad">Encounter-ViralLoad</a>
+            </td>
+            <td>
+<p>Encounter-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Encounter-ViralLoad2.html"
+                  title="Encounter/Encounter-ViralLoad2">Encounter-ViralLoad</a>
+            </td>
+            <td>
+<p>Encounter-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Encounter2-ViralLoad.html"
+                  title="Encounter/Encounter2-ViralLoad">Encounter2-ViralLoad</a>
+            </td>
+            <td>
+<p>Encounter2-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-EncounterCIEL.html" title="Encounter/EncounterCIEL">EncounterCIEL</a>
+            </td>
+            <td>
+<p>EncounterCIEL</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-Example-DAK-onart.html" title="Bundle/Example-DAK-onart">Example-DAK-onart</a>
+            </td>
+            <td>
+<p>Example-DAK-onart</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-Example-HIVSimple.html" title="Bundle/Example-HIVSimple">Example-HIVSimple</a>
+            </td>
+            <td>
+<p>Example-HIVSimple</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-Example-HIVSimple2.html" title="Bundle/Example-HIVSimple2">Example-HIVSimple2</a>
+            </td>
+            <td>
+<p>Example-HIVSimple2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-Example-Locations-Organizations.html"
+                  title="Bundle/Example-Locations-Organizations">Example-Locations-Organizations</a>
+            </td>
+            <td>
+<p>Example-Locations-Organizations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-Example0.html" title="Bundle/Example0">Example0</a>
+            </td>
+            <td>
+<p>Example0</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-ExampleOMRS0.html" title="Bundle/ExampleOMRS0">Example0</a>
+            </td>
+            <td>
+<p>Example0</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-ExampleCIEL.html" title="Bundle/ExampleCIEL">ExampleCIEL</a>
+            </td>
+            <td>
+<p>ExampleCIEL</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-ExampleDeceasedBoolean.html"
+                  title="Bundle/ExampleDeceasedBoolean">ExampleDeceasedBoolean</a>
+            </td>
+            <td>
+<p>ExampleDeceasedBoolean</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-ExampleDeceasedDateTime.html"
+                  title="Bundle/ExampleDeceasedDateTime">ExampleDeceasedDateTime</a>
+            </td>
+            <td>
+<p>ExampleDeceasedDateTime</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-FHIRCommon.html" title="Library/FHIRCommon">FHIRCommon</a>
+            </td>
+            <td>
+<p>FHIRCommon</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-FHIRHelpers.html" title="Library/FHIRHelpers">FHIRHelpers</a>
+            </td>
+            <td>
+<p>FHIRHelpers</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-KEMRBundle.html" title="Bundle/KEMRBundle">KEMRBundle</a>
+            </td>
+            <td>
+<p>KEMRBundle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Measure-KEMRTXCURR.html" title="Measure/KEMRTXCURR">KEMRTXCURR</a>
+            </td>
+            <td>
+<p>KEMRTXCURR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-KenyaEMRConcepts.html" title="Library/KenyaEMRConcepts">KenyaEMRConcepts</a>
+            </td>
+            <td>
+<p>KenyaEMRConcepts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-KenyaEMRStratifiers.html"
+                  title="Library/KenyaEMRStratifiers">KenyaEMRStratifiers</a>
+            </td>
+            <td>
+<p>KenyaEMRStratifiers</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-KenyaEMRTXCURR.html" title="Library/KenyaEMRTXCURR">KenyaEMRTXCURR</a>
+            </td>
+            <td>
+<p>KenyaEMRTXCURR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.html"
+                  title="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252">Location Example</a>
+            </td>
+            <td>
+<p>Example OpenMRS Location resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-Location-HIVSimple1.html"
+                  title="Location/Location-HIVSimple1">Location-HIVSimple1</a>
+            </td>
+            <td>
+<p>Location-HIVSimple1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-Location-HIVSimple2.html"
+                  title="Location/Location-HIVSimple2">Location-HIVSimple2</a>
+            </td>
+            <td>
+<p>Location-HIVSimple2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationCIEL.html" title="Location/LocationCIEL">LocationCIEL</a>
+            </td>
+            <td>
+<p>LocationCIEL</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-MedicationRequest-DAK-onart.html"
+                  title="MedicationRequest/MedicationRequest-DAK-onart">MedicationRequest-DAK-onart</a>
+            </td>
+            <td>
+<p>MedicationRequest-DAK-onart</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation-DAK-onart.html"
+                  title="Observation/Observation-DAK-onart">Observation-DAK-onart</a>
+            </td>
+            <td>
+<p>Observation-DAK-onart</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation-DAK-onart-dispense.html"
+                  title="Observation/Observation-DAK-onart-dispense">Observation-DAK-onart-dispense</a>
+            </td>
+            <td>
+<p>Observation-DAK-onart-dispense</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation-HIVSimple.html"
+                  title="Observation/Observation-HIVSimple">Observation-HIVSimple</a>
+            </td>
+            <td>
+<p>Observation-HIVSimple</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation-HIVSimple2.html"
+                  title="Observation/Observation-HIVSimple2">Observation-HIVSimple2</a>
+            </td>
+            <td>
+<p>Observation-HIVSimple2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation-ViralLoad.html"
+                  title="Observation/Observation-ViralLoad">Observation-ViralLoad</a>
+            </td>
+            <td>
+<p>Observation-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation-ViralLoad2.html"
+                  title="Observation/Observation-ViralLoad2">Observation-ViralLoad</a>
+            </td>
+            <td>
+<p>Observation-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation2-ViralLoad.html"
+                  title="Observation/Observation2-ViralLoad">Observation2-ViralLoad</a>
+            </td>
+            <td>
+<p>Observation2-ViralLoad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ObservationCIEL.html"
+                  title="Observation/ObservationCIEL">ObservationCIEL</a>
+            </td>
+            <td>
+<p>ObservationCIEL</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html"
+                  title="Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c">OpenMRS Condition Resource Example</a>
+            </td>
+            <td>
+<p>Example OMRS Condition resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html"
+                  title="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">OpenMRS Encounter Resource Example</a>
+            </td>
+            <td>
+<p>Example OpenMRS Encounter resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-EncounterOMRS0.html" title="Encounter/EncounterOMRS0">OpenMRS Encounter Resource Example</a>
+            </td>
+            <td>
+<p>Example OpenMRS Encounter resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ObservationOMRS0.html"
+                  title="Observation/ObservationOMRS0">OpenMRS Observation Example</a>
+            </td>
+            <td>
+<p>Example OpenMRS Observation resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-openmrs-Observation.html"
+                  title="Observation/example-openmrs-Observation">OpenMRS Observation Example</a>
+            </td>
+            <td>
+<p>Example OpenMRS Observation resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientOMRS0.html" title="Patient/PatientOMRS0">OpenMRS Patient Example</a>
+            </td>
+            <td>
+<p>Example OpenMRS Patient resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-example-openmrs-Patient.html"
+                  title="Patient/example-openmrs-Patient">OpenMRS Patient Example</a>
+            </td>
+            <td>
+<p>Example OpenMRS Patient resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de.html"
+                  title="DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de">Openmrs DiagnosticReport</a>
+            </td>
+            <td>
+<p>Example OMRS DiagnosticReport Resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Organization-HIVSimple1.html"
+                  title="Organization/Organization-HIVSimple1">Organization-HIVSimple1</a>
+            </td>
+            <td>
+<p>Organization-HIVSimple1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Organization-HIVSimple2.html"
+                  title="Organization/Organization-HIVSimple2">Organization-HIVSimple2</a>
+            </td>
+            <td>
+<p>Organization-HIVSimple2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-OrganizationCIEL.html"
+                  title="Organization/OrganizationCIEL">OrganizationCIEL</a>
+            </td>
+            <td>
+<p>OrganizationCIEL</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient-DAK-onart.html" title="Patient/Patient-DAK-onart">Patient-DAK-onart</a>
+            </td>
+            <td>
+<p>Patient-DAK-onart</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient-HIVSimple.html" title="Patient/Patient-HIVSimple">Patient-HIVSimple</a>
+            </td>
+            <td>
+<p>Patient-HIVSimple</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient-HIVSimple2.html"
+                  title="Patient/Patient-HIVSimple2">Patient-HIVSimple2</a>
+            </td>
+            <td>
+<p>Patient-HIVSimple2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientCIEL.html" title="Patient/PatientCIEL">PatientCIEL</a>
+            </td>
+            <td>
+<p>PatientCIEL</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-cqf-tooling.html" title="Device/cqf-tooling">cqf-tooling</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="workflows.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="StructureDefinition-TXCURRelements.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color: #81BEF7" href="https://www.path.org">PATH</a>.  Package path.merindicators#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 19, 2023 20:59+0000">2023-10-19</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="https://path-global-health.github.io/MERindicators/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

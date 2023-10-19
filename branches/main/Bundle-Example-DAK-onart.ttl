@@ -1,0 +1,247 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Bundle/Example-DAK-onart> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-DAK-onart"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Patient/Patient-DAK-onart"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-hiv"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-hiv> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Condition/Condition-DAK-onart-hiv"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-art"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-art> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Condition/Condition-DAK-onart-art"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/Encounter-DAK-onart"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/Encounter-DAK-onart> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Encounter/Encounter-DAK-onartonart"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/Observation-DAK-onart"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart-dispense"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart-dispense> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/Observation-DAK-onart-dispense"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/MedicationRequest-DAK-onart"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/MedicationRequest-DAK-onart> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "MedicationRequest/MedicationRequest-DAK-onart"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> a fhir:Patient ;
+  fhir:id [ fhir:v "Patient-DAK-onart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Patient-DAK-onart\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Patient-DAK-onart&quot; </p></div><p><b>name</b>: Mittens Cat</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-01-01</p></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Mittens Cat" ] ;
+     fhir:family [ fhir:v "Cat" ] ;
+     fhir:given ( [ fhir:v "Mittens" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-01-01"^^xsd:date] . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-hiv> a fhir:Condition ;
+  fhir:id [ fhir:v "Condition-DAK-onart-hiv"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition-DAK-onart-hiv\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition-DAK-onart-hiv&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#737378009)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>onset</b>: 2020-01-01</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:737378009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "737378009" ] ;
+       fhir:display [ fhir:v "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> ;
+     fhir:reference [ fhir:v "Patient/Patient-DAK-onart" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2020-01-01"^^xsd:date] . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/Condition-DAK-onart-art> a fhir:Condition ;
+  fhir:id [ fhir:v "Condition-DAK-onart-art"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition-DAK-onart-art\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition-DAK-onart-art&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Drug prophylaxis (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#182929008)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>onset</b>: 2020-01-01</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:182929008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "182929008" ] ;
+       fhir:display [ fhir:v "Drug prophylaxis (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> ;
+     fhir:reference [ fhir:v "Patient/Patient-DAK-onart" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2020-01-01"^^xsd:date] . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/Encounter-DAK-onart> a fhir:Encounter ;
+  fhir:id [ fhir:v "Encounter-DAK-onart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"Encounter-DAK-onart\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;Encounter-DAK-onart&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>period</b>: 2023-07-03 --&gt; 2023-07-03</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-Location-DAK.html\">Location/Location-DAK</a> &quot;DAK Location&quot;</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-Organization-DAK.html\">Organization/Organization-DAK</a> &quot;DAK Organization&quot;</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ACUTE" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> ;
+     fhir:reference [ fhir:v "Patient/Patient-DAK-onart" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-07-03"^^xsd:date ] ;
+     fhir:end [ fhir:v "2023-07-03"^^xsd:date ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://path-global-health.github.io/MERindicators/Location/Location-DAK> ;
+       fhir:reference [ fhir:v "Location/Location-DAK" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://path-global-health.github.io/MERindicators/Organization/Organization-DAK> ;
+     fhir:reference [ fhir:v "Organization/Organization-DAK" ]
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart> a fhir:Observation ;
+  fhir:id [ fhir:v "Observation-DAK-onart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-DAK-onart\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-DAK-onart&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Drug prophylaxis (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#182929008)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-DAK-onart\">See above (Encounter/Encounter-DAK-onart)</a></p><p><b>effective</b>: 2023-07-03</p><p><b>value</b>: true</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:182929008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "182929008" ] ;
+       fhir:display [ fhir:v "Drug prophylaxis (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> ;
+     fhir:reference [ fhir:v "Patient/Patient-DAK-onart" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter-DAK-onart> ;
+     fhir:reference [ fhir:v "Encounter/Encounter-DAK-onart" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-07-03"^^xsd:date] ; # 
+  fhir:value [ fhir:v "true"^^xsd:boolean] . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/Observation-DAK-onart-dispense> a fhir:Observation ;
+  fhir:id [ fhir:v "Observation-DAK-onart-dispense"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-DAK-onart-dispense\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-DAK-onart-dispense&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Day (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258703001)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-DAK-onart\">See above (Encounter/Encounter-DAK-onart)</a></p><p><b>effective</b>: 2023-07-03</p><p><b>value</b>: 90</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:258703001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "258703001" ] ;
+       fhir:display [ fhir:v "Day (qualifier value)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> ;
+     fhir:reference [ fhir:v "Patient/Patient-DAK-onart" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://path-global-health.github.io/MERindicators/Encounter/Encounter-DAK-onart> ;
+     fhir:reference [ fhir:v "Encounter/Encounter-DAK-onart" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-07-03"^^xsd:date] ; # 
+  fhir:value [ fhir:v "90"^^xsd:integer] . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/MedicationRequest-DAK-onart> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "MedicationRequest-DAK-onart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"MedicationRequest-DAK-onart\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;MedicationRequest-DAK-onart&quot; </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Abacavir <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-DAKICD11.html\">ICD-11 codes from the HIV DAK</a>#XM35P4)</span></p><p><b>subject</b>: <a href=\"#Patient_Patient-DAK-onart\">See above (Patient/Patient-DAK-onart)</a></p><p><b>authoredOn</b>: 2023-07-03</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-11"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "XM35P4" ] ;
+       fhir:display [ fhir:v "Abacavir" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> ;
+     fhir:reference [ fhir:v "Patient/Patient-DAK-onart" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2023-07-03"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

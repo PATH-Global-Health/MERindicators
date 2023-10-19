@@ -1,0 +1,207 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DAKARTMeds",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DAKICD11.html\"><code>http://hl7.org/fhir/sid/icd-11</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM35P4\">XM35P4</a></td><td>Abacavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM2L06\">XM2L06</a></td><td>Emtricitabine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM5471\">XM5471</a></td><td>Lamivudine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM9C07\">XM9C07</a></td><td>Zidovudine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM8Z78\">XM8Z78</a></td><td>Didanosine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM7RM1\">XM7RM1</a></td><td>Stavudine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM67N3\">XM67N3</a></td><td>Tenofovir disoproxil</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM1DX2\">XM1DX2</a></td><td>Efavirenz</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM7N44\">XM7N44</a></td><td>Etravirine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM10T5\">XM10T5</a></td><td>Nevirapine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM1KD4\">XM1KD4</a></td><td>Rilpivirine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM4TF3\">XM4TF3</a></td><td>Atazanavir and Ritonavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM3EH7\">XM3EH7</a></td><td>Lopinavir and Ritonavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM8ZN1\">XM8ZN1</a></td><td>Darunavir and Ritonavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM56L1\">XM56L1</a></td><td>Ritonavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM6K45\">XM6K45</a></td><td>Dolutegravir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM82D3\">XM82D3</a></td><td>Raltegravir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM8QY9\">XM8QY9</a></td><td>Lamivudine, Tenofovir disoproxil and Dolutegravir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM3U67\">XM3U67</a></td><td>Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM9NL2\">XM9NL2</a></td><td>Lamivudine, Tenofovir disoproxil and Efavirenz</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM2UU9\">XM2UU9</a></td><td>Lamivudine, Abacavir and Dolutegravir</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/387005008\">387005008</a></td><td>Abacavir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/404856006\">404856006</a></td><td>Emtricitabine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386897000\">386897000</a></td><td>Lamivudine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387151007\">387151007</a></td><td>Zidovudine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387105006\">387105006</a></td><td>Didanosine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386895008\">386895008</a></td><td>Stavudine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/422091007\">422091007</a></td><td>Tenofovir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387001004\">387001004</a></td><td>Efavirenz (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/432121008\">432121008</a></td><td>Etravirine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386898005\">386898005</a></td><td>Nevirapine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/703123005\">703123005</a></td><td>Rilpivirine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/427314002\">427314002</a></td><td>Antiviral therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/776569000\">776569000</a></td><td>Product containing only lopinavir and ritonavir (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/386896009\">386896009</a></td><td>Ritonavir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/713464000\">713464000</a></td><td>Dolutegravir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/429707008\">429707008</a></td><td>Raltegravir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>First-line treatment (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>Second-line treatment (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds",
+  "version" : "0.1.0",
+  "name" : "DAKARTMeds",
+  "title" : "ART medications",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ART medications from the HIV DAK",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-11",
+      "concept" : [{
+        "code" : "XM35P4",
+        "display" : "Abacavir"
+      },
+      {
+        "code" : "XM2L06",
+        "display" : "Emtricitabine"
+      },
+      {
+        "code" : "XM5471",
+        "display" : "Lamivudine"
+      },
+      {
+        "code" : "XM9C07",
+        "display" : "Zidovudine"
+      },
+      {
+        "code" : "XM8Z78",
+        "display" : "Didanosine"
+      },
+      {
+        "code" : "XM7RM1",
+        "display" : "Stavudine"
+      },
+      {
+        "code" : "XM67N3",
+        "display" : "Tenofovir disoproxil"
+      },
+      {
+        "code" : "XM1DX2",
+        "display" : "Efavirenz"
+      },
+      {
+        "code" : "XM7N44",
+        "display" : "Etravirine"
+      },
+      {
+        "code" : "XM10T5",
+        "display" : "Nevirapine"
+      },
+      {
+        "code" : "XM1KD4",
+        "display" : "Rilpivirine"
+      },
+      {
+        "code" : "XM4TF3",
+        "display" : "Atazanavir and Ritonavir"
+      },
+      {
+        "code" : "XM3EH7",
+        "display" : "Lopinavir and Ritonavir"
+      },
+      {
+        "code" : "XM8ZN1",
+        "display" : "Darunavir and Ritonavir"
+      },
+      {
+        "code" : "XM56L1",
+        "display" : "Ritonavir"
+      },
+      {
+        "code" : "XM6K45",
+        "display" : "Dolutegravir"
+      },
+      {
+        "code" : "XM82D3",
+        "display" : "Raltegravir"
+      },
+      {
+        "code" : "XM8QY9",
+        "display" : "Lamivudine, Tenofovir disoproxil and Dolutegravir"
+      },
+      {
+        "code" : "XM3U67",
+        "display" : "Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit"
+      },
+      {
+        "code" : "XM9NL2",
+        "display" : "Lamivudine, Tenofovir disoproxil and Efavirenz"
+      },
+      {
+        "code" : "XM2UU9",
+        "display" : "Lamivudine, Abacavir and Dolutegravir"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "387005008",
+        "display" : "Abacavir (substance)"
+      },
+      {
+        "code" : "404856006",
+        "display" : "Emtricitabine (substance)"
+      },
+      {
+        "code" : "386897000",
+        "display" : "Lamivudine (substance)"
+      },
+      {
+        "code" : "387151007",
+        "display" : "Zidovudine (substance)"
+      },
+      {
+        "code" : "387105006",
+        "display" : "Didanosine (substance)"
+      },
+      {
+        "code" : "386895008",
+        "display" : "Stavudine (substance)"
+      },
+      {
+        "code" : "422091007",
+        "display" : "Tenofovir (substance)"
+      },
+      {
+        "code" : "387001004",
+        "display" : "Efavirenz (substance)"
+      },
+      {
+        "code" : "432121008",
+        "display" : "Etravirine (substance)"
+      },
+      {
+        "code" : "386898005",
+        "display" : "Nevirapine (substance)"
+      },
+      {
+        "code" : "703123005",
+        "display" : "Rilpivirine (substance)"
+      },
+      {
+        "code" : "427314002",
+        "display" : "Antiviral therapy (procedure)"
+      },
+      {
+        "code" : "776569000",
+        "display" : "Product containing only lopinavir and ritonavir (medicinal product)"
+      },
+      {
+        "code" : "386896009",
+        "display" : "Ritonavir (substance)"
+      },
+      {
+        "code" : "713464000",
+        "display" : "Dolutegravir (substance)"
+      },
+      {
+        "code" : "429707008",
+        "display" : "Raltegravir (substance)"
+      },
+      {
+        "code" : "708255002",
+        "display" : "First-line treatment (procedure)"
+      },
+      {
+        "code" : "708256001",
+        "display" : "Second-line treatment (procedure)"
+      }]
+    }]
+  }
+}

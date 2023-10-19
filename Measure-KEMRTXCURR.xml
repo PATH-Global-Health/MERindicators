@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Measure xmlns="http://hl7.org/fhir">
+  <id value="KEMRTXCURR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Measure</b><a name="KEMRTXCURR"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Measure &quot;KEMRTXCURR&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR</code></p><p><b>identifier</b>: id: KEMRTXCURR</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: KEMRTXCURR</p><p><b>title</b>: KEMRTXCURR</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: 2023-07-01</p><p><b>publisher</b>: PATH</p><p><b>contact</b>: PATH: <a href="https://www.path.org">https://www.path.org</a>,<a href="mailto:info@path.org">info@path.org</a>, PATH: <a href="mailto:info@path.org">info@path.org</a></p><p><b>description</b>: KEMRTXCURR</p><p><b>jurisdiction</b>: World <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (m49.htm#001)</span></p><p><b>library</b>: <a href="Library-KenyaEMRTXCURR.html">KenyaEMRTXCURR</a></p><p><b>scoring</b>: Continuous Variable <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-measure-scoring.html">MeasureScoring</a>#continuous-variable)</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html">MeasurePopulationType</a>#initial-population)</span></p><p><b>description</b>: Initial Population</p><h3>Criteria</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style="display: none">*</td><td>text/cql</td><td>Initial Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Measure Population <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html">MeasurePopulationType</a>#measure-population)</span></p><p><b>description</b>: Measure Population</p><h3>Criteria</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style="display: none">*</td><td>text/cql</td><td>Measure Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Measure Population Exclusion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html">MeasurePopulationType</a>#measure-population-exclusion)</span></p><p><b>description</b>: Measure Population Exclusion</p><h3>Criteria</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style="display: none">*</td><td>text/cql</td><td>Measure Population Exclusion</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><h3>Criteria</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style="display: none">*</td><td>text/cql</td><td>Stratification</td></tr></table></blockquote></blockquote></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR"/>
+  <identifier>
+    <value value="KEMRTXCURR"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="KEMRTXCURR"/>
+  <title value="KEMRTXCURR"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-07-01"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="KEMRTXCURR"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <library value="https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"/>
+  <scoring>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+      <code value="continuous-variable"/>
+    </coding>
+  </scoring>
+  <group>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+        </coding>
+      </code>
+      <description value="Initial Population"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="Initial Population"/>
+      </criteria>
+    </population>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+        </coding>
+      </code>
+      <description value="Measure Population"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="Measure Population"/>
+      </criteria>
+    </population>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population-exclusion"/>
+        </coding>
+      </code>
+      <description value="Measure Population Exclusion"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="Measure Population Exclusion"/>
+      </criteria>
+    </population>
+    <stratifier>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="Stratification"/>
+      </criteria>
+    </stratifier>
+  </group>
+</Measure>

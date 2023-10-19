@@ -1,0 +1,140 @@
+{
+  "resourceType" : "Measure",
+  "id" : "DAKTXCURR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Measure</b><a name=\"DAKTXCURR\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Measure &quot;DAKTXCURR&quot; </p></div><p><b>url</b>: <code>https://path-global-health.github.io/MERindicators/Measure/DAKTXCURR</code></p><p><b>identifier</b>: id:\u00a0MERTXCURR</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: DAKTXCURR</p><p><b>title</b>: DAKTXCURR</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: 2023-07-01</p><p><b>publisher</b>: PATH</p><p><b>contact</b>: PATH: <a href=\"https://www.path.org\">https://www.path.org</a>,<a href=\"mailto:info@path.org\">info@path.org</a>, PATH: <a href=\"mailto:info@path.org\">info@path.org</a></p><p><b>description</b>: DAKTXCURR</p><p><b>jurisdiction</b>: World <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>library</b>: <a href=\"Library-DAKTXCURRLibrary.html\">DAKTXCURR</a></p><p><b>scoring</b>: Continuous Variable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-scoring.html\">MeasureScoring</a>#continuous-variable)</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>CQFM Population Basis</b>: boolean</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#initial-population)</span></p><p><b>description</b>: Initial Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Initial Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><blockquote><p><b>id</b></p>measure-population</blockquote><p><b>CQFM Population Basis</b>: boolean</p><p><b>code</b>: Measure Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-population)</span></p><p><b>description</b>: Measure Population</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Population</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>CQFM Population Basis</b>: boolean</p><p><b>code</b>: Measure Population Exclusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-population-exclusion)</span></p><p><b>description</b>: Measure Population Exclusion</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Population Exclusion</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>CQFM Criteria Reference</b>: measure-population</p><p><b>CQFM Aggregate Method</b>: count</p><p><b>code</b>: Measure Observation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#measure-observation)</span></p><p><b>description</b>: Measure Observation</p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Measure Observation</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Stratification</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><h3>Criteria</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql</td><td>Dispense Stratification</td></tr></table></blockquote></blockquote></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/Measure/DAKTXCURR",
+  "identifier" : [{
+    "value" : "MERTXCURR"
+  }],
+  "version" : "0.1.0",
+  "name" : "DAKTXCURR",
+  "title" : "DAKTXCURR",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-07-01",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DAKTXCURR",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "library" : ["https://path-global-health.github.io/MERindicators/Library/DAKTXCURR"],
+  "scoring" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+      "code" : "continuous-variable"
+    }]
+  },
+  "group" : [{
+    "population" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+        "valueCode" : "boolean"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "initial-population"
+        }]
+      },
+      "description" : "Initial Population",
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Initial Population"
+      }
+    },
+    {
+      "id" : "measure-population",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+        "valueCode" : "boolean"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "measure-population"
+        }]
+      },
+      "description" : "Measure Population",
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Measure Population"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+        "valueCode" : "boolean"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "measure-population-exclusion"
+        }]
+      },
+      "description" : "Measure Population Exclusion",
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Measure Population Exclusion"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
+        "valueString" : "measure-population"
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
+        "valueCode" : "count"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "measure-observation"
+        }]
+      },
+      "description" : "Measure Observation",
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Measure Observation"
+      }
+    }],
+    "stratifier" : [{
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Stratification"
+      }
+    },
+    {
+      "criteria" : {
+        "language" : "text/cql",
+        "expression" : "Dispense Stratification"
+      }
+    }]
+  }]
+}

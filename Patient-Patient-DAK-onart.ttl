@@ -1,0 +1,24 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Patient/Patient-DAK-onart> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Patient-DAK-onart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Mittens Cat</b> female, DoB: 1985-01-01</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Mittens Cat" ] ;
+     fhir:family [ fhir:v "Cat" ] ;
+     fhir:given ( [ fhir:v "Mittens" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-01-01"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,117 @@
+{
+  "package": "path.merindicators",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [],
+  "profiles": {
+    "Condition": [
+      {
+        "url": "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKHIVCondition",
+        "title": "DAK TXCURR Condition for PLHIV"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKStoppedObservation",
+        "title": "DAK TXCURR Observation for Stopped ART"
+      },
+      {
+        "url": "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKTransferOutObservation",
+        "title": "DAK TXCURR Observation for Transfer Out"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKDrugPickupEncounter",
+        "title": "DAK TXCURR Encounter for Drug Pickup"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKMedicationRequest",
+        "title": "DAK TXCURR MedicationRequest"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKPatient",
+        "title": "DAK TXCURR Patient"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location": [
+      "Bundle.entry.resource.identifier",
+      "Patient.identifier"
+    ],
+    "http://fhir.openmrs.org/ext/patient/identifier#location": [
+      "Bundle.entry.resource.identifier",
+      "Patient.identifier"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/valueset-author": [
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod": [
+      "Measure.group.population"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference": [
+      "Measure.group.population"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis": [
+      "Measure.group.population"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability": [
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel": [
+      "ValueSet"
+    ]
+  }
+}

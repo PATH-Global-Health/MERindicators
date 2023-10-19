@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Example-HIVSimple2"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Patient/Patient-HIVSimple2"/>
+    <resource>
+      <Patient>
+        <id value="Patient-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="Patient-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;Patient-HIVSimple2&quot; </p></div><p><b>name</b>: Mittens Cat</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-01-01</p></div>
+        </text>
+        <name>
+          <text value="Mittens Cat"/>
+          <family value="Cat"/>
+          <given value="Mittens"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1985-01-01"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/Patient-HIVSimple2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Organization/Organization-HIVSimple2"/>
+    <resource>
+      <Organization>
+        <id value="Organization-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="Organization-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;Organization-HIVSimple2&quot; </p></div><p><b>identifier</b>: id: Organization-HIVSimple2</p><p><b>name</b>: Organization-HIVSimple2 Government Hospital</p></div>
+        </text>
+        <identifier>
+          <system value="https://github.com/synthetichealth/synthea"/>
+          <value value="Organization-HIVSimple2"/>
+        </identifier>
+        <name value="Organization-HIVSimple2 Government Hospital"/>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/Organization-HIVSimple2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Location/Location-HIVSimple2"/>
+    <resource>
+      <Location>
+        <id value="Location-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="Location-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;Location-HIVSimple2&quot; </p></div><p><b>identifier</b>: id: Location-HIVSimple2</p><p><b>managingOrganization</b>: <span>id: Organization-HIVSimple2</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://github.com/synthetichealth/synthea"/>
+          <value value="Location-HIVSimple2"/>
+        </identifier>
+        <managingOrganization>
+          <identifier>
+            <system value="https://github.com/synthetichealth/synthea"/>
+            <value value="Organization-HIVSimple2"/>
+          </identifier>
+        </managingOrganization>
+      </Location>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Location/Location-HIVSimple2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Condition/Condition-HIVSimple2"/>
+    <resource>
+      <Condition>
+        <id value="Condition-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="Condition-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;Condition-HIVSimple2&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: HIV - Human immunodeficiency virus infection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href="#Patient_Patient-HIVSimple2">See above (Patient/Patient-HIVSimple2)</a></p><p><b>onset</b>: 2010-01-01</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="86406008"/>
+            <display value="HIV - Human immunodeficiency virus infection"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient-HIVSimple2"/>
+        </subject>
+        <onsetDateTime value="2010-01-01"/>
+      </Condition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Condition/Condition-HIVSimple2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Condition/Condition-Pregnancy2"/>
+    <resource>
+      <Condition>
+        <id value="Condition-Pregnancy2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="Condition-Pregnancy2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;Condition-Pregnancy2&quot; </p></div><p><b>clinicalStatus</b>: Inactive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Pregnancy (finding) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#77386006)</span></p><p><b>subject</b>: <a href="#Patient_Patient-HIVSimple2">See above (Patient/Patient-HIVSimple2)</a></p><p><b>onset</b>: 2020-01-01</p><p><b>abatement</b>: 2020-09-30</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="inactive"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Pregnancy (finding)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient-HIVSimple2"/>
+        </subject>
+        <onsetDateTime value="2020-01-01"/>
+        <abatementDateTime value="2020-09-30"/>
+      </Condition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Condition/Condition-Pregnancy2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Encounter/Encounter-HIVSimple2"/>
+    <resource>
+      <Encounter>
+        <id value="Encounter-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="Encounter-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;Encounter-HIVSimple2&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href="#Patient_Patient-HIVSimple2">See above (Patient/Patient-HIVSimple2)</a></p><p><b>period</b>: 2011-01-01 --&gt; 2011-01-01</p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td><a href="#Location_Location-HIVSimple2">See above (Location/Location-HIVSimple2)</a></td></tr></table><p><b>serviceProvider</b>: <span>id: Organization-HIVSimple2</span></p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="ACUTE"/>
+        </class>
+        <subject>
+          <reference value="Patient/Patient-HIVSimple2"/>
+        </subject>
+        <period>
+          <start value="2011-01-01"/>
+          <end value="2011-01-01"/>
+        </period>
+        <location>
+          <location>
+            <reference value="Location/Location-HIVSimple2"/>
+          </location>
+        </location>
+        <serviceProvider>
+          <identifier>
+            <system value="https://github.com/synthetichealth/synthea"/>
+            <value value="Organization-HIVSimple2"/>
+          </identifier>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Encounter/Encounter-HIVSimple2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-HIVSimple2"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="DiagnosticReport-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DiagnosticReport</b><a name="DiagnosticReport-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DiagnosticReport &quot;DiagnosticReport-HIVSimple2&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 and 2 tests - Meaningful Use set <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75622-1)</span></p><p><b>subject</b>: <a href="#Patient_Patient-HIVSimple2">See above (Patient/Patient-HIVSimple2)</a></p><p><b>encounter</b>: <a href="#Encounter_Encounter-HIVSimple2">See above (Encounter/Encounter-HIVSimple2)</a></p><p><b>result</b>: <a href="#Observation_Observation-HIVSimple2">See above (Observation/Observation-HIVSimple2)</a></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="75622-1"/>
+            <display value="HIV 1 and 2 tests - Meaningful Use set"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient-HIVSimple2"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/Encounter-HIVSimple2"/>
+        </encounter>
+        <result>
+          <reference value="Observation/Observation-HIVSimple2"/>
+        </result>
+      </DiagnosticReport>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="DiagnosticReport/DiagnosticReport-HIVSimple2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Observation/Observation-HIVSimple2"/>
+    <resource>
+      <Observation>
+        <id value="Observation-HIVSimple2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Observation-HIVSimple2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Observation-HIVSimple2&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 and 2 tests - Meaningful Use set <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75622-1)</span></p><p><b>subject</b>: <a href="#Patient_Patient-HIVSimple2">See above (Patient/Patient-HIVSimple2)</a></p><p><b>encounter</b>: <a href="#Encounter_Encounter-HIVSimple2">See above (Encounter/Encounter-HIVSimple2)</a></p><p><b>value</b>: HIV Positive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#165816005)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="75622-1"/>
+            <display value="HIV 1 and 2 tests - Meaningful Use set"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient-HIVSimple2"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/Encounter-HIVSimple2"/>
+        </encounter>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="165816005"/>
+            <display value="HIV Positive"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/Observation-HIVSimple2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Encounter/Encounter-ViralLoad2"/>
+    <resource>
+      <Encounter>
+        <id value="Encounter-ViralLoad2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="Encounter-ViralLoad2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;Encounter-ViralLoad2&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href="#Patient_Patient-HIVSimple2">See above (Patient/Patient-HIVSimple2)</a></p><p><b>period</b>: 2020-06-01 --&gt; 2020-06-01</p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td><a href="#Location_Location-HIVSimple2">See above (Location/Location-HIVSimple2)</a></td></tr></table><p><b>serviceProvider</b>: <span>id: Organization-HIVSimple2</span></p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="ACUTE"/>
+        </class>
+        <subject>
+          <reference value="Patient/Patient-HIVSimple2"/>
+        </subject>
+        <period>
+          <start value="2020-06-01"/>
+          <end value="2020-06-01"/>
+        </period>
+        <location>
+          <location>
+            <reference value="Location/Location-HIVSimple2"/>
+          </location>
+        </location>
+        <serviceProvider>
+          <identifier>
+            <system value="https://github.com/synthetichealth/synthea"/>
+            <value value="Organization-HIVSimple2"/>
+          </identifier>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Encounter/Encounter-ViralLoad2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/DiagnosticReport/DiagnosticReport-ViralLoad2"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="DiagnosticReport-ViralLoad2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DiagnosticReport</b><a name="DiagnosticReport-ViralLoad2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DiagnosticReport &quot;DiagnosticReport-ViralLoad2&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href="#Patient_Patient-HIVSimple2">See above (Patient/Patient-HIVSimple2)</a></p><p><b>encounter</b>: <a href="#Encounter_Encounter-ViralLoad2">See above (Encounter/Encounter-ViralLoad2)</a></p><p><b>result</b>: <a href="#Observation_Observation-ViralLoad2">See above (Observation/Observation-ViralLoad2)</a></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="25836-8"/>
+            <display value="HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient-HIVSimple2"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/Encounter-ViralLoad2"/>
+        </encounter>
+        <result>
+          <reference value="Observation/Observation-ViralLoad2"/>
+        </result>
+      </DiagnosticReport>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="DiagnosticReport/DiagnosticReport-ViralLoad2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Observation/Observation-ViralLoad2"/>
+    <resource>
+      <Observation>
+        <id value="Observation-ViralLoad2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Observation-ViralLoad2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Observation-ViralLoad2&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href="#Patient_Patient-HIVSimple2">See above (Patient/Patient-HIVSimple2)</a></p><p><b>encounter</b>: <a href="#Encounter_Encounter-ViralLoad2">See above (Encounter/Encounter-ViralLoad2)</a></p><p><b>value</b>: 741660 copies/mL<span style="background: LightGoldenRodYellow"> (Details: UCUM code {copies}/mL = '{copies}/mL')</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="25836-8"/>
+            <display value="HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient-HIVSimple2"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/Encounter-ViralLoad2"/>
+        </encounter>
+        <valueQuantity>
+          <value value="741660"/>
+          <unit value="copies/mL"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{copies}/mL"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/Observation-ViralLoad2"/>
+    </request>
+  </entry>
+</Bundle>

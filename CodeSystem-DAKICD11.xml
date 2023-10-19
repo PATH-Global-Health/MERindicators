@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DAKICD11"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://hl7.org/fhir/sid/icd-11</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1C62.0<a name="DAKICD11-1C62.460"> </a></td><td>HIV disease clinical stage 1 without mention of tuberculosis or malaria</td></tr><tr><td style="white-space:nowrap">1C62.1<a name="DAKICD11-1C62.461"> </a></td><td>HIV disease clinical stage 2 without mention of tuberculosis or malaria</td></tr><tr><td style="white-space:nowrap">1C62.2<a name="DAKICD11-1C62.462"> </a></td><td>HIV disease clinical stage 3 without mention of tuberculosis or malaria</td></tr><tr><td style="white-space:nowrap">1C62.3<a name="DAKICD11-1C62.463"> </a></td><td>HIV disease clinical stage 4 without mention of tuberculosis or malaria</td></tr><tr><td style="white-space:nowrap">1C62.Z<a name="DAKICD11-1C62.46Z"> </a></td><td>Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified</td></tr><tr><td style="white-space:nowrap">XM63K0<a name="DAKICD11-XM63K0"> </a></td><td>Anti-infective antiviral</td></tr><tr><td style="white-space:nowrap">QA14<a name="DAKICD11-QA14"> </a></td><td>Contact with health services for human immunodeficiency virus counselling</td></tr><tr><td style="white-space:nowrap">XM35P4<a name="DAKICD11-XM35P4"> </a></td><td>Abacavir</td></tr><tr><td style="white-space:nowrap">XM2L06<a name="DAKICD11-XM2L06"> </a></td><td>Emtricitabine</td></tr><tr><td style="white-space:nowrap">XM5471<a name="DAKICD11-XM5471"> </a></td><td>Lamivudine</td></tr><tr><td style="white-space:nowrap">XM9C07<a name="DAKICD11-XM9C07"> </a></td><td>Zidovudine</td></tr><tr><td style="white-space:nowrap">XM8Z78<a name="DAKICD11-XM8Z78"> </a></td><td>Didanosine</td></tr><tr><td style="white-space:nowrap">XM7RM1<a name="DAKICD11-XM7RM1"> </a></td><td>Stavudine</td></tr><tr><td style="white-space:nowrap">XM67N3<a name="DAKICD11-XM67N3"> </a></td><td>Tenofovir disoproxil</td></tr><tr><td style="white-space:nowrap">XM1DX2<a name="DAKICD11-XM1DX2"> </a></td><td>Efavirenz</td></tr><tr><td style="white-space:nowrap">XM7N44<a name="DAKICD11-XM7N44"> </a></td><td>Etravirine</td></tr><tr><td style="white-space:nowrap">XM10T5<a name="DAKICD11-XM10T5"> </a></td><td>Nevirapine</td></tr><tr><td style="white-space:nowrap">XM1KD4<a name="DAKICD11-XM1KD4"> </a></td><td>Rilpivirine</td></tr><tr><td style="white-space:nowrap">XM4TF3<a name="DAKICD11-XM4TF3"> </a></td><td>Atazanavir and Ritonavir</td></tr><tr><td style="white-space:nowrap">XM3EH7<a name="DAKICD11-XM3EH7"> </a></td><td>Lopinavir and Ritonavir</td></tr><tr><td style="white-space:nowrap">XM8ZN1<a name="DAKICD11-XM8ZN1"> </a></td><td>Darunavir and Ritonavir</td></tr><tr><td style="white-space:nowrap">XM56L1<a name="DAKICD11-XM56L1"> </a></td><td>Ritonavir</td></tr><tr><td style="white-space:nowrap">XM6K45<a name="DAKICD11-XM6K45"> </a></td><td>Dolutegravir</td></tr><tr><td style="white-space:nowrap">XM82D3<a name="DAKICD11-XM82D3"> </a></td><td>Raltegravir</td></tr><tr><td style="white-space:nowrap">XM8QY9<a name="DAKICD11-XM8QY9"> </a></td><td>Lamivudine, Tenofovir disoproxil and Dolutegravir</td></tr><tr><td style="white-space:nowrap">XM3U67<a name="DAKICD11-XM3U67"> </a></td><td>Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit</td></tr><tr><td style="white-space:nowrap">XM9NL2<a name="DAKICD11-XM9NL2"> </a></td><td>Lamivudine, Tenofovir disoproxil and Efavirenz</td></tr><tr><td style="white-space:nowrap">XM2UU9<a name="DAKICD11-XM2UU9"> </a></td><td>Lamivudine, Abacavir and Dolutegravir</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/sid/icd-11"/>
+  <version value="0.1.0"/>
+  <name value="DAKICD11"/>
+  <title value="ICD-11 codes from the HIV DAK"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-10-19T20:59:19+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ICD-11 codes from the HIV DAK"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="28"/>
+  <concept>
+    <code value="1C62.0"/>
+    <display value="HIV disease clinical stage 1 without mention of tuberculosis or malaria"/>
+  </concept>
+  <concept>
+    <code value="1C62.1"/>
+    <display value="HIV disease clinical stage 2 without mention of tuberculosis or malaria"/>
+  </concept>
+  <concept>
+    <code value="1C62.2"/>
+    <display value="HIV disease clinical stage 3 without mention of tuberculosis or malaria"/>
+  </concept>
+  <concept>
+    <code value="1C62.3"/>
+    <display value="HIV disease clinical stage 4 without mention of tuberculosis or malaria"/>
+  </concept>
+  <concept>
+    <code value="1C62.Z"/>
+    <display value="Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified"/>
+  </concept>
+  <concept>
+    <code value="XM63K0"/>
+    <display value="Anti-infective antiviral"/>
+  </concept>
+  <concept>
+    <code value="QA14"/>
+    <display value="Contact with health services for human immunodeficiency virus counselling"/>
+  </concept>
+  <concept>
+    <code value="XM35P4"/>
+    <display value="Abacavir"/>
+  </concept>
+  <concept>
+    <code value="XM2L06"/>
+    <display value="Emtricitabine"/>
+  </concept>
+  <concept>
+    <code value="XM5471"/>
+    <display value="Lamivudine"/>
+  </concept>
+  <concept>
+    <code value="XM9C07"/>
+    <display value="Zidovudine"/>
+  </concept>
+  <concept>
+    <code value="XM8Z78"/>
+    <display value="Didanosine"/>
+  </concept>
+  <concept>
+    <code value="XM7RM1"/>
+    <display value="Stavudine"/>
+  </concept>
+  <concept>
+    <code value="XM67N3"/>
+    <display value="Tenofovir disoproxil"/>
+  </concept>
+  <concept>
+    <code value="XM1DX2"/>
+    <display value="Efavirenz"/>
+  </concept>
+  <concept>
+    <code value="XM7N44"/>
+    <display value="Etravirine"/>
+  </concept>
+  <concept>
+    <code value="XM10T5"/>
+    <display value="Nevirapine"/>
+  </concept>
+  <concept>
+    <code value="XM1KD4"/>
+    <display value="Rilpivirine"/>
+  </concept>
+  <concept>
+    <code value="XM4TF3"/>
+    <display value="Atazanavir and Ritonavir"/>
+  </concept>
+  <concept>
+    <code value="XM3EH7"/>
+    <display value="Lopinavir and Ritonavir"/>
+  </concept>
+  <concept>
+    <code value="XM8ZN1"/>
+    <display value="Darunavir and Ritonavir"/>
+  </concept>
+  <concept>
+    <code value="XM56L1"/>
+    <display value="Ritonavir"/>
+  </concept>
+  <concept>
+    <code value="XM6K45"/>
+    <display value="Dolutegravir"/>
+  </concept>
+  <concept>
+    <code value="XM82D3"/>
+    <display value="Raltegravir"/>
+  </concept>
+  <concept>
+    <code value="XM8QY9"/>
+    <display value="Lamivudine, Tenofovir disoproxil and Dolutegravir"/>
+  </concept>
+  <concept>
+    <code value="XM3U67"/>
+    <display value="Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit"/>
+  </concept>
+  <concept>
+    <code value="XM9NL2"/>
+    <display value="Lamivudine, Tenofovir disoproxil and Efavirenz"/>
+  </concept>
+  <concept>
+    <code value="XM2UU9"/>
+    <display value="Lamivudine, Abacavir and Dolutegravir"/>
+  </concept>
+</CodeSystem>

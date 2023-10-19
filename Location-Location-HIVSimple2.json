@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Location",
+  "id" : "Location-HIVSimple2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"Location-HIVSimple2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;Location-HIVSimple2&quot; </p></div><p><b>identifier</b>: id:\u00a0Location-HIVSimple2</p><p><b>managingOrganization</b>: <span>id:\u00a0Organization-HIVSimple2</span></p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://github.com/synthetichealth/synthea",
+    "value" : "Location-HIVSimple2"
+  }],
+  "managingOrganization" : {
+    "identifier" : {
+      "system" : "https://github.com/synthetichealth/synthea",
+      "value" : "Organization-HIVSimple2"
+    }
+  }
+}

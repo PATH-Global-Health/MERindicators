@@ -1,0 +1,158 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DAKICD11",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://hl7.org/fhir/sid/icd-11</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1C62.0<a name=\"DAKICD11-1C62.460\"> </a></td><td>HIV disease clinical stage 1 without mention of tuberculosis or malaria</td></tr><tr><td style=\"white-space:nowrap\">1C62.1<a name=\"DAKICD11-1C62.461\"> </a></td><td>HIV disease clinical stage 2 without mention of tuberculosis or malaria</td></tr><tr><td style=\"white-space:nowrap\">1C62.2<a name=\"DAKICD11-1C62.462\"> </a></td><td>HIV disease clinical stage 3 without mention of tuberculosis or malaria</td></tr><tr><td style=\"white-space:nowrap\">1C62.3<a name=\"DAKICD11-1C62.463\"> </a></td><td>HIV disease clinical stage 4 without mention of tuberculosis or malaria</td></tr><tr><td style=\"white-space:nowrap\">1C62.Z<a name=\"DAKICD11-1C62.46Z\"> </a></td><td>Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified</td></tr><tr><td style=\"white-space:nowrap\">XM63K0<a name=\"DAKICD11-XM63K0\"> </a></td><td>Anti-infective antiviral</td></tr><tr><td style=\"white-space:nowrap\">QA14<a name=\"DAKICD11-QA14\"> </a></td><td>Contact with health services for human immunodeficiency virus counselling</td></tr><tr><td style=\"white-space:nowrap\">XM35P4<a name=\"DAKICD11-XM35P4\"> </a></td><td>Abacavir</td></tr><tr><td style=\"white-space:nowrap\">XM2L06<a name=\"DAKICD11-XM2L06\"> </a></td><td>Emtricitabine</td></tr><tr><td style=\"white-space:nowrap\">XM5471<a name=\"DAKICD11-XM5471\"> </a></td><td>Lamivudine</td></tr><tr><td style=\"white-space:nowrap\">XM9C07<a name=\"DAKICD11-XM9C07\"> </a></td><td>Zidovudine</td></tr><tr><td style=\"white-space:nowrap\">XM8Z78<a name=\"DAKICD11-XM8Z78\"> </a></td><td>Didanosine</td></tr><tr><td style=\"white-space:nowrap\">XM7RM1<a name=\"DAKICD11-XM7RM1\"> </a></td><td>Stavudine</td></tr><tr><td style=\"white-space:nowrap\">XM67N3<a name=\"DAKICD11-XM67N3\"> </a></td><td>Tenofovir disoproxil</td></tr><tr><td style=\"white-space:nowrap\">XM1DX2<a name=\"DAKICD11-XM1DX2\"> </a></td><td>Efavirenz</td></tr><tr><td style=\"white-space:nowrap\">XM7N44<a name=\"DAKICD11-XM7N44\"> </a></td><td>Etravirine</td></tr><tr><td style=\"white-space:nowrap\">XM10T5<a name=\"DAKICD11-XM10T5\"> </a></td><td>Nevirapine</td></tr><tr><td style=\"white-space:nowrap\">XM1KD4<a name=\"DAKICD11-XM1KD4\"> </a></td><td>Rilpivirine</td></tr><tr><td style=\"white-space:nowrap\">XM4TF3<a name=\"DAKICD11-XM4TF3\"> </a></td><td>Atazanavir and Ritonavir</td></tr><tr><td style=\"white-space:nowrap\">XM3EH7<a name=\"DAKICD11-XM3EH7\"> </a></td><td>Lopinavir and Ritonavir</td></tr><tr><td style=\"white-space:nowrap\">XM8ZN1<a name=\"DAKICD11-XM8ZN1\"> </a></td><td>Darunavir and Ritonavir</td></tr><tr><td style=\"white-space:nowrap\">XM56L1<a name=\"DAKICD11-XM56L1\"> </a></td><td>Ritonavir</td></tr><tr><td style=\"white-space:nowrap\">XM6K45<a name=\"DAKICD11-XM6K45\"> </a></td><td>Dolutegravir</td></tr><tr><td style=\"white-space:nowrap\">XM82D3<a name=\"DAKICD11-XM82D3\"> </a></td><td>Raltegravir</td></tr><tr><td style=\"white-space:nowrap\">XM8QY9<a name=\"DAKICD11-XM8QY9\"> </a></td><td>Lamivudine, Tenofovir disoproxil and Dolutegravir</td></tr><tr><td style=\"white-space:nowrap\">XM3U67<a name=\"DAKICD11-XM3U67\"> </a></td><td>Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit</td></tr><tr><td style=\"white-space:nowrap\">XM9NL2<a name=\"DAKICD11-XM9NL2\"> </a></td><td>Lamivudine, Tenofovir disoproxil and Efavirenz</td></tr><tr><td style=\"white-space:nowrap\">XM2UU9<a name=\"DAKICD11-XM2UU9\"> </a></td><td>Lamivudine, Abacavir and Dolutegravir</td></tr></table></div>"
+  },
+  "url" : "http://hl7.org/fhir/sid/icd-11",
+  "version" : "0.1.0",
+  "name" : "DAKICD11",
+  "title" : "ICD-11 codes from the HIV DAK",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ICD-11 codes from the HIV DAK",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 28,
+  "concept" : [{
+    "code" : "1C62.0",
+    "display" : "HIV disease clinical stage 1 without mention of tuberculosis or malaria"
+  },
+  {
+    "code" : "1C62.1",
+    "display" : "HIV disease clinical stage 2 without mention of tuberculosis or malaria"
+  },
+  {
+    "code" : "1C62.2",
+    "display" : "HIV disease clinical stage 3 without mention of tuberculosis or malaria"
+  },
+  {
+    "code" : "1C62.3",
+    "display" : "HIV disease clinical stage 4 without mention of tuberculosis or malaria"
+  },
+  {
+    "code" : "1C62.Z",
+    "display" : "Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified"
+  },
+  {
+    "code" : "XM63K0",
+    "display" : "Anti-infective antiviral"
+  },
+  {
+    "code" : "QA14",
+    "display" : "Contact with health services for human immunodeficiency virus counselling"
+  },
+  {
+    "code" : "XM35P4",
+    "display" : "Abacavir"
+  },
+  {
+    "code" : "XM2L06",
+    "display" : "Emtricitabine"
+  },
+  {
+    "code" : "XM5471",
+    "display" : "Lamivudine"
+  },
+  {
+    "code" : "XM9C07",
+    "display" : "Zidovudine"
+  },
+  {
+    "code" : "XM8Z78",
+    "display" : "Didanosine"
+  },
+  {
+    "code" : "XM7RM1",
+    "display" : "Stavudine"
+  },
+  {
+    "code" : "XM67N3",
+    "display" : "Tenofovir disoproxil"
+  },
+  {
+    "code" : "XM1DX2",
+    "display" : "Efavirenz"
+  },
+  {
+    "code" : "XM7N44",
+    "display" : "Etravirine"
+  },
+  {
+    "code" : "XM10T5",
+    "display" : "Nevirapine"
+  },
+  {
+    "code" : "XM1KD4",
+    "display" : "Rilpivirine"
+  },
+  {
+    "code" : "XM4TF3",
+    "display" : "Atazanavir and Ritonavir"
+  },
+  {
+    "code" : "XM3EH7",
+    "display" : "Lopinavir and Ritonavir"
+  },
+  {
+    "code" : "XM8ZN1",
+    "display" : "Darunavir and Ritonavir"
+  },
+  {
+    "code" : "XM56L1",
+    "display" : "Ritonavir"
+  },
+  {
+    "code" : "XM6K45",
+    "display" : "Dolutegravir"
+  },
+  {
+    "code" : "XM82D3",
+    "display" : "Raltegravir"
+  },
+  {
+    "code" : "XM8QY9",
+    "display" : "Lamivudine, Tenofovir disoproxil and Dolutegravir"
+  },
+  {
+    "code" : "XM3U67",
+    "display" : "Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit"
+  },
+  {
+    "code" : "XM9NL2",
+    "display" : "Lamivudine, Tenofovir disoproxil and Efavirenz"
+  },
+  {
+    "code" : "XM2UU9",
+    "display" : "Lamivudine, Abacavir and Dolutegravir"
+  }]
+}

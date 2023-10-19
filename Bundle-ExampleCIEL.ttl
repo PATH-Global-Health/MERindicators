@@ -1,0 +1,194 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/Bundle/ExampleCIEL> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleCIEL"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Patient/PatientCIEL"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Patient/PatientCIEL> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Patient/PatientCIEL"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Organization/OrganizationCIEL"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Organization/OrganizationCIEL> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Organization/OrganizationCIEL"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Location/LocationCIEL"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Location/LocationCIEL> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Location/LocationCIEL"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Condition/Condition-PregnancyCIEL"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Condition/Condition-PregnancyCIEL> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Condition/Condition-PregnancyCIEL"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Encounter/EncounterCIEL"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Encounter/EncounterCIEL> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Encounter/EncounterCIEL"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "https://path-global-health.github.io/MERindicators/Observation/ObservationCIEL"^^xsd:anyURI ] ;
+     fhir:resource ( <https://path-global-health.github.io/MERindicators/Observation/ObservationCIEL> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/ObservationCIEL"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Patient/PatientCIEL> a fhir:Patient ;
+  fhir:id [ fhir:v "PatientCIEL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"PatientCIEL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;PatientCIEL&quot; </p></div><p><b>identifier</b>: OpenMRS ID: 1234567 (use: OFFICIAL)</p><p><b>name</b>: Mittens Cat</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-01-01</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.openmrs.org/ext/patient/identifier#location"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://path-global-health.github.io/MERindicators/Location/LocationCIEL> ;
+         fhir:reference [ fhir:v "Location/LocationCIEL" ] ;
+         fhir:type [ fhir:v "Location"^^xsd:anyURI ] ;
+         fhir:display [ fhir:v "Inpatient Ward" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] ) ;
+       fhir:text [ fhir:v "OpenMRS ID" ]
+     ] ;
+     fhir:value [ fhir:v "1234567" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Mittens Cat" ] ;
+     fhir:family [ fhir:v "Cat" ] ;
+     fhir:given ( [ fhir:v "Mittens" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-01-01"^^xsd:date] . # 
+
+<https://path-global-health.github.io/MERindicators/Organization/OrganizationCIEL> a fhir:Organization ;
+  fhir:id [ fhir:v "OrganizationCIEL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"OrganizationCIEL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;OrganizationCIEL&quot; </p></div><p><b>name</b>: OrganizationCIEL Government Hospital</p></div>"
+  ] ; # 
+  fhir:name [ fhir:v "OrganizationCIEL Government Hospital"] . # 
+
+<https://path-global-health.github.io/MERindicators/Location/LocationCIEL> a fhir:Location ;
+  fhir:id [ fhir:v "LocationCIEL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"LocationCIEL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;LocationCIEL&quot; </p></div></div>"
+  ] . # 
+
+<https://path-global-health.github.io/MERindicators/Condition/Condition-PregnancyCIEL> a fhir:Condition ;
+  fhir:id [ fhir:v "Condition-PregnancyCIEL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition-PregnancyCIEL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition-PregnancyCIEL&quot; </p></div><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.2.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Pregnancy (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#77386006)</span></p><p><b>subject</b>: <a href=\"#Patient_PatientCIEL\">See above (Patient/PatientCIEL)</a></p><p><b>onset</b>: 2020-01-01</p><p><b>abatement</b>: 2020-09-30</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inactive" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:77386006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77386006" ] ;
+       fhir:display [ fhir:v "Pregnancy (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/PatientCIEL> ;
+     fhir:reference [ fhir:v "Patient/PatientCIEL" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2020-01-01"^^xsd:date] ; # 
+  fhir:abatement [ fhir:v "2020-09-30"^^xsd:date] . # 
+
+<https://path-global-health.github.io/MERindicators/Encounter/EncounterCIEL> a fhir:Encounter ;
+  fhir:id [ fhir:v "EncounterCIEL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EncounterCIEL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EncounterCIEL&quot; </p></div><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_PatientCIEL\">See above (Patient/PatientCIEL)</a></p><p><b>period</b>: 2011-01-01 --&gt; 2011-01-01</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_LocationCIEL\">See above (Location/LocationCIEL)</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ACUTE" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/PatientCIEL> ;
+     fhir:reference [ fhir:v "Patient/PatientCIEL" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2011-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2011-01-01"^^xsd:date ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://path-global-health.github.io/MERindicators/Location/LocationCIEL> ;
+       fhir:reference [ fhir:v "Location/LocationCIEL" ]
+     ]
+  ] ) . # 
+
+<https://path-global-health.github.io/MERindicators/Observation/ObservationCIEL> a fhir:Observation ;
+  fhir:id [ fhir:v "ObservationCIEL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationCIEL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ObservationCIEL&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: CURRENTLY TAKING ARV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CIEL.html\">CIEL</a>#160119)</span></p><p><b>subject</b>: <a href=\"#Patient_PatientCIEL\">See above (Patient/PatientCIEL)</a></p><p><b>value</b>: YES <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CIEL.html\">CIEL</a>#1065)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://openconceptlab.org/orgs/CIEL/sources/CIEL"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "160119" ] ;
+       fhir:display [ fhir:v "CURRENTLY TAKING ARV" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://path-global-health.github.io/MERindicators/Patient/PatientCIEL> ;
+     fhir:reference [ fhir:v "Patient/PatientCIEL" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://openconceptlab.org/orgs/CIEL/sources/CIEL"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1065" ] ;
+       fhir:display [ fhir:v "YES" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

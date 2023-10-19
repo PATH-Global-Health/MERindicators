@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Observation-ViralLoad2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Observation-ViralLoad2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Observation-ViralLoad2&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href="Patient-Patient-HIVSimple2.html">Patient/Patient-HIVSimple2</a> &quot; CAT&quot;</p><p><b>encounter</b>: <a href="Encounter-Encounter-ViralLoad2.html">Encounter/Encounter-ViralLoad2</a></p><p><b>value</b>: 741660 copies/mL<span style="background: LightGoldenRodYellow"> (Details: UCUM code {copies}/mL = '{copies}/mL')</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="25836-8"/>
+      <display value="HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-HIVSimple2"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Encounter-ViralLoad2"/>
+  </encounter>
+  <valueQuantity>
+    <value value="741660"/>
+    <unit value="copies/mL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{copies}/mL"/>
+  </valueQuantity>
+</Observation>

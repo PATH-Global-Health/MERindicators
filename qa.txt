@@ -1,0 +1,403 @@
+﻿PATHMERIndicators : Validation Results
+=========================================
+
+err = 35, warn = 118, info = 23
+IG Publisher Version: 1.4.16
+Generated Thu Oct 19 21:03:26 UTC 2023. FHIR version 4.0.1 for path.merindicators#0.1.0 (canonical = https://path-global-health.github.io/MERindicators)
+ Build Errors : 0 / 9 / 0
+ /github/workspace/fsh-generated/resources/Bundle-Example-DAK-onart : 2 / 6 / 8
+ /github/workspace/fsh-generated/resources/Bundle-Example-HIVSimple : 0 / 14 / 15
+ /github/workspace/fsh-generated/resources/Bundle-Example-HIVSimple2 : 0 / 9 / 12
+ /github/workspace/fsh-generated/resources/Bundle-Example-Locations-Organizations : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/Bundle-Example0 : 0 / 8 / 16
+ /github/workspace/fsh-generated/resources/Bundle-ExampleCIEL : 0 / 4 / 8
+ /github/workspace/fsh-generated/resources/Bundle-ExampleDeceasedBoolean : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Bundle-ExampleDeceasedDateTime : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Bundle-ExampleOMRS0 : 0 / 6 / 10
+ /github/workspace/fsh-generated/resources/Bundle-KEMRBundle : 0 / 20 / 20
+ /github/workspace/fsh-generated/resources/CodeSystem-CIEL : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-DAKCoarseAgeRangeCS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-DAKDispensingQuantityCS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-DAKICD11 : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-EnrollmentMethods : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-OpenHIE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Condition-DAK-onart-art : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Condition-DAK-onart-hiv : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Condition-HIVSimple : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Condition-HIVSimple2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Condition-Pregnancy : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Condition-Pregnancy2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Condition-PregnancyCIEL : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-DiagnosticReport-HIVSimple : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-DiagnosticReport-HIVSimple2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-DiagnosticReport-ViralLoad : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-DiagnosticReport-ViralLoad2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-DiagnosticReport2-ViralLoad : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Encounter-Encounter-DAK-onart : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-Encounter-HIVSimple : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-Encounter-HIVSimple2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-Encounter-ViralLoad : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-Encounter-ViralLoad2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-Encounter2-ViralLoad : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-EncounterCIEL : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-EncounterOMRS0 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-path.merindicators : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-DAKConcepts : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-DAKDataElements : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-DAKStratifiers : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/Library-DAKTXCURRLibrary : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-Debug : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-FHIRCommon : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-FHIRHelpers : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-KenyaEMRConcepts : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-KenyaEMRStratifiers : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/Library-KenyaEMRTXCURR : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/Location-Location-DAK : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-Location-HIVSimple1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-Location-HIVSimple2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-LocationCIEL : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Measure-DAKTXCURR : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Measure-KEMRTXCURR : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-MedicationRequest-DAK-onart : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-Observation-DAK-onart : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-Observation-DAK-onart-dispense : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-Observation-HIVSimple : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Observation-Observation-HIVSimple2 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Observation-Observation-ViralLoad : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Observation-Observation-ViralLoad2 : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Observation-Observation2-ViralLoad : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Observation-ObservationCIEL : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Observation-ObservationOMRS0 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/Organization-Organization-DAK : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-Organization-HIVSimple1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-Organization-HIVSimple2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-OrganizationCIEL : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-DeceasedBoolean : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-DeceasedDateTime : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-Patient-DAK-onart : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-Patient-HIVSimple : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-Patient-HIVSimple2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientCIEL : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-PatientOMRS0 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-example-openmrs-Patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKARTCondition : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKARTObservation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKARTVisitEncounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKDispenseDaysObservation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKDrugPickupEncounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKHIVCondition : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKMedicationRequest : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKPatient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKStoppedObservation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DAKTransferOutObservation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TXCURRelements : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-CIELHIVMedications : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKARTMeds : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKARTStop : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKARTVisit : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKARVDrugPickup : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKCoarseAgeRange : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKDispensingQuantity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKHIVTransfer : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKMMD : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKONART : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DAKPLHIV : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-EnrollmentMethodsforHIVProgram : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OnARV : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-Pregnant : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-SyntheaHIVMedications : 0 / 0 / 1
+ /github/workspace/input/resources/device/cqf-tooling : 0 / 0 / 1
+ /github/workspace/input/vocabulary/valueset/cqf_valuesets/ValueSet-active-condition : 2 / 0 / 5
+ /github/workspace/input/vocabulary/valueset/cqf_valuesets/ValueSet-inactive-condition : 2 / 0 / 5
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EnrollmentMethodsforHIVProgram.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/EnrollmentMethods.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DeceasedBoolean.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DeceasedDateTime.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/cqf-tooling.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-Example-DAK-onart.json ==
+ERROR: Bundle/Example-DAK-onart: Bundle.entry[2].resource/*Condition/Condition-DAK-onart-art*/.code.coding[0]: Wrong Display Name 'Drug prophylaxis (procedure)' for http://snomed.info/sct#182929008 - should be one of 5 choices: 'Prophylactic drug therapy', 'Drug prophylaxis', 'Administration of prophylactic medication', 'Administration of prophylactic drug or medicament (procedure)' or 'Administration of prophylactic drug or medicament' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#182929008'
+WARNING: Bundle/Example-DAK-onart: Bundle.entry[4].resource/*Observation/Observation-DAK-onart*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/Example-DAK-onart: Bundle.entry[4].resource/*Observation/Observation-DAK-onart*/.code.coding[0]: Wrong Display Name 'Drug prophylaxis (procedure)' for http://snomed.info/sct#182929008 - should be one of 5 choices: 'Prophylactic drug therapy', 'Drug prophylaxis', 'Administration of prophylactic medication', 'Administration of prophylactic drug or medicament (procedure)' or 'Administration of prophylactic drug or medicament' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#182929008'
+WARNING: Bundle/Example-DAK-onart: Bundle.entry[4].resource/*Observation/Observation-DAK-onart*/.encounter: Entry 3 matches the reference Encounter/Encounter-DAK-onart by type and id but it's fullUrl https://path-global-health.github.io/MERindicators/Patient/Encounter-DAK-onart does not match the full target URL https://path-global-health.github.io/MERindicators/Encounter/Encounter-DAK-onart by Bundle resolution rules
+WARNING: Bundle/Example-DAK-onart: Bundle.entry[5].resource/*Observation/Observation-DAK-onart-dispense*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-DAK-onart: Bundle.entry[5].resource/*Observation/Observation-DAK-onart-dispense*/.encounter: Entry 3 matches the reference Encounter/Encounter-DAK-onart by type and id but it's fullUrl https://path-global-health.github.io/MERindicators/Patient/Encounter-DAK-onart does not match the full target URL https://path-global-health.github.io/MERindicators/Encounter/Encounter-DAK-onart by Bundle resolution rules
+WARNING: Bundle/Example-DAK-onart: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-DAK-onart: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Bundle-Example-HIVSimple.json ==
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[7].resource/*Observation/Observation-HIVSimple*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[7].resource/*Observation/Observation-HIVSimple*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[10].resource/*Observation/Observation-ViralLoad*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[10].resource/*Observation/Observation-ViralLoad*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[10].resource/*Observation/Observation-ViralLoad*/.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[13].resource/*Observation/Observation2-ViralLoad*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[13].resource/*Observation/Observation2-ViralLoad*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[13].resource/*Observation/Observation2-ViralLoad*/.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[13].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple: Bundle.entry[13].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Bundle-Example-HIVSimple2.json ==
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[7].resource/*Observation/Observation-HIVSimple2*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[7].resource/*Observation/Observation-HIVSimple2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[10].resource/*Observation/Observation-ViralLoad2*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[10].resource/*Observation/Observation-ViralLoad2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[10].resource/*Observation/Observation-ViralLoad2*/.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example-HIVSimple2: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Bundle-Example-Locations-Organizations.json ==
+== fsh-generated/resources/Bundle-Example0.json ==
+WARNING: Bundle/Example0: Bundle.entry[0].resource/*Patient/example-openmrs-Patient*/.identifier[0].extension[0].value.ofType(Reference): Entry 1 matches the reference Location/a3b793f0-eb53-4cda-92ce-fe0a77106252 by type and id but it's fullUrl https://path-global-health.github.io/MERindicators/Location/LocationExample does not match the full target URL https://path-global-health.github.io/MERindicators/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252 by Bundle resolution rules
+INFORMATION: Bundle/Example0: Bundle.entry[3].resource/*Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb*/.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
+WARNING: Bundle/Example0: Bundle.entry[3].resource/*Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb*/.location[0].location: Entry 1 matches the reference Location/a3b793f0-eb53-4cda-92ce-fe0a77106252 by type and id but it's fullUrl https://path-global-health.github.io/MERindicators/Location/LocationExample does not match the full target URL https://path-global-health.github.io/MERindicators/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252 by Bundle resolution rules
+WARNING: Bundle/Example0: Bundle.entry[4].resource/*DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de*/.encounter: Entry 3 matches the reference Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb by type and id but it's fullUrl https://path-global-health.github.io/MERindicators/Encounter/EncounterExample does not match the full target URL https://path-global-health.github.io/MERindicators/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb by Bundle resolution rules
+WARNING: Bundle/Example0: Bundle.entry[5].resource/*Observation/example-openmrs-Observation*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example0: Bundle.entry[5].resource/*Observation/example-openmrs-Observation*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/Example0: Bundle.entry[5].resource/*Observation/example-openmrs-Observation*/.encounter: Entry 3 matches the reference Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb by type and id but it's fullUrl https://path-global-health.github.io/MERindicators/Encounter/EncounterExample does not match the full target URL https://path-global-health.github.io/MERindicators/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb by Bundle resolution rules
+INFORMATION: Bundle/Example0: Bundle.entry[5].resource/*Observation/example-openmrs-Observation*/.referenceRange[0].type: None of the codings provided are in the value set 'Observation Reference Range Meaning Codes' (http://hl7.org/fhir/ValueSet/referencerange-meaning|4.0.1), and a coding is recommended to come from this value set) (codes = http://fhir.openmrs.org/ext/obs/reference-range#absolute)
+INFORMATION: Bundle/Example0: Bundle.entry[5].resource/*Observation/example-openmrs-Observation*/.referenceRange[0].type.coding[0]: Code System URI 'http://fhir.openmrs.org/ext/obs/reference-range' is unknown so the code cannot be validated
+WARNING: Bundle/Example0: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/Example0: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Bundle-ExampleCIEL.json ==
+INFORMATION: Bundle/ExampleCIEL: Bundle.entry[0].resource/*Patient/PatientCIEL*/.identifier[0].extension[0]: Unknown extension http://fhir.openmrs.org/ext/patient/identifier#location
+WARNING: Bundle/ExampleCIEL: Bundle.entry[5].resource/*Observation/ObservationCIEL*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/ExampleCIEL: Bundle.entry[5].resource/*Observation/ObservationCIEL*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/ExampleCIEL: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/ExampleCIEL: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Bundle-ExampleDeceasedBoolean.json ==
+== fsh-generated/resources/Bundle-ExampleDeceasedDateTime.json ==
+== fsh-generated/resources/Bundle-ExampleOMRS0.json ==
+WARNING: Bundle/ExampleOMRS0: Bundle.entry[0].resource/*Patient/PatientOMRS0*/.identifier[0].extension[0].value.ofType(Reference): Entry 1 matches the reference Location/a3b793f0-eb53-4cda-92ce-fe0a77106252 by type and id but it's fullUrl https://path-global-health.github.io/MERindicators/Location/LocationExample does not match the full target URL https://path-global-health.github.io/MERindicators/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252 by Bundle resolution rules
+INFORMATION: Bundle/ExampleOMRS0: Bundle.entry[2].resource/*Encounter/EncounterOMRS0*/.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
+WARNING: Bundle/ExampleOMRS0: Bundle.entry[2].resource/*Encounter/EncounterOMRS0*/.location[0].location: Entry 1 matches the reference Location/a3b793f0-eb53-4cda-92ce-fe0a77106252 by type and id but it's fullUrl https://path-global-health.github.io/MERindicators/Location/LocationExample does not match the full target URL https://path-global-health.github.io/MERindicators/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252 by Bundle resolution rules
+WARNING: Bundle/ExampleOMRS0: Bundle.entry[3].resource/*Observation/ObservationOMRS0*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/ExampleOMRS0: Bundle.entry[3].resource/*Observation/ObservationOMRS0*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/ExampleOMRS0: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/ExampleOMRS0: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Bundle-KEMRBundle.json ==
+WARNING: Bundle/KEMRBundle: Bundle.entry[0].resource/*CodeSystem/CIEL*/: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.version is mandatory, but it is not present
+INFORMATION: Bundle/KEMRBundle: Bundle.entry[1].resource/*CodeSystem/EnrollmentMethods*/: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: Bundle/KEMRBundle: Bundle.entry[1].resource/*CodeSystem/EnrollmentMethods*/: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[1].resource/*CodeSystem/EnrollmentMethods*/: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[2].resource/*CodeSystem/OpenHIE*/: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[3].resource/*ValueSet/OnARV*/.compose.include[0].concept[0]: The code '432101000124108' is not valid in the system http://snomed.info/sct
+INFORMATION: Bundle/KEMRBundle: Bundle.entry[3].resource/*ValueSet/OnARV*/.compose.include[0].concept[0]: Unable to find code 432101000124108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code '432101000124108' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#432101000124108' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+WARNING: Bundle/KEMRBundle: Bundle.entry[3].resource/*ValueSet/OnARV*/: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[4].resource/*ValueSet/Pregnant*/: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[5].resource/*ValueSet/SyntheaHIVMedications*/: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[6].resource/*ValueSet/CIELHIVMedications*/: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[7].resource/*ValueSet/EnrollmentMethodsforHIVProgram*/: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[0].resource: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.version is mandatory, but it is not present
+INFORMATION: Bundle/KEMRBundle: Bundle.entry[1].resource: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: Bundle/KEMRBundle: Bundle.entry[1].resource: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[1].resource: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[2].resource: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[3].resource.compose.include[0].concept[0]: The code '432101000124108' is not valid in the system http://snomed.info/sct
+INFORMATION: Bundle/KEMRBundle: Bundle.entry[3].resource.compose.include[0].concept[0]: Unable to find code 432101000124108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code '432101000124108' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#432101000124108' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+WARNING: Bundle/KEMRBundle: Bundle.entry[3].resource: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[4].resource: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[5].resource: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[6].resource: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: Bundle/KEMRBundle: Bundle.entry[7].resource: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-CIEL.json ==
+ERROR: CodeSystem.where(url = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-CIEL.json - the canonical URL (https://path-global-health.github.io/MERindicators/CodeSystem/CIEL) does not match the URL (https://openconceptlab.org/orgs/CIEL/sources/CIEL)
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-CIEL: URL Mismatch https://path-global-health.github.io/MERindicators/CodeSystem/CIEL vs https://openconceptlab.org/orgs/CIEL/sources/CIEL
+== fsh-generated/resources/CodeSystem-DAKCoarseAgeRangeCS.json ==
+== fsh-generated/resources/CodeSystem-DAKDispensingQuantityCS.json ==
+== fsh-generated/resources/CodeSystem-DAKICD11.json ==
+ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/sid/icd-11'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-DAKICD11.json - the canonical URL (https://path-global-health.github.io/MERindicators/CodeSystem/DAKICD11) does not match the URL (http://hl7.org/fhir/sid/icd-11)
+ERROR: CodeSystem/DAKICD11: CodeSystem: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-DAKICD11: URL Mismatch https://path-global-health.github.io/MERindicators/CodeSystem/DAKICD11 vs http://hl7.org/fhir/sid/icd-11
+== fsh-generated/resources/CodeSystem-EnrollmentMethods.json ==
+INFORMATION: CodeSystem/EnrollmentMethods: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/EnrollmentMethods: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/EnrollmentMethods: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-OpenHIE.json ==
+== fsh-generated/resources/Condition-Condition-DAK-onart-art.json ==
+ERROR: Condition/Condition-DAK-onart-art: Condition.code.coding[0]: Wrong Display Name 'Drug prophylaxis (procedure)' for http://snomed.info/sct#182929008 - should be one of 5 choices: 'Prophylactic drug therapy', 'Drug prophylaxis', 'Administration of prophylactic medication', 'Administration of prophylactic drug or medicament (procedure)' or 'Administration of prophylactic drug or medicament' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#182929008'
+== fsh-generated/resources/Condition-Condition-DAK-onart-hiv.json ==
+== fsh-generated/resources/Condition-Condition-HIVSimple.json ==
+== fsh-generated/resources/Condition-Condition-HIVSimple2.json ==
+== fsh-generated/resources/Condition-Condition-Pregnancy.json ==
+== fsh-generated/resources/Condition-Condition-Pregnancy2.json ==
+== fsh-generated/resources/Condition-Condition-PregnancyCIEL.json ==
+== fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.json ==
+== fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de.json ==
+== fsh-generated/resources/DiagnosticReport-DiagnosticReport-HIVSimple.json ==
+== fsh-generated/resources/DiagnosticReport-DiagnosticReport-HIVSimple2.json ==
+== fsh-generated/resources/DiagnosticReport-DiagnosticReport-ViralLoad.json ==
+== fsh-generated/resources/DiagnosticReport-DiagnosticReport-ViralLoad2.json ==
+== fsh-generated/resources/DiagnosticReport-DiagnosticReport2-ViralLoad.json ==
+== fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json ==
+INFORMATION: Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: Encounter.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
+== fsh-generated/resources/Encounter-Encounter-DAK-onart.json ==
+== fsh-generated/resources/Encounter-Encounter-HIVSimple.json ==
+== fsh-generated/resources/Encounter-Encounter-HIVSimple2.json ==
+== fsh-generated/resources/Encounter-Encounter-ViralLoad.json ==
+== fsh-generated/resources/Encounter-Encounter-ViralLoad2.json ==
+== fsh-generated/resources/Encounter-Encounter2-ViralLoad.json ==
+== fsh-generated/resources/Encounter-EncounterCIEL.json ==
+== fsh-generated/resources/Encounter-EncounterOMRS0.json ==
+INFORMATION: Encounter/EncounterOMRS0: Encounter.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
+== fsh-generated/resources/ImplementationGuide-path.merindicators.json ==
+== fsh-generated/resources/Library-DAKConcepts.json ==
+ERROR: Library/DAKConcepts: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/DAKConcepts: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Library-DAKDataElements.json ==
+ERROR: DAKDataElements.cql: CQL Processing failed with exception: Cannot invoke "org.hl7.elm.r1.CodeSystemDef.getId()" because "codeSystemDef" is null
+ERROR: Library/DAKDataElements: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/DAKDataElements: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Library-DAKStratifiers.json ==
+WARNING: DAKStratifiers.cql: Result type List of choice<FHIR.uri,FHIR.string> of definition OpenMRS Location is not supported; implementations may not be able to use the result of this expression
+WARNING: DAKStratifiers.cql: Result type choice<System.String,list<choice<FHIR.uri,FHIR.string>>> of definition Location Deux is not supported; implementations may not be able to use the result of this expression
+ERROR: Library/DAKStratifiers: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/DAKStratifiers: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Library-DAKTXCURRLibrary.json ==
+ERROR: Library.url: Resource id/url mismatch: DAKTXCURRLibrary/https://path-global-health.github.io/MERindicators/Library/DAKTXCURR
+ERROR: Library/DAKTXCURRLibrary: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/DAKTXCURRLibrary: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Library-Debug.json ==
+ERROR: Library/Debug: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/Debug: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Library-FHIRCommon.json ==
+ERROR: Library/FHIRCommon: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/FHIRCommon: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Library-FHIRHelpers.json ==
+ERROR: Library/FHIRHelpers: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+== fsh-generated/resources/Library-KenyaEMRConcepts.json ==
+ERROR: Library/KenyaEMRConcepts: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/KenyaEMRConcepts: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Library-KenyaEMRStratifiers.json ==
+WARNING: KenyaEMRStratifiers.cql: Result type choice<System.String,list<System.String>> of definition Location Deux is not supported; implementations may not be able to use the result of this expression
+WARNING: KenyaEMRStratifiers.cql: Result type choice<list<System.String>,System.String> of definition Location is not supported; implementations may not be able to use the result of this expression
+ERROR: Library/KenyaEMRStratifiers: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/KenyaEMRStratifiers: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Library-KenyaEMRTXCURR.json ==
+WARNING: KenyaEMRTXCURR.cql: Result type choice<System.Boolean,System.Time,System.DateTime,System.Integer,FHIR.decimal,System.String> of definition Return Visit Date is not supported; implementations may not be able to use the result of this expression
+ERROR: KenyaEMRTXCURR.cql: CQL Processing failed with exception: Cannot invoke "org.hl7.elm.r1.CodeSystemDef.getId()" because "codeSystemDef" is null
+ERROR: Library/KenyaEMRTXCURR: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/KenyaEMRTXCURR: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+== fsh-generated/resources/Location-Location-DAK.json ==
+== fsh-generated/resources/Location-Location-HIVSimple1.json ==
+== fsh-generated/resources/Location-Location-HIVSimple2.json ==
+== fsh-generated/resources/Location-LocationCIEL.json ==
+== fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.json ==
+== fsh-generated/resources/Measure-DAKTXCURR.json ==
+WARNING: Measure/DAKTXCURR: Measure.group[0].stratifier[0]: A measure group stratifier should have a code when there is more than one population
+WARNING: Measure/DAKTXCURR: Measure.group[0].stratifier[1]: A measure group stratifier should have a code when there is more than one population
+== fsh-generated/resources/Measure-KEMRTXCURR.json ==
+== fsh-generated/resources/MedicationRequest-MedicationRequest-DAK-onart.json ==
+== fsh-generated/resources/Observation-Observation-DAK-onart.json ==
+ERROR: Observation/Observation-DAK-onart: Observation.code.coding[0]: Wrong Display Name 'Drug prophylaxis (procedure)' for http://snomed.info/sct#182929008 - should be one of 5 choices: 'Prophylactic drug therapy', 'Drug prophylaxis', 'Administration of prophylactic medication', 'Administration of prophylactic drug or medicament (procedure)' or 'Administration of prophylactic drug or medicament' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#182929008'
+WARNING: Observation/Observation-DAK-onart: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Observation-DAK-onart-dispense.json ==
+WARNING: Observation/Observation-DAK-onart-dispense: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Observation-HIVSimple.json ==
+WARNING: Observation/Observation-HIVSimple: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/Observation-HIVSimple: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-Observation-HIVSimple2.json ==
+WARNING: Observation/Observation-HIVSimple2: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/Observation-HIVSimple2: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-Observation-ViralLoad.json ==
+WARNING: Observation/Observation-ViralLoad: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Observation/Observation-ViralLoad: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/Observation-ViralLoad: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-Observation-ViralLoad2.json ==
+WARNING: Observation/Observation-ViralLoad2: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Observation/Observation-ViralLoad2: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/Observation-ViralLoad2: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-Observation2-ViralLoad.json ==
+WARNING: Observation/Observation2-ViralLoad: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {copies} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Observation/Observation2-ViralLoad: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/Observation2-ViralLoad: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-ObservationCIEL.json ==
+WARNING: Observation/ObservationCIEL: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/ObservationCIEL: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-ObservationOMRS0.json ==
+WARNING: Observation/ObservationOMRS0: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/ObservationOMRS0: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-example-openmrs-Observation.json ==
+INFORMATION: Observation/example-openmrs-Observation: Observation.referenceRange[0].type.coding[0]: Code System URI 'http://fhir.openmrs.org/ext/obs/reference-range' is unknown so the code cannot be validated
+WARNING: Observation/example-openmrs-Observation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/example-openmrs-Observation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Organization-Organization-DAK.json ==
+== fsh-generated/resources/Organization-Organization-HIVSimple1.json ==
+== fsh-generated/resources/Organization-Organization-HIVSimple2.json ==
+== fsh-generated/resources/Organization-OrganizationCIEL.json ==
+== fsh-generated/resources/Patient-DeceasedBoolean.json ==
+== fsh-generated/resources/Patient-DeceasedDateTime.json ==
+== fsh-generated/resources/Patient-Patient-DAK-onart.json ==
+== fsh-generated/resources/Patient-Patient-HIVSimple.json ==
+== fsh-generated/resources/Patient-Patient-HIVSimple2.json ==
+== fsh-generated/resources/Patient-PatientCIEL.json ==
+INFORMATION: Patient/PatientCIEL: Patient.identifier[0].extension[0]: Unknown extension http://fhir.openmrs.org/ext/patient/identifier#location
+== fsh-generated/resources/Patient-PatientOMRS0.json ==
+== fsh-generated/resources/Patient-example-openmrs-Patient.json ==
+== fsh-generated/resources/StructureDefinition-DAKARTCondition.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKARTCondition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKARTObservation.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKARTObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKARTVisitEncounter.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKARTVisitEncounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKDispenseDaysObservation.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKDispenseDaysObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKDrugPickupEncounter.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKDrugPickupEncounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKHIVCondition.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKHIVCondition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKMedicationRequest.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKMedicationRequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKPatient.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKPatient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKStoppedObservation.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKStoppedObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DAKTransferOutObservation.json ==
+WARNING: StructureDefinition.where(url = 'https://path-global-health.github.io/MERindicators/StructureDefinition/DAKTransferOutObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-TXCURRelements.json ==
+== fsh-generated/resources/ValueSet-CIELHIVMedications.json ==
+== fsh-generated/resources/ValueSet-DAKARTMeds.json ==
+== fsh-generated/resources/ValueSet-DAKARTStop.json ==
+== fsh-generated/resources/ValueSet-DAKARTVisit.json ==
+== fsh-generated/resources/ValueSet-DAKARVDrugPickup.json ==
+== fsh-generated/resources/ValueSet-DAKCoarseAgeRange.json ==
+== fsh-generated/resources/ValueSet-DAKDispensingQuantity.json ==
+== fsh-generated/resources/ValueSet-DAKHIVTransfer.json ==
+== fsh-generated/resources/ValueSet-DAKMMD.json ==
+== fsh-generated/resources/ValueSet-DAKONART.json ==
+== fsh-generated/resources/ValueSet-DAKPLHIV.json ==
+== fsh-generated/resources/ValueSet-EnrollmentMethodsforHIVProgram.json ==
+WARNING: ValueSet/EnrollmentMethodsforHIVProgram: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-OnARV.json ==
+WARNING: ValueSet/OnARV: ValueSet.compose.include[0].concept[0]: The code '432101000124108' is not valid in the system http://snomed.info/sct
+INFORMATION: ValueSet/OnARV: ValueSet.compose.include[0].concept[0]: Unable to find code 432101000124108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code '432101000124108' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#432101000124108' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+== fsh-generated/resources/ValueSet-Pregnant.json ==
+== fsh-generated/resources/ValueSet-SyntheaHIVMedications.json ==
+== input/resources/device/cqf-tooling.json ==
+== input/vocabulary/valueset/cqf_valuesets/ValueSet-active-condition.json ==
+ERROR: ValueSet.where(url = 'http://fhir.org/guides/cqf/common/ValueSet/active-condition'): Conformance resource /github/workspace/input/vocabulary/valueset/cqf_valuesets/ValueSet-active-condition.json - the canonical URL (https://path-global-health.github.io/MERindicators/ValueSet/active-condition) does not match the URL (http://fhir.org/guides/cqf/common/ValueSet/active-condition)
+INFORMATION: ValueSet/active-condition: ValueSet.extension[0].value.ofType(code): Reference to draft item http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability|1.0.0
+INFORMATION: ValueSet/active-condition: ValueSet.extension[1].value.ofType(code): Reference to draft item http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability|1.0.0
+INFORMATION: ValueSet/active-condition: ValueSet.extension[2].value.ofType(code): Reference to draft item http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability|1.0.0
+INFORMATION: ValueSet/active-condition: ValueSet.extension[3].value.ofType(code): Reference to draft item http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-representation-level|1.0.0
+ERROR: /github/workspace/input/vocabulary/valueset/cqf_valuesets/ValueSet-active-condition: URL Mismatch https://path-global-health.github.io/MERindicators/ValueSet/active-condition vs http://fhir.org/guides/cqf/common/ValueSet/active-condition
+== input/vocabulary/valueset/cqf_valuesets/ValueSet-inactive-condition.json ==
+ERROR: ValueSet.where(url = 'http://fhir.org/guides/cqf/common/ValueSet/inactive-condition'): Conformance resource /github/workspace/input/vocabulary/valueset/cqf_valuesets/ValueSet-inactive-condition.json - the canonical URL (https://path-global-health.github.io/MERindicators/ValueSet/inactive-condition) does not match the URL (http://fhir.org/guides/cqf/common/ValueSet/inactive-condition)
+INFORMATION: ValueSet/inactive-condition: ValueSet.extension[0].value.ofType(code): Reference to draft item http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability|1.0.0
+INFORMATION: ValueSet/inactive-condition: ValueSet.extension[1].value.ofType(code): Reference to draft item http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability|1.0.0
+INFORMATION: ValueSet/inactive-condition: ValueSet.extension[2].value.ofType(code): Reference to draft item http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability|1.0.0
+INFORMATION: ValueSet/inactive-condition: ValueSet.extension[3].value.ofType(code): Reference to draft item http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-representation-level|1.0.0
+ERROR: /github/workspace/input/vocabulary/valueset/cqf_valuesets/ValueSet-inactive-condition: URL Mismatch https://path-global-health.github.io/MERindicators/ValueSet/inactive-condition vs http://fhir.org/guides/cqf/common/ValueSet/inactive-condition

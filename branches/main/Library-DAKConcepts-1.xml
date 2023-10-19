@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <annotation xsi:type="a:Annotation">
+      <a:s r="38">
+         <a:s>library DAKConcepts version '0.1.0'</a:s>
+      </a:s>
+   </annotation>
+   <identifier id="DAKConcepts" system="https://path-global-health.github.io/MERindicators" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="3:1-3:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>using </a:s>
+               <a:s>
+                  <a:s>FHIR</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="5:1-5:35" localIdentifier="FHIRHelpers" path="https://path-global-health.github.io/MERindicators/FHIRHelpers" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="3" locator="6:1-6:44" localIdentifier="FC" path="https://path-global-health.github.io/MERindicators/FHIRCommon" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="3">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRCommon</a:s>
+               </a:s>
+               <a:s> version '4.0.1' called FC</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <codeSystems>
+      <def localId="4" locator="9:1-9:48" resultTypeName="t:CodeSystem" name="SNOMED-CT" id="http://snomed.info/sct" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="4">
+               <a:s>// codesystems
+codesystem &quot;SNOMED-CT&quot;: 'http://snomed.info/sct'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="5" locator="10:1-10:38" resultTypeName="t:CodeSystem" name="LOINC" id="http://loinc.org" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="5">
+               <a:s>codesystem &quot;LOINC&quot;: 'http://loinc.org'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="6" locator="11:1-11:66" resultTypeName="t:CodeSystem" name="RxNorm" id="http://www.nlm.nih.gov/research/umls/rxnorm" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="6">
+               <a:s>codesystem &quot;RxNorm&quot;: 'http://www.nlm.nih.gov/research/umls/rxnorm'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="7" locator="12:1-12:53" resultTypeName="t:CodeSystem" name="ICD-11" id="http://hl7.org/fhir/sid/icd-11" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="7">
+               <a:s>codesystem &quot;ICD-11&quot;: 'http://hl7.org/fhir/sid/icd-11'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="8" locator="15:1-15:70" resultTypeName="t:CodeSystem" name="CIEL" id="https://openconceptlab.org/orgs/CIEL/sources/CIEL" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="8">
+               <a:s>// local codesystems
+codesystem &quot;CIEL&quot;: 'https://openconceptlab.org/orgs/CIEL/sources/CIEL'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="9" locator="16:1-16:43" resultTypeName="t:CodeSystem" name="OpenHIE" id="https://openhie.org" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="9">
+               <a:s>codesystem &quot;OpenHIE&quot;: 'https://openhie.org'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="10" locator="17:1-17:128" resultTypeName="t:CodeSystem" name="DAK Dispensing Quantity CS" id="https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="10">
+               <a:s>codesystem &quot;DAK Dispensing Quantity CS&quot;: 'https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="11" locator="18:1-18:121" resultTypeName="t:CodeSystem" name="DAK Coarse Age Range CS" id="https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="11">
+               <a:s>codesystem &quot;DAK Coarse Age Range CS&quot;: 'https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </codeSystems>
+   <valueSets>
+      <def localId="12" locator="21:1-21:90" resultTypeName="t:ValueSet" name="HL7 Administrative Gender" id="http://hl7.org/fhir/ValueSet/administrative-gender" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="12">
+               <a:s>// FHIR CS and VS
+valueset &quot;HL7 Administrative Gender&quot;: 'http://hl7.org/fhir/ValueSet/administrative-gender'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="27" locator="40:1-40:103" resultTypeName="t:ValueSet" name="AgeRangesTXCURR" id="https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="27">
+               <a:s>// code &quot;New on ART&quot;: 'new-on-art' from &quot;PMTCT ART Status Codes&quot; display 'New on ART'
+
+// valuesets
+valueset AgeRangesTXCURR: 'https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="28" locator="45:1-45:103" resultTypeName="t:ValueSet" name="Viral Load Test" id="https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="28">
+               <a:s>// valueset &quot;HIV Testing Services&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/HIVTestingServices' // Should use HIV tests
+// viral load tests, results
+// commenting out for now and the union
+// valueset &quot;Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)&quot;: 'urn:oid:2.16.840.1.113762.1.4.1056.50' // Used by CMS349
+valueset &quot;Viral Load Test&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="29" locator="46:1-46:92" resultTypeName="t:ValueSet" name="DAK PLHIV" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="29">
+               <a:s>valueset &quot;DAK PLHIV&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="30" locator="47:1-47:88" resultTypeName="t:ValueSet" name="DAK MMD" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="30">
+               <a:s>valueset &quot;DAK MMD&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="31" locator="48:1-48:93" resultTypeName="t:ValueSet" name="DAK On ART" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKONART" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="31">
+               <a:s>valueset &quot;DAK On ART&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKONART'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="32" locator="49:1-49:108" resultTypeName="t:ValueSet" name="DAK HIV Transfer In" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="32">
+               <a:s>valueset &quot;DAK HIV Transfer In&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="33" locator="50:1-50:110" resultTypeName="t:ValueSet" name="DAK ARV Drug Pickup" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="33">
+               <a:s>valueset &quot;DAK ARV Drug Pickup&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="34" locator="51:1-51:104" resultTypeName="t:ValueSet" name="DAK ART Medications" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="34">
+               <a:s>valueset &quot;DAK ART Medications&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="35" locator="52:1-52:119" resultTypeName="t:ValueSet" name="DAK Dispensing Quantity" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="35">
+               <a:s>valueset &quot;DAK Dispensing Quantity&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="36" locator="53:1-53:112" resultTypeName="t:ValueSet" name="DAK Coarse Age Range" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="36">
+               <a:s>valueset &quot;DAK Coarse Age Range&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="37" locator="54:1-54:100" resultTypeName="t:ValueSet" name="DAK ART Stopped" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="37">
+               <a:s>valueset &quot;DAK ART Stopped&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="38" locator="55:1-55:108" resultTypeName="t:ValueSet" name="DAK HIV Transferred" id="https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="38">
+               <a:s>valueset &quot;DAK HIV Transferred&quot;: 'https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </valueSets>
+   <codes>
+      <def localId="14" locator="25:1-25:85" resultTypeName="t:Code" name="Pregnancy (finding)" id="77386006" display="Pregnancy (finding)" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="14">
+               <a:s>// codes
+// The display &quot;Pregnancy (finding)&quot; is not a valid display for the code {http://snomed.info/sct}77386006
+code &quot;Pregnancy (finding)&quot;: '77386006' from </a:s>
+               <a:s r="13">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'Pregnancy (finding)'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="13" locator="25:45-25:55" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="16" locator="26:1-26:64" resultTypeName="t:Code" name="Pregnant" id="146789000" display="Pregnant" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="16">
+               <a:s>code &quot;Pregnant&quot;: '146789000' from </a:s>
+               <a:s r="15">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'Pregnant'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="15" locator="26:35-26:45" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="18" locator="28:1-28:126" resultTypeName="t:Code" name="Prenatal initial visit (regime/therapy)" id="424441002" display="Prenatal initial visit (regime/therapy)" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="18">
+               <a:s>// code &quot;Breastfeeding&quot;: '169750002' from &quot;SNOMED-CT&quot; display 'Breastfeeding'
+code &quot;Prenatal initial visit (regime/therapy)&quot;: '424441002' from </a:s>
+               <a:s r="17">
+                  <a:s>&quot;SNOMED-CT&quot;</a:s>
+               </a:s>
+               <a:s> display 'Prenatal initial visit (regime/therapy)'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="17" locator="28:66-28:76" resultTypeName="t:CodeSystem" name="SNOMED-CT"/>
+      </def>
+      <def localId="20" locator="29:1-29:96" resultTypeName="t:Code" name="Pregnancy status - Reported" id="11449-6" display="Pregnancy status - Reported" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="20">
+               <a:s>code &quot;Pregnancy status - Reported&quot;: '11449-6' from </a:s>
+               <a:s r="19">
+                  <a:s>&quot;LOINC&quot;</a:s>
+               </a:s>
+               <a:s> display 'Pregnancy status - Reported'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="19" locator="29:52-29:58" resultTypeName="t:CodeSystem" name="LOINC"/>
+      </def>
+      <def localId="22" locator="33:1-33:80" resultTypeName="t:Code" name="Currently taking ARV" id="160119" display="Currently taking ARV" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="22">
+               <a:s>// code &quot;Livebirth (finding)&quot;: '281050002' from &quot;SNOMED-CT&quot; display 'Livebirth (finding)'
+// code &quot;Postpartum state (finding)&quot;: '86569001' from &quot;SNOMED-CT&quot; display 'Postpartum state (finding)'
+// code &quot;Normal breast feeding (finding)&quot;: '69840006' from &quot;SNOMED-CT&quot; display 'Normal breast feeding (finding)'
+code &quot;Currently taking ARV&quot;: '160119' from </a:s>
+               <a:s r="21">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'Currently taking ARV'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="21" locator="33:44-33:49" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="24" locator="34:1-34:53" resultTypeName="t:Code" name="Coded Answer" id="1065" display="Yes" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="24">
+               <a:s>code &quot;Coded Answer&quot;: '1065' from </a:s>
+               <a:s r="23">
+                  <a:s>&quot;CIEL&quot;</a:s>
+               </a:s>
+               <a:s> display 'Yes'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="23" locator="34:34-34:39" resultTypeName="t:CodeSystem" name="CIEL"/>
+      </def>
+      <def localId="26" locator="35:1-35:142" resultTypeName="t:Code" name="History of antiretroviral therapy (situation)" id="432101000124108" display="History of antiretroviral therapy (situation)" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="26">
+               <a:s>code &quot;History of antiretroviral therapy (situation)&quot;: '432101000124108' from </a:s>
+               <a:s r="25">
+                  <a:s>&quot;OpenHIE&quot;</a:s>
+               </a:s>
+               <a:s> display 'History of antiretroviral therapy (situation)'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="25" locator="35:78-35:86" resultTypeName="t:CodeSystem" name="OpenHIE"/>
+      </def>
+   </codes>
+</library>

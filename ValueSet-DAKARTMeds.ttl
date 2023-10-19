@@ -1,0 +1,176 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DAKARTMeds"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DAKICD11.html\"><code>http://hl7.org/fhir/sid/icd-11</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM35P4\">XM35P4</a></td><td>Abacavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM2L06\">XM2L06</a></td><td>Emtricitabine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM5471\">XM5471</a></td><td>Lamivudine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM9C07\">XM9C07</a></td><td>Zidovudine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM8Z78\">XM8Z78</a></td><td>Didanosine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM7RM1\">XM7RM1</a></td><td>Stavudine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM67N3\">XM67N3</a></td><td>Tenofovir disoproxil</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM1DX2\">XM1DX2</a></td><td>Efavirenz</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM7N44\">XM7N44</a></td><td>Etravirine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM10T5\">XM10T5</a></td><td>Nevirapine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM1KD4\">XM1KD4</a></td><td>Rilpivirine</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM4TF3\">XM4TF3</a></td><td>Atazanavir and Ritonavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM3EH7\">XM3EH7</a></td><td>Lopinavir and Ritonavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM8ZN1\">XM8ZN1</a></td><td>Darunavir and Ritonavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM56L1\">XM56L1</a></td><td>Ritonavir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM6K45\">XM6K45</a></td><td>Dolutegravir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM82D3\">XM82D3</a></td><td>Raltegravir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM8QY9\">XM8QY9</a></td><td>Lamivudine, Tenofovir disoproxil and Dolutegravir</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM3U67\">XM3U67</a></td><td>Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM9NL2\">XM9NL2</a></td><td>Lamivudine, Tenofovir disoproxil and Efavirenz</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM2UU9\">XM2UU9</a></td><td>Lamivudine, Abacavir and Dolutegravir</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/387005008\">387005008</a></td><td>Abacavir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/404856006\">404856006</a></td><td>Emtricitabine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386897000\">386897000</a></td><td>Lamivudine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387151007\">387151007</a></td><td>Zidovudine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387105006\">387105006</a></td><td>Didanosine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386895008\">386895008</a></td><td>Stavudine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/422091007\">422091007</a></td><td>Tenofovir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387001004\">387001004</a></td><td>Efavirenz (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/432121008\">432121008</a></td><td>Etravirine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386898005\">386898005</a></td><td>Nevirapine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/703123005\">703123005</a></td><td>Rilpivirine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/427314002\">427314002</a></td><td>Antiviral therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/776569000\">776569000</a></td><td>Product containing only lopinavir and ritonavir (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/386896009\">386896009</a></td><td>Ritonavir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/713464000\">713464000</a></td><td>Dolutegravir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/429707008\">429707008</a></td><td>Raltegravir (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>First-line treatment (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>Second-line treatment (procedure)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DAKARTMeds"] ; # 
+  fhir:title [ fhir:v "ART medications"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-19T20:59:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ART medications from the HIV DAK"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-11"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "XM35P4" ] ;
+         fhir:display [ fhir:v "Abacavir" ]
+       ] [
+         fhir:code [ fhir:v "XM2L06" ] ;
+         fhir:display [ fhir:v "Emtricitabine" ]
+       ] [
+         fhir:code [ fhir:v "XM5471" ] ;
+         fhir:display [ fhir:v "Lamivudine" ]
+       ] [
+         fhir:code [ fhir:v "XM9C07" ] ;
+         fhir:display [ fhir:v "Zidovudine" ]
+       ] [
+         fhir:code [ fhir:v "XM8Z78" ] ;
+         fhir:display [ fhir:v "Didanosine" ]
+       ] [
+         fhir:code [ fhir:v "XM7RM1" ] ;
+         fhir:display [ fhir:v "Stavudine" ]
+       ] [
+         fhir:code [ fhir:v "XM67N3" ] ;
+         fhir:display [ fhir:v "Tenofovir disoproxil" ]
+       ] [
+         fhir:code [ fhir:v "XM1DX2" ] ;
+         fhir:display [ fhir:v "Efavirenz" ]
+       ] [
+         fhir:code [ fhir:v "XM7N44" ] ;
+         fhir:display [ fhir:v "Etravirine" ]
+       ] [
+         fhir:code [ fhir:v "XM10T5" ] ;
+         fhir:display [ fhir:v "Nevirapine" ]
+       ] [
+         fhir:code [ fhir:v "XM1KD4" ] ;
+         fhir:display [ fhir:v "Rilpivirine" ]
+       ] [
+         fhir:code [ fhir:v "XM4TF3" ] ;
+         fhir:display [ fhir:v "Atazanavir and Ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "XM3EH7" ] ;
+         fhir:display [ fhir:v "Lopinavir and Ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "XM8ZN1" ] ;
+         fhir:display [ fhir:v "Darunavir and Ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "XM56L1" ] ;
+         fhir:display [ fhir:v "Ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "XM6K45" ] ;
+         fhir:display [ fhir:v "Dolutegravir" ]
+       ] [
+         fhir:code [ fhir:v "XM82D3" ] ;
+         fhir:display [ fhir:v "Raltegravir" ]
+       ] [
+         fhir:code [ fhir:v "XM8QY9" ] ;
+         fhir:display [ fhir:v "Lamivudine, Tenofovir disoproxil and Dolutegravir" ]
+       ] [
+         fhir:code [ fhir:v "XM3U67" ] ;
+         fhir:display [ fhir:v "Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit" ]
+       ] [
+         fhir:code [ fhir:v "XM9NL2" ] ;
+         fhir:display [ fhir:v "Lamivudine, Tenofovir disoproxil and Efavirenz" ]
+       ] [
+         fhir:code [ fhir:v "XM2UU9" ] ;
+         fhir:display [ fhir:v "Lamivudine, Abacavir and Dolutegravir" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "387005008" ] ;
+         fhir:display [ fhir:v "Abacavir (substance)" ]
+       ] [
+         fhir:code [ fhir:v "404856006" ] ;
+         fhir:display [ fhir:v "Emtricitabine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "386897000" ] ;
+         fhir:display [ fhir:v "Lamivudine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "387151007" ] ;
+         fhir:display [ fhir:v "Zidovudine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "387105006" ] ;
+         fhir:display [ fhir:v "Didanosine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "386895008" ] ;
+         fhir:display [ fhir:v "Stavudine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "422091007" ] ;
+         fhir:display [ fhir:v "Tenofovir (substance)" ]
+       ] [
+         fhir:code [ fhir:v "387001004" ] ;
+         fhir:display [ fhir:v "Efavirenz (substance)" ]
+       ] [
+         fhir:code [ fhir:v "432121008" ] ;
+         fhir:display [ fhir:v "Etravirine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "386898005" ] ;
+         fhir:display [ fhir:v "Nevirapine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "703123005" ] ;
+         fhir:display [ fhir:v "Rilpivirine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "427314002" ] ;
+         fhir:display [ fhir:v "Antiviral therapy (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "776569000" ] ;
+         fhir:display [ fhir:v "Product containing only lopinavir and ritonavir (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "386896009" ] ;
+         fhir:display [ fhir:v "Ritonavir (substance)" ]
+       ] [
+         fhir:code [ fhir:v "713464000" ] ;
+         fhir:display [ fhir:v "Dolutegravir (substance)" ]
+       ] [
+         fhir:code [ fhir:v "429707008" ] ;
+         fhir:display [ fhir:v "Raltegravir (substance)" ]
+       ] [
+         fhir:code [ fhir:v "708255002" ] ;
+         fhir:display [ fhir:v "First-line treatment (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "708256001" ] ;
+         fhir:display [ fhir:v "Second-line treatment (procedure)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

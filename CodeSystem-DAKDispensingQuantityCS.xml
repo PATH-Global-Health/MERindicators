@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DAKDispensingQuantityCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">notMMD<a name="DAKDispensingQuantityCS-notMMD"> </a></td><td>&lt;3 months of ARVs</td></tr><tr><td style="white-space:nowrap">3to5MMD<a name="DAKDispensingQuantityCS-3to5MMD"> </a></td><td>3-5 months of ARVs</td></tr><tr><td style="white-space:nowrap">6MMD<a name="DAKDispensingQuantityCS-6MMD"> </a></td><td>6 or more months of ARVs</td></tr><tr><td style="white-space:nowrap">NoData<a name="DAKDispensingQuantityCS-NoData"> </a></td><td>No Data</td></tr></table></div>
+  </text>
+  <url value="https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS"/>
+  <version value="0.1.0"/>
+  <name value="DAKDispensingQuantityCS"/>
+  <title value="DAKDispensingQuantityCS"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-10-19T20:59:19+00:00"/>
+  <publisher value="PATH"/>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.path.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PATH"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@path.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DAKDispensingQuantityCS"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="notMMD"/>
+    <display value="&lt;3 months of ARVs"/>
+  </concept>
+  <concept>
+    <code value="3to5MMD"/>
+    <display value="3-5 months of ARVs"/>
+  </concept>
+  <concept>
+    <code value="6MMD"/>
+    <display value="6 or more months of ARVs"/>
+  </concept>
+  <concept>
+    <code value="NoData"/>
+    <display value="No Data"/>
+  </concept>
+</CodeSystem>

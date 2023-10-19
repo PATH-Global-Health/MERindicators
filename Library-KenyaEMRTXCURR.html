@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>KenyaEMRTXCURR - PATH MER Indicators v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4.79"}
+    h3,h4,h5,h6{--heading-prefix:"4.79"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://ohie.org/">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PATH MER Indicators</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="workflows.html">Workflows</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>KenyaEMRTXCURR</b></li>
+
+          <span style="float:right;">
+
+            <a href="Library-KenyaEMRStratifiers.ttl.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="Library-KenyaEMRTXCURR-testing.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">PATH MER Indicators, published by PATH. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/PATH-Global-Health/MERindicators">https://github.com/PATH-Global-Health/MERindicators</a> and changes regularly. See the <a href="https://path-global-health.github.io/MERindicators/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Library-KenyaEMRTXCURR.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-KenyaEMRTXCURR.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-KenyaEMRTXCURR.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">Library: KenyaEMRTXCURR
+(Experimental)
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-10-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">KenyaEMRTXCURR</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>KenyaEMRTXCURR</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="Library-KenyaEMRTXCURR.xml.html">XML</a>, <a href="Library-KenyaEMRTXCURR.json.html">JSON</a>, <a href="Library-KenyaEMRTXCURR.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Related Artifacts</h2><table class="grid"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.1</code></td></tr><tr><td>depends-on</td><td><a href="Bundle-KEMRBundle.html">FHIRCommon (version 4.0.1)</a></td></tr><tr><td>depends-on</td><td><a href="Library-KenyaEMRConcepts.html">KenyaEMRConcepts</a></td></tr><tr><td>depends-on</td><td><a href="Library-KenyaEMRStratifiers.html">KenyaEMRStratifiers</a></td></tr></table><h2>Parameters</h2><table class="grid"><tr><td>Measurement Period</td><td>in</td><td>0</td><td>1</td><td>Period</td></tr><tr><td>Patient</td><td>out</td><td>0</td><td>1</td><td>Patient</td></tr><tr><td>PLHIV Observation</td><td>out</td><td>0</td><td>*</td><td>Observation</td></tr><tr><td>PLHIV Boolean</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Initial Population</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Return Visit Observations</td><td>out</td><td>0</td><td>*</td><td>Observation</td></tr><tr><td>Return Visits During Period</td><td>out</td><td>0</td><td>*</td><td>Observation</td></tr><tr><td>Any Return Visit During Period</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Most Recent Return Visit During Period</td><td>out</td><td>0</td><td>1</td><td>Observation</td></tr><tr><td>Return Visit Date</td><td>out</td><td>0</td><td>1</td><td>Resource</td></tr><tr><td>Return Visit within 30 days of Period</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Current Drugs Used Observations</td><td>out</td><td>0</td><td>*</td><td>Observation</td></tr><tr><td>Has started ART</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Measure Population</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Deceased Boolean</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Deceased DateTime Only</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Discontinuation</td><td>out</td><td>0</td><td>*</td><td>Observation</td></tr><tr><td>Transfer Out</td><td>out</td><td>0</td><td>*</td><td>Observation</td></tr><tr><td>Discontinuation Boolean</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Transfer Out Boolean</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Measure Population Exclusion</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>OpenMRS Location</td><td>out</td><td>0</td><td>*</td><td>string</td></tr><tr><td>Stratification</td><td>out</td><td>0</td><td>1</td><td>string</td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">library KenyaEMRTXCURR version '0.1.0'
+
+// Test cases are located in /input/tests/&lt;Library Name&gt;/&lt;Patient.id&gt;/&lt;bundle source&gt;
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.1'
+include FHIRCommon version '4.0.1' called FC
+include KenyaEMRConcepts called Cx
+include KenyaEMRStratifiers called Stratifiers
+
+
+// Provide a default interval or period-based tests will fail when evaluating CQL against test cases
+// The $evaluate-measure operation's parameters 'periodStart' and 'periodEnd' override this in any case
+parameter &quot;Measurement Period&quot; Interval&lt;DateTime&gt; default Interval[@1990-01-01T, @2023-06-30T]
+
+
+context Patient
+
+
+/*
+On ART is any patient with a regimen history as below:
+
+Patients started on ART drugs (participating in program)
+who made a clinic visit during the reporting period
+
+PLUS
+
+Patient who made a clinic visit in the past and were given medicine to last the reporting 
+period and beyond
+
+PLUS
+
+Patients who missed their appointment AND 30 days (one month) have not passed since the last missed appointment.
+[30 days since last missed appointment]
+
+Exclude those who interrupted treatment for any reason, etc, etc. &quot;Measure Population Exclusion&quot;
+*/
+
+
+// Initial Population
+// Patients who have started an ART drugs program
+
+/*
+PLHIV are enrolled in an HIV program.
+On Observation resource: $CIEL#160540 &quot;Method of enrollment&quot;
+Observation.status is not in example bundle, can't do 'Obs.status in {'final', 'amended', 'corrected'}'
+Using the CIEL codes only, even if others are provided.
+Use the equivalent operator (~) rather than equality (=) which checks the code system version.
+*/
+
+
+
+define &quot;PLHIV Observation&quot;:
+  [&quot;Observation&quot;: Cx.&quot;Method of enrollment&quot;] Obs
+    where (Obs.effective before end of &quot;Measurement Period&quot;)
+
+
+define &quot;PLHIV Boolean&quot;: exists &quot;PLHIV Observation&quot;
+
+
+define &quot;Initial Population&quot;: 
+  &quot;PLHIV Boolean&quot;
+
+
+/*
+Someone visits 1 July. 
+Given appt in 1 month - 1 August.
+Check that patient had visit by 24th August/by 30 days.
++ add 30 days.
+*/
+
+
+// &quot;RETURN VISIT DATE&quot;
+// Patients started on ART drugs (participating in program)
+// who made a clinic visit during the reporting period (Q: Any type? A: yes)
+
+define &quot;Return Visit Observations&quot;:
+  [&quot;Observation&quot;: Cx.&quot;RETURN VISIT DATE&quot;]
+
+// return visit during period
+define &quot;Return Visits During Period&quot;:
+  (&quot;Return Visit Observations&quot;) Obs
+  where (Obs.effective before end of &quot;Measurement Period&quot;)
+  sort by date from (effective as FHIR.dateTime) desc
+
+define &quot;Any Return Visit During Period&quot;: 
+  exists &quot;Return Visits During Period&quot;
+
+define &quot;Most Recent Return Visit During Period&quot;:
+  First(&quot;Return Visits During Period&quot;)
+
+define &quot;Return Visit Date&quot;:
+  &quot;Most Recent Return Visit During Period&quot;.value.value
+
+// Get last visit during measure period, &quot;return visit date&quot; + 30 days &gt; end of the period
+// Does the most recent &quot;return visit date&quot; need to be within the period as long as the value is after it?
+define &quot;Return Visit within 30 days of Period&quot;:
+  (&quot;Most Recent Return Visit During Period&quot;.value as FHIR.dateTime) + 30 days after end of &quot;Measurement Period&quot;
+
+
+// &quot;CURRENT DRUGS USED&quot; are prescriptions
+// effectivedatetime captures when those drugs started
+// the other datetime fields are not used
+// checks on being started on ART, this is not 'picking up drugs'
+
+define &quot;Current Drugs Used Observations&quot;:
+  [&quot;Observation&quot;: Cx.&quot;CURRENT DRUGS USED&quot;]
+
+define &quot;Has started ART&quot;:
+  exists(&quot;Current Drugs Used Observations&quot;)
+
+
+/*
+Additional notes:
+The assumption is that a patient is considered to be on a particular regimen until there is a change, substitution, or stop events.
+Drugs are prescribed and noted in an Observation.
+The actual drugs are coded concepts in Observation.value.coding but are missing a system identifier.
+The return dates are appointment dates for when the prescription ends and the patient is expected to return.
+The EMR does not use a pharmacy module, and is reliant on appointment dates (return dates) which are based on the amount of drugs given.
+The drugs observation tells when a patient was first started on drugs. 
+'current drugs' concept captures regimen changes
+more of a history of regimen of original and most current - there may be original and current regimen
+bundle includes original regimen
+*/
+
+// Patient who made a clinic visit in the past and were given medicine to last the reporting period and beyond
+
+
+define &quot;Measure Population&quot;: 
+  &quot;Return Visit within 30 days of Period&quot; and &quot;Has started ART&quot;
+
+
+// Measure Population Exclusion
+// Deceased and those who interrupted treatment for any reason, etc, etc.
+
+
+/*
+Deceased patients are not in numerator.
+In FHIR, deceased[x] is a choice type, of either boolean or datetime.
+It also has a cardinality of 0..1. so deceasedBoolean and deceasedDateTime cannot coexist.
+There can only be one deceased[x] element.
+If true is used, there's no way to know from that field when the patient died. DateTime is better for accuracy.
+*/
+
+
+// This expression allows deceasedBoolean which has no datetime.
+define &quot;Deceased Boolean&quot;:
+  Patient.deceased is not null 
+  and ((Patient.deceased as FHIR.boolean) is true or (Patient.deceased as FHIR.dateTime) on or before end of &quot;Measurement Period&quot;)
+
+
+// This expression requires patients to have datetime on Patient.deceased (more accurate).
+define &quot;Deceased DateTime Only&quot;:
+  Patient.deceased is not null 
+  and Patient.deceased on or before end of &quot;Measurement Period&quot;
+
+
+
+// Todo: double check: &quot;effectiveDateTime&quot;: &quot;2023-05-31T11:30:14+03:00&quot;,
+define &quot;Discontinuation&quot;:
+  [&quot;Observation&quot;: Cx.&quot;Reason for discontinuation of program&quot;] Obs
+  where Obs.effective before end of &quot;Measurement Period&quot; and Obs.effective after &quot;Most Recent Return Visit During Period&quot;.effective
+
+
+// valueDateTime
+define &quot;Transfer Out&quot;:
+  [&quot;Observation&quot;: Cx.&quot;Treatment end date&quot;] Obs
+  where Obs.value before end of &quot;Measurement Period&quot; and Obs.value after &quot;Most Recent Return Visit During Period&quot;.effective
+
+
+define &quot;Discontinuation Boolean&quot;: exists &quot;Discontinuation&quot;
+
+
+define &quot;Transfer Out Boolean&quot;: exists &quot;Transfer Out&quot;
+
+
+define &quot;Measure Population Exclusion&quot;: 
+  &quot;Discontinuation Boolean&quot;
+  or &quot;Transfer Out Boolean&quot;
+  or &quot;Deceased Boolean&quot;
+  //or (&quot;Deceased Boolean&quot; is true or &quot;Deceased DateTime Only&quot; is true)
+
+
+
+// Stratifiers
+
+
+// should work without #location
+// how to clean it up with identifier[].extension[]
+// todo: debugging needed on location
+define &quot;OpenMRS Location&quot;:
+  [Patient] P
+    // this url is in the ig, but is not correct: 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location'}
+    where singleton from {P.identifier.extension[0].url ~ 'http://fhir.openmrs.org/ext/patient/identifier'}
+    or singleton from {P.identifier.extension[0].url ~ 'http://fhir.openmrs.org/ext/patient/identifier#location'}
+    or singleton from {P.identifier.extension[1].url ~ 'http://fhir.openmrs.org/ext/patient/identifier'}
+    or singleton from {P.identifier.extension[1].url ~ 'http://fhir.openmrs.org/ext/patient/identifier#location'}
+    return singleton from {P.identifier.extension[0].value.reference.value}
+
+
+define &quot;Stratification&quot;: 
+  Stratifiers.&quot;Age Group/Sex&quot;
+
+
+// define &quot;Stratifier&quot;: &quot;Stratification&quot;
+</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 120Kb)</p><p><code>Content not shown - (</code><code>application/elm+json</code>, size = 218Kb)</p></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="Library-KenyaEMRStratifiers.ttl.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="Library-KenyaEMRTXCURR-testing.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color: #81BEF7" href="https://www.path.org">PATH</a>.  Package path.merindicators#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 19, 2023 20:59+0000">2023-10-19</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="https://path-global-health.github.io/MERindicators/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

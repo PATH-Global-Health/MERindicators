@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ExampleDeceasedDateTime"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="https://path-global-health.github.io/MERindicators/Patient/DeceasedDateTime"/>
+    <resource>
+      <Patient>
+        <id value="DeceasedDateTime"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="DeceasedDateTime"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;DeceasedDateTime&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: Simon Notsowell (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1982-01-23</p><p><b>deceased</b>: 2015-02-14 13:42:00+1000</p></div>
+        </text>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <family value="Notsowell"/>
+          <given value="Simon"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1982-01-23"/>
+        <deceasedDateTime value="2015-02-14T13:42:00+10:00"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/DeceasedDateTime"/>
+    </request>
+  </entry>
+</Bundle>

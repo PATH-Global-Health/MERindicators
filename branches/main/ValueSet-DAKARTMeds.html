@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ART medications - PATH MER Indicators v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4.12"}
+    h3,h4,h5,h6{--heading-prefix:"4.12"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://ohie.org/">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PATH MER Indicators</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="workflows.html">Workflows</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ART medications</b></li>
+
+          <span style="float:right;">
+
+            <a href="StructureDefinition-DAKPatient.profile.ttl.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="ValueSet-DAKARTMeds-testing.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">PATH MER Indicators, published by PATH. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/PATH-Global-Health/MERindicators">https://github.com/PATH-Global-Health/MERindicators</a> and changes regularly. See the <a href="https://path-global-health.github.io/MERindicators/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-DAKARTMeds.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-DAKARTMeds.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-DAKARTMeds.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: ART medications
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-10-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">DAKARTMeds</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>ART medications from the HIV DAK</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-DAKMedicationRequest.html">DAK TXCURR MedicationRequest</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-DAKICD11.html"><code>http://hl7.org/fhir/sid/icd-11</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM35P4">XM35P4</a></td><td>Abacavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM2L06">XM2L06</a></td><td>Emtricitabine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM5471">XM5471</a></td><td>Lamivudine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM9C07">XM9C07</a></td><td>Zidovudine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM8Z78">XM8Z78</a></td><td>Didanosine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM7RM1">XM7RM1</a></td><td>Stavudine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM67N3">XM67N3</a></td><td>Tenofovir disoproxil</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM1DX2">XM1DX2</a></td><td>Efavirenz</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM7N44">XM7N44</a></td><td>Etravirine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM10T5">XM10T5</a></td><td>Nevirapine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM1KD4">XM1KD4</a></td><td>Rilpivirine</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM4TF3">XM4TF3</a></td><td>Atazanavir and Ritonavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM3EH7">XM3EH7</a></td><td>Lopinavir and Ritonavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM8ZN1">XM8ZN1</a></td><td>Darunavir and Ritonavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM56L1">XM56L1</a></td><td>Ritonavir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM6K45">XM6K45</a></td><td>Dolutegravir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM82D3">XM82D3</a></td><td>Raltegravir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM8QY9">XM8QY9</a></td><td>Lamivudine, Tenofovir disoproxil and Dolutegravir</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM3U67">XM3U67</a></td><td>Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM9NL2">XM9NL2</a></td><td>Lamivudine, Tenofovir disoproxil and Efavirenz</td></tr><tr><td><a href="CodeSystem-DAKICD11.html#DAKICD11-XM2UU9">XM2UU9</a></td><td>Lamivudine, Abacavir and Dolutegravir</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/387005008">387005008</a></td><td>Abacavir (substance)</td></tr><tr><td><a href="http://snomed.info/id/404856006">404856006</a></td><td>Emtricitabine (substance)</td></tr><tr><td><a href="http://snomed.info/id/386897000">386897000</a></td><td>Lamivudine (substance)</td></tr><tr><td><a href="http://snomed.info/id/387151007">387151007</a></td><td>Zidovudine (substance)</td></tr><tr><td><a href="http://snomed.info/id/387105006">387105006</a></td><td>Didanosine (substance)</td></tr><tr><td><a href="http://snomed.info/id/386895008">386895008</a></td><td>Stavudine (substance)</td></tr><tr><td><a href="http://snomed.info/id/422091007">422091007</a></td><td>Tenofovir (substance)</td></tr><tr><td><a href="http://snomed.info/id/387001004">387001004</a></td><td>Efavirenz (substance)</td></tr><tr><td><a href="http://snomed.info/id/432121008">432121008</a></td><td>Etravirine (substance)</td></tr><tr><td><a href="http://snomed.info/id/386898005">386898005</a></td><td>Nevirapine (substance)</td></tr><tr><td><a href="http://snomed.info/id/703123005">703123005</a></td><td>Rilpivirine (substance)</td></tr><tr><td><a href="http://snomed.info/id/427314002">427314002</a></td><td>Antiviral therapy (procedure)</td></tr><tr><td><a href="http://snomed.info/id/776569000">776569000</a></td><td>Product containing only lopinavir and ritonavir (medicinal product)</td></tr><tr><td><a href="http://snomed.info/id/386896009">386896009</a></td><td>Ritonavir (substance)</td></tr><tr><td><a href="http://snomed.info/id/713464000">713464000</a></td><td>Dolutegravir (substance)</td></tr><tr><td><a href="http://snomed.info/id/429707008">429707008</a></td><td>Raltegravir (substance)</td></tr><tr><td><a href="http://snomed.info/id/708255002">708255002</a></td><td>First-line treatment (procedure)</td></tr><tr><td><a href="http://snomed.info/id/708256001">708256001</a></td><td>Second-line treatment (procedure)</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 39 concepts</p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="CodeSystem-DAKICD11.html">codesystem ICD-11 codes from the HIV DAK v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 01-Sep 2023</li><li>SNOMED CT International edition 01-Sep 2023</li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM35P4"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM35P4">XM35P4</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Abacavir</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM2L06"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM2L06">XM2L06</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Emtricitabine</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM5471"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM5471">XM5471</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Lamivudine</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM9C07"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM9C07">XM9C07</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Zidovudine</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM8Z78"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM8Z78">XM8Z78</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Didanosine</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM7RM1"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM7RM1">XM7RM1</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Stavudine</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM67N3"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM67N3">XM67N3</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Tenofovir disoproxil</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM1DX2"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM1DX2">XM1DX2</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Efavirenz</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM7N44"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM7N44">XM7N44</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Etravirine</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM10T5"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM10T5">XM10T5</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Nevirapine</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM1KD4"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM1KD4">XM1KD4</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Rilpivirine</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM4TF3"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM4TF3">XM4TF3</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Atazanavir and Ritonavir</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM3EH7"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM3EH7">XM3EH7</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Lopinavir and Ritonavir</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM8ZN1"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM8ZN1">XM8ZN1</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Darunavir and Ritonavir</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM56L1"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM56L1">XM56L1</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Ritonavir</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM6K45"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM6K45">XM6K45</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Dolutegravir</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM82D3"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM82D3">XM82D3</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Raltegravir</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM8QY9"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM8QY9">XM8QY9</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Lamivudine, Tenofovir disoproxil and Dolutegravir</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM3U67"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM3U67">XM3U67</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Antivirals for treatment of human immunodeficiency virus infections, combinations  best fit</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM9NL2"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM9NL2">XM9NL2</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Lamivudine, Tenofovir disoproxil and Efavirenz</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-11-XM2UU9"> </a>  <a href="CodeSystem-DAKICD11.html#DAKICD11-XM2UU9">XM2UU9</a></td><td>http://hl7.org/fhir/sid/icd-11</td><td>Lamivudine, Abacavir and Dolutegravir</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-387005008"> </a>  <a href="http://snomed.info/id/387005008">387005008</a></td><td>http://snomed.info/sct</td><td>Abacavir (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-404856006"> </a>  <a href="http://snomed.info/id/404856006">404856006</a></td><td>http://snomed.info/sct</td><td>Emtricitabine (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-386897000"> </a>  <a href="http://snomed.info/id/386897000">386897000</a></td><td>http://snomed.info/sct</td><td>Lamivudine (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-387151007"> </a>  <a href="http://snomed.info/id/387151007">387151007</a></td><td>http://snomed.info/sct</td><td>Zidovudine (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-387105006"> </a>  <a href="http://snomed.info/id/387105006">387105006</a></td><td>http://snomed.info/sct</td><td>Didanosine (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-386895008"> </a>  <a href="http://snomed.info/id/386895008">386895008</a></td><td>http://snomed.info/sct</td><td>Stavudine (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-422091007"> </a>  <a href="http://snomed.info/id/422091007">422091007</a></td><td>http://snomed.info/sct</td><td>Tenofovir (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-387001004"> </a>  <a href="http://snomed.info/id/387001004">387001004</a></td><td>http://snomed.info/sct</td><td>Efavirenz (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-432121008"> </a>  <a href="http://snomed.info/id/432121008">432121008</a></td><td>http://snomed.info/sct</td><td>Etravirine (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-386898005"> </a>  <a href="http://snomed.info/id/386898005">386898005</a></td><td>http://snomed.info/sct</td><td>Nevirapine (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-703123005"> </a>  <a href="http://snomed.info/id/703123005">703123005</a></td><td>http://snomed.info/sct</td><td>Rilpivirine (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-427314002"> </a>  <a href="http://snomed.info/id/427314002">427314002</a></td><td>http://snomed.info/sct</td><td>Antiviral therapy (procedure)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-776569000"> </a>  <a href="http://snomed.info/id/776569000">776569000</a></td><td>http://snomed.info/sct</td><td>Product containing only lopinavir and ritonavir (medicinal product)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-386896009"> </a>  <a href="http://snomed.info/id/386896009">386896009</a></td><td>http://snomed.info/sct</td><td>Ritonavir (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-713464000"> </a>  <a href="http://snomed.info/id/713464000">713464000</a></td><td>http://snomed.info/sct</td><td>Dolutegravir (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-429707008"> </a>  <a href="http://snomed.info/id/429707008">429707008</a></td><td>http://snomed.info/sct</td><td>Raltegravir (substance)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-708255002"> </a>  <a href="http://snomed.info/id/708255002">708255002</a></td><td>http://snomed.info/sct</td><td>First-line treatment (procedure)</td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-708256001"> </a>  <a href="http://snomed.info/id/708256001">708256001</a></td><td>http://snomed.info/sct</td><td>Second-line treatment (procedure)</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="StructureDefinition-DAKPatient.profile.ttl.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="ValueSet-DAKARTMeds-testing.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color: #81BEF7" href="https://www.path.org">PATH</a>.  Package path.merindicators#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 19, 2023 20:59+0000">2023-10-19</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="https://path-global-health.github.io/MERindicators/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

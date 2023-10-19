@@ -1,0 +1,331 @@
+[
+  {
+    "id" : "active-condition",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/cqf/common/ValueSet/active-condition",
+    "version" : "0.1.0",
+    "name" : "CQFActiveCondition"
+  },
+  {
+    "id" : "inactive-condition",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/cqf/common/ValueSet/inactive-condition",
+    "version" : "0.1.0",
+    "name" : "CQFInactiveCondition"
+  },
+  {
+    "id" : "DAKICD11",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/sid/icd-11",
+    "version" : "0.1.0",
+    "name" : "DAKICD11"
+  },
+  {
+    "id" : "CIEL",
+    "type" : "CodeSystem",
+    "url" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+    "version" : "0.1.0",
+    "name" : "CIEL"
+  },
+  {
+    "id" : "DAKCoarseAgeRangeCS",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKCoarseAgeRangeCS",
+    "version" : "0.1.0",
+    "name" : "DAKCoarseAgeRangeCS"
+  },
+  {
+    "id" : "DAKDispensingQuantityCS",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/DAKDispensingQuantityCS",
+    "version" : "0.1.0",
+    "name" : "DAKDispensingQuantityCS"
+  },
+  {
+    "id" : "EnrollmentMethods",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods",
+    "version" : "0.1.0",
+    "name" : "EnrollmentMethods"
+  },
+  {
+    "id" : "OpenHIE",
+    "type" : "CodeSystem",
+    "url" : "https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE",
+    "version" : "0.1.0",
+    "name" : "OpenHIE"
+  },
+  {
+    "id" : "path.merindicators",
+    "type" : "ImplementationGuide",
+    "url" : "https://path-global-health.github.io/MERindicators/ImplementationGuide/path.merindicators",
+    "version" : "0.1.0",
+    "name" : "PATHMERIndicators"
+  },
+  {
+    "id" : "DAKConcepts",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/DAKConcepts",
+    "version" : "0.1.0",
+    "name" : "DAKConcepts"
+  },
+  {
+    "id" : "DAKDataElements",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/DAKDataElements",
+    "version" : "0.1.0",
+    "name" : "DAKDataElements"
+  },
+  {
+    "id" : "DAKStratifiers",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/DAKStratifiers",
+    "version" : "0.1.0",
+    "name" : "DAKStratifiers"
+  },
+  {
+    "id" : "DAKTXCURRLibrary",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/DAKTXCURR",
+    "version" : "0.1.0",
+    "name" : "DAKTXCURR"
+  },
+  {
+    "id" : "Debug",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/Debug",
+    "version" : "0.1.0",
+    "name" : "Debug"
+  },
+  {
+    "id" : "FHIRCommon",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/FHIRCommon",
+    "version" : "0.1.0",
+    "name" : "FHIRCommon"
+  },
+  {
+    "id" : "FHIRHelpers",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/FHIRHelpers",
+    "version" : "0.1.0",
+    "name" : "FHIRHelpers"
+  },
+  {
+    "id" : "KenyaEMRConcepts",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRConcepts",
+    "version" : "0.1.0",
+    "name" : "KenyaEMRConcepts"
+  },
+  {
+    "id" : "KenyaEMRStratifiers",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRStratifiers",
+    "version" : "0.1.0",
+    "name" : "KenyaEMRStratifiers"
+  },
+  {
+    "id" : "KenyaEMRTXCURR",
+    "type" : "Library",
+    "url" : "https://path-global-health.github.io/MERindicators/Library/KenyaEMRTXCURR",
+    "version" : "0.1.0",
+    "name" : "KenyaEMRTXCURR"
+  },
+  {
+    "id" : "DAKTXCURR",
+    "type" : "Measure",
+    "url" : "https://path-global-health.github.io/MERindicators/Measure/DAKTXCURR",
+    "version" : "0.1.0",
+    "name" : "DAKTXCURR"
+  },
+  {
+    "id" : "KEMRTXCURR",
+    "type" : "Measure",
+    "url" : "https://path-global-health.github.io/MERindicators/Measure/KEMRTXCURR",
+    "version" : "0.1.0",
+    "name" : "KEMRTXCURR"
+  },
+  {
+    "id" : "DAKARTCondition",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKARTCondition",
+    "version" : "0.1.0",
+    "name" : "DAKARTCondition"
+  },
+  {
+    "id" : "DAKARTObservation",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKARTObservation",
+    "version" : "0.1.0",
+    "name" : "DAKARTObservation"
+  },
+  {
+    "id" : "DAKARTVisitEncounter",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKARTVisitEncounter",
+    "version" : "0.1.0",
+    "name" : "DAKARTVisitEncounter"
+  },
+  {
+    "id" : "DAKDispenseDaysObservation",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKDispenseDaysObservation",
+    "version" : "0.1.0",
+    "name" : "DAKDispenseDaysObservation"
+  },
+  {
+    "id" : "DAKDrugPickupEncounter",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKDrugPickupEncounter",
+    "version" : "0.1.0",
+    "name" : "DAKDrugPickupEncounter"
+  },
+  {
+    "id" : "DAKHIVCondition",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKHIVCondition",
+    "version" : "0.1.0",
+    "name" : "DAKHIVCondition"
+  },
+  {
+    "id" : "DAKMedicationRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKMedicationRequest",
+    "version" : "0.1.0",
+    "name" : "DAKMedicationRequest"
+  },
+  {
+    "id" : "DAKPatient",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKPatient",
+    "version" : "0.1.0",
+    "name" : "DAKPatient"
+  },
+  {
+    "id" : "DAKStoppedObservation",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKStoppedObservation",
+    "version" : "0.1.0",
+    "name" : "DAKStoppedObservation"
+  },
+  {
+    "id" : "DAKTransferOutObservation",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/DAKTransferOutObservation",
+    "version" : "0.1.0",
+    "name" : "DAKTransferOutObservation"
+  },
+  {
+    "id" : "TXCURRelements",
+    "type" : "StructureDefinition",
+    "url" : "https://path-global-health.github.io/MERindicators/StructureDefinition/TXCURRelements",
+    "version" : "0.1.0",
+    "name" : "TXCURRelements"
+  },
+  {
+    "id" : "CIELHIVMedications",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications",
+    "version" : "0.1.0",
+    "name" : "CIELHIVMedications"
+  },
+  {
+    "id" : "DAKARTMeds",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTMeds",
+    "version" : "0.1.0",
+    "name" : "DAKARTMeds"
+  },
+  {
+    "id" : "DAKARTStop",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTStop",
+    "version" : "0.1.0",
+    "name" : "DAKARTStop"
+  },
+  {
+    "id" : "DAKARTVisit",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTVisit",
+    "version" : "0.1.0",
+    "name" : "DAKARTVisit"
+  },
+  {
+    "id" : "DAKARVDrugPickup",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKARVDrugPickup",
+    "version" : "0.1.0",
+    "name" : "DAKARVDrugPickup"
+  },
+  {
+    "id" : "DAKCoarseAgeRange",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKCoarseAgeRange",
+    "version" : "0.1.0",
+    "name" : "DAKCoarseAgeRange"
+  },
+  {
+    "id" : "DAKDispensingQuantity",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKDispensingQuantity",
+    "version" : "0.1.0",
+    "name" : "DAKDispensingQuantity"
+  },
+  {
+    "id" : "DAKHIVTransfer",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKHIVTransfer",
+    "version" : "0.1.0",
+    "name" : "DAKHIVTransfer"
+  },
+  {
+    "id" : "DAKMMD",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKMMD",
+    "version" : "0.1.0",
+    "name" : "DAKMMD"
+  },
+  {
+    "id" : "DAKONART",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKONART",
+    "version" : "0.1.0",
+    "name" : "DAKONART"
+  },
+  {
+    "id" : "DAKPLHIV",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKPLHIV",
+    "version" : "0.1.0",
+    "name" : "DAKPLHIV"
+  },
+  {
+    "id" : "EnrollmentMethodsforHIVProgram",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/EnrollmentMethodsforHIVProgram",
+    "version" : "0.1.0",
+    "name" : "EnrollmentMethodsforHIVProgram"
+  },
+  {
+    "id" : "OnARV",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/OnARV",
+    "version" : "0.1.0",
+    "name" : "OnARV"
+  },
+  {
+    "id" : "Pregnant",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/Pregnant",
+    "version" : "0.1.0",
+    "name" : "Pregnant"
+  },
+  {
+    "id" : "SyntheaHIVMedications",
+    "type" : "ValueSet",
+    "url" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+    "version" : "0.1.0",
+    "name" : "SyntheaHIVMedications"
+  }
+]

@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://path-global-health.github.io/MERindicators/ValueSet/DAKARTVisit> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DAKARTVisit"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DAKICD11.html\"><code>http://hl7.org/fhir/sid/icd-11</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-1C62.46Z\">1C62.Z</a></td><td>Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM63K0\">XM63K0</a></td><td>Anti-infective antiviral</td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-QA14\">QA14</a></td><td>Contact with health services for human immunodeficiency virus counselling</td></tr></table></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/45683-0/\">45683-0</a></td><td>HIV infection [Minimum Data Set]</td></tr><tr><td><a href=\"https://loinc.org/45260-7/\">45260-7</a></td><td>HIV ART medication</td></tr><tr><td><a href=\"https://loinc.org/68834-1/\">68834-1</a></td><td>Primary care Note  best fit</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/781087000\">781087000</a></td><td>Medical care (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/788081006\">788081006</a></td><td>Medicinal product acting as antiviral (product)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://path-global-health.github.io/MERindicators/ValueSet/DAKARTVisit"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DAKARTVisit"] ; # 
+  fhir:title [ fhir:v "DAK ART Visit codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-19T20:59:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "PATH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.path.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PATH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@path.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DAK ART Visit codes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-11"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1C62.Z" ] ;
+         fhir:display [ fhir:v "Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified" ]
+       ] [
+         fhir:code [ fhir:v "XM63K0" ] ;
+         fhir:display [ fhir:v "Anti-infective antiviral" ]
+       ] [
+         fhir:code [ fhir:v "QA14" ] ;
+         fhir:display [ fhir:v "Contact with health services for human immunodeficiency virus counselling" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "45683-0" ] ;
+         fhir:display [ fhir:v "HIV infection [Minimum Data Set]" ]
+       ] [
+         fhir:code [ fhir:v "45260-7" ] ;
+         fhir:display [ fhir:v "HIV ART medication" ]
+       ] [
+         fhir:code [ fhir:v "68834-1" ] ;
+         fhir:display [ fhir:v "Primary care Note  best fit" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "781087000" ] ;
+         fhir:display [ fhir:v "Medical care (regime/therapy)" ]
+       ] [
+         fhir:code [ fhir:v "788081006" ] ;
+         fhir:display [ fhir:v "Medicinal product acting as antiviral (product)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

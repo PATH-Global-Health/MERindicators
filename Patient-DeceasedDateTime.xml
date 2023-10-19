@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="DeceasedDateTime"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Simon Notsowell (OFFICIAL)</b> male, DoB: 1982-01-23</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">2015-02-14 13:42:00+1000</td></tr></table></div>
+  </text>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Notsowell"/>
+    <given value="Simon"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1982-01-23"/>
+  <deceasedDateTime value="2015-02-14T13:42:00+10:00"/>
+</Patient>

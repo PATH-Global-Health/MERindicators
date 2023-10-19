@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Patient-HIVSimple2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Mittens Cat</b> female, DoB: 1985-01-01</p><hr/></div>
+  </text>
+  <name>
+    <text value="Mittens Cat"/>
+    <family value="Cat"/>
+    <given value="Mittens"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1985-01-01"/>
+</Patient>

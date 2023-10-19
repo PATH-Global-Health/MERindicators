@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DAKONART",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-CIEL.html\"><code>https://openconceptlab.org/orgs/CIEL/sources/CIEL</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-CIEL.html#CIEL-160119\">160119</a></td><td>Currently taking ARV</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-DAKICD11.html\"><code>http://hl7.org/fhir/sid/icd-11</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-DAKICD11.html#DAKICD11-XM63K0\">XM63K0</a></td><td>Anti-infective antiviral</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/182929008\">182929008</a></td><td>Drug prophylaxis (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://path-global-health.github.io/MERindicators/ValueSet/DAKONART",
+  "version" : "0.1.0",
+  "name" : "DAKONART",
+  "title" : "DAK Codes for On ART",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-10-19T20:59:19+00:00",
+  "publisher" : "PATH",
+  "contact" : [{
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.path.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@path.org"
+    }]
+  },
+  {
+    "name" : "PATH",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@path.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "HIV DAK codes for on ART",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+      "concept" : [{
+        "code" : "160119",
+        "display" : "Currently taking ARV"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-11",
+      "concept" : [{
+        "code" : "XM63K0",
+        "display" : "Anti-infective antiviral"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "182929008",
+        "display" : "Drug prophylaxis (procedure)"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,866 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableAnnotations,EnableLocators,EnableResultTypes,DisableListDemotion,DisableListPromotion",
+         "type" : "CqlToElmInfo"
+      }, {
+         "type" : "Annotation",
+         "s" : {
+            "r" : "53",
+            "s" : [ {
+               "value" : [ "","library KenyaEMRConcepts version '0.1.0'" ]
+            } ]
+         }
+      } ],
+      "identifier" : {
+         "id" : "KenyaEMRConcepts",
+         "system" : "https://path-global-health.github.io/MERindicators",
+         "version" : "0.1.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localId" : "1",
+            "locator" : "3:1-3:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "1",
+                  "s" : [ {
+                     "value" : [ "","using " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIR" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localId" : "2",
+            "locator" : "5:1-5:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRHelpers",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "2",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIRHelpers" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "3",
+            "locator" : "6:1-6:44",
+            "localIdentifier" : "FC",
+            "path" : "https://path-global-health.github.io/MERindicators/FHIRCommon",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "3",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIRCommon" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'"," called ","FC" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "localId" : "4",
+            "locator" : "9:1-9:48",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "SNOMED-CT",
+            "id" : "http://snomed.info/sct",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "4",
+                  "s" : [ {
+                     "value" : [ "// codesystems\n","codesystem ","\"SNOMED-CT\"",": ","'http://snomed.info/sct'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "5",
+            "locator" : "10:1-10:38",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "LOINC",
+            "id" : "http://loinc.org",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "5",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"LOINC\"",": ","'http://loinc.org'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "6",
+            "locator" : "11:1-11:66",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "RxNorm",
+            "id" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "6",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"RxNorm\"",": ","'http://www.nlm.nih.gov/research/umls/rxnorm'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "7",
+            "locator" : "14:1-14:70",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "CIEL",
+            "id" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "7",
+                  "s" : [ {
+                     "value" : [ "// local codesystems\n","codesystem ","\"CIEL\"",": ","'https://openconceptlab.org/orgs/CIEL/sources/CIEL'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "8",
+            "locator" : "15:1-15:43",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+            "name" : "OpenHIE",
+            "id" : "https://openhie.org",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "8",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"OpenHIE\"",": ","'https://openhie.org'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "localId" : "9",
+            "locator" : "18:1-18:90",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "HL7 Administrative Gender",
+            "id" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "9",
+                  "s" : [ {
+                     "value" : [ "// FHIR CS and VS\n","valueset ","\"HL7 Administrative Gender\"",": ","'http://hl7.org/fhir/ValueSet/administrative-gender'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "48",
+            "locator" : "57:1-57:103",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "AgeRangesTXCURR",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "48",
+                  "s" : [ {
+                     "value" : [ "// valuesets\n","valueset ","AgeRangesTXCURR",": ","'https://path-global-health.github.io/MERindicators/ValueSet/AgeRangesTXCURR'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "51",
+            "locator" : "63:1-63:103",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "Viral Load Test",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "51",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"Viral Load Test\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/ViralLoadTest'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "52",
+            "locator" : "65:1-65:111",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "ART Medications",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "52",
+                  "s" : [ {
+                     "value" : [ "// valueset \"Synthea HIV Medications\": 'https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications'\n","valueset ","\"ART Medications\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/SyntheaHIVMedications'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "53",
+            "locator" : "66:1-66:111",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}ValueSet",
+            "name" : "CIELHIVMedications",
+            "id" : "https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "53",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"CIELHIVMedications\"",": ","'https://path-global-health.github.io/MERindicators/ValueSet/CIELHIVMedications'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "localId" : "11",
+            "locator" : "20:1-20:72",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "HIV Positive",
+            "id" : "165816005",
+            "display" : "HIV Positive",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "11",
+                  "s" : [ {
+                     "value" : [ "","code ","\"HIV Positive\"",": ","'165816005'"," from " ]
+                  }, {
+                     "r" : "10",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'HIV Positive'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "10",
+               "locator" : "20:39-20:49",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "13",
+            "locator" : "25:1-25:85",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Pregnancy (finding)",
+            "id" : "77386006",
+            "display" : "Pregnancy (finding)",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "13",
+                  "s" : [ {
+                     "value" : [ "// codes\n\n// The display \"Pregnancy (finding)\" is not a valid display for the code {http://snomed.info/sct}77386006\n","code ","\"Pregnancy (finding)\"",": ","'77386006'"," from " ]
+                  }, {
+                     "r" : "12",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Pregnancy (finding)'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "12",
+               "locator" : "25:45-25:55",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "15",
+            "locator" : "26:1-26:64",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Pregnant",
+            "id" : "146789000",
+            "display" : "Pregnant",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "15",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Pregnant\"",": ","'146789000'"," from " ]
+                  }, {
+                     "r" : "14",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Pregnant'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "14",
+               "locator" : "26:35-26:45",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "17",
+            "locator" : "28:1-28:126",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Prenatal initial visit (regime/therapy)",
+            "id" : "424441002",
+            "display" : "Prenatal initial visit (regime/therapy)",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "17",
+                  "s" : [ {
+                     "value" : [ "// code \"Breastfeeding\": '169750002' from \"SNOMED-CT\" display 'Breastfeeding'\n","code ","\"Prenatal initial visit (regime/therapy)\"",": ","'424441002'"," from " ]
+                  }, {
+                     "r" : "16",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Prenatal initial visit (regime/therapy)'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "16",
+               "locator" : "28:66-28:76",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "19",
+            "locator" : "29:1-29:96",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Pregnancy status - Reported",
+            "id" : "11449-6",
+            "display" : "Pregnancy status - Reported",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "19",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Pregnancy status - Reported\"",": ","'11449-6'"," from " ]
+                  }, {
+                     "r" : "18",
+                     "s" : [ {
+                        "value" : [ "\"LOINC\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Pregnancy status - Reported'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "18",
+               "locator" : "29:52-29:58",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "LOINC"
+            }
+         }, {
+            "localId" : "21",
+            "locator" : "36:1-36:80",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Currently taking ARV",
+            "id" : "160119",
+            "display" : "Currently taking ARV",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "21",
+                  "s" : [ {
+                     "value" : [ "// code \"Livebirth (finding)\": '281050002' from \"SNOMED-CT\" display 'Livebirth (finding)'\n// code \"Postpartum state (finding)\": '86569001' from \"SNOMED-CT\" display 'Postpartum state (finding)'\n// code \"Normal breast feeding (finding)\": '69840006' from \"SNOMED-CT\" display 'Normal breast feeding (finding)'\n\n\n// ciel hiv/other\n","code ","\"Currently taking ARV\"",": ","'160119'"," from " ]
+                  }, {
+                     "r" : "20",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Currently taking ARV'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "20",
+               "locator" : "36:44-36:49",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "23",
+            "locator" : "37:1-37:53",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Coded Answer",
+            "id" : "1065",
+            "display" : "Yes",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "23",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Coded Answer\"",": ","'1065'"," from " ]
+                  }, {
+                     "r" : "22",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Yes'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "22",
+               "locator" : "37:34-37:39",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "25",
+            "locator" : "38:1-38:80",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Method of enrollment",
+            "id" : "160540",
+            "display" : "Method of enrollment",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "25",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Method of enrollment\"",": ","'160540'"," from " ]
+                  }, {
+                     "r" : "24",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Method of enrollment'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "24",
+               "locator" : "38:44-38:49",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "27",
+            "locator" : "39:1-39:82",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Outpatient department",
+            "id" : "160542",
+            "display" : "Outpatient department",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "27",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Outpatient department\"",": ","'160542'"," from " ]
+                  }, {
+                     "r" : "26",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Outpatient department'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "26",
+               "locator" : "39:45-39:50",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "29",
+            "locator" : "40:1-40:96",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Outpatient department SNOMED",
+            "id" : "33022008",
+            "display" : "Outpatient department",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "29",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Outpatient department SNOMED\"",": ","'33022008'"," from " ]
+                  }, {
+                     "r" : "28",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Outpatient department'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "28",
+               "locator" : "40:54-40:64",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "31",
+            "locator" : "41:1-41:74",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "CURRENT DRUGS USED",
+            "id" : "1193",
+            "display" : "CURRENT DRUGS USED",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "31",
+                  "s" : [ {
+                     "value" : [ "","code ","\"CURRENT DRUGS USED\"",": ","'1193'"," from " ]
+                  }, {
+                     "r" : "30",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'CURRENT DRUGS USED'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "30",
+               "locator" : "41:40-41:45",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "33",
+            "locator" : "42:1-42:72",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "RETURN VISIT DATE",
+            "id" : "5096",
+            "display" : "RETURN VISIT DATE",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "33",
+                  "s" : [ {
+                     "value" : [ "","code ","\"RETURN VISIT DATE\"",": ","'5096'"," from " ]
+                  }, {
+                     "r" : "32",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'RETURN VISIT DATE'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "32",
+               "locator" : "42:39-42:44",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "35",
+            "locator" : "46:1-46:139",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Acquired immune deficiency syndrome (disorder)",
+            "id" : "62479008",
+            "display" : "Acquired immune deficiency syndrome (disorder)",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "35",
+                  "s" : [ {
+                     "value" : [ "// snomed and other hiv testing, results, conditions, art\n","code ","\"Acquired immune deficiency syndrome (disorder)\"",": ","'62479008'"," from " ]
+                  }, {
+                     "r" : "34",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Acquired immune deficiency syndrome (disorder)'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "34",
+               "locator" : "46:72-46:82",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "37",
+            "locator" : "47:1-47:82",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "HIV Condition Positive",
+            "id" : "86406008",
+            "display" : "HIV infection",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "37",
+                  "s" : [ {
+                     "value" : [ "","code ","\"HIV Condition Positive\"",": ","'86406008'"," from " ]
+                  }, {
+                     "r" : "36",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'HIV infection'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "36",
+               "locator" : "47:48-47:58",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "39",
+            "locator" : "48:1-48:72",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "HIV Negative",
+            "id" : "165815009",
+            "display" : "HIV Negative",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "39",
+                  "s" : [ {
+                     "value" : [ "","code ","\"HIV Negative\"",": ","'165815009'"," from " ]
+                  }, {
+                     "r" : "38",
+                     "s" : [ {
+                        "value" : [ "\"SNOMED-CT\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'HIV Negative'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "38",
+               "locator" : "48:39-48:49",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "SNOMED-CT"
+            }
+         }, {
+            "localId" : "41",
+            "locator" : "49:1-49:142",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "History of antiretroviral therapy (situation)",
+            "id" : "432101000124108",
+            "display" : "History of antiretroviral therapy (situation)",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "41",
+                  "s" : [ {
+                     "value" : [ "","code ","\"History of antiretroviral therapy (situation)\"",": ","'432101000124108'"," from " ]
+                  }, {
+                     "r" : "40",
+                     "s" : [ {
+                        "value" : [ "\"OpenHIE\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'History of antiretroviral therapy (situation)'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "40",
+               "locator" : "49:78-49:86",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "OpenHIE"
+            }
+         }, {
+            "localId" : "43",
+            "locator" : "50:1-50:120",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Institutional entry point HIV treatment",
+            "id" : "45252-4",
+            "display" : "Institutional entry point HIV treatment",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "43",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Institutional entry point HIV treatment\"",": ","'45252-4'"," from " ]
+                  }, {
+                     "r" : "42",
+                     "s" : [ {
+                        "value" : [ "\"LOINC\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Institutional entry point HIV treatment'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "42",
+               "locator" : "50:64-50:70",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "LOINC"
+            }
+         }, {
+            "localId" : "45",
+            "locator" : "53:1-53:114",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Reason for discontinuation of program",
+            "id" : "161555",
+            "display" : "Reason for discontinuation of program",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "45",
+                  "s" : [ {
+                     "value" : [ "// code \"New on ART\": 'new-on-art' from \"PMTCT ART Status Codes\" display 'New on ART'\n// need to change to valueset\n","code ","\"Reason for discontinuation of program\"",": ","'161555'"," from " ]
+                  }, {
+                     "r" : "44",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Reason for discontinuation of program'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "44",
+               "locator" : "53:61-53:66",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "47",
+            "locator" : "54:1-54:76",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "Treatment end date",
+            "id" : "164384",
+            "display" : "Treatment end date",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "47",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Treatment end date\"",": ","'164384'"," from " ]
+                  }, {
+                     "r" : "46",
+                     "s" : [ {
+                        "value" : [ "\"CIEL\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'Treatment end date'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "46",
+               "locator" : "54:42-54:47",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "CIEL"
+            }
+         }, {
+            "localId" : "50",
+            "locator" : "62:1-62:118",
+            "resultTypeName" : "{urn:hl7-org:elm-types:r1}Code",
+            "name" : "HIV 1 and 2 tests - Meaningful Use set",
+            "id" : "75622-1",
+            "display" : "HIV 1 and 2 tests - Meaningful Use set",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "50",
+                  "s" : [ {
+                     "value" : [ "// valueset \"HIV Testing Services\": 'https://path-global-health.github.io/MERindicators/ValueSet/HIVTestingServices' // Should use HIV tests\n// viral load tests, results\n// commenting out for now and the union\n// valueset \"Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)\": 'urn:oid:2.16.840.1.113762.1.4.1056.50' // Used by CMS349\n","code ","\"HIV 1 and 2 tests - Meaningful Use set\"",": ","'75622-1'"," from " ]
+                  }, {
+                     "r" : "49",
+                     "s" : [ {
+                        "value" : [ "\"LOINC\"" ]
+                     } ]
+                  }, {
+                     "value" : [ " display ","'HIV 1 and 2 tests - Meaningful Use set'" ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "49",
+               "locator" : "62:63-62:69",
+               "resultTypeName" : "{urn:hl7-org:elm-types:r1}CodeSystem",
+               "name" : "LOINC"
+            }
+         } ]
+      }
+   }
+}
