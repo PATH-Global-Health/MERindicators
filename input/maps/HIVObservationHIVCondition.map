@@ -11,26 +11,59 @@ group HIVObservationHIVCondition(
 ) {
 
     src -> tgt.type = 'collection' "setBundleType";
-    
-    src.entry as entry, entry.resource : Patient as patient -> tgt.entry as tentry, tentry.resource = patient then {
-      // patient, src.entry : Observation as obs where obs.code = cc("CIEL", "160540") and obs.subject = ("Patient/" & patient.id)  -> tgt.entry as newentry, uuid() as cid, create("Condition") as cond
-      patient, src.entry as obsentry, obsentry.resource : Observation as obs, obs.code as code, code.coding as coding where obs.subject = ("Patient/" & patient.id) and coding.code = '160540' and coding.system = 'CIEL' 
-        -> tgt.entry as newentry, uuid() as cid, create("Condition") as cond, create("Provenance") as prov 
-      then {
-        obs -> newentry.resource = cond "setResource";
-        obs -> cond.id = cid "setConditionId";
-        obs -> cond.code = cc( "SNOMED", "10232345" ) "setCode";
-        // patient -> cond.subject = apppend("Patient/", patient.id) "setSubject";
-        patient -> cond.subject = reference(patient) "setSubject";
-        obs -> tgt.entry as proventry, proventry.resource = prov then {
-            obs -> prov.target = ("Condition/" & cid) "setTarget";
-            obs -> prov.entity as entity then {
-              obs -> entity.role = "source" "setRole";
-              obs -> entity.what = ("Observation/" & obs.id) "setWhat";
-            } "setEntity";
-        } "setProvenance";
-      } "setCondition";
+
+    src.entry as entry -> tgt.entry as tentry then {
+      entry.resource : Patient as patient -> tentry.resource = patient then {
+        
+        src.entry as obsentry where resource.is(Observation) and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='160540')) 
+            -> tgt.entry as newentry, newentry.resource = create("Condition") as cond, uuid() as cid then {
+          obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & cid ) then {
+            //obsentry -> newentry.resource = cond, cond.id = cid "setConditionRes";
+            obsentry -> cond.id = cid "setCId";
+            patient -> cond.subject as subject then {
+              patient -> subject.reference = reference(patient) "setSubjectRef";
+            } "setSubject";
+            obsentry -> cond.code as ccode then {
+              obsentry -> ccode.coding as coding then {
+                obsentry -> coding.code = '10232345', coding.system = 'http://snomed.info/sct' "setCondSystemCode";
+              } "setCondCoding";
+            } "SetCondCode";
+            obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid then {
+              obs -> prov.id = pid "setPId";
+              obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+              obs -> prov.target as ptarg then {
+                obs -> ptarg.reference = reference(cond) "setTargetRef";
+              } "setTarget";
+              obs -> prov.entity as entity then {
+                obs -> entity.role = "source" "setRole";
+                obs -> entity.what as pwhat then {
+                  obs -> pwhat.reference = reference(obs) "setWhatRef";
+                } "setWhat";
+              } "setEntity";
+            } "setProvenance";
+          } "setCondition";
+ 
+
+/*          
+          obsentry.resource : Observation as obs where obs.subject = ("Patient/" & patient.id) and obs.code = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL#160540' -> newentry, uuid() as cid, create("Condition") as cond, create("Provenance") as prov then {
+              obs -> newentry.resource = cond "setResource";
+              obs -> cond.id = cid "setConditionId";
+              obs -> cond.code = cc( "SNOMED", "10232345" ) "setCode";
+              // patient -> cond.subject = apppend("Patient/", patient.id) "setSubject";
+              patient -> cond.subject = reference(patient) "setSubject";
+              obs -> tgt.entry as proventry, proventry.resource = prov then {
+                  obs -> prov.target = ("Condition/" & cid) "setTarget";
+                  obs -> prov.entity as entity then {
+                    obs -> entity.role = "source" "setRole";
+                    obs -> entity.what = ("Observation/" & obs.id) "setWhat";
+                  } "setEntity";
+              } "setProvenance";
+            } "setCondition";
+*/
+        } "getObservation";
+      } "patientResource";
     } "copyPatient";
-}
+
+  }
 
 
