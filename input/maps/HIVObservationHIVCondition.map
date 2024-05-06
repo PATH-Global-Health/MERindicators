@@ -3,8 +3,6 @@ map "https://path-global-health.github.io/MERindicators/StructureMap/HIVObservat
 uses "http://hl7.org/fhir/R4/StructureDefinition/Bundle" alias bund as source
 uses "http://hl7.org/fhir/R4/StructureDefinition/Bundle" alias output as target
 
-uses "http://hl7.org/fhir/R4/StructureDefinition/Condition" alias cond as produced
-uses "http://hl7.org/fhir/R4/StructureDefinition/Provenance" alias prov as produced
 
 
 group HIVObservationHIVCondition(
@@ -15,8 +13,8 @@ group HIVObservationHIVCondition(
     src -> tgt.type = 'collection' "setBundleType";
     
     src.entry as entry, entry.resource : Patient as patient -> tgt.entry as tentry, tentry.resource = patient then {
-      // patient, src.entry : Observation as obs where obs.code = cc("CIEL", "160540") and obs.subject = append("Patient/", patient.id)  -> tgt.entry as newentry, uuid() as cid, create("Condition") as cond
-      patient, src.entry as obsentry, obsentry.resource : Observation as obs, obs.code as code, code.coding as coding where obs.subject = append("Patient/", patient.id) and coding.code = '160540' and coding.system = 'CIEL' 
+      // patient, src.entry : Observation as obs where obs.code = cc("CIEL", "160540") and obs.subject = ("Patient/" & patient.id)  -> tgt.entry as newentry, uuid() as cid, create("Condition") as cond
+      patient, src.entry as obsentry, obsentry.resource : Observation as obs, obs.code as code, code.coding as coding where obs.subject = ("Patient/" & patient.id) and coding.code = '160540' and coding.system = 'CIEL' 
         -> tgt.entry as newentry, uuid() as cid, create("Condition") as cond, create("Provenance") as prov 
       then {
         obs -> newentry.resource = cond "setResource";
@@ -25,10 +23,10 @@ group HIVObservationHIVCondition(
         // patient -> cond.subject = apppend("Patient/", patient.id) "setSubject";
         patient -> cond.subject = reference(patient) "setSubject";
         obs -> tgt.entry as proventry, proventry.resource = prov then {
-            obs -> prov.target = append("Condition/", cid ) "setTarget";
+            obs -> prov.target = ("Condition/" & cid) "setTarget";
             obs -> prov.entity as entity then {
               obs -> entity.role = "source" "setRole";
-              obs -> entity.what = append("Observation/", obs.id ) "setWhat";
+              obs -> entity.what = ("Observation/" & obs.id) "setWhat";
             } "setEntity";
         } "setProvenance";
       } "setCondition";
