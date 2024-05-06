@@ -2,15 +2,10 @@ map "https://path-global-health.github.io/MERindicators/StructureMap/HIVObservat
 
 uses "http://hl7.org/fhir/R4/StructureDefinition/Bundle" alias bund as source
 uses "http://hl7.org/fhir/R4/StructureDefinition/Bundle" alias output as target
+
 uses "http://hl7.org/fhir/R4/StructureDefinition/Condition" alias cond as produced
 uses "http://hl7.org/fhir/R4/StructureDefinition/Provenance" alias prov as produced
 
-
-// code "Method of enrollment": '160540' from "CIEL" display 'Method of enrollment'
-// code "Outpatient department": '160542' from "CIEL" display 'Outpatient department'
-// code "Outpatient department SNOMED": '33022008' from "SNOMED-CT" display 'Outpatient department'
-// code "CURRENT DRUGS USED": '1193' from "CIEL" display 'CURRENT DRUGS USED'
-// code "RETURN VISIT DATE": '5096' from "CIEL" display 'RETURN VISIT DATE'
 
 group HIVObservationHIVCondition(
     source src: bund,
@@ -26,7 +21,7 @@ group HIVObservationHIVCondition(
       then {
         obs -> newentry.resource = cond "setResource";
         obs -> cond.id = cid "setConditionId";
-        obs -> cond.code = cc( "SNODMED", "10232345" ) "setCode";
+        obs -> cond.code = cc( "SNOMED", "10232345" ) "setCode";
         // patient -> cond.subject = apppend("Patient/", patient.id) "setSubject";
         patient -> cond.subject = reference(patient) "setSubject";
         obs -> tgt.entry as proventry, proventry.resource = prov then {
@@ -40,33 +35,4 @@ group HIVObservationHIVCondition(
     } "copyPatient";
 }
 
-// createConditionResource(date,pid, type, eid,  encounter)
-// rash -> rash then createObservationResource(rash, coding, observation, pid) "set obs";
 
-/*
-// Map of HIV program enrollment in an Observation resource to HIV+ Condition resource
-group Condition(source src : Observation, target tgt : Condition) extends DomainResource <<type+>> {
-
-    src.identifier -> tgt.identifier;
-    src.active -> tgt.active;
-    src.subject -> tgt.subject;
-    src.encounter -> tgt.encounter;
-}
-*/
-
-// createProvenanceResource
-/*
-// Create a Provenance resource so we know the origin of the Condition resource
-group Provenance(source src : Observation, target tgt : Provenance) extends DomainResource <<type+>> {
-
-    src.identifier -> tgt.identifier;
-    // target: what was created
-    // occurredPeriod
-    // recorded
-    // location
-    // reason
-    // agent: who did something
-    // entity: where it came from, if fhir resource
-}
-
-*/
