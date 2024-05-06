@@ -15,7 +15,7 @@ group HIVObservationHIVCondition(
     src.entry as entry -> tgt.entry as tentry then {
       entry.resource : Patient as patient -> tentry.resource = patient then {
         
-        src.entry as obsentry where resource.is(Observation) and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='160540')) 
+        src.entry as obsentry where resource.is(Observation) and resource.subject.exists(reference=("Patient/" & patient.id)) and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='160540')) 
             -> tgt.entry as newentry, newentry.resource = create("Condition") as cond, uuid() as cid then {
           obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & cid ) then {
             //obsentry -> newentry.resource = cond, cond.id = cid "setConditionRes";
