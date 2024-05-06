@@ -17,5 +17,5 @@ function convertput {
     jq .
 }
 
-convertput HIVObservation-HIVCondition
+convertput HIVObservationHIVCondition
 
