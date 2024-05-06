@@ -1,7 +1,7 @@
 map "https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition" = "HIVObservationHIVCondition"
 
-uses "http://hl7.org/fhir/R4/StructureDefinition/Bundle" alias bund as source
-uses "http://hl7.org/fhir/R4/StructureDefinition/Bundle" alias output as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Bundle" alias bund as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Bundle" alias output as target
 
 
 

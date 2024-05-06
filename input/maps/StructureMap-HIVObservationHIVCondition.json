@@ -1,0 +1,366 @@
+{
+  "resourceType": "StructureMap",
+  "id": "HIVObservationHIVCondition",
+  "meta": {
+    "lastUpdated": "2024-05-06T17:57:38.811+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>/// url = &quot;https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition&quot;\r\n/// name = &quot;HIVObservationHIVCondition&quot;\r\n/// title = &quot;null&quot;\r\n/// status = &quot;draft&quot;\r\n\r\nuses &quot;http://hl7.org/fhir/4.0/StructureDefinition/Bundle&quot; alias bund as source\r\nuses &quot;http://hl7.org/fhir/4.0/StructureDefinition/Bundle&quot; alias output as target\r\n\r\ngroup HIVObservationHIVCondition(source src : bund, target tgt : output) {\r\n  src -&gt; tgt.type = 'collection' &quot;setBundleType&quot;;\r\n  src.entry as entry, entry.resource : Patient as patient -&gt;  tgt.entry as tentry,  tentry.resource = patient then {\r\n    // patient, src.entry : Observation as obs where obs.code = cc(&quot;CIEL&quot;, &quot;160540&quot;) and obs.subject = (&quot;Patient/&quot; &amp; patient.id)  -&gt; tgt.entry as newentry, uuid() as cid, create(&quot;Condition&quot;) as cond\r\n    patient, src.entry as obsentry, obsentry.resource : Observation as obs, obs.code as code, code.coding as coding where (obs.subject = ('Patient/' &amp; patient.id)) and (coding.code = '160540') and (coding.system = 'CIEL') -&gt;  tgt.entry as newentry,  uuid() as cid,  create('Condition') as cond,  create('Provenance') as prov then {\r\n      obs -&gt; newentry.resource = cond &quot;setResource&quot;;\r\n      obs -&gt; cond.id = cid &quot;setConditionId&quot;;\r\n      obs -&gt; cond.code = cc('SNOMED', '10232345') &quot;setCode&quot;;\r\n      // patient -&gt; cond.subject = apppend(&quot;Patient/&quot;, patient.id) &quot;setSubject&quot;;\r\n      patient -&gt; cond.subject = reference(patient) &quot;setSubject&quot;;\r\n      obs -&gt;  tgt.entry as proventry,  proventry.resource = prov then {\r\n        obs -&gt; prov.target = ('Condition/' &amp; cid) &quot;setTarget&quot;;\r\n        obs -&gt; prov.entity as entity then {\r\n          obs -&gt; entity.role = 'source' &quot;setRole&quot;;\r\n          obs -&gt; entity.what = ('Observation/' &amp; obs.id) &quot;setWhat&quot;;\r\n        } &quot;setEntity&quot;;\r\n      } &quot;setProvenance&quot;;\r\n    } &quot;setCondition&quot;;\r\n  } &quot;copyPatient&quot;;\r\n}\r\n\r\n</pre></div>"
+  },
+  "url": "https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition",
+  "name": "HIVObservationHIVCondition",
+  "status": "draft",
+  "structure": [
+    {
+      "url": "http://hl7.org/fhir/4.0/StructureDefinition/Bundle",
+      "mode": "source",
+      "alias": "bund"
+    },
+    {
+      "url": "http://hl7.org/fhir/4.0/StructureDefinition/Bundle",
+      "mode": "target",
+      "alias": "output"
+    }
+  ],
+  "group": [
+    {
+      "name": "HIVObservationHIVCondition",
+      "typeMode": "none",
+      "input": [
+        {
+          "name": "src",
+          "type": "bund",
+          "mode": "source"
+        },
+        {
+          "name": "tgt",
+          "type": "output",
+          "mode": "target"
+        }
+      ],
+      "rule": [
+        {
+          "name": "setBundleType",
+          "source": [
+            {
+              "context": "src"
+            }
+          ],
+          "target": [
+            {
+              "context": "tgt",
+              "contextType": "variable",
+              "element": "type",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "collection"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "copyPatient",
+          "source": [
+            {
+              "context": "src",
+              "element": "entry",
+              "variable": "entry"
+            },
+            {
+              "context": "entry",
+              "type": "Patient",
+              "element": "resource",
+              "variable": "patient"
+            }
+          ],
+          "target": [
+            {
+              "context": "tgt",
+              "contextType": "variable",
+              "element": "entry",
+              "variable": "tentry"
+            },
+            {
+              "context": "tentry",
+              "contextType": "variable",
+              "element": "resource",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "patient"
+                }
+              ]
+            }
+          ],
+          "rule": [
+            {
+              "name": "setCondition",
+              "source": [
+                {
+                  "context": "patient"
+                },
+                {
+                  "context": "src",
+                  "element": "entry",
+                  "variable": "obsentry"
+                },
+                {
+                  "context": "obsentry",
+                  "type": "Observation",
+                  "element": "resource",
+                  "variable": "obs"
+                },
+                {
+                  "context": "obs",
+                  "element": "code",
+                  "variable": "code"
+                },
+                {
+                  "context": "code",
+                  "element": "coding",
+                  "variable": "coding",
+                  "condition": "(obs.subject = ('Patient/' & patient.id)) and (coding.code = '160540') and (coding.system = 'CIEL')"
+                }
+              ],
+              "target": [
+                {
+                  "context": "tgt",
+                  "contextType": "variable",
+                  "element": "entry",
+                  "variable": "newentry"
+                },
+                {
+                  "contextType": "variable",
+                  "variable": "cid",
+                  "transform": "uuid"
+                },
+                {
+                  "contextType": "variable",
+                  "variable": "cond",
+                  "transform": "create",
+                  "parameter": [
+                    {
+                      "valueString": "Condition"
+                    }
+                  ]
+                },
+                {
+                  "contextType": "variable",
+                  "variable": "prov",
+                  "transform": "create",
+                  "parameter": [
+                    {
+                      "valueString": "Provenance"
+                    }
+                  ]
+                }
+              ],
+              "rule": [
+                {
+                  "name": "setResource",
+                  "source": [
+                    {
+                      "context": "obs"
+                    }
+                  ],
+                  "target": [
+                    {
+                      "context": "newentry",
+                      "contextType": "variable",
+                      "element": "resource",
+                      "transform": "copy",
+                      "parameter": [
+                        {
+                          "valueId": "cond"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "setConditionId",
+                  "source": [
+                    {
+                      "context": "obs"
+                    }
+                  ],
+                  "target": [
+                    {
+                      "context": "cond",
+                      "contextType": "variable",
+                      "element": "id",
+                      "transform": "copy",
+                      "parameter": [
+                        {
+                          "valueId": "cid"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "setCode",
+                  "source": [
+                    {
+                      "context": "obs"
+                    }
+                  ],
+                  "target": [
+                    {
+                      "context": "cond",
+                      "contextType": "variable",
+                      "element": "code",
+                      "transform": "cc",
+                      "parameter": [
+                        {
+                          "valueString": "SNOMED"
+                        },
+                        {
+                          "valueString": "10232345"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "setSubject",
+                  "source": [
+                    {
+                      "context": "patient"
+                    }
+                  ],
+                  "target": [
+                    {
+                      "context": "cond",
+                      "contextType": "variable",
+                      "element": "subject",
+                      "transform": "reference",
+                      "parameter": [
+                        {
+                          "valueId": "patient"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "setProvenance",
+                  "source": [
+                    {
+                      "context": "obs"
+                    }
+                  ],
+                  "target": [
+                    {
+                      "context": "tgt",
+                      "contextType": "variable",
+                      "element": "entry",
+                      "variable": "proventry"
+                    },
+                    {
+                      "context": "proventry",
+                      "contextType": "variable",
+                      "element": "resource",
+                      "transform": "copy",
+                      "parameter": [
+                        {
+                          "valueId": "prov"
+                        }
+                      ]
+                    }
+                  ],
+                  "rule": [
+                    {
+                      "name": "setTarget",
+                      "source": [
+                        {
+                          "context": "obs"
+                        }
+                      ],
+                      "target": [
+                        {
+                          "context": "prov",
+                          "contextType": "variable",
+                          "element": "target",
+                          "transform": "evaluate",
+                          "parameter": [
+                            {
+                              "valueString": "'Condition/' & cid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "setEntity",
+                      "source": [
+                        {
+                          "context": "obs"
+                        }
+                      ],
+                      "target": [
+                        {
+                          "context": "prov",
+                          "contextType": "variable",
+                          "element": "entity",
+                          "variable": "entity"
+                        }
+                      ],
+                      "rule": [
+                        {
+                          "name": "setRole",
+                          "source": [
+                            {
+                              "context": "obs"
+                            }
+                          ],
+                          "target": [
+                            {
+                              "context": "entity",
+                              "contextType": "variable",
+                              "element": "role",
+                              "transform": "copy",
+                              "parameter": [
+                                {
+                                  "valueString": "source"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "setWhat",
+                          "source": [
+                            {
+                              "context": "obs"
+                            }
+                          ],
+                          "target": [
+                            {
+                              "context": "entity",
+                              "contextType": "variable",
+                              "element": "what",
+                              "transform": "evaluate",
+                              "parameter": [
+                                {
+                                  "valueString": "'Observation/' & obs.id"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
