@@ -31,5 +31,5 @@ POST {{host}}/StructureMap/$transform?source=https://path-global-health.github.i
 Accept: application/fhir+json;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
  
-< .test-data1.json
+< ./test-data1.json
 
