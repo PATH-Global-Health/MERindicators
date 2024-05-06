@@ -25,7 +25,9 @@ group HIVObservationHIVCondition(
             } "setSubject";
             obsentry -> cond.code as ccode then {
               obsentry -> ccode.coding as coding then {
-                obsentry -> coding.code = '10232345', coding.system = 'http://snomed.info/sct' "setCondSystemCode";
+                obsentry -> coding.code = '86406008', 
+                            coding.display = "HIV Condition Positive", 
+                            coding.system = 'http://snomed.info/sct' "setCondSystemCode";
               } "setCondCoding";
             } "SetCondCode";
             obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid then {
@@ -42,25 +44,7 @@ group HIVObservationHIVCondition(
               } "setEntity";
             } "setProvenance";
           } "setCondition";
- 
-
-/*          
-          obsentry.resource : Observation as obs where obs.subject = ("Patient/" & patient.id) and obs.code = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL#160540' -> newentry, uuid() as cid, create("Condition") as cond, create("Provenance") as prov then {
-              obs -> newentry.resource = cond "setResource";
-              obs -> cond.id = cid "setConditionId";
-              obs -> cond.code = cc( "SNOMED", "10232345" ) "setCode";
-              // patient -> cond.subject = apppend("Patient/", patient.id) "setSubject";
-              patient -> cond.subject = reference(patient) "setSubject";
-              obs -> tgt.entry as proventry, proventry.resource = prov then {
-                  obs -> prov.target = ("Condition/" & cid) "setTarget";
-                  obs -> prov.entity as entity then {
-                    obs -> entity.role = "source" "setRole";
-                    obs -> entity.what = ("Observation/" & obs.id) "setWhat";
-                  } "setEntity";
-              } "setProvenance";
-            } "setCondition";
-*/
-        } "getObservation";
+         } "getObservation";
       } "patientResource";
     } "copyPatient";
 
