@@ -1,6 +1,6 @@
 # How to use this folder
 
-This folder is standalone and dependent on the IG it is in.
+This folder is standalone and not dependent on the IG it is in.
 
 Follow the directions below then open `input/maps/HIVObservationHIVCondition.http` in VS Code. Click on:
 * Convert FML to StructureMap and Put it or...
