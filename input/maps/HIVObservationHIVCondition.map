@@ -79,29 +79,38 @@ group HIVObservationHIVCondition(
         and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='5096')) 
             -> tgt.entry as newentry, newentry.resource = create("MedicationStatement") as ms, uuid() as msid 
         then {
+          
           obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & msid ),
           // var for request bit of resources in transaction bundle
           newentry.request as newrequest
           then {
+            
             obsentry -> ms.id = msid "setMSId";
             // setrequest rule for resource in transaction bundle
             // needs to be processed properly before putting on existing data on fhir server
             obsentry -> newrequest.method = "PUT", newrequest.url = ("MedicationStatement/" & msid) "setrequest";
+            
             patient -> ms.subject as subject 
             then {
               patient -> subject.reference = reference(patient) "setSubjectRef";
             } "setSubject";
             obsentry.effective as effective -> ms.effective = effective "setEffective";
-            obsentry -> ms.medication as medication 
+            obsentry -> ms.status = "active" "setStatus";
+            
+            obsentry -> ms.medication = create("CodeableConcept") as medication 
             then {
+              
               obsentry -> medication.coding as coding 
               then {
                 // Need to get the right code to set here
                 obsentry -> coding.code = '160119', 
                             coding.display = "CURRENTLY TAKING ARV", 
-                            coding.system = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' "setCondSystemCode";
-              } "setMedicationCoding";
+                            coding.system = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' "setMSSystemCode";
+              } "setMCoding";
+              
             } "SetMSMedication";
+            
+            /*
             // create provenance resource to document input/output resources links
             obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
             pentry.request as prequest
@@ -122,7 +131,9 @@ group HIVObservationHIVCondition(
                 } "setWhat";
               } "setEntity";
             } "setProvenance";
+            */
           } "setMedicationStatement";
+        
          } "getVisitObservation";
 
         } "patientResource";
