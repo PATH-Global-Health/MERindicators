@@ -70,6 +70,7 @@ group HIVObservationHIVCondition(
               } "setEntity";
             } "setProvenance";
           } "setCondition";
+        } "getOnARTObservation";
 
         // for observations of that patient look for return visit date
         // create a medication request resource in output with uuid
@@ -122,9 +123,9 @@ group HIVObservationHIVCondition(
               } "setEntity";
             } "setProvenance";
           } "setMedicationStatement";
+         } "getVisitObservation";
 
-         } "getObservation";
-      } "patientResource";
+        } "patientResource";
     } "copyPatient";
 
   }
