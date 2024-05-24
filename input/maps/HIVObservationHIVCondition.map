@@ -39,7 +39,7 @@ group HIVObservationHIVCondition(
             then {
               patient -> subject.reference = reference(patient) "setSubjectRef";
             } "setSubject";
-            obsentry.effective as effective -> cond.onset = effective "setOnset";
+            obs.effective as effective -> cond.onset = effective "setOnset";
             obsentry -> cond.code as ccode 
             then {
               obsentry -> ccode.coding as coding 
@@ -94,7 +94,7 @@ group HIVObservationHIVCondition(
             then {
               patient -> subject.reference = reference(patient) "setSubjectRef";
             } "setSubject";
-            obsentry.effective as effective -> ms.effective = effective "setEffective";
+            obs.effective as effective -> ms.effective = effective "setEffective";
             obsentry -> ms.status = "active" "setStatus";
             
             obsentry -> ms.medication = create("CodeableConcept") as medication 
@@ -110,7 +110,6 @@ group HIVObservationHIVCondition(
               
             } "SetMSMedication";
             
-            /*
             // create provenance resource to document input/output resources links
             obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
             pentry.request as prequest
@@ -131,7 +130,6 @@ group HIVObservationHIVCondition(
                 } "setWhat";
               } "setEntity";
             } "setProvenance";
-            */
           } "setMedicationStatement";
         
          } "getVisitObservation";
