@@ -1,45 +1,70 @@
+// name the map and its canonical url
 map "https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition" = "HIVObservationHIVCondition"
 
-uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias bund as source
+// declare the structure defs used
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias input as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias output as target
 
 
-
+// declare group with local vars (src, tgt) and their aliases
+// anything ending with semicolon is a rule
 group HIVObservationHIVCondition(
-    source src: bund,
+    source src: input,
     target tgt: output
 ) {
+    // set bundle type for the output bundle
+    src -> tgt.type = 'transaction' "setBundleType";
 
-    src -> tgt.type = 'collection' "setBundleType";
-
-    src.entry as entry -> tgt.entry as tentry then {
-      entry.resource : Patient as patient -> tentry.resource = patient then {
-        
-        src.entry as obsentry where resource.is(Observation) and resource.subject.exists(reference=("Patient/" & patient.id)) and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='160540')) 
-            -> tgt.entry as newentry, newentry.resource = create("Condition") as cond, uuid() as cid then {
-          obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & cid ) then {
-            //obsentry -> newentry.resource = cond, cond.id = cid "setConditionRes";
+    // loop through patients in input bundle
+    src.entry as entry -> tgt.entry as tentry 
+    then {
+      entry.resource : Patient as patient -> tentry.resource = patient
+      then {
+        // for observations of that patient look for art program enrollment
+        // create a condition resource in output with uuid
+        src.entry as obsentry where resource.is(Observation) 
+        and resource.subject.exists(reference=("Patient/" & patient.id))
+        and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='160540')) 
+            -> tgt.entry as newentry, newentry.resource = create("Condition") as cond, uuid() as cid 
+        then {
+          obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & cid ),
+          // var for request bit of resources in transaction bundle
+          newentry.request as newrequest
+          then {
             obsentry -> cond.id = cid "setCId";
-            patient -> cond.subject as subject then {
+            // setrequest rule for resource in transaction bundle
+            // needs to be processed properly before putting on existing data on fhir server
+            obsentry -> newrequest.method = "PUT", newrequest.url = "Condition" "setrequest";
+            patient -> cond.subject as subject 
+            then {
               patient -> subject.reference = reference(patient) "setSubjectRef";
             } "setSubject";
             obsentry.effective as effective -> cond.onset = effective "setOnset";
-            obsentry -> cond.code as ccode then {
-              obsentry -> ccode.coding as coding then {
+            obsentry -> cond.code as ccode 
+            then {
+              obsentry -> ccode.coding as coding 
+              then {
                 obsentry -> coding.code = '86406008', 
                             coding.display = "HIV Condition Positive", 
                             coding.system = 'http://snomed.info/sct' "setCondSystemCode";
               } "setCondCoding";
             } "SetCondCode";
-            obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid then {
+            // create provenance resource to document input/output resources links
+            obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
+            pentry.request as prequest
+            then {
               obs -> prov.id = pid "setPId";
               obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
-              obs -> prov.target as ptarg then {
-                obs -> ptarg.reference = reference(cond) "setTargetRef";
+              obs -> prequest.method = "PUT", prequest.url = "Provenance" "setrequest";
+              obs -> prov.target as ptarg 
+              then {
+                obs -> ptarg.reference = ( "urn:uuid:" & cid ) "setTargetRef";
               } "setTarget";
-              obs -> prov.entity as entity then {
+              obs -> prov.entity as entity 
+              then {
                 obs -> entity.role = "source" "setRole";
-                obs -> entity.what as pwhat then {
+                obs -> entity.what as pwhat 
+                then {
                   obs -> pwhat.reference = reference(obs) "setWhatRef";
                 } "setWhat";
               } "setEntity";
