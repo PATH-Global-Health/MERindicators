@@ -34,7 +34,7 @@ group HIVObservationHIVCondition(
             obsentry -> cond.id = cid "setCId";
             // setrequest rule for resource in transaction bundle
             // needs to be processed properly before putting on existing data on fhir server
-            obsentry -> newrequest.method = "PUT", newrequest.url = "Condition" "setrequest";
+            obsentry -> newrequest.method = "PUT", newrequest.url = ("Condition/" & cid) "setrequest";
             patient -> cond.subject as subject 
             then {
               patient -> subject.reference = reference(patient) "setSubjectRef";
@@ -55,7 +55,7 @@ group HIVObservationHIVCondition(
             then {
               obs -> prov.id = pid "setPId";
               obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
-              obs -> prequest.method = "PUT", prequest.url = "Provenance" "setrequest";
+              obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
               obs -> prov.target as ptarg 
               then {
                 obs -> ptarg.reference = ( "urn:uuid:" & cid ) "setTargetRef";
@@ -70,6 +70,59 @@ group HIVObservationHIVCondition(
               } "setEntity";
             } "setProvenance";
           } "setCondition";
+
+        // for observations of that patient look for return visit date
+        // create a medication request resource in output with uuid
+        src.entry as obsentry where resource.is(Observation) 
+        and resource.subject.exists(reference=("Patient/" & patient.id))
+        and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='5096')) 
+            -> tgt.entry as newentry, newentry.resource = create("MedicationStatement") as ms, uuid() as msid 
+        then {
+          obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & msid ),
+          // var for request bit of resources in transaction bundle
+          newentry.request as newrequest
+          then {
+            obsentry -> ms.id = msid "setMSId";
+            // setrequest rule for resource in transaction bundle
+            // needs to be processed properly before putting on existing data on fhir server
+            obsentry -> newrequest.method = "PUT", newrequest.url = ("MedicationStatement/" & msid) "setrequest";
+            patient -> ms.subject as subject 
+            then {
+              patient -> subject.reference = reference(patient) "setSubjectRef";
+            } "setSubject";
+            obsentry.effective as effective -> ms.effective = effective "setEffective";
+            obsentry -> ms.medication as medication 
+            then {
+              obsentry -> medication.coding as coding 
+              then {
+                // Need to get the right code to set here
+                obsentry -> coding.code = '160119', 
+                            coding.display = "CURRENTLY TAKING ARV", 
+                            coding.system = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' "setCondSystemCode";
+              } "setMedicationCoding";
+            } "SetMSMedication";
+            // create provenance resource to document input/output resources links
+            obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
+            pentry.request as prequest
+            then {
+              obs -> prov.id = pid "setPId";
+              obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+              obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
+              obs -> prov.target as ptarg 
+              then {
+                obs -> ptarg.reference = ( "urn:uuid:" & msid ) "setTargetRef";
+              } "setTarget";
+              obs -> prov.entity as entity 
+              then {
+                obs -> entity.role = "source" "setRole";
+                obs -> entity.what as pwhat 
+                then {
+                  obs -> pwhat.reference = reference(obs) "setWhatRef";
+                } "setWhat";
+              } "setEntity";
+            } "setProvenance";
+          } "setMedicationStatement";
+
          } "getObservation";
       } "patientResource";
     } "copyPatient";
