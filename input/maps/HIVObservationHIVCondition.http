@@ -2,34 +2,14 @@
 @host = https://test.ahdis.ch/matchbox/fhir
 
 
-### Convert FML to StructureMap
-POST {{host}}/StructureMap/$convert HTTP/1.1
-Content-Type: text/fhir-mapping
-Accept: application/fhir+json
 
-
-< ./HIVObservationHIVCondition.map
-
-
-### Put it
-PUT {{host}}/StructureMap/HIVObservationHIVCondition HTTP/1.1
-Content-Type: application/fhir+json
-Accept: application/fhir+JSON
-
-< ./StructureMap-HIVObservationHIVCondition.json
-
-
-# Or, just do this one...
-
-### PUT FML to StructureMap (combined previous 2 steps in one)
+### Convert FML to StructureMap and and PUT on server
 PUT {{host}}/StructureMap/HIVObservationHIVCondition HTTP/1.1
 Content-Type: text/fhir-mapping
 Accept: application/fhir+json
 
 < ./HIVObservationHIVCondition.map
 
-
-# Then...
 
 
 ### Verify StructureMap is created
