@@ -11,26 +11,21 @@ Accept: application/fhir+json
 < ./HIVObservationHIVCondition.map
 
 
-
-### Verify StructureMap is created
-GET {{host}}/StructureMap/HIVObservationHIVCondition HTTP/1.1
-Accept: application/fhir+JSON
-
-
-
-### Transforms
+### Transforms 1
 POST {{host}}/StructureMap/$transform?source=https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition
 Accept: application/fhir+json;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
  
 < ./test-data1.json
 
+>>! ./transform-test-data1.json
 
 
-### Transforms
+### Transforms 2
 POST {{host}}/StructureMap/$transform?source=https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition
 Accept: application/fhir+json;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
  
 < ./test-data2.json
 
+>>! ./transform-test-data2.json

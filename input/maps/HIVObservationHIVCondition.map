@@ -94,7 +94,13 @@ group HIVObservationHIVCondition(
             then {
               patient -> subject.reference = reference(patient) "setSubjectRef";
             } "setSubject";
-            obs.effective as effective -> ms.effective = effective "setEffective";
+
+            // obs.effective as effective -> ms.effective = effective "setEffective";
+            obs.effective : dateTime as effective -> ms.effective = create("Period") as mseffective then {
+                effective -> mseffective.start = effective "setEffectiveStart";
+                effective -> mseffective.end = (%effective + 30 days) "setEffectiveEnd";
+              } "setEffective";
+              
             obsentry -> ms.status = "active" "setStatus";
             
             obsentry -> ms.medication = create("CodeableConcept") as medication 

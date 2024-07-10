@@ -1,0 +1,274 @@
+{
+  "resourceType" : "Bundle",
+  "type" : "transaction",
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "3e990510-1d51-4a25-abd4-3885cf9e8be9",
+      "meta" : {
+        "lastUpdated" : "2023-05-22T09:19:47.000+03:00"
+      },
+      "identifier" : [{
+        "id" : "3196030c-ca05-4f66-8e47-e3251ef1b1a0",
+        "extension" : [{
+          "url" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference" : {
+            "reference" : "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type" : "Location",
+            "display" : "Lumumba Sub County Hospital"
+          }
+        }],
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "code" : "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          }],
+          "text" : "OpenMRS ID"
+        },
+        "value" : "MK3JYU"
+      },
+      {
+        "id" : "8a517664-6531-4c10-b64b-0137192a3e30",
+        "extension" : [{
+          "url" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference" : {
+            "reference" : "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type" : "Location",
+            "display" : "Lumumba Sub County Hospital"
+          }
+        }],
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "code" : "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          }],
+          "text" : "National ID"
+        },
+        "value" : "20981456"
+      },
+      {
+        "id" : "219d9836-acd4-425f-afec-1f1beaf29e43",
+        "extension" : [{
+          "url" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference" : {
+            "reference" : "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type" : "Location",
+            "display" : "Lumumba Sub County Hospital"
+          }
+        }],
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "code" : "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          }],
+          "text" : "Unique Patient Number"
+        },
+        "value" : "1373821796"
+      },
+      {
+        "id" : "ca797003-7714-4829-bf98-943696e84d79",
+        "extension" : [{
+          "url" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference" : {
+            "reference" : "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type" : "Location",
+            "display" : "Lumumba Sub County Hospital"
+          }
+        }],
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "code" : "b4d66522-11fc-45c7-83e3-39a1af21ae0d"
+          }],
+          "text" : "Patient Clinic Number"
+        },
+        "value" : "21796"
+      },
+      {
+        "id" : "f80556fe-fe18-4fde-bd93-a9a054012308",
+        "extension" : [{
+          "url" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference" : {
+            "reference" : "Location/807b5afd-579c-422f-abd2-96d497235a7d",
+            "type" : "Location",
+            "display" : "Lumumba Sub County Hospital"
+          }
+        }],
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "code" : "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          }],
+          "text" : "National Unique patient identifier"
+        },
+        "value" : "MOHEJ9VG3KGJ1"
+      }],
+      "active" : true,
+      "name" : [{
+        "id" : "bf2968dd-b45f-436e-9d9c-55c46ba3fb14",
+        "family" : "Musamia",
+        "given" : ["Musamia",
+        "Musamia"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1977",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "id" : "692e88a0-f844-4f9f-a2b3-f90bac6c430a",
+        "extension" : [{
+          "extension" : [{
+            "url" : "http://fhir.openmrs.org/ext/address#address1",
+            "valueString" : "39857 address1"
+          },
+          {
+            "url" : "http://fhir.openmrs.org/ext/address#address2",
+            "valueString" : "39857 address2"
+          },
+          {
+            "url" : "http://fhir.openmrs.org/ext/address#address4",
+            "valueString" : "Manyatta B"
+          }],
+          "url" : "http://fhir.openmrs.org/ext/address"
+        }],
+        "use" : "home",
+        "city" : "kolwa central",
+        "district" : "Kisumu",
+        "state" : "Kisumu East"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:beb4010f-cfd4-4037-81be-1f059c9b9639",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "beb4010f-cfd4-4037-81be-1f059c9b9639",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "86406008",
+          "display" : "HIV Condition Positive"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/3e990510-1d51-4a25-abd4-3885cf9e8be9"
+      },
+      "onsetDateTime" : "2023-05-18T16:27:52+03:00"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/beb4010f-cfd4-4037-81be-1f059c9b9639"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:1d3aa5e8-59b2-4f89-aced-139c15876641",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "1d3aa5e8-59b2-4f89-aced-139c15876641",
+      "target" : [{
+        "reference" : "urn:uuid:beb4010f-cfd4-4037-81be-1f059c9b9639"
+      }],
+      "entity" : [{
+        "role" : "source",
+        "what" : {
+          "reference" : "Observation/455f8701-aaad-4f85-b59a-1bf75d2c36ac"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Provenance/1d3aa5e8-59b2-4f89-aced-139c15876641"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:3ba2325a-1f2f-4438-9995-77cef46a00a4",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "3ba2325a-1f2f-4438-9995-77cef46a00a4",
+      "status" : "active",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code" : "160119",
+          "display" : "CURRENTLY TAKING ARV"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/3e990510-1d51-4a25-abd4-3885cf9e8be9"
+      },
+      "effectivePeriod" : {
+        "start" : "2023-05-18T12:33:08+03:00",
+        "end" : "2023-06-17T12:33:08+03:00"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationStatement/3ba2325a-1f2f-4438-9995-77cef46a00a4"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:fc502876-c7c4-4542-a668-7da1cf95d843",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "fc502876-c7c4-4542-a668-7da1cf95d843",
+      "target" : [{
+        "reference" : "urn:uuid:3ba2325a-1f2f-4438-9995-77cef46a00a4"
+      }],
+      "entity" : [{
+        "role" : "source",
+        "what" : {
+          "reference" : "Observation/750babe9-f061-432e-b11b-6c14e702ebd4"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Provenance/fc502876-c7c4-4542-a668-7da1cf95d843"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:4535a792-709f-42f1-8e81-5dc73d16e00d",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "4535a792-709f-42f1-8e81-5dc73d16e00d",
+      "status" : "active",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code" : "160119",
+          "display" : "CURRENTLY TAKING ARV"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/3e990510-1d51-4a25-abd4-3885cf9e8be9"
+      },
+      "effectivePeriod" : {
+        "start" : "2023-05-31T08:13:37+03:00",
+        "end" : "2023-06-30T08:13:37+03:00"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationStatement/4535a792-709f-42f1-8e81-5dc73d16e00d"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:7c39d3e7-ba6e-44dc-b95c-4c19e77f638c",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "7c39d3e7-ba6e-44dc-b95c-4c19e77f638c",
+      "target" : [{
+        "reference" : "urn:uuid:4535a792-709f-42f1-8e81-5dc73d16e00d"
+      }],
+      "entity" : [{
+        "role" : "source",
+        "what" : {
+          "reference" : "Observation/67e881f8-212f-4332-b085-ceaa052b3b62"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Provenance/7c39d3e7-ba6e-44dc-b95c-4c19e77f638c"
+    }
+  }]
+}

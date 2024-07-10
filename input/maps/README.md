@@ -3,10 +3,8 @@
 This folder is standalone and not dependent on the IG it is in.
 
 Follow the directions below then open `input/maps/HIVObservationHIVCondition.http` in VS Code. Click on:
-* Convert FML to StructureMap and Put it or...
-* PUT FML to StructureMap which combines the two operations. This converts FML (.map) files to FHIR StructureMaps and PUTs it on the server.
-* Verify StructureMap is created
-* Transform
+* Convert FML to StructureMap and and PUT on server
+* Transform 1 and Transform 2.
 
 The $transform operation will transform the bundle in the payload to an output bundle. In production, the returned bundle would be put on a FHIR server.
 
